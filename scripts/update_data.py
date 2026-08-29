@@ -283,6 +283,20 @@ def fetch_rrr():
             continue
     return out
 
+def fetch_trading_calendar():
+    """SSE/SZSE official trading-day calendar (accounts for holidays AND
+    the 调休 substitute workdays that make Chinese holiday weeks irregular
+    — e.g. a Saturday can be a trading day, a plain Friday can be closed).
+    Used client-side for the Beijing-time market-open indicator instead of
+    a naive Mon-Fri check, which is wrong on ~13+ days a year."""
+    df = ak.tool_trade_date_hist_sina()
+    dates = df["trade_date"].astype(str).tolist()
+    # Keep last 2 years -> ~1.5 years ahead (whatever Sina has published);
+    # the widget only ever checks "today", no need to ship the full
+    # history back to the 1990s.
+    cutoff = (date.today() - timedelta(days=730)).isoformat()
+    return sorted(d for d in dates if d >= cutoff)
+
 def fetch_usdcny_daily(start="1999-01-04"):
     """Daily USD/CNY via Frankfurter (ECB reference rates) — free, no key,
     genuinely live. Replaces ak.macro_china_rmb, which is dead (stops 2021).
@@ -372,6 +386,32 @@ def is_econ_political(title, summary):
     text = (title + " " + summary).lower()
     return any(kw in text for kw in ECON_POLITICAL_KEYWORDS)
 
+# Collapses variant labels for the same outlet (our own feed label vs. the
+# real publisher name Google News resolves, ".com"-suffixed domain names,
+# etc.) to one canonical, recognizable name.
+SOURCE_ALIASES = {
+    "scmp china": "South China Morning Post",
+    "south china morning post": "South China Morning Post",
+    "scmp": "South China Morning Post",
+    "bloomberg.com": "Bloomberg",
+    "bloomberg": "Bloomberg",
+    "the wall street journal": "WSJ",
+    "wsj": "WSJ",
+    "reuters.com": "Reuters",
+    "reuters": "Reuters",
+    "ap news": "AP",
+    "associated press": "AP",
+    "the washington post": "The Washington Post",
+    "washingtonpost.com": "The Washington Post",
+    "cnbc": "CNBC",
+    "cnbc.com": "CNBC",
+}
+
+def canonical_source(name):
+    if not name:
+        return name
+    return SOURCE_ALIASES.get(name.strip().lower(), name.strip())
+
 def fetch_news(limit_per_feed=40):
     if feedparser is None:
         log("feedparser not installed, skipping news refresh")
@@ -396,6 +436,7 @@ def fetch_news(limit_per_feed=40):
                         title = title[: -len(suffix)]
                 else:
                     source_name = label
+                source_name = canonical_source(source_name)
 
                 if label == "Google News":
                     # Google's <summary> is a repeat of the link, not real text.
@@ -436,6 +477,14 @@ def fetch_news(limit_per_feed=40):
 
 def main():
     data = load_data()
+
+    try:
+        cal = fetch_trading_calendar()
+        if cal:
+            data["trading_days"] = cal
+            log(f"OK trading_days: {len(cal)} days")
+    except Exception:
+        log(f"FAIL trading_days:\n{traceback.format_exc()}")
 
     for category, key, fetcher in FETCHERS:
         try:

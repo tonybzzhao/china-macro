@@ -63,26 +63,38 @@ let searchQuery = "";
 init();
 initBeijingClock();
 
-// SSE/SZSE trading hours (9:30-11:30, 13:00-15:00 China Standard Time,
-// Mon-Fri). Doesn't account for public holidays — CST has no DST so this
-// is a fixed UTC+8 offset year-round, but a holiday still reads as "open"
-// here since there's no holiday calendar wired in.
+// SSE/SZSE trading hours (9:30-11:30, 13:00-15:00 China Standard Time).
+// Whether a given DAY is a trading day comes from DATA.trading_days — the
+// actual exchange-published calendar (fetched via akshare's
+// tool_trade_date_hist_sina), which correctly handles statutory holidays
+// AND the 调休 substitute workdays that swap a weekend for a weekday or
+// vice versa. A plain Mon-Fri check gets this wrong on 13+ days a year.
+// Falls back to a weekday guess only in the brief window before DATA has
+// loaded, or if the calendar is ever missing/empty.
 function getBeijingParts(date) {
   const fmt = new Intl.DateTimeFormat("en-US", {
     timeZone: "Asia/Shanghai", weekday: "short",
+    year: "numeric", month: "2-digit", day: "2-digit",
     hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
   });
   const out = {};
   fmt.formatToParts(date).forEach((p) => { out[p.type] = p.value; });
+  out.isoDate = `${out.year}-${out.month}-${out.day}`;
   return out;
 }
 
 function isMarketOpen(parts) {
-  if (parts.weekday === "Sat" || parts.weekday === "Sun") return false;
   const mins = parseInt(parts.hour, 10) * 60 + parseInt(parts.minute, 10);
   const morning = mins >= 9 * 60 + 30 && mins < 11 * 60 + 30;
   const afternoon = mins >= 13 * 60 && mins < 15 * 60;
-  return morning || afternoon;
+  const inHours = morning || afternoon;
+
+  const calendar = DATA && Array.isArray(DATA.trading_days) ? DATA.trading_days : null;
+  const isTradingDay = calendar && calendar.length
+    ? calendar.includes(parts.isoDate)
+    : parts.weekday !== "Sat" && parts.weekday !== "Sun"; // pre-DATA fallback
+
+  return isTradingDay && inHours;
 }
 
 function initBeijingClock() {
