@@ -420,10 +420,29 @@ function renderChartCard(series, catKey, seriesKey) {
   appendGlossedText(h3, series.label);
   head.appendChild(h3);
 
-  const latest = document.createElement("div");
-  latest.className = "chart-latest";
+  // Grouped into one flex item so the figures always sit flush-right,
+  // regardless of how long/short the title is (previously a 3-way
+  // space-between let short titles leave the value floating mid-row).
+  const figures = document.createElement("div");
+  figures.className = "chart-figures";
+
+  const valueBlock = document.createElement("div");
+  valueBlock.className = "chart-value-block";
+
+  const latest = document.createElement("span");
+  latest.className = "chart-latest-value";
+  latest.style.color = `var(${CAT_COLOR_VAR[catKey] || "--accent"})`;
   latest.textContent = pts.length ? fmtValue(pts[pts.length - 1].value, series) : "";
-  head.appendChild(latest);
+  valueBlock.appendChild(latest);
+
+  if (pts.length > 1) {
+    const prevVal = pts[pts.length - 2].value;
+    const prev = document.createElement("span");
+    prev.className = "chart-latest-prev";
+    prev.textContent = `prev ${fmtValue(prevVal, series)}`;
+    valueBlock.appendChild(prev);
+  }
+  figures.appendChild(valueBlock);
 
   if (series.desc) {
     const chevron = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -431,8 +450,9 @@ function renderChartCard(series, catKey, seriesKey) {
     chevron.setAttribute("viewBox", "0 0 16 16");
     chevron.setAttribute("aria-hidden", "true");
     chevron.innerHTML = '<path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
-    head.appendChild(chevron);
+    figures.appendChild(chevron);
   }
+  head.appendChild(figures);
 
   card.appendChild(head);
 
