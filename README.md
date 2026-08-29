@@ -25,19 +25,21 @@ plus a running feed of related political/economic news.
 
 ## ⚠️ Known limitations — read before relying on this
 
-**Data-freshness check (2026-08-29):** every akshare fetcher wired into
+**Data-freshness check (last updated 2026-08-29):** every fetcher wired into
 `scripts/update_data.py` was run live before shipping, not just guessed from
 docs. Results:
 
 | Status | Series | As of last check |
 |---|---|---|
-| ✅ Live | `tsf_flow` (Total Social Financing) | current through 2026-04 |
+| ✅ Live | `tsf_flow`, `m1_growth`, `m2_growth`, `m1_m2_gap` (via `ak.macro_china_supply_of_money`) | current through 2026-07 |
 | ✅ Live | `urban_unemployment` | current through 2026-07 |
 | ✅ Live | `lpr_1y`, `lpr_5y` | current through 2026-08 |
-| ⚠️ Stale (~1yr behind) | `cpi`, `ppi`, `official_manufacturing_pmi`, `caixin_manufacturing_pmi`, `official_non_manufacturing_pmi`, `gdp_growth`, `industrial_production`, `exports_yoy`, `imports_yoy`, `trade_balance`, `fx_reserves`, `m2_growth` | frozen around Sep 2025 |
-| ❌ Broken, not called | `usdcny` (`ak.macro_china_rmb`) | data stops 2021-05-13 |
+| ✅ Live | `usdcny` (daily, via Frankfurter/ECB — not akshare) | current through 2026-08-28, back to 2000-01-13 |
+| ✅ Live | `retail_sales` (`ak.macro_china_consumer_goods_retail`), `fixed_asset_investment` (`ak.macro_china_gdzctz`, computed as YTD y/y — see flag below) | current through 2026-07 |
+| ✅ Live | `trading_days` (`ak.tool_trade_date_hist_sina`) — powers the Beijing-time market-open indicator | through 2026-12-31 |
+| ⚠️ Stale (~1yr behind) | `cpi`, `ppi`, `official_manufacturing_pmi`, `caixin_manufacturing_pmi`, `official_non_manufacturing_pmi`, `gdp_growth`, `industrial_production`, `exports_yoy`, `imports_yoy`, `trade_balance`, `fx_reserves` | frozen around Sep 2025 |
 | ❌ Broken, not called | `rrr` (`ak.macro_china_reserve_requirement_ratio`) | data stops in **2007** |
-| — Not wired at all | `retail_sales`, `fixed_asset_investment`, `property_investment`, `new_home_prices`, `youth_unemployment` | no confirmed akshare function found |
+| — Not wired, no source exists | `property_investment` (akshare's real-estate function is a climate index, not investment growth), `new_home_prices` (akshare only has raw per-city levels, not NBS's 70-city composite), `youth_unemployment` (checked `ak.macro_china_urban_unemployment`'s full item breakdown directly — no 16-24 split exists anywhere in akshare) | — |
 
 The "stale" group all scrape the same Sina Finance macro widget, which
 stopped updating upstream around September 2025 — an akshare/Sina issue,
@@ -47,13 +49,13 @@ which point fresh data starts flowing through automatically with no code
 change needed here. If a series looks frozen, `pip install -U akshare` and
 re-run before assuming the workflow itself is broken.
 
-**Practical effect:** right now, only TSF, urban unemployment, and LPR are
-genuinely auto-refreshing day to day. Everything else on the dashboard is a
-manually-curated snapshot (or, for the stale akshare group, effectively
-frozen at whatever last flowed through) until either akshare's upstream
-sources catch up or better sources are wired in. The dashboard UI surfaces
-this itself — every series with a data-quality caveat shows a ⚠ flag,
-visible on hover, right on its chart card.
+**Practical effect:** most of the dashboard is now genuinely auto-refreshing
+hourly. The stale-group series and the three not-wired series are the
+exceptions — those stay at whatever last flowed through (or the original
+manually-curated seed) until akshare's upstream sources catch up or a better
+source is found. The dashboard UI surfaces this itself — every series with a
+data-quality caveat shows a ⚠ flag, visible on hover, right on its chart
+card.
 
 **Contributing a fix:** if you find a working source for any of the broken/
 not-wired series, add a `fetch_*()` function following the pattern in

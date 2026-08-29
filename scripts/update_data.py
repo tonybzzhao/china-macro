@@ -228,6 +228,53 @@ def fetch_urban_unemployment():
         VAL_COLS + ["全国城镇调查失业率"],
     )
 
+def fetch_retail_sales():
+    """Verified live 2026-08-29: latest row is 2026-07, matches the
+    -6.7%-YTD-FAI-era news narrative (retail sales near-stagnant)."""
+    df = ak.macro_china_consumer_goods_retail()
+    date_col, val_col = find_col(df, ["月份"]), find_col(df, ["同比增长"])
+    if date_col is None or val_col is None:
+        raise ValueError(f"couldn't find date/value columns in {list(df.columns)}")
+    out = []
+    for _, r in df.iterrows():
+        v = clean_float(r[val_col])
+        if v is None:
+            continue
+        m = re.match(r"(\d{4})年(\d{1,2})月", str(r[date_col]))
+        if not m:
+            continue
+        out.append({"date": f"{m.group(1)}-{int(m.group(2)):02d}", "value": v})
+    return out
+
+def fetch_fixed_asset_investment():
+    """China only ever quotes FAI as cumulative year-to-date y/y growth (the
+    single-month figure is noisy/rarely cited) — akshare's raw table gives
+    the YTD RMB level (自年初累计), not the growth rate, so this computes
+    the YTD y/y growth itself: this-year's YTD-through-month-M vs
+    last-year's YTD-through-month-M. Verified 2026-08-29: matches the
+    -6.7% figure from the Aug 2026 CNBC July-activity-data story."""
+    df = ak.macro_china_gdzctz()
+    date_col, cum_col = find_col(df, ["月份"]), find_col(df, ["自年初累计"])
+    if date_col is None or cum_col is None:
+        raise ValueError(f"couldn't find date/value columns in {list(df.columns)}")
+
+    by_ym = {}
+    for _, r in df.iterrows():
+        m = re.match(r"(\d{4})年(\d{1,2})月", str(r[date_col]))
+        v = clean_float(r[cum_col])
+        if not m or v is None or v == 0:
+            continue
+        by_ym[(int(m.group(1)), int(m.group(2)))] = v
+
+    out = []
+    for (year, month), cum_this_year in by_ym.items():
+        cum_last_year = by_ym.get((year - 1, month))
+        if cum_last_year is None or cum_last_year == 0:
+            continue
+        growth = round((cum_this_year / cum_last_year - 1) * 100, 1)
+        out.append({"date": f"{year}-{month:02d}", "value": growth})
+    return out
+
 def fetch_fx_reserves():
     pts = simple_series(ak.macro_china_fx_reserves_yearly, DATE_COLS, VAL_COLS)
     # akshare reports this series in 亿美元 ($100mn) units, e.g. 32920 -> $3.292trn.
@@ -317,6 +364,8 @@ FRESH_FETCHERS = [
     ("prices_credit", "tsf_flow", fetch_tsf_flow),                       # through 2026-04
     ("property_labor", "urban_unemployment", fetch_urban_unemployment),  # through 2026-07
     ("external", "usdcny", fetch_usdcny_daily),                          # daily, via Frankfurter
+    ("growth", "retail_sales", fetch_retail_sales),                      # through 2026-07
+    ("growth", "fixed_asset_investment", fetch_fixed_asset_investment),  # through 2026-07
     # lpr and money supply (m1/m2/gap) handled separately below — each
     # returns more than one series from a single call.
 ]
@@ -349,9 +398,16 @@ FETCHERS = FRESH_FETCHERS + STALE_FETCHERS
 #   site or a different akshare function. Left manually-seeded.
 # (usdcny used to be here too — ak.macro_china_rmb is dead since 2021-05-13 —
 # but now runs on Frankfurter's daily feed instead, see FRESH_FETCHERS above.)
-# - retail_sales, fixed_asset_investment, property_investment,
-#   new_home_prices, youth_unemployment: no confirmed akshare function was
-#   found for these at all. Also manually-seeded.
+# - property_investment: ak.macro_china_real_estate exists but is a real-
+#   estate *climate index* (景气指数), a different metric from YTD
+#   investment growth — not a valid substitute. No matching source found.
+# - new_home_prices: ak.macro_china_new_house_price exists but is raw
+#   per-city index levels, not NBS's official 70-city composite — building
+#   a defensible aggregate from it is out of scope for now.
+# - youth_unemployment: ak.macro_china_urban_unemployment's item breakdown
+#   was checked directly — it only has 25-59/local-registration/migrant
+#   splits, no 16-24 youth figure. No akshare source exists for this.
+# All three stay manually-seeded.
 
 
 # ---------- News (RSS, no key needed) ----------

@@ -20,6 +20,7 @@ const GLOSSARY = {
   LPR: "Loan Prime Rate",
   RRR: "Reserve Requirement Ratio",
   TSF: "Total Social Financing",
+  M1: "Narrow money supply — cash in circulation plus readily-spendable demand deposits",
   M2: "Broad money supply — cash, deposits, and near-money",
   YTD: "Year-to-Date",
   NBS: "National Bureau of Statistics of China",
@@ -424,12 +425,51 @@ function renderChartCard(series, catKey, seriesKey) {
   latest.textContent = pts.length ? fmtValue(pts[pts.length - 1].value, series) : "";
   head.appendChild(latest);
 
+  if (series.desc) {
+    const chevron = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    chevron.setAttribute("class", "chart-chevron");
+    chevron.setAttribute("viewBox", "0 0 16 16");
+    chevron.setAttribute("aria-hidden", "true");
+    chevron.innerHTML = '<path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
+    head.appendChild(chevron);
+  }
+
   card.appendChild(head);
 
   const sub = document.createElement("div");
   sub.className = "chart-sub";
   sub.textContent = (series.unit || "") + (series.freq ? " · " + series.freq : "");
   card.appendChild(sub);
+
+  if (series.desc) {
+    head.classList.add("chart-head-toggle");
+    head.tabIndex = 0;
+    head.setAttribute("role", "button");
+    head.setAttribute("aria-expanded", "false");
+
+    const descWrap = document.createElement("div");
+    descWrap.className = "chart-desc-wrap";
+    const descInner = document.createElement("div");
+    descInner.className = "chart-desc-inner";
+    const descP = document.createElement("p");
+    descP.className = "chart-desc";
+    descP.textContent = series.desc;
+    descInner.appendChild(descP);
+    descWrap.appendChild(descInner);
+    card.appendChild(descWrap);
+
+    const toggle = () => {
+      const expanded = descWrap.classList.toggle("expanded");
+      head.setAttribute("aria-expanded", String(expanded));
+    };
+    head.addEventListener("click", toggle);
+    head.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  }
 
   const svgWrap = document.createElement("div");
   svgWrap.className = "chart-svg-wrap";

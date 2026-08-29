@@ -105,7 +105,10 @@ a { color: inherit; }
 :root[data-theme="dark"] .logo-light { display: none; }
 :root[data-theme="dark"] .logo-dark { display: block; }
 
-.masthead .sub { color: var(--text-secondary); font-size: 14.5px; max-width: 58ch; }
+.masthead .sub { color: var(--text-secondary); font-size: 14.5px; max-width: 58ch; margin: 0 0 4px; }
+.sub-secondary { color: var(--text-muted); font-size: 13px; max-width: 58ch; margin: 0; }
+.sub-link { color: var(--accent); text-decoration: underline; text-decoration-style: solid; text-underline-offset: 2px; }
+.sub-link:hover { opacity: 0.8; }
 .asof {
   text-align: right;
   font-family: "IBM Plex Mono", monospace;
@@ -341,6 +344,39 @@ a { color: inherit; }
   align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
+}
+.chart-head-toggle {
+  cursor: pointer;
+  border-radius: 6px;
+  margin: -4px -6px 0;
+  padding: 4px 6px 0;
+}
+.chart-head-toggle:hover { background: var(--surface-2); }
+.chart-head-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.chart-chevron {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  margin-top: 2px;
+  transition: transform 0.15s ease;
+}
+.chart-head-toggle[aria-expanded="true"] .chart-chevron { transform: rotate(180deg); }
+.chart-desc-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.18s ease;
+}
+.chart-desc-wrap.expanded { grid-template-rows: 1fr; }
+.chart-desc-inner { overflow: hidden; }
+.chart-desc {
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+@media (prefers-reduced-motion: reduce) {
+  .chart-desc-wrap, .chart-chevron { transition: none; }
 }
 .chart-card h3 {
   font-family: "Archivo", sans-serif;
