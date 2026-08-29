@@ -61,6 +61,46 @@ let currentCat = "growth";
 let searchQuery = "";
 
 init();
+initBeijingClock();
+
+// SSE/SZSE trading hours (9:30-11:30, 13:00-15:00 China Standard Time,
+// Mon-Fri). Doesn't account for public holidays — CST has no DST so this
+// is a fixed UTC+8 offset year-round, but a holiday still reads as "open"
+// here since there's no holiday calendar wired in.
+function getBeijingParts(date) {
+  const fmt = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Shanghai", weekday: "short",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
+  });
+  const out = {};
+  fmt.formatToParts(date).forEach((p) => { out[p.type] = p.value; });
+  return out;
+}
+
+function isMarketOpen(parts) {
+  if (parts.weekday === "Sat" || parts.weekday === "Sun") return false;
+  const mins = parseInt(parts.hour, 10) * 60 + parseInt(parts.minute, 10);
+  const morning = mins >= 9 * 60 + 30 && mins < 11 * 60 + 30;
+  const afternoon = mins >= 13 * 60 && mins < 15 * 60;
+  return morning || afternoon;
+}
+
+function initBeijingClock() {
+  const timeEl = document.getElementById("beijing-time");
+  const badgeEl = document.getElementById("market-status");
+  if (!timeEl || !badgeEl) return;
+
+  function tick() {
+    const parts = getBeijingParts(new Date());
+    timeEl.textContent = `${parts.hour}:${parts.minute}:${parts.second}`;
+    const open = isMarketOpen(parts);
+    badgeEl.textContent = open ? "Market open" : "Market closed";
+    badgeEl.classList.toggle("open", open);
+    badgeEl.classList.toggle("closed", !open);
+  }
+  tick();
+  setInterval(tick, 1000);
+}
 
 async function init() {
   bindThemeSwitch();

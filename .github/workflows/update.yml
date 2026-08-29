@@ -2,8 +2,11 @@ name: Update China macro data
 
 on:
   schedule:
-    # 01:00 UTC = 09:00 Beijing — after most NBS/PBOC morning releases
-    - cron: "0 1 * * *"
+    # Hourly, on the hour. Most series (GDP/CPI/PMI/etc.) are monthly/
+    # quarterly releases and won't change most hours — this just means a
+    # new release shows up within an hour instead of within a day. News
+    # and USD/CNY are the two series that actually benefit every run.
+    - cron: "0 * * * *"
   workflow_dispatch: {}
 
 permissions:

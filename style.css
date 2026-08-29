@@ -150,6 +150,28 @@ a { color: inherit; }
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 20%, transparent);
 }
 
+.beijing-clock {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+  cursor: help;
+}
+#beijing-time { color: var(--text-secondary); font-weight: 600; }
+.market-badge {
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: 100px;
+}
+.market-badge.open { color: var(--good); background: color-mix(in srgb, var(--good) 14%, transparent); }
+.market-badge.closed { color: var(--text-muted); background: var(--surface-2); }
+@media (max-width: 640px) {
+  .beijing-clock { justify-content: flex-start; }
+}
+
 /* ---------- Filter row ---------- */
 .filter-row {
   display: flex;

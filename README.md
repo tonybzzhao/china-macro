@@ -15,10 +15,13 @@ plus a running feed of related political/economic news.
   sources (mainly [`akshare`](https://github.com/akfamily/akshare), a
   community-maintained library that wraps NBS/PBOC/Sina data) and RSS news
   feeds.
-- **`.github/workflows/update.yml`** — runs the script daily (01:00 UTC /
-  09:00 Beijing) via GitHub Actions and commits the updated JSON. Because the
-  page just reads a static JSON file, GitHub Pages serves whatever the bot
-  last committed — that's what makes it "live" without any server to run.
+- **`.github/workflows/update.yml`** — runs the script hourly via GitHub
+  Actions and commits the updated JSON if anything changed. Because the page
+  just reads a static JSON file, GitHub Pages serves whatever the bot last
+  committed — that's what makes it "live" without any server to run. Most
+  series are monthly/quarterly releases and won't actually change most
+  hours; the point of hourly (over daily) is that a new release, or fresh
+  news/FX, shows up within an hour instead of within a day.
 
 ## ⚠️ Known limitations — read before relying on this
 
@@ -83,13 +86,13 @@ git push -u origin main
 #    scheduled job can update data/history.json but can't push the commit.
 
 # 4. (Optional) trigger the first live refresh manually instead of waiting
-#    for the next 01:00 UTC run: Actions tab → "Update China macro data" →
+#    for the next hourly run: Actions tab → "Update China macro data" →
 #    Run workflow.
 ```
 
 Once Pages is live, the site is at `https://<you>.github.io/<repo>/` and
 will reflect whatever `data/history.json` the bot last committed — genuinely
-up to date whenever you load it, bounded by the daily refresh cadence.
+up to date whenever you load it, bounded by the hourly refresh cadence.
 
 ## Local development
 
