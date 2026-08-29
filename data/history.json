@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-29T20:33:03.383284+00:00",
+    "last_updated": "2026-08-29T21:39:23.995366+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -1495,8 +1495,8 @@
           ]
         },
         "rrr": {
-          "label": "Reserve Requirement Ratio (weighted avg, major banks)",
-          "unit": "% (approx)",
+          "label": "Reserve Requirement Ratio",
+          "unit": "%, major banks (approx)",
           "freq": "on rate change",
           "decimals": 1,
           "higher_is_better": null,
@@ -2287,7 +2287,7 @@
         "usdcny": {
           "label": "USD/CNY",
           "unit": "",
-          "freq": "monthly avg",
+          "freq": "daily",
           "decimals": 4,
           "higher_is_better": null,
           "flag": "Sourced from x-rates.com aggregated market averages, not PBOC's official daily fixing — directionally reliable, not pip-precise.",
@@ -2361,16 +2361,280 @@
               "value": 6.802
             },
             {
+              "date": "2026-05-29",
+              "value": 6.7668
+            },
+            {
               "date": "2026-06",
               "value": 6.7755
+            },
+            {
+              "date": "2026-06-01",
+              "value": 6.7651
+            },
+            {
+              "date": "2026-06-02",
+              "value": 6.7626
+            },
+            {
+              "date": "2026-06-03",
+              "value": 6.7694
+            },
+            {
+              "date": "2026-06-04",
+              "value": 6.7739
+            },
+            {
+              "date": "2026-06-05",
+              "value": 6.7656
+            },
+            {
+              "date": "2026-06-08",
+              "value": 6.7819
+            },
+            {
+              "date": "2026-06-09",
+              "value": 6.7715
+            },
+            {
+              "date": "2026-06-10",
+              "value": 6.7807
+            },
+            {
+              "date": "2026-06-11",
+              "value": 6.7774
+            },
+            {
+              "date": "2026-06-12",
+              "value": 6.7623
+            },
+            {
+              "date": "2026-06-15",
+              "value": 6.757
+            },
+            {
+              "date": "2026-06-16",
+              "value": 6.7564
+            },
+            {
+              "date": "2026-06-17",
+              "value": 6.7595
+            },
+            {
+              "date": "2026-06-18",
+              "value": 6.7716
+            },
+            {
+              "date": "2026-06-19",
+              "value": 6.7693
+            },
+            {
+              "date": "2026-06-22",
+              "value": 6.7748
+            },
+            {
+              "date": "2026-06-23",
+              "value": 6.7857
+            },
+            {
+              "date": "2026-06-24",
+              "value": 6.8109
+            },
+            {
+              "date": "2026-06-25",
+              "value": 6.7982
+            },
+            {
+              "date": "2026-06-26",
+              "value": 6.7982
+            },
+            {
+              "date": "2026-06-29",
+              "value": 6.794
+            },
+            {
+              "date": "2026-06-30",
+              "value": 6.7855
             },
             {
               "date": "2026-07",
               "value": 6.7784
             },
             {
+              "date": "2026-07-01",
+              "value": 6.7945
+            },
+            {
+              "date": "2026-07-02",
+              "value": 6.789
+            },
+            {
+              "date": "2026-07-03",
+              "value": 6.7814
+            },
+            {
+              "date": "2026-07-06",
+              "value": 6.7957
+            },
+            {
+              "date": "2026-07-07",
+              "value": 6.7935
+            },
+            {
+              "date": "2026-07-08",
+              "value": 6.8002
+            },
+            {
+              "date": "2026-07-09",
+              "value": 6.796
+            },
+            {
+              "date": "2026-07-10",
+              "value": 6.7745
+            },
+            {
+              "date": "2026-07-13",
+              "value": 6.7776
+            },
+            {
+              "date": "2026-07-14",
+              "value": 6.7801
+            },
+            {
+              "date": "2026-07-15",
+              "value": 6.7743
+            },
+            {
+              "date": "2026-07-16",
+              "value": 6.7669
+            },
+            {
+              "date": "2026-07-17",
+              "value": 6.7775
+            },
+            {
+              "date": "2026-07-20",
+              "value": 6.7669
+            },
+            {
+              "date": "2026-07-21",
+              "value": 6.7661
+            },
+            {
+              "date": "2026-07-22",
+              "value": 6.773
+            },
+            {
+              "date": "2026-07-23",
+              "value": 6.7703
+            },
+            {
+              "date": "2026-07-24",
+              "value": 6.7722
+            },
+            {
+              "date": "2026-07-27",
+              "value": 6.7661
+            },
+            {
+              "date": "2026-07-28",
+              "value": 6.7713
+            },
+            {
+              "date": "2026-07-29",
+              "value": 6.7663
+            },
+            {
+              "date": "2026-07-30",
+              "value": 6.7551
+            },
+            {
+              "date": "2026-07-31",
+              "value": 6.7513
+            },
+            {
               "date": "2026-08",
               "value": 6.7424
+            },
+            {
+              "date": "2026-08-03",
+              "value": 6.7526
+            },
+            {
+              "date": "2026-08-04",
+              "value": 6.7535
+            },
+            {
+              "date": "2026-08-05",
+              "value": 6.75
+            },
+            {
+              "date": "2026-08-06",
+              "value": 6.7491
+            },
+            {
+              "date": "2026-08-07",
+              "value": 6.7476
+            },
+            {
+              "date": "2026-08-10",
+              "value": 6.7444
+            },
+            {
+              "date": "2026-08-11",
+              "value": 6.7453
+            },
+            {
+              "date": "2026-08-12",
+              "value": 6.7432
+            },
+            {
+              "date": "2026-08-13",
+              "value": 6.743
+            },
+            {
+              "date": "2026-08-14",
+              "value": 6.7413
+            },
+            {
+              "date": "2026-08-17",
+              "value": 6.7394
+            },
+            {
+              "date": "2026-08-18",
+              "value": 6.7423
+            },
+            {
+              "date": "2026-08-19",
+              "value": 6.7382
+            },
+            {
+              "date": "2026-08-20",
+              "value": 6.7236
+            },
+            {
+              "date": "2026-08-21",
+              "value": 6.7206
+            },
+            {
+              "date": "2026-08-24",
+              "value": 6.7227
+            },
+            {
+              "date": "2026-08-25",
+              "value": 6.7198
+            },
+            {
+              "date": "2026-08-26",
+              "value": 6.7205
+            },
+            {
+              "date": "2026-08-27",
+              "value": 6.7203
+            },
+            {
+              "date": "2026-08-28",
+              "value": 6.7209
             }
           ]
         },
@@ -2827,85 +3091,85 @@
       "headline": "Can Beijing’s gateway plan for Tibet survive geopolitics and natural disasters?",
       "summary": "On the windswept plains just south of Tibet’s second-largest city, the towering smart inspection systems and automated cargo gantries of a brand-new international land port gleam under the plateau’s high-altitude sun.\nOf",
       "source": "SCMP China",
-      "date": "Fri, 28 Aug 2026",
+      "date": "2026-08-28T22:00:09+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3365622/can-beijings-gateway-plan-tibet-survive-geopolitics-and-natural-disasters?utm_source=rss_feed"
     },
     {
       "headline": "Chinese rescuers reach checkpoint destroyed by deadly flash floods along Nepal border",
       "summary": "Beijing promised to send emergency aid to Nepal on Friday as Chinese rescuers battled through hazardous conditions to reach the border checkpoint hit by deadly flash floods this week.\nThe disaster left five dead and 558 ",
       "source": "SCMP China",
-      "date": "Fri, 28 Aug 2026",
+      "date": "2026-08-28T08:30:23+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3365583/china-pledges-send-urgent-emergency-aid-nepal-after-deadly-landslide?utm_source=rss_feed"
-    },
-    {
-      "headline": "Who Paid for China’s Last Debt Cleanup, and Who Will Pay for the Next?",
-      "summary": "",
-      "source": "Carnegie Endowment for International Peace",
-      "date": "Tue, 25 Aug 2026",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYkZfbGlSdkZoNGM5WDJoMFR2NlFvcVNRblRBdHJaM3NzQ3M0T3o5d3d3TE1UeFhuYzZzLW5PYmlta1RWS3VmcjJaRV9zTkNacGZaMC0ydG94WUd4RjNrVnA2UzM2QVM1eVdhUDcyU3V2bTBvN0RMNDlQcG04c29Gd3h6MHk2TTNJWjZJMlNPSWplR2QyV0dyNWZNaW16QUpTYlRfOGpWdzBWSHppX0hWTTFZSjY2ekVGRjlRMXFOS3c0ZDJycTdnSg?oc=5"
     },
     {
       "headline": "China industrial profits growth cools to slowest in seven months as economic slowdown deepens",
       "summary": "",
       "source": "CNBC",
-      "date": "Thu, 27 Aug 2026",
+      "date": "2026-08-27T01:47:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSER6em02cFktNlNhTHhMaGtLbklHVUIxYjdUaVd2Nm1MVmtmRGEyUkJJckRYWkF3SGUtczhmQXplOVlqdHVIRWdrQUhtVDNPTGhhM3Vnd0UtUk43SDV4bGllRElBYVRrb2hUWFNJSndrODdBX0tRemd3YmNjS0p5aFRCOE13V3JzNElqekRwSdIBlAFBVV95cUxNZmpPSFVUX21pSTRyMHczLXZnR1RINV9aZ3gwRWViWGVDeEhxc3EwVmNvTHd2MURUbUs1UHFtYWRNTE4zU2NZbWFoZ005V01DZUxmWUlwU0h3NDBXbC10c1piR2hFdURPeVcxQzcyQjJhSUtIVndZQjJxTGZZYVFyNlpKeUFZaEdIOWVjSlEwYTF5TE1B?oc=5"
-    },
-    {
-      "headline": "What does the latest data say about the state of China’s economy?",
-      "summary": "",
-      "source": "FocusEconomics",
-      "date": "Tue, 25 Aug 2026",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdVhuSjhGa3NENGNFY2hacnVaMUE2MWU0eEJtOU95TEF2VUx1TXFzQU5aOHJTYkZtaTQ5aE5xQWdoeDctQjAtZGZ5U0t2cVBLSDlfTGZrVXlhd0tIWUVuZzRQd1UtUm5Va0s4Q1ZEdktZYnZncFhnbmE0ZE50LVBFSGp1SHhqdVVNRWlWdExyaGJQcmNaLXg5M3VMcEVoc2RoN3A4?oc=5"
-    },
-    {
-      "headline": "Apollo chief economist says ‘China Shock 2.0 is here’ and it’s bad news for American companies",
-      "summary": "",
-      "source": "Fortune",
-      "date": "Tue, 25 Aug 2026",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aV29qVVRyTTRSb3N3a0p6Qk14SUxUelRrLVdITklpUWQ0WnNYX0xMbUtPMDc0WV8xNEZMUWpOUjQtaGE2YWpmWGVQTDFNOF9rWlI5SGg5UzM5dTVpb2V1eHJaeVN0TmxiVFl1dQ?oc=5"
-    },
-    {
-      "headline": "China's $119 billion policy financing tool begins project applications, faces roll-out lag",
-      "summary": "",
-      "source": "Reuters",
-      "date": "Mon, 24 Aug 2026",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZ2VSRllRaTg1YmZHU1Z4M0tIQ1UweV93Z2ZZeE13anhHbE9oZDNBMUltd2Z3ZHY5TmZuSmdsalh5MW9icjkzVHpyY2RNVW96RUFXb1kydENhQ0o2TVRBSmlETnlJUUFqZEJ0S1VlR2xJOHA3TzVnRzA4VURHdVpuVC1UbjVDa2gtRC0tZGxoWHdOS0tlaG1nM0Y3ZTlLaGotb1B4SzA3THZDU3h2bVdTSEtKSHVIYmk2SDBfMEI0ZXZXQ1BpSDZyQWhFMWVwSVU?oc=5"
-    },
-    {
-      "headline": "China Puts Brave Face on Growth in Rare Defense of Economy",
-      "summary": "",
-      "source": "Bloomberg.com",
-      "date": "Tue, 25 Aug 2026",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVN4WHROcFlxSmMzWG9PMjlJYU1mWGRKZnNzVXhZS2lyeWpZOUZLeW9XSld5aElsTW1TYVg1N21zeDAwWEw4TVdrRVFvVlptVGlTbk1NbXlyLVFua0ZVNHE3S2g5UTRlYy1VTVVDeGFHRnRMQVVIMFBydXpXVHlhWVRCU1hEMk5QQjJDZXJkZFhCYzY0WG0xZjFjSm55Zl9CWUdmendJRTBTd2xrdjBwU21tYWk?oc=5"
     },
     {
       "headline": "The U.S. and Canada are in a trade war. China aims to win it.",
       "summary": "",
       "source": "The Washington Post",
-      "date": "Wed, 26 Aug 2026",
+      "date": "2026-08-26T05:22:11+00:00",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRnVBRFNJY1poZjdOb21nOVYwYkd0SG9jY2pmaU9jdnZldi1hdE5XWW9jRTc5UzdJZ2g3OEkwejJES2xqYlBuc2ZBeVdaTUEwcHp4dHNZN0I2c2s5cE92VElaTjdDZmRIb2VtRFF3VzhHLXJVVUUydlp1VVh3NVV6NXEzdXozdFUybGFWdEo4U3dNb2VB?oc=5"
     },
     {
-      "headline": "Trump moves toward levying new tariff on China for flooding market with cheap goods, AP sources say",
+      "headline": "Who Paid for China’s Last Debt Cleanup, and Who Will Pay for the Next?",
       "summary": "",
-      "source": "AP News",
-      "date": "Mon, 24 Aug 2026",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQk12QTBQMWIwcnlxcmRTX2ZxRjhxZl9NN1BnTXVGRTcyLUJxclhTZlluRHd6MlVJUHd4U2tFNVVnTHlIbzdHWk9sSVdnSlZBUGVRWEFodWFaVTFyZE8xS3phSDZwdFltb0hOZ0pPQ3pGSzU3ZElYQm42ZzlOTUhDazJWeEhZNkNQWnE3T1F0QUtqaGFFQUtjTUYxQS0?oc=5"
+      "source": "Carnegie Endowment for International Peace",
+      "date": "2026-08-25T20:21:03+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYkZfbGlSdkZoNGM5WDJoMFR2NlFvcVNRblRBdHJaM3NzQ3M0T3o5d3d3TE1UeFhuYzZzLW5PYmlta1RWS3VmcjJaRV9zTkNacGZaMC0ydG94WUd4RjNrVnA2UzM2QVM1eVdhUDcyU3V2bTBvN0RMNDlQcG04c29Gd3h6MHk2TTNJWjZJMlNPSWplR2QyV0dyNWZNaW16QUpTYlRfOGpWdzBWSHppX0hWTTFZSjY2ekVGRjlRMXFOS3c0ZDJycTdnSg?oc=5"
+    },
+    {
+      "headline": "Apollo chief economist says ‘China Shock 2.0 is here’ and it’s bad news for American companies",
+      "summary": "",
+      "source": "Fortune",
+      "date": "2026-08-25T19:33:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aV29qVVRyTTRSb3N3a0p6Qk14SUxUelRrLVdITklpUWQ0WnNYX0xMbUtPMDc0WV8xNEZMUWpOUjQtaGE2YWpmWGVQTDFNOF9rWlI5SGg5UzM5dTVpb2V1eHJaeVN0TmxiVFl1dQ?oc=5"
+    },
+    {
+      "headline": "What does the latest data say about the state of China’s economy?",
+      "summary": "",
+      "source": "FocusEconomics",
+      "date": "2026-08-25T14:20:09+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdVhuSjhGa3NENGNFY2hacnVaMUE2MWU0eEJtOU95TEF2VUx1TXFzQU5aOHJTYkZtaTQ5aE5xQWdoeDctQjAtZGZ5U0t2cVBLSDlfTGZrVXlhd0tIWUVuZzRQd1UtUm5Va0s4Q1ZEdktZYnZncFhnbmE0ZE50LVBFSGp1SHhqdVVNRWlWdExyaGJQcmNaLXg5M3VMcEVoc2RoN3A4?oc=5"
     },
     {
       "headline": "China denounces US threat of sanctions over trade with Iran",
       "summary": "",
       "source": "The Guardian",
-      "date": "Tue, 25 Aug 2026",
+      "date": "2026-08-25T11:43:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZRzVaNkNpTzdlV2Y2TE5LOTEwbXVlOXd2LXdKejI1OGp2eXlGM3JOZlNaQjk5U1RlSXFKc0dETVk3Uy16MDV0LWIwdmpUdTZla09FdS1NRjR3TlFEOWZ0eXVuV0lRa0FSbDhvaWtLYlYxSnlrSGpEUkd1SzVsdw?oc=5"
+    },
+    {
+      "headline": "China Puts Brave Face on Growth in Rare Defense of Economy",
+      "summary": "",
+      "source": "Bloomberg.com",
+      "date": "2026-08-25T04:39:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVN4WHROcFlxSmMzWG9PMjlJYU1mWGRKZnNzVXhZS2lyeWpZOUZLeW9XSld5aElsTW1TYVg1N21zeDAwWEw4TVdrRVFvVlptVGlTbk1NbXlyLVFua0ZVNHE3S2g5UTRlYy1VTVVDeGFHRnRMQVVIMFBydXpXVHlhWVRCU1hEMk5QQjJDZXJkZFhCYzY0WG0xZjFjSm55Zl9CWUdmendJRTBTd2xrdjBwU21tYWk?oc=5"
+    },
+    {
+      "headline": "Trump moves toward levying new tariff on China for flooding market with cheap goods, AP sources say",
+      "summary": "",
+      "source": "AP News",
+      "date": "2026-08-24T22:17:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQk12QTBQMWIwcnlxcmRTX2ZxRjhxZl9NN1BnTXVGRTcyLUJxclhTZlluRHd6MlVJUHd4U2tFNVVnTHlIbzdHWk9sSVdnSlZBUGVRWEFodWFaVTFyZE8xS3phSDZwdFltb0hOZ0pPQ3pGSzU3ZElYQm42ZzlOTUhDazJWeEhZNkNQWnE3T1F0QUtqaGFFQUtjTUYxQS0?oc=5"
     },
     {
       "headline": "China and Switzerland have a new trade agreement. What does it mean for the EU?",
       "summary": "",
       "source": "South China Morning Post",
-      "date": "Mon, 24 Aug 2026",
+      "date": "2026-08-24T12:00:09+00:00",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNlJodzFHcEFVYWRITTBPMGdIaWhWdnF6WEs5SFNSMnNvOE95X21haHVmazhQeDA5UEJqc1ROQi1NUFpfd0wyMzE3Tlc4RVZqSWIwb2F3azcyVC1JUDd6aEEzYzl2VzRoY1NLMWZTYk5uVmdNNFR6UXR1dEhlZ09pMTlsYjJJbGhYRFI1cm9FMllNRTNyWEFObkVFd3ZMSzFBV2NReFBKOFlobzBHSkJPWlJzcEJvUzk2dDMwb3Z1TDNtTng4d0lvd1ZIcWtBOGRF0gHQAUFVX3lxTE5vY1pmdkwxUmtiaGlmYTdibGFmUGZxV2hIYnl1c0RSQXRCazVVOUk0V3lfZ3F1S21ySXhNZjlKcEM0MHhzOFpMaVFQNS13cE1FYUlwRllFM21BUGpEdWlZOXh0Z1ZGelVOWG5TUFFjTHhMaXo4UHFJejBrTkc3OUxTYnotV2JaaU9WSzB1TC1yMjd5dUs1TVotTmNUeHFfREYxaG4wdm11dGJDRndFaEdkZi1wbUVsNXE2UjhPLXE5LV9Rd2pxd3R0NVpvdUxic2Q?oc=5"
+    },
+    {
+      "headline": "China's $119 billion policy financing tool begins project applications, faces roll-out lag",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-08-24T10:49:43+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZ2VSRllRaTg1YmZHU1Z4M0tIQ1UweV93Z2ZZeE13anhHbE9oZDNBMUltd2Z3ZHY5TmZuSmdsalh5MW9icjkzVHpyY2RNVW96RUFXb1kydENhQ0o2TVRBSmlETnlJUUFqZEJ0S1VlR2xJOHA3TzVnRzA4VURHdVpuVC1UbjVDa2gtRC0tZGxoWHdOS0tlaG1nM0Y3ZTlLaGotb1B4SzA3THZDU3h2bVdTSEtKSHVIYmk2SDBfMEI0ZXZXQ1BpSDZyQWhFMWVwSVU?oc=5"
     }
   ]
 }

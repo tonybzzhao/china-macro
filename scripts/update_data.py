@@ -21,11 +21,12 @@ import json
 import sys
 import traceback
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date, timedelta
 from pathlib import Path
 
 import pandas as pd
 import akshare as ak
+import requests
 
 try:
     import feedparser
@@ -35,6 +36,8 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "data" / "history.json"
 MAX_POINTS = 36  # cap per series so the file doesn't grow unbounded
+# Per-series overrides — usdcny is daily, so 36 points would only cover ~5 weeks.
+MAX_POINTS_OVERRIDE = {"usdcny": 500}
 
 
 def log(msg):
@@ -72,15 +75,15 @@ def normalize_date(raw):
     return s
 
 
-def merge_points(existing, new_points):
-    """De-dupe by date (new wins), sort, cap to MAX_POINTS."""
+def merge_points(existing, new_points, max_points):
+    """De-dupe by date (new wins), sort, cap to max_points."""
     by_date = {p["date"]: p for p in existing}
     for p in new_points:
         if p.get("value") is None:
             continue
         by_date[p["date"]] = p
     merged = sorted(by_date.values(), key=lambda p: p["date"])
-    return merged[-MAX_POINTS:]
+    return merged[-max_points:]
 
 
 def update_series(data, category, key, new_points):
@@ -93,7 +96,8 @@ def update_series(data, category, key, new_points):
         log(f"SKIP {category}.{key}: not present in data/history.json schema")
         return
     before = len(series["data"])
-    series["data"] = merge_points(series["data"], new_points)
+    cap = MAX_POINTS_OVERRIDE.get(key, MAX_POINTS)
+    series["data"] = merge_points(series["data"], new_points, cap)
     log(f"OK {category}.{key}: {before} -> {len(series['data'])} points")
 
 
@@ -248,20 +252,26 @@ def fetch_rrr():
             continue
     return out
 
-def fetch_usdcny():
-    df = ak.macro_china_rmb()
-    date_col = find_col(df, ["日期", "date"])
-    val_col = find_col(df, ["美元汇率中间价", "value"])
-    if date_col is None or val_col is None:
-        raise ValueError(f"couldn't find date/value columns in {list(df.columns)}")
-    return [{"date": normalize_date(r[date_col]), "value": float(r[val_col])}
-            for _, r in df.iterrows() if pd.notna(r[val_col])]
+def fetch_usdcny_daily(days=90):
+    """Daily USD/CNY via Frankfurter (ECB reference rates) — free, no key,
+    genuinely live. Replaces ak.macro_china_rmb, which is dead (stops 2021)."""
+    start = (date.today() - timedelta(days=days)).isoformat()
+    end = date.today().isoformat()
+    resp = requests.get(
+        f"https://api.frankfurter.app/{start}..{end}",
+        params={"from": "USD", "to": "CNY"},
+        timeout=20,
+    )
+    resp.raise_for_status()
+    rates = resp.json().get("rates", {})
+    return [{"date": d, "value": v["CNY"]} for d, v in sorted(rates.items()) if "CNY" in v]
 
 
 # Verified live against a real run on 2026-08-29 — data current as of that date:
 FRESH_FETCHERS = [
     ("prices_credit", "tsf_flow", fetch_tsf_flow),                       # through 2026-04
     ("property_labor", "urban_unemployment", fetch_urban_unemployment),  # through 2026-07
+    ("external", "usdcny", fetch_usdcny_daily),                          # daily, via Frankfurter
     # lpr handled separately below (returns two series)
 ]
 
@@ -289,10 +299,11 @@ STALE_FETCHERS = [
 FETCHERS = FRESH_FETCHERS + STALE_FETCHERS
 
 # NOT wired at all, by design:
-# - usdcny (ak.macro_china_rmb): verified BROKEN, data stops 2021-05-13.
 # - rrr (ak.macro_china_reserve_requirement_ratio): verified BROKEN, data
-#   stops in 2007. Both need a replacement source before automating —
-#   PBOC's own site or a different akshare function. Left manually-seeded.
+#   stops in 2007. Needs a replacement source before automating — PBOC's own
+#   site or a different akshare function. Left manually-seeded.
+# (usdcny used to be here too — ak.macro_china_rmb is dead since 2021-05-13 —
+# but now runs on Frankfurter's daily feed instead, see FRESH_FETCHERS above.)
 # - retail_sales, fixed_asset_investment, property_investment,
 #   new_home_prices, youth_unemployment: no confirmed akshare function was
 #   found for these at all. Also manually-seeded.
@@ -363,11 +374,17 @@ def fetch_news(limit_per_feed=6):
                 if not is_econ_political(title, summary):
                     continue
 
+                parsed = entry.get("published_parsed")
+                date_iso = (
+                    datetime(*parsed[:6], tzinfo=timezone.utc).isoformat()
+                    if parsed else entry.get("published", "")
+                )
+
                 items.append({
                     "headline": title,
                     "summary": summary,
                     "source": source_name,
-                    "date": entry.get("published", "")[:16],
+                    "date": date_iso,
                     "url": entry.get("link", ""),
                 })
         except Exception as e:
@@ -376,7 +393,7 @@ def fetch_news(limit_per_feed=6):
     # de-dupe near-identical headlines across feeds (e.g. both Google News
     # queries surfacing the same article), keep first occurrence
     seen, deduped = set(), []
-    for item in items:
+    for item in sorted(items, key=lambda i: i["date"], reverse=True):
         key = item["headline"].lower()[:60]
         if key in seen:
             continue
@@ -401,8 +418,8 @@ def main():
     except Exception:
         log(f"FAIL prices_credit.lpr_*:\n{traceback.format_exc()}")
 
-    # rrr and usdcny intentionally not called here — see the "NOT wired"
-    # note above fetch_rrr/fetch_usdcny definitions.
+    # rrr intentionally not called here — see the "NOT wired" note above
+    # fetch_rrr's definition.
 
     try:
         news = fetch_news()

@@ -12,6 +12,39 @@ const CAT_COLOR_VAR = {
   property_labor: "--cat-property",
 };
 
+const GLOSSARY = {
+  GDP: "Gross Domestic Product",
+  PMI: "Purchasing Managers' Index",
+  CPI: "Consumer Price Index",
+  PPI: "Producer Price Index",
+  LPR: "Loan Prime Rate",
+  RRR: "Reserve Requirement Ratio",
+  TSF: "Total Social Financing",
+  M2: "Broad money supply — cash, deposits, and near-money",
+  YTD: "Year-to-Date",
+  NBS: "National Bureau of Statistics of China",
+  PBOC: "People's Bank of China",
+  GACC: "General Administration of Customs of China",
+  SAFE: "State Administration of Foreign Exchange of China",
+  ECB: "European Central Bank",
+  Caixin: "Caixin Media, publisher of China's private-sector PMI survey",
+};
+const ACRONYM_RE = new RegExp("\\b(" + Object.keys(GLOSSARY).join("|") + ")\\b", "g");
+
+// Which body sets each series — shown as a small credit line below its chart.
+const SOURCE_MAP = {
+  gdp_growth: "NBS", industrial_production: "NBS", retail_sales: "NBS",
+  fixed_asset_investment: "NBS", official_manufacturing_pmi: "NBS",
+  official_non_manufacturing_pmi: "NBS", cpi: "NBS", ppi: "NBS",
+  property_investment: "NBS", new_home_prices: "NBS",
+  urban_unemployment: "NBS", youth_unemployment: "NBS",
+  caixin_manufacturing_pmi: "Caixin/S&P Global",
+  lpr_1y: "PBOC", lpr_5y: "PBOC", rrr: "PBOC", m2_growth: "PBOC", tsf_flow: "PBOC",
+  exports_yoy: "GACC", imports_yoy: "GACC", trade_balance: "GACC",
+  fx_reserves: "SAFE",
+  usdcny: "ECB, via Frankfurter",
+};
+
 let DATA = null;
 let currentRange = 12; // months of history to show; 0 = all
 let currentCat = "growth";
@@ -117,12 +150,46 @@ function renderPanels() {
     const chartGrid = document.createElement("div");
     chartGrid.className = "chart-grid";
     seriesEntries.forEach(([key, series]) => {
-      chartGrid.appendChild(renderChartCard(series, catKey));
+      chartGrid.appendChild(renderChartCard(series, catKey, key));
     });
     panel.appendChild(chartGrid);
 
     panelsRoot.appendChild(panel);
   });
+}
+
+function glossSpan(term) {
+  const span = document.createElement("span");
+  span.className = "gloss";
+  span.textContent = term;
+  const def = GLOSSARY[term];
+  if (def) {
+    span.dataset.def = def;
+    span.tabIndex = 0;
+    const q = document.createElement("sup");
+    q.className = "gloss-q";
+    q.textContent = "?";
+    span.appendChild(q);
+  }
+  return span;
+}
+
+// Appends `text` into `container` as DOM nodes, wrapping any recognized
+// acronym (GDP, PMI, CPI, ...) in a hoverable glossary span.
+function appendGlossedText(container, text) {
+  ACRONYM_RE.lastIndex = 0;
+  let lastIndex = 0;
+  let match;
+  while ((match = ACRONYM_RE.exec(text))) {
+    if (match.index > lastIndex) {
+      container.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+    }
+    container.appendChild(glossSpan(match[0]));
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    container.appendChild(document.createTextNode(text.slice(lastIndex)));
+  }
 }
 
 function fmtValue(value, series) {
@@ -135,7 +202,9 @@ function fmtValue(value, series) {
 function seriesRange(series) {
   const pts = series.data || [];
   if (currentRange === 0) return pts;
-  const pointsPerMonth = series.freq === "quarterly" ? 1 / 3 : 1;
+  let pointsPerMonth = 1;
+  if (series.freq === "quarterly") pointsPerMonth = 1 / 3;
+  else if (series.freq === "daily") pointsPerMonth = 21; // trading days/month
   const n = Math.max(2, Math.round(currentRange * pointsPerMonth));
   return pts.slice(Math.max(0, pts.length - n));
 }
@@ -172,10 +241,12 @@ function renderTile(series) {
     const delta = last.value - prev.value;
     if (Math.abs(delta) > 1e-9) {
       const chip = document.createElement("span");
-      const dir = delta > 0 ? "up" : "down";
-      let cls = "neutral";
-      if (series.higher_is_better === true) cls = delta > 0 ? "good" : "bad";
-      if (series.higher_is_better === false) cls = delta > 0 ? "bad" : "good";
+      // Default convention: up = green, down = red. Only flipped when a
+      // series is explicitly marked higher_is_better === false (e.g.
+      // unemployment, where a rise is bad).
+      const cls = (series.higher_is_better === false)
+        ? (delta > 0 ? "bad" : "good")
+        : (delta > 0 ? "good" : "bad");
       chip.className = "chip " + cls;
       chip.textContent = (delta > 0 ? "▲ " : "▼ ") + Math.abs(delta).toFixed(series.decimals ?? 1);
       row.appendChild(chip);
@@ -191,33 +262,30 @@ function renderTile(series) {
   return tile;
 }
 
-function renderChartCard(series, catKey) {
+function renderChartCard(series, catKey, seriesKey) {
   const card = document.createElement("div");
   card.className = "chart-card";
 
+  const pts = seriesRange(series).filter((p) => typeof p.value === "number");
+
+  const head = document.createElement("div");
+  head.className = "chart-head";
+
   const h3 = document.createElement("h3");
-  h3.textContent = series.label;
-  card.appendChild(h3);
+  appendGlossedText(h3, series.label);
+  head.appendChild(h3);
+
+  const latest = document.createElement("div");
+  latest.className = "chart-latest";
+  latest.textContent = pts.length ? fmtValue(pts[pts.length - 1].value, series) : "";
+  head.appendChild(latest);
+
+  card.appendChild(head);
 
   const sub = document.createElement("div");
   sub.className = "chart-sub";
   sub.textContent = (series.unit || "") + (series.freq ? " · " + series.freq : "");
   card.appendChild(sub);
-
-  if (series.flag) {
-    const flag = document.createElement("div");
-    flag.className = "chart-flag";
-    flag.title = series.flag;
-    flag.textContent = "⚠ " + series.flag;
-    card.appendChild(flag);
-  }
-
-  const pts = seriesRange(series).filter((p) => typeof p.value === "number");
-
-  const latest = document.createElement("div");
-  latest.className = "chart-latest";
-  latest.textContent = pts.length ? fmtValue(pts[pts.length - 1].value, series) : "";
-  card.appendChild(latest);
 
   const svgWrap = document.createElement("div");
   svgWrap.className = "chart-svg-wrap";
@@ -227,21 +295,28 @@ function renderChartCard(series, catKey) {
     p.className = "no-data";
     p.textContent = "Not enough data points yet.";
     svgWrap.appendChild(p);
-    card.appendChild(svgWrap);
-    return card;
+  } else {
+    const colorVar = CAT_COLOR_VAR[catKey] || "--accent";
+    const svg = buildLineChart(pts, colorVar, series);
+    svgWrap.appendChild(svg.el);
+
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    svgWrap.appendChild(tooltip);
+
+    wireHover(svg, svgWrap, tooltip, pts, series);
+  }
+  card.appendChild(svgWrap);
+
+  const source = SOURCE_MAP[seriesKey];
+  if (source) {
+    const sourceLine = document.createElement("div");
+    sourceLine.className = "chart-source";
+    sourceLine.appendChild(document.createTextNode("Source: "));
+    appendGlossedText(sourceLine, source);
+    card.appendChild(sourceLine);
   }
 
-  const colorVar = CAT_COLOR_VAR[catKey] || "--accent";
-  const svg = buildLineChart(pts, colorVar, series);
-  svgWrap.appendChild(svg.el);
-
-  const tooltip = document.createElement("div");
-  tooltip.className = "tooltip";
-  svgWrap.appendChild(tooltip);
-
-  wireHover(svg, svgWrap, tooltip, pts, series);
-
-  card.appendChild(svgWrap);
   return card;
 }
 
@@ -377,10 +452,17 @@ function wireHover(svg, wrap, tooltip, pts, series) {
   svg.capture.addEventListener("pointerdown", (e) => moveTo(e.clientX));
 }
 
+function fmtNewsDate(raw) {
+  if (!raw) return "";
+  const d = new Date(raw);
+  if (isNaN(d)) return raw;
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+
 function renderNews() {
   const list = document.getElementById("news-list");
   list.textContent = "";
-  const items = DATA.news || [];
+  const items = [...(DATA.news || [])].sort((a, b) => new Date(b.date) - new Date(a.date));
   if (!items.length) {
     const p = document.createElement("p");
     p.className = "no-data";
@@ -407,7 +489,7 @@ function renderNews() {
 
     const meta = document.createElement("div");
     meta.className = "n-meta";
-    meta.textContent = [item.source, item.date].filter(Boolean).join(" · ");
+    meta.textContent = [item.source, fmtNewsDate(item.date)].filter(Boolean).join(" · ");
     a.appendChild(meta);
 
     list.appendChild(a);
