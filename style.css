@@ -119,20 +119,6 @@ a { color: inherit; }
   gap: 8px;
   margin-bottom: 8px;
 }
-.substack-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 7px;
-  background: #FF6719; /* Substack brand orange */
-  color: #fff;
-  flex-shrink: 0;
-}
-.substack-link svg { width: 14px; height: 14px; }
-.substack-link:hover { opacity: 0.88; }
-.substack-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .theme-switch {
   display: inline-flex;
@@ -432,6 +418,15 @@ a { color: inherit; }
   box-shadow: var(--shadow);
   position: sticky;
   top: 20px;
+  max-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+}
+.news-heading { flex-shrink: 0; }
+#news-list { overflow-y: auto; }
+@media (max-width: 980px) {
+  .news-rail { max-height: none; }
+  #news-list { overflow-y: visible; }
 }
 .news-heading {
   display: flex;
@@ -471,6 +466,32 @@ footer {
   line-height: 1.7;
 }
 footer a { color: var(--text-muted); }
+
+.credit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.credit-text { font-size: 12px; color: var(--text-muted); font-family: "IBM Plex Mono", monospace; }
+.credit-links { display: flex; gap: 8px; }
+.credit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+.credit-btn svg { width: 15px; height: 15px; }
+.credit-btn:hover { opacity: 0.88; }
+.credit-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.credit-email { background: var(--surface-2); color: var(--text-secondary); }
+.credit-linkedin { background: #0A66C2; color: #fff; }
+.credit-substack { background: #FF6719; color: #fff; }
 
 .section-label {
   font-family: "IBM Plex Mono", monospace;
