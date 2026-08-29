@@ -161,13 +161,19 @@ a { color: inherit; }
 }
 #beijing-time { color: var(--text-secondary); font-weight: 600; }
 .market-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   font-size: 10.5px;
   font-weight: 600;
-  padding: 1px 7px;
+  padding: 1px 8px 1px 7px;
   border-radius: 100px;
 }
+.market-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
 .market-badge.open { color: var(--good); background: color-mix(in srgb, var(--good) 14%, transparent); }
+.market-badge.open .market-dot { background: var(--good); box-shadow: 0 0 0 2px color-mix(in srgb, var(--good) 25%, transparent); }
 .market-badge.closed { color: var(--text-muted); background: var(--surface-2); }
+.market-badge.closed .market-dot { background: var(--critical); }
 @media (max-width: 640px) {
   .beijing-clock { justify-content: flex-start; }
 }

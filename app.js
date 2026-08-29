@@ -88,13 +88,14 @@ function isMarketOpen(parts) {
 function initBeijingClock() {
   const timeEl = document.getElementById("beijing-time");
   const badgeEl = document.getElementById("market-status");
-  if (!timeEl || !badgeEl) return;
+  const labelEl = badgeEl ? badgeEl.querySelector(".market-label") : null;
+  if (!timeEl || !badgeEl || !labelEl) return;
 
   function tick() {
     const parts = getBeijingParts(new Date());
     timeEl.textContent = `${parts.hour}:${parts.minute}:${parts.second}`;
     const open = isMarketOpen(parts);
-    badgeEl.textContent = open ? "Market open" : "Market closed";
+    labelEl.textContent = open ? "Market open" : "Market closed";
     badgeEl.classList.toggle("open", open);
     badgeEl.classList.toggle("closed", !open);
   }
