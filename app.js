@@ -570,9 +570,34 @@ function fmtNewsDate(raw) {
   return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
+const NEWS_BATCH_SIZE = 12;
+let newsQueue = [];
+let newsShownCount = 0;
+let newsObserver = null;
+
+function renderNewsItem(item) {
+  const a = document.createElement(item.url ? "a" : "div");
+  a.className = "news-item";
+  if (item.url) { a.href = item.url; a.target = "_blank"; a.rel = "noopener noreferrer"; }
+
+  const head = document.createElement("div");
+  head.className = "n-head";
+  head.textContent = item.headline || "";
+  a.appendChild(head);
+
+  const meta = document.createElement("div");
+  meta.className = "n-meta";
+  meta.textContent = [item.source, fmtNewsDate(item.date)].filter(Boolean).join(" · ");
+  a.appendChild(meta);
+
+  return a;
+}
+
 function renderNews() {
   const list = document.getElementById("news-list");
   list.textContent = "";
+  if (newsObserver) { newsObserver.disconnect(); newsObserver = null; }
+
   let items = [...(DATA.news || [])].sort((a, b) => new Date(b.date) - new Date(a.date));
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
@@ -589,21 +614,43 @@ function renderNews() {
     list.appendChild(p);
     return;
   }
-  items.forEach((item) => {
-    const a = document.createElement(item.url ? "a" : "div");
-    a.className = "news-item";
-    if (item.url) { a.href = item.url; a.target = "_blank"; a.rel = "noopener noreferrer"; }
 
-    const head = document.createElement("div");
-    head.className = "n-head";
-    head.textContent = item.headline || "";
-    a.appendChild(head);
+  newsQueue = items;
+  newsShownCount = 0;
+  loadMoreNews();
+}
 
-    const meta = document.createElement("div");
-    meta.className = "n-meta";
-    meta.textContent = [item.source, fmtNewsDate(item.date)].filter(Boolean).join(" · ");
-    a.appendChild(meta);
+// Renders the next batch and, if more remain, arms an IntersectionObserver
+// on a sentinel row so scrolling near the bottom of the (independently
+// scrollable) news list keeps pulling in more of the already-fetched pool.
+function loadMoreNews() {
+  const list = document.getElementById("news-list");
+  const oldSentinel = list.querySelector(".news-sentinel");
+  if (oldSentinel) oldSentinel.remove();
+  const oldEnd = list.querySelector(".news-end");
+  if (oldEnd) oldEnd.remove();
 
-    list.appendChild(a);
-  });
+  const next = newsQueue.slice(newsShownCount, newsShownCount + NEWS_BATCH_SIZE);
+  next.forEach((item) => list.appendChild(renderNewsItem(item)));
+  newsShownCount += next.length;
+
+  if (newsShownCount < newsQueue.length) {
+    const sentinel = document.createElement("div");
+    sentinel.className = "news-sentinel";
+    list.appendChild(sentinel);
+    if (!newsObserver) {
+      newsObserver = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) loadMoreNews();
+        },
+        { root: list, rootMargin: "200px" }
+      );
+    }
+    newsObserver.observe(sentinel);
+  } else {
+    const end = document.createElement("p");
+    end.className = "no-data news-end";
+    end.textContent = "You're all caught up.";
+    list.appendChild(end);
+  }
 }

@@ -349,8 +349,9 @@ FETCHERS = FRESH_FETCHERS + STALE_FETCHERS
 # don't publish their own public RSS.
 NEWS_FEEDS = [
     ("SCMP China", "https://www.scmp.com/rss/318198/feed"),
-    ("Google News", "https://news.google.com/rss/search?q=China+economy+when:7d&hl=en-US&gl=US&ceid=US:en"),
-    ("Google News", "https://news.google.com/rss/search?q=China+politics+OR+China+trade+when:7d&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News", "https://news.google.com/rss/search?q=China+economy+when:30d&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News", "https://news.google.com/rss/search?q=China+politics+OR+China+trade+when:30d&hl=en-US&gl=US&ceid=US:en"),
+    ("Google News", "https://news.google.com/rss/search?q=China+PBOC+OR+China+yuan+OR+China+stocks+when:30d&hl=en-US&gl=US&ceid=US:en"),
 ]
 
 TAG_RE = re.compile(r"<[^>]+>")
@@ -371,7 +372,7 @@ def is_econ_political(title, summary):
     text = (title + " " + summary).lower()
     return any(kw in text for kw in ECON_POLITICAL_KEYWORDS)
 
-def fetch_news(limit_per_feed=6):
+def fetch_news(limit_per_feed=40):
     if feedparser is None:
         log("feedparser not installed, skipping news refresh")
         return []
