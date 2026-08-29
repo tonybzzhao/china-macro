@@ -31,29 +31,41 @@ const GLOSSARY = {
 };
 const ACRONYM_RE = new RegExp("\\b(" + Object.keys(GLOSSARY).join("|") + ")\\b", "g");
 
-// Which body sets each series — shown as a small credit line below its chart.
+// Which body sets each series — shown as a clickable credit line below its
+// chart, linking to that body's own site.
+const SOURCES = {
+  NBS: { label: "NBS", url: "https://www.stats.gov.cn/english/" },
+  PBOC: { label: "PBOC", url: "http://www.pbc.gov.cn/en/3688006/index.html" },
+  GACC: { label: "GACC", url: "http://english.customs.gov.cn/" },
+  SAFE: { label: "SAFE", url: "https://www.safe.gov.cn/en/" },
+  CAIXIN: { label: "Caixin / S&P Global", url: "https://www.caixinglobal.com/" },
+  FRANKFURTER: { label: "ECB, via Frankfurter", url: "https://www.frankfurter.app/" },
+};
 const SOURCE_MAP = {
   gdp_growth: "NBS", industrial_production: "NBS", retail_sales: "NBS",
   fixed_asset_investment: "NBS", official_manufacturing_pmi: "NBS",
   official_non_manufacturing_pmi: "NBS", cpi: "NBS", ppi: "NBS",
   property_investment: "NBS", new_home_prices: "NBS",
   urban_unemployment: "NBS", youth_unemployment: "NBS",
-  caixin_manufacturing_pmi: "Caixin/S&P Global",
-  lpr_1y: "PBOC", lpr_5y: "PBOC", rrr: "PBOC", m2_growth: "PBOC", tsf_flow: "PBOC",
+  caixin_manufacturing_pmi: "CAIXIN",
+  lpr_1y: "PBOC", lpr_5y: "PBOC", rrr: "PBOC", m1_growth: "PBOC", m2_growth: "PBOC",
+  m1_m2_gap: "PBOC", tsf_flow: "PBOC",
   exports_yoy: "GACC", imports_yoy: "GACC", trade_balance: "GACC",
   fx_reserves: "SAFE",
-  usdcny: "ECB, via Frankfurter",
+  usdcny: "FRANKFURTER",
 };
 
 let DATA = null;
 let currentRange = 12; // months of history to show; 0 = all
 let currentCat = "growth";
+let searchQuery = "";
 
 init();
 
 async function init() {
   bindFilterRow();
   bindTabs();
+  bindSearch();
   try {
     const res = await fetch("data/history.json", { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -100,6 +112,15 @@ function bindTabs() {
   });
 }
 
+function bindSearch() {
+  const input = document.getElementById("search-input");
+  input.addEventListener("input", () => {
+    searchQuery = input.value.trim();
+    renderPanels();
+    renderNews();
+  });
+}
+
 function renderMeta() {
   const el = document.getElementById("asof-date");
   if (DATA.meta && DATA.meta.last_updated) {
@@ -122,6 +143,14 @@ function renderMeta() {
 function renderPanels() {
   const panelsRoot = document.getElementById("panels");
   panelsRoot.textContent = "";
+  const tabsEl = document.getElementById("tabs");
+
+  if (searchQuery) {
+    tabsEl.style.display = "none";
+    panelsRoot.appendChild(renderSearchResults());
+    return;
+  }
+  tabsEl.style.display = "";
 
   CAT_ORDER.forEach((catKey) => {
     const cat = DATA.categories && DATA.categories[catKey];
@@ -158,6 +187,44 @@ function renderPanels() {
   });
 }
 
+// Search mode ignores the active tab and shows matching indicators from
+// every category in one flat list.
+function renderSearchResults() {
+  const panel = document.createElement("div");
+  panel.className = "panel active";
+
+  const q = searchQuery.toLowerCase();
+  const matches = [];
+  CAT_ORDER.forEach((catKey) => {
+    const cat = DATA.categories && DATA.categories[catKey];
+    if (!cat || !cat.series) return;
+    Object.entries(cat.series).forEach(([key, series]) => {
+      if (series.label.toLowerCase().includes(q)) matches.push([catKey, key, series]);
+    });
+  });
+
+  const heading = document.createElement("p");
+  heading.className = "section-label";
+  heading.textContent = matches.length
+    ? `${matches.length} indicator${matches.length === 1 ? "" : "s"} matching "${searchQuery}"`
+    : `No indicators matching "${searchQuery}"`;
+  panel.appendChild(heading);
+
+  if (matches.length) {
+    const kpiGrid = document.createElement("div");
+    kpiGrid.className = "kpi-grid";
+    matches.forEach(([, , series]) => kpiGrid.appendChild(renderTile(series)));
+    panel.appendChild(kpiGrid);
+
+    const chartGrid = document.createElement("div");
+    chartGrid.className = "chart-grid";
+    matches.forEach(([catKey, key, series]) => chartGrid.appendChild(renderChartCard(series, catKey, key)));
+    panel.appendChild(chartGrid);
+  }
+
+  return panel;
+}
+
 function glossSpan(term) {
   const span = document.createElement("span");
   span.className = "gloss";
@@ -166,10 +233,6 @@ function glossSpan(term) {
   if (def) {
     span.dataset.def = def;
     span.tabIndex = 0;
-    const q = document.createElement("sup");
-    q.className = "gloss-q";
-    q.textContent = "?";
-    span.appendChild(q);
   }
   return span;
 }
@@ -308,12 +371,19 @@ function renderChartCard(series, catKey, seriesKey) {
   }
   card.appendChild(svgWrap);
 
-  const source = SOURCE_MAP[seriesKey];
+  const sourceKey = SOURCE_MAP[seriesKey];
+  const source = sourceKey && SOURCES[sourceKey];
   if (source) {
     const sourceLine = document.createElement("div");
     sourceLine.className = "chart-source";
     sourceLine.appendChild(document.createTextNode("Source: "));
-    appendGlossedText(sourceLine, source);
+    const link = document.createElement("a");
+    link.className = "source-link";
+    link.href = source.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = source.label;
+    sourceLine.appendChild(link);
     card.appendChild(sourceLine);
   }
 
@@ -375,13 +445,23 @@ function buildLineChart(pts, colorVar, series) {
   endDot.setAttribute("stroke", "var(--surface-1)");
   svg.appendChild(endDot);
 
-  // x-axis first/last date labels
-  [0, pts.length - 1].forEach((i) => {
+  // x-axis date labels — evenly spaced across the full range, not
+  // condensed down to just the two endpoints.
+  const tickCount = Math.min(6, pts.length);
+  const tickIndices = [...new Set(
+    Array.from({ length: tickCount }, (_, i) =>
+      Math.round((i / (tickCount - 1)) * (pts.length - 1))
+    )
+  )];
+  tickIndices.forEach((i) => {
     const t = document.createElementNS(svgNS, "text");
     t.setAttribute("class", "chart-axis-label");
     t.setAttribute("x", x(i));
     t.setAttribute("y", CHART_H - 3);
-    t.setAttribute("text-anchor", i === 0 ? "start" : "end");
+    let anchor = "middle";
+    if (i === 0) anchor = "start";
+    else if (i === pts.length - 1) anchor = "end";
+    t.setAttribute("text-anchor", anchor);
     t.textContent = pts[i].date;
     svg.appendChild(t);
   });
@@ -462,11 +542,19 @@ function fmtNewsDate(raw) {
 function renderNews() {
   const list = document.getElementById("news-list");
   list.textContent = "";
-  const items = [...(DATA.news || [])].sort((a, b) => new Date(b.date) - new Date(a.date));
+  let items = [...(DATA.news || [])].sort((a, b) => new Date(b.date) - new Date(a.date));
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    items = items.filter((i) =>
+      (i.headline || "").toLowerCase().includes(q) ||
+      (i.summary || "").toLowerCase().includes(q) ||
+      (i.source || "").toLowerCase().includes(q)
+    );
+  }
   if (!items.length) {
     const p = document.createElement("p");
     p.className = "no-data";
-    p.textContent = "No headlines yet.";
+    p.textContent = searchQuery ? `No headlines matching "${searchQuery}".` : "No headlines yet.";
     list.appendChild(p);
     return;
   }

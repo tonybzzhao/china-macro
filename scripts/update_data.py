@@ -187,8 +187,38 @@ def fetch_imports():
 def fetch_trade_balance():
     return simple_series(ak.macro_china_trade_balance, DATE_COLS, VAL_COLS)
 
-def fetch_m2():
-    return simple_series(ak.macro_china_m2_yearly, DATE_COLS, VAL_COLS)
+def _yyyy_dot_m_to_month(raw):
+    """'2026.7' -> '2026-07'."""
+    s = str(raw).strip()
+    m = re.match(r"(\d{4})\.(\d{1,2})", s)
+    return f"{m.group(1)}-{int(m.group(2)):02d}" if m else s
+
+
+def fetch_money_supply():
+    """M1 and M2 y/y growth in one call — fresher than the old
+    ak.macro_china_m2_yearly (which was verified stale, frozen ~Sep 2025).
+    Also derives the M1-M2 'scissors gap', a widely-watched liquidity/
+    sentiment signal in Chinese markets."""
+    df = ak.macro_china_supply_of_money()
+    date_col = find_col(df, ["统计时间"])
+    m2_col = find_col(df, ["货币和准货币（广义货币M2）同比增长"])
+    m1_col = find_col(df, ["货币(狭义货币M1)同比增长"])
+    if not all([date_col, m2_col, m1_col]):
+        raise ValueError(f"couldn't find expected columns in {list(df.columns)}")
+
+    m1_pts, m2_pts, gap_pts = [], [], []
+    for _, r in df.iterrows():
+        m1v, m2v = clean_float(r[m1_col]), clean_float(r[m2_col])
+        if m1v is None and m2v is None:
+            continue
+        d = _yyyy_dot_m_to_month(r[date_col])
+        if m1v is not None:
+            m1_pts.append({"date": d, "value": m1v})
+        if m2v is not None:
+            m2_pts.append({"date": d, "value": m2v})
+        if m1v is not None and m2v is not None:
+            gap_pts.append({"date": d, "value": round(m1v - m2v, 2)})
+    return m1_pts, m2_pts, gap_pts
 
 def fetch_urban_unemployment():
     return simple_series(
@@ -272,7 +302,8 @@ FRESH_FETCHERS = [
     ("prices_credit", "tsf_flow", fetch_tsf_flow),                       # through 2026-04
     ("property_labor", "urban_unemployment", fetch_urban_unemployment),  # through 2026-07
     ("external", "usdcny", fetch_usdcny_daily),                          # daily, via Frankfurter
-    # lpr handled separately below (returns two series)
+    # lpr and money supply (m1/m2/gap) handled separately below — each
+    # returns more than one series from a single call.
 ]
 
 # Wired to a real akshare function, but verified STALE on 2026-08-29 — all of
@@ -289,7 +320,6 @@ STALE_FETCHERS = [
     ("growth", "gdp_growth", fetch_gdp),
     ("prices_credit", "cpi", fetch_cpi),
     ("prices_credit", "ppi", fetch_ppi),
-    ("prices_credit", "m2_growth", fetch_m2),
     ("external", "exports_yoy", fetch_exports),
     ("external", "imports_yoy", fetch_imports),
     ("external", "trade_balance", fetch_trade_balance),
@@ -417,6 +447,14 @@ def main():
         update_series(data, "prices_credit", "lpr_5y", lpr5y)
     except Exception:
         log(f"FAIL prices_credit.lpr_*:\n{traceback.format_exc()}")
+
+    try:
+        m1_pts, m2_pts, gap_pts = fetch_money_supply()
+        update_series(data, "prices_credit", "m1_growth", m1_pts)
+        update_series(data, "prices_credit", "m2_growth", m2_pts)
+        update_series(data, "prices_credit", "m1_m2_gap", gap_pts)
+    except Exception:
+        log(f"FAIL prices_credit.m1_m2_gap:\n{traceback.format_exc()}")
 
     # rrr intentionally not called here — see the "NOT wired" note above
     # fetch_rrr's definition.
