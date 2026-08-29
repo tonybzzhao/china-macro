@@ -113,13 +113,33 @@ a { color: inherit; }
   color: var(--text-muted);
   line-height: 1.7;
 }
+.masthead-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.substack-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background: #FF6719; /* Substack brand orange */
+  color: #fff;
+  flex-shrink: 0;
+}
+.substack-link svg { width: 14px; height: 14px; }
+.substack-link:hover { opacity: 0.88; }
+.substack-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
 .theme-switch {
   display: inline-flex;
   background: var(--surface-2);
   border-radius: 7px;
   padding: 2px;
   gap: 1px;
-  margin-bottom: 8px;
 }
 .theme-btn {
   border: none;
@@ -332,13 +352,15 @@ a { color: inherit; }
   padding-top: 8px;
   border-top: 1px solid var(--border);
 }
+/* .source-link is also .gloss — reuses its dotted underline + hover-popup,
+   just recolored to read as a link and with a pointer cursor (clicking is
+   the primary action here, unlike a plain glossary term). */
 .source-link {
   color: var(--accent);
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 2px;
+  border-bottom-color: currentColor;
+  cursor: pointer;
 }
-.source-link:hover { text-decoration-style: solid; }
+.source-link:hover { border-bottom-style: solid; }
 
 .gloss {
   border-bottom: 1px dotted var(--text-muted);
@@ -411,13 +433,16 @@ a { color: inherit; }
   position: sticky;
   top: 20px;
 }
-.news-rail h2 {
+.news-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: "Archivo", sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
-  margin: 0 0 2px;
+  margin: 0 0 14px;
 }
-.news-rail .panel-sub { font-size: 11.5px; color: var(--text-muted); margin: 0 0 12px; }
+.news-heading svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
 .news-item {
   display: block;
   padding: 10px 0;

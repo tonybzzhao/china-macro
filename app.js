@@ -34,12 +34,12 @@ const ACRONYM_RE = new RegExp("\\b(" + Object.keys(GLOSSARY).join("|") + ")\\b",
 // Which body sets each series — shown as a clickable credit line below its
 // chart, linking to that body's own site.
 const SOURCES = {
-  NBS: { label: "NBS", url: "https://www.stats.gov.cn/english/" },
-  PBOC: { label: "PBOC", url: "http://www.pbc.gov.cn/en/3688006/index.html" },
-  GACC: { label: "GACC", url: "http://english.customs.gov.cn/" },
-  SAFE: { label: "SAFE", url: "https://www.safe.gov.cn/en/" },
-  CAIXIN: { label: "Caixin / S&P Global", url: "https://www.caixinglobal.com/" },
-  FRANKFURTER: { label: "ECB, via Frankfurter", url: "https://www.frankfurter.app/" },
+  NBS: { label: "NBS", url: "https://www.stats.gov.cn/english/", def: "National Bureau of Statistics of China" },
+  PBOC: { label: "PBOC", url: "http://www.pbc.gov.cn/en/3688006/index.html", def: "People's Bank of China" },
+  GACC: { label: "GACC", url: "http://english.customs.gov.cn/", def: "General Administration of Customs of China" },
+  SAFE: { label: "SAFE", url: "https://www.safe.gov.cn/en/", def: "State Administration of Foreign Exchange of China" },
+  CAIXIN: { label: "Caixin / S&P Global", url: "https://www.caixinglobal.com/", def: "Caixin Media, publisher of China's private-sector PMI survey (compiled with S&P Global)" },
+  FRANKFURTER: { label: "ECB, via Frankfurter", url: "https://www.frankfurter.app/", def: "European Central Bank reference rate, served via the free Frankfurter API" },
 };
 const SOURCE_MAP = {
   gdp_growth: "NBS", industrial_production: "NBS", retail_sales: "NBS",
@@ -406,11 +406,14 @@ function renderChartCard(series, catKey, seriesKey) {
     sourceLine.className = "chart-source";
     sourceLine.appendChild(document.createTextNode("Source: "));
     const link = document.createElement("a");
-    link.className = "source-link";
+    // Both a real link (click -> the source's own site) and a glossary
+    // term (hover/focus -> full name), via the shared .gloss popup styles.
+    link.className = "gloss source-link";
     link.href = source.url;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.textContent = source.label;
+    link.dataset.def = source.def;
     sourceLine.appendChild(link);
     card.appendChild(sourceLine);
   }
@@ -595,13 +598,6 @@ function renderNews() {
     head.className = "n-head";
     head.textContent = item.headline || "";
     a.appendChild(head);
-
-    if (item.summary) {
-      const sum = document.createElement("div");
-      sum.className = "n-sum";
-      sum.textContent = item.summary;
-      a.appendChild(sum);
-    }
 
     const meta = document.createElement("div");
     meta.className = "n-meta";

@@ -35,9 +35,10 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "data" / "history.json"
-MAX_POINTS = 36  # cap per series so the file doesn't grow unbounded
-# Per-series overrides — usdcny is daily, so 36 points would only cover ~5 weeks.
-MAX_POINTS_OVERRIDE = {"usdcny": 500}
+MAX_POINTS = 1000  # effectively "keep everything the source gives" for monthly/quarterly data
+# Per-series overrides — usdcny is daily; 6000 covers ~16 years, comfortably
+# past Frankfurter's actual CNY history.
+MAX_POINTS_OVERRIDE = {"usdcny": 10000}
 
 
 def log(msg):
@@ -282,10 +283,10 @@ def fetch_rrr():
             continue
     return out
 
-def fetch_usdcny_daily(days=90):
+def fetch_usdcny_daily(start="1999-01-04"):
     """Daily USD/CNY via Frankfurter (ECB reference rates) — free, no key,
-    genuinely live. Replaces ak.macro_china_rmb, which is dead (stops 2021)."""
-    start = (date.today() - timedelta(days=days)).isoformat()
+    genuinely live. Replaces ak.macro_china_rmb, which is dead (stops 2021).
+    1999-01-04 is the first date ECB reference rates are published for."""
     end = date.today().isoformat()
     resp = requests.get(
         f"https://api.frankfurter.app/{start}..{end}",
