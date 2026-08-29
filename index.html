@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>China Macro Pulse</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div>
+      <p class="kicker">People's Republic of China · Macroeconomic Snapshot</p>
+      <h1>China Macro Pulse</h1>
+      <p class="sub">Growth, prices, credit, trade, property and labor — refreshed automatically from official releases and market data.</p>
+    </div>
+    <div class="asof">
+      <div><span class="live-dot"></span>Auto-updated on a schedule</div>
+      <div>Data as of <strong id="asof-date">—</strong></div>
+    </div>
+  </div>
+
+  <div class="filter-row">
+    <div class="range-group" id="range-group">
+      <button class="range-btn" data-range="6">6M</button>
+      <button class="range-btn active" data-range="12">1Y</button>
+      <button class="range-btn" data-range="24">2Y</button>
+      <button class="range-btn" data-range="0">All</button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="main-col">
+
+      <div class="tabs" id="tabs" role="tablist">
+        <button class="tab active" data-cat="growth" role="tab">Growth &amp; Activity</button>
+        <button class="tab" data-cat="prices_credit" role="tab">Prices &amp; Credit</button>
+        <button class="tab" data-cat="external" role="tab">External Sector</button>
+        <button class="tab" data-cat="property_labor" role="tab">Property &amp; Labor</button>
+      </div>
+
+      <div id="panels"></div>
+
+    </div>
+
+    <aside class="news-rail">
+      <h2>Top News</h2>
+      <p class="panel-sub">Political &amp; economic headlines</p>
+      <div id="news-list"></div>
+    </aside>
+  </div>
+
+  <footer id="footer-sources">
+    Loading source information…
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

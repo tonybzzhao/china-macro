@@ -1,0 +1,2911 @@
+{
+  "meta": {
+    "last_updated": "2026-08-29T20:33:03.383284+00:00",
+    "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
+    "sources": [
+      "tradingeconomics.com/china",
+      "investing.com economic calendar (China)",
+      "stats.gov.cn (NBS)",
+      "pbc.gov.cn (PBOC)",
+      "x-rates.com",
+      "caixinglobal.com"
+    ]
+  },
+  "categories": {
+    "growth": {
+      "label": "Growth & Activity",
+      "series": {
+        "gdp_growth": {
+          "label": "Real GDP Growth",
+          "unit": "% y/y",
+          "freq": "quarterly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "flag": "2025-Q1 and 2025-Q2 not found in sourced snippets — gap.",
+          "data": [
+            {
+              "date": "2017-Q3",
+              "value": 6.8
+            },
+            {
+              "date": "2017-Q4",
+              "value": 6.8
+            },
+            {
+              "date": "2018-Q1",
+              "value": 6.8
+            },
+            {
+              "date": "2018-Q2",
+              "value": 6.7
+            },
+            {
+              "date": "2018-Q3",
+              "value": 6.5
+            },
+            {
+              "date": "2018-Q4",
+              "value": 6.4
+            },
+            {
+              "date": "2019-Q1",
+              "value": 6.4
+            },
+            {
+              "date": "2019-Q2",
+              "value": 6.2
+            },
+            {
+              "date": "2019-Q3",
+              "value": 6.0
+            },
+            {
+              "date": "2019-Q4",
+              "value": 6.0
+            },
+            {
+              "date": "2020-Q1",
+              "value": -6.8
+            },
+            {
+              "date": "2020-Q2",
+              "value": 3.2
+            },
+            {
+              "date": "2020-Q3",
+              "value": 4.9
+            },
+            {
+              "date": "2020-Q4",
+              "value": 6.5
+            },
+            {
+              "date": "2021-Q1",
+              "value": 18.3
+            },
+            {
+              "date": "2021-Q2",
+              "value": 7.9
+            },
+            {
+              "date": "2021-Q3",
+              "value": 4.9
+            },
+            {
+              "date": "2021-Q4",
+              "value": 4.0
+            },
+            {
+              "date": "2022-Q1",
+              "value": 4.8
+            },
+            {
+              "date": "2022-Q2",
+              "value": 0.4
+            },
+            {
+              "date": "2022-Q3",
+              "value": 3.9
+            },
+            {
+              "date": "2022-Q4",
+              "value": 2.9
+            },
+            {
+              "date": "2023-Q1",
+              "value": 4.5
+            },
+            {
+              "date": "2023-Q2",
+              "value": 6.3
+            },
+            {
+              "date": "2023-Q3",
+              "value": 4.9
+            },
+            {
+              "date": "2023-Q4",
+              "value": 5.2
+            },
+            {
+              "date": "2024-Q1",
+              "value": 5.3
+            },
+            {
+              "date": "2024-Q2",
+              "value": 4.7
+            },
+            {
+              "date": "2024-Q3",
+              "value": 4.6
+            },
+            {
+              "date": "2024-Q4",
+              "value": 5.4
+            },
+            {
+              "date": "2025-Q1",
+              "value": 5.4
+            },
+            {
+              "date": "2025-Q2",
+              "value": 5.2
+            },
+            {
+              "date": "2025-Q3",
+              "value": 4.8
+            },
+            {
+              "date": "2025-Q4",
+              "value": 4.5
+            },
+            {
+              "date": "2026-Q1",
+              "value": 5.0
+            },
+            {
+              "date": "2026-Q2",
+              "value": 4.3
+            }
+          ]
+        },
+        "industrial_production": {
+          "label": "Industrial Production",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "flag": "China does not publish a standalone January reading (combined with Feb around Lunar New Year).",
+          "data": [
+            {
+              "date": "2023-04",
+              "value": 3.9
+            },
+            {
+              "date": "2023-05",
+              "value": 5.6
+            },
+            {
+              "date": "2023-06",
+              "value": 3.5
+            },
+            {
+              "date": "2023-07",
+              "value": 4.4
+            },
+            {
+              "date": "2023-08",
+              "value": 3.7
+            },
+            {
+              "date": "2023-09",
+              "value": 4.5
+            },
+            {
+              "date": "2023-10",
+              "value": 4.5
+            },
+            {
+              "date": "2023-11",
+              "value": 4.6
+            },
+            {
+              "date": "2023-12",
+              "value": 6.6
+            },
+            {
+              "date": "2024-01",
+              "value": 6.8
+            },
+            {
+              "date": "2024-03",
+              "value": 7.0
+            },
+            {
+              "date": "2024-04",
+              "value": 4.5
+            },
+            {
+              "date": "2024-05",
+              "value": 6.7
+            },
+            {
+              "date": "2024-06",
+              "value": 5.6
+            },
+            {
+              "date": "2024-07",
+              "value": 5.3
+            },
+            {
+              "date": "2024-08",
+              "value": 5.1
+            },
+            {
+              "date": "2024-09",
+              "value": 4.5
+            },
+            {
+              "date": "2024-10",
+              "value": 5.4
+            },
+            {
+              "date": "2024-11",
+              "value": 5.3
+            },
+            {
+              "date": "2024-12",
+              "value": 5.4
+            },
+            {
+              "date": "2025-01",
+              "value": 6.2
+            },
+            {
+              "date": "2025-03",
+              "value": 5.9
+            },
+            {
+              "date": "2025-04",
+              "value": 7.7
+            },
+            {
+              "date": "2025-05",
+              "value": 6.1
+            },
+            {
+              "date": "2025-06",
+              "value": 5.8
+            },
+            {
+              "date": "2025-07",
+              "value": 6.8
+            },
+            {
+              "date": "2025-08",
+              "value": 5.7
+            },
+            {
+              "date": "2025-10",
+              "value": 4.9
+            },
+            {
+              "date": "2025-11",
+              "value": 4.8
+            },
+            {
+              "date": "2025-12",
+              "value": 5.2
+            },
+            {
+              "date": "2026-02",
+              "value": 6.3
+            },
+            {
+              "date": "2026-03",
+              "value": 5.7
+            },
+            {
+              "date": "2026-04",
+              "value": 4.1
+            },
+            {
+              "date": "2026-05",
+              "value": 4.5
+            },
+            {
+              "date": "2026-06",
+              "value": 5.3
+            },
+            {
+              "date": "2026-07",
+              "value": 4.5
+            }
+          ]
+        },
+        "retail_sales": {
+          "label": "Retail Sales",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "flag": "May 2026 was the first y/y decline since Dec 2022.",
+          "data": [
+            {
+              "date": "2025-10",
+              "value": 2.9
+            },
+            {
+              "date": "2025-11",
+              "value": 1.3
+            },
+            {
+              "date": "2025-12",
+              "value": 0.9
+            },
+            {
+              "date": "2026-02",
+              "value": 2.8
+            },
+            {
+              "date": "2026-03",
+              "value": 1.7
+            },
+            {
+              "date": "2026-04",
+              "value": 0.2
+            },
+            {
+              "date": "2026-05",
+              "value": -0.6
+            },
+            {
+              "date": "2026-06",
+              "value": 1.0
+            },
+            {
+              "date": "2026-07",
+              "value": 0.6
+            }
+          ]
+        },
+        "fixed_asset_investment": {
+          "label": "Fixed Asset Investment (YTD)",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "flag": "Low confidence: Feb/Mar 2026 (+1.8%, +1.7%) breaks sharply from the surrounding negative trend — possible source-table artifact, not verified against a primary NBS release.",
+          "data": [
+            {
+              "date": "2025-10",
+              "value": -1.7
+            },
+            {
+              "date": "2025-11",
+              "value": -2.6
+            },
+            {
+              "date": "2025-12",
+              "value": -3.8
+            },
+            {
+              "date": "2026-02",
+              "value": 1.8
+            },
+            {
+              "date": "2026-03",
+              "value": 1.7
+            },
+            {
+              "date": "2026-04",
+              "value": -1.6
+            },
+            {
+              "date": "2026-05",
+              "value": -4.1
+            },
+            {
+              "date": "2026-06",
+              "value": -5.7
+            },
+            {
+              "date": "2026-07",
+              "value": -6.7
+            }
+          ]
+        },
+        "official_manufacturing_pmi": {
+          "label": "Official Manufacturing PMI",
+          "unit": "index",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "data": [
+            {
+              "date": "2023-04",
+              "value": 49.2
+            },
+            {
+              "date": "2023-05",
+              "value": 48.8
+            },
+            {
+              "date": "2023-06",
+              "value": 49.0
+            },
+            {
+              "date": "2023-07",
+              "value": 49.3
+            },
+            {
+              "date": "2023-08",
+              "value": 49.7
+            },
+            {
+              "date": "2023-09",
+              "value": 50.2
+            },
+            {
+              "date": "2023-10",
+              "value": 49.5
+            },
+            {
+              "date": "2023-11",
+              "value": 49.4
+            },
+            {
+              "date": "2023-12",
+              "value": 49.0
+            },
+            {
+              "date": "2024-01",
+              "value": 49.2
+            },
+            {
+              "date": "2024-03",
+              "value": 50.8
+            },
+            {
+              "date": "2024-04",
+              "value": 50.4
+            },
+            {
+              "date": "2024-05",
+              "value": 49.5
+            },
+            {
+              "date": "2024-06",
+              "value": 49.5
+            },
+            {
+              "date": "2024-07",
+              "value": 49.4
+            },
+            {
+              "date": "2024-08",
+              "value": 49.1
+            },
+            {
+              "date": "2024-09",
+              "value": 49.8
+            },
+            {
+              "date": "2024-10",
+              "value": 50.1
+            },
+            {
+              "date": "2024-11",
+              "value": 50.3
+            },
+            {
+              "date": "2024-12",
+              "value": 50.1
+            },
+            {
+              "date": "2025-01",
+              "value": 49.1
+            },
+            {
+              "date": "2025-03",
+              "value": 50.5
+            },
+            {
+              "date": "2025-04",
+              "value": 49.0
+            },
+            {
+              "date": "2025-05",
+              "value": 49.5
+            },
+            {
+              "date": "2025-06",
+              "value": 49.7
+            },
+            {
+              "date": "2025-07",
+              "value": 49.3
+            },
+            {
+              "date": "2025-08",
+              "value": 49.4
+            },
+            {
+              "date": "2025-11",
+              "value": 49.2
+            },
+            {
+              "date": "2025-12",
+              "value": 50.1
+            },
+            {
+              "date": "2026-01",
+              "value": 49.3
+            },
+            {
+              "date": "2026-02",
+              "value": 49.0
+            },
+            {
+              "date": "2026-03",
+              "value": 50.4
+            },
+            {
+              "date": "2026-04",
+              "value": 50.3
+            },
+            {
+              "date": "2026-05",
+              "value": 50.0
+            },
+            {
+              "date": "2026-06",
+              "value": 50.3
+            },
+            {
+              "date": "2026-07",
+              "value": 49.2
+            }
+          ]
+        },
+        "caixin_manufacturing_pmi": {
+          "label": "Caixin Manufacturing PMI",
+          "unit": "index",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "flag": "Only 4 months found in free sources. Since mid-2025 sometimes co-branded 'RatingDog Manufacturing PMI' — same underlying series.",
+          "data": [
+            {
+              "date": "2022-11",
+              "value": 49.2
+            },
+            {
+              "date": "2022-12",
+              "value": 49.4
+            },
+            {
+              "date": "2023-01",
+              "value": 49.0
+            },
+            {
+              "date": "2023-02",
+              "value": 49.2
+            },
+            {
+              "date": "2023-03",
+              "value": 51.6
+            },
+            {
+              "date": "2023-04",
+              "value": 50.0
+            },
+            {
+              "date": "2023-05",
+              "value": 49.5
+            },
+            {
+              "date": "2023-06",
+              "value": 50.9
+            },
+            {
+              "date": "2023-07",
+              "value": 50.5
+            },
+            {
+              "date": "2023-08",
+              "value": 49.2
+            },
+            {
+              "date": "2023-09",
+              "value": 51.0
+            },
+            {
+              "date": "2023-10",
+              "value": 50.6
+            },
+            {
+              "date": "2023-11",
+              "value": 49.5
+            },
+            {
+              "date": "2023-12",
+              "value": 50.7
+            },
+            {
+              "date": "2024-01",
+              "value": 50.8
+            },
+            {
+              "date": "2024-02",
+              "value": 50.8
+            },
+            {
+              "date": "2024-03",
+              "value": 50.9
+            },
+            {
+              "date": "2024-04",
+              "value": 51.4
+            },
+            {
+              "date": "2024-06",
+              "value": 51.7
+            },
+            {
+              "date": "2024-07",
+              "value": 51.8
+            },
+            {
+              "date": "2024-08",
+              "value": 49.8
+            },
+            {
+              "date": "2024-09",
+              "value": 49.3
+            },
+            {
+              "date": "2024-11",
+              "value": 50.3
+            },
+            {
+              "date": "2024-12",
+              "value": 51.5
+            },
+            {
+              "date": "2025-01",
+              "value": 50.5
+            },
+            {
+              "date": "2025-02",
+              "value": 50.1
+            },
+            {
+              "date": "2025-03",
+              "value": 50.8
+            },
+            {
+              "date": "2025-04",
+              "value": 50.4
+            },
+            {
+              "date": "2025-06",
+              "value": 48.3
+            },
+            {
+              "date": "2025-07",
+              "value": 50.4
+            },
+            {
+              "date": "2025-08",
+              "value": 49.5
+            },
+            {
+              "date": "2025-09",
+              "value": 50.5
+            },
+            {
+              "date": "2026-04",
+              "value": 52.2
+            },
+            {
+              "date": "2026-05",
+              "value": 51.8
+            },
+            {
+              "date": "2026-06",
+              "value": 51.7
+            },
+            {
+              "date": "2026-07",
+              "value": 50.9
+            }
+          ]
+        },
+        "official_non_manufacturing_pmi": {
+          "label": "Official Non-Manufacturing PMI",
+          "unit": "index",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "data": [
+            {
+              "date": "2023-04",
+              "value": 56.4
+            },
+            {
+              "date": "2023-05",
+              "value": 54.5
+            },
+            {
+              "date": "2023-06",
+              "value": 53.2
+            },
+            {
+              "date": "2023-07",
+              "value": 51.5
+            },
+            {
+              "date": "2023-08",
+              "value": 51.0
+            },
+            {
+              "date": "2023-09",
+              "value": 51.7
+            },
+            {
+              "date": "2023-10",
+              "value": 50.6
+            },
+            {
+              "date": "2023-11",
+              "value": 50.2
+            },
+            {
+              "date": "2023-12",
+              "value": 50.4
+            },
+            {
+              "date": "2024-01",
+              "value": 50.7
+            },
+            {
+              "date": "2024-03",
+              "value": 53.0
+            },
+            {
+              "date": "2024-04",
+              "value": 51.2
+            },
+            {
+              "date": "2024-05",
+              "value": 51.1
+            },
+            {
+              "date": "2024-06",
+              "value": 50.5
+            },
+            {
+              "date": "2024-07",
+              "value": 50.2
+            },
+            {
+              "date": "2024-08",
+              "value": 50.3
+            },
+            {
+              "date": "2024-09",
+              "value": 50.0
+            },
+            {
+              "date": "2024-10",
+              "value": 50.2
+            },
+            {
+              "date": "2024-11",
+              "value": 50.0
+            },
+            {
+              "date": "2024-12",
+              "value": 52.2
+            },
+            {
+              "date": "2025-01",
+              "value": 50.2
+            },
+            {
+              "date": "2025-03",
+              "value": 50.8
+            },
+            {
+              "date": "2025-04",
+              "value": 50.4
+            },
+            {
+              "date": "2025-05",
+              "value": 50.3
+            },
+            {
+              "date": "2025-06",
+              "value": 50.5
+            },
+            {
+              "date": "2025-07",
+              "value": 50.1
+            },
+            {
+              "date": "2025-08",
+              "value": 50.3
+            },
+            {
+              "date": "2025-11",
+              "value": 49.5
+            },
+            {
+              "date": "2025-12",
+              "value": 50.2
+            },
+            {
+              "date": "2026-01",
+              "value": 49.4
+            },
+            {
+              "date": "2026-02",
+              "value": 49.5
+            },
+            {
+              "date": "2026-03",
+              "value": 50.1
+            },
+            {
+              "date": "2026-04",
+              "value": 49.4
+            },
+            {
+              "date": "2026-05",
+              "value": 50.1
+            },
+            {
+              "date": "2026-06",
+              "value": 50.2
+            },
+            {
+              "date": "2026-07",
+              "value": 49.0
+            }
+          ]
+        }
+      }
+    },
+    "prices_credit": {
+      "label": "Prices & Credit",
+      "series": {
+        "cpi": {
+          "label": "CPI Inflation",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": null,
+          "data": [
+            {
+              "date": "2023-06",
+              "value": -0.2
+            },
+            {
+              "date": "2023-07",
+              "value": -0.2
+            },
+            {
+              "date": "2023-08",
+              "value": 0.2
+            },
+            {
+              "date": "2023-09",
+              "value": 0.3
+            },
+            {
+              "date": "2023-10",
+              "value": 0.2
+            },
+            {
+              "date": "2023-11",
+              "value": -0.1
+            },
+            {
+              "date": "2023-12",
+              "value": -0.5
+            },
+            {
+              "date": "2024-01",
+              "value": 0.1
+            },
+            {
+              "date": "2024-02",
+              "value": 0.3
+            },
+            {
+              "date": "2024-03",
+              "value": 1.0
+            },
+            {
+              "date": "2024-04",
+              "value": -1.0
+            },
+            {
+              "date": "2024-05",
+              "value": 0.1
+            },
+            {
+              "date": "2024-06",
+              "value": -0.1
+            },
+            {
+              "date": "2024-07",
+              "value": -0.2
+            },
+            {
+              "date": "2024-08",
+              "value": 0.5
+            },
+            {
+              "date": "2024-09",
+              "value": 0.4
+            },
+            {
+              "date": "2024-10",
+              "value": 0.0
+            },
+            {
+              "date": "2024-11",
+              "value": -0.3
+            },
+            {
+              "date": "2024-12",
+              "value": -0.6
+            },
+            {
+              "date": "2025-01",
+              "value": 0.0
+            },
+            {
+              "date": "2025-02",
+              "value": 0.7
+            },
+            {
+              "date": "2025-03",
+              "value": -0.2
+            },
+            {
+              "date": "2025-04",
+              "value": -0.4
+            },
+            {
+              "date": "2025-05",
+              "value": 0.1
+            },
+            {
+              "date": "2025-06",
+              "value": -0.2
+            },
+            {
+              "date": "2025-07",
+              "value": -0.1
+            },
+            {
+              "date": "2025-08",
+              "value": 0.4
+            },
+            {
+              "date": "2025-11",
+              "value": 0.7
+            },
+            {
+              "date": "2025-12",
+              "value": 0.8
+            },
+            {
+              "date": "2026-01",
+              "value": 0.2
+            },
+            {
+              "date": "2026-02",
+              "value": 1.3
+            },
+            {
+              "date": "2026-03",
+              "value": 1.0
+            },
+            {
+              "date": "2026-04",
+              "value": 1.2
+            },
+            {
+              "date": "2026-05",
+              "value": 1.2
+            },
+            {
+              "date": "2026-06",
+              "value": 1.0
+            },
+            {
+              "date": "2026-07",
+              "value": 0.5
+            }
+          ]
+        },
+        "ppi": {
+          "label": "PPI Inflation",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": null,
+          "flag": "Swing from -1.9% (Dec '25) to +4.1% (Jun '26) is a genuine, sharply reported reflation story, not a data artifact.",
+          "data": [
+            {
+              "date": "2023-06",
+              "value": -4.6
+            },
+            {
+              "date": "2023-07",
+              "value": -5.4
+            },
+            {
+              "date": "2023-08",
+              "value": -4.4
+            },
+            {
+              "date": "2023-09",
+              "value": -3.0
+            },
+            {
+              "date": "2023-10",
+              "value": -2.5
+            },
+            {
+              "date": "2023-11",
+              "value": -2.6
+            },
+            {
+              "date": "2023-12",
+              "value": -3.0
+            },
+            {
+              "date": "2024-01",
+              "value": -2.7
+            },
+            {
+              "date": "2024-02",
+              "value": -2.5
+            },
+            {
+              "date": "2024-03",
+              "value": -2.7
+            },
+            {
+              "date": "2024-04",
+              "value": -2.8
+            },
+            {
+              "date": "2024-05",
+              "value": -2.5
+            },
+            {
+              "date": "2024-06",
+              "value": -1.4
+            },
+            {
+              "date": "2024-07",
+              "value": -0.8
+            },
+            {
+              "date": "2024-08",
+              "value": -0.8
+            },
+            {
+              "date": "2024-09",
+              "value": -1.8
+            },
+            {
+              "date": "2024-10",
+              "value": -2.8
+            },
+            {
+              "date": "2024-11",
+              "value": -2.9
+            },
+            {
+              "date": "2024-12",
+              "value": -2.5
+            },
+            {
+              "date": "2025-01",
+              "value": -2.3
+            },
+            {
+              "date": "2025-02",
+              "value": -2.3
+            },
+            {
+              "date": "2025-03",
+              "value": -2.2
+            },
+            {
+              "date": "2025-04",
+              "value": -2.5
+            },
+            {
+              "date": "2025-05",
+              "value": -2.7
+            },
+            {
+              "date": "2025-06",
+              "value": -3.3
+            },
+            {
+              "date": "2025-07",
+              "value": -3.6
+            },
+            {
+              "date": "2025-08",
+              "value": -3.6
+            },
+            {
+              "date": "2025-11",
+              "value": -2.2
+            },
+            {
+              "date": "2025-12",
+              "value": -1.9
+            },
+            {
+              "date": "2026-01",
+              "value": -1.4
+            },
+            {
+              "date": "2026-02",
+              "value": -0.9
+            },
+            {
+              "date": "2026-03",
+              "value": 0.5
+            },
+            {
+              "date": "2026-04",
+              "value": 2.8
+            },
+            {
+              "date": "2026-05",
+              "value": 3.9
+            },
+            {
+              "date": "2026-06",
+              "value": 4.1
+            },
+            {
+              "date": "2026-07",
+              "value": 3.5
+            }
+          ]
+        },
+        "lpr_1y": {
+          "label": "1-Year Loan Prime Rate",
+          "unit": "%",
+          "freq": "on rate change",
+          "decimals": 2,
+          "higher_is_better": null,
+          "flag": "Held unchanged since May 2025 — 14 consecutive monthly fixings on hold through Jul 2026 per Aug 2026 sourcing.",
+          "data": [
+            {
+              "date": "2023-09",
+              "value": 3.45
+            },
+            {
+              "date": "2023-10",
+              "value": 3.45
+            },
+            {
+              "date": "2023-11",
+              "value": 3.45
+            },
+            {
+              "date": "2023-12",
+              "value": 3.45
+            },
+            {
+              "date": "2024-01",
+              "value": 3.45
+            },
+            {
+              "date": "2024-02",
+              "value": 3.45
+            },
+            {
+              "date": "2024-03",
+              "value": 3.45
+            },
+            {
+              "date": "2024-04",
+              "value": 3.45
+            },
+            {
+              "date": "2024-05",
+              "value": 3.45
+            },
+            {
+              "date": "2024-06",
+              "value": 3.45
+            },
+            {
+              "date": "2024-07",
+              "value": 3.35
+            },
+            {
+              "date": "2024-08",
+              "value": 3.35
+            },
+            {
+              "date": "2024-09",
+              "value": 3.35
+            },
+            {
+              "date": "2024-10",
+              "value": 3.1
+            },
+            {
+              "date": "2024-11",
+              "value": 3.1
+            },
+            {
+              "date": "2024-12",
+              "value": 3.1
+            },
+            {
+              "date": "2025-01",
+              "value": 3.1
+            },
+            {
+              "date": "2025-02",
+              "value": 3.1
+            },
+            {
+              "date": "2025-03",
+              "value": 3.1
+            },
+            {
+              "date": "2025-04",
+              "value": 3.1
+            },
+            {
+              "date": "2025-05",
+              "value": 3.0
+            },
+            {
+              "date": "2025-06",
+              "value": 3.0
+            },
+            {
+              "date": "2025-07",
+              "value": 3.0
+            },
+            {
+              "date": "2025-08",
+              "value": 3.0
+            },
+            {
+              "date": "2025-09",
+              "value": 3.0
+            },
+            {
+              "date": "2025-10",
+              "value": 3.0
+            },
+            {
+              "date": "2025-11",
+              "value": 3.0
+            },
+            {
+              "date": "2025-12",
+              "value": 3.0
+            },
+            {
+              "date": "2026-01",
+              "value": 3.0
+            },
+            {
+              "date": "2026-02",
+              "value": 3.0
+            },
+            {
+              "date": "2026-03",
+              "value": 3.0
+            },
+            {
+              "date": "2026-04",
+              "value": 3.0
+            },
+            {
+              "date": "2026-05",
+              "value": 3.0
+            },
+            {
+              "date": "2026-06",
+              "value": 3.0
+            },
+            {
+              "date": "2026-07",
+              "value": 3.0
+            },
+            {
+              "date": "2026-08",
+              "value": 3.0
+            }
+          ]
+        },
+        "lpr_5y": {
+          "label": "5-Year Loan Prime Rate",
+          "unit": "%",
+          "freq": "on rate change",
+          "decimals": 2,
+          "higher_is_better": null,
+          "data": [
+            {
+              "date": "2023-09",
+              "value": 4.2
+            },
+            {
+              "date": "2023-10",
+              "value": 4.2
+            },
+            {
+              "date": "2023-11",
+              "value": 4.2
+            },
+            {
+              "date": "2023-12",
+              "value": 4.2
+            },
+            {
+              "date": "2024-01",
+              "value": 4.2
+            },
+            {
+              "date": "2024-02",
+              "value": 3.95
+            },
+            {
+              "date": "2024-03",
+              "value": 3.95
+            },
+            {
+              "date": "2024-04",
+              "value": 3.95
+            },
+            {
+              "date": "2024-05",
+              "value": 3.95
+            },
+            {
+              "date": "2024-06",
+              "value": 3.95
+            },
+            {
+              "date": "2024-07",
+              "value": 3.85
+            },
+            {
+              "date": "2024-08",
+              "value": 3.85
+            },
+            {
+              "date": "2024-09",
+              "value": 3.85
+            },
+            {
+              "date": "2024-10",
+              "value": 3.6
+            },
+            {
+              "date": "2024-11",
+              "value": 3.6
+            },
+            {
+              "date": "2024-12",
+              "value": 3.6
+            },
+            {
+              "date": "2025-01",
+              "value": 3.6
+            },
+            {
+              "date": "2025-02",
+              "value": 3.6
+            },
+            {
+              "date": "2025-03",
+              "value": 3.6
+            },
+            {
+              "date": "2025-04",
+              "value": 3.6
+            },
+            {
+              "date": "2025-05",
+              "value": 3.5
+            },
+            {
+              "date": "2025-06",
+              "value": 3.5
+            },
+            {
+              "date": "2025-07",
+              "value": 3.5
+            },
+            {
+              "date": "2025-08",
+              "value": 3.5
+            },
+            {
+              "date": "2025-09",
+              "value": 3.5
+            },
+            {
+              "date": "2025-10",
+              "value": 3.5
+            },
+            {
+              "date": "2025-11",
+              "value": 3.5
+            },
+            {
+              "date": "2025-12",
+              "value": 3.5
+            },
+            {
+              "date": "2026-01",
+              "value": 3.5
+            },
+            {
+              "date": "2026-02",
+              "value": 3.5
+            },
+            {
+              "date": "2026-03",
+              "value": 3.5
+            },
+            {
+              "date": "2026-04",
+              "value": 3.5
+            },
+            {
+              "date": "2026-05",
+              "value": 3.5
+            },
+            {
+              "date": "2026-06",
+              "value": 3.5
+            },
+            {
+              "date": "2026-07",
+              "value": 3.5
+            },
+            {
+              "date": "2026-08",
+              "value": 3.5
+            }
+          ]
+        },
+        "rrr": {
+          "label": "Reserve Requirement Ratio (weighted avg, major banks)",
+          "unit": "% (approx)",
+          "freq": "on rate change",
+          "decimals": 1,
+          "higher_is_better": null,
+          "flag": "Low confidence on precise level — sources cite 6.2-6.6% inconsistently. No confirmed cut found since May 2025 despite repeated PBOC easing signals.",
+          "data": [
+            {
+              "date": "2024-09",
+              "value": 6.6
+            },
+            {
+              "date": "2025-05",
+              "value": 6.3
+            }
+          ]
+        },
+        "m2_growth": {
+          "label": "M2 Money Supply Growth",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": null,
+          "data": [
+            {
+              "date": "2023-07",
+              "value": 11.3
+            },
+            {
+              "date": "2023-08",
+              "value": 10.7
+            },
+            {
+              "date": "2023-09",
+              "value": 10.6
+            },
+            {
+              "date": "2023-10",
+              "value": 10.3
+            },
+            {
+              "date": "2023-11",
+              "value": 10.3
+            },
+            {
+              "date": "2023-12",
+              "value": 10.0
+            },
+            {
+              "date": "2024-01",
+              "value": 9.7
+            },
+            {
+              "date": "2024-02",
+              "value": 8.7
+            },
+            {
+              "date": "2024-03",
+              "value": 8.7
+            },
+            {
+              "date": "2024-04",
+              "value": 8.3
+            },
+            {
+              "date": "2024-05",
+              "value": 7.2
+            },
+            {
+              "date": "2024-06",
+              "value": 7.0
+            },
+            {
+              "date": "2024-07",
+              "value": 6.2
+            },
+            {
+              "date": "2024-08",
+              "value": 6.3
+            },
+            {
+              "date": "2024-09",
+              "value": 6.3
+            },
+            {
+              "date": "2024-10",
+              "value": 6.8
+            },
+            {
+              "date": "2024-11",
+              "value": 7.5
+            },
+            {
+              "date": "2024-12",
+              "value": 7.1
+            },
+            {
+              "date": "2025-01",
+              "value": 7.3
+            },
+            {
+              "date": "2025-02",
+              "value": 7.0
+            },
+            {
+              "date": "2025-03",
+              "value": 7.0
+            },
+            {
+              "date": "2025-04",
+              "value": 7.0
+            },
+            {
+              "date": "2025-05",
+              "value": 8.0
+            },
+            {
+              "date": "2025-06",
+              "value": 7.9
+            },
+            {
+              "date": "2025-07",
+              "value": 8.3
+            },
+            {
+              "date": "2025-08",
+              "value": 8.8
+            },
+            {
+              "date": "2025-10",
+              "value": 8.2
+            },
+            {
+              "date": "2025-11",
+              "value": 8.0
+            },
+            {
+              "date": "2025-12",
+              "value": 8.5
+            },
+            {
+              "date": "2026-01",
+              "value": 9.0
+            },
+            {
+              "date": "2026-02",
+              "value": 9.0
+            },
+            {
+              "date": "2026-03",
+              "value": 8.5
+            },
+            {
+              "date": "2026-04",
+              "value": 8.6
+            },
+            {
+              "date": "2026-05",
+              "value": 8.6
+            },
+            {
+              "date": "2026-06",
+              "value": 8.0
+            },
+            {
+              "date": "2026-07",
+              "value": 7.7
+            }
+          ]
+        },
+        "tsf_flow": {
+          "label": "Total Social Financing (flow)",
+          "unit": "RMB trn/mo",
+          "freq": "monthly",
+          "decimals": 2,
+          "higher_is_better": null,
+          "flag": "Monthly flow, not the TSF stock y/y growth rate — that series wasn't cleanly sourced. Large month-to-month swings are normal (quarter-end/tax-season patterns).",
+          "data": [
+            {
+              "date": "2023-08",
+              "value": 3.13
+            },
+            {
+              "date": "2023-09",
+              "value": 4.13
+            },
+            {
+              "date": "2023-10",
+              "value": 1.84
+            },
+            {
+              "date": "2023-11",
+              "value": 2.46
+            },
+            {
+              "date": "2023-12",
+              "value": 1.94
+            },
+            {
+              "date": "2024-01",
+              "value": 6.47
+            },
+            {
+              "date": "2024-02",
+              "value": 1.5
+            },
+            {
+              "date": "2024-03",
+              "value": 4.83
+            },
+            {
+              "date": "2024-04",
+              "value": -0.07
+            },
+            {
+              "date": "2024-05",
+              "value": 2.06
+            },
+            {
+              "date": "2024-06",
+              "value": 3.3
+            },
+            {
+              "date": "2024-07",
+              "value": 0.77
+            },
+            {
+              "date": "2024-08",
+              "value": 3.03
+            },
+            {
+              "date": "2024-09",
+              "value": 3.76
+            },
+            {
+              "date": "2024-10",
+              "value": 1.41
+            },
+            {
+              "date": "2024-11",
+              "value": 2.33
+            },
+            {
+              "date": "2024-12",
+              "value": 2.85
+            },
+            {
+              "date": "2025-01",
+              "value": 7.05
+            },
+            {
+              "date": "2025-02",
+              "value": 2.23
+            },
+            {
+              "date": "2025-03",
+              "value": 5.9
+            },
+            {
+              "date": "2025-04",
+              "value": 1.16
+            },
+            {
+              "date": "2025-05",
+              "value": 2.29
+            },
+            {
+              "date": "2025-06",
+              "value": 4.23
+            },
+            {
+              "date": "2025-07",
+              "value": 1.13
+            },
+            {
+              "date": "2025-08",
+              "value": 2.57
+            },
+            {
+              "date": "2025-09",
+              "value": 3.53
+            },
+            {
+              "date": "2025-10",
+              "value": 0.82
+            },
+            {
+              "date": "2025-11",
+              "value": 2.49
+            },
+            {
+              "date": "2025-12",
+              "value": 2.21
+            },
+            {
+              "date": "2026-01",
+              "value": 7.22
+            },
+            {
+              "date": "2026-02",
+              "value": 2.38
+            },
+            {
+              "date": "2026-03",
+              "value": 5.22
+            },
+            {
+              "date": "2026-04",
+              "value": 0.62
+            },
+            {
+              "date": "2026-05",
+              "value": 2.03
+            },
+            {
+              "date": "2026-06",
+              "value": 3.36
+            },
+            {
+              "date": "2026-07",
+              "value": 1.41
+            }
+          ]
+        }
+      }
+    },
+    "external": {
+      "label": "External Sector",
+      "series": {
+        "exports_yoy": {
+          "label": "Exports (USD)",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "flag": "20-30%+ y/y prints in 2026 look high — plausibly a low base plus tariff front-loading, but not cross-checked against GACC primary data.",
+          "data": [
+            {
+              "date": "2023-04",
+              "value": 14.8
+            },
+            {
+              "date": "2023-05",
+              "value": 8.5
+            },
+            {
+              "date": "2023-06",
+              "value": -7.5
+            },
+            {
+              "date": "2023-07",
+              "value": -12.4
+            },
+            {
+              "date": "2023-08",
+              "value": -14.5
+            },
+            {
+              "date": "2023-09",
+              "value": -8.8
+            },
+            {
+              "date": "2023-10",
+              "value": -6.2
+            },
+            {
+              "date": "2023-11",
+              "value": -6.4
+            },
+            {
+              "date": "2023-12",
+              "value": 0.5
+            },
+            {
+              "date": "2024-01",
+              "value": 2.3
+            },
+            {
+              "date": "2024-03",
+              "value": 7.1
+            },
+            {
+              "date": "2024-04",
+              "value": -7.5
+            },
+            {
+              "date": "2024-05",
+              "value": 1.5
+            },
+            {
+              "date": "2024-06",
+              "value": 7.6
+            },
+            {
+              "date": "2024-07",
+              "value": 8.6
+            },
+            {
+              "date": "2024-08",
+              "value": 7.0
+            },
+            {
+              "date": "2024-09",
+              "value": 8.7
+            },
+            {
+              "date": "2024-10",
+              "value": 2.4
+            },
+            {
+              "date": "2024-11",
+              "value": 12.7
+            },
+            {
+              "date": "2024-12",
+              "value": 6.7
+            },
+            {
+              "date": "2025-01",
+              "value": 10.7
+            },
+            {
+              "date": "2025-03",
+              "value": 2.3
+            },
+            {
+              "date": "2025-04",
+              "value": 12.4
+            },
+            {
+              "date": "2025-05",
+              "value": 8.1
+            },
+            {
+              "date": "2025-06",
+              "value": 4.8
+            },
+            {
+              "date": "2025-07",
+              "value": 5.8
+            },
+            {
+              "date": "2025-08",
+              "value": 7.2
+            },
+            {
+              "date": "2025-10",
+              "value": -1.1
+            },
+            {
+              "date": "2025-11",
+              "value": 5.9
+            },
+            {
+              "date": "2025-12",
+              "value": 6.6
+            },
+            {
+              "date": "2026-02",
+              "value": 21.8
+            },
+            {
+              "date": "2026-03",
+              "value": 2.5
+            },
+            {
+              "date": "2026-04",
+              "value": 14.1
+            },
+            {
+              "date": "2026-05",
+              "value": 19.4
+            },
+            {
+              "date": "2026-06",
+              "value": 27.0
+            },
+            {
+              "date": "2026-07",
+              "value": 23.9
+            }
+          ]
+        },
+        "imports_yoy": {
+          "label": "Imports (USD)",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "data": [
+            {
+              "date": "2023-04",
+              "value": -1.4
+            },
+            {
+              "date": "2023-05",
+              "value": -7.9
+            },
+            {
+              "date": "2023-06",
+              "value": -4.5
+            },
+            {
+              "date": "2023-07",
+              "value": -6.8
+            },
+            {
+              "date": "2023-08",
+              "value": -12.4
+            },
+            {
+              "date": "2023-09",
+              "value": -7.3
+            },
+            {
+              "date": "2023-10",
+              "value": -6.2
+            },
+            {
+              "date": "2023-11",
+              "value": 3.0
+            },
+            {
+              "date": "2023-12",
+              "value": -0.6
+            },
+            {
+              "date": "2024-01",
+              "value": 0.2
+            },
+            {
+              "date": "2024-03",
+              "value": 3.5
+            },
+            {
+              "date": "2024-04",
+              "value": -1.9
+            },
+            {
+              "date": "2024-05",
+              "value": 8.4
+            },
+            {
+              "date": "2024-06",
+              "value": 1.8
+            },
+            {
+              "date": "2024-07",
+              "value": -2.3
+            },
+            {
+              "date": "2024-08",
+              "value": 7.2
+            },
+            {
+              "date": "2024-09",
+              "value": 0.5
+            },
+            {
+              "date": "2024-10",
+              "value": 0.3
+            },
+            {
+              "date": "2024-11",
+              "value": -2.3
+            },
+            {
+              "date": "2024-12",
+              "value": -3.9
+            },
+            {
+              "date": "2025-01",
+              "value": 1.0
+            },
+            {
+              "date": "2025-03",
+              "value": -8.4
+            },
+            {
+              "date": "2025-04",
+              "value": -4.3
+            },
+            {
+              "date": "2025-05",
+              "value": -0.2
+            },
+            {
+              "date": "2025-06",
+              "value": -3.4
+            },
+            {
+              "date": "2025-07",
+              "value": 1.1
+            },
+            {
+              "date": "2025-08",
+              "value": 4.1
+            },
+            {
+              "date": "2025-10",
+              "value": 1.0
+            },
+            {
+              "date": "2025-11",
+              "value": 1.9
+            },
+            {
+              "date": "2025-12",
+              "value": 5.7
+            },
+            {
+              "date": "2026-02",
+              "value": 19.8
+            },
+            {
+              "date": "2026-03",
+              "value": 27.8
+            },
+            {
+              "date": "2026-04",
+              "value": 25.3
+            },
+            {
+              "date": "2026-05",
+              "value": 27.4
+            },
+            {
+              "date": "2026-06",
+              "value": 36.0
+            },
+            {
+              "date": "2026-07",
+              "value": 27.5
+            }
+          ]
+        },
+        "trade_balance": {
+          "label": "Trade Balance",
+          "unit": "$bn",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": null,
+          "data": [
+            {
+              "date": "2023-04",
+              "value": 881.9
+            },
+            {
+              "date": "2023-05",
+              "value": 902.1
+            },
+            {
+              "date": "2023-06",
+              "value": 658.1
+            },
+            {
+              "date": "2023-07",
+              "value": 706.2
+            },
+            {
+              "date": "2023-08",
+              "value": 806.0
+            },
+            {
+              "date": "2023-09",
+              "value": 683.6
+            },
+            {
+              "date": "2023-10",
+              "value": 777.1
+            },
+            {
+              "date": "2023-11",
+              "value": 565.3
+            },
+            {
+              "date": "2023-12",
+              "value": 683.9
+            },
+            {
+              "date": "2024-01",
+              "value": 753.4
+            },
+            {
+              "date": "2024-03",
+              "value": 1251.6
+            },
+            {
+              "date": "2024-04",
+              "value": 585.5
+            },
+            {
+              "date": "2024-05",
+              "value": 723.5
+            },
+            {
+              "date": "2024-06",
+              "value": 826.2
+            },
+            {
+              "date": "2024-07",
+              "value": 990.5
+            },
+            {
+              "date": "2024-08",
+              "value": 846.5
+            },
+            {
+              "date": "2024-09",
+              "value": 910.2
+            },
+            {
+              "date": "2024-10",
+              "value": 817.1
+            },
+            {
+              "date": "2024-11",
+              "value": 952.7
+            },
+            {
+              "date": "2024-12",
+              "value": 974.4
+            },
+            {
+              "date": "2025-01",
+              "value": 1048.4
+            },
+            {
+              "date": "2025-03",
+              "value": 1705.2
+            },
+            {
+              "date": "2025-04",
+              "value": 1026.4
+            },
+            {
+              "date": "2025-05",
+              "value": 961.8
+            },
+            {
+              "date": "2025-06",
+              "value": 1032.2
+            },
+            {
+              "date": "2025-07",
+              "value": 1147.7
+            },
+            {
+              "date": "2025-08",
+              "value": 982.4
+            },
+            {
+              "date": "2025-10",
+              "value": 90.07
+            },
+            {
+              "date": "2025-11",
+              "value": 111.68
+            },
+            {
+              "date": "2025-12",
+              "value": 114.1
+            },
+            {
+              "date": "2026-02",
+              "value": 213.62
+            },
+            {
+              "date": "2026-03",
+              "value": 51.13
+            },
+            {
+              "date": "2026-04",
+              "value": 84.8
+            },
+            {
+              "date": "2026-05",
+              "value": 105.43
+            },
+            {
+              "date": "2026-06",
+              "value": 125.62
+            },
+            {
+              "date": "2026-07",
+              "value": 112.5
+            }
+          ]
+        },
+        "usdcny": {
+          "label": "USD/CNY",
+          "unit": "",
+          "freq": "monthly avg",
+          "decimals": 4,
+          "higher_is_better": null,
+          "flag": "Sourced from x-rates.com aggregated market averages, not PBOC's official daily fixing — directionally reliable, not pip-precise.",
+          "data": [
+            {
+              "date": "2025-01",
+              "value": 7.3011
+            },
+            {
+              "date": "2025-02",
+              "value": 7.2691
+            },
+            {
+              "date": "2025-03",
+              "value": 7.251
+            },
+            {
+              "date": "2025-04",
+              "value": 7.2912
+            },
+            {
+              "date": "2025-05",
+              "value": 7.22
+            },
+            {
+              "date": "2025-06",
+              "value": 7.1826
+            },
+            {
+              "date": "2025-07",
+              "value": 7.1718
+            },
+            {
+              "date": "2025-08",
+              "value": 7.1761
+            },
+            {
+              "date": "2025-09",
+              "value": 7.1252
+            },
+            {
+              "date": "2025-10",
+              "value": 7.1206
+            },
+            {
+              "date": "2025-11",
+              "value": 7.1045
+            },
+            {
+              "date": "2025-12",
+              "value": 7.0467
+            },
+            {
+              "date": "2026-01",
+              "value": 6.9743
+            },
+            {
+              "date": "2026-02",
+              "value": 6.9136
+            },
+            {
+              "date": "2026-03",
+              "value": 6.8928
+            },
+            {
+              "date": "2026-04",
+              "value": 6.841
+            },
+            {
+              "date": "2026-05",
+              "value": 6.802
+            },
+            {
+              "date": "2026-06",
+              "value": 6.7755
+            },
+            {
+              "date": "2026-07",
+              "value": 6.7784
+            },
+            {
+              "date": "2026-08",
+              "value": 6.7424
+            }
+          ]
+        },
+        "fx_reserves": {
+          "label": "FX Reserves",
+          "unit": "$trn",
+          "freq": "monthly",
+          "decimals": 3,
+          "higher_is_better": true,
+          "data": [
+            {
+              "date": "2023-06",
+              "value": 3.177
+            },
+            {
+              "date": "2023-07",
+              "value": 3.193
+            },
+            {
+              "date": "2023-08",
+              "value": 3.204
+            },
+            {
+              "date": "2023-09",
+              "value": 3.16
+            },
+            {
+              "date": "2023-10",
+              "value": 3.115
+            },
+            {
+              "date": "2023-11",
+              "value": 3.101
+            },
+            {
+              "date": "2023-12",
+              "value": 3.172
+            },
+            {
+              "date": "2024-01",
+              "value": 3.238
+            },
+            {
+              "date": "2024-02",
+              "value": 3.219
+            },
+            {
+              "date": "2024-03",
+              "value": 3.226
+            },
+            {
+              "date": "2024-04",
+              "value": 3.246
+            },
+            {
+              "date": "2024-05",
+              "value": 3.201
+            },
+            {
+              "date": "2024-06",
+              "value": 3.232
+            },
+            {
+              "date": "2024-07",
+              "value": 3.222
+            },
+            {
+              "date": "2024-08",
+              "value": 3.256
+            },
+            {
+              "date": "2024-09",
+              "value": 3.288
+            },
+            {
+              "date": "2024-10",
+              "value": 3.316
+            },
+            {
+              "date": "2024-11",
+              "value": 3.261
+            },
+            {
+              "date": "2024-12",
+              "value": 3.266
+            },
+            {
+              "date": "2025-01",
+              "value": 3.202
+            },
+            {
+              "date": "2025-02",
+              "value": 3.209
+            },
+            {
+              "date": "2025-03",
+              "value": 3.227
+            },
+            {
+              "date": "2025-04",
+              "value": 3.241
+            },
+            {
+              "date": "2025-05",
+              "value": 3.282
+            },
+            {
+              "date": "2025-06",
+              "value": 3.285
+            },
+            {
+              "date": "2025-07",
+              "value": 3.317
+            },
+            {
+              "date": "2025-08",
+              "value": 3.292
+            },
+            {
+              "date": "2025-11",
+              "value": 3.346
+            },
+            {
+              "date": "2025-12",
+              "value": 3.358
+            },
+            {
+              "date": "2026-01",
+              "value": 3.399
+            },
+            {
+              "date": "2026-02",
+              "value": 3.428
+            },
+            {
+              "date": "2026-03",
+              "value": 3.342
+            },
+            {
+              "date": "2026-04",
+              "value": 3.411
+            },
+            {
+              "date": "2026-05",
+              "value": 3.442
+            },
+            {
+              "date": "2026-06",
+              "value": 3.416
+            },
+            {
+              "date": "2026-07",
+              "value": 3.419
+            }
+          ]
+        }
+      }
+    },
+    "property_labor": {
+      "label": "Property & Labor",
+      "series": {
+        "property_investment": {
+          "label": "Real Estate Investment (YTD)",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": true,
+          "flag": "2025 monthly series has gaps (Mar 2025 not found).",
+          "data": [
+            {
+              "date": "2025-02",
+              "value": -9.8
+            },
+            {
+              "date": "2025-04",
+              "value": -10.3
+            },
+            {
+              "date": "2025-05",
+              "value": -10.7
+            },
+            {
+              "date": "2025-06",
+              "value": -11.2
+            },
+            {
+              "date": "2026-02",
+              "value": -11.1
+            },
+            {
+              "date": "2026-04",
+              "value": -13.7
+            },
+            {
+              "date": "2026-05",
+              "value": -16.2
+            },
+            {
+              "date": "2026-06",
+              "value": -18.0
+            },
+            {
+              "date": "2026-07",
+              "value": -19.2
+            }
+          ]
+        },
+        "new_home_prices": {
+          "label": "New Home Prices, 70-City",
+          "unit": "% y/y",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": null,
+          "flag": "Requested as m/m but only a y/y series was reliably sourced — axis is y/y, not month-over-month.",
+          "data": [
+            {
+              "date": "2025-11",
+              "value": -2.2
+            },
+            {
+              "date": "2025-12",
+              "value": -2.4
+            },
+            {
+              "date": "2026-01",
+              "value": -2.7
+            },
+            {
+              "date": "2026-02",
+              "value": -3.1
+            },
+            {
+              "date": "2026-03",
+              "value": -3.2
+            },
+            {
+              "date": "2026-04",
+              "value": -3.4
+            },
+            {
+              "date": "2026-05",
+              "value": -3.5
+            },
+            {
+              "date": "2026-06",
+              "value": -3.5
+            },
+            {
+              "date": "2026-07",
+              "value": -3.3
+            }
+          ]
+        },
+        "urban_unemployment": {
+          "label": "Surveyed Urban Unemployment",
+          "unit": "%",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": false,
+          "data": [
+            {
+              "date": "2023-08",
+              "value": 5.2
+            },
+            {
+              "date": "2023-09",
+              "value": 5.0
+            },
+            {
+              "date": "2023-10",
+              "value": 5.0
+            },
+            {
+              "date": "2023-11",
+              "value": 5.0
+            },
+            {
+              "date": "2023-12",
+              "value": 5.1
+            },
+            {
+              "date": "2024-01",
+              "value": 5.4
+            },
+            {
+              "date": "2024-02",
+              "value": 5.3
+            },
+            {
+              "date": "2024-03",
+              "value": 5.2
+            },
+            {
+              "date": "2024-04",
+              "value": 5.1
+            },
+            {
+              "date": "2024-05",
+              "value": 5.0
+            },
+            {
+              "date": "2024-06",
+              "value": 5.0
+            },
+            {
+              "date": "2024-07",
+              "value": 5.2
+            },
+            {
+              "date": "2024-08",
+              "value": 5.3
+            },
+            {
+              "date": "2024-09",
+              "value": 5.1
+            },
+            {
+              "date": "2024-10",
+              "value": 5.0
+            },
+            {
+              "date": "2024-11",
+              "value": 5.2
+            },
+            {
+              "date": "2024-12",
+              "value": 5.1
+            },
+            {
+              "date": "2025-01",
+              "value": 5.2
+            },
+            {
+              "date": "2025-02",
+              "value": 5.6
+            },
+            {
+              "date": "2025-03",
+              "value": 5.2
+            },
+            {
+              "date": "2025-04",
+              "value": 5.1
+            },
+            {
+              "date": "2025-05",
+              "value": 5.0
+            },
+            {
+              "date": "2025-06",
+              "value": 5.0
+            },
+            {
+              "date": "2025-07",
+              "value": 5.2
+            },
+            {
+              "date": "2025-08",
+              "value": 5.4
+            },
+            {
+              "date": "2025-09",
+              "value": 5.3
+            },
+            {
+              "date": "2025-10",
+              "value": 5.1
+            },
+            {
+              "date": "2025-11",
+              "value": 5.1
+            },
+            {
+              "date": "2025-12",
+              "value": 5.1
+            },
+            {
+              "date": "2026-01",
+              "value": 5.2
+            },
+            {
+              "date": "2026-02",
+              "value": 5.0
+            },
+            {
+              "date": "2026-03",
+              "value": 5.4
+            },
+            {
+              "date": "2026-04",
+              "value": 5.2
+            },
+            {
+              "date": "2026-05",
+              "value": 5.1
+            },
+            {
+              "date": "2026-06",
+              "value": 5.0
+            },
+            {
+              "date": "2026-07",
+              "value": 5.2
+            }
+          ]
+        },
+        "youth_unemployment": {
+          "label": "Youth Unemployment (16-24)",
+          "unit": "%",
+          "freq": "monthly",
+          "decimals": 1,
+          "higher_is_better": false,
+          "flag": "All points use the post-Dec-2023 methodology (excludes enrolled students). Jul 2026 jump to 17.9% reflects seasonal new-graduate entry.",
+          "data": [
+            {
+              "date": "2025-12",
+              "value": 16.5
+            },
+            {
+              "date": "2026-01",
+              "value": 16.3
+            },
+            {
+              "date": "2026-02",
+              "value": 16.1
+            },
+            {
+              "date": "2026-03",
+              "value": 16.9
+            },
+            {
+              "date": "2026-04",
+              "value": 16.3
+            },
+            {
+              "date": "2026-05",
+              "value": 15.6
+            },
+            {
+              "date": "2026-06",
+              "value": 14.9
+            },
+            {
+              "date": "2026-07",
+              "value": 17.9
+            }
+          ]
+        }
+      }
+    }
+  },
+  "news": [
+    {
+      "headline": "Can Beijing’s gateway plan for Tibet survive geopolitics and natural disasters?",
+      "summary": "On the windswept plains just south of Tibet’s second-largest city, the towering smart inspection systems and automated cargo gantries of a brand-new international land port gleam under the plateau’s high-altitude sun.\nOf",
+      "source": "SCMP China",
+      "date": "Fri, 28 Aug 2026",
+      "url": "https://www.scmp.com/news/china/politics/article/3365622/can-beijings-gateway-plan-tibet-survive-geopolitics-and-natural-disasters?utm_source=rss_feed"
+    },
+    {
+      "headline": "Chinese rescuers reach checkpoint destroyed by deadly flash floods along Nepal border",
+      "summary": "Beijing promised to send emergency aid to Nepal on Friday as Chinese rescuers battled through hazardous conditions to reach the border checkpoint hit by deadly flash floods this week.\nThe disaster left five dead and 558 ",
+      "source": "SCMP China",
+      "date": "Fri, 28 Aug 2026",
+      "url": "https://www.scmp.com/news/china/politics/article/3365583/china-pledges-send-urgent-emergency-aid-nepal-after-deadly-landslide?utm_source=rss_feed"
+    },
+    {
+      "headline": "Who Paid for China’s Last Debt Cleanup, and Who Will Pay for the Next?",
+      "summary": "",
+      "source": "Carnegie Endowment for International Peace",
+      "date": "Tue, 25 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYkZfbGlSdkZoNGM5WDJoMFR2NlFvcVNRblRBdHJaM3NzQ3M0T3o5d3d3TE1UeFhuYzZzLW5PYmlta1RWS3VmcjJaRV9zTkNacGZaMC0ydG94WUd4RjNrVnA2UzM2QVM1eVdhUDcyU3V2bTBvN0RMNDlQcG04c29Gd3h6MHk2TTNJWjZJMlNPSWplR2QyV0dyNWZNaW16QUpTYlRfOGpWdzBWSHppX0hWTTFZSjY2ekVGRjlRMXFOS3c0ZDJycTdnSg?oc=5"
+    },
+    {
+      "headline": "China industrial profits growth cools to slowest in seven months as economic slowdown deepens",
+      "summary": "",
+      "source": "CNBC",
+      "date": "Thu, 27 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSER6em02cFktNlNhTHhMaGtLbklHVUIxYjdUaVd2Nm1MVmtmRGEyUkJJckRYWkF3SGUtczhmQXplOVlqdHVIRWdrQUhtVDNPTGhhM3Vnd0UtUk43SDV4bGllRElBYVRrb2hUWFNJSndrODdBX0tRemd3YmNjS0p5aFRCOE13V3JzNElqekRwSdIBlAFBVV95cUxNZmpPSFVUX21pSTRyMHczLXZnR1RINV9aZ3gwRWViWGVDeEhxc3EwVmNvTHd2MURUbUs1UHFtYWRNTE4zU2NZbWFoZ005V01DZUxmWUlwU0h3NDBXbC10c1piR2hFdURPeVcxQzcyQjJhSUtIVndZQjJxTGZZYVFyNlpKeUFZaEdIOWVjSlEwYTF5TE1B?oc=5"
+    },
+    {
+      "headline": "What does the latest data say about the state of China’s economy?",
+      "summary": "",
+      "source": "FocusEconomics",
+      "date": "Tue, 25 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdVhuSjhGa3NENGNFY2hacnVaMUE2MWU0eEJtOU95TEF2VUx1TXFzQU5aOHJTYkZtaTQ5aE5xQWdoeDctQjAtZGZ5U0t2cVBLSDlfTGZrVXlhd0tIWUVuZzRQd1UtUm5Va0s4Q1ZEdktZYnZncFhnbmE0ZE50LVBFSGp1SHhqdVVNRWlWdExyaGJQcmNaLXg5M3VMcEVoc2RoN3A4?oc=5"
+    },
+    {
+      "headline": "Apollo chief economist says ‘China Shock 2.0 is here’ and it’s bad news for American companies",
+      "summary": "",
+      "source": "Fortune",
+      "date": "Tue, 25 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aV29qVVRyTTRSb3N3a0p6Qk14SUxUelRrLVdITklpUWQ0WnNYX0xMbUtPMDc0WV8xNEZMUWpOUjQtaGE2YWpmWGVQTDFNOF9rWlI5SGg5UzM5dTVpb2V1eHJaeVN0TmxiVFl1dQ?oc=5"
+    },
+    {
+      "headline": "China's $119 billion policy financing tool begins project applications, faces roll-out lag",
+      "summary": "",
+      "source": "Reuters",
+      "date": "Mon, 24 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZ2VSRllRaTg1YmZHU1Z4M0tIQ1UweV93Z2ZZeE13anhHbE9oZDNBMUltd2Z3ZHY5TmZuSmdsalh5MW9icjkzVHpyY2RNVW96RUFXb1kydENhQ0o2TVRBSmlETnlJUUFqZEJ0S1VlR2xJOHA3TzVnRzA4VURHdVpuVC1UbjVDa2gtRC0tZGxoWHdOS0tlaG1nM0Y3ZTlLaGotb1B4SzA3THZDU3h2bVdTSEtKSHVIYmk2SDBfMEI0ZXZXQ1BpSDZyQWhFMWVwSVU?oc=5"
+    },
+    {
+      "headline": "China Puts Brave Face on Growth in Rare Defense of Economy",
+      "summary": "",
+      "source": "Bloomberg.com",
+      "date": "Tue, 25 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVN4WHROcFlxSmMzWG9PMjlJYU1mWGRKZnNzVXhZS2lyeWpZOUZLeW9XSld5aElsTW1TYVg1N21zeDAwWEw4TVdrRVFvVlptVGlTbk1NbXlyLVFua0ZVNHE3S2g5UTRlYy1VTVVDeGFHRnRMQVVIMFBydXpXVHlhWVRCU1hEMk5QQjJDZXJkZFhCYzY0WG0xZjFjSm55Zl9CWUdmendJRTBTd2xrdjBwU21tYWk?oc=5"
+    },
+    {
+      "headline": "The U.S. and Canada are in a trade war. China aims to win it.",
+      "summary": "",
+      "source": "The Washington Post",
+      "date": "Wed, 26 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRnVBRFNJY1poZjdOb21nOVYwYkd0SG9jY2pmaU9jdnZldi1hdE5XWW9jRTc5UzdJZ2g3OEkwejJES2xqYlBuc2ZBeVdaTUEwcHp4dHNZN0I2c2s5cE92VElaTjdDZmRIb2VtRFF3VzhHLXJVVUUydlp1VVh3NVV6NXEzdXozdFUybGFWdEo4U3dNb2VB?oc=5"
+    },
+    {
+      "headline": "Trump moves toward levying new tariff on China for flooding market with cheap goods, AP sources say",
+      "summary": "",
+      "source": "AP News",
+      "date": "Mon, 24 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQk12QTBQMWIwcnlxcmRTX2ZxRjhxZl9NN1BnTXVGRTcyLUJxclhTZlluRHd6MlVJUHd4U2tFNVVnTHlIbzdHWk9sSVdnSlZBUGVRWEFodWFaVTFyZE8xS3phSDZwdFltb0hOZ0pPQ3pGSzU3ZElYQm42ZzlOTUhDazJWeEhZNkNQWnE3T1F0QUtqaGFFQUtjTUYxQS0?oc=5"
+    },
+    {
+      "headline": "China denounces US threat of sanctions over trade with Iran",
+      "summary": "",
+      "source": "The Guardian",
+      "date": "Tue, 25 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZRzVaNkNpTzdlV2Y2TE5LOTEwbXVlOXd2LXdKejI1OGp2eXlGM3JOZlNaQjk5U1RlSXFKc0dETVk3Uy16MDV0LWIwdmpUdTZla09FdS1NRjR3TlFEOWZ0eXVuV0lRa0FSbDhvaWtLYlYxSnlrSGpEUkd1SzVsdw?oc=5"
+    },
+    {
+      "headline": "China and Switzerland have a new trade agreement. What does it mean for the EU?",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "Mon, 24 Aug 2026",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNlJodzFHcEFVYWRITTBPMGdIaWhWdnF6WEs5SFNSMnNvOE95X21haHVmazhQeDA5UEJqc1ROQi1NUFpfd0wyMzE3Tlc4RVZqSWIwb2F3azcyVC1JUDd6aEEzYzl2VzRoY1NLMWZTYk5uVmdNNFR6UXR1dEhlZ09pMTlsYjJJbGhYRFI1cm9FMllNRTNyWEFObkVFd3ZMSzFBV2NReFBKOFlobzBHSkJPWlJzcEJvUzk2dDMwb3Z1TDNtTng4d0lvd1ZIcWtBOGRF0gHQAUFVX3lxTE5vY1pmdkwxUmtiaGlmYTdibGFmUGZxV2hIYnl1c0RSQXRCazVVOUk0V3lfZ3F1S21ySXhNZjlKcEM0MHhzOFpMaVFQNS13cE1FYUlwRllFM21BUGpEdWlZOXh0Z1ZGelVOWG5TUFFjTHhMaXo4UHFJejBrTkc3OUxTYnotV2JaaU9WSzB1TC1yMjd5dUs1TVotTmNUeHFfREYxaG4wdm11dGJDRndFaEdkZi1wbUVsNXE2UjhPLXE5LV9Rd2pxd3R0NVpvdUxic2Q?oc=5"
+    }
+  ]
+}
