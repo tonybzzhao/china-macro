@@ -63,6 +63,7 @@ let searchQuery = "";
 init();
 
 async function init() {
+  bindThemeSwitch();
   bindFilterRow();
   bindTabs();
   bindSearch();
@@ -86,6 +87,33 @@ function renderFetchError(err) {
   p.className = "no-data";
   p.textContent = "Couldn't load data/history.json (" + err.message + "). If you're opening this file directly from disk, serve it over a local HTTP server instead — browsers block file:// fetches.";
   panels.appendChild(p);
+}
+
+function applyTheme(choice) {
+  const root = document.documentElement;
+  if (choice === "system") root.removeAttribute("data-theme");
+  else root.setAttribute("data-theme", choice);
+}
+
+function bindThemeSwitch() {
+  const buttons = document.querySelectorAll(".theme-btn");
+  let stored = "system";
+  try {
+    stored = localStorage.getItem("theme") || "system";
+  } catch (e) {}
+
+  buttons.forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.themeChoice === stored);
+    btn.addEventListener("click", () => {
+      const choice = btn.dataset.themeChoice;
+      applyTheme(choice);
+      try {
+        localStorage.setItem("theme", choice);
+      } catch (e) {}
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+    });
+  });
 }
 
 function bindFilterRow() {
