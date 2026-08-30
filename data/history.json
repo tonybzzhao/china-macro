@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-30T03:38:23.647405+00:00",
+    "last_updated": "2026-08-30T03:56:07.268979+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -9842,7 +9842,7 @@
           "desc": "The benchmark rate banks use to price longer-term loans, most notably mortgages."
         },
         "rrr": {
-          "label": "Reserve Requirement Ratio (Large Institutions)",
+          "label": "Reserve Requirement Ratio (Large Banks)",
           "unit": "%",
           "freq": "on rate change",
           "decimals": 1,
@@ -9850,222 +9850,223 @@
           "data": [
             {
               "date": "2007-01",
-              "value": 9.5
+              "value": 8.0
             },
             {
               "date": "2007-02",
-              "value": 10.0
+              "value": 8.5
             },
             {
               "date": "2007-04",
-              "value": 10.5
+              "value": 9.0
             },
             {
               "date": "2007-05",
-              "value": 11.0
-            },
-            {
-              "date": "2007-06",
-              "value": 11.5
-            },
-            {
-              "date": "2007-08",
-              "value": 12.0
-            },
-            {
-              "date": "2007-09",
-              "value": 12.5
-            },
-            {
-              "date": "2007-10",
-              "value": 13.0
-            },
-            {
-              "date": "2007-11",
-              "value": 13.5
-            },
-            {
-              "date": "2007-12",
-              "value": 14.5
-            },
-            {
-              "date": "2008-01",
-              "value": 15.0
-            },
-            {
-              "date": "2008-03",
-              "value": 15.5
-            },
-            {
-              "date": "2008-04",
-              "value": 16.0
-            },
-            {
-              "date": "2008-05",
-              "value": 16.5
-            },
-            {
-              "date": "2008-06",
-              "value": 17.0
-            },
-            {
-              "date": "2008-09",
-              "value": 17.5
-            },
-            {
-              "date": "2008-10",
-              "value": 17.0
-            },
-            {
-              "date": "2008-12",
-              "value": 16.0
-            },
-            {
-              "date": "2010-01",
-              "value": 16.0
-            },
-            {
-              "date": "2010-02",
-              "value": 16.5
-            },
-            {
-              "date": "2010-05",
-              "value": 17.0
-            },
-            {
-              "date": "2010-11",
-              "value": 17.5
-            },
-            {
-              "date": "2010-12",
-              "value": 18.5
-            },
-            {
-              "date": "2011-01",
-              "value": 19.0
-            },
-            {
-              "date": "2011-02",
-              "value": 19.5
-            },
-            {
-              "date": "2011-03",
-              "value": 20.0
-            },
-            {
-              "date": "2011-04",
-              "value": 20.5
-            },
-            {
-              "date": "2011-05",
-              "value": 21.0
-            },
-            {
-              "date": "2011-06",
-              "value": 21.5
-            },
-            {
-              "date": "2011-12",
-              "value": 21.0
-            },
-            {
-              "date": "2012-02",
-              "value": 20.5
-            },
-            {
-              "date": "2012-05",
-              "value": 20.0
-            },
-            {
-              "date": "2015-02",
-              "value": 19.5
-            },
-            {
-              "date": "2015-04",
-              "value": 18.5
-            },
-            {
-              "date": "2015-09",
-              "value": 18.0
-            },
-            {
-              "date": "2015-10",
-              "value": 17.5
-            },
-            {
-              "date": "2016-03",
-              "value": 17.0
-            },
-            {
-              "date": "2018-04",
-              "value": 16.0
-            },
-            {
-              "date": "2018-07",
-              "value": 15.5
-            },
-            {
-              "date": "2018-10",
-              "value": 14.5
-            },
-            {
-              "date": "2019-01",
-              "value": 14.0
-            },
-            {
-              "date": "2019-09",
-              "value": 13.0
-            },
-            {
-              "date": "2020-01",
-              "value": 12.5
-            },
-            {
-              "date": "2020-04",
-              "value": 12.5
-            },
-            {
-              "date": "2020-05",
-              "value": 12.5
-            },
-            {
-              "date": "2021-07",
-              "value": 12.0
-            },
-            {
-              "date": "2021-12",
-              "value": 11.5
-            },
-            {
-              "date": "2022-04",
-              "value": 11.25
-            },
-            {
-              "date": "2022-12",
-              "value": 11.0
-            },
-            {
-              "date": "2023-03",
-              "value": 10.75
-            },
-            {
-              "date": "2023-09",
-              "value": 10.5
-            },
-            {
-              "date": "2024-02",
-              "value": 10.0
-            },
-            {
-              "date": "2024-09",
               "value": 9.5
             },
             {
-              "date": "2025-05",
+              "date": "2007-06",
+              "value": 10.0
+            },
+            {
+              "date": "2007-08",
+              "value": 10.5
+            },
+            {
+              "date": "2007-09",
+              "value": 11.0
+            },
+            {
+              "date": "2007-10",
+              "value": 11.5
+            },
+            {
+              "date": "2007-11",
+              "value": 12.0
+            },
+            {
+              "date": "2007-12",
+              "value": 13.0
+            },
+            {
+              "date": "2008-01",
+              "value": 13.5
+            },
+            {
+              "date": "2008-03",
+              "value": 14.0
+            },
+            {
+              "date": "2008-04",
+              "value": 14.5
+            },
+            {
+              "date": "2008-05",
+              "value": 15.0
+            },
+            {
+              "date": "2008-06",
+              "value": 15.5
+            },
+            {
+              "date": "2008-09",
+              "value": 16.0
+            },
+            {
+              "date": "2008-10",
+              "value": 15.5
+            },
+            {
+              "date": "2008-12",
+              "value": 14.5
+            },
+            {
+              "date": "2010-01",
+              "value": 14.5
+            },
+            {
+              "date": "2010-02",
+              "value": 15.0
+            },
+            {
+              "date": "2010-05",
+              "value": 15.5
+            },
+            {
+              "date": "2010-11",
+              "value": 16.0
+            },
+            {
+              "date": "2010-12",
+              "value": 17.0
+            },
+            {
+              "date": "2011-01",
+              "value": 17.5
+            },
+            {
+              "date": "2011-02",
+              "value": 18.0
+            },
+            {
+              "date": "2011-03",
+              "value": 18.5
+            },
+            {
+              "date": "2011-04",
+              "value": 19.0
+            },
+            {
+              "date": "2011-05",
+              "value": 19.5
+            },
+            {
+              "date": "2011-06",
+              "value": 20.0
+            },
+            {
+              "date": "2011-12",
+              "value": 19.5
+            },
+            {
+              "date": "2012-02",
+              "value": 19.0
+            },
+            {
+              "date": "2012-05",
+              "value": 18.5
+            },
+            {
+              "date": "2015-02",
+              "value": 18.0
+            },
+            {
+              "date": "2015-04",
+              "value": 17.0
+            },
+            {
+              "date": "2015-09",
+              "value": 16.5
+            },
+            {
+              "date": "2015-10",
+              "value": 16.0
+            },
+            {
+              "date": "2016-03",
+              "value": 15.5
+            },
+            {
+              "date": "2018-04",
+              "value": 14.5
+            },
+            {
+              "date": "2018-07",
+              "value": 14.0
+            },
+            {
+              "date": "2018-10",
+              "value": 13.0
+            },
+            {
+              "date": "2019-01",
+              "value": 12.5
+            },
+            {
+              "date": "2019-09",
+              "value": 11.5
+            },
+            {
+              "date": "2020-01",
+              "value": 11.0
+            },
+            {
+              "date": "2020-04",
+              "value": 11.0
+            },
+            {
+              "date": "2020-05",
+              "value": 11.0
+            },
+            {
+              "date": "2021-07",
+              "value": 10.5
+            },
+            {
+              "date": "2021-12",
+              "value": 10.0
+            },
+            {
+              "date": "2022-04",
+              "value": 9.75
+            },
+            {
+              "date": "2022-12",
+              "value": 9.5
+            },
+            {
+              "date": "2023-03",
+              "value": 9.25
+            },
+            {
+              "date": "2023-09",
               "value": 9.0
+            },
+            {
+              "date": "2024-02",
+              "value": 8.5
+            },
+            {
+              "date": "2024-09",
+              "value": 8.0
+            },
+            {
+              "date": "2025-05",
+              "value": 7.5
             }
           ],
-          "desc": "The share of deposits large banks must hold in reserve rather than lend out; lowering it frees up money for banks to lend."
+          "desc": "The share of deposits large banks must hold in reserve rather than lend out; lowering it frees up money for banks to lend.",
+          "flag": "Tracks 大型银行 (large banks) specifically, verified against PBOC's own live current-value page and CEIC (both 7.5% as of Aug 2026) — a different, ~1.5pp-lower category than what the underlying akshare function's own column actually reports (\"large financial institutions\"). History before ~2015 is reconstructed by offset from that series and not independently verified; the current value and recent cuts (2022+) are confirmed against press-reported figures."
         },
         "m2_growth": {
           "label": "M2 Money Supply Growth",

@@ -317,25 +317,58 @@ def fetch_lpr():
     return out_1y, out_5y
 
 def fetch_rrr():
-    """Verified live 2026-08-29: this function is NOT actually broken/stale —
-    an earlier check misdiagnosed it because find_col() was searching for
-    column names ('日期', 'TRADE_DATE') that don't exist in this table; the
-    real columns are 公布时间 (announced) / 生效时间 (effective) and
-    大型金融机构-调整后 (post-change level, large institutions). That
-    mismatch silently raised on every run, so the series never updated —
-    not a dead upstream source. Latest real cut: large institutions to
-    9.0% effective 2025-05-15."""
+    """Reserve Requirement Ratio for LARGE BANKS (大型银行) specifically.
+
+    IMPORTANT: this is NOT the same category as what
+    ak.macro_china_reserve_requirement_ratio's '大型金融机构' column tracks
+    ("large financial institutions" — a different, ~1.5pp-HIGHER series).
+    Verified directly on 2026-08-29 against two independent sources — PBOC's
+    own live current-value page and CEIC — both showing large banks at
+    7.5%, while akshare's own column showed 9.0% for the same date. This
+    was flagged by the user recognizing the akshare category was wrong,
+    not a data-freshness problem.
+
+    Strategy: scrape PBOC's page for the authoritative CURRENT value (this
+    is the part that must be exactly right), then reconstruct history by
+    taking akshare's own cut TIMING and MAGNITUDES (verified correct — same
+    dates/sizes reported in the press) and shifting the whole series by a
+    constant offset so the latest point matches the verified current value
+    exactly. The offset has been confirmed constant across the last several
+    cuts (each PBOC action applies the same magnitude to every tier) but
+    isn't independently verified before the modern tiered system was
+    established (~2015) — earlier history is a reasonable approximation,
+    not independently confirmed.
+    """
+    resp = requests.get(
+        "https://www.pbc.gov.cn/rmyh/4027845/index.html",
+        timeout=20,
+        headers={"User-Agent": "Mozilla/5.0"},
+    )
+    resp.raise_for_status()
+    resp.encoding = "utf-8"
+    m = re.search(r"大型银行.*?([\d.]+)\s*%", resp.text, re.S)
+    if not m:
+        raise ValueError("couldn't find 大型银行 RRR figure on PBOC page")
+    current_large_bank_rrr = float(m.group(1))
+
     df = ak.macro_china_reserve_requirement_ratio()
     date_col = find_col(df, ["生效时间", "公布时间"])
     val_col = find_col(df, ["大型金融机构-调整后"])
     if date_col is None or val_col is None:
         raise ValueError(f"couldn't find date/value columns in {list(df.columns)}")
-    out = []
+    raw = []
     for _, r in df.iterrows():
         v = clean_float(r[val_col])
         if v is None:
             continue
-        out.append({"date": normalize_date(r[date_col]), "value": v})
+        raw.append({"date": normalize_date(r[date_col]), "value": v})
+    raw.sort(key=lambda p: p["date"])
+    if not raw:
+        raise ValueError("akshare RRR table returned no rows")
+
+    offset = current_large_bank_rrr - raw[-1]["value"]
+    out = [{"date": p["date"], "value": round(p["value"] + offset, 3)} for p in raw]
+    out[-1]["value"] = current_large_bank_rrr  # exact, not offset-rounded
     return out
 
 def fetch_trading_calendar():
