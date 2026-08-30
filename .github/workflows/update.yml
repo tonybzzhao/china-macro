@@ -2,11 +2,15 @@ name: Update China macro data
 
 on:
   schedule:
-    # Hourly, on the hour. Most series (GDP/CPI/PMI/etc.) are monthly/
-    # quarterly releases and won't change most hours — this just means a
-    # new release shows up within an hour instead of within a day. News
-    # and USD/CNY are the two series that actually benefit every run.
-    - cron: "0 * * * *"
+    # Hourly, offset to :23 rather than the top of the hour. GitHub's own
+    # docs warn that ":00" is the most congested slot on their scheduler
+    # and jobs there "may be delayed or, in some cases, dropped" — that's
+    # exactly what happened here: only 1 run fired in ~8 hours on "0 * * * *".
+    # Most series (GDP/CPI/PMI/etc.) are monthly/quarterly releases and
+    # won't change most hours — this just means a new release shows up
+    # within an hour instead of within a day. News and USD/CNY are the two
+    # series that actually benefit every run.
+    - cron: "23 * * * *"
   workflow_dispatch: {}
 
 permissions:

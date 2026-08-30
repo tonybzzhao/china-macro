@@ -25,6 +25,15 @@ plus a running feed of related political/economic news.
 
 ## ⚠️ Known limitations — read before relying on this
 
+**GitHub Actions scheduling gotcha (found 2026-08-30):** the cron was
+originally `"0 * * * *"` (top of every hour). Only 1 run fired in the first
+~8 hours it was live — GitHub's own docs warn that `:00` is the most
+congested slot on their scheduler and jobs there "may be delayed or, in
+some cases, dropped." Changed to `"23 * * * *"`. If updates seem to have
+stalled again, check the repo's **Actions** tab for run history before
+assuming the script itself is broken — scheduled-workflow reliability is
+a GitHub-side thing, not something this codebase controls.
+
 **Data-freshness check (last updated 2026-08-29):** every fetcher wired into
 `scripts/update_data.py` was run live before shipping, not just guessed from
 docs. Results:
