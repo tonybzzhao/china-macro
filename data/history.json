@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-30T17:36:03.178494+00:00",
+    "last_updated": "2026-08-30T21:14:13.244495+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -50883,13 +50883,6 @@
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVN4WHROcFlxSmMzWG9PMjlJYU1mWGRKZnNzVXhZS2lyeWpZOUZLeW9XSld5aElsTW1TYVg1N21zeDAwWEw4TVdrRVFvVlptVGlTbk1NbXlyLVFua0ZVNHE3S2g5UTRlYy1VTVVDeGFHRnRMQVVIMFBydXpXVHlhWVRCU1hEMk5QQjJDZXJkZFhCYzY0WG0xZjFjSm55Zl9CWUdmendJRTBTd2xrdjBwU21tYWk?oc=5"
     },
     {
-      "headline": "U.S. Attempt to Strangle Iran’s Economy Depends on China’s Cooperation",
-      "summary": "",
-      "source": "The New York Times",
-      "date": "2026-08-24T23:10:50+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYzNIaDJOY0FuRzFnNjJzajJFZm1xNGktcy1kV2IxajNtbEJfSkZ3U2hKUldvUXR1TEpvUkNlYWlnS0tyTEk5NjY1YTBrUVduOXoxaTBNZTR0OGNxeGE2c3pyaHgtdkcyMEJnQUJveTRtcmFBVGpkUkRhYTJMaXJ0RDhqS3B2WkI3RmE3NThR?oc=5"
-    },
-    {
       "headline": "Trump moves toward levying new tariff on China for flooding market with cheap goods, AP sources say",
       "summary": "",
       "source": "AP",
@@ -50946,11 +50939,11 @@
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaGhxVjA3cFpCZGFWN0lDTFdXSkVNcm5jQ2NoVl80WnFRRVpsR004ZmNPWERFcmZRQ0ROVnpNN1FMNlZ3bVA2LUZ6N3RKQ0EwMWQ5VzlMazgzd3ZuMFdCNGdUR1l6RTh1NjU2SWNsUGZLdlFEXy1fVFlLaU1xS3llNWZ4Z0VHd2lSMzNjUU1ta0JiX002aEJ2djVEdGZmMEZDOTZ3bjhzelZXV3Jucm1xS3ZKQmY?oc=5"
     },
     {
-      "headline": "Trump risks China blowback with plan to choke Iran’s economy",
+      "headline": "Europe’s Luxury Giants Discern Green Shoots in Key China Market",
       "summary": "",
-      "source": "The Japan Times",
-      "date": "2026-08-22T00:12:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMnVWaURlMVdDdzh6N2lheC1oWGpZZ2tpYmpYOVF1ZDN1QnJMVHBQeVVHaDM5Q0lBMzA3QXRCMU5aQ3lUTW5YSGZGQlpsV2d5SlFwdVpfRzRzSE9lSHJ2UVpVdkQ5WWV4dHZFWUxTT3ozamdHLTk0NjdET29uWEpoMFNzclBqd3g5X3VTZzRDdG1PMDZXMHc?oc=5"
+      "source": "Yahoo Finance",
+      "date": "2026-08-23T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWUpodUZicXAyVWI2M3FkQjZ0MFhrNlhxZUxCTWt6SDV4cW9sQ2JIb0t6MmR0MlVqWWcwSmRDT0ZVZlA1YmN6WTlNRTBPZTgwc3dVOHJWbnZlSXBnUG9pTU04djFaNmFZNG9QemhTeWxybXh4YW1LNklhZ1lXWnUyeXVOQU1mYjZmZ2NpSU9HUFVHY205MzgtMGVpSll1ZlU0?oc=5"
     },
     {
       "headline": "China is using Jiang Zemin centenary to signal political continuity",
@@ -50974,6 +50967,13 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWGVVTlhudlVfTC1PdXhuaENtMUJwV0VtcUN6WlFhaHFKZ0dsR1B5T2xqLVJWTG5SOElxRkxLRTFmOHhZR19XU0hJT2UtLXZCTDJJOHc2cjluTEhEemlNemFNbFU2bHdXUXNfQXpYXzJJcVYxVkl2dkVvdFFFVGpkcUIweVh2SU9SSmxuSTFUeGhfaTdKWlN1djBFRVJ2YjFxV1U5dmVva1AyQTlLMm9GVlB5cHdiQms2Q0FfdU10c3VaV3RWOV9pVtIByAFBVV95cUxPNGktWGZlMEtObGRzRXFST0VQOTRCYmdaZTR6bGZHbkF6NmNFLTM2ZnE3S2JWSGgwZFM3ZDBrd0J0b2swdy02U3ZOQXlxb0JIcmZaMlo4ejA4UmZvQV85Yi0xZlVQbnlLWm5jcDBpcGhnT0h4Wks4bi1QS2hveTFRbjJaYmFYRUFiMUhJbUpJT0Y4T1dzNVRBeUVPUVdfdlZJaG5mQmFHelZXanM4REdGbTNuSFdCV1dhZHBqNERfTy1FLXQwdHlkSQ?oc=5"
     },
     {
+      "headline": "China opens new Arctic trade route – but obstacles will prevent its wider use",
+      "summary": "",
+      "source": "The Conversation",
+      "date": "2026-08-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZ0FnNmlaVUxla181MzU2aHBaZmNGWjVReUVoSFJyRzBmeWpvZUFnTmRFR0tnaXdDOTR3b0RHSGN2Z0hKSTZHcktRYlFCQ2tleU5ka0lYTG9rMHQtQXFFN3VJRUZNQXM0RmkxMDc2WExFSy1mNngyNFhNNXJiSnBScVpBc2hxc013SE1oNU95dFdfNEdJR3czZ2N5WlVaUmRPZE9uWVZJNXllTzJIMFln?oc=5"
+    },
+    {
       "headline": "SanDisk Stock Has Gone Parabolic. How China Could End the Party",
       "summary": "",
       "source": "Yahoo Finance",
@@ -50991,7 +50991,7 @@
       "headline": "China's economic security growth model and implications for the US-China security dilemma",
       "summary": "",
       "source": "Peterson Institute for International Economics",
-      "date": "2026-08-20T12:00:00+00:00",
+      "date": "2026-08-20T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ2lIcURhTG1xTm9nVnBEN01JaTBUMHhhc0xJZGNtUXdhV1lfZUQtdzBGNFlFNG5zZXBFanIzSmdjMEtPeXRqQXFGTE1vOWdKdVg0NUp6VXhNQmZMZXlJZFNFTEVIWlJTTER0MnJ3Q1B4T3l6TWFITWRNY0hFbmE3YmxQXzc0Y0FNZXJVdW1xTFdUNHU4a0gzVUtKcXhTQ3hiWmswdDBZd0MxNlhmZV9PYVk2SXZwcHhY?oc=5"
     },
     {
@@ -51126,6 +51126,13 @@
       "source": "Bloomberg",
       "date": "2026-08-18T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSl9mMnBVNWxGZlJxYlluRm4xVjJjYUcxQ1hTeDZ5aEhXazduazR5anp1cDBiNWJYWkh2ekhwTFR1Ml9DbXZMZ2tjS0tmeHE3aFhmMXZrWWMzaGtSOTltRW84ZTJ6cUZIRHFLb1JoaWltRExObGw4VEZBOWVvcFVHa0VtNTAtUQ?oc=5"
+    },
+    {
+      "headline": "China’s growth expectations ease as economy loses momentum in July",
+      "summary": "",
+      "source": "Anadolu Ajansı",
+      "date": "2026-08-18T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWVlvVTBNOW5nSjZJQU1SN0xfTGVYa294MnJNd3pwUDNoeW9ibXB6UlE4UVpaaGw3Qy1aUmY2dkQ0Z05wb0tPOWp5MWQ2WE84SktDU2h4dzlnRDNIREIzTnNxR0d5MlRJSHpLQWIzWkVUTG10TnFKTnhjc2U1NlJhX0R6ZUV4YlRCdEtCemlZNlhWeXo2YWhIa0s0YXQtMEZ1dUpxZ0FXRko1YWM?oc=5"
     },
     {
       "headline": "Mexico Weighs Tougher Trade Rules for China as US Talks Grind On",
@@ -51303,13 +51310,6 @@
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZWVjRXFZdVNGSzRlOXB5UzhOUFUwT1Rlb3YxbzlxOFVrdDBVekVKTnowaWZtTThRTFpjU1Bjck5vSFNTSEpCWXA3WlpneTlsM1hfRTYtRlZzei1uVmpSQzFUa0t3c0hMam5sWmlucUpxdjVyV0FGc3ZFaFo3UUxfLWtkVi1UYm56SG9yMF9sbDE0QWIwZ3Jxc1E1Nzc?oc=5"
     },
     {
-      "headline": "AI surge helps dual-listed stocks’ A-H premium hit 1-year high",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-13T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPYWxVbGN3S0lQQkFoM3JOVWJHanIxMGxjQ1dfRDhHSU5hMnQyMWM3a2FnYXdBRHpYSzl1NGIzY3NsOG5lNWhhNDExUkQ1MXJEYUtYYnRhSHFwaF9MZmNRNTZmRTQ1V2U1Z1VubkJwNnZ4bWcwOHgwN2hOSGcxSG5FUENMUEludDhhemIteEV2UGlvX01NR21PMWF5UDdKM2l2d3hhX0RNaGlsaGRpdDI5cnVmWjR5QlB3YW4yU09FYk13R0JOR1JRY05Oak44WDJxQkg0MmJXN3pIWWNEWW54WVhR0gHiAUFVX3lxTE9IVi1TN2JzbC11RzFJRmFhRjNWdGVRd3ktVVRRQnZuZkswQjR4ak94bzRCdWF4QVBIYkRWVmxJbFdESk82cFh5NUs2LVFsaE9Mc3BIQnkxeVRyNFZuekxnNUMzcml5YW93UlhVREd5MlNRX2I3RGIyWWhpYUdseWN4Z0FzbTl1eC1lemRiakFrT05NaS12akx0MUdvR1lzQ1RqRnFlenBUaDRkTThGYWF1Qy1VZGxYaG42V21wLXAxWVlwWnJzLVc3a3EyZzFtVmd4WUpYZU9UWEVPOXQtT3N1WXc?oc=5"
-    },
-    {
       "headline": "China has wrested control of oil markets from OPEC",
       "summary": "",
       "source": "The Economist",
@@ -51322,13 +51322,6 @@
       "source": "Barron's",
       "date": "2026-08-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE40RHdaejZISVBSbWk3Zm1qQ2FHcldPNUlvSTdEUHdtdGQtUEtyQTEwZ0NrX25fbU42Tlk1eEVRX2lYdERlWE9nU25GckxVU3JxRk42aG5zZ19DWXRyMHRxTUEwZEJBWUZZdnd5UUZSdC1LaEE?oc=5"
-    },
-    {
-      "headline": "China Healthcare Stocks Win Big on Earnings, Cheaper Valuations",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-08-13T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQajZQMkUwOTY3bHNtNHlPM1cyQlprbVpoSWF5dU5wVURsaFdreWcweC1hSlpFUGVZRGZxc2w3ZGNiZEIwRnNuVFZkcGVkWDkzdm5zbmlZZkRKOXNUTFdrWUxiU0V3bzE5SlpsZWN2NWctcVBWY0c4SGx4MWN1N3kwd0JlaHZqQkpsTXEtS3dNWUdjMFhBVFB4RGV1bkd6RkdUNEgwcl9mbVVTdDRLcFRFVnlfbw?oc=5"
     },
     {
       "headline": "Opinion | China’s economic problems have been diagnosed. Will policymakers act?",
