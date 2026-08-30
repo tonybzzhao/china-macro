@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-30T03:56:07.268979+00:00",
+    "last_updated": "2026-08-30T04:06:47.279771+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -10062,6 +10062,10 @@
             },
             {
               "date": "2025-05",
+              "value": 7.5
+            },
+            {
+              "date": "2026-08",
               "value": 7.5
             }
           ],

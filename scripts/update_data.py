@@ -369,6 +369,17 @@ def fetch_rrr():
     offset = current_large_bank_rrr - raw[-1]["value"]
     out = [{"date": p["date"], "value": round(p["value"] + offset, 3)} for p in raw]
     out[-1]["value"] = current_large_bank_rrr  # exact, not offset-rounded
+
+    # Forward-fill a "this month" point at the current (unchanged) rate —
+    # RRR only has a real data point on the rare month PBOC acts, which
+    # otherwise makes the chart's rightmost point look stale for the many
+    # months nothing happens (verified: MacroMicro's equivalent chart does
+    # the same forward-fill, showing "2026-07" for a rate that last
+    # actually changed in 2025-05). Harmless to run every time — it just
+    # overwrites the same current-month key until the month rolls over.
+    this_month = date.today().strftime("%Y-%m")
+    if out[-1]["date"] != this_month:
+        out.append({"date": this_month, "value": current_large_bank_rrr})
     return out
 
 def fetch_trading_calendar():
