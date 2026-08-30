@@ -552,7 +552,9 @@ function buildLineChart(pts, colorVar, series) {
   const svg = document.createElementNS(svgNS, "svg");
   svg.setAttribute("class", "chart-svg");
   svg.setAttribute("viewBox", `0 0 ${CHART_W} ${CHART_H}`);
-  svg.setAttribute("preserveAspectRatio", "none");
+  // Uniform scaling (no independent X/Y stretch) — safe because the CSS
+  // aspect-ratio on .chart-svg is locked to match CHART_W/CHART_H exactly.
+  svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
 
   // gridlines (3 horizontal)
   [0.0, 0.5, 1.0].forEach((t) => {
