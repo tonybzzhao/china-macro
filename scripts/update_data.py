@@ -367,19 +367,32 @@ def fetch_rrr():
         raise ValueError("akshare RRR table returned no rows")
 
     offset = current_large_bank_rrr - raw[-1]["value"]
-    out = [{"date": p["date"], "value": round(p["value"] + offset, 3)} for p in raw]
-    out[-1]["value"] = current_large_bank_rrr  # exact, not offset-rounded
+    changes = [{"date": p["date"], "value": round(p["value"] + offset, 3)} for p in raw]
+    changes[-1]["value"] = current_large_bank_rrr  # exact, not offset-rounded
 
-    # Forward-fill a "this month" point at the current (unchanged) rate —
-    # RRR only has a real data point on the rare month PBOC acts, which
-    # otherwise makes the chart's rightmost point look stale for the many
-    # months nothing happens (verified: MacroMicro's equivalent chart does
-    # the same forward-fill, showing "2026-07" for a rate that last
-    # actually changed in 2025-05). Harmless to run every time — it just
-    # overwrites the same current-month key until the month rolls over.
+    # RRR only has a real data point on the rare month PBOC acts. Rather
+    # than jump straight from the last change (e.g. 2025-05) to the current
+    # month — a multi-year gap plotted as a single line segment — fill in
+    # every month in between at the rate that was actually in effect that
+    # month (a proper step function), matching how MacroMicro's equivalent
+    # chart plots a monthly observation regardless of whether the rate
+    # moved that month.
+    def month_add(ym, n):
+        y, m = int(ym[:4]), int(ym[5:7])
+        total = y * 12 + (m - 1) + n
+        return f"{total // 12}-{total % 12 + 1:02d}"
+
     this_month = date.today().strftime("%Y-%m")
-    if out[-1]["date"] != this_month:
-        out.append({"date": this_month, "value": current_large_bank_rrr})
+    out = []
+    cursor = changes[0]["date"]
+    idx = 0
+    current_value = changes[0]["value"]
+    while cursor <= this_month:
+        while idx < len(changes) and changes[idx]["date"] <= cursor:
+            current_value = changes[idx]["value"]
+            idx += 1
+        out.append({"date": cursor, "value": current_value})
+        cursor = month_add(cursor, 1)
     return out
 
 def fetch_trading_calendar():
