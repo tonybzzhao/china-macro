@@ -317,17 +317,25 @@ def fetch_lpr():
     return out_1y, out_5y
 
 def fetch_rrr():
+    """Verified live 2026-08-29: this function is NOT actually broken/stale —
+    an earlier check misdiagnosed it because find_col() was searching for
+    column names ('日期', 'TRADE_DATE') that don't exist in this table; the
+    real columns are 公布时间 (announced) / 生效时间 (effective) and
+    大型金融机构-调整后 (post-change level, large institutions). That
+    mismatch silently raised on every run, so the series never updated —
+    not a dead upstream source. Latest real cut: large institutions to
+    9.0% effective 2025-05-15."""
     df = ak.macro_china_reserve_requirement_ratio()
-    date_col = find_col(df, ["日期", "date", "TRADE_DATE"])
-    val_col = find_col(df, ["大型金融机构-调整后", "大型金融机构调整后", "value", "今值"])
+    date_col = find_col(df, ["生效时间", "公布时间"])
+    val_col = find_col(df, ["大型金融机构-调整后"])
     if date_col is None or val_col is None:
         raise ValueError(f"couldn't find date/value columns in {list(df.columns)}")
     out = []
     for _, r in df.iterrows():
-        try:
-            out.append({"date": normalize_date(r[date_col]), "value": float(r[val_col])})
-        except (TypeError, ValueError):
+        v = clean_float(r[val_col])
+        if v is None:
             continue
+        out.append({"date": normalize_date(r[date_col]), "value": v})
     return out
 
 def fetch_trading_calendar():
@@ -392,10 +400,11 @@ STALE_FETCHERS = [
 
 FETCHERS = FRESH_FETCHERS + STALE_FETCHERS
 
-# NOT wired at all, by design:
-# - rrr (ak.macro_china_reserve_requirement_ratio): verified BROKEN, data
-#   stops in 2007. Needs a replacement source before automating — PBOC's own
-#   site or a different akshare function. Left manually-seeded.
+# (rrr used to be here — earlier marked BROKEN, but that was a
+# misdiagnosis: find_col() was searching for column names that don't exist
+# in this table, so it raised on every run and the series never updated.
+# ak.macro_china_reserve_requirement_ratio is actually current — fixed and
+# called separately in main(), see fetch_rrr()'s docstring.)
 # (usdcny used to be here too — ak.macro_china_rmb is dead since 2021-05-13 —
 # but now runs on Frankfurter's daily feed instead, see FRESH_FETCHERS above.)
 # - property_investment: ak.macro_china_real_estate exists but is a real-
@@ -563,8 +572,10 @@ def main():
     except Exception:
         log(f"FAIL prices_credit.m1_m2_gap:\n{traceback.format_exc()}")
 
-    # rrr intentionally not called here — see the "NOT wired" note above
-    # fetch_rrr's definition.
+    try:
+        update_series(data, "prices_credit", "rrr", fetch_rrr())
+    except Exception:
+        log(f"FAIL prices_credit.rrr:\n{traceback.format_exc()}")
 
     try:
         news = fetch_news()

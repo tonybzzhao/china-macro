@@ -37,8 +37,8 @@ docs. Results:
 | ✅ Live | `usdcny` (daily, via Frankfurter/ECB — not akshare) | current through 2026-08-28, back to 2000-01-13 |
 | ✅ Live | `retail_sales` (`ak.macro_china_consumer_goods_retail`), `fixed_asset_investment` (`ak.macro_china_gdzctz`, computed as YTD y/y — see flag below) | current through 2026-07 |
 | ✅ Live | `trading_days` (`ak.tool_trade_date_hist_sina`) — powers the Beijing-time market-open indicator | through 2026-12-31 |
+| ✅ Live | `rrr` (`ak.macro_china_reserve_requirement_ratio`) — previously marked broken, which was a misdiagnosis: the fetcher was searching for column names that don't exist in this table (`日期`/`TRADE_DATE` instead of the real `生效时间`/`大型金融机构-调整后`), so it silently raised on every run. Fixed. | current through 2025-05 (RRR only changes on PBOC action, not monthly) |
 | ⚠️ Stale (~1yr behind) | `cpi`, `ppi`, `official_manufacturing_pmi`, `caixin_manufacturing_pmi`, `official_non_manufacturing_pmi`, `gdp_growth`, `industrial_production`, `exports_yoy`, `imports_yoy`, `trade_balance`, `fx_reserves` | frozen around Sep 2025 |
-| ❌ Broken, not called | `rrr` (`ak.macro_china_reserve_requirement_ratio`) | data stops in **2007** |
 | — Not wired, no source exists | `property_investment` (akshare's real-estate function is a climate index, not investment growth), `new_home_prices` (akshare only has raw per-city levels, not NBS's 70-city composite), `youth_unemployment` (checked `ak.macro_china_urban_unemployment`'s full item breakdown directly — no 16-24 split exists anywhere in akshare) | — |
 
 The "stale" group all scrape the same Sina Finance macro widget, which
