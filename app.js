@@ -676,6 +676,10 @@ function dateToOrdinal(dateStr) {
 function buildLineChart(pts, colorVar, series) {
   const values = pts.map((p) => p.value);
   let min = Math.min(...values), max = Math.max(...values);
+  if (typeof series.threshold === "number") {
+    min = Math.min(min, series.threshold);
+    max = Math.max(max, series.threshold);
+  }
   if (min === max) { min -= 1; max += 1; }
   const span = max - min;
   min -= span * 0.12; max += span * 0.12;
@@ -710,6 +714,28 @@ function buildLineChart(pts, colorVar, series) {
   area.setAttribute("fill", `var(${colorVar})`);
   area.setAttribute("d", `M ${x(0)},${PAD_T + plotH} L ${areaPts} L ${x(pts.length - 1)},${PAD_T + plotH} Z`);
   svg.appendChild(area);
+
+  // threshold reference line (e.g. PMI's 50 expansion/contraction line) —
+  // drawn in the accent color, after the area fill but under the data
+  // line so the series itself stays the most prominent element.
+  if (typeof series.threshold === "number") {
+    const ty = y(series.threshold);
+    const thresholdLine = document.createElementNS(svgNS, "line");
+    thresholdLine.setAttribute("class", "chart-threshold-line");
+    thresholdLine.setAttribute("x1", PAD_L);
+    thresholdLine.setAttribute("x2", CHART_W - PAD_R);
+    thresholdLine.setAttribute("y1", ty);
+    thresholdLine.setAttribute("y2", ty);
+    svg.appendChild(thresholdLine);
+
+    const thresholdLabel = document.createElementNS(svgNS, "text");
+    thresholdLabel.setAttribute("class", "chart-threshold-label");
+    thresholdLabel.setAttribute("x", CHART_W - PAD_R);
+    thresholdLabel.setAttribute("y", ty - 3);
+    thresholdLabel.setAttribute("text-anchor", "end");
+    thresholdLabel.textContent = String(series.threshold);
+    svg.appendChild(thresholdLabel);
+  }
 
   // line
   const line = document.createElementNS(svgNS, "path");

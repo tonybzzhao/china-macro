@@ -135,58 +135,95 @@ def simple_series(fetch_fn, date_candidates, val_candidates):
 DATE_COLS = ["日期", "date", "月份", "TRADE_DATE"]
 VAL_COLS = ["今值", "value", "现值"]
 
+# --- Replaced 2026-08-31: the functions below (macro_china_cpi_monthly,
+# _ppi_yearly, _pmi_yearly, _cx_pmi_yearly, _non_man_pmi,
+# _industrial_production_yoy, _exports_yoy, _imports_yoy, _trade_balance,
+# _gdp_yearly) all scrape the same dead Sina Finance widget, frozen since
+# ~Sep 2025. User asked directly why PMI wasn't updating on 2026-08-31 (the
+# day of a real release) — verified live that akshare itself had the data
+# (macro_china_pmi showed Aug 2026 immediately), so this was a "wrong
+# function" bug, not a data-availability one. Replaced every affected
+# fetcher with a verified-fresh alternative found the same way.
+
 def fetch_cpi():
-    return simple_series(ak.macro_china_cpi_monthly, DATE_COLS, VAL_COLS)
+    return simple_series(ak.macro_china_cpi, ["月份"], ["全国-同比增长"])
 
 def fetch_ppi():
-    return simple_series(ak.macro_china_ppi_yearly, DATE_COLS, VAL_COLS)
+    return simple_series(ak.macro_china_ppi, ["月份"], ["当月同比增长"])
 
-def fetch_pmi():
-    return simple_series(ak.macro_china_pmi_yearly, DATE_COLS, VAL_COLS)
+def fetch_pmi_official():
+    """One call gives both official manufacturing and non-manufacturing PMI."""
+    df = ak.macro_china_pmi()
+    date_col = find_col(df, ["月份"])
+    man_col = find_col(df, ["制造业-指数"])
+    nonman_col = find_col(df, ["非制造业-指数"])
+    if not all([date_col, man_col, nonman_col]):
+        raise ValueError(f"couldn't find expected columns in {list(df.columns)}")
+    man_pts, nonman_pts = [], []
+    for _, r in df.iterrows():
+        d = normalize_date(r[date_col])
+        v1 = clean_float(r[man_col])
+        if v1 is not None:
+            man_pts.append({"date": d, "value": v1})
+        v2 = clean_float(r[nonman_col])
+        if v2 is not None:
+            nonman_pts.append({"date": d, "value": v2})
+    return man_pts, nonman_pts
 
 def fetch_cx_pmi():
-    return simple_series(ak.macro_china_cx_pmi_yearly, DATE_COLS, VAL_COLS)
-
-def fetch_non_man_pmi():
-    return simple_series(ak.macro_china_non_man_pmi, DATE_COLS, VAL_COLS)
+    return simple_series(ak.index_pmi_man_cx, ["日期"], ["制造业PMI"])
 
 def fetch_gdp():
-    """GDP releases mid-quarter-following-month (Q1->Apr, Q2->Jul, Q3->Oct,
-    Q4->Jan of next year); map the release date to the quarter it reports on
-    so it's comparable with this dashboard's hand-seeded 'YYYY-Q#' points."""
-    df = ak.macro_china_gdp_yearly()
-    date_col = find_col(df, DATE_COLS)
-    val_col = find_col(df, VAL_COLS)
+    """macro_china_gdp's own 季度 column already labels the reference
+    quarter directly (e.g. '2026年第1季度') — simpler and more reliable
+    than the old approach of guessing the quarter from a release date.
+    Skips cumulative rows ('第1-2季度' etc.) since the regex requires the
+    quarter digit to be immediately followed by 季度."""
+    df = ak.macro_china_gdp()
+    date_col = find_col(df, ["季度"])
+    val_col = find_col(df, ["国内生产总值-同比增长"])
     if date_col is None or val_col is None:
         raise ValueError(f"couldn't find date/value columns in {list(df.columns)}")
-    release_to_quarter = {1: (-1, 4), 4: (0, 1), 7: (0, 2), 10: (0, 3)}
     out = []
     for _, r in df.iterrows():
+        m = re.fullmatch(r"(\d{4})年第(\d)季度", str(r[date_col]).strip())
+        if not m:
+            continue
         v = clean_float(r[val_col])
         if v is None:
             continue
-        raw = str(r[date_col])
-        m = re.match(r"(\d{4})[年\-/]?(\d{1,2})", raw)
-        if not m:
-            continue
-        year, month = int(m.group(1)), int(m.group(2))
-        if month not in release_to_quarter:
-            continue
-        year_offset, quarter = release_to_quarter[month]
-        out.append({"date": f"{year + year_offset}-Q{quarter}", "value": v})
+        out.append({"date": f"{m.group(1)}-Q{m.group(2)}", "value": v})
     return out
 
 def fetch_industrial_production():
-    return simple_series(ak.macro_china_industrial_production_yoy, DATE_COLS, VAL_COLS)
+    return simple_series(ak.macro_china_gyzjz, ["月份"], ["同比增长"])
 
-def fetch_exports():
-    return simple_series(ak.macro_china_exports_yoy, DATE_COLS, VAL_COLS)
-
-def fetch_imports():
-    return simple_series(ak.macro_china_imports_yoy, DATE_COLS, VAL_COLS)
-
-def fetch_trade_balance():
-    return simple_series(ak.macro_china_trade_balance, DATE_COLS, VAL_COLS)
+def fetch_trade():
+    """One call gives exports/imports y/y growth AND (via the raw amount
+    columns, in thousand-USD) trade balance. Verified the unit: raw export
+    amount ~3.98e8 * 1000 = ~$398bn/month, matching real-world China export
+    levels — dividing by 1e6 converts thousand-USD to $bn."""
+    df = ak.macro_china_hgjck()
+    date_col = find_col(df, ["月份"])
+    exp_yoy_col = find_col(df, ["当月出口额-同比增长"])
+    imp_yoy_col = find_col(df, ["当月进口额-同比增长"])
+    exp_amt_col = find_col(df, ["当月出口额-金额"])
+    imp_amt_col = find_col(df, ["当月进口额-金额"])
+    if not all([date_col, exp_yoy_col, imp_yoy_col, exp_amt_col, imp_amt_col]):
+        raise ValueError(f"couldn't find expected columns in {list(df.columns)}")
+    exports, imports, balance = [], [], []
+    for _, r in df.iterrows():
+        d = normalize_date(r[date_col])
+        ev = clean_float(r[exp_yoy_col])
+        if ev is not None:
+            exports.append({"date": d, "value": ev})
+        iv = clean_float(r[imp_yoy_col])
+        if iv is not None:
+            imports.append({"date": d, "value": iv})
+        ea, ia = clean_float(r[exp_amt_col]), clean_float(r[imp_amt_col])
+        if ea is not None and ia is not None:
+            balance.append({"date": d, "value": round((ea - ia) / 1e6, 2)})
+    return exports, imports, balance
 
 def _yyyy_dot_m_to_month(raw):
     """'2026.7' -> '2026-07'."""
@@ -276,10 +313,11 @@ def fetch_fixed_asset_investment():
     return out
 
 def fetch_fx_reserves():
-    pts = simple_series(ak.macro_china_fx_reserves_yearly, DATE_COLS, VAL_COLS)
-    # akshare reports this series in 亿美元 ($100mn) units, e.g. 32920 -> $3.292trn.
-    # Verified against a live run on 2026-08-29: raw 32920 for 2025-08 matches
-    # the reported ~$3.29trn reserves level for that month.
+    """Replaced 2026-08-31: macro_china_fx_reserves_yearly was in the dead-
+    widget stale group. macro_china_fx_gold is fresh (verified through
+    2026-07) and gives the same series (国家外汇储备-数值, 亿美元 units —
+    divide by 10000 for $trn, same conversion as before)."""
+    pts = simple_series(ak.macro_china_fx_gold, ["月份"], ["国家外汇储备-数值"])
     for p in pts:
         if p["value"] > 1000:
             p["value"] = round(p["value"] / 10000, 3)
@@ -431,31 +469,17 @@ FRESH_FETCHERS = [
     ("external", "usdcny", fetch_usdcny_daily),                          # daily, via Frankfurter
     ("growth", "retail_sales", fetch_retail_sales),                      # through 2026-07
     ("growth", "fixed_asset_investment", fetch_fixed_asset_investment),  # through 2026-07
-    # lpr and money supply (m1/m2/gap) handled separately below — each
-    # returns more than one series from a single call.
+    ("growth", "caixin_manufacturing_pmi", fetch_cx_pmi),                # through 2026-07
+    ("growth", "gdp_growth", fetch_gdp),                                 # through 2026-Q2
+    ("growth", "industrial_production", fetch_industrial_production),   # through 2026-07
+    ("prices_credit", "cpi", fetch_cpi),                                 # through 2026-07
+    ("prices_credit", "ppi", fetch_ppi),                                 # through 2026-07
+    ("external", "fx_reserves", fetch_fx_reserves),                      # through 2026-07
+    # lpr, money supply, official PMI, and trade are handled separately
+    # below — each returns more than one series from a single call.
 ]
 
-# Wired to a real akshare function, but verified STALE on 2026-08-29 — all of
-# these scrape the same Sina Finance macro widget, which was frozen around
-# Sep 2025 (~1 year behind) at last check. Kept wired because akshare/Sina may
-# fix the upstream feed at any time — a fixed upstream will start flowing
-# through automatically — but do not represent these as live without
-# re-checking. See README "Known limitations".
-STALE_FETCHERS = [
-    ("growth", "official_manufacturing_pmi", fetch_pmi),
-    ("growth", "caixin_manufacturing_pmi", fetch_cx_pmi),
-    ("growth", "official_non_manufacturing_pmi", fetch_non_man_pmi),
-    ("growth", "industrial_production", fetch_industrial_production),
-    ("growth", "gdp_growth", fetch_gdp),
-    ("prices_credit", "cpi", fetch_cpi),
-    ("prices_credit", "ppi", fetch_ppi),
-    ("external", "exports_yoy", fetch_exports),
-    ("external", "imports_yoy", fetch_imports),
-    ("external", "trade_balance", fetch_trade_balance),
-    ("external", "fx_reserves", fetch_fx_reserves),
-]
-
-FETCHERS = FRESH_FETCHERS + STALE_FETCHERS
+FETCHERS = FRESH_FETCHERS
 
 # (rrr used to be here — earlier marked BROKEN, but that was a
 # misdiagnosis: find_col() was searching for column names that don't exist
@@ -757,6 +781,21 @@ def main():
         update_series(data, "prices_credit", "rrr", fetch_rrr())
     except Exception:
         log(f"FAIL prices_credit.rrr:\n{traceback.format_exc()}")
+
+    try:
+        man_pts, nonman_pts = fetch_pmi_official()
+        update_series(data, "growth", "official_manufacturing_pmi", man_pts)
+        update_series(data, "growth", "official_non_manufacturing_pmi", nonman_pts)
+    except Exception:
+        log(f"FAIL growth.official_pmi:\n{traceback.format_exc()}")
+
+    try:
+        exports, imports, balance = fetch_trade()
+        update_series(data, "external", "exports_yoy", exports)
+        update_series(data, "external", "imports_yoy", imports)
+        update_series(data, "external", "trade_balance", balance)
+    except Exception:
+        log(f"FAIL external.trade:\n{traceback.format_exc()}")
 
     try:
         news = fetch_news()

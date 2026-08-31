@@ -34,7 +34,7 @@ stalled again, check the repo's **Actions** tab for run history before
 assuming the script itself is broken — scheduled-workflow reliability is
 a GitHub-side thing, not something this codebase controls.
 
-**Data-freshness check (last updated 2026-08-29):** every fetcher wired into
+**Data-freshness check (last updated 2026-08-31):** every fetcher wired into
 `scripts/update_data.py` was run live before shipping, not just guessed from
 docs. Results:
 
@@ -47,23 +47,16 @@ docs. Results:
 | ✅ Live | `retail_sales` (`ak.macro_china_consumer_goods_retail`), `fixed_asset_investment` (`ak.macro_china_gdzctz`, computed as YTD y/y — see flag below) | current through 2026-07 |
 | ✅ Live | `trading_days` (`ak.tool_trade_date_hist_sina`) — powers the Beijing-time market-open indicator | through 2026-12-31 |
 | ✅ Live | `rrr` — tracks **大型银行 (large banks)** specifically. Two bugs found and fixed in sequence: (1) `ak.macro_china_reserve_requirement_ratio`'s own column names didn't match what the fetcher searched for, so it silently raised on every run and never updated; (2) once fixed, the akshare column it was reading (`大型金融机构-调整后`, "large financial institutions") turned out to be a *different category* than large banks, running ~1.5pp higher (9.0% vs the true 7.5%) — caught by cross-checking against [PBOC's own live current-value page](https://www.pbc.gov.cn/rmyh/4027845/index.html) and CEIC, both independently showing 7.5%. Now scrapes PBOC's page directly for the current value and reconstructs history by shifting akshare's verified cut timing/magnitudes to match. | current value verified exact (7.5%, Aug 2026); history before ~2015 is an offset-based approximation, flagged in the UI |
-| ⚠️ Stale (~1yr behind) | `cpi`, `ppi`, `official_manufacturing_pmi`, `caixin_manufacturing_pmi`, `official_non_manufacturing_pmi`, `gdp_growth`, `industrial_production`, `exports_yoy`, `imports_yoy`, `trade_balance`, `fx_reserves` | frozen around Sep 2025 |
+| ✅ Live | `cpi` (`ak.macro_china_cpi`), `ppi` (`ak.macro_china_ppi`), `official_manufacturing_pmi` + `official_non_manufacturing_pmi` (`ak.macro_china_pmi`, one call for both), `caixin_manufacturing_pmi` (`ak.index_pmi_man_cx`), `gdp_growth` (`ak.macro_china_gdp`, its own `季度` column labels the reference quarter directly — simpler than the old release-date-guessing approach), `industrial_production` (`ak.macro_china_gyzjz`), `exports_yoy` + `imports_yoy` + `trade_balance` (`ak.macro_china_hgjck`, one call for all three — trade balance computed from the raw export/import amount columns, verified unit is thousand-USD), `fx_reserves` (`ak.macro_china_fx_gold`) | **fixed 2026-08-31** — user asked directly why PMI hadn't picked up the Aug 31 release; turned out every one of these was pointed at a different akshare function that scrapes the same dead Sina widget (frozen ~Sep 2025) as the old `rrr` bug, while a fresh alternative function existed the whole time. All verified live: official manufacturing PMI showed August 2026 (49.8) immediately after switching. Current through 2026-07/08 |
 | — Not wired, no source exists | `property_investment` (akshare's real-estate function is a climate index, not investment growth), `new_home_prices` (akshare only has raw per-city levels, not NBS's 70-city composite), `youth_unemployment` (checked `ak.macro_china_urban_unemployment`'s full item breakdown directly — no 16-24 split exists anywhere in akshare) | — |
 
-The "stale" group all scrape the same Sina Finance macro widget, which
-stopped updating upstream around September 2025 — an akshare/Sina issue,
-not something this script can fix directly. They're kept wired (rather than
-removed) because a future akshare release may fix the upstream feed, at
-which point fresh data starts flowing through automatically with no code
-change needed here. If a series looks frozen, `pip install -U akshare` and
-re-run before assuming the workflow itself is broken.
-
-**Practical effect:** most of the dashboard is now genuinely auto-refreshing
-hourly. The stale-group series and the three not-wired series are the
-exceptions — those stay at whatever last flowed through (or the original
-manually-curated seed) until akshare's upstream sources catch up or a better
-source is found. The dashboard UI surfaces this itself — every series with a
-data-quality caveat shows a ⚠ flag, visible on hover, right on its chart
+**Practical effect:** as of 2026-08-31, every series with a known akshare
+path is genuinely auto-refreshing hourly — the "stale group" that existed
+earlier was a wrong-function bug, not a dead upstream source, and has been
+fixed. Only the three not-wired series (no source exists at all) stay on
+their manually-curated seed values. The dashboard UI still surfaces any
+remaining data-quality caveats (e.g. RRR's pre-2015 approximation) via a ⚠
+flag, visible on hover, right on its chart
 card.
 
 **Contributing a fix:** if you find a working source for any of the broken/
