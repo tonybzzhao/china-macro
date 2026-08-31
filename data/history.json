@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T14:02:33.616737+00:00",
+    "last_updated": "2026-08-31T20:13:56.625995+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -49612,6 +49612,10 @@
             {
               "date": "2026-08-28",
               "value": 6.7209
+            },
+            {
+              "date": "2026-08-31",
+              "value": 6.7197
             }
           ],
           "desc": "How many yuan it takes to buy one US dollar; a rising number means the yuan is weakening."
@@ -50687,6 +50691,13 @@
   },
   "news": [
     {
+      "headline": "Bessent Says He’ll Ask G20 to Rethink Trade Terms With China",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-08-31T08:12:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNem5JZFRaQmtXaENvYk5lOXJhSjAwOEx3bThLRWZ1SnNrTzh0VTFFaU9wemFDVTNocFhuSEpEMk9aTTBJSzBNWXlQT2JHdFdENHN5TGhtYWdSdHNFOThZWWRpbGNWWW9GOFdta2ZGcnpONVVUdjlOS2pCRi0zZklwMXlPTkxEOEdZQVlRMEdMYUF3OXBYclYyUzFIZzB2OEpHcHNTdG5wWjFlcGs5RTRxRFB3?oc=5"
+    },
+    {
       "headline": "China's Xi builds diplomatic clout with multiple state visits ahead of Trump summit",
       "summary": "",
       "source": "CNBC",
@@ -50741,6 +50752,13 @@
       "source": "Yahoo Finance",
       "date": "2026-08-27T18:14:27+00:00",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTEFjMjFVaHR1d1l4Y2U3ZVdVUWVNTGNiaGtralc4ZmNaWGh3YnB2TlNzWVZSQlZBR1BDd3lOaW5RNERzQU1QREd6ZndmMWJLblV6MnV0V1F3RFllTlp3Qk95TmNZajZGb2JacnNiU0N5ejlHZHlQaXpZcVAyR1B5U20yTTN1R25uU3ZXQk1sbDc2NWJ5RjRydw?oc=5"
+    },
+    {
+      "headline": "China - US Investment: A Security Threat or an Opening to Reform the World's Most Important Economic Relationship?",
+      "summary": "",
+      "source": "Quincy Institute for Responsible Statecraft",
+      "date": "2026-08-27T16:24:38+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeHRrUXBGdlY0cFZEbHRoN2VSajd4WGRGNmdXQkYyeURmeU9iZEptaHllUjR0eWpoS01VcDZYQ0JiOVBCa2U1YlE3bWc3dXpxbVFLcW85Qk5oM28zRGlfdzBPbHRuZTVaclFhMThwYjJyQzFOcVdPN0FKYWFhdTljMld0YWhPcmREZC1KLWJsNGNuR1JIOHVJdV9sV1doZXJoYXlueEI0S083TS1nTFhiNnhmdlk?oc=5"
     },
     {
       "headline": "China must deliver on trade or EU will act, warns von der Leyen",
@@ -50813,13 +50831,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3365175/no-immunity-how-xis-anti-corruption-fighters-are-zeroing-fresh-targets?utm_source=rss_feed"
     },
     {
-      "headline": "Apollo chief economist says ‘China Shock 2.0 is here’ and it’s bad news for American companies",
-      "summary": "",
-      "source": "Fortune",
-      "date": "2026-08-25T19:33:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aV29qVVRyTTRSb3N3a0p6Qk14SUxUelRrLVdITklpUWQ0WnNYX0xMbUtPMDc0WV8xNEZMUWpOUjQtaGE2YWpmWGVQTDFNOF9rWlI5SGg5UzM5dTVpb2V1eHJaeVN0TmxiVFl1dQ?oc=5"
-    },
-    {
       "headline": "What does the latest data say about the state of China’s economy?",
       "summary": "",
       "source": "FocusEconomics",
@@ -50876,13 +50887,6 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTzhCNHl5dWJ2ODQyMjBRX2V1RUUtQnlQY0xrVmtEOFRwTEk0VlMwNmFyUkI5NFlvd2pFdEpORFQ4Qi1xckNXeG1uME5JTk1tdktsSDBDNHo4ZXRTVENSY29JRWNMdkxzQzdnRm0weGFzcERCV0l2Y3pQTVkzaXZjdFBUWVQ4UdIBiwFBVV95cUxNajJTNU1wcExfNXpiUDliTFVycGlFbk9TT2tFdWdZbFdZdThxRmZob1ZsVVRycnFObFFqTHRZenVlcXdYWGlOZzVyLWZoZF8waGRYUFVVeGxvck5yS1k4WlFfRzRsZEZEMlZkSi1QYnJGd2FUa2RlcV9qSFpkN0JGQmpObFpPQmpFWTJn?oc=5"
     },
     {
-      "headline": "US, China diplomats clash over tech spying and trade hub claims in Latin America",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-24T13:00:06+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbVBJRHk4UnlIeDlZcm91R2NmSUtJclZVMlVBNmpJeFFjd1lTaXFzb01GNWhpRXBxU0NTekREMXFqa0diQmxaUnNrSno3ZGFuXzlKWEl5YWtMTUpMbExJRnFtOF9lbTB3LWM5ODBYcXNnV0Q4NmRQUG85QmFQOHkza2VwaGljNTU2Um5KaEdKMFoxMl8yU2FFSGtPcnVaYVhxaWl4VjFFaC1WclNRVG1ZbGdELTc3cThvRFgxWFNVZDgwSHUwSlhmYUk5Z2pxTEHSAc8BQVVfeXFMTmRQTlYtSFI4M3hPTkFxbmNmNXRhS2lzN0U5VlRiSUhXU0M1aDY3RDVMMkh5OElZME12SHlMTkJfYnVTeXFvdWxMVWlwbERiakRiTlN5OFdlckc5RUNHSGU4Ulp5SkF3LTRKYVE1Y2xCbE5rT21Bb0V3eG80by1ObTZiakR1T0VUbl9LN3EwLVJOTGpYYVE5REVURFM4S0JSWnI2YXZwY2ZoOU5ISXh4eVhDNmI1X0dRbkJZbGZBanlVNXVKS001SFl5YTlEd2FJ?oc=5"
-    },
-    {
       "headline": "China and Switzerland have a new trade agreement. What does it mean for the EU?",
       "summary": "",
       "source": "South China Morning Post",
@@ -50897,6 +50901,13 @@
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZ2VSRllRaTg1YmZHU1Z4M0tIQ1UweV93Z2ZZeE13anhHbE9oZDNBMUltd2Z3ZHY5TmZuSmdsalh5MW9icjkzVHpyY2RNVW96RUFXb1kydENhQ0o2TVRBSmlETnlJUUFqZEJ0S1VlR2xJOHA3TzVnRzA4VURHdVpuVC1UbjVDa2gtRC0tZGxoWHdOS0tlaG1nM0Y3ZTlLaGotb1B4SzA3THZDU3h2bVdTSEtKSHVIYmk2SDBfMEI0ZXZXQ1BpSDZyQWhFMWVwSVU?oc=5"
     },
     {
+      "headline": "US threat of ‘economic D-Day’ for Iran tests Trump’s China detente",
+      "summary": "",
+      "source": "Al Jazeera",
+      "date": "2026-08-24T09:26:37+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUVZFT0QzeHhsdVV3NzUtWURkN3VCR3pYT2dzeXNET1pyU3pfQzFCeEpBVnM1UjZjbkViMW9RTV9MWEYweGl2NEJBMzMtNTdtREVpLVQwTDNVd3hGZExndVBTd1B1a3VUQUFrN2VyYVRobVVZZmpHVGh6ZE5pdjc5d2ZOMTZkTGVaT1drcGE2b00yU2ZpWGQ3VHdfSUxveTEzUW16UUtwOC1PS2PSAbABQVVfeXFMT3lRWkVkN3hIQWJLYXFDUmpDVVpUV1JGR3R4WHlSZlRCWGJycDVWaTc5ZmNwVmN1Nzkzbk96S1hyWlBwU0xWM0N3VU4ydGJNMHRkblJTSVB4WERBMnRJWUgxSUxJRjB3SlNsV1VhX1ZDVi1MUFo2SGpkdF9OM1pEVjZqei00RVhKRVkyYTFBa3RQOVI0SXFrdTVFamwtRENiSi1uU2Jhci12aFVrUHNYNkg?oc=5"
+    },
+    {
       "headline": "Banking veteran Li Yun fills senior Shenzhen posts in countdown to Apec",
       "summary": "A banking veteran has been appointed the new deputy Communist Party secretary and acting mayor of the southern Chinese metropolis of Shenzhen, just months before the city is scheduled to host a series of Apec meetings.\nT",
       "source": "South China Morning Post",
@@ -50907,14 +50918,14 @@
       "headline": "Alibaba, YMTC Fundraising Hits China Tech Stocks on Supply Woes",
       "summary": "",
       "source": "Yahoo Finance",
-      "date": "2026-08-24T04:37:00+00:00",
+      "date": "2026-08-24T04:37:14+00:00",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSk8xZ0t1NmwtX2FKM2ZQSUMxZWZ0UklobndzbTA0Zkt2dGVpckEzX3JBQVFKcTlpTEJhYkdKaUI0a25WYUJHZmFQYzNMcFFMZGhfalY1ZVBQWmstQkpnbFJWbVZjRDFfX0Z2S0drNEpTZUNGMXJkOUUyNGliYmRUZnpSLXdfa0JIOVBuTXR2TDZMRGMwTzJ5TzMwQXB2R0I4aEU3Mzlvc0tJeVl0LWYzSE4yNTUtY2E1TDRRS05pMVNqOWFGVEE?oc=5"
     },
     {
       "headline": "Goldman Says Chinese Easing Hopes Revive With Economy Growing 4%",
       "summary": "",
       "source": "Bloomberg",
-      "date": "2026-08-23T10:36:15+00:00",
+      "date": "2026-08-23T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaGhxVjA3cFpCZGFWN0lDTFdXSkVNcm5jQ2NoVl80WnFRRVpsR004ZmNPWERFcmZRQ0ROVnpNN1FMNlZ3bVA2LUZ6N3RKQ0EwMWQ5VzlMazgzd3ZuMFdCNGdUR1l6RTh1NjU2SWNsUGZLdlFEXy1fVFlLaU1xS3llNWZ4Z0VHd2lSMzNjUU1ta0JiX002aEJ2djVEdGZmMEZDOTZ3bjhzelZXV3Jucm1xS3ZKQmY?oc=5"
     },
     {
@@ -50923,13 +50934,6 @@
       "source": "Yahoo Finance",
       "date": "2026-08-23T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWUpodUZicXAyVWI2M3FkQjZ0MFhrNlhxZUxCTWt6SDV4cW9sQ2JIb0t6MmR0MlVqWWcwSmRDT0ZVZlA1YmN6WTlNRTBPZTgwc3dVOHJWbnZlSXBnUG9pTU04djFaNmFZNG9QemhTeWxybXh4YW1LNklhZ1lXWnUyeXVOQU1mYjZmZ2NpSU9HUFVHY205MzgtMGVpSll1ZlU0?oc=5"
-    },
-    {
-      "headline": "Trump risks China blowback with plan to choke Iran’s economy",
-      "summary": "",
-      "source": "The Japan Times",
-      "date": "2026-08-22T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMnVWaURlMVdDdzh6N2lheC1oWGpZZ2tpYmpYOVF1ZDN1QnJMVHBQeVVHaDM5Q0lBMzA3QXRCMU5aQ3lUTW5YSGZGQlpsV2d5SlFwdVpfRzRzSE9lSHJ2UVpVdkQ5WWV4dHZFWUxTT3ozamdHLTk0NjdET29uWEpoMFNzclBqd3g5X3VTZzRDdG1PMDZXMHc?oc=5"
     },
     {
       "headline": "China and US push Southeast Asia over their AI blocs. Will it test region’s non-alignment?",
@@ -50967,6 +50971,13 @@
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZ0FnNmlaVUxla181MzU2aHBaZmNGWjVReUVoSFJyRzBmeWpvZUFnTmRFR0tnaXdDOTR3b0RHSGN2Z0hKSTZHcktRYlFCQ2tleU5ka0lYTG9rMHQtQXFFN3VJRUZNQXM0RmkxMDc2WExFSy1mNngyNFhNNXJiSnBScVpBc2hxc013SE1oNU95dFdfNEdJR3czZ2N5WlVaUmRPZE9uWVZJNXllTzJIMFln?oc=5"
     },
     {
+      "headline": "A nascent international financial channel of China’s monetary policy transmission",
+      "summary": "",
+      "source": "CEPR",
+      "date": "2026-08-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdFV5SkNzODF6LVY4UVhVaVMyQWdNbVBuTHN0RTZKdG5rb1o3NXRWSG5Sc1Z3Z2FKaWJtaU5nZVlTeEVWQWVoYjVTQ0FweDFVSGpNdVM4UWJGRE1GSVRGNzlpRGJxMTdXY1kzaGx6QS1kdGFmeE40NUZuUUFKbzdxZnpqUndFTDdpejA0YU5UZGtaTDl0LXlNMndLdnpHOUJidTJGOGlpVFYwUQ?oc=5"
+    },
+    {
       "headline": "As China shows, liberal capitalism is not the only path",
       "summary": "Much of the Western debate about China begins with a category error. “Communism” is often treated as synonymous with a monolithic command economy, limited private enterprise and bureaucratic control over every commercial",
       "source": "South China Morning Post",
@@ -50979,13 +50990,6 @@
       "source": "Peterson Institute for International Economics",
       "date": "2026-08-20T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ2lIcURhTG1xTm9nVnBEN01JaTBUMHhhc0xJZGNtUXdhV1lfZUQtdzBGNFlFNG5zZXBFanIzSmdjMEtPeXRqQXFGTE1vOWdKdVg0NUp6VXhNQmZMZXlJZFNFTEVIWlJTTER0MnJ3Q1B4T3l6TWFITWRNY0hFbmE3YmxQXzc0Y0FNZXJVdW1xTFdUNHU4a0gzVUtKcXhTQ3hiWmswdDBZd0MxNlhmZV9PYVk2SXZwcHhY?oc=5"
-    },
-    {
-      "headline": "China, Switzerland Agree to New Trade Deal Scrapping Most Levies",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-08-20T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdEoyYk9LR09HVGxiV1RJMEcwRFFHQ282d3NaR215OHVhTUhUV25KRnpLQlBOMzIydFRnQkdQWl8wQWpyV0lRR3R2N09vbkV6Q1RDMTRYcVFzSGs0d1c3UlZ6RE0xckw4eEgtcXF3NURRZ0tHWlpMWUl6dDdza2duYnlEQm1BYmpzOTRXb3h6T2ZHMXpyWVlqamFHbWJWQXAyLVpHd0FyN08ydmdoazh3NVNta08wQQ?oc=5"
     },
     {
       "headline": "China Materials Stocks Emerge From Slump as New Market Leaders",
@@ -51142,13 +51146,6 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVklkMXNucEsyX2F4LXRCZENEdDRtRDRmX2RKbXVpdEtDVHlBT2dDMng4aktwelZmSzRIRUJ0UGszLWh6WDZpOHlOVFlieXJmVE5HbTltVXVTdE13MjBBeUZqbGxDaXU3Tk5oWUs5NUhZbU9tSEJ1cTh6VkV2RmJtaFh4RlE?oc=5"
     },
     {
-      "headline": "Chinese hedge funds rotate out of Nvidia and US hyperscalers in AI trade",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-17T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUlh6ZTJoNzhBTkF4c1Q3VW5KX3FDVHZvTXo3S184cXh5SWhVRThwNjRGeUV2WTItVHFyTEtpdDVxX2RfWnZNdVI1TExMY2tBRkVra2x4bU9DcnZqa3JHV1hPQV9MZjF4MDZPSUJ3Z2NGQUJUZUlmZ3EwQlhMTUpYTVlFbERaWUwtNUNFd2hEd2U4YWd4MDRFanY4eVp5eVVtR25mdjhUcGU2SVAwMFVqV0Y4R1VQWXVheUFkcWtkaXVKa3Vhei1iWHRKcEhLNjhDcnfSAdIBQVVfeXFMUF83T1VBajh6bXBkNHJPV3doNTRweHl2VThiczF2emdNeG1UWHhaQzhtREVXNHUxOWROak1GekVWejFybjRsY1o3eHBsZzEwdEZmY2EwRDY1MG5FVlRrUFVjejF0dGEwQjB0V2FVWkNqN1RWN0lUZWVkWG9fVm1wTy14dnRiLUVKWDZWTUYyQUthdkRaOWpjTThqWWZOZzBxSzJfUEJPQVY2LWc2czgzbks3TXdiMUlSMmdxNVpUZzhoOXdSNkR2YkVMNWh4YTlNd2p3?oc=5"
-    },
-    {
       "headline": "China’s Xi praises former president Jiang Zemin’s contribution in show of party unity",
       "summary": "President Xi Jinping led commemorations for the birth centenary of late state leader Jiang Zemin at a grand ceremony in Beijing on Monday, in a show of political continuity and party unity ahead of next year’s major powe",
       "source": "South China Morning Post",
@@ -51177,13 +51174,6 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNUtnNnNZZGNWeC12aTljZGNzYXZuMmRjMk5wQ3d3SmZZT0R5R1oxa2ppN1Y5SXlKWkNEMFdKWWMxUWtOQWR2MW9YUE5yLXhUYW9JejBYVklOOWtRcFp1aTRpV2poRnVpZjlIWWVLamdzQTFNa3NZMkFrYVhjZnlGc3NkT004RjRQSEpteGVRWFg4SDlQdVNYWjc5ckItbDlaX2IyWHQyODRGd2JDSXdscmJKSQ?oc=5"
     },
     {
-      "headline": "China’s exorbitant surplus calls for a much stronger yuan",
-      "summary": "",
-      "source": "The Economist",
-      "date": "2026-08-16T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRjRyQ0hYT1plWHJ3QlA1N19UVXJ4Y0drSUVwZU9SM1RwVHFhWHJTY05LSDdzY29XVjVTMHRvbENwVFE5SnJ0Z2gtMl84Y2NLYVhvRS1EYVlFT2xHWEtmdC1uWnRISG9vZmtuWktJd1c3T2N0Y3BzaFFkWGVIUU1wUzR3RzVVM1VuV3ZuY1pxdy01TUhZZ1BIQUJYRmdqcTBaY2h5WWxkclJrMlk?oc=5"
-    },
-    {
       "headline": "China’s Economy Presses Forward Despite Headwinds",
       "summary": "",
       "source": "China-US Focus",
@@ -51200,7 +51190,7 @@
     {
       "headline": "The Next Global Economic Crisis Could Be Made in China",
       "summary": "",
-      "source": "Foreign Affairs",
+      "source": "foreignaffairs.com",
       "date": "2026-08-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOGtRekxDcFBQR0ljUGpzY1RWNnNaQmZaVDMyQ1pxa0ZxVTAtQ3QzU0dsNmU4YmEzbndRbkdWSzBYZVlhZ2ZvdUl1ZFpKdTNBZnZYMnhxZVZmenJhVUNpUW5FVW9oc3RfUjM0eGYta1JXUHUtRWhmNFJQN0g3MEF1cDdBUXJLdy1BMGIxTlcxeEpEWkZS?oc=5"
     },
