@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-30T04:08:57.593724+00:00",
+    "last_updated": "2026-08-31T01:35:36.707697+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51989,5 +51989,119 @@
     "2026-12-29",
     "2026-12-30",
     "2026-12-31"
+  ],
+  "upcoming_releases": [
+    {
+      "date": "2026-08-31",
+      "time": "09:30",
+      "event": "中国8月官方制造业PMI",
+      "consensus": 49.6,
+      "previous": 49.2,
+      "series_key": "official_manufacturing_pmi"
+    },
+    {
+      "date": "2026-08-31",
+      "time": "09:30",
+      "event": "中国8月官方非制造业PMI",
+      "consensus": 49.6,
+      "previous": 49.0,
+      "series_key": "official_non_manufacturing_pmi"
+    },
+    {
+      "date": "2026-09-07",
+      "time": "16:00",
+      "event": "中国8月外汇储备(亿美元)",
+      "consensus": null,
+      "previous": 34190.0,
+      "series_key": "fx_reserves"
+    },
+    {
+      "date": "2026-09-08",
+      "time": "09:30",
+      "event": "中国8月进口年率-美元计价(%)",
+      "consensus": null,
+      "previous": 27.5,
+      "series_key": "imports_yoy"
+    },
+    {
+      "date": "2026-09-08",
+      "time": "09:30",
+      "event": "中国8月出口年率-美元计价(%)",
+      "consensus": null,
+      "previous": 23.0,
+      "series_key": "exports_yoy"
+    },
+    {
+      "date": "2026-09-08",
+      "time": "09:30",
+      "event": "中国8月贸易帐-美元计价(亿美元)",
+      "consensus": null,
+      "previous": 1125.0,
+      "series_key": "trade_balance"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "09:30",
+      "event": "中国8月PPI年率(%)",
+      "consensus": null,
+      "previous": 3.5,
+      "series_key": "ppi"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "09:30",
+      "event": "中国8月CPI年率(%)",
+      "consensus": null,
+      "previous": 0.5,
+      "series_key": "cpi"
+    },
+    {
+      "date": "2026-09-10",
+      "time": "16:00",
+      "event": "中国8月社会融资规模-年初至今(亿元)",
+      "consensus": null,
+      "previous": null,
+      "series_key": "tsf_flow"
+    },
+    {
+      "date": "2026-09-10",
+      "time": "16:00",
+      "event": "中国8月M1货币供应年率(%)",
+      "consensus": null,
+      "previous": 4.0,
+      "series_key": "m1_growth"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月规模以上工业增加值年率-单月(%)",
+      "consensus": null,
+      "previous": 4.5,
+      "series_key": "industrial_production"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月社会消费品零售总额年率(%)",
+      "consensus": null,
+      "previous": 0.6,
+      "series_key": "retail_sales"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月城镇固定资产投资年率-年初至今(%)",
+      "consensus": null,
+      "previous": -6.7,
+      "series_key": "fixed_asset_investment"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月城镇调查失业率(%)",
+      "consensus": null,
+      "previous": 5.2,
+      "series_key": "urban_unemployment"
+    }
   ]
 }

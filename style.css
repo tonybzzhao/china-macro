@@ -78,7 +78,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text-primary);
-  font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 a { color: inherit; }
 
@@ -111,7 +111,7 @@ a { color: inherit; }
 .sub-link:hover { opacity: 0.8; }
 .asof {
   text-align: right;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 12px;
   color: var(--text-muted);
   line-height: 1.7;
@@ -197,7 +197,7 @@ a { color: inherit; }
   gap: 2px;
 }
 .range-btn {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 12px;
   font-weight: 600;
   border: none;
@@ -229,7 +229,7 @@ a { color: inherit; }
 }
 .search-input {
   width: 100%;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   background: var(--surface-2);
   border: 1px solid transparent;
@@ -281,7 +281,7 @@ a { color: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -319,9 +319,9 @@ a { color: inherit; }
 }
 .tile .label { font-size: 11.5px; color: var(--text-secondary); font-weight: 600; margin-bottom: 4px; }
 .tile .value-row { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
-.tile .value { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+.tile .value { font-family: "Roboto Mono", monospace; font-variant-numeric: tabular-nums; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
 .tile .period { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
-.chip { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; font-weight: 600; padding: 1px 6px; border-radius: 100px; }
+.chip { font-family: "Roboto Mono", monospace; font-size: 10.5px; font-weight: 600; padding: 1px 6px; border-radius: 100px; }
 .chip.good { color: var(--good); background: color-mix(in srgb, var(--good) 14%, transparent); }
 .chip.bad  { color: var(--critical); background: color-mix(in srgb, var(--critical) 14%, transparent); }
 .chip.neutral { color: var(--text-muted); background: var(--surface-2); }
@@ -379,7 +379,7 @@ a { color: inherit; }
   .chart-desc-wrap, .chart-chevron { transition: none; }
 }
 .chart-card h3 {
-  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
   margin: 0 0 1px;
@@ -400,14 +400,14 @@ a { color: inherit; }
   white-space: nowrap;
 }
 .chart-latest-value {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 18px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.01em;
 }
 .chart-latest-prev {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 10.5px;
   font-weight: 500;
   color: var(--text-muted);
@@ -470,7 +470,7 @@ a { color: inherit; }
 .chart-line { fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 .chart-area { opacity: 0.14; }
 .chart-grid-line { stroke: var(--grid-line); stroke-width: 1; }
-.chart-axis-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; fill: var(--text-muted); }
+.chart-axis-label { font-family: "Roboto Mono", monospace; font-size: 9.5px; fill: var(--text-muted); }
 .chart-dot-end { stroke-width: 2.2; }
 .crosshair-line { stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0; pointer-events: none; }
 .crosshair-dot { stroke-width: 2; pointer-events: none; opacity: 0; }
@@ -489,8 +489,8 @@ a { color: inherit; }
   white-space: nowrap;
   z-index: 5;
 }
-.tooltip .tt-date { color: var(--text-muted); font-family: "IBM Plex Mono", monospace; font-size: 10.5px; margin-bottom: 2px; }
-.tooltip .tt-value { font-family: "IBM Plex Mono", monospace; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tooltip .tt-date { color: var(--text-muted); font-family: "Roboto Mono", monospace; font-size: 10.5px; margin-bottom: 2px; }
+.tooltip .tt-value { font-family: "Roboto Mono", monospace; font-weight: 700; font-variant-numeric: tabular-nums; }
 
 .no-data { font-size: 12.5px; color: var(--text-muted); padding: 20px 0; text-align: center; }
 
@@ -504,25 +504,50 @@ a { color: inherit; }
   position: sticky;
   top: 20px;
   max-height: calc(100vh - 40px);
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto;
 }
-.news-heading { flex-shrink: 0; }
-#news-list { overflow-y: auto; }
 @media (max-width: 980px) {
-  .news-rail { max-height: none; }
-  #news-list { overflow-y: visible; }
+  .news-rail { position: static; max-height: none; overflow-y: visible; }
 }
-.news-heading {
+
+/* ---------- Collapsible sections (news, upcoming releases) ---------- */
+.collapse-section + .collapse-section {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.collapse-header {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "Archivo", sans-serif;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 14px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 700;
-  margin: 0 0 14px;
+  color: var(--text-primary);
+  text-align: left;
 }
-.news-heading svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+.collapse-header[aria-expanded="false"] { margin-bottom: 0; }
+.collapse-icon { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+.collapse-title { flex: 1; }
+.collapse-chevron { width: 14px; height: 14px; color: var(--text-muted); flex-shrink: 0; transition: transform 0.15s ease; }
+.collapse-header[aria-expanded="false"] .collapse-chevron { transform: rotate(-90deg); }
+.collapse-header:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.collapse-body-wrap {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.18s ease;
+}
+.collapse-body-wrap.collapsed { grid-template-rows: 0fr; }
+.collapse-body-inner { overflow: hidden; }
+@media (prefers-reduced-motion: reduce) {
+  .collapse-body-wrap, .collapse-chevron { transition: none; }
+}
 .news-item {
   display: block;
   padding: 10px 0;
@@ -532,7 +557,7 @@ a { color: inherit; }
 }
 .news-item:first-of-type { border-top: none; }
 .news-item .n-head {
-  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-family: "Roboto Serif", Georgia, "Times New Roman", serif;
   font-size: 14.5px;
   font-weight: 600;
   line-height: 1.35;
@@ -540,7 +565,48 @@ a { color: inherit; }
 }
 .news-item:hover .n-head { color: var(--accent); }
 .news-item .n-sum { font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 4px; }
-.news-item .n-meta { font-size: 10.5px; color: var(--text-muted); font-family: "IBM Plex Mono", monospace; }
+.news-item .n-meta { font-size: 10.5px; color: var(--text-muted); font-family: "Roboto Mono", monospace; }
+
+.release-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 0;
+  border-top: 1px solid var(--border);
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+}
+.release-item:first-of-type { border-top: none; }
+.release-item:hover .r-event { color: var(--accent); }
+.release-date {
+  flex-shrink: 0;
+  width: 46px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+.release-date strong { display: block; color: var(--text-secondary); font-size: 15px; font-weight: 700; }
+.release-main { flex: 1; min-width: 0; }
+.r-event { font-size: 13px; font-weight: 600; line-height: 1.3; }
+.r-figures { font-size: 11px; color: var(--text-muted); font-family: "Roboto Mono", monospace; margin-top: 2px; }
+
+/* Momentary highlight when a chart is scrolled to via a linked release/search */
+.chart-card.linked-flash { animation: linked-flash 1.6s ease; }
+@keyframes linked-flash {
+  0%, 100% { box-shadow: var(--shadow); }
+  20% { box-shadow: 0 0 0 3px var(--accent), var(--shadow); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chart-card.linked-flash { animation: none; }
+}
 
 footer {
   margin-top: 28px;
@@ -560,7 +626,7 @@ footer a { color: var(--text-muted); }
   flex-wrap: wrap;
   margin-top: 16px;
 }
-.credit-text { font-size: 12px; color: var(--text-muted); font-family: "IBM Plex Mono", monospace; }
+.credit-text { font-size: 12px; color: var(--text-muted); font-family: "Roboto Mono", monospace; }
 .credit-links { display: flex; gap: 8px; }
 .credit-btn {
   display: inline-flex;
@@ -579,7 +645,7 @@ footer a { color: var(--text-muted); }
 .credit-substack { background: #FF6719; color: #fff; }
 
 .section-label {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;

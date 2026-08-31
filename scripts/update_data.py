@@ -534,6 +534,104 @@ def canonical_source(name):
         return name
     return SOURCE_ALIASES.get(name.strip().lower(), name.strip())
 
+def classify_calendar_event(event):
+    """Maps a Baidu economic-calendar event string (Chinese, includes the
+    month, e.g. '中国8月CPI年率(%)') to one of our own series keys, so every
+    upcoming-release item shown in the UI can link straight to its chart.
+    Verified against real event strings pulled live on 2026-08-30 —
+    matches exact phrasing for CPI/PPI/PMI/trade/FX reserves/money supply/
+    industrial production/retail sales/FAI/unemployment. Returns None for
+    anything else (commodity warehouse receipts, other countries already
+    filtered by region, indicators we don't track) — those are dropped
+    rather than shown unlinked.
+    """
+    e = event
+    if "非制造业PMI" in e:
+        return "official_non_manufacturing_pmi"
+    if "制造业PMI" in e and "财新" not in e and "非" not in e and "综合" not in e:
+        return "official_manufacturing_pmi"
+    if "财新" in e and "制造业PMI" in e:
+        return "caixin_manufacturing_pmi"
+    if "CPI年率" in e:
+        return "cpi"
+    if "PPI年率" in e:
+        return "ppi"
+    if "出口年率" in e and "美元" in e:
+        return "exports_yoy"
+    if "进口年率" in e and "美元" in e:
+        return "imports_yoy"
+    if "贸易帐" in e and "美元" in e:
+        return "trade_balance"
+    if "外汇储备" in e and "黄金" not in e:
+        return "fx_reserves"
+    if "M1货币供应年率" in e:
+        return "m1_growth"
+    if "M2货币供应年率" in e:
+        return "m2_growth"
+    if "社会融资规模" in e and "年初至今" in e:
+        return "tsf_flow"
+    if "GDP" in e and "年率" in e and "季调" not in e:
+        return "gdp_growth"
+    if "规模以上工业增加值年率-单月" in e:
+        return "industrial_production"
+    if "社会消费品零售总额年率" in e and "年初至今" not in e:
+        return "retail_sales"
+    if "城镇固定资产投资年率-年初至今" in e:
+        return "fixed_asset_investment"
+    if "1年期贷款市场报价利率" in e:
+        return "lpr_1y"
+    if "5年期贷款市场报价利率" in e:
+        return "lpr_5y"
+    if "存款准备金率" in e:
+        return "rrr"
+    if "新建商品住宅价格" in e:
+        return "new_home_prices"
+    if "城镇调查失业率" in e:
+        return "urban_unemployment"
+    return None
+
+
+def fetch_upcoming_releases(days_ahead=21):
+    """Upcoming China data releases via Baidu's economic calendar
+    (finance.baidu.com/calendar, wrapped by ak.news_economic_baidu). Only
+    keeps events that map to one of our own tracked series — see
+    classify_calendar_event — so every item can link to its chart."""
+    rows = []
+    today = date.today()
+    for delta in range(days_ahead):
+        d = (today + timedelta(days=delta)).strftime("%Y%m%d")
+        try:
+            df = ak.news_economic_baidu(date=d)
+        except Exception as e:
+            log(f"calendar fetch failed for {d}: {e}")
+            continue
+        if df.empty or "地区" not in df.columns:
+            continue
+        cn = df[df["地区"] == "中国"]
+        for _, r in cn.iterrows():
+            series_key = classify_calendar_event(str(r.get("事件", "")))
+            if series_key is None:
+                continue
+            rows.append({
+                "date": str(r.get("日期", d)),
+                "time": str(r.get("时间", "")),
+                "event": str(r.get("事件", "")),
+                "consensus": clean_float(r.get("预期")),
+                "previous": clean_float(r.get("前值")),
+                "series_key": series_key,
+            })
+
+    seen, deduped = set(), []
+    for r in rows:
+        key = (r["date"], r["series_key"])
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(r)
+    deduped.sort(key=lambda r: (r["date"], r["time"]))
+    return deduped
+
+
 def fetch_news(limit_per_feed=40):
     if feedparser is None:
         log("feedparser not installed, skipping news refresh")
@@ -640,6 +738,13 @@ def main():
             data["news"] = news
     except Exception:
         log(f"FAIL news:\n{traceback.format_exc()}")
+
+    try:
+        releases = fetch_upcoming_releases()
+        data["upcoming_releases"] = releases
+        log(f"OK upcoming_releases: {len(releases)} items")
+    except Exception:
+        log(f"FAIL upcoming_releases:\n{traceback.format_exc()}")
 
     data["meta"]["last_updated"] = datetime.now(timezone.utc).isoformat()
     save_data(data)

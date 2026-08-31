@@ -121,6 +121,7 @@ async function init() {
   bindFilterRow();
   bindTabs();
   bindSearch();
+  bindCollapseSections();
   try {
     const res = await fetch("data/history.json", { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -132,6 +133,118 @@ async function init() {
   renderMeta();
   renderPanels();
   renderNews();
+  renderUpcomingReleases();
+}
+
+function bindCollapseSections() {
+  document.querySelectorAll(".collapse-header").forEach((btn) => {
+    const key = "collapse:" + btn.dataset.collapse;
+    const wrap = btn.closest(".collapse-section").querySelector(".collapse-body-wrap");
+    let collapsed = false;
+    try {
+      collapsed = localStorage.getItem(key) === "1";
+    } catch (e) {}
+    if (collapsed) {
+      wrap.classList.add("collapsed");
+      btn.setAttribute("aria-expanded", "false");
+    }
+    btn.addEventListener("click", () => {
+      const nowCollapsed = wrap.classList.toggle("collapsed");
+      btn.setAttribute("aria-expanded", String(!nowCollapsed));
+      try {
+        localStorage.setItem(key, nowCollapsed ? "1" : "0");
+      } catch (e) {}
+    });
+  });
+}
+
+function findSeries(seriesKey) {
+  for (const catKey of CAT_ORDER) {
+    const cat = DATA.categories[catKey];
+    if (cat && cat.series && cat.series[seriesKey]) return cat.series[seriesKey];
+  }
+  return null;
+}
+
+function findCategoryFor(seriesKey) {
+  return CAT_ORDER.find((catKey) => DATA.categories[catKey]?.series?.[seriesKey]);
+}
+
+// Switches to the series' tab (clearing any active search first), scrolls
+// the chart into view, and flashes it — used by Upcoming Releases items to
+// link straight to their chart.
+function jumpToChart(seriesKey) {
+  if (searchQuery) {
+    searchQuery = "";
+    document.getElementById("search-input").value = "";
+  }
+  const catKey = findCategoryFor(seriesKey);
+  if (catKey) currentCat = catKey;
+  document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b.dataset.cat === currentCat));
+  renderPanels();
+
+  const card = document.getElementById("chart-" + seriesKey);
+  if (!card) return;
+  card.scrollIntoView({ behavior: "smooth", block: "center" });
+  card.classList.remove("linked-flash");
+  // restart the CSS animation even if it was just played
+  void card.offsetWidth;
+  card.classList.add("linked-flash");
+}
+
+function fmtReleaseDate(iso) {
+  const d = new Date(iso + "T00:00:00");
+  if (isNaN(d)) return iso;
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+
+function renderUpcomingReleases() {
+  const list = document.getElementById("releases-list");
+  list.textContent = "";
+  const items = DATA.upcoming_releases || [];
+  if (!items.length) {
+    const p = document.createElement("p");
+    p.className = "no-data";
+    p.textContent = "No upcoming releases found.";
+    list.appendChild(p);
+    return;
+  }
+  items.forEach((item) => {
+    const series = findSeries(item.series_key);
+
+    const btn = document.createElement("button");
+    btn.className = "release-item";
+    btn.addEventListener("click", () => jumpToChart(item.series_key));
+
+    const dateEl = document.createElement("div");
+    dateEl.className = "release-date";
+    const [month, day] = fmtReleaseDate(item.date).split(" ");
+    dateEl.innerHTML = "";
+    const strong = document.createElement("strong");
+    strong.textContent = day;
+    dateEl.appendChild(strong);
+    dateEl.appendChild(document.createTextNode(month));
+    btn.appendChild(dateEl);
+
+    const main = document.createElement("div");
+    main.className = "release-main";
+    const eventEl = document.createElement("div");
+    eventEl.className = "r-event";
+    eventEl.textContent = series ? series.label : item.series_key;
+    main.appendChild(eventEl);
+
+    const figs = document.createElement("div");
+    figs.className = "r-figures";
+    const bits = [];
+    if (item.time) bits.push(item.time + " CST");
+    if (item.consensus != null) bits.push("cons " + item.consensus);
+    if (item.previous != null) bits.push("prev " + item.previous);
+    figs.textContent = bits.join(" · ");
+    main.appendChild(figs);
+
+    btn.appendChild(main);
+    list.appendChild(btn);
+  });
 }
 
 function renderFetchError(err) {
@@ -410,6 +523,9 @@ function renderTile(series) {
 function renderChartCard(series, catKey, seriesKey) {
   const card = document.createElement("div");
   card.className = "chart-card";
+  card.id = "chart-" + seriesKey;
+  card.dataset.seriesKey = seriesKey;
+  card.dataset.cat = catKey;
 
   const pts = seriesRange(series).filter((p) => typeof p.value === "number");
 
@@ -536,6 +652,20 @@ function renderChartCard(series, catKey, seriesKey) {
 
 const CHART_W = 560, CHART_H = 130, PAD_L = 4, PAD_R = 4, PAD_T = 10, PAD_B = 18;
 
+// Converts a series date string to a sortable numeric ordinal so tick
+// spacing can be computed by actual elapsed time rather than array index —
+// matters whenever a series has gaps (e.g. a skipped Jan/Feb combined
+// month), where evenly-spaced *indices* would not be evenly-spaced *time*.
+function dateToOrdinal(dateStr) {
+  let m = dateStr.match(/^(\d{4})-Q(\d)$/);
+  if (m) return Number(m[1]) * 4 + (Number(m[2]) - 1);
+  m = dateStr.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (m) return Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3])) / 86400000;
+  m = dateStr.match(/^(\d{4})-(\d{2})$/);
+  if (m) return Number(m[1]) * 12 + (Number(m[2]) - 1);
+  return NaN;
+}
+
 function buildLineChart(pts, colorVar, series) {
   const values = pts.map((p) => p.value);
   let min = Math.min(...values), max = Math.max(...values);
@@ -591,14 +721,34 @@ function buildLineChart(pts, colorVar, series) {
   endDot.setAttribute("stroke", "var(--surface-1)");
   svg.appendChild(endDot);
 
-  // x-axis date labels — evenly spaced across the full range, not
-  // condensed down to just the two endpoints.
+  // x-axis date labels — spaced at even TIME intervals (not just evenly
+  // across array indices, which would misrepresent gappy series — e.g. a
+  // series missing a combined Jan/Feb month would otherwise show ticks
+  // that look evenly spaced but skip unevenly through actual time).
   const tickCount = Math.min(6, pts.length);
-  const tickIndices = [...new Set(
-    Array.from({ length: tickCount }, (_, i) =>
-      Math.round((i / (tickCount - 1)) * (pts.length - 1))
-    )
-  )];
+  const ordinals = pts.map((p) => dateToOrdinal(p.date));
+  const validOrdinals = ordinals.every((o) => !Number.isNaN(o));
+  let tickIndices;
+  if (validOrdinals && pts.length > 1) {
+    const lo = ordinals[0], hi = ordinals[ordinals.length - 1];
+    tickIndices = [...new Set(
+      Array.from({ length: tickCount }, (_, i) => {
+        const target = lo + (i / (tickCount - 1)) * (hi - lo);
+        let best = 0, bestDiff = Infinity;
+        for (let j = 0; j < ordinals.length; j++) {
+          const diff = Math.abs(ordinals[j] - target);
+          if (diff < bestDiff) { bestDiff = diff; best = j; }
+        }
+        return best;
+      })
+    )].sort((a, b) => a - b);
+  } else {
+    tickIndices = [...new Set(
+      Array.from({ length: tickCount }, (_, i) =>
+        Math.round((i / (tickCount - 1)) * (pts.length - 1))
+      )
+    )];
+  }
   tickIndices.forEach((i) => {
     const t = document.createElementNS(svgNS, "text");
     t.setAttribute("class", "chart-axis-label");
@@ -758,7 +908,7 @@ function loadMoreNews() {
         (entries) => {
           if (entries[0].isIntersecting) loadMoreNews();
         },
-        { root: list, rootMargin: "200px" }
+        { root: document.querySelector(".news-rail"), rootMargin: "200px" }
       );
     }
     newsObserver.observe(sentinel);
