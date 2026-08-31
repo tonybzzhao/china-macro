@@ -195,7 +195,7 @@ function jumpToChart(seriesKey) {
 function fmtReleaseDate(iso) {
   const d = new Date(iso + "T00:00:00");
   if (isNaN(d)) return iso;
-  return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
 }
 
 function renderUpcomingReleases() {
@@ -209,22 +209,29 @@ function renderUpcomingReleases() {
     list.appendChild(p);
     return;
   }
+
+  // Group by date so the date renders once per group instead of once per
+  // item — several releases (e.g. CPI + PPI, or the mid-month batch of
+  // IP/retail/FAI/unemployment) always land on the same day.
+  let lastDate = null;
+  let group = null;
   items.forEach((item) => {
+    if (item.date !== lastDate) {
+      lastDate = item.date;
+      const heading = document.createElement("div");
+      heading.className = "release-date-heading";
+      heading.textContent = fmtReleaseDate(item.date);
+      list.appendChild(heading);
+      group = document.createElement("div");
+      group.className = "release-group";
+      list.appendChild(group);
+    }
+
     const series = findSeries(item.series_key);
 
     const btn = document.createElement("button");
     btn.className = "release-item";
     btn.addEventListener("click", () => jumpToChart(item.series_key));
-
-    const dateEl = document.createElement("div");
-    dateEl.className = "release-date";
-    const [month, day] = fmtReleaseDate(item.date).split(" ");
-    dateEl.innerHTML = "";
-    const strong = document.createElement("strong");
-    strong.textContent = day;
-    dateEl.appendChild(strong);
-    dateEl.appendChild(document.createTextNode(month));
-    btn.appendChild(dateEl);
 
     const main = document.createElement("div");
     main.className = "release-main";
@@ -243,7 +250,7 @@ function renderUpcomingReleases() {
     main.appendChild(figs);
 
     btn.appendChild(main);
-    list.appendChild(btn);
+    group.appendChild(btn);
   });
 }
 

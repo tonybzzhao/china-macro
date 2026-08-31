@@ -495,17 +495,43 @@ TAG_RE = re.compile(r"<[^>]+>")
 def clean_html(s):
     return TAG_RE.sub("", s or "").strip()
 
+# Scoped tightly to political / economic / financial / tech — deliberately
+# does NOT include generic place names ("beijing") or vague framing words
+# ("geopolit...") since those let disaster/culture/human-interest stories
+# through just for mentioning the capital or having a geopolitical backdrop.
 ECON_POLITICAL_KEYWORDS = [
+    # economic / financial
     "econom", "trade", "tariff", "gdp", "inflation", "cpi", "ppi", "pmi",
     "yuan", "renminbi", "rmb", "pboc", "central bank", "rate cut", "stimulus",
-    "export", "import", "deflation", "debt", "property", "real estate",
-    "unemployment", "politburo", "beijing", "xi jinping", "ccp", "party congress",
-    "sanction", "chip", "semiconductor", "tech war", "investment", "stock",
-    "market", "bond", "fiscal", "policy", "regulat", "diplomat", "geopolit",
+    "export", "import", "deflation", "debt", "property market", "real estate",
+    "unemployment", "sanction", "investment", "stock market", "stock exchange",
+    "shares", "market", "bond", "fiscal", "ipo", "yields", "hedge fund",
+    # political / policy
+    "politburo", "xi jinping", "ccp", "party congress", "communist party",
+    "policy", "regulat", "diplomat", "state council", "premier li",
+    "national people's congress", "sanctions", "geopolitical tension",
+    "foreign ministry", "state department",
+    # tech
+    "chip", "semiconductor", "tech war", "artificial intelligence", " ai ",
+    "huawei", "tiktok", "bytedance", "alibaba", "tencent", "baidu", "deepseek",
+    "silicon", "5g", "electric vehicle", " ev ", "startup", "app store",
+]
+
+# Rejects an article outright even if it matched a keyword above — catches
+# disaster/human-interest/culture stories that happen to mention a matching
+# term (e.g. a flood-rescue story naming a border town, or a heritage piece
+# framed as "geopolitics of restitution").
+EXCLUDE_KEYWORDS = [
+    "flood", "earthquake", "typhoon", "wildfire", "landslide", "rescue",
+    "heritage", "museum", "archaeolog", "festival", "temple", "cuisine",
+    "recipe", "celebrity", "actor", "actress", "box office", "olympic",
+    "world cup", "athlete", "panda", "wildlife", "tourism", "travel guide",
 ]
 
 def is_econ_political(title, summary):
     text = (title + " " + summary).lower()
+    if any(kw in text for kw in EXCLUDE_KEYWORDS):
+        return False
     return any(kw in text for kw in ECON_POLITICAL_KEYWORDS)
 
 # Collapses variant labels for the same outlet (our own feed label vs. the
