@@ -495,26 +495,34 @@ a { color: inherit; }
 .no-data { font-size: 12.5px; color: var(--text-muted); padding: 20px 0; text-align: center; }
 
 /* ---------- News rail ---------- */
+/* Just a sticky positioning wrapper now — each section below is its own
+   card (separate module), not one shared box. */
 .news-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: sticky;
+  top: 20px;
+}
+@media (max-width: 980px) {
+  .news-rail { position: static; }
+}
+
+/* ---------- Collapsible sections (news, upcoming releases) ---------- */
+/* Each is its own card/module: own background, border, shadow, radius. */
+.collapse-section {
   background: var(--surface-1);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 16px;
   box-shadow: var(--shadow);
-  position: sticky;
-  top: 20px;
+  padding: 16px;
+}
+#section-news {
   max-height: calc(100vh - 40px);
   overflow-y: auto;
 }
 @media (max-width: 980px) {
-  .news-rail { position: static; max-height: none; overflow-y: visible; }
-}
-
-/* ---------- Collapsible sections (news, upcoming releases) ---------- */
-.collapse-section + .collapse-section {
-  margin-top: 18px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
+  #section-news { max-height: none; overflow-y: visible; }
 }
 .collapse-header {
   display: flex;

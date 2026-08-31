@@ -908,7 +908,7 @@ function loadMoreNews() {
         (entries) => {
           if (entries[0].isIntersecting) loadMoreNews();
         },
-        { root: document.querySelector(".news-rail"), rootMargin: "200px" }
+        { root: document.getElementById("section-news"), rootMargin: "200px" }
       );
     }
     newsObserver.observe(sentinel);
