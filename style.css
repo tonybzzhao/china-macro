@@ -8,8 +8,8 @@
   --text-muted:     #838a95;
   --border:         rgba(16,21,28,0.09);
   --border-strong:  rgba(16,21,28,0.16);
-  --accent:         #2a78d6;
-  --accent-soft:    #e6f0fc;
+  --accent:         #d62a2a;
+  --accent-soft:    #fbe6e6;
   --good:           #0ca30c;
   --critical:       #d03b3b;
   --warning:        #b3760a;
@@ -34,8 +34,8 @@
     --text-muted:     #767d87;
     --border:         rgba(255,255,255,0.08);
     --border-strong:  rgba(255,255,255,0.16);
-    --accent:         #3987e5;
-    --accent-soft:    #16273f;
+    --accent:         #e53939;
+    --accent-soft:    #3f1616;
     --good:           #2fbf4f;
     --critical:       #e66767;
     --warning:        #d99a2b;
@@ -58,8 +58,8 @@
   --text-muted:     #767d87;
   --border:         rgba(255,255,255,0.08);
   --border-strong:  rgba(255,255,255,0.16);
-  --accent:         #3987e5;
-  --accent-soft:    #16273f;
+  --accent:         #e53939;
+  --accent-soft:    #3f1616;
   --good:           #2fbf4f;
   --critical:       #e66767;
   --warning:        #d99a2b;
@@ -95,8 +95,8 @@ a { color: inherit; }
   padding-bottom: 18px;
   margin-bottom: 20px;
 }
-.logo-wrap { margin: 0 0 8px; line-height: 0; }
-.logo { height: clamp(52px, 6.5vw, 72px); width: auto; display: block; }
+.logo-wrap { margin: 0 0 14px; line-height: 0; }
+.logo { height: clamp(60px, 7.5vw, 82px); width: auto; display: block; }
 .logo-dark { display: none; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .logo-light { display: none; }
@@ -499,7 +499,7 @@ a { color: inherit; }
   background: var(--surface-1);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 16px 16px 8px;
+  padding: 16px;
   box-shadow: var(--shadow);
   position: sticky;
   top: 20px;
@@ -558,7 +558,7 @@ a { color: inherit; }
 .news-item:first-of-type { border-top: none; }
 .news-item .n-head {
   font-family: "Roboto Serif", Georgia, "Times New Roman", serif;
-  font-size: 14.5px;
+  font-size: 15.5px;
   font-weight: 600;
   line-height: 1.35;
   margin-bottom: 3px;
@@ -595,7 +595,7 @@ a { color: inherit; }
 }
 .release-date strong { display: block; color: var(--text-secondary); font-size: 15px; font-weight: 700; }
 .release-main { flex: 1; min-width: 0; }
-.r-event { font-size: 13px; font-weight: 600; line-height: 1.3; }
+.r-event { font-family: "Roboto Mono", monospace; font-size: 12px; font-weight: 600; line-height: 1.3; }
 .r-figures { font-size: 11px; color: var(--text-muted); font-family: "Roboto Mono", monospace; margin-top: 2px; }
 
 /* Momentary highlight when a chart is scrolled to via a linked release/search */
