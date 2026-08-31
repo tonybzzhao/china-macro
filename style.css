@@ -566,7 +566,7 @@ a { color: inherit; }
 .news-item:first-of-type { border-top: none; }
 .news-item .n-head {
   font-family: "Roboto Serif", Georgia, "Times New Roman", serif;
-  font-size: 15.5px;
+  font-size: 13.5px;
   font-weight: 600;
   line-height: 1.35;
   margin-bottom: 3px;
@@ -603,7 +603,7 @@ a { color: inherit; }
 }
 .release-date strong { display: block; color: var(--text-secondary); font-size: 15px; font-weight: 700; }
 .release-main { flex: 1; min-width: 0; }
-.r-event { font-family: "Roboto Mono", monospace; font-size: 12px; font-weight: 600; line-height: 1.3; }
+.r-event { font-family: "Roboto", sans-serif; font-size: 12.5px; font-weight: 600; line-height: 1.3; }
 .r-figures { font-size: 11px; color: var(--text-muted); font-family: "Roboto Mono", monospace; margin-top: 2px; }
 
 /* Momentary highlight when a chart is scrolled to via a linked release/search */
