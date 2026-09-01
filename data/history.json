@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-01T15:00:08.500509+00:00",
+    "last_updated": "2026-09-01T18:37:27.467853+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51438,6 +51438,13 @@
   },
   "news": [
     {
+      "headline": "China’s NIO Narrows Loss on EV Sales Growth, Expects Volume Pickup",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-09-01T12:21:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORGJJOHVjbUtjN0xpemJsZjNQN1NFNFBSdE13dzFVS2VNWnhLeFg1NloyMkx1MmNlYVZsdi0zUlVSVEpLbGV0MHpMaE44R1BVbk1SYWExd2tHdElDZkp5TzVpWW5GYkNPeTNiSnRZLU1pMnBNRFVDdHFMbGhORWhzZ1dmRDR1Z1hjZXVr?oc=5"
+    },
+    {
       "headline": "Why foreign inflows into China A shares could slow after record surge",
       "summary": "",
       "source": "South China Morning Post",
@@ -51473,6 +51480,13 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNem5JZFRaQmtXaENvYk5lOXJhSjAwOEx3bThLRWZ1SnNrTzh0VTFFaU9wemFDVTNocFhuSEpEMk9aTTBJSzBNWXlQT2JHdFdENHN5TGhtYWdSdHNFOThZWWRpbGNWWW9GOFdta2ZGcnpONVVUdjlOS2pCRi0zZklwMXlPTkxEOEdZQVlRMEdMYUF3OXBYclYyUzFIZzB2OEpHcHNTdG5wWjFlcGs5RTRxRFB3?oc=5"
     },
     {
+      "headline": "G20 countries should consider more trade barriers on China to cut imbalances, Bessent says",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-08-31T07:08:55+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPenpidlpzUmlPS0hRbS1jaGotNFBZZHgxWVhlMER4NlRWYnh2d280dW1uMHYwZHlvZlgzNVJkNlZQNno1dndkQ1FZNTFNeTJ4eERKTkRlX29kUXhwX1lvTk5XLUZNWUhsdmwxUC04SU9RekVXUlBaRW5GWWhscWs4XzFVcmJlek5ULUFxdDh0ZzB6TlNqUDNYSUJSb2VJQ1RPVHJvS3hWNjY1UUlZaWhfMXI4RFAxaTQ0aldEZXBjbEk?oc=5"
+    },
+    {
       "headline": "China's Xi builds diplomatic clout with multiple state visits ahead of Trump summit",
       "summary": "",
       "source": "CNBC",
@@ -51485,13 +51499,6 @@
       "source": "CNBC",
       "date": "2026-08-31T04:01:47+00:00",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaEZMSHFkTjVWdUZTSTVvaWw3VVhPLWlXRDNxNUZIWTVRdUl2SVRFb0c5bi1MZHhfXzZJdWNaX2RUT1dKODVVTnR1VXFCMUVNM25IbUZBV0o0dFRUV3psS2tuMVZpMU1PUVNhYjJCMzVaUUNaeTZHOG1oX2Q5cjJjR29pWm5lRnhBdmZJRGpqb1o4Zlo2MENlazl0a0ZFMHBIa0JISHZKMGZhZHfSAbABQVVfeXFMTmU1T19XUDgtWHlJWGctYWl0NDR2TUpqN0ZFNEgyUHJaRWNlTFE1THREdHRWbkM3MzBTbVBfZEtnRGVQWEcwa1hZeU4xYVRKcDFpUXJVMFdUMkk5WnlEcDFlWkZqN00zX2dCUnA3UFBoSHpIRVgydGFyc0pmUVg2RXlTZzBTSlcyUmRoTkpBLUdubzVINTVaejdXckxfMVpGc3R3azNTMW9wRkpTVko5N3o?oc=5"
-    },
-    {
-      "headline": "G20 countries should consider more trade barriers on China to cut imbalances, Bessent says",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-08-30T23:07:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPenpidlpzUmlPS0hRbS1jaGotNFBZZHgxWVhlMER4NlRWYnh2d280dW1uMHYwZHlvZlgzNVJkNlZQNno1dndkQ1FZNTFNeTJ4eERKTkRlX29kUXhwX1lvTk5XLUZNWUhsdmwxUC04SU9RekVXUlBaRW5GWWhscWs4XzFVcmJlek5ULUFxdDh0ZzB6TlNqUDNYSUJSb2VJQ1RPVHJvS3hWNjY1UUlZaWhfMXI4RFAxaTQ0aldEZXBjbEk?oc=5"
     },
     {
       "headline": "Why China’s export-maximizing strategy is working—for now",
@@ -51529,13 +51536,6 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQS2MzaEZyazdlSVB1YlNsak5iU0lMdzNsOTB4bXpkRUx6Zk1WQm1oUndYdEJjNXI5Zm03dHlhZ3NVSlhwMFlueXk2VU9mYURlSU93dkxIRlN4d01TaE9MMVM2Tk5wRE8wRm40TEJ2b1daRFp6WDVMOVJWX0ltbTZmYUlpak1YVFM1WW41MURKbTMzRFBGdGRyYlFpRmRrQ2tOMVFqOU9ZZmtIOFQ0VHR3Vk1BVm9lX25mbWZZRHU4Nl9FQ0NHRXFxNEVkVUJQUQ?oc=5"
     },
     {
-      "headline": "China - US Investment: A Security Threat or an Opening to Reform the World's Most Important Economic Relationship?",
-      "summary": "",
-      "source": "quincyinst.org",
-      "date": "2026-08-27T16:24:38+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeHRrUXBGdlY0cFZEbHRoN2VSajd4WGRGNmdXQkYyeURmeU9iZEptaHllUjR0eWpoS01VcDZYQ0JiOVBCa2U1YlE3bWc3dXpxbVFLcW85Qk5oM28zRGlfdzBPbHRuZTVaclFhMThwYjJyQzFOcVdPN0FKYWFhdTljMld0YWhPcmREZC1KLWJsNGNuR1JIOHVJdV9sV1doZXJoYXlueEI0S083TS1nTFhiNnhmdlk?oc=5"
-    },
-    {
       "headline": "China must deliver on trade or EU will act, warns von der Leyen",
       "summary": "",
       "source": "euractiv.com",
@@ -51571,11 +51571,11 @@
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMDlnUnRvYnZSQlBBakRNNkRuaFdhSTRaU3ZfYUFDQW9MUEo3Y2dvanhxRXJKWURzRTYtc01HLXJLUGhEZzRaendEaW5oblpNeEw3aDd2bkZISFNqa2Q2dGFLb25hUVdDd2V0R0xaWERpN1FvWUFveGdIb0dZbDViRE9XcHNpcXBiUFE?oc=5"
     },
     {
-      "headline": "Some Chinese workers see an ally in Brussels as EU trade tensions mount",
+      "headline": "Merz Signals Tougher German Stance on Trade With China",
       "summary": "",
-      "source": "Reuters",
-      "date": "2026-08-26T10:49:35+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGRtUVpOeWFvQWFUbmNJeGxjYlRuaktxd1AtbUw2bFAtOWJCbjBfSmNfMlJYT2xMcThMOUQ4bXNQUzV2N19kNHBkWGtOZXd1aHRfZTV5WXNsZ2RyR1hhcFB5MGN2VTlCSGYzaGJUYUpnWWZQSHVzN3plaDY0V2VtNzlYMFV4WG9NR2JIalFfeFdkWG1pQ1hnSFdCMTdFVHJXNWdIeUQwUktVeUxHM0NRdTJjQQ?oc=5"
+      "source": "Bloomberg",
+      "date": "2026-08-26T13:17:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaXVPN1NQME93bjBHRzV2cmNqdmZVWDl5WXpOOUpFUXBXYkpDZDhRU3JVV3oxYnFseVRDS1lmZXA2RWZMbjJWMXR6dUktYy1MVUtqLWFZWXA3OHhZeXJOUTdfUEQ5UGt6SUlTUkhsMnNmdDcwZjFYLVQ1enBjNm4yV0NLekNlbVhyNm5VQzEtZGtlQTJUR3dhZnBJQVVFSi1XYWRWSkZCUG1ETnpXc2Nnd3ZoYUttQQ?oc=5"
     },
     {
       "headline": "The U.S. and Canada are in a trade war. China aims to win it.",
@@ -51599,6 +51599,20 @@
       "url": "https://www.scmp.com/news/china/politics/article/3365175/no-immunity-how-xis-anti-corruption-fighters-are-zeroing-fresh-targets?utm_source=rss_feed"
     },
     {
+      "headline": "Apollo chief economist says ‘China Shock 2.0 is here’ and it’s bad news for American companies",
+      "summary": "",
+      "source": "Fortune",
+      "date": "2026-08-25T19:33:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aV29qVVRyTTRSb3N3a0p6Qk14SUxUelRrLVdITklpUWQ0WnNYX0xMbUtPMDc0WV8xNEZMUWpOUjQtaGE2YWpmWGVQTDFNOF9rWlI5SGg5UzM5dTVpb2V1eHJaeVN0TmxiVFl1dQ?oc=5"
+    },
+    {
+      "headline": "What does the latest data say about the state of China’s economy?",
+      "summary": "",
+      "source": "FocusEconomics",
+      "date": "2026-08-25T14:20:09+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdVhuSjhGa3NENGNFY2hacnVaMUE2MWU0eEJtOU95TEF2VUx1TXFzQU5aOHJTYkZtaTQ5aE5xQWdoeDctQjAtZGZ5U0t2cVBLSDlfTGZrVXlhd0tIWUVuZzRQd1UtUm5Va0s4Q1ZEdktZYnZncFhnbmE0ZE50LVBFSGp1SHhqdVVNRWlWdExyaGJQcmNaLXg5M3VMcEVoc2RoN3A4?oc=5"
+    },
+    {
       "headline": "What does the US-Canada trade dispute mean for China?",
       "summary": "",
       "source": "South China Morning Post",
@@ -51620,7 +51634,7 @@
       "url": "https://www.scmp.com/plus/news/china/politics/article/3365200/xis-13-year-corruption-campaign-just-keeps-accelerating?utm_source=rss_feed"
     },
     {
-      "headline": "China Puts Brave Face on Growth in Rare Defense of Economy",
+      "headline": "China Puts Brave Face on Weak Growth in Rare Defense of Economy",
       "summary": "",
       "source": "Bloomberg",
       "date": "2026-08-25T04:39:00+00:00",
@@ -51639,13 +51653,6 @@
       "source": "CNBC",
       "date": "2026-08-24T17:27:11+00:00",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTzhCNHl5dWJ2ODQyMjBRX2V1RUUtQnlQY0xrVmtEOFRwTEk0VlMwNmFyUkI5NFlvd2pFdEpORFQ4Qi1xckNXeG1uME5JTk1tdktsSDBDNHo4ZXRTVENSY29JRWNMdkxzQzdnRm0weGFzcERCV0l2Y3pQTVkzaXZjdFBUWVQ4UdIBiwFBVV95cUxNajJTNU1wcExfNXpiUDliTFVycGlFbk9TT2tFdWdZbFdZdThxRmZob1ZsVVRycnFObFFqTHRZenVlcXdYWGlOZzVyLWZoZF8waGRYUFVVeGxvck5yS1k4WlFfRzRsZEZEMlZkSi1QYnJGd2FUa2RlcV9qSFpkN0JGQmpObFpPQmpFWTJn?oc=5"
-    },
-    {
-      "headline": "China and Switzerland have a new trade agreement. What does it mean for the EU?",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-24T12:00:09+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNlJodzFHcEFVYWRITTBPMGdIaWhWdnF6WEs5SFNSMnNvOE95X21haHVmazhQeDA5UEJqc1ROQi1NUFpfd0wyMzE3Tlc4RVZqSWIwb2F3azcyVC1JUDd6aEEzYzl2VzRoY1NLMWZTYk5uVmdNNFR6UXR1dEhlZ09pMTlsYjJJbGhYRFI1cm9FMllNRTNyWEFObkVFd3ZMSzFBV2NReFBKOFlobzBHSkJPWlJzcEJvUzk2dDMwb3Z1TDNtTng4d0lvd1ZIcWtBOGRF0gHQAUFVX3lxTE5vY1pmdkwxUmtiaGlmYTdibGFmUGZxV2hIYnl1c0RSQXRCazVVOUk0V3lfZ3F1S21ySXhNZjlKcEM0MHhzOFpMaVFQNS13cE1FYUlwRllFM21BUGpEdWlZOXh0Z1ZGelVOWG5TUFFjTHhMaXo4UHFJejBrTkc3OUxTYnotV2JaaU9WSzB1TC1yMjd5dUs1TVotTmNUeHFfREYxaG4wdm11dGJDRndFaEdkZi1wbUVsNXE2UjhPLXE5LV9Rd2pxd3R0NVpvdUxic2Q?oc=5"
     },
     {
       "headline": "Banking veteran Li Yun fills senior Shenzhen posts in countdown to Apec",
@@ -51734,7 +51741,7 @@
     {
       "headline": "A nascent international financial channel of China’s monetary policy transmission",
       "summary": "",
-      "source": "cepr.org",
+      "source": "CEPR",
       "date": "2026-08-21T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdFV5SkNzODF6LVY4UVhVaVMyQWdNbVBuTHN0RTZKdG5rb1o3NXRWSG5Sc1Z3Z2FKaWJtaU5nZVlTeEVWQWVoYjVTQ0FweDFVSGpNdVM4UWJGRE1GSVRGNzlpRGJxMTdXY1kzaGx6QS1kdGFmeE40NUZuUUFKbzdxZnpqUndFTDdpejA0YU5UZGtaTDl0LXlNMndLdnpHOUJidTJGOGlpVFYwUQ?oc=5"
     },
@@ -51758,6 +51765,13 @@
       "source": "The New York Times",
       "date": "2026-08-19T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSkJsWjVUYnNGVGVLaXpvTXN4ZjEzaE1UaFctNjBnUnZRZnQ1TWk2ZjBHejFYYkJJN2JFV1NFaVRSUzNnQUtnbVVXdHQzOE84Q3RwZUR4WmlIcWVHdWNnQm5PTGhHSGtLbExQbUtjUzh3NHNpSEg2aklnSEstZWtPeVZPbjlTOVJpazdOQQ?oc=5"
+    },
+    {
+      "headline": "China is defying the global bond yield surge, boosting its diversification appeal",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-08-19T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQWFPcTRINVFBQmxzSGJPdWIyZVBkNUZTb0xxamwzeWVPZ01HWWhsT2lsb1RVQklwNXlWWC05Q0pzYjdwV1VuTHBvb2NWMlFBcFF3N2dkUnYtQWg2d05iOUh0bGlDMGhWX2FqQzhCUloxSTRmWnBUVDlUdXB2WlgzVTZlVC14LWlkZHpNU9IBkgFBVV95cUxOQjFNeGNHa29ncjNGWEVnXzFCQXhvM05SaVNRLXlNOGgwTy1QVDg3WHEzTzBrWVVGdldiYnBBd3I4Y3JMQkFWNTEzVGtGd0liamhJTk93TVBTY3MtaDdFM0pRRTJ4SC1TYnMtSnJteVFCSFhUc3ZCRVkwdGNQMTlJVUtKR2R1ZVp5ZWk2R2I3ZS01UQ?oc=5"
     },
     {
       "headline": "Is the US actually too chicken to take on China for trade?",
@@ -51788,11 +51802,25 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQX2hLTUhBZlVtSFM3ejFOQlhPb3B6cnJ4Uld5blE1N2hMWjVyWGZBRjIxQzgzU2tLaVlBRUQ2Sm1tZ0NNVVNITmJJZ1JITGp2VC1BT1AwNTdRUXdHcEVHWXVMMzk3UmFxejBRZ2ltNy1fX01xdlZyM1hwTWluSWZmUE5MNGVLVXAzTE9ZOHJmODFYRXEz?oc=5"
     },
     {
+      "headline": "Hong Kong tech stocks fall as US bond rout, Iran war deadlock dent sentiment",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-08-19T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUERHam42RVktRlJjLVpvdnpGdElWaWxkMGl1eWtTZ0NfeExsMEVuMEl1eWs3SWZQX2Q0QTYtWFJsQUQwVVBUTmZQVGhEWU5ZWTlkZVpJa1BiNFAyNDRzNnRMdW5KeTFUVjBmaDZSSzh6Y2gzTlNJWU9PSGpqeFk1UHpicm8yY2ZxTkdRcGtScVY3VllDbjR6Y2xiXzJ4OGh0VW5oQTZzUGhoY2Zia2d0NGYxcDNvenFmQTRmcWhLWlhhbWs0QXJCeVcyVGJWb0xVZURoRFhmeEIyQdIB2gFBVV95cUxQRXJLQUJkRlRPQmg0SzBjMzItX1hUbURMMllSb0FoNldCMDJ4bnBMZFNvbkJIYVdSdWZJenhBM05mdlhxN0hyNjdZanJOck9iVW5FTG1xTlY5dDdVZ2ViMWpfcVlfaUN6ai16RURRNEpUSm1acmg3cGhGRE1aZ1hSa3RfaDBjVlBXckRyeE55TjF4YmstUFd4aGIwSGk3aXlJb3lLekllN0NxTDNQOVV5dGgwcEFLOHpjNDVBdGdmRVpKYmIyWmx2SXhpTXN1VFFldmFRQmxlRUhWQQ?oc=5"
+    },
+    {
       "headline": "Chinese President Xi Jinping leads party elite in final farewell for ex-premier Zhu Rongji",
       "summary": "Chinese President Xi Jinping led the party elite in paying a final tribute to former premier Zhu Rongji, who was cremated on Tuesday as national flags flew at half mast across the country and beyond.\nZhu died of an illne",
       "source": "South China Morning Post",
       "date": "2026-08-18T08:48:58+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3364422/chinese-president-xi-jinping-leads-party-elite-final-farewell-ex-premier-zhu-rongji?utm_source=rss_feed"
+    },
+    {
+      "headline": "China’s Economy Weakens on Several Fronts as Property Bust Worsens",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-08-18T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbWxrdGxBMmd2bHcxRkI3Tk1uMzRlVkhOQVRTaC0xLWg1VmNrTlNkMGJoVzJGenRBT3VSTVExa2E3aHlJOEZVdlpqaS1xTWJfVTNad1I5NnlWNzgxR1FuVVRYcEl2VDJtWWJwYm0tc3I0ZUVGWFlOM0JMamRFdVlfdDR0Z0I?oc=5"
     },
     {
       "headline": "What Chinese liquor maker Moutai's slump says about the country's economy",
@@ -51823,11 +51851,11 @@
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTndXd2tEMnYyZlpuaTIwUzYxSUc5elNtMlRTa1lLSGFBS3NZS05OdUxMbmF4bzdLQzUzYnd2LU9IaGtXWmNQNXlUU0l3dzFwRlVHR0dSZ1U4b2Qxd0pvYXBiVHBVQV85d202V2lSODgzc1labmhJOTJpUzFta0Z1ZUhzdVRfbEw2Wmh0ZDNYWXM4QjZ3N3BZdklGV3QxQ1hqQzJzOWkzR0liN3F2SDBkcGRJeFJJbEdS?oc=5"
     },
     {
-      "headline": "China’s growth expectations ease as economy loses momentum in July",
+      "headline": "Nokia Shares Fall on Report of Major Mainland China Retreat",
       "summary": "",
-      "source": "aa.com.tr",
+      "source": "finance.yahoo.com",
       "date": "2026-08-18T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWVlvVTBNOW5nSjZJQU1SN0xfTGVYa294MnJNd3pwUDNoeW9ibXB6UlE4UVpaaGw3Qy1aUmY2dkQ0Z05wb0tPOWp5MWQ2WE84SktDU2h4dzlnRDNIREIzTnNxR0d5MlRJSHpLQWIzWkVUTG10TnFKTnhjc2U1NlJhX0R6ZUV4YlRCdEtCemlZNlhWeXo2YWhIa0s0YXQtMEZ1dUpxZ0FXRko1YWM?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTDBuRWpGZFpDTXYzbndTUHpMeFZIbExrUERibW5nWV9qbmdKNHV3ZEc0djdLSHBMbXNBZHhCbjRGVDh5TE9FSVc1aDhwNXZyaEw1LVlZc1FVMlk3VXRCT1RQYzBPR3BPVk5LRGFNWnFQemhVREQ3NEhqRDJkR3dIRC1QV0dQNUNUOGduZ096NGZ4V2tjZGswWFEwYw?oc=5"
     },
     {
       "headline": "U.S.-China 2026 Tech Race: 2 AI Stocks & 2 Quantum Stocks to Watch",
@@ -51865,13 +51893,6 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBYajlyTlNoTWdyanlrVjJQVHdYcEp0TkFXTUZCZWZ6ZjZqVzI0UVphQlJxTmhhdmJQMVpHQnNUWkdSdTVLNUQzbzliZkoxc3lFcFlkSDFPSkItOVJaNkN4OGlYRUZKMHZzSHJyUnY2TDJGQTZlQ1ZDVXhYQUsxdw?oc=5"
     },
     {
-      "headline": "China’s Economy Weakens on Several Fronts as Property Bust Worsens",
-      "summary": "",
-      "source": "WSJ",
-      "date": "2026-08-17T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbWxrdGxBMmd2bHcxRkI3Tk1uMzRlVkhOQVRTaC0xLWg1VmNrTlNkMGJoVzJGenRBT3VSTVExa2E3aHlJOEZVdlpqaS1xTWJfVTNad1I5NnlWNzgxR1FuVVRYcEl2VDJtWWJwYm0tc3I0ZUVGWFlOM0JMamRFdVlfdDR0Z0I?oc=5"
-    },
-    {
       "headline": "China’s economy showing signs that slowdown may be extending",
       "summary": "",
       "source": "The Guardian",
@@ -51902,7 +51923,7 @@
     {
       "headline": "The end of an era for China's economy",
       "summary": "",
-      "source": "Noahpinion",
+      "source": "noahpinion.blog",
       "date": "2026-08-16T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WR0dKeThzTUhaTUh5d3Q4S2g5OUExVTdMVWV5MlpsSkxpLTRseHlrbzliakVPZTM2aGxEMDdlZnloYUMwMVNpQUYzam5zTWJfbS1QS2l4emw3bEc1LW12NmtPUHZ3LXFJYlNLT2ZQWkZBM2F0?oc=5"
     },
@@ -51930,7 +51951,7 @@
     {
       "headline": "The Next Global Economic Crisis Could Be Made in China",
       "summary": "",
-      "source": "Foreign Affairs",
+      "source": "foreignaffairs.com",
       "date": "2026-08-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOGtRekxDcFBQR0ljUGpzY1RWNnNaQmZaVDMyQ1pxa0ZxVTAtQ3QzU0dsNmU4YmEzbndRbkdWSzBYZVlhZ2ZvdUl1ZFpKdTNBZnZYMnhxZVZmenJhVUNpUW5FVW9oc3RfUjM0eGYta1JXUHUtRWhmNFJQN0g3MEF1cDdBUXJLdy1BMGIxTlcxeEpEWkZS?oc=5"
     },
@@ -51940,13 +51961,6 @@
       "source": "South China Morning Post",
       "date": "2026-08-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTTY0UlZ0SVhscWlnM0s4ZmF6UTNKUXpUNlNVR0VnQ3lkbFZCMXRJalhZdE50cW5CNG1YSUhPdTRtZGxZUElic1hXOEtSQzAtX2NpY0doSVRSUWd5dEU2dXVUd3lVa1ZOWlZfY0wtMm1WeHNiQ3FqbEpzWlVHc2ZWREJ0eW80UGl5T0J0QldqeVpJeFozWFdFc1NYSEpNaGVJaG5zMzRPU2pqZXFKUXVuSWJoajZNSzhvbFFoczhSUW1Wc1lO0gHEAUFVX3lxTE5XSC1BQzNrQ0d4aWNZbWNNeHpVYk1iemt3Tm9jcTdDdEpjV1Z4dUZKWm9YUlBaUVNDVHk2X2tIUXBRSHpjcFhUenhiT0pyRTJLcDhGa3AwVERISUlSRU15cEt3SHFtdTNzZDBVdHNaRjljaXpJS3hfYU9RM2o2QXp5NV9sY3RJX3Y0Z293VWltRjhzeU0tT3k3enJMRjA1ajAzaElDNzFSQlJ1bmJtLXRMU0NIdXZ4bVRQMV83RkpxU1FpR3U?oc=5"
-    },
-    {
-      "headline": "Zhu Rongji, Engineer of China’s Economic Overhaul, Dies at 97",
-      "summary": "",
-      "source": "WSJ",
-      "date": "2026-08-12T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcnVRcDVqYmZlTHN4RjZ2MW5veF9EODlHeFRTZ3RhNW5aS2hLQTZSdTJQcV93dlRoNTdYNGZtUFhITjZEX0NvS0tKRzZiVGVndFVEdmpzOUFtR0tITllEWHU2M2Z1UFFrSkxqQ1hBMHVpcjV5SktDMnJwMGs0TnFoa2loLUZXbTcyUHhTajNuclhDWUdOUUo0NWRVWVk4d0gy?oc=5"
     },
     {
       "headline": "Our economic outlook for China",
@@ -51970,11 +51984,11 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdEVSd0V6U05sVnNiSzQtMHU1Sm9Ybl9GWnlZbmRHMGJXSFJtSHlVajNOQXNkVzRnZFZ1ekxEcDNaTk1FcGZOanBLbFgzX3p1V2R1SWdNY1prYUYtZ2hTejBpdi04TUFfQUU3eVJVaGlsQzZSeFZDTkdaVjNwbHpuSXpmX1RRaVN5cEFSNkkxazRPcHhvTkgyVUVWeGZBZllpTlVtVWZzVzNHc3UxUXc?oc=5"
     },
     {
-      "headline": "Why China’s booming tech sector won’t save its real economy",
+      "headline": "German trade deficit with China grows as Beijing relies less on European industry",
       "summary": "",
-      "source": "The Times",
-      "date": "2026-08-10T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc1hHMk9rQUktX0dTR3pQRWRmRHk3MXJvX3p2MkxqMmQ5enJKY2NOcTRZWktTM0tJOWFQMFJXR2FpTDlPTll4c2J1SGNmVXE4Z2FuTmN2SkdFM2hhZmprTnRCSzJCaDlBNVhPNHpLRzd5alRKN24tSkdxZTlTN2NCRGM1U21qdmZwWk1GSnNiRTlZa2t2bmkwMUJBSWhHb1ZqYkcw?oc=5"
+      "source": "Reuters",
+      "date": "2026-08-09T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOODQ2YlF3a0ZsOFRad3lFOW5WTzdtOFVSWmYwTEhTVkNhQ283ckFGd0YtR2hxa1EzYTd0LWVSN2NHNnhESFNpLXhJVTNMRlVCTW8waDI2RFpOeGZKX2dvTGZoM3JzNWJ3ZjRUMFdMaHZleVo1ZG5ackJES1lBZ2ZvelE4Tm1hbGdCaWoxaWE4dlExZGNsaWdKV085cDNFcml3aGxkZUJYdnJvYk8wZnJ2MVNMOXdxbFA4Tk1RQVo1cGc?oc=5"
     },
     {
       "headline": "China’s Export Boom Rolls On Despite Trade Backlash",
@@ -51989,6 +52003,13 @@
       "source": "CNBC",
       "date": "2026-08-06T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcWVtbGZySFBPQjJKY3VOaTJyQU0wZTVfaDYzdEtHWDBJVUZ6amxGODd3YVpuT2plOHZock5mbk5fbE9pS3d3VndMM21zMjdtRG9aRG5KRm1zQ3o2ZGpCMTNzQVBobkR3TlgwTThXUzZWelF6TGRxQkpGRlZCRDhHLW04R0xwaXNOQjNBMkVFb3c4VnJkZUJXakFsZUnSAaIBQVVfeXFMTlM3M2l3d3lCZFA5MWRtVjV5M3puckl3NG9Lc2ctVzU0RldzMGI4d0MtbHZpRWxrOWJYYXJ5WlNmd08zTXBZZ0ZVWVh6bkotTXpvNFljUURlenNRRTlQaEFZRTh0QlVlM3g2RjRvcHQ1N3kyMGtPRnZ1eUN6dWFlN1F4dmFVOHppTG9kRlNJV0NWbzBubFFaT2hQeGY0bWdVTm93?oc=5"
+    },
+    {
+      "headline": "China needs a stronger yuan, ‘fiscal boost’ to drive near-term growth: analysts",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-08-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTXdKZzZMWUJaTmVJcWEtaER0dEFQcVBZQXhqcGpmcHZJZmM3LUZ0Mk9DaXRJNTZITXZwa2FtNkpZSXM1U19wbkZyZnNUYnhlN01ia2I3ZC1iYmlhZEUwMkZrdDZVWmM4LWZCdnlUNkt3RUF1c3I4MWxVLWFHdmdBajgyVkZ6T2U5U25hVlZieGVRLWR3dlRSb1hIeF9CQzZvMEtaUWh0TVZRb2F3N2syNk5oSk9BUF9qWmhtN05WaDM4MjhnbWhTbEdJcEpkaVE4UGVNX9IB1AFBVV95cUxQa1M2QTBZS3VtdnFNV202Z3ZNbnBVQjBvcG50NHJaWGpvam9pTU1QcUpTWEFoOFlBUmpHQTQtZnZDck5LNl9yQThoUnh1NXpoQ3I4blhrVXFYVmRHWmUtb3ZUM3VIYnhDVnFITzBla0pST3BSZ0VZU2JuVnFzT1R2anIwanJ5MlBHendnRUl1TUktWkJ6U2htcTFCV2huNVZSZmUzbVhZUjV6Y2hhb3FnSkxxc3pXQ2hDVlU1YVZxXzUtNko4cEdVYzVaTmd3XzJ2UFpEMA?oc=5"
     },
     {
       "headline": "China’s retaliation against US shows depth of its trade war strategy: analysts",
@@ -52010,13 +52031,6 @@
       "source": "WSJ",
       "date": "2026-08-04T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdFg3MUc4eW9TWE5pVzJIeHo1V0xwNWlmQWx6N3Ryb3NkVU1jRGFfNm5LWHFfME5JeDFNZmRCTTExbS1XbllHWEJJY25zVnFBUmYyZWRhX3BDSFlnSEdmNnh5NkF3d0FLUG1PWlpzX2t4Tm1SWlJxa1JuaF9rRGQyd3BwcjMwYWNxMkg5dnBwU3lMNV8zQVJGTWdWb1U4UENnVXhQR0lrdnhIYmx3?oc=5"
-    },
-    {
-      "headline": "Iran war could still alter Beijing’s policy calculus: economist",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-03T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVWNaZHE3YWZJS0w0RTVfc1VIZDk5Z0ZZZkE1QU1FU3hUek9jTm5GbWM0ekxYTzB1X2d4d0JrWEVCYmlHT3c4WUFHazdPOXhhOV9ZU3Z2TmlnRU52d3RKMUdJY1lvS0lLcFF6ZngxN2l4eDNiYURZeVdjb0M4b0FPSXFpd1FsdUx1NXZNSm9LT1NfSE1sSUVYUkZfdjEyc3J2dkhHcnJTUGFTN1RzT0RWak9WanBGamIwRzVEeNIBvAFBVV95cUxNSUcxdUZVZzE4UjBrbnhHQlF3SmZIWjhEU0daQmw4UUFTZF8xdU9oX3M2ZHZNTmdxWmtfazJ4U01vel9TUzc4TWktbFRmZENucmhKYWhzbzBvUTlLXy1yRlBORGNWZmZTclNkaG8xRDNYSy1XZy0ydGNiOGdsUURiTGlTeG1tSEo1cktiMktuMzY2djdLQ0NBQWR4V0VwQmNUcHluQ2dFb2x2UVpWaTJUcFFQRkM0VzBHREVVSw?oc=5"
     },
     {
       "headline": "CNBC's The China Connection newsletter: AI wins come with an old investor risk",
@@ -52610,6 +52624,46 @@
       "series_key": "fx_reserves"
     },
     {
+      "date": "2026-09-08",
+      "time": "09:30",
+      "event": "中国8月进口年率-美元计价(%)",
+      "consensus": null,
+      "previous": 27.5,
+      "series_key": "imports_yoy"
+    },
+    {
+      "date": "2026-09-08",
+      "time": "09:30",
+      "event": "中国8月出口年率-美元计价(%)",
+      "consensus": null,
+      "previous": 23.0,
+      "series_key": "exports_yoy"
+    },
+    {
+      "date": "2026-09-08",
+      "time": "09:30",
+      "event": "中国8月贸易帐-美元计价(亿美元)",
+      "consensus": null,
+      "previous": 1125.0,
+      "series_key": "trade_balance"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "09:30",
+      "event": "中国8月PPI年率(%)",
+      "consensus": null,
+      "previous": 3.5,
+      "series_key": "ppi"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "09:30",
+      "event": "中国8月CPI年率(%)",
+      "consensus": null,
+      "previous": 0.5,
+      "series_key": "cpi"
+    },
+    {
       "date": "2026-09-10",
       "time": "16:00",
       "event": "中国8月社会融资规模-年初至今(亿元)",
@@ -52624,6 +52678,38 @@
       "consensus": null,
       "previous": 4.0,
       "series_key": "m1_growth"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月规模以上工业增加值年率-单月(%)",
+      "consensus": null,
+      "previous": 4.5,
+      "series_key": "industrial_production"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月社会消费品零售总额年率(%)",
+      "consensus": null,
+      "previous": 0.6,
+      "series_key": "retail_sales"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月城镇固定资产投资年率-年初至今(%)",
+      "consensus": null,
+      "previous": -6.7,
+      "series_key": "fixed_asset_investment"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月城镇调查失业率(%)",
+      "consensus": null,
+      "previous": 5.2,
+      "series_key": "urban_unemployment"
     }
   ]
 }
