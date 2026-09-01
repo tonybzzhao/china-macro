@@ -201,7 +201,17 @@ function fmtReleaseDate(iso) {
 function renderUpcomingReleases() {
   const list = document.getElementById("releases-list");
   list.textContent = "";
-  const items = DATA.upcoming_releases || [];
+  // The backend already drops past events at fetch time, but the GitHub
+  // Actions schedule runs unreliably (documented above — gaps of several
+  // hours are common), so data/history.json can go stale between runs.
+  // Re-filter here against the live Beijing clock so a same-day release
+  // that has already happened never lingers as "upcoming" just because
+  // the next scheduled refresh hasn't landed yet.
+  const nowParts = getBeijingParts(new Date());
+  const nowKey = `${nowParts.isoDate} ${nowParts.hour}:${nowParts.minute}`;
+  const items = (DATA.upcoming_releases || []).filter(
+    (item) => `${item.date} ${item.time || "00:00"}` >= nowKey
+  );
   if (!items.length) {
     const p = document.createElement("p");
     p.className = "no-data";

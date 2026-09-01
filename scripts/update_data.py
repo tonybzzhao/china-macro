@@ -645,9 +645,17 @@ def fetch_upcoming_releases(days_ahead=21):
     """Upcoming China data releases via Baidu's economic calendar
     (finance.baidu.com/calendar, wrapped by ak.news_economic_baidu). Only
     keeps events that map to one of our own tracked series — see
-    classify_calendar_event — so every item can link to its chart."""
+    classify_calendar_event — so every item can link to its chart.
+
+    All release dates/times are in Beijing time (the events are China data
+    releases at fixed CST clock times), so "today"/"now" here must also be
+    Beijing time — the GitHub Actions runner is UTC, and using UTC's date
+    caused already-released same-day events (e.g. a 09:30 CST release,
+    which is still yesterday in UTC until 16:00 UTC) to linger as "upcoming"."""
     rows = []
-    today = date.today()
+    beijing_now = datetime.now(timezone.utc) + timedelta(hours=8)
+    today = beijing_now.date()
+    now_key = beijing_now.strftime("%Y-%m-%d %H:%M")
     for delta in range(days_ahead):
         d = (today + timedelta(days=delta)).strftime("%Y%m%d")
         try:
@@ -675,6 +683,12 @@ def fetch_upcoming_releases(days_ahead=21):
     for r in rows:
         key = (r["date"], r["series_key"])
         if key in seen:
+            continue
+        # Drop events already released as of right now (Beijing time) —
+        # otherwise a same-day 09:30 CST release sticks around as
+        # "upcoming" for the rest of that day.
+        item_key = f"{r['date']} {r['time'] or '00:00'}"
+        if item_key < now_key:
             continue
         seen.add(key)
         deduped.append(r)
