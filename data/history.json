@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T14:26:15.860067+00:00",
+    "last_updated": "2026-09-04T18:30:10.088503+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51628,14 +51628,14 @@
       "headline": "DeepSeek looks for fresh capital as founder’s quant empire navigates China’s choppy IPO market",
       "summary": "",
       "source": "CNBC",
-      "date": "2026-08-28T01:02:00+00:00",
+      "date": "2026-08-27T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQzMxVFMwN0tVYWwxaTN1QUtCdVpwUnJVVmxMYWFUOHdNRFMzeDMzZVVjam0ydE5FSTJCNkRhTzNWalFZbHFxNmxXLTdWMTFXamlTVEtCT0lMdzVWZm1XT0RHdk5ZLWZoZmR5WWw4X0JrYkl6dUs1bEIwemxFa3FOMDRxejJoZk5wLU9jQS1veXFNUTBvTVNjSklQS3BGQTNqSWNmWNIBqgFBVV95cUxOd2V3enVGa2wyX05kbDNtbzhjTzdid3JubkxWeG5NQkE4OUk2WVp1dzJDMFNOWGJYcE9HUFpWRHhfamp4RGZqeGlUNFQzUWFaNU5fVFkzZ3ZERXFXbTRIcV9hMUFqdHlSSFJHNUNqbEhGZ2VwdlJoY2k0N2piNWI4ZFJoV2c3c1NaTHQ2b2FTaXJrQkR0akhHYzIybkY0ek1IXy1EdFZTLU5rUQ?oc=5"
     },
     {
       "headline": "China E-Commerce Stocks Sink While Baidu Climbs 4%: Alibaba Falls 4%, PDD Holdings Declines 3%",
       "summary": "",
       "source": "24/7 Wall St.",
-      "date": "2026-08-27T18:14:00+00:00",
+      "date": "2026-08-27T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQS2MzaEZyazdlSVB1YlNsak5iU0lMdzNsOTB4bXpkRUx6Zk1WQm1oUndYdEJjNXI5Zm03dHlhZ3NVSlhwMFlueXk2VU9mYURlSU93dkxIRlN4d01TaE9MMVM2Tk5wRE8wRm40TEJ2b1daRFp6WDVMOVJWX0ltbTZmYUlpak1YVFM1WW41MURKbTMzRFBGdGRyYlFpRmRrQ2tOMVFqOU9ZZmtIOFQ0VHR3Vk1BVm9lX25mbWZZRHU4Nl9FQ0NHRXFxNEVkVUJQUQ?oc=5"
     },
     {
@@ -51644,6 +51644,13 @@
       "source": "South China Morning Post",
       "date": "2026-08-26T22:00:06+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3365306/resource-curse-blame-regions-hit-harder-xis-anti-corruption-campaign?utm_source=rss_feed"
+    },
+    {
+      "headline": "US-China trade: Why the US holds the upper hand over Beijing",
+      "summary": "",
+      "source": "Fox Business",
+      "date": "2026-08-26T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WQXZRM0FwSmtsMFE3VWNoLXN2YXpiMk5Rei1ZOVdmd2VEcTc2Q0JoWU5BbnpEUTRyLXh5S2ExdlUyaVJqVGFROG1aNUprZzNGU3kyWkgwUkNHaDg?oc=5"
     },
     {
       "headline": "Opinion | The Real Winner of the Trade War With Canada",
@@ -51665,13 +51672,6 @@
       "source": "CNBC",
       "date": "2026-08-26T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOXJYOG11aWZmNUM0QmxZXzloZEdQel9qaTFBbmRzc1VFV0ZiUFNOMHp0VjNFd1BpQU56X3E4YzA2S0tINnd2TEhSc19uM19WSG1NUG9kblZkamRFcURkNE81Ty16c1dmMXVTYW9CSG5tOEpFN1ZyRnFZeTNLdktSRHhRNnhpaEo3RUt5OUVXY9IBlAFBVV95cUxNTHZVd2RGQndFcXFYcTFITlJZcGJvZ0VLeDV0ZnFQX1JGRXBTS2tJOUdZdXh1Q0FrdGtZV3BxMGJvU1E2MDg2MnVpYnFWYzZtNTAyY3NKVTNOd0FGTXZXbkJoY3daVzk2RWY2bVIxRnlFTXpyUUpreVFkTXg4bVZtYmRmVU9GNTVuR3B2NFB5M2hHU1Zq?oc=5"
-    },
-    {
-      "headline": "China rushes to develop Moderna-style cancer vaccines amid market frenzy",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-26T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQOVdkRDFUdC1qcjdxWHRvbnNQa3dJb1NfS0JiZFg2Ml9PQktDZmxzVFhLTGh1T2h6cS02bTRhNktWcXF0d25TWW9LMURiVF83VHZlR0lpZmwtT3h3eXdFeDdsZmZHUmZ6YWJjX24tZFo5c0FaRWc4dWg3Y3phWGlqV1hwQWlqTU1ZLS1MMXJUdlhNRVAwNUZEQzlMeGZORjVsZm9KX3VrNkhOS0VQYmxRYUwtSmR3U1paWmoyOHRGbU8zWjY4QmtjY0Jn0gHKAUFVX3lxTE9aVmdxaWEzM1J4T09XTVhja1Y0dnB0M01RNnZnb1NmM3JMcmJHY2xTcDZld0M2d0Z1YnN1bExhUFFpbHZ5S2JIY3hES3FvWTdlVDk3d0QybFp4UGdmdFE3X3R4TlhGZVhTdXhEaURSckRJNDFHeW9BRXBRcWlHQ1FLN0VBQk0ybERhU2tkUm8wUUNvVHkxVExFZk54TlI0V1M4Z2Jia1F4RmU5eDFLVmZGeGxNcUhoQm5VSUJ0U1V2X0hBd3N1OGszdWc?oc=5"
     },
     {
       "headline": "No immunity: how Xi’s anti-corruption fighters are zeroing in on fresh targets",
@@ -51700,13 +51700,6 @@
       "source": "The Guardian",
       "date": "2026-08-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZRzVaNkNpTzdlV2Y2TE5LOTEwbXVlOXd2LXdKejI1OGp2eXlGM3JOZlNaQjk5U1RlSXFKc0dETVk3Uy16MDV0LWIwdmpUdTZla09FdS1NRjR3TlFEOWZ0eXVuV0lRa0FSbDhvaWtLYlYxSnlrSGpEUkd1SzVsdw?oc=5"
-    },
-    {
-      "headline": "Trump’s new economic squeeze on Iran has a big challenge: China",
-      "summary": "",
-      "source": "apnews.com",
-      "date": "2026-08-25T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMThsZ1d5TUFDLXlMaURZQW5ZWElRQTBrQlgwOWJtNHJpd2xUNUJZVFBoYlFyaTkzYkYxWVJLQVBmdVJ2MlhTcEM4XzNkVlpKcnp2VnlFTnFmRmZ0THVGRElHUzZERWNHUUwtZHQtNmtQQm9OUDdmZDNiY1BQWGlHMzNTWlNLellMcndPSFVQdUFqb3pwYmU2NEhzUQ?oc=5"
     },
     {
       "headline": "How China’s anti-corruption fight became Xi Jinping’s most important policy",
@@ -51914,7 +51907,7 @@
     {
       "headline": "The Next Global Economic Crisis Could Be Made in China",
       "summary": "",
-      "source": "Foreign Affairs",
+      "source": "foreignaffairs.com",
       "date": "2026-08-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOGtRekxDcFBQR0ljUGpzY1RWNnNaQmZaVDMyQ1pxa0ZxVTAtQ3QzU0dsNmU4YmEzbndRbkdWSzBYZVlhZ2ZvdUl1ZFpKdTNBZnZYMnhxZVZmenJhVUNpUW5FVW9oc3RfUjM0eGYta1JXUHUtRWhmNFJQN0g3MEF1cDdBUXJLdy1BMGIxTlcxeEpEWkZS?oc=5"
     },
@@ -51926,11 +51919,25 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdTc1WG1EQklKajZmUGZqZ3BQLU1zWFJfNG9aWmhQcjBMaFJKcTRyUTZ5MGloMGx6b29HcUdPVXQ5MFZHS0J5LUFFV3M1ajhnZGlHVXBod3VQNjBkaXNYdEVxS0RXcVRsSzg5WldPYmRxQzJNeTNNbk5LZUgzTDY4aWJlcGthbEZWNGtTR3hoZ3djU1RibmRTQmk0dkpKQVRYSUJZTmgxSXdLTktNUk1fRTQwLXJzOVE3azZIQmwtbDR5eGdYUmp0Z3ZLT2VDd9IBzgFBVV95cUxQdVNmVUltNVdkT2xfSC1HaVpzZGt1bkJJR3I5SmcxOFIxd1lDNFY3bDdwbzdEcHp4Y3dVZnBqWm9SblRoeXV3LUV5b1h5U3o5YjJSWDl4MV96UzZnRWlQOW9pOGhIMVk4MUV2Ul9CYzhhXzlBNEZwRGZfRFVRdnE4TFlhYV9IQ2N3VzlGUGNBWUphRS1JZzVWSC1qTmZBMnpyUGZUQmFsVU1wUGN5RzdPQTBKTWdDWkM5eG1RbHowcUQxQkJ2NWJPc3RmSTRWUQ?oc=5"
     },
     {
+      "headline": "US panel on China sees confidence masking economic anxiety after rare visit",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-08-13T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQLTEzeURjYmJweXIwMWpMY3ZzUkVzVWJyM08wOFU3SF81RnNaV2RwWXdfR0pyZkJyWnVsTnJSbGl6Q0hYQVhUTFFNX3BSem16WEZXckxETVFlRmJfcm9RMmZMaGs1RXV6alVSa1lJUkFFY3NveXFYZGh1S1poNzA0YXNqc0N3TnVaMmJhek1tTUx3bld6Nl93N2k5OXM4eVBwX2VQbXJZdk9zUk1KcGdockRsdHl4UXhRbXFNTktLWU9IdkhySlBv0gHHAUFVX3lxTE1WQ3o1QjdSYnVGRFRUSzVJU2lrZmlTUUR3dXF0T2RJaVhzVDIzZUNmUmFaRzdOc0VwbE1na2doRjJ1Y29zeHZGMC02amJUXzh5bHA3QV9SOGVDRWMxbm05c1Q0UGptT0dSNWNQR0tONVo5MXljVFRjcU1mUTJxdkNneTBUTWQydlFQNC1mdG1DWlI2dmNIUktqY2k0QlE4UHljbGdkNk8xZENIVFdOWG92ZHgzeE9zU1ZZOUwxNWFVQmhBc0tKSk0?oc=5"
+    },
+    {
       "headline": "Exclusive | US-China ‘Board of Investment’ stalls before expected Trump-Xi meeting",
       "summary": "",
       "source": "South China Morning Post",
       "date": "2026-08-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTTY0UlZ0SVhscWlnM0s4ZmF6UTNKUXpUNlNVR0VnQ3lkbFZCMXRJalhZdE50cW5CNG1YSUhPdTRtZGxZUElic1hXOEtSQzAtX2NpY0doSVRSUWd5dEU2dXVUd3lVa1ZOWlZfY0wtMm1WeHNiQ3FqbEpzWlVHc2ZWREJ0eW80UGl5T0J0QldqeVpJeFozWFdFc1NYSEpNaGVJaG5zMzRPU2pqZXFKUXVuSWJoajZNSzhvbFFoczhSUW1Wc1lO0gHEAUFVX3lxTE5XSC1BQzNrQ0d4aWNZbWNNeHpVYk1iemt3Tm9jcTdDdEpjV1Z4dUZKWm9YUlBaUVNDVHk2X2tIUXBRSHpjcFhUenhiT0pyRTJLcDhGa3AwVERISUlSRU15cEt3SHFtdTNzZDBVdHNaRjljaXpJS3hfYU9RM2o2QXp5NV9sY3RJX3Y0Z293VWltRjhzeU0tT3k3enJMRjA1ajAzaElDNzFSQlJ1bmJtLXRMU0NIdXZ4bVRQMV83RkpxU1FpR3U?oc=5"
+    },
+    {
+      "headline": "Opinion | Little surprise Beijing doesn’t want Western advice for its economy",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-08-12T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQV9vaWNFdFU5dktmLTRGeEVXSGUyVEpTRV9aQnE0c3RaSzh0ejY5Z2FnSFkwLVRnRXJxMUhFSjRqWkt0WHVzTElnS0hQN3c5dC01NGNLVzBpMFpIWHY3XzZmcUtBZkprUUI5YzRNdDNONTg2M2JDTVNfSFlkejluWGJGSkV2UTQxeUtHOTk5d0NCem1hNG1sd29tZDZmSXdzeWFvOU92Ujh3NXU1aEtWYWVBZ3ZHdnhiZV85aUZR0gG-AUFVX3lxTE56bElPRE5pOWFPc1RjNWZGMFJ5ekR5aDBLajFPNjVobnMzMVF5VlZWalZKN1Y5djlKYXRud2JGZ1RZa0x5azYtaGhzU0pSVlZIcjVIZkU2RXJQTl8yUzFCbDJ0OEY2czBhWHNWZFExRFRtaUpHMU0xbzhsNERjSFdzN2dqS0J4VVAtUWJYZm5BRTBGdHdsdnN1Nlo2RTZWcGZkZlUzdHpWYldoeV9UdHFuaDBTNjAySmo1TDR3YXc?oc=5"
     },
     {
       "headline": "Zhu Rongji, Engineer of China’s Economic Overhaul, Dies at 97",
@@ -51945,13 +51952,6 @@
       "source": "CNN",
       "date": "2026-08-12T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTHZZaXFqRkk3WEtlamZpbXF6dVlUS3RxZGZhOXQ3aGtQNTFtbnpyRTBUVUNQaXJPdGNNOGpJY0dlSXpNclR6bjRyanI3cHVIZnRoTWlOZWlUd2FmOFBiOVVxR1FLVUlnWFl1STBFYm9YdlQ5OHM4ZWN4eXRRWm1wRDV1NkxjLUNqTlphdGlB?oc=5"
-    },
-    {
-      "headline": "Our economic outlook for China",
-      "summary": "",
-      "source": "Vanguard Corporate",
-      "date": "2026-08-11T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR081RDJlWHNpY2FJYmlUSUhlNEV5V29LRXUzbDZ2b2FPelVCdC1CNHJsUlJSaEk0dDJRZTgweHhvN1FMb1BhRGdHV1QzaU5YMl9ZbFBYSEZGRmdsTGNGd2tYM2dPQ1MtbWFpLWt2LVVqenRsc2VucUhaR040dXJLeUZINzZiX01DWTBBdg?oc=5"
     },
     {
       "headline": "Opinion | China’s economic problems have been diagnosed. Will policymakers act?",
