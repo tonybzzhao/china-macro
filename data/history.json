@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-05T12:48:01.725497+00:00",
+    "last_updated": "2026-09-05T16:08:36.860604+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51464,13 +51464,6 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcnpScVgwZFRtRXlSZXBRQkVBSzhsUVMxV1ZreVZGanpMRnJycDFGZUdBUUxERUduUzVHN0M3SW1BUUVNT0NEV1BRNnBqZ09QeWJGUlpMRllaNlRjMWpET2tEX3l1LUFkd1FFT1NrRXBPV3hONjJBYUFMb1Q1TTFEVE4xNF9vR1lYU0Z1bUNZMEJiRFU3UWNLUExR?oc=5"
     },
     {
-      "headline": "China’s demise was gleefully predicted by the west – meanwhile, it built an AI revolution | Larry Elliott",
-      "summary": "",
-      "source": "theguardian.com",
-      "date": "2026-09-03T16:03:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPejNuRFB4RzgwY0ZuTzJfenpjMUctWlE1R1J6WVJpWlJ5eUlnZ040TF9MWWRxcWZwRlVIRzd0Q1RmR01TSnVWQ3BVNU0zdVFzUkczQWd3OExzQS1XSnRUdmhLWFZkV1RCandxZ2lfdmJkbFJpUXRtd3lzZmVJcXZ1LVhlaFIyWDdmSmJYa1Awd0MxYU1saXZUNkJXOA?oc=5"
-    },
-    {
       "headline": "COMMENTARY: Hedge funds pose greater threat to US Treasuries than China ever did",
       "summary": "",
       "source": "Reuters",
@@ -51499,6 +51492,13 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUGt2OVJsb2NrNHZ3Y1FSUldUa1VhRlNrMWNCQ0NEcllXbkRweElsZkt2bmQyRE9qWWcwZ0YwX05kOThTMk1URVFVTGtGYlJIUUdRVWhRMVRPSlZNR1dfTmVxSlBPNTBqUUdwUHgwZ1VuRkpiczJ3Z0h6dTNpR0tvcmV6aXRzcUZtcUtkYV9zUzdTR2hydE1UWWdtUQ?oc=5"
     },
     {
+      "headline": "China’s demise was gleefully predicted by the west – meanwhile, it built an AI revolution | Larry Elliott",
+      "summary": "",
+      "source": "The Guardian",
+      "date": "2026-09-03T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPejNuRFB4RzgwY0ZuTzJfenpjMUctWlE1R1J6WVJpWlJ5eUlnZ040TF9MWWRxcWZwRlVIRzd0Q1RmR01TSnVWQ3BVNU0zdVFzUkczQWd3OExzQS1XSnRUdmhLWFZkV1RCandxZ2lfdmJkbFJpUXRtd3lzZmVJcXZ1LVhlaFIyWDdmSmJYa1Awd0MxYU1saXZUNkJXOA?oc=5"
+    },
+    {
       "headline": "What Xi’s tour of Egypt and Central Asia reveals about China’s trade strategy",
       "summary": "",
       "source": "South China Morning Post",
@@ -51517,7 +51517,7 @@
       "summary": "",
       "source": "South China Morning Post",
       "date": "2026-09-02T10:12:52+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOT2dKdERzUGhuaktmMXhpZGdPTUwyS3pUZEY1c2JmeGtaYTRoV2UxcENCazRGME1YbHVhOW5RM1hQTllTY0tuTllEbTZsdDAxMERlVmFTRndNRTZwTVB0aUNWWDJYaG56M2JmZnJaZ1AtZzBldnhHVzBXUXhvT1d3Vkh6ZlVlQ0xSbXM3d3kwcGNjT0J4NkNBNmNEQ2Rsam1yUm9wU3AzclpIbzZBNllMd1NZVWFBUHZ5T2F2WngwXzF1cEVmNUs1VWN6RHpyd9IBzgFBVV95cUxOXzVSeGE2Qml4Z3NiU2hOdGJHZnFSLUxiZ19oZ2xFNVFieEdBQk5Dd2xvalh6UlJkQ1JjSU5mOEVMR3NJc21zaXI0Ni1ZZUVhckxtN0FkQUNhUml3WUJSWnctTlZDMmo5SmxSdU51T05uOERYZV9pcEkwNE1uRUNrdm9lTS1FNGNqQmFOQjBnRVA1a0d1Qkw4OVYtM1kzS1JOcUQ1d1JpRWNEc0RGeWNCVlFiYVVVeVZRbFo5REItWTh4UXFzMWlyNlFlTzZmZw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOT2dKdERzUGhuaktmMXhpZGdPTUwyS3pUZEY1c2JmeGtaYTRoV2UxcENCazRGME1YbHVhOW5RM1hQTllTY0tuTllEbTZsdDAxMERlVmFTRndNRTZwTVB0aUNWWDJYaG56M2JmZnJaZ1AtZzBldnhHVzBXUXhvT1d3Vkh6ZlVlQ0xSbXM3d3kwcGNjT0J4NkNBNmNEQ2Rsam1yUm9wU3AzclpIbzZBNllMd1NZVWFBUHZ5T2F2WngwXzF1cEVmNUs1VWN6RHpydw?oc=5"
     },
     {
       "headline": "G20 finance chiefs except China back action on distorted trade",
@@ -51608,7 +51608,7 @@
       "summary": "",
       "source": "South China Morning Post",
       "date": "2026-08-31T19:10:22+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcEtjR2JCZmVlWHNqUFAzNko2QjJ6VENHcFRTNWxDNHI2NTBqV1hpS3FJOU9scWRzbldRMTdYZVJjaGlfVHREQVlXbjJUYXVJc1VqRHNfRDd4OHpFUXVOb2QyemR3ZE9UeS1GXzQ3eUFJQ2F3UjdmNTJNRXI3ZklVT09GTkI1RDFPY0lTWE83Um5NSXlyOV9iT05FYjJxTk9YWjhSMnV1ODFfUWxSZHFaTkYxU09KUW41cTFqU2QxNjg3bm5oUEFBcVpR0gHKAUFVX3lxTE5yMXFKZU5tdU5HS3FSRzZlLURfZmhEelBRUWJTYTBpNWJiZHA2T0RsQ0k3T2NVbHJhOUpkMUh1NGpmU3RoUkRWSDZWRzlNVVpvQThNd0FHVkt4MnZ6WURiLUJmWEotbkk3V2NYS1RYN1hidFZ4UnRDbzR0MUNhTV9SdGdzZFplblNDN254SnVOal9vbFhnZ0owS3Fzc2FVaXYwbWJLQ29EOG4zU2ZqNS01RkZnQjlORHROVUs3RHB5THlxa1NLbjNwMnc?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcEtjR2JCZmVlWHNqUFAzNko2QjJ6VENHcFRTNWxDNHI2NTBqV1hpS3FJOU9scWRzbldRMTdYZVJjaGlfVHREQVlXbjJUYXVJc1VqRHNfRDd4OHpFUXVOb2QyemR3ZE9UeS1GXzQ3eUFJQ2F3UjdmNTJNRXI3ZklVT09GTkI1RDFPY0lTWE83Um5NSXlyOV9iT05FYjJxTk9YWjhSMnV1ODFfUWxSZHFaTkYxU09KUW41cTFqU2QxNjg3bm5oUEFBcVpR?oc=5"
     },
     {
       "headline": "Bessent Says He’ll Ask G20 to Rethink Trade Terms With China",
@@ -51646,13 +51646,6 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdTVycjRpeUoyUHk4ZGx5cDhHNXJyRTUwenJWWVI5OFlKdmlZeTVqS0piUFJOMU5zLV9pUFFjbXlZZ25xaHJialVYTE9yQ3B5RVBhcmJMbHdGVHpsYzNVdXB1TlR6a2wzenUwV0VGc1VpLUZJZWdnUWp1WXZZbHNNTVQ5clpUMjhGN3RHR1hlbWhPNmltY3FfNlBMZ19kZlB3VXc?oc=5"
     },
     {
-      "headline": "China’s Green Exports to Europe Are a Bright Spot Amid Trade Tensions",
-      "summary": "",
-      "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
-      "date": "2026-08-28T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNY0ZsQnY1SFk5QnRZY2h0N2VuSko0QUxWSXdiOXZ1ZF9RY0RZTEprOXZxb1h3NmhaWDYyZDVoY09KVmZsQUU4UlNKaC16RmFTR3FGdGNKQXViWGVOeFRCU0lzdTlybWxwYkNKM0ttd1RxZllibVEyQkU3dE9KVkhiQnc4NjdfNmRtZTJSRWVtQ2o5eUFPNGhMcTRReloyQ0pFRndn?oc=5"
-    },
-    {
       "headline": "Xi’s crusade against corruption has gone well beyond economic crime",
       "summary": "The South China Morning Post has launched a major data project diving into President Xi Jinping’s signature anti-graft campaign. In the fourth part of an accompanying series, Yuanyue Dang and William Zheng delve into the",
       "source": "South China Morning Post",
@@ -51676,7 +51669,7 @@
     {
       "headline": "Why investors should start paying attention to China's economy again",
       "summary": "",
-      "source": "Business Insider",
+      "source": "businessinsider.com",
       "date": "2026-08-26T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR285aFhDQ19ELXJaa25mQVc2bkpJVDBNc3BTd21UTG82a0k4WnFjM3Jaem5HRkd2Z0c3WVMyei12YzZOSnlGQWFaMDYxLTI3amFhUm1BbnAzNTVqd0xoLXI3bEFTdDg2RFhRN2RWZWpjdXJ4NUhHUUVNcUZMR2luNHpWNXJySnFkU0tUVmtONDhvaGRYVGdwV0d6WU1PWUptZkszUVBR?oc=5"
     },
@@ -51732,7 +51725,7 @@
     {
       "headline": "China denounces US threat of sanctions over trade with Iran",
       "summary": "",
-      "source": "theguardian.com",
+      "source": "The Guardian",
       "date": "2026-08-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZRzVaNkNpTzdlV2Y2TE5LOTEwbXVlOXd2LXdKejI1OGp2eXlGM3JOZlNaQjk5U1RlSXFKc0dETVk3Uy16MDV0LWIwdmpUdTZla09FdS1NRjR3TlFEOWZ0eXVuV0lRa0FSbDhvaWtLYlYxSnlrSGpEUkd1SzVsdw?oc=5"
     },
@@ -51844,7 +51837,7 @@
     {
       "headline": "Is the US actually too chicken to take on China for trade?",
       "summary": "",
-      "source": "theguardian.com",
+      "source": "The Guardian",
       "date": "2026-08-19T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSW0yU3RqTkNxcmFnT1B5TWJEVDRXcklzaGVPUlpraWxlWUhnTTBmQlhXaENuRHJnZnVna09jOU0yc1FldXNRVzZzM0t4N25raldRVVBSUVN6QjhodGlpRW1keU5QY01xTzJCbldVM0ZjRlpoVFpUV3dLQW9yZVA5MQ?oc=5"
     },
@@ -51879,7 +51872,7 @@
     {
       "headline": "China’s economy showing signs that slowdown may be extending",
       "summary": "",
-      "source": "theguardian.com",
+      "source": "The Guardian",
       "date": "2026-08-17T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbmdlcXN2cGVYYmM1UXVjSUFOTE1WZjRCODdqYl9oNlF2SGdvSnRueTlKWVlBQkVScE13SFBoWXF5YmpJQ0h5d2NlVjBfcTZZS1F1YkxsTTJHY2syMXZqRVFoMkFHTTI5aWl1QXlxemNtN25GMDFQNF9fcjBkaWltbXFXUzRnZ09FaC1VY2VhY2w?oc=5"
     },
