@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-07T10:26:08.686873+00:00",
+    "last_updated": "2026-09-07T16:32:10.107845+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -49975,6 +49975,10 @@
             {
               "date": "2026-09-04",
               "value": 6.7109
+            },
+            {
+              "date": "2026-09-07",
+              "value": 6.711
             }
           ],
           "desc": "How many yuan it takes to buy one US dollar; a rising number means the yuan is weakening."
@@ -51454,13 +51458,6 @@
   },
   "news": [
     {
-      "headline": "Breakingviews - COMMENTARY: China’s bank recap may achieve least important aim",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-09-07T05:44:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWk5jQlNIdjdiNlNPZW9XdEhzQVRZU1A3YnJfUUFkNjVIOHQ1TFpHZkZDdU9mX0Uxb09PWk90aFg5b2hYSHFsdG1VTjYxWVQyVUFQcmpBdXJJQnBFbnR0cXhlSVZKZHBjUjIyVVFUdmhtVU5JRW9VdjFzUm1aU0F5dlcwM3VQR2ZqSmZPbXJoaVJrQkExWUh0UDBKMGh1V2lLXzZiRW8wUFh4ODU4eGYw?oc=5"
-    },
-    {
       "headline": "China insurer capital injections could boost stock investments, analysts say",
       "summary": "",
       "source": "Reuters",
@@ -51596,7 +51593,7 @@
     {
       "headline": "US urges G20 to cut trade imbalances, focus on China",
       "summary": "",
-      "source": "aljazeera.com",
+      "source": "Al Jazeera",
       "date": "2026-09-01T22:26:34+00:00",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNFFMVlVaWmx1SExtZFRReGl4RFlwR1RKRjBtSEd2TWlUZTVaWVFWVFhaWGQyVFQ5blJDYndJei11S3NYc1FDSUxkZzIxNk5zOFJUaUIwTVlDQmxTOWR4STNXV1MyaFQ3MWhmTkpRMUtoRmpBZFFqOGFfMkdjcEo5OUFlY0J0cjNzc0R3U1pmSy1RYVF5blp4bXRR0gGfAUFVX3lxTE4xSXZiVnJVbHBGOHhlSVFBS2RBaWtMZHY1Wi1peGtUM0E1dTgyVngwbzR6MmJLNFN0b0RMR0kzWHJUZFA5dWdiajk1dGhVa3NBbkk0YlNhOHg0TGZmall2LVR0UC1ydFFrUG4yV2ZxMVloZGFkMThidDhGbFByMGFxT3FVQ21hdnZJVkpNVVc5d3BpN0pOODIwSFpqbjRobw?oc=5"
     },
@@ -51613,6 +51610,13 @@
       "source": "Reuters",
       "date": "2026-09-01T20:02:19+00:00",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObGt0TGNGUkh2OWtIbDJYMjh1REc5Zk9yV0QyVmdkdDZ0ajh1QndidGVkdDFtOExFSVRYNmdyMXVTTlE5STZ2eVMxcHNxYWhBM1B5OVZFRFp3aTJEZFJiTVh6SldHUE16c20wVjFDcEdxWU1ndDdOUUt5OVBsWGh6aXczUlJaZDFmTXg3REtFenE1VTRqNkhsTHRreHpieXlVeTdtbjAzVlhOd1puQkUxamMybmg1cU95QlE?oc=5"
+    },
+    {
+      "headline": "US, China debate 'nonsensitive' tariff cuts ahead of Trump-Xi summit",
+      "summary": "",
+      "source": "asia.nikkei.com",
+      "date": "2026-09-01T17:28:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzlod3BMTlh0dEhTS0k1aE56UVFPUFNVb3dtbzBEdktjWXh3U1pxdHgwN0dQTldURGVoeEJ3WWxXSUdFR0t4eWVjb2xEN01wMklSd2tUaFU5MUZtaEo0OFRUeU1xZnI0WV9VZ3lMVlphLVdtWkVvTFphekgwdzcxOFB4U1J1UzJHcE5VTEpjSEJ5VWkyN1hZV0tjSXRsdEE0UE5MemdZemZwbVFMNU54SDBKX2ZDUQ?oc=5"
     },
     {
       "headline": "China’s NIO Narrows Loss on EV Sales Growth, Expects Volume Pickup",
@@ -51636,6 +51640,13 @@
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQaURJMWdVUWdZeTZ4eC1vTFQ5NnVpZTByMjRjQnRBRm5uZmFoN3U5akVzVVd2U2t3RnI0cHFlemNibDJCNWNBTHJlU0hBUVNScjNWTzNnaUp2cy10dFpRZzJxeVpFTDgtNzZHQ3U4bGh2Tk9UdkNkRkhCaXc1azAyZVhia2Z0ZTJrYkFnbkJ2MkhuNFUzdXF0X0EyOGVhRXRhZnV0MzlKZERsbUxDN0ZZNGYzcWJfTDh5NEprVlBhT21vZ3BHUmZzcEZ5cC1rRWsxTW90QTlWWkN0SWVUaVHSAd4BQVVfeXFMUFZESTAxRlBTejc3ZGhmdlc5QlBia0hCMHIybG8yaTFkVVVZVzIwOEc5ZUxNdGVXdS1rdGdSSHYxOURJbWpyS2pZNXgxWUE5WFRJd3JmQk94WHJfOWUyVXFRdGRGOEdBUUtxakw3OEEySnBnQTFjb3pBXzdhQzk3RFJSMUxscjhxdjBkbk1PeDJKc3k2SDZuWEo4LXFFUDJzUnFMT3B4aVktTjhoTWFsVngyV1YzRWlHUjZucXBWNnRUREVGenVkNGtEby1xLTZhdXNiNm8wenRVV0gxN0pR?oc=5"
     },
     {
+      "headline": "CNBC's The China Connection newsletter: McKinsey's contrarian economic view",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-08-31T23:00:01+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTkhRVEdHbW1LTjIwUXZkZEN5cG1wX2FQNERpd2dJVGl6cWVzUXZVLWlMZHBXZ3BWN3NsYzI4WU01S0hyNEZ6bHN6NmJNa2I1bWdZMXV5NFNBaDg0bWlYeVI2bXZsc2lsTTJ6SU81VmY3Uy1DS2g2YjNVbkJmOUp4X01LeXBwUGZ0UzFKSkdQSzM1cTNIOUVyRUxFcVlvb2NlWFVDUDlB0gGrAUFVX3lxTE05TGRsazhta3VmOS0tX3RsaG9ZQWpHT2dzMlU2Mk9fRUltUHh1YzlTQUVleWs0QWVacXFQcDIzSEplTFptWVRRV2FXZEwwajRSV21ZZlYzZ2FacGdOYnloVWNvdEZPT216SXNBVzc2eWR6ZnBxem9ZQnlEOXBndkJiVEE2NGpFUWw5Tld3cEk2U2hTVzJQUm1PT0RyTXFwQTJvdFRUcThmc3Nkcw?oc=5"
+    },
+    {
       "headline": "US and Canada brawl over hockey sticks — so China skates off with big trade wins",
       "summary": "",
       "source": "New York Post",
@@ -51648,13 +51659,6 @@
       "source": "Legis1",
       "date": "2026-08-31T20:21:32+00:00",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBBc2ZrYUFQUTdUNFVNcXUtTzV6MlNoRlpzTHVCV3lPMUV5ZlNnZ3RaUTVlQ1VkRGxJUkItRHBzTGNweFhiUUNKanFjS0xiZ213NFQxbTE1VjNUV29fZ0kzczB0THdLNC1HVXcwRmozQkxGUGFESlA4M0hHQQ?oc=5"
-    },
-    {
-      "headline": "How to Play the Micron vs. CXMT Memory-Chip War",
-      "summary": "",
-      "source": "Barron's",
-      "date": "2026-08-31T20:19:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZjNUUDlmNHloczFZa1VTQmlDMmw4SEtRT0pVQ0dlRndmNUJFbUVvRDRZNlpKT042akdhR2JaSFo3VWcwV1g4NzZaZm1WdWFZN2F2VF81VDNZYmU0ZUtiaGplZnJSdUZQSnJsaF9ESmVWaERFUFhGNEVCZ2NxY1A4QzFUSi1pbG9wZExBU3ljUEZsZw?oc=5"
     },
     {
       "headline": "US targets China’s global trade surplus at G20 meeting ahead of Xi-Trump summit",
@@ -51741,25 +51745,11 @@
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYWxCbW8zN0xBZUI1UGZaQTU2Z2pDSzVGWFJfVlZSRmhMX1ZhTWViMEFkSDAyWVJpT3dYVEtVWGdMRHlMWEpSQlNSa1JuVlBON0RrV0czWGppYkdJNDBPdUdfd3N1YVo0c3JMYTYtTXNzX19yUzlVRnpJVzVMSDYtQjA4QkRRd0pU?oc=5"
     },
     {
-      "headline": "US-China trade: Why the US holds the upper hand over Beijing",
-      "summary": "",
-      "source": "Fox Business",
-      "date": "2026-08-26T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WQXZRM0FwSmtsMFE3VWNoLXN2YXpiMk5Rei1ZOVdmd2VEcTc2Q0JoWU5BbnpEUTRyLXh5S2ExdlUyaVJqVGFROG1aNUprZzNGU3kyWkgwUkNHaDg?oc=5"
-    },
-    {
       "headline": "Z.ai shares surge 8% after releasing new AI model running only on Chinese chips",
       "summary": "",
       "source": "CNBC",
       "date": "2026-08-26T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOXJYOG11aWZmNUM0QmxZXzloZEdQel9qaTFBbmRzc1VFV0ZiUFNOMHp0VjNFd1BpQU56X3E4YzA2S0tINnd2TEhSc19uM19WSG1NUG9kblZkamRFcURkNE81Ty16c1dmMXVTYW9CSG5tOEpFN1ZyRnFZeTNLdktSRHhRNnhpaEo3RUt5OUVXY9IBlAFBVV95cUxNTHZVd2RGQndFcXFYcTFITlJZcGJvZ0VLeDV0ZnFQX1JGRXBTS2tJOUdZdXh1Q0FrdGtZV3BxMGJvU1E2MDg2MnVpYnFWYzZtNTAyY3NKVTNOd0FGTXZXbkJoY3daVzk2RWY2bVIxRnlFTXpyUUpreVFkTXg4bVZtYmRmVU9GNTVuR3B2NFB5M2hHU1Zq?oc=5"
-    },
-    {
-      "headline": "China rushes to develop Moderna-style cancer vaccines amid market frenzy",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-26T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQOVdkRDFUdC1qcjdxWHRvbnNQa3dJb1NfS0JiZFg2Ml9PQktDZmxzVFhLTGh1T2h6cS02bTRhNktWcXF0d25TWW9LMURiVF83VHZlR0lpZmwtT3h3eXdFeDdsZmZHUmZ6YWJjX24tZFo5c0FaRWc4dWg3Y3phWGlqV1hwQWlqTU1ZLS1MMXJUdlhNRVAwNUZEQzlMeGZORjVsZm9KX3VrNkhOS0VQYmxRYUwtSmR3U1paWmoyOHRGbU8zWjY4QmtjY0Jn0gHKAUFVX3lxTE9aVmdxaWEzM1J4T09XTVhja1Y0dnB0M01RNnZnb1NmM3JMcmJHY2xTcDZld0M2d0Z1YnN1bExhUFFpbHZ5S2JIY3hES3FvWTdlVDk3d0QybFp4UGdmdFE3X3R4TlhGZVhTdXhEaURSckRJNDFHeW9BRXBRcWlHQ1FLN0VBQk0ybERhU2tkUm8wUUNvVHkxVExFZk54TlI0V1M4Z2Jia1F4RmU5eDFLVmZGeGxNcUhoQm5VSUJ0U1V2X0hBd3N1OGszdWc?oc=5"
     },
     {
       "headline": "No immunity: how Xi’s anti-corruption fighters are zeroing in on fresh targets",
@@ -51778,7 +51768,7 @@
     {
       "headline": "Who Paid for China’s Last Debt Cleanup, and Who Will Pay for the Next?",
       "summary": "",
-      "source": "Carnegie Endowment for International Peace",
+      "source": "carnegieendowment.org",
       "date": "2026-08-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYkZfbGlSdkZoNGM5WDJoMFR2NlFvcVNRblRBdHJaM3NzQ3M0T3o5d3d3TE1UeFhuYzZzLW5PYmlta1RWS3VmcjJaRV9zTkNacGZaMC0ydG94WUd4RjNrVnA2UzM2QVM1eVdhUDcyU3V2bTBvN0RMNDlQcG04c29Gd3h6MHk2TTNJWjZJMlNPSWplR2QyV0dyNWZNaW16QUpTYlRfOGpWdzBWSHppX0hWTTFZSjY2ekVGRjlRMXFOS3c0ZDJycTdnSg?oc=5"
     },
@@ -51825,18 +51815,18 @@
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUTB0cnozVVF4S0prNTc1SVRBeGhXRWdGZ1JjX2NpaHRkUWRwRWpQazkyN2JUUUlPaWFFUHRlN29uRUNma0hCa25oS1lkRVd3Ykk0Y0ZRTURFVGJNQkJBRzRXdS12MkUtdzRZbXpVMlVZakEyYXdlUG1FaC1BTWlYYm53MHdMcFk0MElkZkdTLTZNMVpfMzJydndVNEZyYmFCUWFYeHY1QTE2Nkl6azh1MXZsTDRXczFzQXZXX29WSWh3RTlPVnE1UnBlMkN1ZjFZZmfSAdIBQVVfeXFMUFh2N1RUOThlckFpZE1UOXhhUDI1eG0taTdZWUcxb3lSNFY2ZUhpMldoLU05U1dGRmRnQVl4NGRxUzl3Y0xveS1qZHA0aTZhSDV4R1dSWEV4cWkwdnpIRi00cnJxV2NUa016NUx2SmtDcWdjRU5pRFo0Ty1aVmRnbDAxZEJhQ2xULUU2QXlRWDcwTVVySGQ3bllicFVhRzlSZEZrTVFOY0xLNDMtMWY1RzBBOWhPbU5lVlRIR2N2XzEwMFNPcXJfM0JtZXZ1T2FVTVVR?oc=5"
     },
     {
-      "headline": "China's $119 billion policy financing tool begins project applications, faces roll-out lag",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-08-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZ2VSRllRaTg1YmZHU1Z4M0tIQ1UweV93Z2ZZeE13anhHbE9oZDNBMUltd2Z3ZHY5TmZuSmdsalh5MW9icjkzVHpyY2RNVW96RUFXb1kydENhQ0o2TVRBSmlETnlJUUFqZEJ0S1VlR2xJOHA3TzVnRzA4VURHdVpuVC1UbjVDa2gtRC0tZGxoWHdOS0tlaG1nM0Y3ZTlLaGotb1B4SzA3THZDU3h2bVdTSEtKSHVIYmk2SDBfMEI0ZXZXQ1BpSDZyQWhFMWVwSVU?oc=5"
-    },
-    {
       "headline": "China Puts Brave Face on Weak Growth in Rare Defense of Economy",
       "summary": "",
       "source": "Bloomberg",
       "date": "2026-08-24T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVN4WHROcFlxSmMzWG9PMjlJYU1mWGRKZnNzVXhZS2lyeWpZOUZLeW9XSld5aElsTW1TYVg1N21zeDAwWEw4TVdrRVFvVlptVGlTbk1NbXlyLVFua0ZVNHE3S2g5UTRlYy1VTVVDeGFHRnRMQVVIMFBydXpXVHlhWVRCU1hEMk5QQjJDZXJkZFhCYzY0WG0xZjFjSm55Zl9CWUdmendJRTBTd2xrdjBwU21tYWk?oc=5"
+    },
+    {
+      "headline": "China's $119 billion policy financing tool begins project applications, faces roll-out lag",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-08-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZ2VSRllRaTg1YmZHU1Z4M0tIQ1UweV93Z2ZZeE13anhHbE9oZDNBMUltd2Z3ZHY5TmZuSmdsalh5MW9icjkzVHpyY2RNVW96RUFXb1kydENhQ0o2TVRBSmlETnlJUUFqZEJ0S1VlR2xJOHA3TzVnRzA4VURHdVpuVC1UbjVDa2gtRC0tZGxoWHdOS0tlaG1nM0Y3ZTlLaGotb1B4SzA3THZDU3h2bVdTSEtKSHVIYmk2SDBfMEI0ZXZXQ1BpSDZyQWhFMWVwSVU?oc=5"
     },
     {
       "headline": "Vance says Canada friendlier to China on trade than to US: 'Insanity'",
@@ -51974,7 +51964,7 @@
     {
       "headline": "China investment slump deepens as economy shows signs of weakness",
       "summary": "",
-      "source": "Financial Times",
+      "source": "ft.com",
       "date": "2026-08-17T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVklkMXNucEsyX2F4LXRCZENEdDRtRDRmX2RKbXVpdEtDVHlBT2dDMng4aktwelZmSzRIRUJ0UGszLWh6WDZpOHlOVFlieXJmVE5HbTltVXVTdE13MjBBeUZqbGxDaXU3Tk5oWUs5NUhZbU9tSEJ1cTh6VkV2RmJtaFh4RlE?oc=5"
     },
