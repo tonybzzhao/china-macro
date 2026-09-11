@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-10T21:42:28.498547+00:00",
+    "last_updated": "2026-09-11T00:15:13.383922+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51527,7 +51527,7 @@
     {
       "headline": "China, U.S. hold candid, in-depth, constructive talks on economic, trade issues",
       "summary": "",
-      "source": "中国驻芝加哥总领事馆",
+      "source": "chicago.china-consulate.gov.cn",
       "date": "2026-09-09T02:26:20+00:00",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOa3ZCTFhXU1BjU1paYTF4Tm55ME9rWmM0V2oxQmE3WFBKWE00NGJyb2JuTUgwMmQxRVBlU3BrSnpkRU4wNWJUVTYyQV9wR0R4SGNUWU92R0V1Nk1VOXRkcUQwWnMza1pKX3o1cFF6b2twTFJNMDI0VnV4MU1PRXZXQ3BacGZfb2t3eUE?oc=5"
     },
@@ -51586,6 +51586,13 @@
       "source": "Bloomberg",
       "date": "2026-09-08T04:47:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbTllQTVENHBHellwVlUtNGF5SWp4aGVoX296c09yTzdGNlozZjZXUnFxbTlPTEg1NEJlaTJkM1dIMEZMc1VESjJJV3VNd3NMdGFXdEllTGhHcEtDM2FCVG5YTENCQmFKNFptZnN1RWNhZjk2SHpSMkxXMi1aNUJMVDRYMGZBcmxMeTFFbkFxb01YN2JEZ2QxUkxBT0Vpby1VY0tjQ0VHQ0toQUR5eDU2YTRvQW4?oc=5"
+    },
+    {
+      "headline": "China’s 25% export surge sets stage for record annual trade surplus",
+      "summary": "",
+      "source": "Financial Times",
+      "date": "2026-09-08T03:01:39+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcnkxQXZIUUNxQzlQMXFUYTNMTXpfSjdjcHZaSUtTa0U4dEF1dHZUYzk2QzRDdzJlN0djaFNObE9qSXo1QUthc25Wck16MUZjd1FIVGFmZEg1RDlRZGFFRndWbENRVXpEUWVPRnM5MFd6aWlNaHpIblA0ejNZZW1PT3l1RjU?oc=5"
     },
     {
       "headline": "China's imports in August miss estimates as calls for rebalancing trade grow",
@@ -51700,6 +51707,13 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13cVBlaFl4djM0LV9CdjRLdHpVdWtaZkdiTkExdzlKREYxRXhQUmlIdmI1OVgwaHhVV28tVGNNbW9OSE1ncUFWcE5xSFRzY0JOVXlkZnJVLVJ4eHNpSDFwbm5IUFdoWVJ2OExpX9IBckFVX3lxTE9pR1dRY1hyMTh1aVZVWENOUThmdm5mWHZhM19ZS0tSZDRCZDBXMmR0VFU2cWVqSU9pQmM5NkFoTkFrMEtXZGpUeTVlVHFKNzRxaFc2WjhRNlh0bVZOME5wLXJkbnhQWWZORzZ2ZFd3bE1sQQ?oc=5"
     },
     {
+      "headline": "Hidden China risks are emerging in America’s multibillion-dollar AI data center boom",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-09-03T09:29:04+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE90aUdnWGFYbGV4dEV0SlZYbWExY1p5Ym5BWDk5dzBZZk5ERUZ4aGhNNGJMNjBVY0tXS3VyblkyaEN0cFVSTHpwTjk5Q19vMHpjdVZPU0pkUGp5cWpVYzRPREU0LXpnWmRyY1JMNGNCaGY2TzFIMDlKclhKLVdNM0HSAYQBQVVfeXFMT3dDVWtUX3NBc1lJRXNOOGZGS0NxQ1UzYWlwWllHa3hFQWhIUEJyZWdoZ1paQ09oVUtQaG5VdGhCQ3ZMREZ2aWlkSTc4TGFJRUFBSVFtbDVsdTFPd1pHWF9rUDhfS2RsTkVFanU2aE8zTURkODhCUWtWaUlPWmxzdmZ6MWIz?oc=5"
+    },
+    {
       "headline": "What Xi’s tour of Egypt and Central Asia reveals about China’s trade strategy",
       "summary": "",
       "source": "South China Morning Post",
@@ -51735,25 +51749,11 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcFAzZ1R0dzNGNEt6Q0ZYS3FYQ0w5SWRnMy1uSHpiZUFJSEREb0ZSekxrNVhJa2JZT0d6YVJlVU9UNUJfUDVBMlA5TnhpNGVENGhJeGh1OWU2QUpKekxwZlNFWXpwNmxGMm1nbXlQeU94RlNBNzBQWThJM0tHN3ZBQmN2V3dfSExhRVJuVkl2ektGblRuZlBLOEdUbVlJQ01h?oc=5"
     },
     {
-      "headline": "China dissents as Bessent says 19 finance ministers agree to address 'cheap exports'",
-      "summary": "",
-      "source": "PBS",
-      "date": "2026-09-01T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcC1jbjZTNGM4eTM3RTJDSmptWnh6cE5nVEJfUnZ4ZWpnYzJ1YnE3NDBIT09CWU01d1VyaTNjZUpqYW5TMVpmbG5GcllUZnJhSEJtbjJ3NTUzNlhjWEViLWxfdnpQYUQ4R3BhdURhTGx2YTZIUFRZcnU1d010N3huR2kxSGNIRDV3dmVCNGVKbWVQbWszMUZSMmNQME5zb19KREtxZHhZcHBmUm9LSTZodl84WU5mRkZsMzVv0gHAAUFVX3lxTE9ZWDhQUWJCM2ZaVklXV19kQURvOE45dG5OZTQ4RWEyeHdXUjBDd3NrZDNRaVl3Y09yMDh1ZWt2U1c3dUs1M21iX0QwSFBQTjhtUHBDalNVV1pkazRvVG5Xdm5lRkY5MVp1VnF3dkZDOEVYbFNLSU1IeVZWSTJnWlN1WlhsUzBWbzJCNnJ2SGk5bGppN0lPeG5IeHE4WmNFc1hINDYyVXM4NWdBcFhWREFBaEtQSTNBQ1J4YXhlVFhGRA?oc=5"
-    },
-    {
       "headline": "US urges G20 to cut trade imbalances, focus on China",
       "summary": "",
       "source": "Al Jazeera",
       "date": "2026-09-01T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNFFMVlVaWmx1SExtZFRReGl4RFlwR1RKRjBtSEd2TWlUZTVaWVFWVFhaWGQyVFQ5blJDYndJei11S3NYc1FDSUxkZzIxNk5zOFJUaUIwTVlDQmxTOWR4STNXV1MyaFQ3MWhmTkpRMUtoRmpBZFFqOGFfMkdjcEo5OUFlY0J0cjNzc0R3U1pmSy1RYVF5blp4bXRR0gGfAUFVX3lxTE4xSXZiVnJVbHBGOHhlSVFBS2RBaWtMZHY1Wi1peGtUM0E1dTgyVngwbzR6MmJLNFN0b0RMR0kzWHJUZFA5dWdiajk1dGhVa3NBbkk0YlNhOHg0TGZmall2LVR0UC1ydFFrUG4yV2ZxMVloZGFkMThidDhGbFByMGFxT3FVQ21hdnZJVkpNVVc5d3BpN0pOODIwSFpqbjRobw?oc=5"
-    },
-    {
-      "headline": "China’s NIO Narrows Loss on EV Sales Growth, Expects Volume Pickup",
-      "summary": "",
-      "source": "WSJ",
-      "date": "2026-09-01T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORGJJOHVjbUtjN0xpemJsZjNQN1NFNFBSdE13dzFVS2VNWnhLeFg1NloyMkx1MmNlYVZsdi0zUlVSVEpLbGV0MHpMaE44R1BVbk1SYWExd2tHdElDZkp5TzVpWW5GYkNPeTNiSnRZLU1pMnBNRFVDdHFMbGhORWhzZ1dmRDR1Z1hjZXVr?oc=5"
     },
     {
       "headline": "Why foreign inflows into China A shares could slow after record surge",
@@ -51786,7 +51786,7 @@
     {
       "headline": "Why China’s export-maximizing strategy is working—for now",
       "summary": "",
-      "source": "atlanticcouncil.org",
+      "source": "Atlantic Council",
       "date": "2026-08-28T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdTVycjRpeUoyUHk4ZGx5cDhHNXJyRTUwenJWWVI5OFlKdmlZeTVqS0piUFJOMU5zLV9pUFFjbXlZZ25xaHJialVYTE9yQ3B5RVBhcmJMbHdGVHpsYzNVdXB1TlR6a2wzenUwV0VGc1VpLUZJZWdnUWp1WXZZbHNNTVQ5clpUMjhGN3RHR1hlbWhPNmltY3FfNlBMZ19kZlB3VXc?oc=5"
     },
@@ -51849,7 +51849,7 @@
     {
       "headline": "What does the latest data say about the state of China’s economy?",
       "summary": "",
-      "source": "focus-economics.com",
+      "source": "FocusEconomics",
       "date": "2026-08-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdVhuSjhGa3NENGNFY2hacnVaMUE2MWU0eEJtOU95TEF2VUx1TXFzQU5aOHJTYkZtaTQ5aE5xQWdoeDctQjAtZGZ5U0t2cVBLSDlfTGZrVXlhd0tIWUVuZzRQd1UtUm5Va0s4Q1ZEdktZYnZncFhnbmE0ZE50LVBFSGp1SHhqdVVNRWlWdExyaGJQcmNaLXg5M3VMcEVoc2RoN3A4?oc=5"
     },
@@ -51868,11 +51868,11 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZRzVaNkNpTzdlV2Y2TE5LOTEwbXVlOXd2LXdKejI1OGp2eXlGM3JOZlNaQjk5U1RlSXFKc0dETVk3Uy16MDV0LWIwdmpUdTZla09FdS1NRjR3TlFEOWZ0eXVuV0lRa0FSbDhvaWtLYlYxSnlrSGpEUkd1SzVsdw?oc=5"
     },
     {
-      "headline": "Alibaba, YMTC Fundraising Hits China Tech Stocks on Supply Woes",
+      "headline": "‘Policy addiction’ warning signals Beijing’s preference for targeted stimulus",
       "summary": "",
-      "source": "Bloomberg",
+      "source": "South China Morning Post",
       "date": "2026-08-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOU2JWZ1VfVjNocnFwVWFEWWZuQW5NcEtOLThuZTV0T3R1NU9ZZFNiamlpVkhjUlcxZWItZkt5MFdTejBKU05Qb2xrNzBoR21CRHRBYlozbmg1VTRtSkotd3JHQ0pIRGFySmx4MGFYdm10bjlWRG9RZk5DX0wyVFFqUFpmbTdyY2JkcndRd3RfMU1lTzJzRUZrMnVVUEo1X1JjbTJBZVJrdWR5WUx3ZjFDMWdYRQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUTB0cnozVVF4S0prNTc1SVRBeGhXRWdGZ1JjX2NpaHRkUWRwRWpQazkyN2JUUUlPaWFFUHRlN29uRUNma0hCa25oS1lkRVd3Ykk0Y0ZRTURFVGJNQkJBRzRXdS12MkUtdzRZbXpVMlVZakEyYXdlUG1FaC1BTWlYYm53MHdMcFk0MElkZkdTLTZNMVpfMzJydndVNEZyYmFCUWFYeHY1QTE2Nkl6azh1MXZsTDRXczFzQXZXX29WSWh3RTlPVnE1UnBlMkN1ZjFZZmfSAdIBQVVfeXFMUFh2N1RUOThlckFpZE1UOXhhUDI1eG0taTdZWUcxb3lSNFY2ZUhpMldoLU05U1dGRmRnQVl4NGRxUzl3Y0xveS1qZHA0aTZhSDV4R1dSWEV4cWkwdnpIRi00cnJxV2NUa016NUx2SmtDcWdjRU5pRFo0Ty1aVmRnbDAxZEJhQ2xULUU2QXlRWDcwTVVySGQ3bllicFVhRzlSZEZrTVFOY0xLNDMtMWY1RzBBOWhPbU5lVlRIR2N2XzEwMFNPcXJfM0JtZXZ1T2FVTVVR?oc=5"
     },
     {
       "headline": "Goldman Says Chinese Easing Hopes Revive With Economy Growing 4%",
@@ -51887,6 +51887,13 @@
       "source": "Fox Business",
       "date": "2026-08-23T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdXpWZllXejZ6T3FtZF9BM3BrSWtzLVBTdlRhVjFnZnllaGVLdGNQV3B1WTZpTXI3bzNFc1F5Zk1nX19yU19JcGJKaXhKbExnNzVwR09ZQjZ3OVVoVDdMZFhEYjgzSi05bW8yczVLWVk4azZ0LTZzejFSYTFfV1NRNlpacmotRTVKSDhqVU9jdEtmTFdnSHl6OXMtTFN5MVdsREJKNE05ZkVsa0pna3BjNnhB0gG3AUFVX3lxTE92bkFRbEV2cmV3SVk5VWY0S29FaERrb0ZyMHh3ZktUYlZ4TWNGOE9heGhwV2d4UlpYMXlTdVNFeGVOdTBzN3U0TktHcmNJZERvdjZnV1hyRUlBNU9CbjRTY2ZkRVNiOGRNZGJTdzM3V3dZenE1NTBNRXEtMnhVTGhSZjhodFM2SGw2ZElfemtmRjVsVFFvbWxTTWpOeFNadVVQSHRkZW14YVpTb08yMUNDWDVBRWtEUQ?oc=5"
+    },
+    {
+      "headline": "Alibaba, YMTC Fundraising Hits China Tech Stocks on Supply Woes",
+      "summary": "",
+      "source": "Yahoo Finance",
+      "date": "2026-08-23T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSk8xZ0t1NmwtX2FKM2ZQSUMxZWZ0UklobndzbTA0Zkt2dGVpckEzX3JBQVFKcTlpTEJhYkdKaUI0a25WYUJHZmFQYzNMcFFMZGhfalY1ZVBQWmstQkpnbFJWbVZjRDFfX0Z2S0drNEpTZUNGMXJkOUUyNGliYmRUZnpSLXdfa0JIOVBuTXR2TDZMRGMwTzJ5TzMwQXB2R0I4aEU3Mzlvc0tJeVl0LWYzSE4yNTUtY2E1TDRRS05pMVNqOWFGVEE?oc=5"
     },
     {
       "headline": "U.S. trade chief calls trying to change China's economy \"crazy\"",
@@ -51912,7 +51919,7 @@
     {
       "headline": "What property giant Evergrande's sentence means for China's economy",
       "summary": "",
-      "source": "France 24",
+      "source": "france24.com",
       "date": "2026-08-20T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVThEbllIeU9LQ1lwX0V6Yy1JMFN6UFdOTFJYZXRfcXdMSnlGY1hpOVhNank5NFc3VVlKRE9JX01CMEMtUWVGUW94OWYtVzJoLW5Na0lMNVJLLU55bWRUYXVJUGFzWVE2THFfZWVpOXJmMmpHWWdweFZTLU5xREVzZGs1MnE0XzZFX1JqczRXNllyUUVjT0ZaUXFJQnlFV3JkWXpzaDMwYjMxQmdxaWtrbkJ5TTQ?oc=5"
     },
@@ -51945,13 +51952,6 @@
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTndXd2tEMnYyZlpuaTIwUzYxSUc5elNtMlRTa1lLSGFBS3NZS05OdUxMbmF4bzdLQzUzYnd2LU9IaGtXWmNQNXlUU0l3dzFwRlVHR0dSZ1U4b2Qxd0pvYXBiVHBVQV85d202V2lSODgzc1labmhJOTJpUzFta0Z1ZUhzdVRfbEw2Wmh0ZDNYWXM4QjZ3N3BZdklGV3QxQ1hqQzJzOWkzR0liN3F2SDBkcGRJeFJJbEdS?oc=5"
     },
     {
-      "headline": "China Economic Monitor: 2026 Q3",
-      "summary": "",
-      "source": "kpmg.com",
-      "date": "2026-08-18T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbjFkemZnWUNfcGxlSFIyUThtZGQxcEpoT2hPQm1IM0FuNFd6a3FURTl5T0tVdXNpUkgwTFVPMzF1c1l6NW9yamNIOTJZanlHRi1WdWFvM1FqcDB5enB1eW9XYWFabWxfTFZVblVNYU5HaThBMk5SaEo1djkwVjdpeQ?oc=5"
-    },
-    {
       "headline": "Mexico Weighs Tougher Trade Rules for China as US Talks Grind On",
       "summary": "",
       "source": "Bloomberg",
@@ -51973,6 +51973,13 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbWxrdGxBMmd2bHcxRkI3Tk1uMzRlVkhOQVRTaC0xLWg1VmNrTlNkMGJoVzJGenRBT3VSTVExa2E3aHlJOEZVdlpqaS1xTWJfVTNad1I5NnlWNzgxR1FuVVRYcEl2VDJtWWJwYm0tc3I0ZUVGWFlOM0JMamRFdVlfdDR0Z0I?oc=5"
     },
     {
+      "headline": "China's economy slows further in July as retail sales barely grow, investment slump steepens",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-08-17T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9WZGdkVVJkZHZ5d3lVb1R4RkdNUlkxdVNkWWVuLURTQkQzLVRMTVQxUnZoa3Nza3N1NEoyU1ZadU1rLS1BRVc1bm1zVlJCWS1ibXc2SkgzYTB4RVJFSTlDbDc3T1hPcjU5dG5aWnFvcWhhWnU4a0FOYml2cHlDUdIBgwFBVV95cUxOUzRLenVfQ1RmOHhxNEtkbnludnFINl81RW1vdjVacE5lLVBtNERxa1NJNVg3Q2JtWGo3QXRUUDdBeWpsLTdrYzI5NEpNcF9nT0hhV2pzOUR2cmlJQTlUM3hLSnpWX0hkRmJBRnhRU0ROM0FqTllTWW1tblB0bnBOa0JVYw?oc=5"
+    },
+    {
       "headline": "China’s economy showing signs that slowdown may be extending",
       "summary": "",
       "source": "The Guardian",
@@ -51987,20 +51994,6 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNlVQSm5GQ3lHQ2ExU0Fpa2F4Z1ZKQ2hsOW50MXR2Y3Z0N2hZUWpIQWJybGRxMTVrNDRzMFhONmpkeXFac19mSFNKdDkzanBSUTRCd20zaXNhTjZNdWxKa1RibXZoalJRa3JSQ0NTWmRrU0E3cXlXcjVnYnFtSFNIMzVsbkloYlJXODRMN2tPZE1aaDRfN3dtUUdGN3BDZTN0VFNSLXlreThhWEZrVnN1UnROdw?oc=5"
     },
     {
-      "headline": "China's economy slows further in July as retail sales barely grow, investment slump steepens",
-      "summary": "",
-      "source": "CNBC",
-      "date": "2026-08-17T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9WZGdkVVJkZHZ5d3lVb1R4RkdNUlkxdVNkWWVuLURTQkQzLVRMTVQxUnZoa3Nza3N1NEoyU1ZadU1rLS1BRVc1bm1zVlJCWS1ibXc2SkgzYTB4RVJFSTlDbDc3T1hPcjU5dG5aWnFvcWhhWnU4a0FOYml2cHlDUdIBgwFBVV95cUxOUzRLenVfQ1RmOHhxNEtkbnludnFINl81RW1vdjVacE5lLVBtNERxa1NJNVg3Q2JtWGo3QXRUUDdBeWpsLTdrYzI5NEpNcF9nT0hhV2pzOUR2cmlJQTlUM3hLSnpWX0hkRmJBRnhRU0ROM0FqTllTWW1tblB0bnBOa0JVYw?oc=5"
-    },
-    {
-      "headline": "Xi’s No. 2 Urges More Support for Economy After Big Growth Slump",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-08-17T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQzZ3UmtxLS16THg2a1lBMmxZRGtpWExuanNMWkt1S3NRLWJuSXhaVm15MlphYTl2bHF3VmRzcUF4MEl5S2JRUWVEMkE1akxUTHo2YjBOelQ1cVpFQWNyM21wMUxQWExldlA1bFZRSEVhellsU3RpeXZ2X1phbDdJT2I4bi0tRnZ4UTlQZHJ0enZTS1BNOWpmNkg2NlBZcjJDamdKOXpVVlRYajU2eS1BTThLNEE?oc=5"
-    },
-    {
       "headline": "China investment slump deepens as economy shows signs of weakness",
       "summary": "",
       "source": "Financial Times",
@@ -52010,7 +52003,7 @@
     {
       "headline": "The end of an era for China's economy - by Noah Smith",
       "summary": "",
-      "source": "Noahpinion",
+      "source": "noahpinion.blog",
       "date": "2026-08-16T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WR0dKeThzTUhaTUh5d3Q4S2g5OUExVTdMVWV5MlpsSkxpLTRseHlrbzliakVPZTM2aGxEMDdlZnloYUMwMVNpQUYzam5zTWJfbS1QS2l4emw3bEc1LW12NmtPUHZ3LXFJYlNLT2ZQWkZBM2F0?oc=5"
     },
@@ -52036,6 +52029,13 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOGtRekxDcFBQR0ljUGpzY1RWNnNaQmZaVDMyQ1pxa0ZxVTAtQ3QzU0dsNmU4YmEzbndRbkdWSzBYZVlhZ2ZvdUl1ZFpKdTNBZnZYMnhxZVZmenJhVUNpUW5FVW9oc3RfUjM0eGYta1JXUHUtRWhmNFJQN0g3MEF1cDdBUXJLdy1BMGIxTlcxeEpEWkZS?oc=5"
     },
     {
+      "headline": "How Zhu Rongji’s economic legacy endures in China after former premier’s death",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-08-13T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOV2RhbkxfSTVNWGl5N0N2WjBJdjh4dzNwUVNoV2RsV3dieldwVDF4dFVLOVNTMl9VeExnUGdXSkwzdW1nbFRlaG9FdW9RYUtaazFNMnY3cDloRy1XVEVwMWpjV1A0eUxWcmZ2Sm1FYzh1Yk96UDA1bHhsNWowNzh6enNrdTVYVXR3Rk15Z3NQRjRLMThMMURwYzhHckJsaXppcnRUNm40MUdVMnVSZ1hfaDZ2aUZDSkIyRlV0NFU1WXNxQTZscThsbjdBV0NUZlp0Wm9XLWdGSmbSAdgBQVVfeXFMUEdESWQ1X1RaWFMzYVRBNHFSVTg5TEY0MTZFZUdmWFBCS0FEdjZxZzB1N1l0cDFLNXlGempWTUNQOV9sMnVqSjMzQmpxLU05TlJUQVlucmNsNy1WWllqSkhkNGdmOWV3OVRVWW9iMUg2REIwMGpVRFlwV2JDM0dPMkRDdTNURExiem1GTV9fSHd2dFpiZXg1N0hGWTg3NkVFaDE3TG05LXV3bWtvUUlINzZqcmpTdnVlVlVhSnR0WWEtVW1UTk83MUwzZVZfd0plUEYyZXE1eWhm?oc=5"
+    },
+    {
       "headline": "Exclusive | US-China ‘Board of Investment’ stalls before expected Trump-Xi meeting",
       "summary": "",
       "source": "South China Morning Post",
@@ -52051,7 +52051,6 @@
     }
   ],
   "trading_days": [
-    "2024-09-10",
     "2024-09-11",
     "2024-09-12",
     "2024-09-13",
