@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-11T09:48:43.012811+00:00",
+    "last_updated": "2026-09-11T14:31:01.702749+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -50011,6 +50011,10 @@
             {
               "date": "2026-09-10",
               "value": 6.7063
+            },
+            {
+              "date": "2026-09-11",
+              "value": 6.7082
             }
           ],
           "desc": "How many yuan it takes to buy one US dollar; a rising number means the yuan is weakening."
@@ -51490,6 +51494,13 @@
   },
   "news": [
     {
+      "headline": "Chinese AI Stocks Have Been On a Tear—Why US Investors Have Been Left Out so Far",
+      "summary": "",
+      "source": "Morningstar",
+      "date": "2026-09-11T10:06:52+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYkdnd3ZPbEdBMTZoUkZ1TmpWdjhqZnRLWGJxX3JucnFLSUxhMUpaMnhhcVF2ejNOSFg4WjMtTDJWMlczVWJkV0xXajZkd1pzLW5WZmVXRzlMcmVKVE9zRnpCOEI3U193Mk9lRGhTZDdPLWNOb3Fwc2FpLVZjRnlESFhHNFpZVDY3Z1BDQnNGc1FGdHNudzVOM2RVUnVYLVJ4aFpGbVp5MlRKWmp3Zmdn?oc=5"
+    },
+    {
       "headline": "Xi in India, bank capital injections, EU-China trade",
       "summary": "Chinese President Xi Jinping is heading to India for the first time since 2019 and finalising plans for a US trip as he works through his busiest month of international travel in years.\nXi will attend the annual Brics su",
       "source": "South China Morning Post",
@@ -51506,7 +51517,7 @@
     {
       "headline": "China says it hopes to agree with US on tariff reductions at 'an early date'",
       "summary": "",
-      "source": "abcnews.com",
+      "source": "ABC News - Breaking News, Latest News and Videos",
       "date": "2026-09-10T11:37:14+00:00",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRTVTa0U3bzZwNHpxOEs2ZTBoNHJKLVVxZVcyZzV0RGNmbGRaQ2FTOTNjcFdhcURZYllTNXJUeTFNTVI4bUZIb3FlVDRYMDktMmQwMk9HcXVJa0pGNkJCSjQxTDBMTXVpQUhXejBWRGo3V1k0X1d0aFVNQmxfdXV3SVNUWkhteDNtQ3FORVluc01pM3l0SFRqU2wtajQ1ZURGOHAyYkNn0gGrAUFVX3lxTE1lZ3hWREtvY1hmeFlrUG5MZkphQVNqYmZHeGwtaWMybVR3TlVRRndhRjQwMHN6SllVc29tRDFIcHpaM1lIajlSS0kxY2pIZ0xaOXNIQkdaR21VQkN5RUlMNVEtYXVxZ2hLMnViOENvcVJadHlSbGN5OHk5Y0hwbjVFNEk4MXd5S3B5Q2kwR0lobXh0MTRsejU3c1JTYmVTek1nNm9KbkR3ZFBXdw?oc=5"
     },
@@ -51516,13 +51527,6 @@
       "source": "South China Morning Post",
       "date": "2026-09-10T02:00:11+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3366894/chinas-communist-party-quietly-signals-social-stability-push-new-high-level-body?utm_source=rss_feed"
-    },
-    {
-      "headline": "China’s giant trade surplus has an increasingly geopolitical twist",
-      "summary": "",
-      "source": "Financial Times",
-      "date": "2026-09-09T10:00:08+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZkhIdURCZWFSX3JjTF9zTmRTMTVjVXNXLUdvaENPaVpyUHdWU0s0RkQ0R1YweVFNZkg2Z0poYlpkNWhBOHBzRzZDcW5IZ3NxT2dPT2FZbjYxYmZwTjRuUFZGRGJBZE5BdW5YdG1sbEppQUswTEozRlZkcjZPVzNfblZXbmM?oc=5"
     },
     {
       "headline": "GBA integration may help mainland China’s philanthropy sector learn from Hong Kong",
@@ -51562,7 +51566,7 @@
     {
       "headline": "China’s Surging Exports Loom Over Trump’s Talks With Xi",
       "summary": "",
-      "source": "The New York Times",
+      "source": "nytimes.com",
       "date": "2026-09-08T08:24:33+00:00",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUlR4d0EwcFVWcnRtZm83dm1MbF9VLTZaN3ViMXZHNy1yNVFxS1FDRW84X3VBRDlMX3ZsbHdVQ3hCMktqQ2wtOW4wNEVselF1X21LWXFDMHNnZHhMVWdqLWxEUHNrNkR4TEkyNkFuX2ZaUGZqaGFURkhfNmZsRWhMRGsxUQ?oc=5"
     },
@@ -51639,7 +51643,7 @@
     {
       "headline": "China's state bank and insurer shares slide after $54bn injection plan",
       "summary": "",
-      "source": "asia.nikkei.com",
+      "source": "Nikkei Asia",
       "date": "2026-09-07T10:03:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZGthcFJIWDc2YlkzWVFkMm0wUDVqNy1TUE51bV9wMzhsMUY0eTZTUGFOVVRZbFJZSlZ5cjJnZHRCd2ZVeVEtbXpTdXR1bDlhTExKS2tjM2FnMzdVQm5LamJXdnQ4QkhHSFpmSjk0dktQT2VoU3FRX1BpRFEyX1lUbU5xbFhIVmloNzVmcFZsRFNwNmFsTWExMTJkcXpCZXVvVE9NR2NKUldBUGVBWWtv?oc=5"
     },
@@ -51674,7 +51678,7 @@
     {
       "headline": "China's Biggest Memory Chip Stock Is Almost as Good as Micron",
       "summary": "",
-      "source": "Yahoo Finance",
+      "source": "finance.yahoo.com",
       "date": "2026-09-05T10:26:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWVotR3ZEOEdkS1U3S1NPT25IY1NsemxpTHJENy1NQ0QtX1hSREtDSE9seXpiOWFuUWY2bWtXSTRxZDNLaVV1QTIwZGJCX2tTZ05nbXpkNHlTQm1qS3ZJOE96Q3hVd3JwMmJPMUVKdC11bVAzd0RheUVZWFhyU3hqRVZkMFE3N2loNVFWQW5vSmZCUDJ5U3lGWDRNWXFiZw?oc=5"
     },
@@ -51717,8 +51721,15 @@
       "headline": "China hits back at G20 statement on its reliance on exports, accusing them of 'promoting protectionism'",
       "summary": "",
       "source": "CNBC",
-      "date": "2026-09-03T11:12:54+00:00",
+      "date": "2026-09-03T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13cVBlaFl4djM0LV9CdjRLdHpVdWtaZkdiTkExdzlKREYxRXhQUmlIdmI1OVgwaHhVV28tVGNNbW9OSE1ncUFWcE5xSFRzY0JOVXlkZnJVLVJ4eHNpSDFwbm5IUFdoWVJ2OExpX9IBckFVX3lxTE9pR1dRY1hyMTh1aVZVWENOUThmdm5mWHZhM19ZS0tSZDRCZDBXMmR0VFU2cWVqSU9pQmM5NkFoTkFrMEtXZGpUeTVlVHFKNzRxaFc2WjhRNlh0bVZOME5wLXJkbnhQWWZORzZ2ZFd3bE1sQQ?oc=5"
+    },
+    {
+      "headline": "What Xi’s tour of Egypt and Central Asia reveals about China’s trade strategy",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-09-03T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYXlsVERlejZHWWUxMWRJRVhMV2ZPR3Y1dURyR3lBT1BsUEd1U2JHVS1nOFRMVkN3TjNPbGU0T3hkNHUxMDZNR2lqR0Z2bUVabnBaelZBXzM3bHlXcWFLSFRXenIzRHFJQXNNUXdUQXlDcUJwOHdwNXhhb2kxc0RzR3VmUGpHLTd5Um9OLVFUZzZYTW1GZTRfQzlUMFZ2Y2VDSWU2S1ktQjFWWkl4Qm9KbzYzVFVWNmZxMG8yQnBGWUpmOGNxa3dlVFUyX2tqZWNTZmZERTlwMNIB1wFBVV95cUxQdDdxUHk3SXVEZDJ2eF9JaF9ZUkQzLW9aWlpTUU55b29hdko2eGpFa29hNnBpOUlzRG10bzNyRjVkOVJQbGZxUEVUX1ZTQlVleGE2VFZndFlkRnV6TEstY0hpTmZjcFM4dU44VXlUaVBpRXY5bDllZ0FTNXJlOEtEZV85OE9tZE9TR0tfVnhTTU5OY2c2elRON1hyYk9ISnlQeHRnSnQ1WUdJM2ROaUhESW1YaWxFRVVpSk1wd1NrckxwMW45ZjhzOTQ1d251NUlPRjNON2Ixcw?oc=5"
     },
     {
       "headline": "Has the Chinese yuan's rise in global usage hit a wall?",
@@ -51737,7 +51748,7 @@
     {
       "headline": "China's Economy Struggles Despite Beijing's Stability Push",
       "summary": "",
-      "source": "Yahoo Finance",
+      "source": "finance.yahoo.com",
       "date": "2026-09-01T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcFAzZ1R0dzNGNEt6Q0ZYS3FYQ0w5SWRnMy1uSHpiZUFJSEREb0ZSekxrNVhJa2JZT0d6YVJlVU9UNUJfUDVBMlA5TnhpNGVENGhJeGh1OWU2QUpKekxwZlNFWXpwNmxGMm1nbXlQeU94RlNBNzBQWThJM0tHN3ZBQmN2V3dfSExhRVJuVkl2ektGblRuZlBLOEdUbVlJQ01h?oc=5"
     },
@@ -51812,16 +51823,9 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQzMxVFMwN0tVYWwxaTN1QUtCdVpwUnJVVmxMYWFUOHdNRFMzeDMzZVVjam0ydE5FSTJCNkRhTzNWalFZbHFxNmxXLTdWMTFXamlTVEtCT0lMdzVWZm1XT0RHdk5ZLWZoZmR5WWw4X0JrYkl6dUs1bEIwemxFa3FOMDRxejJoZk5wLU9jQS1veXFNUTBvTVNjSklQS3BGQTNqSWNmWNIBqgFBVV95cUxOd2V3enVGa2wyX05kbDNtbzhjTzdid3JubkxWeG5NQkE4OUk2WVp1dzJDMFNOWGJYcE9HUFpWRHhfamp4RGZqeGlUNFQzUWFaNU5fVFkzZ3ZERXFXbTRIcV9hMUFqdHlSSFJHNUNqbEhGZ2VwdlJoY2k0N2piNWI4ZFJoV2c3c1NaTHQ2b2FTaXJrQkR0akhHYzIybkY0ek1IXy1EdFZTLU5rUQ?oc=5"
     },
     {
-      "headline": "China E-Commerce Stocks Sink While Baidu Climbs 4%: Alibaba Falls 4%, PDD Holdings Declines 3%",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-08-27T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTEFjMjFVaHR1d1l4Y2U3ZVdVUWVNTGNiaGtralc4ZmNaWGh3YnB2TlNzWVZSQlZBR1BDd3lOaW5RNERzQU1QREd6ZndmMWJLblV6MnV0V1F3RFllTlp3Qk95TmNZajZGb2JacnNiU0N5ejlHZHlQaXpZcVAyR1B5U20yTTN1R25uU3ZXQk1sbDc2NWJ5RjRydw?oc=5"
-    },
-    {
       "headline": "Why investors should start paying attention to China's economy again",
       "summary": "",
-      "source": "Business Insider",
+      "source": "businessinsider.com",
       "date": "2026-08-26T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR285aFhDQ19ELXJaa25mQVc2bkpJVDBNc3BTd21UTG82a0k4WnFjM3Jaem5HRkd2Z0c3WVMyei12YzZOSnlGQWFaMDYxLTI3amFhUm1BbnAzNTVqd0xoLXI3bEFTdDg2RFhRN2RWZWpjdXJ4NUhHUUVNcUZMR2luNHpWNXJySnFkU0tUVmtONDhvaGRYVGdwV0d6WU1PWUptZkszUVBR?oc=5"
     },
@@ -51849,7 +51853,7 @@
     {
       "headline": "What does the latest data say about the state of China’s economy?",
       "summary": "",
-      "source": "focus-economics.com",
+      "source": "FocusEconomics",
       "date": "2026-08-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdVhuSjhGa3NENGNFY2hacnVaMUE2MWU0eEJtOU95TEF2VUx1TXFzQU5aOHJTYkZtaTQ5aE5xQWdoeDctQjAtZGZ5U0t2cVBLSDlfTGZrVXlhd0tIWUVuZzRQd1UtUm5Va0s4Q1ZEdktZYnZncFhnbmE0ZE50LVBFSGp1SHhqdVVNRWlWdExyaGJQcmNaLXg5M3VMcEVoc2RoN3A4?oc=5"
     },
@@ -51866,6 +51870,13 @@
       "source": "The Guardian",
       "date": "2026-08-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZRzVaNkNpTzdlV2Y2TE5LOTEwbXVlOXd2LXdKejI1OGp2eXlGM3JOZlNaQjk5U1RlSXFKc0dETVk3Uy16MDV0LWIwdmpUdTZla09FdS1NRjR3TlFEOWZ0eXVuV0lRa0FSbDhvaWtLYlYxSnlrSGpEUkd1SzVsdw?oc=5"
+    },
+    {
+      "headline": "‘Policy addiction’ warning signals Beijing’s preference for targeted stimulus",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-08-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUTB0cnozVVF4S0prNTc1SVRBeGhXRWdGZ1JjX2NpaHRkUWRwRWpQazkyN2JUUUlPaWFFUHRlN29uRUNma0hCa25oS1lkRVd3Ykk0Y0ZRTURFVGJNQkJBRzRXdS12MkUtdzRZbXpVMlVZakEyYXdlUG1FaC1BTWlYYm53MHdMcFk0MElkZkdTLTZNMVpfMzJydndVNEZyYmFCUWFYeHY1QTE2Nkl6azh1MXZsTDRXczFzQXZXX29WSWh3RTlPVnE1UnBlMkN1ZjFZZmfSAdIBQVVfeXFMUFh2N1RUOThlckFpZE1UOXhhUDI1eG0taTdZWUcxb3lSNFY2ZUhpMldoLU05U1dGRmRnQVl4NGRxUzl3Y0xveS1qZHA0aTZhSDV4R1dSWEV4cWkwdnpIRi00cnJxV2NUa016NUx2SmtDcWdjRU5pRFo0Ty1aVmRnbDAxZEJhQ2xULUU2QXlRWDcwTVVySGQ3bllicFVhRzlSZEZrTVFOY0xLNDMtMWY1RzBBOWhPbU5lVlRIR2N2XzEwMFNPcXJfM0JtZXZ1T2FVTVVR?oc=5"
     },
     {
       "headline": "Goldman Says Chinese Easing Hopes Revive With Economy Growing 4%",
@@ -51889,13 +51900,6 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE94aGlrZnJLcTZHMW1INTE0d0ZCOGlXVkNVRkJVUVlrMC04RE9ZY0sxWDVNaGNlOURaazZpcWFNMXMtcXlPQlc4ZmJaOUxVYnhEVEg3dk1UTndlcXpFeGVjeHhEeGNZWmpiWWc?oc=5"
     },
     {
-      "headline": "Global Times: China's economic performance will remain within a reasonable range in H2, meet annual goals",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-08-21T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNc2JQUzdKdHVXb3lSYkRBRUlZVXZPMFlmNl9wV2hnMW00TW43dmtFbVlab09oUEIzQXJsR3pqMmFKdnBsRnR5aGJmeWlqT0tkTjh1cGVMWUx2Qy1SLW9FckFBNlVlRDZtRHpaa2tJN3NyVFE2bnNSXzRWeDNUdWNCZTRPT1pqdXNNM1ZOS2Z2Qjd4b0Voem1oenFkdkUySkE?oc=5"
-    },
-    {
       "headline": "China’s trade grip tightens in Europe as clock ticks towards October deadline",
       "summary": "",
       "source": "South China Morning Post",
@@ -51912,7 +51916,7 @@
     {
       "headline": "As Economic Pessimism Spreads, China’s Worker-Writers Strike a Chord",
       "summary": "",
-      "source": "The New York Times",
+      "source": "nytimes.com",
       "date": "2026-08-19T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSkJsWjVUYnNGVGVLaXpvTXN4ZjEzaE1UaFctNjBnUnZRZnQ1TWk2ZjBHejFYYkJJN2JFV1NFaVRSUzNnQUtnbVVXdHQzOE84Q3RwZUR4WmlIcWVHdWNnQm5PTGhHSGtLbExQbUtjUzh3NHNpSEg2aklnSEstZWtPeVZPbjlTOVJpazdOQQ?oc=5"
     },
@@ -52596,5 +52600,62 @@
     "2026-12-30",
     "2026-12-31"
   ],
-  "upcoming_releases": []
+  "upcoming_releases": [
+    {
+      "date": "2026-09-14",
+      "time": "16:00",
+      "event": "中国8月M1货币供应年率(%)",
+      "consensus": null,
+      "previous": 4.0,
+      "series_key": "m1_growth"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月规模以上工业增加值年率-单月(%)",
+      "consensus": 4.8,
+      "previous": 4.5,
+      "series_key": "industrial_production"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月社会消费品零售总额年率(%)",
+      "consensus": 0.8,
+      "previous": 0.6,
+      "series_key": "retail_sales"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月城镇固定资产投资年率-年初至今(%)",
+      "consensus": -7.1,
+      "previous": -6.7,
+      "series_key": "fixed_asset_investment"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "event": "中国8月城镇调查失业率(%)",
+      "consensus": 5.2,
+      "previous": 5.2,
+      "series_key": "urban_unemployment"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "09:30",
+      "event": "中国9月官方非制造业PMI",
+      "consensus": null,
+      "previous": 49.0,
+      "series_key": "official_non_manufacturing_pmi"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "09:30",
+      "event": "中国9月官方制造业PMI",
+      "consensus": null,
+      "previous": 49.8,
+      "series_key": "official_manufacturing_pmi"
+    }
+  ]
 }
