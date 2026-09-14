@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-13T23:14:04.387321+00:00",
+    "last_updated": "2026-09-14T01:12:40.677365+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51494,6 +51494,13 @@
   },
   "news": [
     {
+      "headline": "China’s intelligence chief warns of risks from AI as ‘new arena for strategic rivalry’",
+      "summary": "China’s top intelligence official has warned of rising national security risks posed by artificial intelligence (AI), calling for robust risk prevention frameworks and stronger global governance of the emerging technolog",
+      "source": "South China Morning Post",
+      "date": "2026-09-14T00:00:10+00:00",
+      "url": "https://www.scmp.com/news/china/politics/article/3367349/chinas-intelligence-chief-warns-risks-ai-new-arena-strategic-rivalry?utm_source=rss_feed"
+    },
+    {
       "headline": "Anthropic's Amodei says China presents 'toughest dilemma' for his proposed AI slowdown",
       "summary": "",
       "source": "CNBC",
@@ -51513,13 +51520,6 @@
       "source": "The New York Times",
       "date": "2026-09-12T04:01:15+00:00",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1tVk4yX1lwOXBBZ2o1ZHE5N0JJVXdxRWllZU5peVF5dklheHhwNGw0UGxhNmZzRXpxNnBaeG9SS0xjOWFiQUNJa2pmeFpEeUVLVElQeS1DYkJ0ZjBCWGxZNEVNMnBVeGdzOTNzZXR3dHNGallZ?oc=5"
-    },
-    {
-      "headline": "Chinese AI Stocks Have Been On a Tear—Why US Investors Have Been Left Out so Far",
-      "summary": "",
-      "source": "Morningstar",
-      "date": "2026-09-11T10:06:52+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYkdnd3ZPbEdBMTZoUkZ1TmpWdjhqZnRLWGJxX3JucnFLSUxhMUpaMnhhcVF2ejNOSFg4WjMtTDJWMlczVWJkV0xXajZkd1pzLW5WZmVXRzlMcmVKVE9zRnpCOEI3U193Mk9lRGhTZDdPLWNOb3Fwc2FpLVZjRnlESFhHNFpZVDY3Z1BDQnNGc1FGdHNudzVOM2RVUnVYLVJ4aFpGbVp5MlRKWmp3Zmdn?oc=5"
     },
     {
       "headline": "Xi in India, bank capital injections, EU-China trade",
@@ -51545,7 +51545,7 @@
     {
       "headline": "China says it hopes to agree with US on tariff reductions at 'an early date'",
       "summary": "",
-      "source": "ABC News - Breaking News, Latest News and Videos",
+      "source": "abcnews.com",
       "date": "2026-09-10T11:37:14+00:00",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRTVTa0U3bzZwNHpxOEs2ZTBoNHJKLVVxZVcyZzV0RGNmbGRaQ2FTOTNjcFdhcURZYllTNXJUeTFNTVI4bUZIb3FlVDRYMDktMmQwMk9HcXVJa0pGNkJCSjQxTDBMTXVpQUhXejBWRGo3V1k0X1d0aFVNQmxfdXV3SVNUWkhteDNtQ3FORVluc01pM3l0SFRqU2wtajQ1ZURGOHAyYkNn0gGrAUFVX3lxTE1lZ3hWREtvY1hmeFlrUG5MZkphQVNqYmZHeGwtaWMybVR3TlVRRndhRjQwMHN6SllVc29tRDFIcHpaM1lIajlSS0kxY2pIZ0xaOXNIQkdaR21VQkN5RUlMNVEtYXVxZ2hLMnViOENvcVJadHlSbGN5OHk5Y0hwbjVFNEk4MXd5S3B5Q2kwR0lobXh0MTRsejU3c1JTYmVTek1nNm9KbkR3ZFBXdw?oc=5"
     },
@@ -51678,7 +51678,7 @@
     {
       "headline": "China's export shock is pushing the global economy to a breaking point, former trade official says",
       "summary": "",
-      "source": "Fortune",
+      "source": "fortune.com",
       "date": "2026-09-06T23:04:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWG9UdmFJZzJGaDZkY2otRW1EQkUwaVhaYXNzNTdYTDZFcktDbk1CWHdrVUJ6QnZKVjQtaGd5cTgtSk04N1ZWUlJHUF9Obm9SQWdYczBNMGxOWUhXYlprMTYxQS1ETDJnOW0zN2E1TENFVmkxRmhBb2RoTFotaFgweDZ0aVM5em9JYXdFQW1UWWYzLXozTUZnZ2o4R3VnRFE4?oc=5"
     },
@@ -51716,6 +51716,13 @@
       "source": "Yahoo Finance",
       "date": "2026-09-05T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWVotR3ZEOEdkS1U3S1NPT25IY1NsemxpTHJENy1NQ0QtX1hSREtDSE9seXpiOWFuUWY2bWtXSTRxZDNLaVV1QTIwZGJCX2tTZ05nbXpkNHlTQm1qS3ZJOE96Q3hVd3JwMmJPMUVKdC11bVAzd0RheUVZWFhyU3hqRVZkMFE3N2loNVFWQW5vSmZCUDJ5U3lGWDRNWXFiZw?oc=5"
+    },
+    {
+      "headline": "German companies want tougher EU-China policy despite supply chain reliance",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-09-04T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWERxU1J0UUJEQ1VEbjJZQ0FjV25odmVNYnp2dzBuZFRhclQ2cDdpYW84S2RfdjV6dE43bVVnNFV0bUwwS2RrOHZ1YnZkejVvQUxabndrR1owMU5qNktfQ192Tkh2WFdRaXZHM2djU0NuT3ZCWTEta0k2M0lGZGxtd0JrejZRc3hKMjk3eXhFU1FMUG5pU2ppeW1WaHVmY2dUR2NjV2diX2pXVkN0UkZmalhiZ0h3emtFYmFrT0Z3VjVqQnhESlZIMmNOWXLSAcwBQVVfeXFMUEU0cTRBUHpOZ3V5cXhwZGZSaXpoNW00OGxKQkszcE1DOER5YnRtY0IydWZZN0xjMFpYdmpIVzE3UDZrMGwxb3gwVkY1a1Vsakc1TjUxNWtzV0F1bGRlTTEzUHFzdVhMbXRjT2NWTDc0SHRnQVk5WWFjMTBCMEc2M0x0ZWc1RTRpUnNDVmd2MUNta05OTHdPY1ZIN3FzRldGTEM4VFp0RG5BaHBRRXFmdmRGT1BCZlBoTXVSZy1ma2o5c1FjbV91ZmxhVi1H?oc=5"
     },
     {
       "headline": "China hits back at G20 statement on its reliance on exports, accusing them of 'promoting protectionism'",
@@ -51830,13 +51837,6 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdTVycjRpeUoyUHk4ZGx5cDhHNXJyRTUwenJWWVI5OFlKdmlZeTVqS0piUFJOMU5zLV9pUFFjbXlZZ25xaHJialVYTE9yQ3B5RVBhcmJMbHdGVHpsYzNVdXB1TlR6a2wzenUwV0VGc1VpLUZJZWdnUWp1WXZZbHNNTVQ5clpUMjhGN3RHR1hlbWhPNmltY3FfNlBMZ19kZlB3VXc?oc=5"
     },
     {
-      "headline": "Xi’s crusade against corruption has gone well beyond economic crime",
-      "summary": "The South China Morning Post has launched a major data project diving into President Xi Jinping’s signature anti-graft campaign. In the fourth part of an accompanying series, Yuanyue Dang and William Zheng delve into the",
-      "source": "South China Morning Post",
-      "date": "2026-08-28T02:00:14+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3365450/xis-crusade-against-corruption-has-gone-well-beyond-economic-crime?utm_source=rss_feed"
-    },
-    {
       "headline": "DeepSeek looks for fresh capital as founder’s quant empire navigates China’s choppy IPO market",
       "summary": "",
       "source": "CNBC",
@@ -51930,7 +51930,7 @@
     {
       "headline": "What property giant Evergrande's sentence means for China's economy",
       "summary": "",
-      "source": "france24.com",
+      "source": "France 24",
       "date": "2026-08-20T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVThEbllIeU9LQ1lwX0V6Yy1JMFN6UFdOTFJYZXRfcXdMSnlGY1hpOVhNank5NFc3VVlKRE9JX01CMEMtUWVGUW94OWYtVzJoLW5Na0lMNVJLLU55bWRUYXVJUGFzWVE2THFfZWVpOXJmMmpHWWdweFZTLU5xREVzZGs1MnE0XzZFX1JqczRXNllyUUVjT0ZaUXFJQnlFV3JkWXpzaDMwYjMxQmdxaWtrbkJ5TTQ?oc=5"
     },
@@ -51947,6 +51947,13 @@
       "source": "The Guardian",
       "date": "2026-08-19T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSW0yU3RqTkNxcmFnT1B5TWJEVDRXcklzaGVPUlpraWxlWUhnTTBmQlhXaENuRHJnZnVna09jOU0yc1FldXNRVzZzM0t4N25raldRVVBSUVN6QjhodGlpRW1keU5QY01xTzJCbldVM0ZjRlpoVFpUV3dLQW9yZVA5MQ?oc=5"
+    },
+    {
+      "headline": "Watch Unitree Shares Jump After $904M Shanghai IPO | The China Show | 8/19/2026",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-08-19T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQjlPZG9qSUxoNWoxcThSMWVhcVNMbmZqN3lVOHFXNGg2U2tfTTZwdWxwMFB2M2VJYmt1a0c2OVRKUk0yQ2JpTFVhT0hoY1dlWEY4TzBGelFlbmtsTC1DNXB6ajVaNWVqazZZT3A0TEhTdG1VSE0tTVdyak15TG1wRzc3VG5jQQ?oc=5"
     },
     {
       "headline": "What Chinese liquor maker Moutai's slump says about the country's economy",
@@ -52041,7 +52048,6 @@
     }
   ],
   "trading_days": [
-    "2024-09-13",
     "2024-09-18",
     "2024-09-19",
     "2024-09-20",
