@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-16T17:06:11.861783+00:00",
+    "last_updated": "2026-09-16T20:14:00.562391+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51547,7 +51547,7 @@
       "headline": "Exclusive | U.S. Pressures Mexico to Box Out China’s AI Hardware Exports",
       "summary": "",
       "source": "WSJ",
-      "date": "2026-09-15T20:47:00+00:00",
+      "date": "2026-09-15T20:49:51+00:00",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa0pqM1hOWmNYN0NfZDl2SFBtdHI4TG44akZhN2pOZ2FidndwV2d3YUFSWFVpODhsTVMyVi1BdFV0NFZ4cUllRVJDRnV3V0tKVFNxbld5dmU2LVpQYVpaVzlRZG9IWS11bHN0Umc1NDRKdEN1elh4YUpJNmpDcE5aV2N3RlVLQk9TQlR0TGljLXhYcjFPMkFET2cwRlk3bV8xbUkw?oc=5"
     },
     {
@@ -51556,13 +51556,6 @@
       "source": "South China Morning Post",
       "date": "2026-09-15T14:00:07+00:00",
       "url": "https://www.scmp.com/news/china/diplomacy/article/3367373/ice-death-strikes-china-proposed-over-ai-huawei-trial-7-us-china-relations-reads?utm_source=rss_feed"
-    },
-    {
-      "headline": "China’s economy shows signs of weakness as investment slumps",
-      "summary": "",
-      "source": "Financial Times",
-      "date": "2026-09-15T05:25:59+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd24tYXhIZlJuWUgxUzRGR0lTSk5pSTVWVm8tSFVMamswc0ZVU3F6N09rdlFqX0FWVFpIdTVBWEtsbFh3em5kMXBPUVVvWURtTmhtMkFLcmJWQ2FfV0FMd1JHdDV1VFdIcWQzdlFEY0l4YzNRazgxbEpFWFlpYkRrYWN3a1A?oc=5"
     },
     {
       "headline": "China’s AI listings glut drags Hong Kong stocks lower",
@@ -51577,6 +51570,13 @@
       "source": "WSJ",
       "date": "2026-09-15T03:03:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZFZ0S1FwUm5mUVk5elk3QVQ1RU1kbEVUaUswaW52OTJ2SkhXazV6c0ZGQm1WQUhpMzc4ZndPMkF3a3dkMGhzWF9VNTJiRzZMUWd5Q3RJOUpzcHJwQUZGX001ZWtCSFpZbTRlVzF3YnRiV2JhQ0FiNVBhb09aaHFmbUFvc05HSVRGSS0tX3JZTU9PRjZJbnZMaHVSTFNVMFhzZDRLRG9VSjM?oc=5"
+    },
+    {
+      "headline": "China’s economy shows signs of weakness as investment slumps",
+      "summary": "",
+      "source": "Financial Times",
+      "date": "2026-09-15T02:26:44+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd24tYXhIZlJuWUgxUzRGR0lTSk5pSTVWVm8tSFVMamswc0ZVU3F6N09rdlFqX0FWVFpIdTVBWEtsbFh3em5kMXBPUVVvWURtTmhtMkFLcmJWQ2FfV0FMd1JHdDV1VFdIcWQzdlFEY0l4YzNRazgxbEpFWFlpYkRrYWN3a1A?oc=5"
     },
     {
       "headline": "China's August retail sales miss forecast while investment slump deepens, piling pressure on Beijing",
@@ -51684,6 +51684,13 @@
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR081RDJlWHNpY2FJYmlUSUhlNEV5V29LRXUzbDZ2b2FPelVCdC1CNHJsUlJSaEk0dDJRZTgweHhvN1FMb1BhRGdHV1QzaU5YMl9ZbFBYSEZGRmdsTGNGd2tYM2dPQ1MtbWFpLWt2LVVqenRsc2VucUhaR040dXJLeUZINzZiX01DWTBBdg?oc=5"
     },
     {
+      "headline": "Opinion | Hold China Accountable for Its Trade Practices",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-09-10T19:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNU9hdjJUZWk2bmVJXzdHU3dZdEJsLTNLWnQyaEktZTR3eEU0Q3RqaWlVYzlNSDRPRnlXZXFUOS1qSExYUzBaUGllTllFeFVFRjNBQXZnVUYwRXJWTWwwRVhvaVRmcGhrMVZiQ041dWRQQ1gyV3NHMWpEN3BodHFCdXN6WFlSazB2ak9v?oc=5"
+    },
+    {
       "headline": "Trump threatens Taiwan’s representative office, sparking debate over island’s US policy",
       "summary": "Taiwan’s representative office is among a list of entities US President Donald Trump has threatened to sue as part of his crusade against a progressive American think tank, triggering debate about the island’s US policy ",
       "source": "South China Morning Post",
@@ -51747,18 +51754,18 @@
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUlR4d0EwcFVWcnRtZm83dm1MbF9VLTZaN3ViMXZHNy1yNVFxS1FDRW84X3VBRDlMX3ZsbHdVQ3hCMktqQ2wtOW4wNEVselF1X21LWXFDMHNnZHhMVWdqLWxEUHNrNkR4TEkyNkFuX2ZaUGZqaGFURkhfNmZsRWhMRGsxUQ?oc=5"
     },
     {
+      "headline": "China's exports surge as demand for high-tech, AI help prop up economic growth",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-09-08T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbmQ2cXNneko5R0o0eDZ1MUVmY25oRkhpeVNDUXJFNVdhMDV1eDg1TnFFWjg4Z1pqUk9lYTZoWHUyblNqT1NZRDlhMEFjN2REVm9CWFBhM2hIbkVLd2lOQ1otRUtpNlFLNmkxeEdYUzRVbUs0MGF5R1VfOHZjMkJzUllpODZja01aZWdDM2R4cl82WHZldExHcV9IN2x2S3d5eFZjYmVn?oc=5"
+    },
+    {
       "headline": "Three Numbers That Show Just How Big China’s Export Boom Is",
       "summary": "",
       "source": "WSJ",
       "date": "2026-09-08T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSkFjZUgwUXJPT004R2Qzd1A0T3B1YTVhclJfNnhrdGdSUXcwZHJQVEVqQnMzTGcwUGVrX1Jaa2R1clJpN1h5Zk5RczU3bkJmWnZ3RmlxN01EcExmZ05CMlRWWk42NVhadTItYklVcDc2cE9YMEVMSERqZU9FTV80RXFvSHN6NW5BQ2hSZ25PMzlSMHB4NDYyaXlVU3ZiNmh4dHJ3?oc=5"
-    },
-    {
-      "headline": "China's exports surge as demand for high-tech, AI help prop up economic growth",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-09-08T05:46:47+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbmQ2cXNneko5R0o0eDZ1MUVmY25oRkhpeVNDUXJFNVdhMDV1eDg1TnFFWjg4Z1pqUk9lYTZoWHUyblNqT1NZRDlhMEFjN2REVm9CWFBhM2hIbkVLd2lOQ1otRUtpNlFLNmkxeEdYUzRVbUs0MGF5R1VfOHZjMkJzUllpODZja01aZWdDM2R4cl82WHZldExHcV9IN2x2S3d5eFZjYmVn?oc=5"
     },
     {
       "headline": "China’s Trade Surplus Widens as Export Growth Accelerates",
@@ -51840,7 +51847,7 @@
     {
       "headline": "China's export shock is pushing the global economy to a breaking point, former trade official says",
       "summary": "",
-      "source": "Fortune",
+      "source": "fortune.com",
       "date": "2026-09-06T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWG9UdmFJZzJGaDZkY2otRW1EQkUwaVhaYXNzNTdYTDZFcktDbk1CWHdrVUJ6QnZKVjQtaGd5cTgtSk04N1ZWUlJHUF9Obm9SQWdYczBNMGxOWUhXYlprMTYxQS1ETDJnOW0zN2E1TENFVmkxRmhBb2RoTFotaFgweDZ0aVM5em9JYXdFQW1UWWYzLXozTUZnZ2o4R3VnRFE4?oc=5"
     },
@@ -51850,13 +51857,6 @@
       "source": "The Guardian",
       "date": "2026-09-06T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTHVFSUVRc3dfRFlBN3gxVFdkRnNSYW8xOG4yOWVjcFJYb3djU3R2MjdBYW84Z0dockd4dFI2cS1zVGhVMGRmajRwWEFMRW81T18tUkstRFRaNzM3VWFxcy1IMWU4ZTRDU0NXeWVQeGtYUFhFWnNublBzTFNGZTYyMVlqMmhFNDY0ZUVQWURVeFhGbGx3dmh5TnBvRGkzbzFoSWZYTzNwbFNIcUdYdFRsNnVOeUdnWWNTeE84ZHprRWFnMmp3TXc?oc=5"
-    },
-    {
-      "headline": "China expands currency swap with Egypt as trade ties reach new heights",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-09-05T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYWE4dy1NaFRJT3h1VHYxM1dVd0RYSVBPYUtSajRRYjJHQVNxLWY4bzFpREFmS2ZkQ3gxa1BhT0NtLTJxOTJXUWxuNDFMbklOSV8zQVdNalp4VXRhMDJMV0lvRy1yZW14NzE2Q24zY0NVYzMwOUwwZ0N6bHRlajdZVGU1MnhKWHpUcGRmcE9JaU9DX04zQ0Nhek41cjAyWkVxSWhoSGxBVkhTandEODFpTk00OVdJQ3hjVzcwYtIBvAFBVV95cUxOam1iMzBLcWo3dGdvTzg5Y3daMU1kcl9nYktQMWpUaEl5U0VaS2lJV184REM5TVBId0Q4djdJRjR3MWRyZ21uR3pISXFIOENiSll3YnBHb0lzaWJXN2pXTUNfeG1pc0Q0TF90dFZPQlAtOXF1cnJTOW1Icm5SY2cxU3JzN01tT3ZKWFpYSGYyNXV1YWFpUFVzWnhqaFpJVTNxS2o5V1RjcmJ0UVZSNXhOd0JJS1dBbmUzY240MQ?oc=5"
     },
     {
       "headline": "China's Biggest Memory Chip Stock Is Almost as Good as Micron",
@@ -51889,7 +51889,7 @@
     {
       "headline": "China Is Grabbing Memory Market Share. This Stock Could Be a Big Loser.",
       "summary": "",
-      "source": "Barron's",
+      "source": "barrons.com",
       "date": "2026-09-03T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcnpScVgwZFRtRXlSZXBRQkVBSzhsUVMxV1ZreVZGanpMRnJycDFGZUdBUUxERUduUzVHN0M3SW1BUUVNT0NEV1BRNnBqZ09QeWJGUlpMRllaNlRjMWpET2tEX3l1LUFkd1FFT1NrRXBPV3hONjJBYUFMb1Q1TTFEVE4xNF9vR1lYU0Z1bUNZMEJiRFU3UWNLUExR?oc=5"
     },
@@ -52018,13 +52018,6 @@
       "source": "Bloomberg",
       "date": "2026-08-24T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVN4WHROcFlxSmMzWG9PMjlJYU1mWGRKZnNzVXhZS2lyeWpZOUZLeW9XSld5aElsTW1TYVg1N21zeDAwWEw4TVdrRVFvVlptVGlTbk1NbXlyLVFua0ZVNHE3S2g5UTRlYy1VTVVDeGFHRnRMQVVIMFBydXpXVHlhWVRCU1hEMk5QQjJDZXJkZFhCYzY0WG0xZjFjSm55Zl9CWUdmendJRTBTd2xrdjBwU21tYWk?oc=5"
-    },
-    {
-      "headline": "Vance says Canada friendlier to China on trade than to US: 'Insanity'",
-      "summary": "",
-      "source": "Fox News",
-      "date": "2026-08-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMzRlc0F1OERRaGIzclJKWDhWNHBjSUtOb1laSTR4eko1Q3BtNWFtQWozRm9KTndCbDFMUVdTckFfOXUzcjNoY3VzTm1IamJlaWIxWFpIbVdiQVRBcFlaeVJjNmFNN2FJeEFMaEUwNW90Zzl3aVhjYnU2bFc5YVZELWkyekQtblJWbERFMjN30gGTAUFVX3lxTE1zODA5SS1IaDZxeEtFSklWbU5PbklpQ1NUZGNRMlE3ZERyZTBVaWZQZEtpem40andveW5teDNab1Rnc05nOGZDai1ZNnp5bHBmS3c0ckQ2T2Z2RVk1UnZPZFdBZXJBcnRucWFIT0FDeHBXU2paUzR3amRJNnV6RlNESzZIb00wWm91N1RpcUgxV1ZuZw?oc=5"
     },
     {
       "headline": "Strategist on A-H share split: China's domestic market less exposed to global capital flows",
@@ -52689,5 +52682,30 @@
     "2026-12-30",
     "2026-12-31"
   ],
-  "upcoming_releases": []
+  "upcoming_releases": [
+    {
+      "date": "2026-09-30",
+      "time": "09:30",
+      "event": "中国9月官方非制造业PMI",
+      "consensus": null,
+      "previous": 49.0,
+      "series_key": "official_non_manufacturing_pmi"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "09:30",
+      "event": "中国9月官方制造业PMI",
+      "consensus": null,
+      "previous": 49.8,
+      "series_key": "official_manufacturing_pmi"
+    },
+    {
+      "date": "2026-10-07",
+      "time": "16:00",
+      "event": "中国9月外汇储备(亿美元)",
+      "consensus": null,
+      "previous": 34380.0,
+      "series_key": "fx_reserves"
+    }
+  ]
 }
