@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-17T18:19:22.823512+00:00",
+    "last_updated": "2026-09-17T21:28:09.551797+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51538,13 +51538,6 @@
   },
   "news": [
     {
-      "headline": "CKGSB Survey Finds Cautious Investor Sentiment in China's Stock Market in Q3 2026",
-      "summary": "",
-      "source": "PR Newswire",
-      "date": "2026-09-17T09:09:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTldqTjZoa205MTQ4MmFLTFE5ME5NaWJNX29WdXVURUduY3gzNXYwNTl6UG1mYnlxMEFGbE5tMFRYTmVBQ2F6eFoxZjZodDFnTWU1UzlVcXYycTNQSlpVMndDOTd6eVNoWG9hWVVoZkgxUVF2Y2JaVk1VWGRpVWR2X0N2SnVTQ2luQ0k2bC1iZ1plNVF3cUNTQVZVR25rV3FDRHcxWC1idXp6emswaHBWbV94Z2hOV2lhcXBlN3Y5SFRpTTZodE16X2pSMFMzUzMwc1E?oc=5"
-    },
-    {
       "headline": "EU seeks China curbs on hybrid car exports to avert trade row, FT reports",
       "summary": "",
       "source": "Reuters",
@@ -51592,6 +51585,13 @@
       "source": "The Japan Times",
       "date": "2026-09-16T03:18:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPb0tCSWZjSFgydEZabHNtRm02V2RvYTNtbU5TaEZXVEl3aXlUV3BwVjZkSDU5VkJuVHJMak1HM3VDUUhXVWRTYjFDaGVKVlF4OXhYTFFuY0JWMHlKOTl4OFQ3UUVGNGo2WEI0S0JvQnNOSF9LbzZwVkJ5SWFHcWFVRkpub0ZsUW9uek5qVS1lRlI?oc=5"
+    },
+    {
+      "headline": "Exclusive | U.S. Pressures Mexico to Box Out China’s AI Hardware Exports",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-09-15T20:49:51+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa0pqM1hOWmNYN0NfZDl2SFBtdHI4TG44akZhN2pOZ2FidndwV2d3YUFSWFVpODhsTVMyVi1BdFV0NFZ4cUllRVJDRnV3V0tKVFNxbld5dmU2LVpQYVpaVzlRZG9IWS11bHN0Umc1NDRKdEN1elh4YUpJNmpDcE5aV2N3RlVLQk9TQlR0TGljLXhYcjFPMkFET2cwRlk3bV8xbUkw?oc=5"
     },
     {
       "headline": "Merz Calls for Trade Tools to Fight ‘Unfair’ China Competition",
@@ -51708,7 +51708,7 @@
     {
       "headline": "Chinese AI Stocks Have Been On a Tear—Why US Investors Have Been Left Out so Far",
       "summary": "",
-      "source": "Morningstar",
+      "source": "morningstar.com",
       "date": "2026-09-11T10:06:52+00:00",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYkdnd3ZPbEdBMTZoUkZ1TmpWdjhqZnRLWGJxX3JucnFLSUxhMUpaMnhhcVF2ejNOSFg4WjMtTDJWMlczVWJkV0xXajZkd1pzLW5WZmVXRzlMcmVKVE9zRnpCOEI3U193Mk9lRGhTZDdPLWNOb3Fwc2FpLVZjRnlESFhHNFpZVDY3Z1BDQnNGc1FGdHNudzVOM2RVUnVYLVJ4aFpGbVp5MlRKWmp3Zmdn?oc=5"
     },
@@ -51720,6 +51720,13 @@
       "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3367198/xi-india-bank-capital-injections-eu-china-trade?utm_source=rss_feed"
     },
     {
+      "headline": "Our economic outlook for China",
+      "summary": "",
+      "source": "Vanguard Corporate",
+      "date": "2026-09-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR081RDJlWHNpY2FJYmlUSUhlNEV5V29LRXUzbDZ2b2FPelVCdC1CNHJsUlJSaEk0dDJRZTgweHhvN1FMb1BhRGdHV1QzaU5YMl9ZbFBYSEZGRmdsTGNGd2tYM2dPQ1MtbWFpLWt2LVVqenRsc2VucUhaR040dXJLeUZINzZiX01DWTBBdg?oc=5"
+    },
+    {
       "headline": "Trump threatens Taiwan’s representative office, sparking debate over island’s US policy",
       "summary": "Taiwan’s representative office is among a list of entities US President Donald Trump has threatened to sue as part of his crusade against a progressive American think tank, triggering debate about the island’s US policy ",
       "source": "South China Morning Post",
@@ -51727,16 +51734,9 @@
       "url": "https://www.scmp.com/news/china/politics/article/3367073/trump-threatens-taiwans-representative-office-sparking-debate-over-islands-us-policy?utm_source=rss_feed"
     },
     {
-      "headline": "China says yuan’s global rise is ‘irreversible’ – and has a plan to back it up",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-09-10T12:11:02+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdXdubjVfNjZpOUNCeGstNENDWkRiRDdEaUgwWTZPYWNOc29fclpSWmZobjRDLWNvQmVIQnNpYTNMaHN1c3lTdWhjT1g1Tlh4UUhUOXNyV1NRWVZIcVItNndpYkFuUEM3R1VLVlRhTm1MQ3VMNko1M25LclI3cnYzUkZtM1RYcnpUN2lBbDZXNlZTTlpieUpaS0REckdIb3B0cDNEejlaTjV0RHlVN2U4c1N4WGhrZGpWSDJwZUJEV3pjTmvSAcMBQVVfeXFMTml3eDRWRE9XMl84YUdkWWJJM2h1OG0yQ2FZQmE0d1NZdFl4eUNKQUt5T0xaOGt0Q2VzZEFyWUhrMkxZcW56U0kxWTVIRHVHdlNpVm1MdEE0b0VpNmVJSGN5aS14V3hsQWdaUXNXVmstY3Iza0dXeVBnV1p0T3JVeTlIRVhxaEFLZFZjRXhoWTB0R3UxVU4xRU0xQk0wbFNGeUhvZXJoeElad0ZzYnlyZXltQmhXQnNFeUM4MEs0M3kyRGpj?oc=5"
-    },
-    {
       "headline": "China says it hopes to agree with US on tariff reductions at 'an early date'",
       "summary": "",
-      "source": "ABC News - Breaking News, Latest News and Videos",
+      "source": "abcnews.com",
       "date": "2026-09-10T11:37:14+00:00",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRTVTa0U3bzZwNHpxOEs2ZTBoNHJKLVVxZVcyZzV0RGNmbGRaQ2FTOTNjcFdhcURZYllTNXJUeTFNTVI4bUZIb3FlVDRYMDktMmQwMk9HcXVJa0pGNkJCSjQxTDBMTXVpQUhXejBWRGo3V1k0X1d0aFVNQmxfdXV3SVNUWkhteDNtQ3FORVluc01pM3l0SFRqU2wtajQ1ZURGOHAyYkNn0gGrAUFVX3lxTE1lZ3hWREtvY1hmeFlrUG5MZkphQVNqYmZHeGwtaWMybVR3TlVRRndhRjQwMHN6SllVc29tRDFIcHpaM1lIajlSS0kxY2pIZ0xaOXNIQkdaR21VQkN5RUlMNVEtYXVxZ2hLMnViOENvcVJadHlSbGN5OHk5Y0hwbjVFNEk4MXd5S3B5Q2kwR0lobXh0MTRsejU3c1JTYmVTek1nNm9KbkR3ZFBXdw?oc=5"
     },
@@ -51930,6 +51930,13 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcnpScVgwZFRtRXlSZXBRQkVBSzhsUVMxV1ZreVZGanpMRnJycDFGZUdBUUxERUduUzVHN0M3SW1BUUVNT0NEV1BRNnBqZ09QeWJGUlpMRllaNlRjMWpET2tEX3l1LUFkd1FFT1NrRXBPV3hONjJBYUFMb1Q1TTFEVE4xNF9vR1lYU0Z1bUNZMEJiRFU3UWNLUExR?oc=5"
     },
     {
+      "headline": "Has the Chinese yuan's rise in global usage hit a wall?",
+      "summary": "",
+      "source": "Peterson Institute for International Economics",
+      "date": "2026-09-02T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRzZUdmtsWVpXcDg2V3pTcGROOWRCbU0tQXpncWRsMFlabnNkTHlPampXZjQ5a3QtLV9pMUhnY1Y5d0hZalFfdmdvYk9ZMFhycThKYWVOUzB3ZHllSkxpWG5MbS1WWTR6T0dnZkVLZ090OW9fZ0hsZDBJRmFsc1lNQWJzUTFfSmNrUXZYaWFMOTRBSm9WUVJWdTYxdw?oc=5"
+    },
+    {
       "headline": "China dissents as Bessent says 19 finance ministers agree to address 'cheap exports'",
       "summary": "",
       "source": "PBS",
@@ -51939,7 +51946,7 @@
     {
       "headline": "US urges G20 to cut trade imbalances, focus on China",
       "summary": "",
-      "source": "Al Jazeera",
+      "source": "aljazeera.com",
       "date": "2026-09-01T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNFFMVlVaWmx1SExtZFRReGl4RFlwR1RKRjBtSEd2TWlUZTVaWVFWVFhaWGQyVFQ5blJDYndJei11S3NYc1FDSUxkZzIxNk5zOFJUaUIwTVlDQmxTOWR4STNXV1MyaFQ3MWhmTkpRMUtoRmpBZFFqOGFfMkdjcEo5OUFlY0J0cjNzc0R3U1pmSy1RYVF5blp4bXRR0gGfAUFVX3lxTE4xSXZiVnJVbHBGOHhlSVFBS2RBaWtMZHY1Wi1peGtUM0E1dTgyVngwbzR6MmJLNFN0b0RMR0kzWHJUZFA5dWdiajk1dGhVa3NBbkk0YlNhOHg0TGZmall2LVR0UC1ydFFrUG4yV2ZxMVloZGFkMThidDhGbFByMGFxT3FVQ21hdnZJVkpNVVc5d3BpN0pOODIwSFpqbjRobw?oc=5"
     },
@@ -51970,20 +51977,6 @@
       "source": "Atlantic Council",
       "date": "2026-08-28T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdTVycjRpeUoyUHk4ZGx5cDhHNXJyRTUwenJWWVI5OFlKdmlZeTVqS0piUFJOMU5zLV9pUFFjbXlZZ25xaHJialVYTE9yQ3B5RVBhcmJMbHdGVHpsYzNVdXB1TlR6a2wzenUwV0VGc1VpLUZJZWdnUWp1WXZZbHNNTVQ5clpUMjhGN3RHR1hlbWhPNmltY3FfNlBMZ19kZlB3VXc?oc=5"
-    },
-    {
-      "headline": "Exclusive | Chinese execs may join Xi’s US trip, as trade truce extension ‘almost certain’",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-28T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZ0VzNktxRWZCRWZJS2JTU3Y5RDIwVU1UVUQyWVBIY3FXWm9HVmN4RmNGTTVmbG01S18tb0RiRHdoVXM0RVNtaG90U0VGenZXeFJvbVIxaVN0YzF5TTI5dFR0U1JHREVNTE5JdG94SHpiVlE3UlhQWWpVTFRXVU02WWc0Y09FZTl4RjlGc3d4NW94ZThFTmR5TFNkQ3dKTnNLN0kwU3gzNU5sSGllWWZZOXBJMnZMTHdZUjdXcUVha243U2IyeFNLcjJ0bU1zd0XSAc8BQVVfeXFMT2MzR2t5SkExX0NVRDIweWp0RWtyb2ZUdUh5MHZoa0tPTVNoMXZnZjJEZ3oxeXBTdjJfYjlSSGJsYllBSk56bFFSOHBsVDFzUWdjeGo1UDZHQzZfVUJ1MEdnSkRENHBrYk9IdTJHUGRTc25VWFp3cUdOWWdsSkM0dV9tYTRfMVZBakdKdWk1S3RxbzRPVFgzamkzUGlFYTBMVlJDMm5Pbm42SzNLQy1GeldmSkc3Y0NBRFpFbjlZcXVCMC03V3Bqb0c2MFFWRVpn?oc=5"
-    },
-    {
-      "headline": "Vice-Premier Ding signals fiscal reform to ease pressure on local governments",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-08-27T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNc1dUcTRDb1Jld2NRU3MyWWFRUTdXczVUdkVFbEJxeGlWN1czdjlzZzhkamY2bGRQQkI1NEt0ZXE0NEQ4OVJHRldMTWY0MDNqRkkxMjZWcC14dXhTd01feGpYS25aOEdHTW9TVEo3ZDZtQ0thSEJlYXE0MElza2l2eElWcWt5Ul9xTUNlNWxyUDlQSWhXOXY2R1hCVDQ3Uy0yT3VMdFMwb3ltLVdoTFFXZTc1WDJvYjRCaGUxTEFhRktNUFNPa3N2QmlmRVRfRl9CV2ZCTGNKT3pDVnJzb3fSAd4BQVVfeXFMTXp3c0Q3dVBpZFhtd3B5aS16SG50MGpTQlpNZDFkMElXXzZLcjF4Q0hmVURLR0otZkl3ZElHTmJ3a3dUMWhYU0E2ck5hMlpOLXJlQUhPX0xOcWRQcmpSZE9zTXV1S1ZqOVh6VXFFV2FNeFlwMnAyN2pOeVNTd3pfZ2JRMTJhalRfbmYyRDQydkNjQmhQeHIwNUpGX0pZQWs0bXJwWWNNbXNZdGVGNHM2ZmdLVnhsY3BnQ1hLVlpSekFfN2pWaFhmLXA3S1VXRHp3TTZDdG03Y1d2dkk1aG1n?oc=5"
     },
     {
       "headline": "How will US ‘D-Day’ threat against Iranian economy impact China’s oil supply?",
@@ -52021,6 +52014,13 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRnVBRFNJY1poZjdOb21nOVYwYkd0SG9jY2pmaU9jdnZldi1hdE5XWW9jRTc5UzdJZ2g3OEkwejJES2xqYlBuc2ZBeVdaTUEwcHp4dHNZN0I2c2s5cE92VElaTjdDZmRIb2VtRFF3VzhHLXJVVUUydlp1VVh3NVV6NXEzdXozdFUybGFWdEo4U3dNb2VB?oc=5"
     },
     {
+      "headline": "China hits out at 'illegal' new US sanctions on Iran and trading partners",
+      "summary": "",
+      "source": "BBC",
+      "date": "2026-08-25T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CVnVRWFBpZ0Q3QVhFRjVhTkl5cC1jUldYUnVvdW96NnEzcGhrT0o1M2Vhd1RBd1lucUN6dmltSDZjdVdxd1BuMUVWRnVNMno3VThkd3ktanpkQQ?oc=5"
+    },
+    {
       "headline": "Trump admin unveils anti-Iran global sanctions plan, signals China not exempt",
       "summary": "",
       "source": "CNBC",
@@ -52040,13 +52040,6 @@
       "source": "Bloomberg",
       "date": "2026-08-24T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVN4WHROcFlxSmMzWG9PMjlJYU1mWGRKZnNzVXhZS2lyeWpZOUZLeW9XSld5aElsTW1TYVg1N21zeDAwWEw4TVdrRVFvVlptVGlTbk1NbXlyLVFua0ZVNHE3S2g5UTRlYy1VTVVDeGFHRnRMQVVIMFBydXpXVHlhWVRCU1hEMk5QQjJDZXJkZFhCYzY0WG0xZjFjSm55Zl9CWUdmendJRTBTd2xrdjBwU21tYWk?oc=5"
-    },
-    {
-      "headline": "China's biggest apps are inviting the West closer into its insular internet economy",
-      "summary": "",
-      "source": "Business Insider",
-      "date": "2026-08-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcWYzWUtPelg3ZWJxOHcwZjdzc2hPWmJ0a2NyTGZoa3pab00tS0toaVFEVTZqaHllSGROZTF2eVAxcFo5cDk0UllqbS05LV9PYlJNSS0yVjZOX1htdnBLVTgtSTZwTVdQZF9MSXVCNnFKOVZZUFZlanRkM1RfNVFjYnRsTE1CNGZ0cGh3QVFUOVZDZw?oc=5"
     },
     {
       "headline": "Strategist on A-H share split: China's domestic market less exposed to global capital flows",
@@ -52077,18 +52070,18 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWGVVTlhudlVfTC1PdXhuaENtMUJwV0VtcUN6WlFhaHFKZ0dsR1B5T2xqLVJWTG5SOElxRkxLRTFmOHhZR19XU0hJT2UtLXZCTDJJOHc2cjluTEhEemlNemFNbFU2bHdXUXNfQXpYXzJJcVYxVkl2dkVvdFFFVGpkcUIweVh2SU9SSmxuSTFUeGhfaTdKWlN1djBFRVJ2YjFxV1U5dmVva1AyQTlLMm9GVlB5cHdiQms2Q0FfdU10c3VaV3RWOV9pVtIByAFBVV95cUxPNGktWGZlMEtObGRzRXFST0VQOTRCYmdaZTR6bGZHbkF6NmNFLTM2ZnE3S2JWSGgwZFM3ZDBrd0J0b2swdy02U3ZOQXlxb0JIcmZaMlo4ejA4UmZvQV85Yi0xZlVQbnlLWm5jcDBpcGhnT0h4Wks4bi1QS2hveTFRbjJaYmFYRUFiMUhJbUpJT0Y4T1dzNVRBeUVPUVdfdlZJaG5mQmFHelZXanM4REdGbTNuSFdCV1dhZHBqNERfTy1FLXQwdHlkSQ?oc=5"
     },
     {
-      "headline": "What property giant Evergrande's sentence means for China's economy",
-      "summary": "",
-      "source": "France 24",
-      "date": "2026-08-20T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVThEbllIeU9LQ1lwX0V6Yy1JMFN6UFdOTFJYZXRfcXdMSnlGY1hpOVhNank5NFc3VVlKRE9JX01CMEMtUWVGUW94OWYtVzJoLW5Na0lMNVJLLU55bWRUYXVJUGFzWVE2THFfZWVpOXJmMmpHWWdweFZTLU5xREVzZGs1MnE0XzZFX1JqczRXNllyUUVjT0ZaUXFJQnlFV3JkWXpzaDMwYjMxQmdxaWtrbkJ5TTQ?oc=5"
-    },
-    {
       "headline": "However you measure it, China’s job market is weak",
       "summary": "",
       "source": "The Economist",
       "date": "2026-08-20T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRjZIcmxKVUI2UmZSWllZalhleW1kQUk4d2c2NmxDb2s0WmpJQmRmX1Z5eGZkMHpRcUlDT1RVdnk5ZG9rUzgxblBrZWl1eW11XzF1eUNZZDlaRVZ6dzNnb1RRT3Z5UGJxVFdMcUhNV3BkTHdxY1pNblU4a0ZXUEhtM1lXZnJYT051ZlA3SlE5TWpwSUl3QmM2NFppdTg3U2NQZWRwbURZYi0yTEk?oc=5"
+    },
+    {
+      "headline": "What property giant Evergrande's sentence means for China's economy",
+      "summary": "",
+      "source": "France 24",
+      "date": "2026-08-20T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVThEbllIeU9LQ1lwX0V6Yy1JMFN6UFdOTFJYZXRfcXdMSnlGY1hpOVhNank5NFc3VVlKRE9JX01CMEMtUWVGUW94OWYtVzJoLW5Na0lMNVJLLU55bWRUYXVJUGFzWVE2THFfZWVpOXJmMmpHWWdweFZTLU5xREVzZGs1MnE0XzZFX1JqczRXNllyUUVjT0ZaUXFJQnlFV3JkWXpzaDMwYjMxQmdxaWtrbkJ5TTQ?oc=5"
     },
     {
       "headline": "As Economic Pessimism Spreads, China’s Worker-Writers Strike a Chord",
