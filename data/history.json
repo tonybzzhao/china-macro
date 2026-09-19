@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-19T20:47:33.499413+00:00",
+    "last_updated": "2026-09-19T23:13:09.871865+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51657,7 +51657,7 @@
       "headline": "China’s economy shows signs of weakness as investment slumps",
       "summary": "",
       "source": "Financial Times",
-      "date": "2026-09-15T05:25:59+00:00",
+      "date": "2026-09-15T02:26:44+00:00",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd24tYXhIZlJuWUgxUzRGR0lTSk5pSTVWVm8tSFVMamswc0ZVU3F6N09rdlFqX0FWVFpIdTVBWEtsbFh3em5kMXBPUVVvWURtTmhtMkFLcmJWQ2FfV0FMd1JHdDV1VFdIcWQzdlFEY0l4YzNRazgxbEpFWFlpYkRrYWN3a1A?oc=5"
     },
     {
@@ -51696,13 +51696,6 @@
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQUpGTFNkWkJ6ZnFOd0hDQmN1NWFaY21sOGFEWV82MUJyaU5pNUlQcWN0Q3dGRWh1Wmp6cjdvSENjMHU3ODJtaWRCM0dYbjFLeTJVVGtYbl9UZWJvZmREdGwybjBQWHVhdjEtdmJYbWVHYVNjRzZtajBXMV9tM1c3T1hVdkVnVVJENDhoUE9kbW5UU08yN0FCRENPd2phekY1YmVPTmVIR3lXYm5BTHdfTDNOUDE?oc=5"
     },
     {
-      "headline": "China says AI CEOs' call for a slowdown is 'fear mongering'",
-      "summary": "",
-      "source": "CNBC",
-      "date": "2026-09-14T09:36:27+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBwRkFLWmM4WktDc1AwSzhzZXNGQUVSWkRseHpXMW9EY3JFWTJwaGtiVkx0UWhhUmRVUEpFaWxKOGJaeHhPV2tlcFF3OUpSMC1DTmdSbHU5WkplMWFFdzhJQk5tdDZ5Q1hxMDgtSDA3UlVhMUlBUUHSAXtBVV95cUxObC1qcTY0aFdYUXJPNEdtUEt0bU15STYtcmRsTEpHY19uNGxuY0hXejZhdW82bFRQbXRHei0yZlgwTTBqZWItTGJCV010dVg3SmNGV2w4ZmdubndITTBLbi1Bb2ZwSEhzamEwX0lxbWRLNjBuVWk4NE53RjA?oc=5"
-    },
-    {
       "headline": "Beijing puts a total ban on drones in update to regulations after deadly tower crash",
       "summary": "Beijing has introduced stricter drone regulations, banning all uncrewed flights as well as the possession and storage of existing devices, while detailing disposal methods for the first time in an effort to strengthen se",
       "source": "South China Morning Post",
@@ -51729,13 +51722,6 @@
       "source": "The New York Times",
       "date": "2026-09-13T13:42:25+00:00",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT2F5TmNMdW1LZHVtc0NlWGNHYTBOSGxrY1BtVnJqSVM2S1NMb3p5UlVFMmNkUDk5bWdrQVU1dThsRG1kcWQyMW9VWjB2am5LZ2NZcDVBTld1dkdtVTRYNXg1OG9OX1NUNGhCUW12SXBNaWV1LVdySEc5TlNVMUdhTzBnODN4MGxOZkdKZERLTERfcnYzenJzNk9sUnl6RUNHRHNTVnZKM3VMbmd4Mks0?oc=5"
-    },
-    {
-      "headline": "Goldman picks China healthcare stocks for a post-AI trade",
-      "summary": "",
-      "source": "CNBC",
-      "date": "2026-09-13T11:54:40+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUUFMVGpQQTVhZVlIdGFVUmM3dHlNdXJrdjYxbVZySWlwZUZHX2dLUF90ZkI2SVlJTXI5RjFNbDBQOUgyZUZCY3FNYV9iMU5ZY2dJejBqd3pHZ3E5OS1Sd0cyWlRnSHZxRzQ2R1JMcHFJTjBON1NWb25ldUVaTndzTmtGVXItM0Q2SThPTXJWQ3hieFVPbGpmcHd3?oc=5"
     },
     {
       "headline": "Chinese AI Stocks Have Been On a Tear—Why US Investors Have Been Left Out so Far",
@@ -51771,13 +51757,6 @@
       "source": "South China Morning Post",
       "date": "2026-09-10T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdXdubjVfNjZpOUNCeGstNENDWkRiRDdEaUgwWTZPYWNOc29fclpSWmZobjRDLWNvQmVIQnNpYTNMaHN1c3lTdWhjT1g1Tlh4UUhUOXNyV1NRWVZIcVItNndpYkFuUEM3R1VLVlRhTm1MQ3VMNko1M25LclI3cnYzUkZtM1RYcnpUN2lBbDZXNlZTTlpieUpaS0REckdIb3B0cDNEejlaTjV0RHlVN2U4c1N4WGhrZGpWSDJwZUJEV3pjTmvSAcMBQVVfeXFMTml3eDRWRE9XMl84YUdkWWJJM2h1OG0yQ2FZQmE0d1NZdFl4eUNKQUt5T0xaOGt0Q2VzZEFyWUhrMkxZcW56U0kxWTVIRHVHdlNpVm1MdEE0b0VpNmVJSGN5aS14V3hsQWdaUXNXVmstY3Iza0dXeVBnV1p0T3JVeTlIRVhxaEFLZFZjRXhoWTB0R3UxVU4xRU0xQk0wbFNGeUhvZXJoeElad0ZzYnlyZXltQmhXQnNFeUM4MEs0M3kyRGpj?oc=5"
-    },
-    {
-      "headline": "Chinese Nvidia rival Enflame soars 206% on stock market debut as AI demand stays hot",
-      "summary": "",
-      "source": "CNBC",
-      "date": "2026-09-10T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNb3NRZnFyUlUzaHZKaEZCV19MVjJ6U0tHRnh3eXc1NzBTRWk0U3VYOEZrSlJLaWdxdWRaaFh1MXVpbjRzb3lKNzBtY0NrQ3ZabmxKNXdWVHJaeW5Pb1ZHemIyTmtwQ2RxMTBWRXVfUjBxZjhoRzNWSjFtWDlPYUpTNFZRVlBEZF9YOWdXdEdzMETSAZYBQVVfeXFMT2gyeDQ0M2xEdTM5MFh5MHdoYUd6elJxSUxVYTdQaGtpdkgxelRnRUpCYTczQzN3dDRHc0kzaHBDdnNJTGdCOXk4eXlhOWdBbHgzVjFfRF9Nc19pblI3MnZmOVBqUmRIMlNET3R1SGUwaUl2Y3hnVi1RdmcxLU1GbUNzdDdJeF9fdXZVcnBkTkJpazB0XzlB?oc=5"
     },
     {
       "headline": "China’s Communist Party quietly signals social stability push with new high-level body",
@@ -51820,6 +51799,13 @@
       "source": "The New York Times",
       "date": "2026-09-08T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUlR4d0EwcFVWcnRtZm83dm1MbF9VLTZaN3ViMXZHNy1yNVFxS1FDRW84X3VBRDlMX3ZsbHdVQ3hCMktqQ2wtOW4wNEVselF1X21LWXFDMHNnZHhMVWdqLWxEUHNrNkR4TEkyNkFuX2ZaUGZqaGFURkhfNmZsRWhMRGsxUQ?oc=5"
+    },
+    {
+      "headline": "Three Numbers That Show Just How Big China’s Export Boom Is",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-09-08T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSkFjZUgwUXJPT004R2Qzd1A0T3B1YTVhclJfNnhrdGdSUXcwZHJQVEVqQnMzTGcwUGVrX1Jaa2R1clJpN1h5Zk5RczU3bkJmWnZ3RmlxN01EcExmZ05CMlRWWk42NVhadTItYklVcDc2cE9YMEVMSERqZU9FTV80RXFvSHN6NW5BQ2hSZ25PMzlSMHB4NDYyaXlVU3ZiNmh4dHJ3?oc=5"
     },
     {
       "headline": "China's exports surge as demand for high-tech, AI help prop up economic growth",
@@ -52013,7 +51999,7 @@
     {
       "headline": "Who Paid for China’s Last Debt Cleanup, and Who Will Pay for the Next?",
       "summary": "",
-      "source": "Carnegie Endowment for International Peace",
+      "source": "carnegieendowment.org",
       "date": "2026-08-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYkZfbGlSdkZoNGM5WDJoMFR2NlFvcVNRblRBdHJaM3NzQ3M0T3o5d3d3TE1UeFhuYzZzLW5PYmlta1RWS3VmcjJaRV9zTkNacGZaMC0ydG94WUd4RjNrVnA2UzM2QVM1eVdhUDcyU3V2bTBvN0RMNDlQcG04c29Gd3h6MHk2TTNJWjZJMlNPSWplR2QyV0dyNWZNaW16QUpTYlRfOGpWdzBWSHppX0hWTTFZSjY2ekVGRjlRMXFOS3c0ZDJycTdnSg?oc=5"
     },
