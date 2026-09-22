@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-22T18:59:25.211759+00:00",
+    "last_updated": "2026-09-22T22:16:06.666927+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51579,13 +51579,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3368363/who-chinas-side-will-be-room-weeks-xi-trump-summit?utm_source=rss_feed"
     },
     {
-      "headline": "Trump and Xi Meet Amid an Uneasy U.S.-China Trade Truce",
-      "summary": "",
-      "source": "The New York Times",
-      "date": "2026-09-22T01:03:49+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVUFXNWVEWmRtdmJOTURTN1RnY29vM1VxODhZSkJlVC1pUklYX0N4UkpUMFlLWW96VWk4b1dKZnJwZjVFRHVwVnA5ZGtwRU0wQWI3REVXSndJUDJyZFJIQ2dSdVZsQks3SUxWeU5jS3ljZXJ2aGNTenhZQ0Y3NGFybC1iYw?oc=5"
-    },
-    {
       "headline": "Trump, Xi seek trade stability and deals, but AI, tariffs and Iran loom large. What to watch",
       "summary": "",
       "source": "CNBC",
@@ -51598,6 +51591,13 @@
       "source": "marketplace.org",
       "date": "2026-09-21T21:13:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTXh0MHY4dEJwRi13S3pyUDJhX24xcFFYTWFvNVdIOTdTd1gxNllmUEc5anRqYmZTZ3JLYTNnODBXemNWSkVhRG55cS1TcGIxLWNQQ2FMRy12ZmhqaEdYcGcwbEZ1N1luZ2ltUEhLSXpvQ2hxRmZuWHBueEoxMHFwWFlod0dJS2ZOQ2JWeGM2emgyTHdGUTJEVEhXMTJ2NzNG?oc=5"
+    },
+    {
+      "headline": "China's power infrastructure stocks languish despite AI boom",
+      "summary": "",
+      "source": "Nikkei Asia",
+      "date": "2026-09-21T21:13:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQXzBmNG9ERmdyT3EyQTNoRlRfYUZtN1M1d1VyR1pnLVJ3U2FQazh1SHdxQkNFR0JIRUtuMm8yLXpUQmNPRDByNG1RRktBMlBMRTFGeThua05aY1JyVW4yTjZIdXpueFVYUjhDVXV5U3lZdEU2SFZhX3dDb2labzNja0VLZ3Rod1N6S3JfekNvSjBkd0JWWGdFZjFiVGJKVU1rX3Zub2VRVDVKYTRHZDdZ?oc=5"
     },
     {
       "headline": "Emerging-Market Stocks, Currencies Gain After US-China Talks",
@@ -51619,6 +51619,13 @@
       "source": "The Washington Post",
       "date": "2026-09-21T17:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdG15TGx4RnhJYVhHV0prOUhmWUxHVjhjVDJrdE1UeXdtTFhQQXo1U1BIellWVG5ReGNNbl9PdHNYXzRzXzc1elVCVFU4dWgxY25kR2cwblROR2JkWlNCZzdOQ1V1V09lOXVkVzZ3NG9aTXZabXdoeHNSdktYbld3dDBHU1dDVW9sMVYyWTQweHYxWXhHX0tKeGJvWmNKelRsajItekN1SG9BVVJWMy1aM283YnJJMC1yampIa1lB?oc=5"
+    },
+    {
+      "headline": "Trump and Xi Meet Amid an Uneasy U.S.-China Trade Truce",
+      "summary": "",
+      "source": "The New York Times",
+      "date": "2026-09-21T14:18:25+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVUFXNWVEWmRtdmJOTURTN1RnY29vM1VxODhZSkJlVC1pUklYX0N4UkpUMFlLWW96VWk4b1dKZnJwZjVFRHVwVnA5ZGtwRU0wQWI3REVXSndJUDJyZFJIQ2dSdVZsQks3SUxWeU5jS3ljZXJ2aGNTenhZQ0Y3NGFybC1iYw?oc=5"
     },
     {
       "headline": "How Trump and Xi went from tariff war to trade truce",
@@ -51668,13 +51675,6 @@
       "source": "South China Morning Post",
       "date": "2026-09-21T04:00:13+00:00",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOOXBfR09vQ2JnRGhWUV9aamc3NzZweEJ1MnBLaW51NWdOWnJ6eDVLQ1g5aGRzeFVnTnJDUU1iamdhUFdJZkdmS1FrcXdXRXJFUWRpTHQ2MzFrRmhha0theWNsN3RKZVdDLUpDYVJncXZGQlJSV1BKZkhQNklEZ3JYRmlRSFdvUmUzV3JKcXJVQW5kWllWUWVhVHlTWlIyYWxVenRGYzdrOGgycURxNnhVMTNwZGdqaVE2Rm8yZTFYZG0tSDNkUE9Wa0pxWkVKbEXSAc8BQVVfeXFMTktwRjRJWmd2VVhnQXM3MU16SS1fVVNfY1pQbXJUMWI0SjZEdDJYcXY0enhKQjlUd3pVUklmcE1ZNlY0TG1icjhla2ZFbkJqc0lCY1d3amZjdVl5QjdPSzdpX2pqc2M3em1KS3VjRzVOOVhReURqSDZyOEFWSm5ldWREVk9hZ3NncmNGbXN6SlpJUUNhY19iXzhhcDBYMTRFVXhIUjU0dXhjYm5tRnROSFdveGgycm5lelJrTHJHMmMxazlxc0dXeGpuN2xOV2c0?oc=5"
-    },
-    {
-      "headline": "US proposes AI incident alert system in talks with China, Bessent says",
-      "summary": "",
-      "source": "AP",
-      "date": "2026-09-21T03:41:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTjA1TWd5LThuOFFaNWotd3FvV2FtbVRJUjZ0MHlELW1nM2lJaDRseEEyUHlIeHgtQWUySzVmRXlTM0R4aFdmTl9MQmRBaTRFY1NqTF9rTlppbnpoZmlVaEpQRWNzZ0tDWnQ4T1JiODZOUmNGMml6N3ViSVRpRTR3QkozOGp4YTloVTNUUUV1ZFBHMFFpeWc?oc=5"
     },
     {
       "headline": "Xi rolls into Trump summit with China's trade engine roaring",
@@ -51768,6 +51768,13 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd1ZGT2FfOGNzV0M0Mnlja29ybFZRN284QW45ekRfa2NXVmtCaF9USDVHOW5XS084OXJkb2o0b0RhQjd0TXAxZXh1UmNnVWRoSGNRWVpoWi1STUowdVJOQmUydzlBR29pRVN6aWtfQ1k1aTJlWUg4eEdXcS1GX3c5N21mMWVTYW9PVXdLWURrcURnZGtWU3N2WG5FUzR2eGxDZkZCNmNn0gGrAUFVX3lxTE5uZUZRbWozZWFOUURoaDVORnBpRzEtcDZPaWNQVE9uUDgwbEw4eVBsYWkySWVUODNhd1NUN0gzeGRVcUdGemZzbV82YVR2ZWQxNHFqdEdrdV9uYVZFX2daYjRjaGF4RlJrQXVXZEpJaW1Ja2VnRHNneVJVSUlYWEtvekFISDJpTUJjRUtCdlhndEY0d1g4NGhVZzN6S2FCNXhHVTFpWnBaMTlUSQ?oc=5"
     },
     {
+      "headline": "EU seeks China curbs on hybrid car exports to avert trade row, FT reports",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-09-17T05:15:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRWJJNjFfalQxUWJJTEI1UjBCNDhyUFpvOXpqTUNHeW9ucXFJemVLajBadkQ5aF9tWnpjdWFoZ282dXM2b3pTbHpmQUtVVzNteTZXUjNEN1ZqQUJnWEFuUkQtMXpXYS1OX1oySWVNcXJVaE1uc2ViaE5lTDlFbUd5UEFNVGVQN3BlVlUzVWo0VFU2cjlrdjNfR2o1Y2FEdVpXamF3ZEgtcWNHU25iU2E4Y3cxaVc?oc=5"
+    },
+    {
       "headline": "Jesse Appell, an American comedian in China, shares his 'cross-cultural journey' in new memoir",
       "summary": "",
       "source": "WBUR",
@@ -51805,7 +51812,7 @@
     {
       "headline": "China Could Curb Fuel Exports as Diesel and Gasoline Stocks Sink",
       "summary": "",
-      "source": "Crude Oil Prices Today | OilPrice.com",
+      "source": "oilprice.com",
       "date": "2026-09-16T05:45:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVVQ1Y0NlZ0R6VXZKbW54bjVwWGhWRWUwU3BtWE94M0JSZ1ZXVHJXV3RTd093eG9wZzdJSU92X3hIcEJKUnhmZXlzdEZoZWNUOU12T19EVlZhcFNRQzYtaTQ5Wk9tWUV0dzBOWU1YZkg1ZmtNaDdEbk54Ql95S0NvNUN6THc5N01OTFlUdFNkbWJuQkxrMFZFRjYzZzF1Rml5XzRVZkFnVUluMFFnNVNRb2VPbTRUT1hJN0d4ZdIBwgFBVV95cUxONHBRNlNNRUIteG9EdngzNk5uRjRYbUdCaWNoaVFQWnVrMU9qQS1lXy1wbFlfWmd6UF9ET0FIUDNXN0x1a2hLUVJvYmVmT1BfMW1RWWJOTHIxVFEyam1iTVd4eGhzUnktaVJQdDFweWRaY1BUVVNsaGR2cFFyU0ZhM1h1Tm5QRzJ0eFMtbkNaeTQ4T3pQVTRubTI2SnZGN0J5R0N2ZDFzS0ZJX3NGb2FrQ2YtVlRMdlNLWko1WXhXMXhhdw?oc=5"
     },
@@ -51843,13 +51850,6 @@
       "source": "Financial Times",
       "date": "2026-09-15T07:10:18+00:00",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWm1yR2gwN0pUUzRtZVA5VmNmVlRJNEFYc3Ixb1hVQzdWSTVuUEhUZ05ERTVoRzUwSWlzc2JJajFtV05JSllnS3pucExBTXV2QkZpY2VyeWdXQmxZTVE5Y3JQcVV2UHM1bi0xbEFkRlYtQS0wcDh3Tm5oaU9JT2JaN0NyTUs?oc=5"
-    },
-    {
-      "headline": "Monitoring China-Africa Trade Spillovers",
-      "summary": "",
-      "source": "Rhodium Group",
-      "date": "2026-09-15T02:41:22+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5wRnQtcnlKMUhibGx4TEdjRWV5R3A5QUM3SFBMR1JGS1JRLTBHMkFsU0J0clNBTnVaYnpxZFY1aTQ5aDR6S0dDN0ZMVGpxVmNVajd0djJSNWVYZ21JQmVyRmdnVW5KNFI4bkxHS3JpTmV1d2RE?oc=5"
     },
     {
       "headline": "Pressure on China’s economy persists in August as investment, consumption slow",
@@ -51997,13 +51997,6 @@
       "source": "WSJ",
       "date": "2026-09-08T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZzlXWTJCbHBEV3JlN0ItV0gtX3A0Y2duVkNvdWRfZ1h1bWtMSVhIejE0angwQTV5SUkzV2VXMkNxYjlhLWt5Vk5QbnBlMVpTaHVuTWczel9wd1ZEWFEwTXQzRDBHbHpWelNNNDhKZl84MzlkaGFmanpBQnpOUU85dWR0Y2VIS21DbExiYlBENUV4QXppNmM4amhWaktqa2Z3?oc=5"
-    },
-    {
-      "headline": "The View | To match China’s economy, India must accept its investment",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-09-08T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaTJqcGs0Mm9hZWpjUmsxRndmTFA2T0d1RnF1TzBOc3hNaVBHRzZkczVNVEpLdnlJWHJzQXRVLVBjanE4Nmxlbjc3T1EtcEVDMGdXeHJEcXdaa3J4WFlkOUlXeGlSR0o4dlhPUHZNNDRPZVlXWXBlUmpoUkNIRzFKSXg4UjZOUWZ5VnFkMWpMeU9qTVZNR3FnbTZjckhranNZWkF5WXVuMG1COFRXMkh1aNIBsAFBVV95cUxQRWU2Yy1BLXd0TjVFTXdFeXBtN1htLWZpWDZqX2JuQmJ3NkozMmFSUVNjZ1hrU1JpaUNvSUNyWHpiZkJfNmsyc0NQbXhBS1V6OHVUWkFTOTZ2eWVpdFZ0Yy1ENW5rT2czVlROcFZIamRvWHpxT0VKS2daVzU5eXFsc2pUTGl1NlJmenpDWHNTZ1Q2N3JhOEQ3aWFVYjNrWmhrSVRPbFdMRkNuVXZVeDFWdA?oc=5"
     },
     {
       "headline": "China’s Surging Exports Loom Over Trump’s Talks With Xi",
