@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-25T07:56:31.755764+00:00",
+    "last_updated": "2026-09-25T13:55:18.958844+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51566,9 +51566,30 @@
   },
   "news": [
     {
+      "headline": "Trump’s warm welcome for Xi met with caution and uncertainty in Taiwan",
+      "summary": "Taiwanese officials and observers have reacted cautiously to the Washington summit between Donald Trump and Xi Jinping, with uncertainty lingering over what the two leaders discussed about the island.\nThe only public men",
+      "source": "South China Morning Post",
+      "date": "2026-09-25T11:26:13+00:00",
+      "url": "https://www.scmp.com/news/china/politics/article/3368839/trumps-warm-welcome-xi-met-caution-and-uncertainty-taiwan?utm_source=rss_feed"
+    },
+    {
+      "headline": "Why did Xi and China’s first lady bring their own flasks to White House banquet?",
+      "summary": "Amid the polished silverware and fine crystal stemware on display at the state dinner in the White House on Thursday sat the vacuum flasks brought by Chinese President Xi Jinping and first lady Peng Liyuan.\nThe couple’s ",
+      "source": "South China Morning Post",
+      "date": "2026-09-25T10:49:27+00:00",
+      "url": "https://www.scmp.com/news/china/politics/article/3368835/why-did-xi-and-chinas-first-lady-bring-their-own-flasks-white-house-banquet?utm_source=rss_feed"
+    },
+    {
+      "headline": "Trump and China's Xi discuss AI, trade and Iran war during state visit",
+      "summary": "",
+      "source": "NPR",
+      "date": "2026-09-25T10:48:42+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWtZVnY2SVVLai1zQlpFOVUzRHhHZGV5b2JUQVI3MTNERnk2bWFENDhOZXl4Rm0wZWoxTFJ6UDNVbHJNOGN2OURmVE9fYWZfdXA2ZDlrbXpkLXdPLTR0cndScXJOVm0yNXl1MjRGeEpxMW5veDBZLXJCNE14RlFCVmFGaFNjSWlkWW8wSU1VN3VoY0tuSDJQX2pEZTlwUkZlTnZnaGlCODJYUjRNRHVuUndvMA?oc=5"
+    },
+    {
       "headline": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension?",
       "summary": "",
-      "source": "aljazeera.com",
+      "source": "Al Jazeera",
       "date": "2026-09-24T19:10:05+00:00",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM0VCRW5zQlc4N1gyV2VWSEFjQm0tMnhRajF3QkFFWENVVGd1T1g0d1FTbmhfRFFYeFo2REhjT3h3RXJOS2g0cU0xeVZfemIzU0p3RDVIanFnMFhrcjRMUTZyRjZzbGpkZlUyYlVyOXM0MTl2cHZYSWlTZlI2STNPZVc2V0Ewa2JzSFJ6dS1qZHU5Q0F4YlhKeTFxemptRFJVZkYtZnduUHlPSXRUY2NZ0gG0AUFVX3lxTFBJTC1fTmZ1cFFSNjBHQjBVd1BCaE1YNFVmRWgtaWE5YjlyYzFKb1o3TzJKcnhtZTBSTDhPTWhkTW5PMURPU1F2X3hXaHUwVlJJSUNGOWhMOXdxLUxoNVczOUg3NXlXeUhoQ3lXRTEzNk1ORFZTcjRaNWZpdlpPcWZJZUdFUkxmbTd6VlFha3ZoX01CX3pYdkFrRUdPQ0gwazBPY3dJU3hWeVpqRW5BQ0Zkb2FVVQ?oc=5"
     },
@@ -51589,21 +51610,21 @@
     {
       "headline": "US, China to extend trade war truce by 2 months",
       "summary": "",
-      "source": "Supply Chain Dive",
+      "source": "supplychaindive.com",
       "date": "2026-09-24T14:57:05+00:00",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMkJBOFhtcElzWHRvdW5fQ1JWYVJpQkNhTk9TcjJGMTliZVk4QzRpTktNSjBNY2NYaUx6SGtGSk5lQ1p0dEJnbGNJdS1MejBwVEJucDlpVkc5a0VCQmhNcEhBbF9LNkN6MWhqV1BOdUNGaGJuNWpBcWZYMFRwWFNpclBPWlJRMTFiWTEybUNoU1F2aTVCclE?oc=5"
     },
     {
       "headline": "China trade deal extended through January, Bessent says, as Xi arrives for Trump meeting",
       "summary": "",
-      "source": "The Hill",
+      "source": "thehill.com",
       "date": "2026-09-24T12:01:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTHdUcTR1TkMzUHRkWWxxbTNzclNfZ2dfd2FkVlNidnJUQkV6UXNMTzZyVFR5VkFrNGdMdjMwU2VMdEx4ODM2b0d4V1ZFQU4zaFBzYzNLVHR2QnR5WktRTlBkNDI1VFRBNUdBcWFsMXB4eWhjWFN0Q1hFcEF6MkRuMjIwSGFJdDl1dEhDRExBLWpUQlVBUlJsbHV5T0lWSlJiQkNneE56VFJObkRWaGfSAbMBQVVfeXFMTURNQmhPazNVT3dacGhHa2FleGZDNnd4Q1ZLRjh1X215WUV6dFZ4Z3pFWDRmRjBEalphc19EZGtOV0hYNUJMSU9NdVcwRnd4d0ExaXNBV3ZGZTlhTEY1aHN5Q2J0SDJtZEhwNWpRdWlNZllxa2x4SWg4ZkI2RzVNSmpnR0NvNzRIcTY2TU5rQUhOMlVQRTJ6Ym5XOW1GcXNIQ095cDBzZkgwaTlBRnJZazg5cnc?oc=5"
     },
     {
       "headline": "Xi’s Economy Is Failing China’s People",
       "summary": "",
-      "source": "wsj.com",
+      "source": "WSJ",
       "date": "2026-09-24T09:59:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE90azlFaXY1endaanpGRy0wRzVWRi0wU1VjOTQ4cjc2OXNBMldkREVweVVRMjNtX2xYS0xxSU4tQ1BxdWJGTkJHUmNWLVo4Rk13VGlPTmV3ci1CU3JPclZFWG1uSGN5WUc4NlczTXFLZ1pyaDAzWEgzdVd4MU5kUQ?oc=5"
     },
@@ -51615,23 +51636,9 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQkRMSWpwREpHeExsMUpFV0JZaW9TMXhZcndwR29xRV83TzJheXJFMXZBTkVST3M0cjV5MVhsOW9wLVhrMWg0YkpDYnhTczFaVWo0bjVOQWtyVFJFQzhiQzljRy0waFlPd1dieF9INk44b3ZQZ0dxZlE4WDRMTzc5SDFHTEhOenNTVG5EZVFJWV9GVTFfRkRtSG1PMUVqZFBOdXdubUJXNXhkT3lVcEduMVhucTJGenIzSzc1dGhOa9IBxAFBVV95cUxPRXFXWXR5dUlwMTlBSUtRdmRXYVBwN09XeGtJN3lkSFVIc212X2F0aFdTbnJDcWR0OVhjUnN0aVFodHdsdmFwTkhYZUR4c29jRk5zU0VNb204cUNDLUdhRHh5RkROTjFoZlV4Z0J6cm1sMnZReTJfYUd1S2NFQWpWNVY3eTBFaEYxblk0M2pYMTVKWGZfSk1TNFFyNk93dGdMMG1ZanFIWUxpZFRYaTRaWlhiOGlNdThaa1R1N3lsRElaQ1Z1?oc=5"
     },
     {
-      "headline": "Macroscope | Who has the upper hand in financial markets, the US or China?",
-      "summary": "",
-      "source": "scmp.com",
-      "date": "2026-09-24T08:30:04+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUTZDWGhpTm1SMXVBMnBrN0tLVElVYklaMmhrdzU4MW5ZYldXTXpEczlFZjdoZ1VnbXcwUzl6dmVhTkJkNUN6NWZlUTR5Z0VKOEFCQS0yckhiWWxMMng1NmJXUkxjVzdNbFpoR0VzbDEzSm42cnhNOE15SkljNExDSG44VHU4QWV0eHdyVkNyMGlIU0lGNmo5Zi1XVWhfUVBhbGNzcy1WNEVEUWvSAasBQVVfeXFMTUlmZm14UkRNN29DbU9OU2JiTnN2R1ZVTnBpSDJ2ZFltLXpoUDZqSVJLNm5KajQ0UVE4OWlqQXZCeXh3ZFJFYXJ2TUZQUjFEMjJLNWFKYjRoZVNKQkdZWUhSUHRieWJtOGdfYkJRbkV6TWcyNnlaZjNzUkJ5aDBZbGxqY1RSMi1mZ2tQQkktN1RFYWV2V01lUTdBQXB4NW5McWhZQjZrVWRvSXFr?oc=5"
-    },
-    {
-      "headline": "China's fuel inventories hit over decade lows, raising concerns over comeback of export curbs",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-09-24T06:42:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY1JINFhpNlRoREQ1VUJrTWpBR0swMVRjM1VxY2NJOGRCNHRPRWUzWU83SHRYb2FIcWR0SjdDOHJZeXBzZ3NsWlNFVUlMUldnS3h2Qm9rZFVlVDdBQWFvSjhtTEpaNXo4S1pOQ1VLbXJTUXBLSHpPaVd2QnRMcDBtajhtMWZmWDZqdzRSR2hnaHZRSzJMTWt3S280LVFSMTlVcHR0Tldrckk1WlczSDdHNklOTjF2dTY2LS1kZ1NYTngtRGp3TGc?oc=5"
-    },
-    {
       "headline": "U.S. and China Agree to Extend Trade Truce by 2 Months, Bessent Says",
       "summary": "",
-      "source": "The New York Times",
+      "source": "nytimes.com",
       "date": "2026-09-24T00:29:23+00:00",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQS1rRkRnUUpxampuWC1NRHNoMHMyc1FZRXdJV21nNERlWklxaVVKZXlfa0g2WXI5M1FVSEx0c0xzZ24wbURZTGR4MlhvQlAxMXBkR2hqeEoxWHROUjdlYVhlOXlzSzNkMENSSTBmNFNWaDdQM2lsbndOSVhSVWpJNmJWSQ?oc=5"
     },
@@ -51694,14 +51701,14 @@
     {
       "headline": "As Xi meets Trump, who’s winning their trade war?",
       "summary": "",
-      "source": "aljazeera.com",
+      "source": "Al Jazeera",
       "date": "2026-09-23T12:25:11+00:00",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORWstOWpRbjdRRlFaTm90ZlEtazJfWC11cUFzT1I3VHgyOGpFZ0syWUpIRlJhTVRFZHI3bHhELS13VXJ1bDRpVS1wcXQ2TS1ZMDYxYmIyMFQyQ3dhQmJiSVdIdGVsTkx4V2E2ekVTNjU3cTZYZHNla0dqMm1EZjUzd0sxeHJzc2FxSmFybXktaGd3VGlsamfSAZsBQVVfeXFMTWhUYTdMY1Q4c2NnLV9ocTE3by1NWlZsZ2phelBMcFZjTm5GM1NlNE9KWlNDc1F2N0RNMHdwcnQtN3hkODlwbkVMR0h0c2hFckpRMGdESmhBT1ZtQ243QVF4YUkxRHV1TElyVmhudkxBajBnd3UyM2lodjRHR1FZTW14TkxuZ2x5Tjcwa18yYnZlSU9aTURETGI5bWM?oc=5"
     },
     {
       "headline": "China central bank to inject more liquidity as Golden Week nears",
       "summary": "",
-      "source": "Lexington Herald Leader",
+      "source": "kentucky.com",
       "date": "2026-09-23T11:27:07+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4zck8wZGxUajRIZ3QzcngwVHNDVmVNTmkxTURNd09aejVUR3hidm5jRmszZWdKbHM5dUpYRjg1UHlTRFZDaDliQ1gyX0tfN2FiVHU0d3psb1UtNWhXbDFfNE9jU1VvNHc1bS1mMlR1SXlTTXB3TEtXbTJGMW9NUQ?oc=5"
     },
@@ -51739,6 +51746,13 @@
       "source": "CNBC",
       "date": "2026-09-23T08:03:49+00:00",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOLUFJa1pReGhJbHZxY1RUMi1vXzdFUmpQSnlUanlrWWVmMng4cklpN05Lb1ZPaTBIRHdreUpXUS13bWE1MmFXUVBwX3hScEZwcHdfaDJPQ3FobVJ3aFBIYkVGZkJ2eG5WOTZxYmdLMGp2WHZCcmthMkJzTDRhaVNBbC03RlBMZC1zZVBkRFl6SGlxbW5mak1N?oc=5"
+    },
+    {
+      "headline": "BofA warns of uneven risks in China’s expanding AI stock universe",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-09-23T00:00:21+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNTJsSHFDdWszRXBmcEQ2aXNBX1Vtd0lLSE52azAtRVQ4QXc2eS1PZENBaS1SMUM4VmU1VUZYejVZcjgxWjRSTUZIbFNyREJuX09LYkN6bHJDMkFLZEpXRHR6U3l0SjVFQXhxcmotbVNsQ1pGbXJqdG50dEVUcFg4aFk0cDg5cjJWME05UE5zVnNPYTN1QklPQmdHZ1NVendpcG5GdDZ2SGxnaF8tUmNObmZqVHEyb0dJSEdiS0tnTm9jbDlycHhLVUxpaVBrbGg0ZThINmNfczlUWm56b3fSAd4BQVVfeXFMUFZFOC02czF4M0NrTzNvYjZrY1NPSDFWa3I1RHdia05MRURpS21sVTFsRy00dTg4RWVCWHBpbEpDYnpkZGZtUDZYazlYcTRscGlFdDB0cV93UXlTTXI1aW1INldNX1UxYWxHaU01TmhVYTRnbWgzYmRhd0w1NHd5NFdveTNtOG9IQXlXMEQ4eDdMZzV0WG5UNzYyVUJkYTRMdkNmeHdEQ21PY0NQcVZXb1VrV0dwNVNiV1BMb1dBbm5Wd2xJMmctdGJ3aklrQlYxM3dnX185STlLaWxEa2ln?oc=5"
     },
     {
       "headline": "Is Perception Reality? Evidence from Cross-Language Media Sentiments on the Chinese Economy",
@@ -51792,7 +51806,7 @@
     {
       "headline": "Nvidia Stock: Are Trump Talks With China's Xi the AI Chips Catalyst It Needs?",
       "summary": "",
-      "source": "Barron's",
+      "source": "barrons.com",
       "date": "2026-09-21T20:14:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSWIzWXFnQ3VTZjVDUXRCcm5OeUx5Q094XzI4alVVaUNFZWc4T285YWo2Y0phRm8xSDVBS0gycU56VlJ2emw2SUQwdGpCS0J3bjc0NGJFT1ZYZUY0YlJ5RkJ3bVFHQkhZVHNPQnd4VXZPYmxXOGVwajdlZnQ2OS1vWDN1Y0dESjk1ZktGUw?oc=5"
     },
@@ -51869,7 +51883,7 @@
     {
       "headline": "Micron Stock: China’s CXMT Memory-Chip Push Is More of a Problem for SK Hynix",
       "summary": "",
-      "source": "Barron's",
+      "source": "barrons.com",
       "date": "2026-09-18T17:36:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNT2U5MHV4WFJ5YUlTZnNxQVc0SUpRQXlQUVRoMS1hVEE3ejZBdi1Zbm5VUXFzZV9idmVZLTZTcWxYamxON0ltb0lUb053QkVkQlpiaWRMb2FwM25semNtTHBCSFBhT1NhUzRRaHUyZUVNd1k4ZTlyS1pRTmo0UExNOG5LSUd1b0FFQ0pRTWtPQ2p5UQ?oc=5"
     },
@@ -51890,7 +51904,7 @@
     {
       "headline": "What does the rate increase by the US Fed mean for the Chinese yuan?",
       "summary": "",
-      "source": "scmp.com",
+      "source": "South China Morning Post",
       "date": "2026-09-17T11:00:05+00:00",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOM2U5aU93NW9OdjZNd2JSQUx1c3JmSmo2UFF1dmFSdUhTRFFJdGp6bEpmbnRTM3Vqa1E2OEI5Q2tOZU9hT215dmlCWE5Xb1llMVVZeENlZ2FCRDNRN000UEZmTzdwQ2pqRjN6SmNiYzRxM0duUktHeV9Zd1Fjd0VZbmpRU2Jnd2NlVkZjVHVLSFM2YXowanIxUlBuQ2ZlUjE3QWZCMll5SGNlOGhWZUJDTVdQdUNVUXpacGs5V2FiaWlncjJJcTZuZTVR0gHKAUFVX3lxTFBmblFSQTRONFh2alVBeUdVc1k1RXA3NUFuc2kwNUlreGNkcnI1dXJNbnhmcHdLNmFsZWF4NFYzUWUxc0Y1Ync1dHZWX0xTOWNZZTNxSjRkZEhzano4ZksxSl9Wb3o1Z3plLVFQM2Z5alp6UGMtRUdzYUxlREc0ZUlZa0xnRjJHUjhBWS02dk9ZTDR2QTFVbGNYeVBSQ2lOQXFYQUNkMGxUWmhacGdvYXdPd0JmSVp5T1JWY05QRjYzQVdHNVNLTnVBRHc?oc=5"
     },
@@ -51898,7 +51912,7 @@
       "headline": "OpenAI and Anthropic are making 10 times more revenue than all Chinese AI models combined, research group Rhodium says",
       "summary": "",
       "source": "CNBC",
-      "date": "2026-09-17T09:00:01+00:00",
+      "date": "2026-09-17T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd1ZGT2FfOGNzV0M0Mnlja29ybFZRN284QW45ekRfa2NXVmtCaF9USDVHOW5XS084OXJkb2o0b0RhQjd0TXAxZXh1UmNnVWRoSGNRWVpoWi1STUowdVJOQmUydzlBR29pRVN6aWtfQ1k1aTJlWUg4eEdXcS1GX3c5N21mMWVTYW9PVXdLWURrcURnZGtWU3N2WG5FUzR2eGxDZkZCNmNn0gGrAUFVX3lxTE5uZUZRbWozZWFOUURoaDVORnBpRzEtcDZPaWNQVE9uUDgwbEw4eVBsYWkySWVUODNhd1NUN0gzeGRVcUdGemZzbV82YVR2ZWQxNHFqdEdrdV9uYVZFX2daYjRjaGF4RlJrQXVXZEpJaW1Ja2VnRHNneVJVSUlYWEtvekFISDJpTUJjRUtCdlhndEY0d1g4NGhVZzN6S2FCNXhHVTFpWnBaMTlUSQ?oc=5"
     },
     {
@@ -51911,7 +51925,7 @@
     {
       "headline": "China’s AI chip stocks face crucial test as MetaX lock-up period expires",
       "summary": "",
-      "source": "scmp.com",
+      "source": "South China Morning Post",
       "date": "2026-09-16T12:25:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcXoybUdVWGZoY2RXRVN6TUNpSjRVVHNmcWZTOFZvUFNBNmZQb3N6cEw5bmpXeUlid1g0Y2NWVzNGaGtjaTdwU3MxYnJCb2J4eTVfSjJXTnBId0dyR1pKZkUzNkxaTmJwc1VTZmk4dmpDZVN6ZzNxNnE2Qm83TkVVUDVycVpxOHYybVZWYjFmcWt0cHQzZ2ZvZTRGajdNVE1YNDR5OWdPM3RKMDJrU0FISkJPR1JweHlEQ1c00gG7AUFVX3lxTE83QXdBbXlqdmdDc3BoQk9WejlaOUNXeEstMWc3MzNPQWs1b1prTmNaUGxNaHFMREdWbExURWN1OEVrZHZvQ1lVcVdITG9Oa2RMX1hYdGNCOTgwVXB2UlBNS0l5Tks0bnZHM2YxalpwTFZjU0J0LVdPNHZwcHEwTzhaZ3dmbjFEemszbFRibXVrdHBMNTA0QXd6Y2I3TV9teXAzWDlCWEFBc24wX2dzc0lybXFqdkEwMG05cjg?oc=5"
     },
@@ -51937,13 +51951,6 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWnNydV9PM1MtdHQtSWJYQ1ZmUVNHY0o4cjBkSHNPbEdGdUN4V0V5M3pkRjBqdEphdUhlUzRnM1Y4aXROOGN4Z2VRZm5jMDJfOXg5Y1hZeThCNU5welJRX3JpR0NsWHZoOXg1aC0tZ05hdS1YMExVYTEyYmJQbHpweTdnLXlqMFdlbzJIaHpUdjFwOGl4NUFtQzZ0WDZ3dzVUTFRrdjdBQ21tNFFfdHc?oc=5"
     },
     {
-      "headline": "China Could Curb Fuel Exports as Diesel and Gasoline Stocks Sink",
-      "summary": "",
-      "source": "oilprice.com",
-      "date": "2026-09-16T05:45:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVVQ1Y0NlZ0R6VXZKbW54bjVwWGhWRWUwU3BtWE94M0JSZ1ZXVHJXV3RTd093eG9wZzdJSU92X3hIcEJKUnhmZXlzdEZoZWNUOU12T19EVlZhcFNRQzYtaTQ5Wk9tWUV0dzBOWU1YZkg1ZmtNaDdEbk54Ql95S0NvNUN6THc5N01OTFlUdFNkbWJuQkxrMFZFRjYzZzF1Rml5XzRVZkFnVUluMFFnNVNRb2VPbTRUT1hJN0d4ZdIBwgFBVV95cUxONHBRNlNNRUIteG9EdngzNk5uRjRYbUdCaWNoaVFQWnVrMU9qQS1lXy1wbFlfWmd6UF9ET0FIUDNXN0x1a2hLUVJvYmVmT1BfMW1RWWJOTHIxVFEyam1iTVd4eGhzUnktaVJQdDFweWRaY1BUVVNsaGR2cFFyU0ZhM1h1Tm5QRzJ0eFMtbkNaeTQ4T3pQVTRubTI2SnZGN0J5R0N2ZDFzS0ZJX3NGb2FrQ2YtVlRMdlNLWko1WXhXMXhhdw?oc=5"
-    },
-    {
       "headline": "ICE death, strikes on China proposed over AI, Huawei on trial: 7 US-China relations reads",
       "summary": "We have selected seven of the most interesting and important news stories covering US-China relations from the past few weeks. If you would like to see more of our reporting, please consider subscribing.\n1. Another Chine",
       "source": "South China Morning Post",
@@ -51951,18 +51958,18 @@
       "url": "https://www.scmp.com/news/china/diplomacy/article/3367373/ice-death-strikes-china-proposed-over-ai-huawei-trial-7-us-china-relations-reads?utm_source=rss_feed"
     },
     {
-      "headline": "Pressure on China’s economy persists in August as investment, consumption slow",
-      "summary": "",
-      "source": "scmp.com",
-      "date": "2026-09-15T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLVpwZlNGQm03TzFaWEVSTTNZY3BRUHo0WFFtSDY0Z1M5TXVCbTVNXzd6WUV3d2NNeFdTMnVzVFljTlVPbFctYzEtc2hwX2s0eGtldUg0U2l3alhrd3I5Ri1mem1MdFQtNnJVbVVoM3psUV9Td21XLVV0RENJVGdqbGtFaHYxZzBkUHg4NzU5RFpYZGtRaTZyVEd3QlRkQjl4X2l4aHhNNF9YTHVnZU9LVXVPckdYVmpHSUljQlJMYzFWTlVnRU9NMWxMWThlcWho0gHQAUFVX3lxTE03SEp0UkFRVXpPdVVnSzhqRHNGdnJrZEFlYWRERlFFOGRUcDh5S3Y1eTJUUDZZTVluMTZVUGlKMWY2UjRwaC1nVkRsWDlpN2xiWnJRek9kaVFMVk5oMmZfLV9HeFJhVlVXVExCSi0tcGpBSjFTd1hza25OWmowN1dGbmR6aGhpQk9WbjhNLXhzTEQ3ZW45d0IzRkpzdllzS3g5SF9BQk5FRTIwRUJqR2NoMUQ3V3NYSHR3UGoxMHdFYnJQM3ZDRks1dzBqcTlnWUk?oc=5"
-    },
-    {
       "headline": "Chinese economy shows uneven growth amid weak demand, investments",
       "summary": "",
       "source": "Yahoo Finance",
       "date": "2026-09-15T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUE9PUm1hSTVoTGFfM1MyQzlfVm1hQW5jWFRISlY3enMwSlVmdUdDc25NZnd6aGNBc2RLR2hWLWp6TllXdGdiOE5WTDhXYlVyVWhxMVBseUwwN25lSXpvU3VxT1lVRkVvUmUzbzFnaGp2V0lMOGpCa0cyWFlLNG9DNTNRYnR4ZDFlSk5LNGNFd2NfLUZOR1FQTg?oc=5"
+    },
+    {
+      "headline": "Pressure on China’s economy persists in August as investment, consumption slow",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-09-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLVpwZlNGQm03TzFaWEVSTTNZY3BRUHo0WFFtSDY0Z1M5TXVCbTVNXzd6WUV3d2NNeFdTMnVzVFljTlVPbFctYzEtc2hwX2s0eGtldUg0U2l3alhrd3I5Ri1mem1MdFQtNnJVbVVoM3psUV9Td21XLVV0RENJVGdqbGtFaHYxZzBkUHg4NzU5RFpYZGtRaTZyVEd3QlRkQjl4X2l4aHhNNF9YTHVnZU9LVXVPckdYVmpHSUljQlJMYzFWTlVnRU9NMWxMWThlcWho0gHQAUFVX3lxTE03SEp0UkFRVXpPdVVnSzhqRHNGdnJrZEFlYWRERlFFOGRUcDh5S3Y1eTJUUDZZTVluMTZVUGlKMWY2UjRwaC1nVkRsWDlpN2xiWnJRek9kaVFMVk5oMmZfLV9HeFJhVlVXVExCSi0tcGpBSjFTd1hza25OWmowN1dGbmR6aGhpQk9WbjhNLXhzTEQ3ZW45d0IzRkpzdllzS3g5SF9BQk5FRTIwRUJqR2NoMUQ3V3NYSHR3UGoxMHdFYnJQM3ZDRks1dzBqcTlnWUk?oc=5"
     },
     {
       "headline": "Watch How AI is Transforming China's Economy",
@@ -51995,16 +52002,9 @@
     {
       "headline": "Weak Domestic Demand Continues to Weigh on Chinese Economic Activity",
       "summary": "",
-      "source": "wsj.com",
+      "source": "WSJ",
       "date": "2026-09-14T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZFZ0S1FwUm5mUVk5elk3QVQ1RU1kbEVUaUswaW52OTJ2SkhXazV6c0ZGQm1WQUhpMzc4ZndPMkF3a3dkMGhzWF9VNTJiRzZMUWd5Q3RJOUpzcHJwQUZGX001ZWtCSFpZbTRlVzF3YnRiV2JhQ0FiNVBhb09aaHFmbUFvc05HSVRGSS0tX3JZTU9PRjZJbnZMaHVSTFNVMFhzZDRLRG9VSjM?oc=5"
-    },
-    {
-      "headline": "Three African economies show how China’s slowdown is reshaping trade",
-      "summary": "",
-      "source": "atlanticcouncil.org",
-      "date": "2026-09-14T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQd1VsQmtSZklOLXVYRTNIbUlnT2hPTzhraVdFVlNzTF9UeDNUUFFBOXRPU1dYX0c4WjdXdWdybGRCQm5UMnVFamptYjdISXpDdVY3ZHgyN3VTSmhYd1ExXzgyZzZaQlowQTRUM2VqbVlpUGt3dW9Rcm1XMHNGUDRObkR3c29oUC15endSaWxmV2NMYlZTQzRjRUQyRUlucFVINEM3d2hSbEFBb1J4QUZvdQ?oc=5"
     },
     {
       "headline": "China home prices remain weak, keeping pressure on economy",
@@ -52014,18 +52014,18 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcGVGbm1FNVp4X05pbzk5VGpGbDhqemRKZm1ubGpiSDVuT0RQbWFDSU1kZXV3NlhaTDc2c3lKUFFJdXN1M0d2R2FIeVBEdWNyX1dYTGJrVjZ1LU5ZZnY4ZXMwRVRvMXkzY1hGcUF0andzLXN4cG92VTdrdG9uMWhhT0tUbXNBTHRCdFB1LU1oMnpUTXlIMFZHUElPeUhMbzBT?oc=5"
     },
     {
+      "headline": "Three African economies show how China’s slowdown is reshaping trade",
+      "summary": "",
+      "source": "Atlantic Council",
+      "date": "2026-09-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQd1VsQmtSZklOLXVYRTNIbUlnT2hPTzhraVdFVlNzTF9UeDNUUFFBOXRPU1dYX0c4WjdXdWdybGRCQm5UMnVFamptYjdISXpDdVY3ZHgyN3VTSmhYd1ExXzgyZzZaQlowQTRUM2VqbVlpUGt3dW9Rcm1XMHNGUDRObkR3c29oUC15endSaWxmV2NMYlZTQzRjRUQyRUlucFVINEM3d2hSbEFBb1J4QUZvdQ?oc=5"
+    },
+    {
       "headline": "China says AI CEOs' call for a slowdown is 'fear mongering'",
       "summary": "",
       "source": "CNBC",
       "date": "2026-09-14T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBwRkFLWmM4WktDc1AwSzhzZXNGQUVSWkRseHpXMW9EY3JFWTJwaGtiVkx0UWhhUmRVUEpFaWxKOGJaeHhPV2tlcFF3OUpSMC1DTmdSbHU5WkplMWFFdzhJQk5tdDZ5Q1hxMDgtSDA3UlVhMUlBUUHSAXtBVV95cUxObC1qcTY0aFdYUXJPNEdtUEt0bU15STYtcmRsTEpHY19uNGxuY0hXejZhdW82bFRQbXRHei0yZlgwTTBqZWItTGJCV010dVg3SmNGV2w4ZmdubndITTBLbi1Bb2ZwSEhzamEwX0lxbWRLNjBuVWk4NE53RjA?oc=5"
-    },
-    {
-      "headline": "Shares Climb As China Pharma Services Billionaire Faces Fine",
-      "summary": "",
-      "source": "Forbes",
-      "date": "2026-09-14T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbktfUXl2dEZXNU00YzZ4dTU3bTdSaElnZS1sMGIybkJpdGlzbEtWbUl5S19uTVByWTFJc2JTNTNMTlhJWGRVZl9nbnJ5Z01XdWYtUVAwT2tlaXE2UXpQSGVPems2Z29jQ09heGtzYkxyX2MwdnJoWE9UQUN5WURDd3M3Vml1YUp5RXozaVV3WE04VVFXRzZnTmtrb19vUmVzODQ5dDcySzloVWRHNjE1S2tPNWNOaTJ0MDZ3?oc=5"
     },
     {
       "headline": "Beijing puts a total ban on drones in update to regulations after deadly tower crash",
@@ -52058,9 +52058,16 @@
     {
       "headline": "India Wants to Buy Fewer Chinese Imports, but Keeps Needing More",
       "summary": "",
-      "source": "The New York Times",
+      "source": "nytimes.com",
       "date": "2026-09-12T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1tVk4yX1lwOXBBZ2o1ZHE5N0JJVXdxRWllZU5peVF5dklheHhwNGw0UGxhNmZzRXpxNnBaeG9SS0xjOWFiQUNJa2pmeFpEeUVLVElQeS1DYkJ0ZjBCWGxZNEVNMnBVeGdzOTNzZXR3dHNGallZ?oc=5"
+    },
+    {
+      "headline": "AI tools are making ‘experts’ out of stock traders in mainland China, Hong Kong",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-09-12T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdGwzYjhERTl4eVJhekE3c1UyOVViRFZxQ3plYVNyeXFpcHVhaXhnemVlYzVLMW5VdjAzemdKU19tUHA3bkNoNXhhMFZYRVR0Vk5UUHNFMzFEdkZ4NzRXQU45cFBhM0FFV0pfakpFOTVpUjlJRGdYNnNra3FCWlNpV2w5M0JucmpfLWNDMWtRRV91VkZ4SjhBdXpYaV8zQmFwUzViV3lRR2ZpaDBGUHlVMlpKYWJOMXdEZ282b014ZmpKbFhieFHSAcYBQVVfeXFMT0VhZkg2by1Ibk94SnhPaGpYVGdyekdtV1NLMjloc3ZNbTFqdHE2dEpVU2NjYks0bkdwc08tNno1OXRjU2V0cTNyLXhoVkEtejRreVRhUUNqUk9ONTlRSTI5b3FLQ2FfZWZybmlONnd2dmhSVTRfbVJyODhyaXZXR21MUVg3VFZva0JkYllGbldLZHF3cElZX3dRbmllamVmX3Y5di1KM0p5ZXQ3R2pZVklaWFVLcGxXSWZiZmFUVWRESF9HYWJR?oc=5"
     },
     {
       "headline": "Xi in India, bank capital injections, EU-China trade",
@@ -52077,6 +52084,13 @@
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR081RDJlWHNpY2FJYmlUSUhlNEV5V29LRXUzbDZ2b2FPelVCdC1CNHJsUlJSaEk0dDJRZTgweHhvN1FMb1BhRGdHV1QzaU5YMl9ZbFBYSEZGRmdsTGNGd2tYM2dPQ1MtbWFpLWt2LVVqenRsc2VucUhaR040dXJLeUZINzZiX01DWTBBdg?oc=5"
     },
     {
+      "headline": "Chinese AI Stocks Have Been On a Tear—Why US Investors Have Been Left Out so Far",
+      "summary": "",
+      "source": "Morningstar",
+      "date": "2026-09-11T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYkdnd3ZPbEdBMTZoUkZ1TmpWdjhqZnRLWGJxX3JucnFLSUxhMUpaMnhhcVF2ejNOSFg4WjMtTDJWMlczVWJkV0xXajZkd1pzLW5WZmVXRzlMcmVKVE9zRnpCOEI3U193Mk9lRGhTZDdPLWNOb3Fwc2FpLVZjRnlESFhHNFpZVDY3Z1BDQnNGc1FGdHNudzVOM2RVUnVYLVJ4aFpGbVp5MlRKWmp3Zmdn?oc=5"
+    },
+    {
       "headline": "Trump threatens Taiwan’s representative office, sparking debate over island’s US policy",
       "summary": "Taiwan’s representative office is among a list of entities US President Donald Trump has threatened to sue as part of his crusade against a progressive American think tank, triggering debate about the island’s US policy ",
       "source": "South China Morning Post",
@@ -52086,7 +52100,7 @@
     {
       "headline": "China says yuan’s global rise is ‘irreversible’ – and has a plan to back it up",
       "summary": "",
-      "source": "scmp.com",
+      "source": "South China Morning Post",
       "date": "2026-09-10T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdXdubjVfNjZpOUNCeGstNENDWkRiRDdEaUgwWTZPYWNOc29fclpSWmZobjRDLWNvQmVIQnNpYTNMaHN1c3lTdWhjT1g1Tlh4UUhUOXNyV1NRWVZIcVItNndpYkFuUEM3R1VLVlRhTm1MQ3VMNko1M25LclI3cnYzUkZtM1RYcnpUN2lBbDZXNlZTTlpieUpaS0REckdIb3B0cDNEejlaTjV0RHlVN2U4c1N4WGhrZGpWSDJwZUJEV3pjTmvSAcMBQVVfeXFMTml3eDRWRE9XMl84YUdkWWJJM2h1OG0yQ2FZQmE0d1NZdFl4eUNKQUt5T0xaOGt0Q2VzZEFyWUhrMkxZcW56U0kxWTVIRHVHdlNpVm1MdEE0b0VpNmVJSGN5aS14V3hsQWdaUXNXVmstY3Iza0dXeVBnV1p0T3JVeTlIRVhxaEFLZFZjRXhoWTB0R3UxVU4xRU0xQk0wbFNGeUhvZXJoeElad0ZzYnlyZXltQmhXQnNFeUM4MEs0M3kyRGpj?oc=5"
     },
@@ -52128,23 +52142,16 @@
     {
       "headline": "China’s Trade Surplus Widens as Export Growth Accelerates",
       "summary": "",
-      "source": "wsj.com",
+      "source": "WSJ",
       "date": "2026-09-08T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZzlXWTJCbHBEV3JlN0ItV0gtX3A0Y2duVkNvdWRfZ1h1bWtMSVhIejE0angwQTV5SUkzV2VXMkNxYjlhLWt5Vk5QbnBlMVpTaHVuTWczel9wd1ZEWFEwTXQzRDBHbHpWelNNNDhKZl84MzlkaGFmanpBQnpOUU85dWR0Y2VIS21DbExiYlBENUV4QXppNmM4amhWaktqa2Z3?oc=5"
     },
     {
       "headline": "The View | To match China’s economy, India must accept its investment",
       "summary": "",
-      "source": "scmp.com",
+      "source": "South China Morning Post",
       "date": "2026-09-08T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaTJqcGs0Mm9hZWpjUmsxRndmTFA2T0d1RnF1TzBOc3hNaVBHRzZkczVNVEpLdnlJWHJzQXRVLVBjanE4Nmxlbjc3T1EtcEVDMGdXeHJEcXdaa3J4WFlkOUlXeGlSR0o4dlhPUHZNNDRPZVlXWXBlUmpoUkNIRzFKSXg4UjZOUWZ5VnFkMWpMeU9qTVZNR3FnbTZjckhranNZWkF5WXVuMG1COFRXMkh1aNIBsAFBVV95cUxQRWU2Yy1BLXd0TjVFTXdFeXBtN1htLWZpWDZqX2JuQmJ3NkozMmFSUVNjZ1hrU1JpaUNvSUNyWHpiZkJfNmsyc0NQbXhBS1V6OHVUWkFTOTZ2eWVpdFZ0Yy1ENW5rT2czVlROcFZIamRvWHpxT0VKS2daVzU5eXFsc2pUTGl1NlJmenpDWHNTZ1Q2N3JhOEQ3aWFVYjNrWmhrSVRPbFdMRkNuVXZVeDFWdA?oc=5"
-    },
-    {
-      "headline": "China’s Surging Exports Loom Over Trump’s Talks With Xi",
-      "summary": "",
-      "source": "The New York Times",
-      "date": "2026-09-08T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUlR4d0EwcFVWcnRtZm83dm1MbF9VLTZaN3ViMXZHNy1yNVFxS1FDRW84X3VBRDlMX3ZsbHdVQ3hCMktqQ2wtOW4wNEVselF1X21LWXFDMHNnZHhMVWdqLWxEUHNrNkR4TEkyNkFuX2ZaUGZqaGFURkhfNmZsRWhMRGsxUQ?oc=5"
     },
     {
       "headline": "China's exports surge as demand for high-tech, AI help prop up economic growth",
@@ -52154,11 +52161,11 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbmQ2cXNneko5R0o0eDZ1MUVmY25oRkhpeVNDUXJFNVdhMDV1eDg1TnFFWjg4Z1pqUk9lYTZoWHUyblNqT1NZRDlhMEFjN2REVm9CWFBhM2hIbkVLd2lOQ1otRUtpNlFLNmkxeEdYUzRVbUs0MGF5R1VfOHZjMkJzUllpODZja01aZWdDM2R4cl82WHZldExHcV9IN2x2S3d5eFZjYmVn?oc=5"
     },
     {
-      "headline": "Should Chinese schools demote English as a core subject?",
-      "summary": "Calls to reduce English’s status as a core subject in China’s education system have resurfaced after an internet-famous maths teacher urged the country to end “worshipping foreign things”.\nThe controversy has revived a l",
-      "source": "South China Morning Post",
-      "date": "2026-09-08T01:00:12+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3366668/should-chinese-schools-demote-english-core-subject-discuss?utm_source=rss_feed"
+      "headline": "China’s Surging Exports Loom Over Trump’s Talks With Xi",
+      "summary": "",
+      "source": "nytimes.com",
+      "date": "2026-09-08T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUlR4d0EwcFVWcnRtZm83dm1MbF9VLTZaN3ViMXZHNy1yNVFxS1FDRW84X3VBRDlMX3ZsbHdVQ3hCMktqQ2wtOW4wNEVselF1X21LWXFDMHNnZHhMVWdqLWxEUHNrNkR4TEkyNkFuX2ZaUGZqaGFURkhfNmZsRWhMRGsxUQ?oc=5"
     },
     {
       "headline": "China's imports in August miss estimates as calls for rebalancing trade grow",
@@ -52212,7 +52219,7 @@
     {
       "headline": "China to speed up bond issuance after national meeting on investment: analysts",
       "summary": "",
-      "source": "scmp.com",
+      "source": "South China Morning Post",
       "date": "2026-08-31T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcmoxa0RHOXFrRzJvMk0zUVdOUGZqekwwaGNLLW9RbjNCcl8zZEJEZ0IteVpvQWJoRkR0ZW4zbklmQkZWcE5KNXFGVDhBV0QwR1RiTWhHUGZNRFg4aThfTkpwenpYWkFrUHhhZ0h0VmxBOGJqdWpLeTVLYWNqNk5MS0ZKSnR0NXV1NGNvXzh3VXA0dzZFUjFSOGgwM1E5aXNzN0hYc0paTjljc2xralA2Q0pIRVZqbjJGaWljMmZsSDdhTEF4QWZKSHFHRDY1QjFWUjd5T3NB0gHWAUFVX3lxTE1XODc0U2puczlUeENiNWZuaTlHblZXcFlJME1jd2g1a18xTFdBZFQ4RWhYVjg3cnMwWE44VW9yaGU3RDl3ZWZfUHZ6WG1xZEZBTjcycXB2TGpFUW1za3JtRkdkaW52V2MydzlTYW9PeDk2VGNIOHRFYjF4cUUxelBfcWVxMURKbXIwSS1iVF9weExmUUpiQ3ZEYUVTOFlEbllOaTFfUEJ5emxZcGJPSS1VcE4zQWFQWWQ0RUQ5M0FjU3RpSTBaVEZOcWVvV3JnTlZqU0FKdnc?oc=5"
     },
@@ -52233,14 +52240,14 @@
     {
       "headline": "Why China’s export-maximizing strategy is working—for now",
       "summary": "",
-      "source": "atlanticcouncil.org",
+      "source": "Atlantic Council",
       "date": "2026-08-28T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdTVycjRpeUoyUHk4ZGx5cDhHNXJyRTUwenJWWVI5OFlKdmlZeTVqS0piUFJOMU5zLV9pUFFjbXlZZ25xaHJialVYTE9yQ3B5RVBhcmJMbHdGVHpsYzNVdXB1TlR6a2wzenUwV0VGc1VpLUZJZWdnUWp1WXZZbHNNTVQ5clpUMjhGN3RHR1hlbWhPNmltY3FfNlBMZ19kZlB3VXc?oc=5"
     },
     {
       "headline": "Vice-Premier Ding signals fiscal reform to ease pressure on local governments",
       "summary": "",
-      "source": "scmp.com",
+      "source": "South China Morning Post",
       "date": "2026-08-27T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNc1dUcTRDb1Jld2NRU3MyWWFRUTdXczVUdkVFbEJxeGlWN1czdjlzZzhkamY2bGRQQkI1NEt0ZXE0NEQ4OVJHRldMTWY0MDNqRkkxMjZWcC14dXhTd01feGpYS25aOEdHTW9TVEo3ZDZtQ0thSEJlYXE0MElza2l2eElWcWt5Ul9xTUNlNWxyUDlQSWhXOXY2R1hCVDQ3Uy0yT3VMdFMwb3ltLVdoTFFXZTc1WDJvYjRCaGUxTEFhRktNUFNPa3N2QmlmRVRfRl9CV2ZCTGNKT3pDVnJzb3fSAd4BQVVfeXFMTXp3c0Q3dVBpZFhtd3B5aS16SG50MGpTQlpNZDFkMElXXzZLcjF4Q0hmVURLR0otZkl3ZElHTmJ3a3dUMWhYU0E2ck5hMlpOLXJlQUhPX0xOcWRQcmpSZE9zTXV1S1ZqOVh6VXFFV2FNeFlwMnAyN2pOeVNTd3pfZ2JRMTJhalRfbmYyRDQydkNjQmhQeHIwNUpGX0pZQWs0bXJwWWNNbXNZdGVGNHM2ZmdLVnhsY3BnQ1hLVlpSekFfN2pWaFhmLXA3S1VXRHp3TTZDdG03Y1d2dkk1aG1n?oc=5"
     }
