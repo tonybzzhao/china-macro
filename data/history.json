@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-03T18:01:25.745991+00:00",
+    "last_updated": "2026-10-03T21:24:28.814280+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51716,7 +51716,7 @@
     {
       "headline": "China-EU talks in Beijing will seek to head off a trade conflict",
       "summary": "",
-      "source": "csmonitor.com",
+      "source": "Christian Science Monitor - CSMonitor.com",
       "date": "2026-09-30T04:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbEEyUVlrdFpGWEFsY0U1QUNOc19WdnV4Wjd0MFVuZjgxZXFKTmNUSTh0MHVTOGh5SC1UZXAwSlNFSkY0WVJDRVBWbEVWTm1uVldYdVk1NUNFa09Ld0pKY0I5VmtpOFBfWVBvQ1hlakpxZ0QyeDF2YVpSUDdCeTNZek5SRkR1R1lTZDBpOHowNUFGLTVtYVRlR3hqSDRrU2c?oc=5"
     },
@@ -51777,6 +51777,13 @@
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaTBqVzRGcGNNZ2M5YWVLbUQxanlOVWhxYU5lWjNuYzJSWmtHV2lQTWdSUXlpTGM3M1UzU2JUckNLUGxIc3dFVWx5WlExNnotSmtQblE4UnM0Sk1OVnQycjVkR0ozUlpzMW5MMExHNll4NDR2dXpfWTNCMVpQT0docjI1SHFDeFdwYnZGVlVocXhzTy10WWViRk54VklyNzNiRFczXy04aURCdVdmSEdNbjNrRHpXNXM5LWRCZzJQajZVMVBx?oc=5"
     },
     {
+      "headline": "US-China trade board carves path for tariff relief on $60B of goods",
+      "summary": "",
+      "source": "Supply Chain Dive",
+      "date": "2026-09-28T15:32:17+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcm44SGhvVGQ5Z3p3aU01dmlMLWx3OG9rZXQ2QVVTbFNoVGdIOUtzTUo3T3FXRmlMa3prMldBd25Ralc5aXlJbnd5RndORFlKRXZNMFMzY1R4aTVpR0tNQTdaVlJoSkh6TnRFRkhCcDNlelRxdnFCX1V6ZzNMTi1ONWEyTGxwTDdkcWkxd080MHloN1Q5dy16ZVJRUXpzQW1wNm03ak5sRTJIR2lOdzNXMw?oc=5"
+    },
+    {
       "headline": "Xi Jinping demands ‘safer’ China as Communist Party prepares for leadership reshuffle",
       "summary": "President Xi Jinping has ordered China’s security and legal apparatus to relentlessly eliminate risks and build a “safer” country a year ahead of the pivotal 21st Communist Party congress, which will usher in a major lea",
       "source": "South China Morning Post",
@@ -51805,17 +51812,10 @@
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMHBfVWJGX0VHbzY5bHVYUm1jMlhKa2p6eFRMRk9EajVuQTIxbjdQLWRrVDYyNlpGVVktd2NNbG9GOFdpQWtPWmF5MkRRMEFQdmthbHZ0WlZLTXY1YlpvSlhtZHVldVRlbUp6ajQ1eG9GSjc4T2FwUVNma0FiSmZtMERmTWRPaEVFSkk3VHNQeVgxNEhBOXhFb3p2WExjN0x1RnZBMkhqTEtmNnlvVXhCeGxmbWdDOVVpd3FzMjdpbmNkM25abXpPSUZBc05hMmPSAc8BQVVfeXFMUERfbktFUTZxZWgySzhHaEtsYnc4Z3VuRFBHTG9KcnNLN1V4RHcxZDZzejNRMTFCR2dybVJjUEtzT2c1Q0pnRy1hR1dFcFJfcDl2OHhLTWFlYUxIblpFNUZFRzdNMU40Ri1sZlU2RGh3RFE0SE94UTl4MlZpNFJvN0FmbDFBM2NyQzJvQTIzOVNia1JWcHlBUHkwWTJESWNWTXE2cEJzd3hoWmZreC00cFNpRnoyNHRPbjhGVUlWTFc0bkt2Z0JFZ1BwenRUbmNN?oc=5"
     },
     {
-      "headline": "US, China list goods recommended for tariff cuts following Trump-Xi summit",
-      "summary": "",
-      "source": "Al Jazeera",
-      "date": "2026-09-28T06:51:36+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQelZyZ0FsbXVrSlp3OXZ2ZWlFZHpINVdwdVJwYmc1NTN0bGZ5NXJxQTZOYm5lbzBSSXJmU2ItbmJYX1Z2ay1wZHBVM3dENDBkWWRVcEtEakNjTkYwckVYMWJXeC04SURqQ2NCTTJrQ0UxOUIwRGp3RjZHTTI5bXlmd0kxME4wVGZrNV9Bekx2TVh5RnB6Y29iSWFIamlOUmFvTHhLOHVRSE1TQWxoLXhHcGdlYk9FNm050gG-AUFVX3lxTE9xRGdhcFMtb0lJQmkwbm9HWW5kUmIzdGxEeU1WTjVXbWZwcHoxd2JzWHpZT0s0c2p3NFBQdENpckwxME92OW5IZ3Z2ZW9kaXZQMm1QU1RYSmVLZTE0TUF2aGt5UHNuLVN0Zmd1dDRDWVgxTURYS2NjZlRMMFAzM2NnSjVWNlFKYXBBTS1GaEFVMTFaTzFtZ0hIOHhFbVJZa3VvREtEbTBjal9xcGZKUmdqZHJMY0dub3BwVFh6OHc?oc=5"
-    },
-    {
       "headline": "China chipmaking stocks tumble as Beijing reportedly mulls allowing Nvidia sales",
       "summary": "",
       "source": "Yahoo Finance",
-      "date": "2026-09-28T06:22:00+00:00",
+      "date": "2026-09-28T06:22:28+00:00",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWldkSHZoaUVhUXZRZUdERm1TanBaLWhjbV8yWTZFVFVNNmtwVU93ZTkyWENJQzV4cW9KODRkRW1hY2hLYmhPNS11VjU0bXRyMWFDNUF4Yk1TZWhCcC1fbzA5V0xuSktMdFlhYzBUelZEU2ZCLXJVdVBHWDMyRVktNVNsdDVobzFwazdHSjd1Xzk2NjlpVmNINEVSTV9tVVlQalBkVV9n?oc=5"
     },
     {
@@ -51952,6 +51952,13 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQkRMSWpwREpHeExsMUpFV0JZaW9TMXhZcndwR29xRV83TzJheXJFMXZBTkVST3M0cjV5MVhsOW9wLVhrMWg0YkpDYnhTczFaVWo0bjVOQWtyVFJFQzhiQzljRy0waFlPd1dieF9INk44b3ZQZ0dxZlE4WDRMTzc5SDFHTEhOenNTVG5EZVFJWV9GVTFfRkRtSG1PMUVqZFBOdXdubUJXNXhkT3lVcEduMVhucTJGenIzSzc1dGhOa9IBxAFBVV95cUxPRXFXWXR5dUlwMTlBSUtRdmRXYVBwN09XeGtJN3lkSFVIc212X2F0aFdTbnJDcWR0OVhjUnN0aVFodHdsdmFwTkhYZUR4c29jRk5zU0VNb204cUNDLUdhRHh5RkROTjFoZlV4Z0J6cm1sMnZReTJfYUd1S2NFQWpWNVY3eTBFaEYxblk0M2pYMTVKWGZfSk1TNFFyNk93dGdMMG1ZanFIWUxpZFRYaTRaWlhiOGlNdThaa1R1N3lsRElaQ1Z1?oc=5"
     },
     {
+      "headline": "China and the EU: the imminent choice between a trade deal and a trade war",
+      "summary": "",
+      "source": "Friends of Europe",
+      "date": "2026-09-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRWVWYjRYYkJMM0lIYWozV2R6THNHLUVrYVJZY1BXUDJzNU42bzlnakxST0hHd2NjWnpFLUJsa21KUUlhVF9GSFc2dU5HR3dlRmYtLWV5LXlaZmhGd3ZIMzVKRXRyQjBQN3QyNEZZeU9zdWlvUHA4amRkMU92dloweTVnX1dCRS1yMGNFaE1sSW1GQjVWSC1XRjJXT2ZpWGRvRGY0QXFWVkFNelF3d0o4Q2xxc3haeVFQdFBrWHNUR3Exc3hneENjNktZZ214Zw?oc=5"
+    },
+    {
       "headline": "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports",
       "summary": "",
       "source": "Yahoo Finance",
@@ -52052,7 +52059,7 @@
     {
       "headline": "Perception Matters: Evidence from Cross-Language Media on the Chinese Economy",
       "summary": "",
-      "source": "Boston University",
+      "source": "bu.edu",
       "date": "2026-09-22T16:08:21+00:00",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcE1iOUhPcTUwdndrc0ttYzI1QmUteXNLaFd4TERuVGE0RkhPQW9IaFJjbm5wR3ZYWVpuSUY2bE1XR05UQUNFWlVaa3lGdFUydWs2MWMzajZZUXVZYkRISV9nT1pfWjZfUk1CYnBvZklwcGZUb29zNS1kUlZVSzRmRXI4YVlwaWNfdUZEOGZ2N2lPWUhPdEFWdVZuZ3dNb2ZRREV1OWVvbHN1ZHUwWk4xNg?oc=5"
     },
@@ -52241,7 +52248,7 @@
     {
       "headline": "Our economic outlook for China",
       "summary": "",
-      "source": "corporate.vanguard.com",
+      "source": "Vanguard Corporate",
       "date": "2026-09-11T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR081RDJlWHNpY2FJYmlUSUhlNEV5V29LRXUzbDZ2b2FPelVCdC1CNHJsUlJSaEk0dDJRZTgweHhvN1FMb1BhRGdHV1QzaU5YMl9ZbFBYSEZGRmdsTGNGd2tYM2dPQ1MtbWFpLWt2LVVqenRsc2VucUhaR040dXJLeUZINzZiX01DWTBBdg?oc=5"
     },
