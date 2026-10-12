@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-12T06:07:24.126826+00:00",
+    "last_updated": "2026-10-12T15:38:04.127028+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -50139,6 +50139,10 @@
             {
               "date": "2026-10-09",
               "value": 6.6921
+            },
+            {
+              "date": "2026-10-12",
+              "value": 6.6928
             }
           ],
           "desc": "How many yuan it takes to buy one US dollar; a rising number means the yuan is weakening."
@@ -51626,6 +51630,20 @@
   },
   "news": [
     {
+      "headline": "How China harnesses AI microdramas to shape public opinion at home and abroad",
+      "summary": "Beijing is rapidly scaling up the use of artificial intelligence (AI) to produce short-form videos and microdramas in its publicity campaigns, aligning with directives stressing technology’s role in strengthening ideolog",
+      "source": "South China Morning Post",
+      "date": "2026-10-12T08:03:06+00:00",
+      "url": "https://www.scmp.com/news/china/politics/article/3370547/how-china-harnesses-ai-microdramas-shape-public-opinion-home-and-abroad?utm_source=rss_feed"
+    },
+    {
+      "headline": "China details outcome of EU trade talks on hybrid, electric vehicles",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-10-12T05:42:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRzNFMkF5b0ZQUnNpMlJlTE82NkZrRUJiTXNreWtQbi1wOHZ2ZC1aOE5GVkhZcDNmd1pBREFLb1I2MjBlVW9ncFhpd1oyaXhDbVdMUEUtbkE1WmtXQUtpa1NtTEJOb3NQcVBkc1lldUMwaUdUU01WLTg3MS1QVUtGcF9lVDRtNTBTOHVBX2JMZnJUVUNPWnRXb21heklpNEFS?oc=5"
+    },
+    {
       "headline": "As AI and the Iran war loom, China’s energy technocrats are on the fast track",
       "summary": "This is a special contribution from the Centre on Contemporary China and the World at the University of Hong Kong. Read the full report at the end of the article. It will be available on the institute website cccw.hku.hk",
       "source": "South China Morning Post",
@@ -51638,6 +51656,20 @@
       "source": "CNBC",
       "date": "2026-10-12T00:51:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5QcHRBWVhFbGkxSy1BdGNNaGktNUZMaEx2TFB1Sm54RkJZbWhxYkJhTl9BeEJ1RC1RaDRMYlN2X25BdGZNN3F2QjlmYmFPR0VjaFlsUXJScnVpcU5VaVZQZmFfMjZ6QVJlamJ4NW41cWYwanJmeG9nMQ?oc=5"
+    },
+    {
+      "headline": "China's debt interest costs are soaring—and growing faster than any other major budget category",
+      "summary": "",
+      "source": "Fortune",
+      "date": "2026-10-11T19:56:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQ1pUVnZtOEcyTjdEcmpYelNDUlVFaU9lZXJwMXFCZjEwbGZxbW5JckpBSnI2M1RYVkhNaUo4c0w2ajY4MkwwS0V1QVA0NkpJcExRN2FmUnBBUW9WamhsQlJJbE9uZ0Y1YTIzSTIyYUJmakFlWXFFOEx0Z253emJwVFUweGZEbmtMc2lBb2xwR2ZsczN0bDNKZ1JRWkZFcmlGZlZXS0NHeFhLNnNPbU1kM0RVTQ?oc=5"
+    },
+    {
+      "headline": "This Chinese memory chip maker has global potential and is poised to outperform",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-10-11T11:39:38+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOY0hsOC11TmNEV1g0ZzNLNW1aN3VPY2VUc3FKYXhvRE5vcTRoV3piLUgyX19jTV94ZVpYOGtRaDJ3MERDUVZXMVJGaEJIdXkwdG5BOExyY3d2NmU5Nzc1ZTBKTnRlR0l6d0RwaEFKSXRDMF8xVjdwMkMtcHFxd0dmUXJXRGxGZlRob2V0QkJtYlJlQQ?oc=5"
     },
     {
       "headline": "China’s Zhejiang province calls to limit tech giants’ power over online traffic",
@@ -51659,6 +51691,13 @@
       "source": "South China Morning Post",
       "date": "2026-10-10T02:01:07+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3370417/why-communist-party-boss-had-coffee-shop-date-chinese-content-creators?utm_source=rss_feed"
+    },
+    {
+      "headline": "EU and China strike interim trade deal that could cut Chinese hybrid exports, EU envoy says",
+      "summary": "",
+      "source": "AP",
+      "date": "2026-10-10T01:58:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTm5ZNlVIY2tFZ2M4aFVENmNnVlBPbFJVSkplZ0x1UWZBMjEtQkR0Y0tpYjRJWEVqakZGakpvbDNvTUs5M0ZWZjZKNzQ3bXpyai1NWElyc1lEc0dxTnYzNEZTeGU1QXdIUmZzYVhtRF9IY3ZVN3VDWDk1Nl93ODhGZzdoaElXd0NOOUE?oc=5"
     },
     {
       "headline": "China, EU strike deal to halve Chinese hybrid exports",
@@ -51694,6 +51733,13 @@
       "source": "American Farm Bureau Federation",
       "date": "2026-10-08T15:09:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTEE3ZjhvZEVIWHpxQ1N3UEpFVzFCVGxtQTlrSUZrS3R2X1IxTWRMTWZzYWdweXVuWG9ub3BTR3UyVTVoUnFCXzRvTTdTMlVtWHBmZzNVQndReFpyN0lDSDFVbTFmVUI3dnVGWEM2ZU5UODVoV0oxZW5NV2pJVUZPMA?oc=5"
+    },
+    {
+      "headline": "China defends yuan policy as Europe steps up pressure over trade surplus",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-10-08T11:32:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMndSd19fTHdFQ01xZEp2Vzh5Zlg2M0g3YjhNTFNlZ3M5eUphc3RzNTAxcTh6LXlKSWpVTDI4dl9OR1VTM1pDZVhLa2dGbEZGMEdIVDNnT1hyRjh5WWRVN0xNcjRKVGdyclhndEF5cEo3V3p5aE9PTkdQWktTN1M2S1hRRFRnZ1F0NmYwWEJrUDBEcUZXYXE1ZFpfVEI4aWZqNnpkYTNJQ1FpZ2NpQ2tJR2c0eGFkeTRkenFpZTZYRmI4R292?oc=5"
     },
     {
       "headline": "EU Takes Harder Line on China’s Trade Gap as Talks Kick Off",
@@ -51764,13 +51810,6 @@
       "source": "South China Morning Post",
       "date": "2026-10-06T22:40:48+00:00",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQlRUanV1Zm85cUFuS2U5WmRHZHZNcnZwNy00UTFWYnNLSmZZUzZIcUduOXh2Q0ZKV2xuc0VUS2t3MnU3bjZoY2NLODVpR2JQbGhsZGhoRTN2SWM0Q0s1Mlhia1pTNXFDY0d3aUctUzcxOEZwb1h6eFVKQ1BRbU5ITk9iODV6eVlXVU53TFJPSFhOb2lOWHVhNmFJWXVycUV4LVJpSnJnS214MGdObG94TkFMbjJwbnA0eEtQd3ZIUC0tZlppOWlMRNIByAFBVV95cUxNZnlXM0VYaWtNVC1CcjJULWZzYnRFcTlGMjNCcVFEQVNqa2pfeTdIVUMydjlkaXU4TWFuU2VwUHluWThTSDI2T0FhUVg4ZmFjT0MtZW9JSi0yS3R6Ujc2ZXk3MUJoazktX3hyOGNZY294dERfYVNBVXUySDNiNWQ1YjdWM1BWQnB6QWxHNmZLb0oybGVmZllVcWdJU01jeWF6bFNfel8yS1BaU2VwV1E1QTRjVXdPSk1vVjBfZzZaU2ZNNzI3anVUdQ?oc=5"
-    },
-    {
-      "headline": "China Could Trigger the Next Bitcoin Supercycle: What's Stopping It?",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-10-06T21:12:30+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdHY4RGlzbEU2Q2pQLXh3YTR3UWZSODIwS2pucDJJX0F4Tk1uMWpnVERaTXZfTkE5NjF3NjU0TFlSNXROVWNfOE4tektlZXVMTmtUN1VvT2ZBZU1hV2d3aVpycl9Ob2F4RWQwZWxlMWxycGs5bUNwQzV1MEw0cE9BTjZqcXlKYTBCazRid2I5bGJjN1FITXFOb25mTk0wQQ?oc=5"
     },
     {
       "headline": "The Hidden Policies That Power China’s Export Boom",
@@ -51869,6 +51908,13 @@
       "source": "Reuters",
       "date": "2026-10-01T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOM1hVSHNzaElkOXlpSnE5VW5DTEx5a2Z4WWt3NDFHVTd6TEhKQ3JHeFJhZDBsZXBkYy1MV29ZNjdPTGtHNlpwUEVLNEpBMUowZEItTjBraElOaGQ1U3U4NUxvWnNNM0JWeUlMVllMZkF1aHNKanVkVElwcmctX003R2dja0RsTkNXcEtZaVk5WmYzWW5KWEZpODdwUWxWOWdYYTBqVUF4SUg4ZVduWV9YdFN1RlNyZVExTWV1SGlpTE5nZnpxS3d3SmNIWVE?oc=5"
+    },
+    {
+      "headline": "Oil jumps 4% on reports China halts fuel exports, US troops head to Middle East",
+      "summary": "",
+      "source": "Euronext Markets: Real-time Stock Market Data | live",
+      "date": "2026-10-01T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRklMcGtpdGV1TFF2V19lblNGWG5iS3Z5MElLTnFVZ3FQSC1vd1JmZFIza2VlX1R6OFROZDdlMWRqMVlDTEhDZVpXQ053dWk5X2ozcllTR29jN3QwazBmck9OSUo5dkZQVGpZRXlLNl9CWkJJbFhGUGdjN2EzUl9vZHpTR2M0Mi05dUFoQUlNZEh4ZWVKVlpLZTdfY181OGZFczFxcjdWUmlWWEZyTWZzYVlIeVNkZw?oc=5"
     },
     {
       "headline": "Shows, tours and film as China marks 90 years since the end of the Long March",
@@ -51983,13 +52029,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3369101/xi-jinping-demands-safer-china-communist-party-prepares-leadership-reshuffle?utm_source=rss_feed"
     },
     {
-      "headline": "US-China trade board carves path for tariff relief on $60B of goods",
-      "summary": "",
-      "source": "Supply Chain Dive",
-      "date": "2026-09-28T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcm44SGhvVGQ5Z3p3aU01dmlMLWx3OG9rZXQ2QVVTbFNoVGdIOUtzTUo3T3FXRmlMa3prMldBd25Ralc5aXlJbnd5RndORFlKRXZNMFMzY1R4aTVpR0tNQTdaVlJoSkh6TnRFRkhCcDNlelRxdnFCX1V6ZzNMTi1ONWEyTGxwTDdkcWkxd080MHloN1Q5dy16ZVJRUXpzQW1wNm03ak5sRTJIR2lOdzNXMw?oc=5"
-    },
-    {
       "headline": "China, US pledge tariff cuts on $60 billion of goods including agriculture, toys, toasters",
       "summary": "",
       "source": "Reuters",
@@ -52001,7 +52040,14 @@
       "summary": "",
       "source": "South China Morning Post",
       "date": "2026-09-28T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMHBfVWJGX0VHbzY5bHVYUm1jMlhKa2p6eFRMRk9EajVuQTIxbjdQLWRrVDYyNlpGVVktd2NNbG9GOFdpQWtPWmF5MkRRMEFQdmthbHZ0WlZLTXY1YlpvSlhtZHVldVRlbUp6ajQ1eG9GSjc4T2FwUVNma0FiSmZtMERmTWRPaEVFSkk3VHNQeVgxNEhBOXhFb3p2WExjN0x1RnZBMkhqTEtmNnlvVXhCeGxmbWdDOVVpd3FzMjdpbmNkM25abXpPSUZBc05hMmM?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMHBfVWJGX0VHbzY5bHVYUm1jMlhKa2p6eFRMRk9EajVuQTIxbjdQLWRrVDYyNlpGVVktd2NNbG9GOFdpQWtPWmF5MkRRMEFQdmthbHZ0WlZLTXY1YlpvSlhtZHVldVRlbUp6ajQ1eG9GSjc4T2FwUVNma0FiSmZtMERmTWRPaEVFSkk3VHNQeVgxNEhBOXhFb3p2WExjN0x1RnZBMkhqTEtmNnlvVXhCeGxmbWdDOVVpd3FzMjdpbmNkM25abXpPSUZBc05hMmPSAc8BQVVfeXFMUERfbktFUTZxZWgySzhHaEtsYnc4Z3VuRFBHTG9KcnNLN1V4RHcxZDZzejNRMTFCR2dybVJjUEtzT2c1Q0pnRy1hR1dFcFJfcDl2OHhLTWFlYUxIblpFNUZFRzdNMU40Ri1sZlU2RGh3RFE0SE94UTl4MlZpNFJvN0FmbDFBM2NyQzJvQTIzOVNia1JWcHlBUHkwWTJESWNWTXE2cEJzd3hoWmZreC00cFNpRnoyNHRPbjhGVUlWTFc0bkt2Z0JFZ1BwenRUbmNN?oc=5"
+    },
+    {
+      "headline": "3 Export Stocks Retail Investors May Revisit After The US China Tariff Truce",
+      "summary": "",
+      "source": "Yahoo Finance",
+      "date": "2026-09-28T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVW1XTnktcDd0Tm1vVXRFZW1sOE5xSjQydlhmTEhlRl9raUtlU1JseGFHSmNpSFBVTEF0a0pHUzlzc2VfQl9fUzRhN0c3Ymo0RlRoQ2taSUx2ZnVJWjIxWDVUNVFOZUo4a05DYVlBdl96VTRhTDFYYTR0bFhTMU9RWHJBTWZWYXc3ZWZQNnROVTg2SjdremwxUEFyaW94QQ?oc=5"
     },
     {
       "headline": "China's industrial profit growth slows further as economic imbalances deepen",
@@ -52067,13 +52113,6 @@
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZldHZF9yQXljZXQ2UlBXaHF6cXNEWk9DOWxVZWlvR2pfV2ZvamNzeUtoR1ZOelJ6aE1QbkVHclJVRmZJYXRqOWNkWXNyZ2thQnAxZXpScE5OWThZQWl3Q1JJRlZQaGpiOHRWajdvVUFJbkRPYUtqMFkyS1ZWX1RNUXVNQWNVVnlJd3BMNzRleXB1bkhvSF9JTk1fRDhWTGdmeTRCbjAwT2VwWUd5R3htd25BcHQ?oc=5"
     },
     {
-      "headline": "China Won't Move Chip Stocks Anymore (NASDAQ:SMH)",
-      "summary": "",
-      "source": "Seeking Alpha",
-      "date": "2026-09-26T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWG8yQjlIMktpSVJIVXFrZERiMEFIX29yaTVLYW5JaDlOMHFjOWU4LXh3Q2stTW1qVlpqX2tFWmtTNm1xQVVHY2VuUmZsaVhUNllXRzRZV20tNGRjdWVSbVRmdVQ3T2p0MktXQUpSV3pUb19YRnIyMW1QZGdpdHpZTVh3?oc=5"
-    },
-    {
       "headline": "Trump’s warm welcome for Xi met with caution and uncertainty in Taiwan",
       "summary": "Taiwanese officials and observers have reacted cautiously to the Washington summit between Donald Trump and Xi Jinping, with uncertainty lingering over what the two leaders discussed about the island.\nThe only public men",
       "source": "South China Morning Post",
@@ -52121,20 +52160,6 @@
       "source": "Al Jazeera",
       "date": "2026-09-24T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM0VCRW5zQlc4N1gyV2VWSEFjQm0tMnhRajF3QkFFWENVVGd1T1g0d1FTbmhfRFFYeFo2REhjT3h3RXJOS2g0cU0xeVZfemIzU0p3RDVIanFnMFhrcjRMUTZyRjZzbGpkZlUyYlVyOXM0MTl2cHZYSWlTZlI2STNPZVc2V0Ewa2JzSFJ6dS1qZHU5Q0F4YlhKeTFxemptRFJVZkYtZnduUHlPSXRUY2NZ0gG0AUFVX3lxTFBJTC1fTmZ1cFFSNjBHQjBVd1BCaE1YNFVmRWgtaWE5YjlyYzFKb1o3TzJKcnhtZTBSTDhPTWhkTW5PMURPU1F2X3hXaHUwVlJJSUNGOWhMOXdxLUxoNVczOUg3NXlXeUhoQ3lXRTEzNk1ORFZTcjRaNWZpdlpPcWZJZUdFUkxmbTd6VlFha3ZoX01CX3pYdkFrRUdPQ0gwazBPY3dJU3hWeVpqRW5BQ0Zkb2FVVQ?oc=5"
-    },
-    {
-      "headline": "China confirms first AI talks with U.S. have taken place, hints at trade truce extension",
-      "summary": "",
-      "source": "CNBC",
-      "date": "2026-09-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQkRMSWpwREpHeExsMUpFV0JZaW9TMXhZcndwR29xRV83TzJheXJFMXZBTkVST3M0cjV5MVhsOW9wLVhrMWg0YkpDYnhTczFaVWo0bjVOQWtyVFJFQzhiQzljRy0waFlPd1dieF9INk44b3ZQZ0dxZlE4WDRMTzc5SDFHTEhOenNTVG5EZVFJWV9GVTFfRkRtSG1PMUVqZFBOdXdubUJXNXhkT3lVcEduMVhucTJGenIzSzc1dGhOa9IBxAFBVV95cUxPRXFXWXR5dUlwMTlBSUtRdmRXYVBwN09XeGtJN3lkSFVIc212X2F0aFdTbnJDcWR0OVhjUnN0aVFodHdsdmFwTkhYZUR4c29jRk5zU0VNb204cUNDLUdhRHh5RkROTjFoZlV4Z0J6cm1sMnZReTJfYUd1S2NFQWpWNVY3eTBFaEYxblk0M2pYMTVKWGZfSk1TNFFyNk93dGdMMG1ZanFIWUxpZFRYaTRaWlhiOGlNdThaa1R1N3lsRElaQ1Z1?oc=5"
-    },
-    {
-      "headline": "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-09-24T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVTA3dXk5Z2tIQVhmSmEzbkl3UFlvOXZCTWF5LUh5M3VLazNJak5PazkwdWtXWXNXc3pJTXlFVEZmdUNKTGFTTFMxNEN4cF81WWgzSm1KUUE1RzJnNDh5R0NtOTRjcnQ2OFgxZ0QteEhfQkhqVlpsdHJqYTRWZTdaSGR4aVlrUHBJUUExY3ctUHd2eTlWeGZVNTFCeGFiUQ?oc=5"
     },
     {
       "headline": "Ahead of Xi’s ‘historic milestone’ US visit, a fentanyl goodwill gesture from China",
@@ -52207,20 +52232,6 @@
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQS1rRkRnUUpxampuWC1NRHNoMHMyc1FZRXdJV21nNERlWklxaVVKZXlfa0g2WXI5M1FVSEx0c0xzZ24wbURZTGR4MlhvQlAxMXBkR2hqeEoxWHROUjdlYVhlOXlzSzNkMENSSTBmNFNWaDdQM2lsbndOSVhSVWpJNmJWSQ?oc=5"
     },
     {
-      "headline": "China's fuel inventories hit over decade lows, raising concerns over comeback of export curbs",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-09-23T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY1JINFhpNlRoREQ1VUJrTWpBR0swMVRjM1VxY2NJOGRCNHRPRWUzWU83SHRYb2FIcWR0SjdDOHJZeXBzZ3NsWlNFVUlMUldnS3h2Qm9rZFVlVDdBQWFvSjhtTEpaNXo4S1pOQ1VLbXJTUXBLSHpPaVd2QnRMcDBtajhtMWZmWDZqdzRSR2hnaHZRSzJMTWt3S280LVFSMTlVcHR0Tldrckk1WlczSDdHNklOTjF2dTY2LS1kZ1NYTngtRGp3TGc?oc=5"
-    },
-    {
-      "headline": "What Does China Construction Bank (SEHK:939) Rmb 40 Billion AT1 Issue Change?",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-09-23T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOanpiUFRyMmRUVzFJbGpzeFptSUJ2SldLUTRfZWxLUDVFQkRkN0JDb0trb2dIT3RzNnBSNmtLWnZqODJUM2FYaHM2VC1FMnRXWTJETGxCRlBtbFRsZFBVd2FkTmlqV3N1OTFfaWtPVFVDZm1rNG9fa1BmeEFTWDhzOUNscHAwRzVheldKY2tHZGhuX2ZqdWdhOE1BVmdxc3c?oc=5"
-    },
-    {
       "headline": "China names new Tibet party chief as Communist Party reshuffles regional leadership",
       "summary": "Beijing has appointed a new party chief in Tibet as the Communist Party shuffles regional leaders ahead of its 21st national congress.\nHu Changsheng, 62, will serve as the party secretary of Tibet autonomous region, leav",
       "source": "South China Morning Post",
@@ -52268,6 +52279,13 @@
       "source": "Reuters",
       "date": "2026-09-21T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdDhlbkM4N1NRMjZYdkFnclBwZUlLTWFvelg4dUpkZzVkTnZ5TVJ6Yjl5NUlfQjMtTVdMOEc3ZUdzaHpLNjZrcUk0Y3JMNXdfVmh3VnZjdkN5cTJoZXJGNDJ6ZkoteGhiU3huNnVTa0p4VXpZcU9LVTRMLTVJREYyQ3VBTEtlYWVxLTgwNzdnSkFkcjZpaFZZZXBpclVpazhrbkJFdG1zTEVsaGZPLXV6d3NSdk03amxqRHNMTDdnUFQ?oc=5"
+    },
+    {
+      "headline": "Watch Stocks Climb on US-China Optimism, Copper's AI Bppm",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-09-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObWMwQVlhM3FvNy1Wc3didVZLRklPd2xhbGxZNEVFWXZtSWdzQ2tFTUM0Y2JwMTlGWm1UblEyNlUxd1MtR1N2dVJfYWUycmp6R2JKR1EtdG1RczEtTXh5bUl3b0ZMYm1rSzFSblpfWEhXbG1IZVZNQUJXQ083RHZXUTVzY3M?oc=5"
     },
     {
       "headline": "Communist Party sets October plenum date as Xi prepares for Trump summit",
@@ -52900,28 +52918,12 @@
   ],
   "upcoming_releases": [
     {
-      "date": "2026-10-12",
+      "date": "2026-10-13",
       "time": "16:00",
       "event": "中国9月M1货币供应年率(%)",
       "consensus": null,
       "previous": 4.1,
       "series_key": "m1_growth"
-    },
-    {
-      "date": "2026-10-12",
-      "time": "16:00",
-      "event": "中国9月M2货币供应年率(%)",
-      "consensus": 7.4,
-      "previous": 7.5,
-      "series_key": "m2_growth"
-    },
-    {
-      "date": "2026-10-12",
-      "time": "16:00",
-      "event": "中国9月社会融资规模-年初至今(亿元)",
-      "consensus": null,
-      "previous": 239100.0,
-      "series_key": "tsf_flow"
     },
     {
       "date": "2026-10-14",
@@ -52943,7 +52945,7 @@
       "date": "2026-10-14",
       "time": "10:30",
       "event": "中国9月贸易帐-美元计价(亿美元)",
-      "consensus": 1143.0,
+      "consensus": 1181.0,
       "previous": 1190.9,
       "series_key": "trade_balance"
     },
@@ -52951,7 +52953,7 @@
       "date": "2026-10-14",
       "time": "10:30",
       "event": "中国9月进口年率-美元计价(%)",
-      "consensus": 23.5,
+      "consensus": 24.3,
       "previous": 28.2,
       "series_key": "imports_yoy"
     },
@@ -52975,7 +52977,7 @@
       "date": "2026-10-19",
       "time": "10:00",
       "event": "中国9月城镇固定资产投资年率-年初至今(%)",
-      "consensus": null,
+      "consensus": -7.2,
       "previous": -7.2,
       "series_key": "fixed_asset_investment"
     },
@@ -52983,7 +52985,7 @@
       "date": "2026-10-19",
       "time": "10:00",
       "event": "中国9月社会消费品零售总额年率(%)",
-      "consensus": null,
+      "consensus": 0.5,
       "previous": 0.4,
       "series_key": "retail_sales"
     },
@@ -52999,25 +53001,9 @@
       "date": "2026-10-19",
       "time": "10:00",
       "event": "中国9月规模以上工业增加值年率-单月(%)",
-      "consensus": null,
+      "consensus": 5.3,
       "previous": 5.2,
       "series_key": "industrial_production"
-    },
-    {
-      "date": "2026-10-31",
-      "time": "09:30",
-      "event": "中国10月官方制造业PMI",
-      "consensus": null,
-      "previous": 50.1,
-      "series_key": "official_manufacturing_pmi"
-    },
-    {
-      "date": "2026-10-31",
-      "time": "09:30",
-      "event": "中国10月官方非制造业PMI",
-      "consensus": null,
-      "previous": 50.2,
-      "series_key": "official_non_manufacturing_pmi"
     }
   ]
 }
