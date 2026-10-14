@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-13T23:20:43.890311+00:00",
+    "last_updated": "2026-10-14T01:59:43.548030+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -7608,6 +7608,10 @@
             {
               "date": "2026-08",
               "value": 0.8
+            },
+            {
+              "date": "2026-09",
+              "value": 0.9
             }
           ],
           "desc": "The year-over-year change in prices paid by consumers for a basket of goods and services."
@@ -9111,6 +9115,10 @@
             {
               "date": "2026-08",
               "value": 3.8
+            },
+            {
+              "date": "2026-09",
+              "value": 5.0
             }
           ],
           "desc": "The year-over-year change in prices producers receive for their output, an early signal of inflation or deflation pressure working through the economy."
@@ -51641,11 +51649,11 @@
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjlLc0J0QjMyZmZRZWM1SldodnE0RV8xUWN0S0EzdUtWX1VjNXRiTVRKdDJQQVNkNkNadU50bGFueTItd3V0Zk43aFRiV2xsMVdCS1lFbFh3TVI3b05yd253VjBLSWdlYmwyb3VIOFBLQm5VbFRlR1ZQczRlekUyWHNOMjUwdmhvMXA2MWl1UUp6aDFydkZRZWdjUzZnRUR2NXAteDNMZS1zdDNUWm1HRVBxYlo3TXh6ZGZKT1lNOXFHUjBp?oc=5"
     },
     {
-      "headline": "Samsung and SK Hynix Lead Chip Selloff as China Competition Fears Grow",
+      "headline": "Why Are AI Chip Stocks Falling? China’s CXMT Advances And Broadcom CEO’s Warning",
       "summary": "",
-      "source": "Morningstar",
-      "date": "2026-10-13T13:41:28+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc0pESE1zWThGUENxX1pwODlQVGdRNzh4MGxaNXlaamh2QnBXRTd3TFFnRnFtWmtMcnVTQTN4ZjNZUzRITWlJVGZ2RkpnNDl2Z2JGbjA0R2lCZnEyU3BGTmlxUW54ZDNkLS1UN2FqLWl5NUpHZHk4V2hUS3JNVnlncDBYeGJMeUpmWUVzOFhoa2c3Zm1lcHh0VUdhV29PRjlIS19yUlJxZmZYUQ?oc=5"
+      "source": "Forbes",
+      "date": "2026-10-13T10:53:28+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUXRMYU5hTnA5SDRPSF81ZjVLM0puT2NwLXRBSUlsVVktbExNTEdONm1FeGNmUlg3YkJwNGl5blBnamszaTFORTlIMzgyd3BVMWF4bWpMeGZwZThJcUVrZWMxbWY0LUUwNDZiQ2g0VUlyZENOSWhvbDNUVkRuNVVES2tkeW52eFNXcWNlZFNTYjhjS0QxRU5jcWdiZzFTZ0pUZFkzWjVVYzZucjRWZmxvVlVGUTJISDlZRHY4?oc=5"
     },
     {
       "headline": "Stock Market Today: Micron, Sandisk Fall on China Memory News",
@@ -51793,13 +51801,6 @@
       "source": "Bloomberg",
       "date": "2026-10-09T07:45:55+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVmtEYnlmSm5hNlZKaGc1MG5ZeTdFRlJzZUNTcEFHa1Fia1FNbnRsSEZ1X3VvVVVldzl3WTJ5MkZhSW9DUFItY2RXMFRHOEFhM2RZcjVYcnZNOFRRekZ3Qklob0dzM2RxVzVwcEE0YTcyYXNDSUhlNGZwcFIwY1IwRndWaS1XUU5hRmpmRWJKVzQzd0JSd3ZhX3VJdzJEUktYSzg1d0twV2JGUk9sWE13amEwc0k?oc=5"
-    },
-    {
-      "headline": "Watch China Rejects Claims the Yuan Is Undervalued",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-10-09T06:11:08+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQWI1cVE4d3dlLTR2M2RfUnNmeFlCSWFQZjhlT1MxVnpEMTQyYXdUQ1Q3cFRaLW9rX2xOSzZEN29zOGZyX0hrMG1OaldPTXBFcVR2dG8zU3NzR0JPckRDLW9hcXZXMHZubVRjUUxaaEwzQ3pBcWJuUE55OTNhVHJZZlpzcXZlZw?oc=5"
     },
     {
       "headline": "Breakingviews - COMMENTARY: China’s slow bull market is poised to take off",
@@ -52171,13 +52172,6 @@
       "source": "CNBC",
       "date": "2026-09-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92YUg4RTRCc3prWFk2WUtmZ09pc2lrM3BsRlhhZ2lpYlVuaGVUb0lMMEVOMThLNUlfS2hsWWMzQTFBUk55YmRteTdlYmNqc1RSWkxkUFk5Q2pzN21LZFZ1V1RxdVJrQnY2VlVBYUV1WkrSAXZBVV95cUxPMHo1ZFRqaUFJUXl1Q01HeUNxOUZyTlhVcVZfR2tQM2E3X0k1ZVhZcndEd192WVBLelF3dE1Eb19ZZWlDYkRwVmxSTmhIMG5CM05JSkNEY3FPUE9iTFItMWhMVHB5WFNMLURFSVBUZEp4WmJaaGV3?oc=5"
-    },
-    {
-      "headline": "Trump and China's Xi discuss AI, trade and Iran war during state visit",
-      "summary": "",
-      "source": "NPR",
-      "date": "2026-09-25T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWtZVnY2SVVLai1zQlpFOVUzRHhHZGV5b2JUQVI3MTNERnk2bWFENDhOZXl4Rm0wZWoxTFJ6UDNVbHJNOGN2OURmVE9fYWZfdXA2ZDlrbXpkLXdPLTR0cndScXJOVm0yNXl1MjRGeEpxMW5veDBZLXJCNE14RlFCVmFGaFNjSWlkWW8wSU1VN3VoY0tuSDJQX2pEZTlwUkZlTnZnaGlCODJYUjRNRHVuUndvMA?oc=5"
     },
     {
       "headline": "Xi’s Economy Is Failing China’s People",
@@ -52928,22 +52922,6 @@
     "2026-12-31"
   ],
   "upcoming_releases": [
-    {
-      "date": "2026-10-14",
-      "time": "09:30",
-      "event": "中国9月PPI年率(%)",
-      "consensus": 4.5,
-      "previous": 3.8,
-      "series_key": "ppi"
-    },
-    {
-      "date": "2026-10-14",
-      "time": "09:30",
-      "event": "中国9月CPI年率(%)",
-      "consensus": 1.0,
-      "previous": 0.8,
-      "series_key": "cpi"
-    },
     {
       "date": "2026-10-14",
       "time": "10:30",
