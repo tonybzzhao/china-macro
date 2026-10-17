@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-17T04:36:39.813747+00:00",
+    "last_updated": "2026-10-17T09:28:17.574749+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -51699,13 +51699,6 @@
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUnFSUnFOaFNjbUE4U09LUG9xb1lsbjU5TXdIajM1YW9SQzJnUzRoREFOanJUU3JaMUxCS1lVWU5LS2FzbGNXVTBGWnk4bTdUbWdIZjdOa2Q0ekdtQlVTWUNBcEJqZ1pMVUdzTE9nZHV3SXhac0tkaG1EY1U5bnhtdUpzd1ljUUNNQWJJMURlUWtzcXFjblp4RmZkcGhmYTljUTdLWFp0V0J5UmZzTHBoeTlhemttUQ?oc=5"
     },
     {
-      "headline": "China Consumer Stocks for Investors Watching Stimulus and Spending Signals",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-10-15T05:13:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSTZZTGZCaEZ0V240WV9yajBZR0JVTkY2Nmt1TUU1SEU2M2M1ZXU1djdPSjZPUW96bmFTa1pOZnRocmdKc2Z3czBvLWtYWXZfWk5BbThWQTUzTjBva3U4WFdRZFB2WHVsMHo2cWdDRnNGMDVSdDhxOGp0cWZxQVB0MHBVeDdFcEJzVTVYb01FbUtFNlliaTJpZ3JIUzZQVm0wUVJYZDJubng?oc=5"
-    },
-    {
       "headline": "IMF urges China to deploy bigger fiscal stimulus",
       "summary": "",
       "source": "Reuters",
@@ -51823,13 +51816,6 @@
       "source": "Forbes",
       "date": "2026-10-13T10:53:28+00:00",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUXRMYU5hTnA5SDRPSF81ZjVLM0puT2NwLXRBSUlsVVktbExNTEdONm1FeGNmUlg3YkJwNGl5blBnamszaTFORTlIMzgyd3BVMWF4bWpMeGZwZThJcUVrZWMxbWY0LUUwNDZiQ2g0VUlyZENOSWhvbDNUVkRuNVVES2tkeW52eFNXcWNlZFNTYjhjS0QxRU5jcWdiZzFTZ0pUZFkzWjVVYzZucjRWZmxvVlVGUTJISDlZRHY4?oc=5"
-    },
-    {
-      "headline": "Stock Market Today: Micron, Sandisk Fall on China Memory News",
-      "summary": "",
-      "source": "ChartMill",
-      "date": "2026-10-13T10:29:53+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQa05wSElJS2owUnJBN2V2eV9rTDBIaFpOQTdfYzZyNk5EbFdFdmVLVkZ5bVFXbHJBc1MzQV9hQlBLdmtsWkw3WGdjZ2xMdVRydGVLd2swTVdsRmhEcjBUR1R3cWp3NHlnWk44VmVRWWUyQVVPdXUwb2ZPa081bk15aHVJTVV6M1pMbkQyblVENjlHT0l5M09Ga1dyNDFmcnBkQ0o5dEJ6SXBOSk0?oc=5"
     },
     {
       "headline": "How Far Can China’s Yuan Rise? What Goldman’s Models Show",
@@ -52098,13 +52084,6 @@
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMEhRM1FrbTVJbzVyTlljVFM0X0ZLWUVlVlNTakRZb2JQa3U0ai15c2ZKSG1XeG1HTEVYNmVLUi03YlB1S19pdmpNa0RFejBjVGwxdHZwaTlOZnlhTWJtS1p3OW1Sb0ZhS3MtRG9UQ0VQWkF5ZFF2TE5PSmQxb3ZMVHdGZFJWcjZJUFE?oc=5"
     },
     {
-      "headline": "Most G20 trade ministers reject US call for capacity curbs, China says",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-10-04T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNTmJlZkdTbXprcEdxQndxZkh4U0R6TnV1TnpLNmM2WUtUX2dlU0QyVi1YeDRYTjg5emQ2amhvYUdpQVc3czhRWm5yY2J5b1hvOFNUa2lSVmxxdUowWl8xMlRHdjlBek9iTWotc2pBdkdOQWNDcHlobTRBeV94UVY3b3pZZmJQQWRPOXc2c0V0RnItNjN3ZUFsUlJkOHB1VnN2ekdlb0RLNnIyUlJLakZyWmpIR2dTRUI5MVZYZDJjTk5meGpHN2pTQW1kc0tGUdIBzgFBVV95cUxNVW5pMktOYWtYQS05LThFbEZTbHRmaF9BcS1JR0NXeXBJdXB4OUdjWVNjOFk5TVFIdTQxRjJZTUxHYXZYTUNPeUoxb0ZQTWxwbGswZWpTRnFOb3RlOXliaUhZTWdESUxHb2JnNUVXSUhDRmV5OGpLMl85d290eWtVNmprajFUMzY0UlR1dWVkeEFtQkJ0RVZEaVB3TXdtZm5nUFVoSldGUzRvQzgtS3pxMjU1VmVFNnA2QU1Pc1B2V2pGeVJuMzFGRXQ4Q3pyQQ?oc=5"
-    },
-    {
       "headline": "China returns to top 100 in gender parity ranking for first time since 2016",
       "summary": "For the first time in a decade, China has returned to the top 100 out of 145 economies in an annual global report assessing gender equality.\nChina closed 69.9 per cent of its gender gap in 2025, rising to 96th place from",
       "source": "South China Morning Post",
@@ -52273,18 +52252,18 @@
       "url": "https://www.scmp.com/news/china/politics/article/3368835/why-did-xi-and-chinas-first-lady-bring-their-own-flasks-white-house-banquet?utm_source=rss_feed"
     },
     {
-      "headline": "Details on US, China trade talks to come on Monday, says Greer",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-09-25T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcHJmSWhBWkgzQk9MZUMzQmhOZ0pRWVdzb1dtU2ZsTVVlTVlWelh0R2ZQcFZfN0NTXzE4WTEtSTZxdU1tbzlodi12RWVrSENGTDlMYTRkS0JnT0g2WktvTXZETmk5Um9mSnVPUTBfNXN4Q0JNaGs2Y29GT2xXZkxHOGhxZWNCQWY3bEd5Zy14RmNlSlFDZHBXampMcXhvWHJW?oc=5"
-    },
-    {
       "headline": "Details on U.S.-China trade negotiations coming Monday, USTR Greer says",
       "summary": "",
       "source": "CNBC",
       "date": "2026-09-25T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92YUg4RTRCc3prWFk2WUtmZ09pc2lrM3BsRlhhZ2lpYlVuaGVUb0lMMEVOMThLNUlfS2hsWWMzQTFBUk55YmRteTdlYmNqc1RSWkxkUFk5Q2pzN21LZFZ1V1RxdVJrQnY2VlVBYUV1WkrSAXZBVV95cUxPMHo1ZFRqaUFJUXl1Q01HeUNxOUZyTlhVcVZfR2tQM2E3X0k1ZVhZcndEd192WVBLelF3dE1Eb19ZZWlDYkRwVmxSTmhIMG5CM05JSkNEY3FPUE9iTFItMWhMVHB5WFNMLURFSVBUZEp4WmJaaGV3?oc=5"
+    },
+    {
+      "headline": "Details on US, China trade talks to come on Monday, says Greer",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-09-25T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcHJmSWhBWkgzQk9MZUMzQmhOZ0pRWVdzb1dtU2ZsTVVlTVlWelh0R2ZQcFZfN0NTXzE4WTEtSTZxdU1tbzlodi12RWVrSENGTDlMYTRkS0JnT0g2WktvTXZETmk5Um9mSnVPUTBfNXN4Q0JNaGs2Y29GT2xXZkxHOGhxZWNCQWY3bEd5Zy14RmNlSlFDZHBXampMcXhvWHJW?oc=5"
     },
     {
       "headline": "Xi’s Economy Is Failing China’s People",
@@ -52446,13 +52425,6 @@
       "source": "The New York Times",
       "date": "2026-09-20T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ZZVBhRWJnYzQta2xvSGFVcHo4T3ZvWmNIU3pmVERobmhfNFRrUkxBM1J4UnlLWW1faDhkTXhjelFFMHh5MGttaUN0YXF6MFlBanhwTEZMZ215eGM4bDRiZlY1RGRwcS1PMWJCUUd2ZkY2Q2M?oc=5"
-    },
-    {
-      "headline": "What does the rate increase by the US Fed mean for the Chinese yuan?",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-09-17T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOM2U5aU93NW9OdjZNd2JSQUx1c3JmSmo2UFF1dmFSdUhTRFFJdGp6bEpmbnRTM3Vqa1E2OEI5Q2tOZU9hT215dmlCWE5Xb1llMVVZeENlZ2FCRDNRN000UEZmTzdwQ2pqRjN6SmNiYzRxM0duUktHeV9Zd1Fjd0VZbmpRU2Jnd2NlVkZjVHVLSFM2YXowanIxUlBuQ2ZlUjE3QWZCMll5SGNlOGhWZUJDTVdQdUNVUXpacGs5V2FiaWlncjJJcTZuZTVR0gHKAUFVX3lxTFBmblFSQTRONFh2alVBeUdVc1k1RXA3NUFuc2kwNUlreGNkcnI1dXJNbnhmcHdLNmFsZWF4NFYzUWUxc0Y1Ync1dHZWX0xTOWNZZTNxSjRkZEhzano4ZksxSl9Wb3o1Z3plLVFQM2Z5alp6UGMtRUdzYUxlREc0ZUlZa0xnRjJHUjhBWS02dk9ZTDR2QTFVbGNYeVBSQ2lOQXFYQUNkMGxUWmhacGdvYXdPd0JmSVp5T1JWY05QRjYzQVdHNVNLTnVBRHc?oc=5"
     }
   ],
   "trading_days": [
