@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-19T23:47:08.884594+00:00",
+    "last_updated": "2026-10-20T04:58:59.500661+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -9766,6 +9766,10 @@
             {
               "date": "2026-09",
               "value": 3.0
+            },
+            {
+              "date": "2026-10",
+              "value": 3.0
             }
           ],
           "desc": "The benchmark rate banks use to price most new loans; sets the general cost of short-term borrowing."
@@ -10119,6 +10123,10 @@
             },
             {
               "date": "2026-09",
+              "value": 3.5
+            },
+            {
+              "date": "2026-10",
               "value": 3.5
             }
           ],
@@ -51694,6 +51702,20 @@
   },
   "news": [
     {
+      "headline": "Chinese official says economy resilient but recovery momentum remains weak",
+      "summary": "",
+      "source": "Yahoo Finance",
+      "date": "2026-10-20T03:34:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTlZBWnhYSDY5TkpOV1l3MzRXMDhYMUI3T0NwR1JBbjBqTmRsRTRsd0ZxZjNVSE9Jb0ExTEZiYm13WmpBaWxWX0JvZGpEY0daT3ZXTTNQbUQxUURNX1RqVHM3M0JRNG1BcUhBWTVYaUdFRDdZQ0xFQnVZREFtT2ZYTUU2Vl84RnVvbnVyVTQ2a1VxbTVLZVpFMW5jS1VrZw?oc=5"
+    },
+    {
+      "headline": "China's economy is better than expected — with one catch",
+      "summary": "",
+      "source": "Axios",
+      "date": "2026-10-19T20:36:01+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5dUxGSENxQmVITW9nLWtEcWIyQUtLNWllRldNb2Q5Wi1qMkstTnUxUDZGRl9zYTk1eDlFUEt1NXNCSzZ3dGJVV1huOFRsQU5mY055MFo1ZWN3VHVpMVBXSXNXV25Xb2c?oc=5"
+    },
+    {
       "headline": "China’s economy grows faster than forecast after AI boom boosts exports",
       "summary": "",
       "source": "The Guardian",
@@ -51722,11 +51744,11 @@
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX0dWMUFYTGt4cmt3ajMxckFzd1hwNHVGWndvQndjalJVOUZhTkZITlUyekg3TWZXeHplYWQtYjF2R2VKT3AycHR3WmZnTS02R1lyVEJhYkEtNDRMV0xqbkpnLUVLSHFSOEVZbDlzaHRjVDdsZjZpSE9qRkE5WEQwM2pEYi1MQkV5Tll4UDR1WjJCX1Z2MHc?oc=5"
     },
     {
-      "headline": "China's economy is better than expected — with one catch",
+      "headline": "China’s economy accelerated in the July-September quarter on robust exports",
       "summary": "",
-      "source": "Axios",
-      "date": "2026-10-19T15:59:58+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5dUxGSENxQmVITW9nLWtEcWIyQUtLNWllRldNb2Q5Wi1qMkstTnUxUDZGRl9zYTk1eDlFUEt1NXNCSzZ3dGJVV1huOFRsQU5mY055MFo1ZWN3VHVpMVBXSXNXV25Xb2c?oc=5"
+      "source": "AP",
+      "date": "2026-10-19T10:19:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0ybUNYYmVXU0VLLUUyQXM2UEFiLXhzWFF2YmZYZ3QwUWdiSkdBdHJIOXhTVGVEemNnYWNaWFU2TEJKcnpqOTY5WS1WekJBXzU5ek1zQVg0Uy0yQ0ktV1ZfSmMybVB6VFY3ZVNCeDhjcllNUG9BZUFRTWFuaHM0dw?oc=5"
     },
     {
       "headline": "Long March shows why the Communist Party needs strong leadership: state media",
@@ -51743,11 +51765,11 @@
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTFRDeXZOR0V1TXd1cTNYR3V2Y1RkZFNlLVcwSk1qUkJlVzFNU19WYVJHNXJ4djZuY0poV19Zb3BDSUljOEdlVHFqRXhHcFI1SkhJTGUxQ2pIaXlmRUVYSzQxSnJjVFZuR3REQnd2U2tXSFk5U0VNd2xFRlZVVVlraHc0ZlU5dnAyaEt5SU5BRVloM1VXcHZqQ1BnNlc?oc=5"
     },
     {
-      "headline": "China's economy beats Q3 expectations on robust exports",
+      "headline": "China's economy picks up pace in Q3 as exports power uneven recovery",
       "summary": "",
-      "source": "Daily Sabah",
-      "date": "2026-10-19T08:12:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOHo2a1lSckh0eDk1X0kxaWJ4bjJpNmxHcWMtNWhTOG50SlR5b0pUUVgyUlU1SVNFUllhS0ZsSm5hY1Z6V2hzSGNHZWltbGozbi01enlYR0JaSW9XRmtMbGNOQWZNTnBqV0ZVWnpoYlpfNzE3dG03R0JORFB3Qk1Rb3ZHVThhV2h0d0FUT3R1Mmw3Y2F3bVhJMk9BWExkVG8?oc=5"
+      "source": "Central Oregon Daily",
+      "date": "2026-10-19T06:29:56+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPX0NpbGF3T3pFMkE2eUlvSVFWeW1PcnZhWXVXNF8xOW10clo3Ums1T3ZjcUNheHJtbG1UeldmMHA0bktQbkJ0TW9uR0dDU0lNalZ3OFBtdUljakxCYS1fekZBUUNfcHoxc1ZMb2UxR3k3RTJMU1Iwb0N5SWFSODBja2xwcEVfRWFhZzN6aDRwZWFmZG1MRW4wZUxxTVEtVlphbk0tQU5BdEJWbmd4aVRSUWJwOWdqeG5hSDZBTE1QSWlGTzR4bjJPOXZXX3FjYk5zblZBcE5XMWNpcDl5SUhYb2loN3BsVFZ0UTBxeVhIWWR4VE95eF9rSmpWRnE?oc=5"
     },
     {
       "headline": "China’s economy grows 4.5 percent in Q3, beating forecasts",
@@ -51757,9 +51779,16 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSGJuVjc0Mm9UaU9ZMUdIVzF0d1hhVlpNVFNvTzFVQ29Jb2JNX1FMcXAtQk9UbWNIb0J4YTI5YUtiTkZBYklPOTAtRl9sTnEyemIxUW9jaW1Ha0RXR1MwYlVJOFRNdDlrdzRsZkQwS2NDWkp4T2NjeHZjcTY0YjVqYjlJWWF2aDJLa3R6N0xsNDc5Q0dIQk05ZlA1Wl8xSTVWTHA00gGoAUFVX3lxTE5vUTFEQzkwMXBKWV8wYmZPUFhmLVUtMlFMZ3BqRWtVQUtNRTM1QUxlLTlzYi1LUTVxX0lMbWNFYkRaNi1NbXd2ZUNuMU5BWmxTMHJZY0FtMm1xdmllazhQN2NOMGpoYWNVaUQxN1FNOWR3Y3Uxc2NtYzRvd0xnNXNfWXdEUWFKOHY2MU80QmRCSVFDeHluRHl6eEN4dWtNUFFpMDd4b0tNYQ?oc=5"
     },
     {
+      "headline": "China’s economy picks up pace with 4.5% growth",
+      "summary": "",
+      "source": "Financial Times",
+      "date": "2026-10-19T05:08:36+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSGVKTFBJR0drUjlPSjZvYjZUeDBaOVlDQkdsSWRLbGJ3ZGxfTEs0MmR6bFVkNXZDczVIcGV2WnlfWFZnSk9rTk9OVENhQVoyd3I3YThXdlFtenZKbWozZGFIWXktSVQ5T2hlNnh4amxMWkNVbjZQM1BGUmJHTDlRRjVVa2Q?oc=5"
+    },
+    {
       "headline": "China’s economy grows 4.5% in third quarter on export surge",
       "summary": "",
-      "source": "Euronews.com",
+      "source": "Euronews",
       "date": "2026-10-19T04:11:21+00:00",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFVvME1UdU5aVjEyYWQ2cnpsUjFNR3Y1UjJNTkV0N2w4RUktcWNqNHJSOHJOYnNCUEw0Mmk2ZlFuaThvMGVfRWlLNFhKcThqaGFiQXpXMUhYd18wcnVMVHo1YXpORzVCbTkyYzV1WDRRRXhoaFRGRmxQbnpCZVVVdnE4SjduOFJPMHVqUDBZZkswRVlsdEJuSjN6WW1FcUl1NEhhcWhrOXktbjA?oc=5"
     },
@@ -51771,13 +51800,6 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5"
     },
     {
-      "headline": "China's economic growth accelerates to 4.5% in third quarter",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-10-19T02:42:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeEZMXzgzd1l2clNCRHFKdld0VkdpRTI5Z3BOLUJiVW5GNjBYWTdIbE1zN1JrV1dQWHZmX1oxN3piZlljdHlZZUt4aUl5ZmVBZDJ1ZmJ6NnkyZ1hTdjVrLTRuMVBXbG9QOG0wd2l0TV9ZUW9yRmRFU0tWbUZPRU1tRXhTZEVmVVBxdG9lRUp5QmZlUnJKOGYtYThB?oc=5"
-    },
-    {
       "headline": "VIEW China's economic growth accelerates to 4.5% in third quarter",
       "summary": "",
       "source": "Reuters",
@@ -51785,25 +51807,11 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcXFNS245X3pBcV9XTmxwQVljcVRHRW9YWER5N3EtUlo3UnBXVm9WaE5VbUdDTTBMczJnY0hQeEpEYUdackhNb1g4VGhIcUM4VGl5UnlwOEJCT1ZqREhRZXMwVUFMVzlmT3lneGZROGR0STFaeGNuVmlCTnNEaFNjYlRta3RSd2tXVEJyOHJWNkgtSjdqZnZtanRYOUNDckZ4RUtfeTgzOTV5b3RYX0hFTg?oc=5"
     },
     {
-      "headline": "China's economy picks up pace in Q3 as exports power uneven recovery",
-      "summary": "",
-      "source": "Hilton Head Island Packet",
-      "date": "2026-10-19T02:26:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBfY1NQcTJ0bjM2bEJLcnBYcTRvMWotQTdlQ1NhNXp5bTdYUGktSUZYZHFOSTZLTU9pVVlTR1lKYzlaMGJfYWU0SEdrS0pWSmVnWURQSTZacUk0ZkRYakxNelFPZ0JWNW9vekFoSHktUEtaQQ?oc=5"
-    },
-    {
       "headline": "China's economic growth picks up as exports boom, consumers balk",
       "summary": "",
       "source": "Reuters",
       "date": "2026-10-19T02:22:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPelFIVGVwcy1oY2RvRVlaQTl5REpEc1hfS0ZUb1lTeWN0M2tBbTctTWo4NzVXeWthQVNab2p1eUFYQ2xtejBoc1ktQlZFQXh1U3hOSWdNdlBzTzNvcThPMFVyNnIzSTgyQ3lXbW8taGQtTV92Vl9uUGZOWjc1cGp6NTJBTDNpcWpEUnRCMjhXcVRYNkVXSFNwaHF3UGFGU0NqZTZWZzJXc0FyX3BnUkxhVWVSNzI?oc=5"
-    },
-    {
-      "headline": "China’s economy picks up pace with 4.5% growth",
-      "summary": "",
-      "source": "Financial Times",
-      "date": "2026-10-19T02:19:14+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSGVKTFBJR0drUjlPSjZvYjZUeDBaOVlDQkdsSWRLbGJ3ZGxfTEs0MmR6bFVkNXZDczVIcGV2WnlfWFZnSk9rTk9OVENhQVoyd3I3YThXdlFtenZKbWozZGFIWXktSVQ5T2hlNnh4amxMWkNVbjZQM1BGUmJHTDlRRjVVa2Q?oc=5"
     },
     {
       "headline": "China’s economy expands 4.5% in third quarter",
@@ -51918,18 +51926,18 @@
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvUmVvTnk2YjRZd3MzMDM0Y2s0bndCNGYtV1VEQWN1dmdwSnlnR0ZwV0xHRE1TS1dEdmhUQmc0YjNYUjBXUFRYR3ZLc2xCSG10WDU5MkdfcndlcC1EcEttT2c4Zm54dWViZEJJM0w3eVVNNE1HQlpfcQ?oc=5"
     },
     {
-      "headline": "China’s trade surplus nears record as pressure mounts from trading partners",
-      "summary": "",
-      "source": "AP",
-      "date": "2026-10-14T14:52:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQVdkTHZ3MkRKMEQybkpwQml2QmtLYmZOWjFGVVhfeWo4RVVNNk1wc0FScjBQZERDOTgxYUJpNVhfeW5nZjZqbGtCb1FTbTJQQklnOGZnRnBDZk9vV0J5WXlxU0xvZlBDQWlkNFhKY3h2LUdSWTZTeW9pYkgwM2tQNl9iNVpHUQ?oc=5"
-    },
-    {
       "headline": "Trump’s Not So Hot Economy: China’s Growth Far Outpaces US",
       "summary": "",
       "source": "Center for Economic and Policy Research",
       "date": "2026-10-14T13:39:32+00:00",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUXM2MXhTWGlaQnFMT3lxcTVSRlVBTGxHTG1fU1FrNTRxZEdlV1FEbjV1RktJcWFjSlpUc1hZUTBCQlFfcDV0d1JxblIxVkIyZkcxTkdSWjRLcDBTVTlwQXdGRDJQTVV1cVhSSzgtcUZhWF9UODRaS01vaGhnbFpIQWtJWnA0TGJUeFR1UFMxMA?oc=5"
+    },
+    {
+      "headline": "After hybrid car deal, EU needs to rebalance China trade in other sectors, Dombrovskis says",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-10-14T11:35:43+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQekFpQUI2WTF3YUNEZXZEbjgyMlNWTEIycDZTeVZ6WkZxOFJzUXFMeEF6SUJkZVJqLWpWa3JyV3VnbTZZQ1VPS2UxNUROR192ZGtJaTk4Z1pfVksyY1I0aVdlbWxSdDEybkx6X3hpX0NCSVMzbzlLM0RIUVRya1VHZktSR0VsSlg4VWlUUF9qZ2w5WlBhdS1YbWF2R3V3dVJmdHk5NzFSdHVsVjdJY1dnYnFUUGVBUmdxTWJwemN6TlM2dnROWTBqVTNmcTNNc1M2THdyYjJSaTRUMU9G?oc=5"
     },
     {
       "headline": "Pressured at home, EU leaders weigh China trade steps",
@@ -52198,6 +52206,13 @@
       "url": "https://www.scmp.com/news/china/politics/article/3369938/chinas-deepzang-ai-aims-transform-tibetan-language-tech-promote-ethnic-unity?utm_source=rss_feed"
     },
     {
+      "headline": "The Hidden Policies That Power China’s Export Boom",
+      "summary": "",
+      "source": "The New York Times",
+      "date": "2026-10-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SMXRCTnpKaHNsNTVZalE1NzZhNjNWWkRfejc4bnozY2c2dU01ckZpdTVtVFRMSGlJbnlNX1J2ZFBoalVScE9EZHhBeVZULVE3bTJIcEsyWU9ONWtjUmtrZUhLZkRnVy1kdEtKdG1WazVvRkpUbTJuVnkzbw?oc=5"
+    },
+    {
       "headline": "Beijing’s policy advisers map out how post-reunification Taiwan could be governed",
       "summary": "In 2019, President Xi Jinping became the first Chinese leader to publicly call for the exploration of detailed proposals for governing Taiwan after reunification.\nSeven years later, the first proposals from a handful of ",
       "source": "South China Morning Post",
@@ -52366,6 +52381,13 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdDFwb1JqdmQ1UnZaV0FvaWpPWEtGdXlXVXR5cV9oeUVUeV8teFgwQkJVNGo1MFduQzQxcUxQaVhDaVUwck9qQzE0NXlaSFpWdC15UTIwYVVxQzBPWG84N2ZnNXkxOGVjcjVWZ25zNDBCbzZUOFZPMkxUTDhmMFJieHdFWWFabVFuTHhYczFGeWV2bTA5YkxoQlRicVlGVzl4Z0h0UTZxMi00aFctTHhGUnh5MmhUS1hFRzFjVlBPckjSAcYBQVVfeXFMUGU5X1ZtYXFrZFdpbUNGQjJjVDc0S1BaM2w3UW91RC1LNVVjc3NGME0zV3RqUWpsTE85SUF3d0NfMkJ5cmpLcWRPbXlqTTh1NFNKaVppUmRlMTNTakpGejVneVBxTFdHTHFGZ3FNRWQtdUZadEFEVk0yRDZLb2hUa2hfc0JhbkFncjd5U0g1a0JyWFNOS2N5ZjI4QW85ZkJlSjhKTFcwYXhNTWI0eGNlN01RVTJwVy1zeFBPTFMxcmdFZlpnT1R3?oc=5"
     },
     {
+      "headline": "China’s Consumer Stocks Face Lost Decade as AI Steals Spotlight",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-09-26T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZldHZF9yQXljZXQ2UlBXaHF6cXNEWk9DOWxVZWlvR2pfV2ZvamNzeUtoR1ZOelJ6aE1QbkVHclJVRmZJYXRqOWNkWXNyZ2thQnAxZXpScE5OWThZQWl3Q1JJRlZQaGpiOHRWajdvVUFJbkRPYUtqMFkyS1ZWX1RNUXVNQWNVVnlJd3BMNzRleXB1bkhvSF9JTk1fRDhWTGdmeTRCbjAwT2VwWUd5R3htd25BcHQ?oc=5"
+    },
+    {
       "headline": "Trump’s warm welcome for Xi met with caution and uncertainty in Taiwan",
       "summary": "Taiwanese officials and observers have reacted cautiously to the Washington summit between Donald Trump and Xi Jinping, with uncertainty lingering over what the two leaders discussed about the island.\nThe only public men",
       "source": "South China Morning Post",
@@ -52399,6 +52421,13 @@
       "source": "WSJ",
       "date": "2026-09-24T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE90azlFaXY1endaanpGRy0wRzVWRi0wU1VjOTQ4cjc2OXNBMldkREVweVVRMjNtX2xYS0xxSU4tQ1BxdWJGTkJHUmNWLVo4Rk13VGlPTmV3ci1CU3JPclZFWG1uSGN5WUc4NlczTXFLZ1pyaDAzWEgzdVd4MU5kUQ?oc=5"
+    },
+    {
+      "headline": "Opinion | China has a much bigger priority than winning the AI race",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-09-24T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNExSbExJT3k1X1ByaXJjVEc4bzhiR2w1NXBWMzNidk0xVlRUSEs3LU5zWVRaSjc1eXhxd2ZlRHR6YzZEeV9KZ2dfTmRxSUdzUGFMU1lOUHc1WUlfVFhCQ3Vkalo2VHdnaEVjU2RoaDJHOWkybkVTOGc2bVZsVlV2bktjLVEzc3ZnZjlrWHRpZ2cyeWwxTFNyQzdZWXY3bXcxSDU00gGjAUFVX3lxTE1TNjRwQ0Z4ZHRLR2hVVW0xOTVqVWhKMmN3YlplQXRldmhqZU44MWM1U2FROTJqTmhMVF9mUExzYUx1ZnFmNDJZY3NiWkNNZnByRHB2ek9IdERmeUdGV3RTZ1U2a2lyQzFJazBKS3o4Qk9DU2huTGdXeWUtR2lJRUFHVk5TRUlCejcyVmF5QnhPLVAwWHl2VjJYREsxZzV2S2dPbHM?oc=5"
     },
     {
       "headline": "Opinion | China is leveraging its diaspora to boost the economy, unlike India",
