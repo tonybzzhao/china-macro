@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-20T10:09:33.572496+00:00",
+    "last_updated": "2026-10-20T15:10:48.843318+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -50215,6 +50215,10 @@
             {
               "date": "2026-10-19",
               "value": 6.6807
+            },
+            {
+              "date": "2026-10-20",
+              "value": 6.678
             }
           ],
           "desc": "How many yuan it takes to buy one US dollar; a rising number means the yuan is weakening."
@@ -51702,13 +51706,6 @@
   },
   "news": [
     {
-      "headline": "Breakingviews - COMMENTARY: China's off-kilter tech economy is by design",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-10-20T03:36:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORHpPX1dJQWw5UXYtWTlrQzRVRzNmaXFCbFRmUHgtWlFtQTFyd1JFVTJGWDBMRkw4Q2k4b3FOZ3I4eVdKSVFyazRoeTFyZ3c2T0h3LWVCMDU2dGpnVzk4bm1aQmVxdnJ2LUNTRHQyX3MweVBtcW5CYWZhWW92LVRmQUJ6cGdqeTBvQ19lRllrVkJXN3FlVGpZOU10ZGJILVZuX1Nlc3JfTQ?oc=5"
-    },
-    {
       "headline": "Chinese official says economy resilient but recovery momentum remains weak",
       "summary": "",
       "source": "Reuters",
@@ -51730,13 +51727,6 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObjdWVVIyRU9UZ0V3aG1MMnRLM1hzQXRWZFZQeUxqbm1Ea0dhbUh5bVZrLWotbWZVOFlDVnZhRXRZY3dZQVkyR2JIZnlDaUxUcTJWaGpTbzhjanoyOXRIR1QxNE1udnY1ZnhNYUMzRDB0LUM2NDdRQ2dmSF9BcFZMS0cxYWhMa3p1RmxrMFlXYkZ3LVEwZGhrN0hKNGt1OEpweHVKdU8zb3pndjE4d1ItZjVsbXhoUEk?oc=5"
     },
     {
-      "headline": "Micron Stock Rallies as China Memory Chip Rival Forecasts Revenue Boom",
-      "summary": "",
-      "source": "Barron's",
-      "date": "2026-10-19T18:20:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSzgycjVEZy1udFpGVjlVc0hxamM0WWNWZWRLazhJZGxqeFo3YThfRkFYX0VDVURZUVZSbWpCMXJCTEt3OEdNcFZTb0VnaTF3RUVOR3hKanBUZzJOQVJQOHJoVldMTWo5aF9IdVdxV2JkVHB4WEF3TFB4Q2ZWanR5MFo4aw?oc=5"
-    },
-    {
       "headline": "China Economy",
       "summary": "",
       "source": "TelegraphHerald.com",
@@ -51747,15 +51737,8 @@
       "headline": "China's economy is better than expected — with one catch",
       "summary": "",
       "source": "Axios",
-      "date": "2026-10-19T15:58:33+00:00",
+      "date": "2026-10-19T16:02:20+00:00",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5dUxGSENxQmVITW9nLWtEcWIyQUtLNWllRldNb2Q5Wi1qMkstTnUxUDZGRl9zYTk1eDlFUEt1NXNCSzZ3dGJVV1huOFRsQU5mY055MFo1ZWN3VHVpMVBXSXNXV25Xb2c?oc=5"
-    },
-    {
-      "headline": "China's economic growth picks up as exports boom, consumers balk",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-10-19T10:50:37+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPelFIVGVwcy1oY2RvRVlaQTl5REpEc1hfS0ZUb1lTeWN0M2tBbTctTWo4NzVXeWthQVNab2p1eUFYQ2xtejBoc1ktQlZFQXh1U3hOSWdNdlBzTzNvcThPMFVyNnIzSTgyQ3lXbW8taGQtTV92Vl9uUGZOWjc1cGp6NTJBTDNpcWpEUnRCMjhXcVRYNkVXSFNwaHF3UGFGU0NqZTZWZzJXc0FyX3BnUkxhVWVSNzI?oc=5"
     },
     {
       "headline": "China’s economy accelerated in the July-September quarter on robust exports",
@@ -51776,7 +51759,7 @@
       "summary": "A Monday article published by the ruling Communist Party’s mouthpiece argued that a key lesson from the Long March was the need for the party to have a strong core leadership and for its members to uphold that core’s aut",
       "source": "South China Morning Post",
       "date": "2026-10-19T10:00:26+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3371388/long-march-shows-why-communist-party-needs-strong-leadership-state-media?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3371388/long-march-shows-why-communist-party-needs-strong-leadership-state-media"
     },
     {
       "headline": "China’s Export Boom Masks Deep Economic Problems at Home",
@@ -51784,6 +51767,13 @@
       "source": "WSJ",
       "date": "2026-10-19T09:30:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTFRDeXZOR0V1TXd1cTNYR3V2Y1RkZFNlLVcwSk1qUkJlVzFNU19WYVJHNXJ4djZuY0poV19Zb3BDSUljOEdlVHFqRXhHcFI1SkhJTGUxQ2pIaXlmRUVYSzQxSnJjVFZuR3REQnd2U2tXSFk5U0VNd2xFRlZVVVlraHc0ZlU5dnAyaEt5SU5BRVloM1VXcHZqQ1BnNlc?oc=5"
+    },
+    {
+      "headline": "China's economy picks up pace in Q3 as exports power uneven recovery",
+      "summary": "",
+      "source": "Central Oregon Daily",
+      "date": "2026-10-19T06:29:56+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPX0NpbGF3T3pFMkE2eUlvSVFWeW1PcnZhWXVXNF8xOW10clo3Ums1T3ZjcUNheHJtbG1UeldmMHA0bktQbkJ0TW9uR0dDU0lNalZ3OFBtdUljakxCYS1fekZBUUNfcHoxc1ZMb2UxR3k3RTJMU1Iwb0N5SWFSODBja2xwcEVfRWFhZzN6aDRwZWFmZG1MRW4wZUxxTVEtVlphbk0tQU5BdEJWbmd4aVRSUWJwOWdqeG5hSDZBTE1QSWlGTzR4bjJPOXZXX3FjYk5zblZBcE5XMWNpcDl5SUhYb2loN3BsVFZ0UTBxeVhIWWR4VE95eF9rSmpWRnE?oc=5"
     },
     {
       "headline": "China’s economy grows 4.5 percent in Q3, beating forecasts",
@@ -51821,11 +51811,11 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcXFNS245X3pBcV9XTmxwQVljcVRHRW9YWER5N3EtUlo3UnBXVm9WaE5VbUdDTTBMczJnY0hQeEpEYUdackhNb1g4VGhIcUM4VGl5UnlwOEJCT1ZqREhRZXMwVUFMVzlmT3lneGZROGR0STFaeGNuVmlCTnNEaFNjYlRta3RSd2tXVEJyOHJWNkgtSjdqZnZtanRYOUNDckZ4RUtfeTgzOTV5b3RYX0hFTg?oc=5"
     },
     {
-      "headline": "China's economy picks up pace in Q3 as exports power uneven recovery",
+      "headline": "China's economic growth picks up as exports boom, consumers balk",
       "summary": "",
-      "source": "Hilton Head Island Packet",
-      "date": "2026-10-19T02:26:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBfY1NQcTJ0bjM2bEJLcnBYcTRvMWotQTdlQ1NhNXp5bTdYUGktSUZYZHFOSTZLTU9pVVlTR1lKYzlaMGJfYWU0SEdrS0pWSmVnWURQSTZacUk0ZkRYakxNelFPZ0JWNW9vekFoSHktUEtaQQ?oc=5"
+      "source": "Reuters",
+      "date": "2026-10-19T02:22:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPelFIVGVwcy1oY2RvRVlaQTl5REpEc1hfS0ZUb1lTeWN0M2tBbTctTWo4NzVXeWthQVNab2p1eUFYQ2xtejBoc1ktQlZFQXh1U3hOSWdNdlBzTzNvcThPMFVyNnIzSTgyQ3lXbW8taGQtTV92Vl9uUGZOWjc1cGp6NTJBTDNpcWpEUnRCMjhXcVRYNkVXSFNwaHF3UGFGU0NqZTZWZzJXc0FyX3BnUkxhVWVSNzI?oc=5"
     },
     {
       "headline": "China’s economy expands 4.5% in third quarter",
@@ -51835,10 +51825,10 @@
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQeVNyWkUzYVJKMmRLUjFqY05RYkFYYjhobkxQWktuWnhXZUlNazA3LThDNjZpQ0d0RFBnS2N4WEhLWW1mRkZXY0dVTkRvSC12SkpVX1pKekRkZlJDT1VMMDVFT1F2VklWNmJybGpnWm02S3ZQdjVmSkxHdmt5YkprbE0yd2dQYjhqdGV3?oc=5"
     },
     {
-      "headline": "China economy grows thanks to AI export boom but domestic slump remains a drag | CNN Business",
+      "headline": "China economy grows thanks to AI export boom but domestic slump remains a drag",
       "summary": "",
       "source": "CNN",
-      "date": "2026-10-19T02:11:15+00:00",
+      "date": "2026-10-19T02:10:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YZUM1RVhqMlhRS3JtZXkySURkQklGNnhTUnV0aFRRc2RnVzJhZVVSY1RGc05CaHNsdlpUS0ZLQTdPeXE0aGVXaHRmYzhKOWZKdi1DV0R1Yk8xSzg3V0hTTjN4bF9FQmlkV2FaeA?oc=5"
     },
     {
@@ -51847,6 +51837,13 @@
       "source": "CNBC",
       "date": "2026-10-19T02:05:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZVpZVzltNzlrTDFQVFFWT0FPODVNT0NQVjB4YzNSTDZsSWt6UnBpSXM0RnNKWjVsVGltVTY4RHNRaUpPTWVuTjliNWhTWEJjQmdmV1NrOWdIaEM0OUhfdDJwXzI5d3FSOGcxTDlkSF8zX1g0djFmbWlZaURUZm9hLTdZVHRtb2JRVUJhZWFHX1k2VjZZOURFak8wN25XRDVZc1hmQlhmUkc3T1BJOEptUHFkX19kYUZSclkzbDMtONIBxAFBVV95cUxPNGU3TUZOZ0d0RVRpNVFTczdWQm5QWXM4T21Kekd0Mld4QnFrNlRrbHMxczNYMkhQcnc4NWF6V1lUQUliV3l3VGJySlc3NGdURzJWNXZBNEZzbklGOHpwNkJYX2NwTkE3b0UtN0RrM2s0eHNDYUFLR2NsQmlWaHphR0Y1THIxZ0pZR3dBb2NfUUFsdFlnWVNyUGpiOHdPd1d2bmJQUUYyMS1Sb2hIVTA2alRHdXY3UV9IeEhtZ0drbFJQLTVj?oc=5"
+    },
+    {
+      "headline": "China's Q3 GDP growth accelerates to 4.5%, beating forecast",
+      "summary": "",
+      "source": "Yahoo Finance",
+      "date": "2026-10-19T02:03:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONXc4NmYzbTFrdkVIaHJPMVpuUUdLRjBLUko5WFBrNmtyNTROYUlyRmFSMHlIZVJqOVg0Z1ZrRmVocHVMQXNsZ2VNSVc0UkhYQmhBbkpVYnpnRy02V0dIREhWcFEyQ1F3bkxTUkJmc2RCZ0JTcHRmSVc4VGM3NjhUMTlNV3FnUDJ5M3ZRWkJRbU9OV0JU?oc=5"
     },
     {
       "headline": "Strong Exports Stabilize China’s Economic Growth in Official Statistics",
@@ -51895,7 +51892,7 @@
       "summary": "In Shenzhen, drones are banned, shiny new hotels have opened their doors and taxi drivers are carrying devices that can translate nearly 150 languages.\nSince President Xi Jinping announced last year that China’s southern",
       "source": "South China Morning Post",
       "date": "2026-10-17T10:00:12+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3371206/chinas-shenzhen-ready-host-xi-trump-and-putin-during-apec-summit?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3371206/chinas-shenzhen-ready-host-xi-trump-and-putin-during-apec-summit"
     },
     {
       "headline": "China's economy is much weaker than the data would normally suggest, says Leland Miller",
@@ -51905,18 +51902,18 @@
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN1JRVkR6M21jYUJWY2xkTnR3UHVmbC1IUHNsZ01YVzNOMlFsMGxmLWtGcXN6NTJhbnpOd0lJbEZtMWs4QzM2NzVNTk16THQ0VkJsUzRmejBvQ0l3bWFQcG1wRHAwc0ZPdHNTSnYyNk42UngwZEtpZks2UXRlb2dRREprY1JubFc2VGw2c01VaFNzaUE5dC1jZnA1U092ejlybVpRY2ZObzRvVE5VSnhNZUlIa3NXLV9zSnBJdC1GMWpKT1dPWWlv?oc=5"
     },
     {
+      "headline": "With China Facing More Trade Barriers, It Can’t Afford to Lose Europe",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-10-16T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTUQzNFBYX1hBcGFYNDNELUppYzROV3VxSjE5Zlg0cHBsSDFacFBTbEY2R011SnRGT3NuMHpDT3RiSGhfOHRnb05WQllxVVk1LVpaUzVoLUpOSlhNa3NRbU1BQmlDb1NGa3o2Tk1hRjRVWkFLeF9NSEdTeG80WC1aUEFPcFV2N2t5NVpISmg3eE01M3pwUlJNMWx3RUoyOFVRMnlGRkxNUTgxWDVuRkdn?oc=5"
+    },
+    {
       "headline": "Xi’s pledge to ‘uproot sick trees’ aired weeks ahead of Communist Party conclave",
       "summary": "President Xi Jinping has pledged to “uproot sick trees” in the anti-corruption fight, according to a transcript of a speech published by the Communist Party’s flagship magazine ahead of a major party conclave later this ",
       "source": "South China Morning Post",
       "date": "2026-10-16T04:05:18+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3371094/xi-pledge-uproot-sick-trees-aired-weeks-ahead-major-party-conclave?utm_source=rss_feed"
-    },
-    {
-      "headline": "With China Facing More Trade Barriers, It Can’t Afford to Lose Europe",
-      "summary": "",
-      "source": "WSJ",
-      "date": "2026-10-15T21:03:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTUQzNFBYX1hBcGFYNDNELUppYzROV3VxSjE5Zlg0cHBsSDFacFBTbEY2R011SnRGT3NuMHpDT3RiSGhfOHRnb05WQllxVVk1LVpaUzVoLUpOSlhNa3NRbU1BQmlDb1NGa3o2Tk1hRjRVWkFLeF9NSEdTeG80WC1aUEFPcFV2N2t5NVpISmg3eE01M3pwUlJNMWx3RUoyOFVRMnlGRkxNUTgxWDVuRkdn?oc=5"
+      "url": "https://www.scmp.com/news/china/politics/article/3371094/xi-pledge-uproot-sick-trees-aired-weeks-ahead-major-party-conclave"
     },
     {
       "headline": "China Is Winning The Trade War And Losing At Home",
@@ -51945,6 +51942,13 @@
       "source": "Mises Institute",
       "date": "2026-10-14T16:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvUmVvTnk2YjRZd3MzMDM0Y2s0bndCNGYtV1VEQWN1dmdwSnlnR0ZwV0xHRE1TS1dEdmhUQmc0YjNYUjBXUFRYR3ZLc2xCSG10WDU5MkdfcndlcC1EcEttT2c4Zm54dWViZEJJM0w3eVVNNE1HQlpfcQ?oc=5"
+    },
+    {
+      "headline": "China’s trade surplus nears record as pressure mounts from trading partners",
+      "summary": "",
+      "source": "AP",
+      "date": "2026-10-14T14:52:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQVdkTHZ3MkRKMEQybkpwQml2QmtLYmZOWjFGVVhfeWo4RVVNNk1wc0FScjBQZERDOTgxYUJpNVhfeW5nZjZqbGtCb1FTbTJQQklnOGZnRnBDZk9vV0J5WXlxU0xvZlBDQWlkNFhKY3h2LUdSWTZTeW9pYkgwM2tQNl9iNVpHUQ?oc=5"
     },
     {
       "headline": "Trump’s Not So Hot Economy: China’s Growth Far Outpaces US",
@@ -52070,7 +52074,7 @@
       "summary": "Beijing is rapidly scaling up the use of artificial intelligence (AI) to produce short-form videos and microdramas in its publicity campaigns, aligning with directives stressing technology’s role in strengthening ideolog",
       "source": "South China Morning Post",
       "date": "2026-10-12T08:03:06+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3370547/how-china-harnesses-ai-microdramas-shape-public-opinion-home-and-abroad?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3370547/how-china-harnesses-ai-microdramas-shape-public-opinion-home-and-abroad"
     },
     {
       "headline": "China’s Weakening Economy Is Creating a Lost Generation",
@@ -52091,7 +52095,7 @@
       "summary": "This is a special contribution from the Centre on Contemporary China and the World at the University of Hong Kong. Read the full report at the end of the article. It will be available on the institute website cccw.hku.hk",
       "source": "South China Morning Post",
       "date": "2026-10-12T02:00:26+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3370383/ai-and-iran-war-loom-chinas-energy-technocrats-are-fast-track?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3370383/ai-and-iran-war-loom-chinas-energy-technocrats-are-fast-track"
     },
     {
       "headline": "Why China is importing a record amount of gold — and what it means for prices",
@@ -52112,21 +52116,21 @@
       "summary": "Communist Party officials in eastern China’s Zhejiang province have called for greater oversight of major internet platforms and their “traffic power”, warning that online traffic and algorithms had evolved into a force ",
       "source": "South China Morning Post",
       "date": "2026-10-10T12:00:07+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3370443/chinas-zhejiang-province-calls-limit-tech-giants-power-over-online-traffic?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3370443/chinas-zhejiang-province-calls-limit-tech-giants-power-over-online-traffic"
     },
     {
       "headline": "Will Taiwan issue derail Washington and Beijing’s latest reset? Analysts are sceptical",
       "summary": "Recent interactions involving the US and Taiwan are not expected to derail the current momentum in relations between Washington and mainland China, according to diplomatic analysts.\nBeijing was taking a pragmatic approac",
       "source": "South China Morning Post",
       "date": "2026-10-10T03:00:12+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3370402/will-taiwan-issue-derail-washington-and-beijings-latest-reset-analysts-are-sceptical?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3370402/will-taiwan-issue-derail-washington-and-beijings-latest-reset-analysts-are-sceptical"
     },
     {
       "headline": "Why a Communist Party boss had a coffee shop date with Chinese content creators",
       "summary": "The setting may have been casual but the choice was not when the Communist Party boss of a northeastern Chinese province sat down with digital content creators at a coffee shop on Wednesday.\nJilin province party secretar",
       "source": "South China Morning Post",
       "date": "2026-10-10T02:01:07+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3370417/why-communist-party-boss-had-coffee-shop-date-chinese-content-creators?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3370417/why-communist-party-boss-had-coffee-shop-date-chinese-content-creators"
     },
     {
       "headline": "China, EU strike deal to halve Chinese hybrid exports",
@@ -52213,32 +52217,18 @@
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeGo5YmpHb0NFRGEwV2doLXlzbWNsNWtxejZjNDFia2RPekg2R2VwcndaQXVtTW1TMUFDUU5XbW1mX3RKRXhkdklMNFRBdVk2NlZJVWpaSmlJTjRGVzFwTWZuNlg3YkVIMDNnOUg2Qlp4aENBdzFTZTAtTVpzTWZyWUJnWTBNNmEtRXJvV2JuY2JLOTloXy1hZTBCWEo5X2tHOUR0dTNRbw?oc=5"
     },
     {
-      "headline": "China’s ‘Self-Reliance’ Drive Is Upending Trade With Europe",
-      "summary": "",
-      "source": "The New York Times",
-      "date": "2026-10-07T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQd0Q1dXlkX1N1VHlZdUZvaUlDNHVYSk9ZWERvQzFoRk9lc0lybmx1cURTWk1QUVlkcWdkOFNtaHg3ZzlfbVV6QUVoaDFBa3A5cHFJNzFwWXNKcTItWE5nMkNoOW9TWWFzaHp6a3Jydk1aVzY5eWduOVdMZGpRS1V4N2h5TWRqNmk5?oc=5"
-    },
-    {
       "headline": "China’s DeepZang AI aims to transform Tibetan language tech, promote ethnic unity",
       "summary": "Creators of China’s first Tibetan-language AI model have pledged to speed up upgrades aimed at promoting ethnic integration.\nApproaches to advancing the large language model, DeepZang, were discussed at a seminar on Mond",
       "source": "South China Morning Post",
       "date": "2026-10-07T01:00:07+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3369938/chinas-deepzang-ai-aims-transform-tibetan-language-tech-promote-ethnic-unity?utm_source=rss_feed"
-    },
-    {
-      "headline": "The Hidden Policies That Power China’s Export Boom",
-      "summary": "",
-      "source": "The New York Times",
-      "date": "2026-10-06T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SMXRCTnpKaHNsNTVZalE1NzZhNjNWWkRfejc4bnozY2c2dU01ckZpdTVtVFRMSGlJbnlNX1J2ZFBoalVScE9EZHhBeVZULVE3bTJIcEsyWU9ONWtjUmtrZUhLZkRnVy1kdEtKdG1WazVvRkpUbTJuVnkzbw?oc=5"
+      "url": "https://www.scmp.com/news/china/politics/article/3369938/chinas-deepzang-ai-aims-transform-tibetan-language-tech-promote-ethnic-unity"
     },
     {
       "headline": "Beijing’s policy advisers map out how post-reunification Taiwan could be governed",
       "summary": "In 2019, President Xi Jinping became the first Chinese leader to publicly call for the exploration of detailed proposals for governing Taiwan after reunification.\nSeven years later, the first proposals from a handful of ",
       "source": "South China Morning Post",
       "date": "2026-10-06T01:30:05+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3369782/beijings-policy-advisers-map-out-how-post-reunification-taiwan-could-be-governed?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3369782/beijings-policy-advisers-map-out-how-post-reunification-taiwan-could-be-governed"
     },
     {
       "headline": "Germany and France want EU storm gates for China’s trade surge",
@@ -52259,21 +52249,21 @@
       "summary": "For the first time in a decade, China has returned to the top 100 out of 145 economies in an annual global report assessing gender equality.\nChina closed 69.9 per cent of its gender gap in 2025, rising to 96th place from",
       "source": "South China Morning Post",
       "date": "2026-10-03T04:00:14+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3369621/china-returns-top-100-gender-parity-ranking-first-time-2016?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3369621/china-returns-top-100-gender-parity-ranking-first-time-2016"
     },
     {
       "headline": "‘America is back’, AI ‘conspiracy’, China’s Laos deal: 7 global relations reads",
       "summary": "We have selected seven of the most interesting and important news stories covering global relations from the past few weeks. If you would like to see more of our reporting, please consider subscribing.\n1. Trump condemns ",
       "source": "South China Morning Post",
       "date": "2026-10-02T14:00:15+00:00",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3369257/america-back-ai-conspiracy-chinas-laos-deal-7-global-relations-reads?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3369257/america-back-ai-conspiracy-chinas-laos-deal-7-global-relations-reads"
     },
     {
       "headline": "Xi-Trump meeting’s takeaways, successes and fallout: 7 US-China relations reads",
       "summary": "We have selected seven of the most interesting and important news stories covering US-China relations from the past few weeks. If you would like to see more of our reporting, please consider subscribing.\n1. Trade, Taiwan",
       "source": "South China Morning Post",
       "date": "2026-10-01T14:00:21+00:00",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3369255/xi-trump-meetings-takeaways-successes-and-fallout-7-us-china-relations-reads?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3369255/xi-trump-meetings-takeaways-successes-and-fallout-7-us-china-relations-reads"
     },
     {
       "headline": "China is giving its economy a big shot in the arm",
@@ -52287,21 +52277,21 @@
       "summary": "China’s ruling Communist Party is marking 90 years since the end of the Long March with exhibitions, tours, film and television productions as it tries to mobilise the nation to contribute to its vision for the future.\nA",
       "source": "South China Morning Post",
       "date": "2026-10-01T04:59:40+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3369418/shows-tours-and-film-china-marks-90-years-end-long-march?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3369418/shows-tours-and-film-china-marks-90-years-end-long-march"
     },
     {
       "headline": "US sanctions forced Xinjiang cotton to adapt, but survival comes at a cost",
       "summary": "The fields in Xinjiang’s Awati county – a cotton hub hit by US sanctions – were nearly ready for the October harvest.\nYusup Molamaiti, a 36-year-old technician, recalled what it was like manually planting and harvesting ",
       "source": "South China Morning Post",
       "date": "2026-09-30T22:00:13+00:00",
-      "url": "https://www.scmp.com/economy/china-economy/article/3369294/us-sanctions-forced-xinjiang-cotton-adapt-survival-comes-cost?utm_source=rss_feed"
+      "url": "https://www.scmp.com/economy/china-economy/article/3369294/us-sanctions-forced-xinjiang-cotton-adapt-survival-comes-cost"
     },
     {
       "headline": "Xi projects confidence in National Day speech, with rallying call for economic growth",
       "summary": "Chinese President Xi Jinping projected a message of confidence about the country’s ability to overcome challenges during his annual National Day address, issuing a rallying call for robust economic growth and more certai",
       "source": "South China Morning Post",
       "date": "2026-09-30T13:46:50+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3369370/xi-projects-confidence-national-day-speech-rallying-call-economic-growth?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3369370/xi-projects-confidence-national-day-speech-rallying-call-economic-growth"
     },
     {
       "headline": "China rolls out new measures to bolster its property sector and economy",
@@ -52322,7 +52312,7 @@
       "summary": "China’s broadcasting regulator has called for greater support for live-action dramas as the government seeks to steer the booming microdrama industry towards higher-quality production and tighter rights safeguards amid t",
       "source": "South China Morning Post",
       "date": "2026-09-30T04:00:08+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3369183/slow-beautiful-china-launches-war-against-ai-drama-goes-beyond-algorithms?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3369183/slow-beautiful-china-launches-war-against-ai-drama-goes-beyond-algorithms"
     },
     {
       "headline": "China unveils mortgage subsidies to boost economy",
@@ -52350,7 +52340,7 @@
       "summary": "President Xi Jinping has ordered China’s security and legal apparatus to relentlessly eliminate risks and build a “safer” country a year ahead of the pivotal 21st Communist Party congress, which will usher in a major lea",
       "source": "South China Morning Post",
       "date": "2026-09-28T13:30:27+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3369101/xi-jinping-demands-safer-china-communist-party-prepares-leadership-reshuffle?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3369101/xi-jinping-demands-safer-china-communist-party-prepares-leadership-reshuffle"
     },
     {
       "headline": "US-China trade board carves path for tariff relief on $60B of goods",
@@ -52385,7 +52375,7 @@
       "summary": "Han Zheng, China’s vice-president, called on “major countries” to respect the sovereignty and security of Middle Eastern nations and bring about a two-state solution for the “Palestinian question” on Saturday at the UN G",
       "source": "South China Morning Post",
       "date": "2026-09-26T23:04:55+00:00",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3368923/why-xi-jinping-skipped-un-after-his-trump-summit?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3368923/why-xi-jinping-skipped-un-after-his-trump-summit"
     },
     {
       "headline": "China’s AI revolution is taking shape. Why are some economists urging caution?",
@@ -52413,14 +52403,14 @@
       "summary": "Taiwanese officials and observers have reacted cautiously to the Washington summit between Donald Trump and Xi Jinping, with uncertainty lingering over what the two leaders discussed about the island.\nThe only public men",
       "source": "South China Morning Post",
       "date": "2026-09-25T11:26:13+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3368839/trumps-warm-welcome-xi-met-caution-and-uncertainty-taiwan?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3368839/trumps-warm-welcome-xi-met-caution-and-uncertainty-taiwan"
     },
     {
       "headline": "Why did Xi and China’s first lady bring their own flasks to White House banquet?",
       "summary": "Amid the polished silverware and fine crystal stemware on display at the state dinner in the White House on Thursday sat the vacuum flasks brought by Chinese President Xi Jinping and first lady Peng Liyuan.\nThe couple’s ",
       "source": "South China Morning Post",
       "date": "2026-09-25T10:49:27+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3368835/why-did-xi-and-chinas-first-lady-bring-their-own-flasks-white-house-banquet?utm_source=rss_feed"
+      "url": "https://www.scmp.com/news/china/politics/article/3368835/why-did-xi-and-chinas-first-lady-bring-their-own-flasks-white-house-banquet"
     },
     {
       "headline": "Details on U.S.-China trade negotiations coming Monday, USTR Greer says",
@@ -52463,13 +52453,6 @@
       "source": "Al Jazeera",
       "date": "2026-09-24T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM0VCRW5zQlc4N1gyV2VWSEFjQm0tMnhRajF3QkFFWENVVGd1T1g0d1FTbmhfRFFYeFo2REhjT3h3RXJOS2g0cU0xeVZfemIzU0p3RDVIanFnMFhrcjRMUTZyRjZzbGpkZlUyYlVyOXM0MTl2cHZYSWlTZlI2STNPZVc2V0Ewa2JzSFJ6dS1qZHU5Q0F4YlhKeTFxemptRFJVZkYtZnduUHlPSXRUY2NZ0gG0AUFVX3lxTFBJTC1fTmZ1cFFSNjBHQjBVd1BCaE1YNFVmRWgtaWE5YjlyYzFKb1o3TzJKcnhtZTBSTDhPTWhkTW5PMURPU1F2X3hXaHUwVlJJSUNGOWhMOXdxLUxoNVczOUg3NXlXeUhoQ3lXRTEzNk1ORFZTcjRaNWZpdlpPcWZJZUdFUkxmbTd6VlFha3ZoX01CX3pYdkFrRUdPQ0gwazBPY3dJU3hWeVpqRW5BQ0Zkb2FVVQ?oc=5"
-    },
-    {
-      "headline": "Ahead of Xi’s ‘historic milestone’ US visit, a fentanyl goodwill gesture from China",
-      "summary": "China’s ambassador to the United States has hailed President Xi Jinping’s coming state visit as a “historic milestone” for bilateral and international relations.\nXie Feng’s remarks came just as Beijing unveiled stringent",
-      "source": "South China Morning Post",
-      "date": "2026-09-23T10:35:16+00:00",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3368527/ahead-xis-historic-milestone-us-visit-fentanyl-goodwill-gesture-china?utm_source=rss_feed"
     },
     {
       "headline": "Bessent says US, China trade truce extended by 2 months",
@@ -52519,6 +52502,13 @@
       "source": "Bloomberg",
       "date": "2026-09-23T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWkxNMHpuN3RlOHhaWEl4R0Q4ZzZWZUY3TWwydWpFNVVwYVJGby01Q2E3ZzVXODJjMWFMdVBMMTR2QmZrczJad3JERU5DZUVKRWkyb1IxWkVqVWxBSXQ5STBsLW5LRnJaQkYyTlJrMi1PbG12R1FJRGFkMnhVelRLT0xvWGlwWmVNOWF1cHNIZFY2NUJTbTIxcW5iUkNIRUR0Snlxc3d4RmlSS0xCdDRCbA?oc=5"
+    },
+    {
+      "headline": "U.S. and China Agree to Extend Trade Truce by 2 Months, Bessent Says",
+      "summary": "",
+      "source": "The New York Times",
+      "date": "2026-09-23T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQS1rRkRnUUpxampuWC1NRHNoMHMyc1FZRXdJV21nNERlWklxaVVKZXlfa0g2WXI5M1FVSEx0c0xzZ24wbURZTGR4MlhvQlAxMXBkR2hqeEoxWHROUjdlYVhlOXlzSzNkMENSSTBmNFNWaDdQM2lsbndOSVhSVWpJNmJWSQ?oc=5"
     },
     {
       "headline": "Businesses ‘frozen out’ of Trump’s tariff channel with China",
