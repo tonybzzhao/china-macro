@@ -6,6 +6,50 @@ plus a running feed of related political/economic news.
 
 ## How it works
 
+### Caixin / RatingDog PMI recovery (2026-10-21)
+
+The October 21 runs at [11:57 UTC](https://github.com/tonybzzhao/china-macro/actions/runs/39595811169)
+and [17:16 UTC](https://github.com/tonybzzhao/china-macro/actions/runs/39642398895)
+failed decoding Caixin's response. A direct probe returned HTTP 200 with an HTML
+404 page from `yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo?type=man`.
+Inspection confirmed `history.json` stopped at August 2026 (51.5). September
+2026 is 52.1, published September 30, and is now included without altering history.
+
+| Source | Assessment |
+| --- | --- |
+| Caixin endpoint used by AKShare `index_pmi_man_cx` | Currently non-JSON. The adapter calls the same endpoint directly with timeouts and schema validation. |
+| [S&P Global](https://www.pmi.spglobal.com/) / RatingDog | Survey producer; public release pages returned 403 during investigation. No unverified release scraper is enabled. |
+| [Trading Economics](https://tradingeconomics.com/china/manufacturing-pmi) | Live-accessible September 52.1 headline, sourced to S&P Global. Selected fallback parses only the current observed manufacturing headline and reference month. |
+| [FXStreet](https://www.fxstreet.com/news/chinas-september-ratingdog-manufacturing-pmi-leaps-to-521-services-pmi-rises-to-516-202609300148) and [AP](https://apnews.com/article/b53c7e697fc842de4c9a57ac5362cd05) | Publication cross-checks agree on 52.1 and prior 51.5; not runtime dependencies. |
+| Legacy Sina widgets | Previously documented as frozen in 2025; unsuitable fallback. NBS PMI and services PMI are different indicators. |
+
+`scripts/caixin_pmi.py` makes at most three attempts per source with 1/2-second
+backoff and 5/20-second connect/read timeouts. Empty, malformed, conflicting,
+out-of-range, future-month, and stale responses fail closed. A stale primary
+response also triggers fallback. Conflicts with retained observations require
+manual verification; existing values are never silently revised. Only fully
+accepted responses are merged, preserving every prior observation.
+
+The series' `refresh` object records `attempted_at`, `status` (`refreshed` or
+`retained`), `expected_month`, `latest_observation`, source, errors, and separate
+last-success time/source. The global run timestamp is not PMI refresh evidence.
+Freshness uses Beijing time: by day 7 it requires the previous reference month;
+before day 7 it allows the month before that. This conservative deadline allows
+holiday delays but cannot detect an early month-end release until day 7.
+A failed retrieval remains `retained` even if history meets the deadline.
+
+After saving other indicators and refresh metadata, unsuccessful PMI retrieval
+returns exit code 1. Actions commits available data, then marks the job failed.
+Successful fallback counts as refreshed, with primary errors retained. This
+change does not modify economic-calendar retrieval or its status handling.
+
+Run `python -m unittest discover -s tests -v`. Regression tests use mock responses;
+a dedicated test workflow runs on pushes and pull requests. The fallback fails
+closed if its provider changes the HTML or headline wording.
+
+The older source inventory below describes the August baseline; this section
+supersedes its Caixin retrieval and freshness claims.
+
 - **`index.html` / `app.js` / `style.css`** — a static, no-build front end.
   It fetches `data/history.json` and renders interactive charts (hover for a
   crosshair + tooltip, switch time ranges, switch category tabs).

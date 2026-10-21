@@ -4476,7 +4476,7 @@
           "freq": "monthly",
           "decimals": 1,
           "higher_is_better": true,
-          "flag": "Only 4 months found in free sources. Since mid-2025 sometimes co-branded 'RatingDog Manufacturing PMI' — same underlying series.",
+          "flag": "Caixin / RatingDog: same underlying S&P Global manufacturing PMI series.",
           "data": [
             {
               "date": "2012-01",
@@ -5181,10 +5181,28 @@
             {
               "date": "2026-08",
               "value": 51.5
+            },
+            {
+              "date": "2026-09",
+              "value": 52.1
             }
           ],
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
-          "threshold": 50
+          "threshold": 50,
+          "refresh": {
+            "attempted_at": "2026-10-21T18:52:54.311780+00:00",
+            "status": "refreshed",
+            "expected_month": "2026-09",
+            "latest_observation": "2026-09",
+            "last_success_at": "2026-10-21T18:52:54.311780+00:00",
+            "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
+            "errors": [
+              "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+              "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 2: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+              "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 3: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+            ],
+            "source": "https://tradingeconomics.com/china/manufacturing-pmi"
+          }
         },
         "official_non_manufacturing_pmi": {
           "label": "Official Non-Manufacturing PMI",

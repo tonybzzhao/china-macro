@@ -30,6 +30,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run update script
+        id: refresh
+        continue-on-error: true
         run: python scripts/update_data.py
 
       - name: Commit and push if changed
@@ -43,3 +45,9 @@ jobs:
             git commit -m "Auto-update macro data $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           fi
+
+      - name: Report unsuccessful PMI refresh
+        if: steps.refresh.outcome == 'failure'
+        run: |
+          echo "::error::Refresh incomplete. Available data and retained PMI history were saved."
+          exit 1

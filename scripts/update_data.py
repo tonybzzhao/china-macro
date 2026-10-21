@@ -27,6 +27,7 @@ from pathlib import Path
 import pandas as pd
 import akshare as ak
 import requests
+from caixin_pmi import refresh as refresh_caixin_pmi
 
 try:
     import feedparser
@@ -169,9 +170,6 @@ def fetch_pmi_official():
         if v2 is not None:
             nonman_pts.append({"date": d, "value": v2})
     return man_pts, nonman_pts
-
-def fetch_cx_pmi():
-    return simple_series(ak.index_pmi_man_cx, ["日期"], ["制造业PMI"])
 
 def fetch_gdp():
     """macro_china_gdp's own 季度 column already labels the reference
@@ -469,7 +467,6 @@ FRESH_FETCHERS = [
     ("external", "usdcny", fetch_usdcny_daily),                          # daily, via Frankfurter
     ("growth", "retail_sales", fetch_retail_sales),                      # through 2026-07
     ("growth", "fixed_asset_investment", fetch_fixed_asset_investment),  # through 2026-07
-    ("growth", "caixin_manufacturing_pmi", fetch_cx_pmi),                # through 2026-07
     ("growth", "gdp_growth", fetch_gdp),                                 # through 2026-Q2
     ("growth", "industrial_production", fetch_industrial_production),   # through 2026-07
     ("prices_credit", "cpi", fetch_cpi),                                 # through 2026-07
@@ -761,6 +758,11 @@ def fetch_news(limit_per_feed=40):
 
 def main():
     data = load_data()
+    pmi_ok = refresh_caixin_pmi(data)
+    pmi_status = data["categories"]["growth"]["series"]["caixin_manufacturing_pmi"]["refresh"]
+    log(f"Caixin PMI: {json.dumps(pmi_status, ensure_ascii=False)}")
+    if not pmi_ok:
+        print("::error::Caixin PMI refresh failed; historical data retained", file=sys.stderr)
 
     try:
         cal = fetch_trading_calendar()
@@ -828,7 +830,8 @@ def main():
     data["meta"]["last_updated"] = datetime.now(timezone.utc).isoformat()
     save_data(data)
     log("done")
+    return 0 if pmi_ok else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
