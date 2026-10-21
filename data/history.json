@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-21T11:59:53.439518+00:00",
+    "last_updated": "2026-10-21T17:19:00.162117+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -50219,6 +50219,10 @@
             {
               "date": "2026-10-20",
               "value": 6.678
+            },
+            {
+              "date": "2026-10-21",
+              "value": 6.6761
             }
           ],
           "desc": "How many yuan it takes to buy one US dollar; a rising number means the yuan is weakening."
@@ -51731,18 +51735,18 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5dUxGSENxQmVITW9nLWtEcWIyQUtLNWllRldNb2Q5Wi1qMkstTnUxUDZGRl9zYTk1eDlFUEt1NXNCSzZ3dGJVV1huOFRsQU5mY055MFo1ZWN3VHVpMVBXSXNXV25Xb2c?oc=5"
     },
     {
-      "headline": "China flags APEC's role as key for a challenged global economy",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-10-20T07:25:43+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXlaQTdVSjB0cS1HeThNc1hMYlJiZjdrT1VTLUNhZjl5QjNpYU1EQTEtaDVfUWtSeGEtZG5ZNWxxeS0zbmpVV202NnJwQlVUWWU3RUo2QzFlV25nX2haVEg2YU5VaUh3UmxTZndSSG1fZGVRU0FIcnIySnRIcXA3c3FUbnBIcUJPZEUtQVZsNTgxS2JudFZpMl9RZUVkR284STBrek9md3JlSjg?oc=5"
-    },
-    {
       "headline": "Chinese official says economy resilient but recovery momentum remains weak",
       "summary": "",
       "source": "Reuters",
       "date": "2026-10-20T03:34:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTlF5X0F6MVFKS0tNYzhDMXA3QTJSNGozakNGNDhPX29qeVpYU0lNYlVzYTl3dWlsTDJvV0tDVVZPZHNFQ1FVMVdSaVZvc3h6T1ZCbnlZRjhQVG5uOEJQNnNSVVVPRkpudFk3R3NvbnRpeF9fclZHMDZldXNvTEl4T2dxNTR0Q2tuS3BteXRDRE1aNkpFeUVVeFhhaXNFVjduNndGcDdSdTFJaVhJRGVPbHBXUmlLZTltamY1amNOalNZc1k?oc=5"
+    },
+    {
+      "headline": "How to Increase America’s AI Lead Over China",
+      "summary": "",
+      "source": "Institute for Progress (IFP)",
+      "date": "2026-10-19T21:00:11+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zVmlYVVlKak1CanhXNEc1NkstUU9LOTQwTE9yMlBlRTliVEtENUpmaG9TclB4eFpKbVdLVklZbzgxaHVLR2wtbHZxNXQ4UFZFVUkzaFRyZ2UyaWhZZU8yUFJndlI3VTVGQU14eA?oc=5"
     },
     {
       "headline": "China’s economy grows faster than forecast after AI boom boosts exports",
@@ -51808,6 +51812,13 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSGVKTFBJR0drUjlPSjZvYjZUeDBaOVlDQkdsSWRLbGJ3ZGxfTEs0MmR6bFVkNXZDczVIcGV2WnlfWFZnSk9rTk9OVENhQVoyd3I3YThXdlFtenZKbWozZGFIWXktSVQ5T2hlNnh4amxMWkNVbjZQM1BGUmJHTDlRRjVVa2Q?oc=5"
     },
     {
+      "headline": "China’s Economy Expanded 4.5% in Third Quarter, Powered by Exports",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-10-19T04:33:05+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5"
+    },
+    {
       "headline": "China’s economy grows 4.5% in third quarter on export surge",
       "summary": "",
       "source": "Euronews.com",
@@ -51815,11 +51826,11 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFVvME1UdU5aVjEyYWQ2cnpsUjFNR3Y1UjJNTkV0N2w4RUktcWNqNHJSOHJOYnNCUEw0Mmk2ZlFuaThvMGVfRWlLNFhKcThqaGFiQXpXMUhYd18wcnVMVHo1YXpORzVCbTkyYzV1WDRRRXhoaFRGRmxQbnpCZVVVdnE4SjduOFJPMHVqUDBZZkswRVlsdEJuSjN6WW1FcUl1NEhhcWhrOXktbjA?oc=5"
     },
     {
-      "headline": "China’s Economy Expanded 4.5% in Third Quarter, Powered by Exports",
+      "headline": "China’s economy accelerates on robust exports as domestic weakness persists",
       "summary": "",
-      "source": "WSJ",
-      "date": "2026-10-19T04:03:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5"
+      "source": "NBC News",
+      "date": "2026-10-19T04:07:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSzRiam5xaTFKZFp1LU15cy1jVGlLOWZMN2Y1QURmOC1KbVZhdmN1Y3hiajNZRFdtQzRUaU14ZnFNQVFDSllrM0NYLTl3VEktUy0xTUwxZjNURGRKeDdhZU9XT3puYU5qODkyZndkY1hMcGtJTU4xVVpUVms1R1VRekF2eDhmX3FnNnRmUkVwbnNZZGFWWVZoZ04tZjZ5UllH?oc=5"
     },
     {
       "headline": "VIEW China's economic growth accelerates to 4.5% in third quarter",
@@ -52011,39 +52022,11 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOamoyNjV5UDBSSC15UTVfbGh1eG02cHgzRVJxRGpQaVpiWjE2ODZUZkt4bmJUS3F5YjhBdFZkazJvZjNOUHhjc1hZc3BjbXlNdERLY2NoTmFpSlhuS2JPZG5EaWZDc3JBODdPXzlkWWt6Ti1mYW9kVTBsNEpXYWpqRFNn?oc=5"
     },
     {
-      "headline": "Europe's alternative to Trump's China trade war",
-      "summary": "",
-      "source": "Axios",
-      "date": "2026-10-13T16:03:21+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX3VXMHRaOWxfdlNqcjBPcDE3SmlBY2ZvMG1SX0tSeXV6OU9ZcEJBTWNJMjh6cU5oX1F1X3lVMmV4dDFDZEVsLUNvZU52MlpmaktsLXBET2VhRXd4UFFyVzJfZXBGOFpMVlNONVZYd0Z4SmFJZjlEdHpHMnd5dUUwZUI3RGM?oc=5"
-    },
-    {
-      "headline": "US chip stocks extend slide as China memory report, AI spending jitters hit sector",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-10-13T14:47:04+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjlLc0J0QjMyZmZRZWM1SldodnE0RV8xUWN0S0EzdUtWX1VjNXRiTVRKdDJQQVNkNkNadU50bGFueTItd3V0Zk43aFRiV2xsMVdCS1lFbFh3TVI3b05yd253VjBLSWdlYmwyb3VIOFBLQm5VbFRlR1ZQczRlekUyWHNOMjUwdmhvMXA2MWl1UUp6aDFydkZRZWdjUzZnRUR2NXAteDNMZS1zdDNUWm1HRVBxYlo3TXh6ZGZKT1lNOXFHUjBp?oc=5"
-    },
-    {
       "headline": "Samsung and SK Hynix Lead Chip Sell-Off as China Competition Fears Grow",
       "summary": "",
       "source": "Morningstar",
       "date": "2026-10-13T13:58:15+00:00",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbUZwUE43ZFl3NDVpbTNjYmlvZnRqVVhwcUdkRnRZN3U3V09QMVVLRC1vSDdyZG13MVRhQU4xOHhnRGxYVGJsUHNCRklkcmkwOEJnd2dYRmk0b3djbnNWTHZXNzVRMjBJSlZnb2lRTkJNNjk1d3FzNmxXZzhoUzNyclhTMWpYSnJOWWJXZG01UE9VaGhQTUt0YUkwbFF2c2VEODdEWVBB?oc=5"
-    },
-    {
-      "headline": "Why Are AI Chip Stocks Falling? China’s CXMT Advances And Broadcom CEO’s Warning",
-      "summary": "",
-      "source": "Forbes",
-      "date": "2026-10-13T10:53:28+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUXRMYU5hTnA5SDRPSF81ZjVLM0puT2NwLXRBSUlsVVktbExNTEdONm1FeGNmUlg3YkJwNGl5blBnamszaTFORTlIMzgyd3BVMWF4bWpMeGZwZThJcUVrZWMxbWY0LUUwNDZiQ2g0VUlyZENOSWhvbDNUVkRuNVVES2tkeW52eFNXcWNlZFNTYjhjS0QxRU5jcWdiZzFTZ0pUZFkzWjVVYzZucjRWZmxvVlVGUTJISDlZRHY4?oc=5"
-    },
-    {
-      "headline": "How Far Can China’s Yuan Rise? What Goldman’s Models Show",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-10-13T09:43:42+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYmpBekMxNUxWQlh4QXpmaHlXLU90bUNrX2w5MzhKWEg0UHVWVlAtWHBYcnMyNXdaMGNQVTYwbngtcktONXpqNUJYY1hTM1ZkcS1hMWUwVW1SRTZheHJfU3UzTWlYTVg3T2VWN3ltN2pScENkT2NId2JXZG05emdaOGw5a3lvQVhidEJ4c3dvN19Tb0NQQlFjdkdKX0I?oc=5"
     },
     {
       "headline": "IMF revises China GDP projection down for 2026, cautions on export reliance",
@@ -52053,11 +52036,25 @@
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQzAxaHo4aDdLTTQ0azFPelpyRFh4TG1tT2RZYXRCZ3hKZFV4WXlGOXFpNGplVFFuay1LajR5LU1Ram1KWmFQelFyU1otdXVxLWxCUTM5R3RkY1dZOXpRb3BKN1QxX09pWWdHWXhlTW0xNXZwdXAyR1FHd1lnclBuWXh0ZWNoenJwNUhMczB0TFdabmsxRmlRakZQajdoNzBkUWxFem5sWkFPNV9mRk1OdGpxZnlhMkxJUWRuUXpmUHpBWHlHUGfSAcYBQVVfeXFMUHh2cWQwaW9NN3E0MElEV2JwR3Q3aTFGU0hPWXV2RWNjZlpYajhKWTNobHBCbWZlYklsTEtjeXVlY19FeHY0RzdRQ0laakZxa2dha2hQSGczSUQ4dmhMZ1Zydm9ma29kTVU1UEpFVUEyREticlkxLXBFUy1pUnJPRzlPMnJpNWpBMFBTdGFucXlKN1Voc3hnNTJULWNsSHEwdjdjcXBKLTBBS1Z3XzZ0blk2VE1YVl94VDNKcG4tMlpHWklfeHVR?oc=5"
     },
     {
-      "headline": "China's exports and imports surge past expectations in September",
+      "headline": "Europe's alternative to Trump's China trade war",
       "summary": "",
-      "source": "CNBC",
+      "source": "Axios",
       "date": "2026-10-13T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbW9ZU3lrWlpJTzRneXhRZ3BwSVNFQmdnWEFvVEs0VU14TGxXMTBzS2lwRTNnVGVvdmw1UURwbnRxQWZDQlBjbERzVWJOV1lrZVZ5ZTRuQnpjRTZsemRrNExBdTdDZ0Y3QkZZWWFZM0UyNzJCT3dPR014LXBveXNsTVlzWUVvVnRXSXZ5TlItZHZtaXNRSTBfZdIBngFBVV95cUxOUDVqcFJpZnVsUHdQVlBjU2RFZnhZX2NTc1lEN25OUjhOT25zRlJiQmY4RHFBQWoyWjJNdUJRbzdGTUtMV1BsSURQbk1BakhZSk9CSXFIbXR3bm0xUURvRWVjc3VIU1RoZExxRWx2OHVUeWNoVWRjRkZXMjlwTE1NUzE2akRXVlFqeU1JSFZramVEWUFxbXFhQS1GZU4tQQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX3VXMHRaOWxfdlNqcjBPcDE3SmlBY2ZvMG1SX0tSeXV6OU9ZcEJBTWNJMjh6cU5oX1F1X3lVMmV4dDFDZEVsLUNvZU52MlpmaktsLXBET2VhRXd4UFFyVzJfZXBGOFpMVlNONVZYd0Z4SmFJZjlEdHpHMnd5dUUwZUI3RGM?oc=5"
+    },
+    {
+      "headline": "US chip stocks extend slide as China memory report, AI spending jitters hit sector",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-10-13T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjlLc0J0QjMyZmZRZWM1SldodnE0RV8xUWN0S0EzdUtWX1VjNXRiTVRKdDJQQVNkNkNadU50bGFueTItd3V0Zk43aFRiV2xsMVdCS1lFbFh3TVI3b05yd253VjBLSWdlYmwyb3VIOFBLQm5VbFRlR1ZQczRlekUyWHNOMjUwdmhvMXA2MWl1UUp6aDFydkZRZWdjUzZnRUR2NXAteDNMZS1zdDNUWm1HRVBxYlo3TXh6ZGZKT1lNOXFHUjBp?oc=5"
+    },
+    {
+      "headline": "Why Are AI Chip Stocks Falling? China’s CXMT Advances And Broadcom CEO’s Warning",
+      "summary": "",
+      "source": "Forbes",
+      "date": "2026-10-13T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUXRMYU5hTnA5SDRPSF81ZjVLM0puT2NwLXRBSUlsVVktbExNTEdONm1FeGNmUlg3YkJwNGl5blBnamszaTFORTlIMzgyd3BVMWF4bWpMeGZwZThJcUVrZWMxbWY0LUUwNDZiQ2g0VUlyZENOSWhvbDNUVkRuNVVES2tkeW52eFNXcWNlZFNTYjhjS0QxRU5jcWdiZzFTZ0pUZFkzWjVVYzZucjRWZmxvVlVGUTJISDlZRHY4?oc=5"
     },
     {
       "headline": "Elon Musk explains why chip stocks are getting drilled on news out of China",
@@ -52065,6 +52062,13 @@
       "source": "Yahoo Finance",
       "date": "2026-10-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSTQ2UDBROFFCdFl4YWRlOGFPbWs2LTZXb1FybFpXTU1DZTBneUZPOUd1a0x5Skt0SlA0THJuUFd3RUpfckVjMUhXWTFxRGhxV3dpNEJzS1NZQUpJUHdEZmRzV19fNHNTbjVkZnYydDViazQ0OEthWTBOSHlpdklLaE5YZVpnRWJjYlVsazNSQVJNeDF6cWFxOW9pdDVMSTl0aVN5NzNtUEhlSGZzYkVWN2NqX2FiRkxucTdjbEt3WVZBRmNoR0FuYnh1aUJ1RmZNQ0RyOExn?oc=5"
+    },
+    {
+      "headline": "How Far Can China’s Yuan Rise? What Goldman’s Models Show",
+      "summary": "",
+      "source": "Yahoo Finance",
+      "date": "2026-10-13T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYmpBekMxNUxWQlh4QXpmaHlXLU90bUNrX2w5MzhKWEg0UHVWVlAtWHBYcnMyNXdaMGNQVTYwbngtcktONXpqNUJYY1hTM1ZkcS1hMWUwVW1SRTZheHJfU3UzTWlYTVg3T2VWN3ltN2pScENkT2NId2JXZG05emdaOGw5a3lvQVhidEJ4c3dvN19Tb0NQQlFjdkdKX0I?oc=5"
     },
     {
       "headline": "Asian stocks slip as China shares fall, oil risks and U.S. CPI weigh",
@@ -52263,13 +52267,6 @@
       "url": "https://www.scmp.com/news/china/diplomacy/article/3369257/america-back-ai-conspiracy-chinas-laos-deal-7-global-relations-reads"
     },
     {
-      "headline": "Greer says no specific timeline set for enforcing US-China Board of Trade",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-10-02T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbS1wbllBRWxBanY4ZU1OV0Q4VFBZcHY4UlUtalFaX1A1S3N3cG1uNXNwbXJDU1VhWnFqUURhNjBQdXN3WENiYnFwdnRvcnZsOTdJM0ZYWE82MTJqbHpPeW1RY3BKUVdUMjZlSmtZZFI0QUZVQUY4OVZXUk5DSXVrRnZDT005WGtWTjZ4Yk1pSDNSTUNDZmlhYlhQenIzQ1BIQnB6TVQ4dnJkV3hIT0dFY29sTGp1UHhLUHU1R1dYQTdBaGVrR2lBM09rWGt2SEHSAc8BQVVfeXFMT242RUwxbEhNY09aQlhrRE9BOVg3ZFpVaDlCRTV0OHJ0Rk9fWGZzb1FPUGJweUhCaTltNWlzdk82TW5YXzZjNmJKZnN2Qmg4VmVIV3hDTE1nemtrczFnVFlwNzlqdXM1Wk1iUm9EdVlsa2tldGk2eDhYUWZHTFlLeVo1MDRtcVZTdEo4Mk5sY09RcURCT245QWhXb0llRUtkMGJHZjJrdzU1dHh6SURIYldWd1VTUDE5NGVxVDc3S05qb2pUSDNMYnE1V0oyNTRj?oc=5"
-    },
-    {
       "headline": "Xi-Trump meeting’s takeaways, successes and fallout: 7 US-China relations reads",
       "summary": "We have selected seven of the most interesting and important news stories covering US-China relations from the past few weeks. If you would like to see more of our reporting, please consider subscribing.\n1. Trade, Taiwan",
       "source": "South China Morning Post",
@@ -52324,6 +52321,13 @@
       "source": "AP",
       "date": "2026-09-30T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRGt5UnNodTB2S1RjY0xLSEFOTHdtOUIyWGhLcWp1V3Y5MlpabV9FamF6Q0xRMlF4ZHZoNmtSaGdWSnVBazdYMVNJYnhHQ2E4a2xYTXFpZHp2NHE1bGlmbThpWm1JNzZseHNlQVl3UWxwYkJScW5FV3ZjY2R1YnczQ2EzWTJqNDNFWnRfTHdwY1FyQk84bHJYZTR3?oc=5"
+    },
+    {
+      "headline": "Xi Calls China’s Economy Resilient, Urges Efforts to Reach Goals",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-09-30T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcHl4NmJfY2Z6d1dMZ1FsbWVReXRaTkJOcUM4bnplRk5HeEVjSDJ1VG1HcWtjbzV3bDdiVmlYYWlQa21UZkVuNy01Q2dXY1pXbU1aWTJyZDdJVER6UXRVX2JhbjR5X1RXSkZnYWU2SW8tQnhIR01CXzNuV2V3QmdmeV8yZGl4RWxNcE93ellhbGs4THQwN2ZzWUdYWnR2aGdWWHFyT1BQNnljUFJDZG1YVGUtd3c?oc=5"
     },
     {
       "headline": "China extends two trade barrier probes into US till December 27",
@@ -53122,46 +53126,6 @@
       "consensus": null,
       "previous": 0.9,
       "series_key": "cpi"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "09:30",
-      "event": "中国10月出口年率-美元计价(%)",
-      "consensus": null,
-      "previous": 36.3,
-      "series_key": "exports_yoy"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "09:30",
-      "event": "中国10月进口年率-美元计价(%)",
-      "consensus": null,
-      "previous": 31.0,
-      "series_key": "imports_yoy"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "09:30",
-      "event": "中国10月贸易帐-美元计价(亿美元)",
-      "consensus": null,
-      "previous": 1335.3,
-      "series_key": "trade_balance"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "16:00",
-      "event": "中国10月M1货币供应年率(%)",
-      "consensus": null,
-      "previous": 3.2,
-      "series_key": "m1_growth"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "16:00",
-      "event": "中国10月M2货币供应年率(%)",
-      "consensus": null,
-      "previous": null,
-      "series_key": "m2_growth"
     }
   ]
 }
