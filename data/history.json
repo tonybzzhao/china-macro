@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-24T23:21:22.222132+00:00",
+    "last_updated": "2026-10-25T01:17:45.756994+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5190,11 +5190,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-10-24T23:19:21.168275+00:00",
+            "attempted_at": "2026-10-25T01:15:33.933253+00:00",
             "status": "refreshed",
             "expected_month": "2026-09",
             "latest_observation": "2026-09",
-            "last_success_at": "2026-10-24T23:19:21.168275+00:00",
+            "last_success_at": "2026-10-25T01:15:33.933253+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -52062,13 +52062,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3371206/chinas-shenzhen-ready-host-xi-trump-and-putin-during-apec-summit"
     },
     {
-      "headline": "EU Takes the Trade Fight to China and Braces for the Backlash",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-10-16T17:55:04+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUzd0X095X0ZqSDEwWm1Wc2N4LWtWdld5eWl4X0JIUjNNZXVNNFlPUFU4NWNMSVRpSXZjTzN4TEh0ZGM4WWFKTS1WU2ZzWHdfR0hjWnFBTThqbkVtaXBLT3dJdVZyYVBVY00tSWhjOW95aTlpNUdLejI3V1BvYms0R1VZUVh3eXU1Ml94ck5PQ2xWMk1TdGg2c3JCdk9NblhsdEs3dlhHdGpZWEE3QUg3V1Vn?oc=5"
-    },
-    {
       "headline": "With China Facing More Trade Barriers, It Can’t Afford to Lose Europe",
       "summary": "",
       "source": "WSJ",
@@ -52076,18 +52069,18 @@
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTUQzNFBYX1hBcGFYNDNELUppYzROV3VxSjE5Zlg0cHBsSDFacFBTbEY2R011SnRGT3NuMHpDT3RiSGhfOHRnb05WQllxVVk1LVpaUzVoLUpOSlhNa3NRbU1BQmlDb1NGa3o2Tk1hRjRVWkFLeF9NSEdTeG80WC1aUEFPcFV2N2t5NVpISmg3eE01M3pwUlJNMWx3RUoyOFVRMnlGRkxNUTgxWDVuRkdn?oc=5"
     },
     {
+      "headline": "EU Takes the Trade Fight to China and Braces for the Backlash",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-10-16T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUzd0X095X0ZqSDEwWm1Wc2N4LWtWdld5eWl4X0JIUjNNZXVNNFlPUFU4NWNMSVRpSXZjTzN4TEh0ZGM4WWFKTS1WU2ZzWHdfR0hjWnFBTThqbkVtaXBLT3dJdVZyYVBVY00tSWhjOW95aTlpNUdLejI3V1BvYms0R1VZUVh3eXU1Ml94ck5PQ2xWMk1TdGg2c3JCdk9NblhsdEs3dlhHdGpZWEE3QUg3V1Vn?oc=5"
+    },
+    {
       "headline": "Xi’s pledge to ‘uproot sick trees’ aired weeks ahead of Communist Party conclave",
       "summary": "President Xi Jinping has pledged to “uproot sick trees” in the anti-corruption fight, according to a transcript of a speech published by the Communist Party’s flagship magazine ahead of a major party conclave later this ",
       "source": "South China Morning Post",
       "date": "2026-10-16T04:05:18+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3371094/xi-pledge-uproot-sick-trees-aired-weeks-ahead-major-party-conclave"
-    },
-    {
-      "headline": "China's economy seen missing target as global shocks bite: AFP poll",
-      "summary": "",
-      "source": "AFP.com",
-      "date": "2026-10-15T15:05:31+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBpQ3BQdDNqM3hQNXdic0xFUEtPdS1TUVpHT1FLN2NpWHk3U29tNXBFSFRaYkt2Z0tLeGU5S2VORE1IazhxcnYxV3hWQQ?oc=5"
     },
     {
       "headline": "China Is Winning The Trade War And Losing At Home",
@@ -52202,13 +52195,6 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ1EyNEpnYmtaNHJ5TG5kM1NWZTVQNjRrTDdsREZUVTB6Y1hzNnl4R2JhTGdva1ZTTGpXWWdqUVdwRk1kQnIyLXFPbHNpLV9tZzhVTDNsRm93cndnVDVTeWNDTlU3T1ZCUElOQmxKRGh1eHNFSXBiRzAzc2dELTMtVmZnbzNaSDlKY2hzeUpCTnZnWTN2V0dXV1dxVG1PZTBicE9yTmJsMXJUM1I4Q0c2MEd3?oc=5"
     },
     {
-      "headline": "US chip stocks extend slide as China memory report, AI spending jitters hit sector",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-10-13T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjlLc0J0QjMyZmZRZWM1SldodnE0RV8xUWN0S0EzdUtWX1VjNXRiTVRKdDJQQVNkNkNadU50bGFueTItd3V0Zk43aFRiV2xsMVdCS1lFbFh3TVI3b05yd253VjBLSWdlYmwyb3VIOFBLQm5VbFRlR1ZQczRlekUyWHNOMjUwdmhvMXA2MWl1UUp6aDFydkZRZWdjUzZnRUR2NXAteDNMZS1zdDNUWm1HRVBxYlo3TXh6ZGZKT1lNOXFHUjBp?oc=5"
-    },
-    {
       "headline": "Asian stocks slip as China shares fall, oil risks and U.S. CPI weigh",
       "summary": "",
       "source": "Yahoo Finance",
@@ -52221,6 +52207,13 @@
       "source": "Yahoo Finance",
       "date": "2026-10-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNU1ZvUk5zUFlzb2oxMTd4ai0za1YwNUFBRV8xdkdXbWEzX3h2SFV5eW9HWC1mRUtVcDhyWmJLYU5MTDJOaTY0dHk0SnFkSnpjM2VsaUR0Vjc1cWhkS0VJVE1henhROUg2MDR4Nm9kQmEycE9wdm1GVXhzcFFUdkgtRnRrRjhLWkUya0QtSTlrZ3kyenho?oc=5"
+    },
+    {
+      "headline": "3 Commodity Stocks Riding China Import Demand In 2026",
+      "summary": "",
+      "source": "Yahoo Finance",
+      "date": "2026-10-13T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcFR1Yk9RTXRYQWV5U3JUUWN4SDJJWVJjU2llNVdQZnFOSk5PRkRqSk9DU2tGT0dzR0xwM1JyeDFFSEpjOGdYVDNUZUdWRGR3SWtjOVd1UlFSMTBfMmROTkNIeVEwcGZGUk1CT0lVWkRPUVhnNWlWajBlVEUwclZBWEQ3dExaQVlVWnl0OTduVUFac29SNlNTSVpNbE44ZUlWMUZN?oc=5"
     },
     {
       "headline": "How China harnesses AI microdramas to shape public opinion at home and abroad",
@@ -52412,6 +52405,13 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTG4xemx2QmpBWFdXRlA5cUdzdTFtN0xQT2FtVkotdW11NFh3dVZHMm9Ra1VKVHgxM2hPTVNISUJRa0hwd3I1QzJLbnZMcjN0Z1dNQi1QMFV6VS1sMUdGeFEzazBucXIzalJQVTA2Skg2Q2lkSXlNU0NSaVpueXpPWDVUVFgyQnpaVFd3R210N0NYWENuVXBEOEJqdw?oc=5"
     },
     {
+      "headline": "How US sanctions forced Xinjiang’s cotton industry to build a survival model",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-10-01T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMWhNS2JiNlFPVnpqQmZPY1hDM3c3V0NQX0tjMGg3LTRhbXRvSzFDMnJZQWdQLVVZU2VsMG1JcGxWS2FlaDFUdnRpM1JCTU11aVVFUXVrODBISFFlYmVZNXlZbGVpem02YmJrWUhXY3hValg4YkFGM19hMnY2MXB0UUVZUHljVVUzOUtsMlhPczhxcE5nZTJiUG8wNWVEQldaNXkwT3htamJydDZIM1pPRHhQeEVfVGZuNEFDadIBvAFBVV95cUxPUkJaS1RwOWt2eW1kYXJsTFFVN2ptUG5fLXpnbHRhTFBJR2daZnktVjNwR2JsVTVhU2VoYUl3cVRvTzdPUERLZ0FiX1NRRktLR0wxOGQ4NlFkNkgwZy1Ed2hsNjN2cjhLY01fbUxSRUFfYVE3RUhBN3NoRmdTalRTWUhrcGZrdnlQSk13dkhBejZsTFA2bmhjU3ZRSGNGZklabmFzT3ExX0U5cVZyVmRXcnlhY0M4dmFxVk9Rcw?oc=5"
+    },
+    {
       "headline": "Shows, tours and film as China marks 90 years since the end of the Long March",
       "summary": "China’s ruling Communist Party is marking 90 years since the end of the Long March with exhibitions, tours, film and television productions as it tries to mobilise the nation to contribute to its vision for the future.\nA",
       "source": "South China Morning Post",
@@ -52546,7 +52546,6 @@
     }
   ],
   "trading_days": [
-    "2024-10-24",
     "2024-10-25",
     "2024-10-28",
     "2024-10-29",
@@ -53121,46 +53120,6 @@
       "consensus": null,
       "previous": 0.9,
       "series_key": "cpi"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "09:30",
-      "event": "中国10月出口年率-美元计价(%)",
-      "consensus": null,
-      "previous": 36.3,
-      "series_key": "exports_yoy"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "09:30",
-      "event": "中国10月进口年率-美元计价(%)",
-      "consensus": null,
-      "previous": 31.0,
-      "series_key": "imports_yoy"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "09:30",
-      "event": "中国10月贸易帐-美元计价(亿美元)",
-      "consensus": null,
-      "previous": 1335.3,
-      "series_key": "trade_balance"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "16:00",
-      "event": "中国10月M1货币供应年率(%)",
-      "consensus": null,
-      "previous": 3.2,
-      "series_key": "m1_growth"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "16:00",
-      "event": "中国10月M2货币供应年率(%)",
-      "consensus": null,
-      "previous": null,
-      "series_key": "m2_growth"
     }
   ]
 }
