@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-26T01:17:13.751282+00:00",
+    "last_updated": "2026-10-26T06:21:23.604684+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5190,11 +5190,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-10-26T01:15:30.784577+00:00",
+            "attempted_at": "2026-10-26T06:19:41.230936+00:00",
             "status": "refreshed",
             "expected_month": "2026-09",
             "latest_observation": "2026-09",
-            "last_success_at": "2026-10-26T01:15:30.784577+00:00",
+            "last_success_at": "2026-10-26T06:19:41.230936+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -51740,6 +51740,13 @@
   },
   "news": [
     {
+      "headline": "China’s Communist Party opens fifth plenum with focus on discipline and loyalty to Xi",
+      "summary": "The Communist Party has started a key four-day conclave focused on party discipline and fighting corruption, as official media outlets say adherence to the party’s leadership under President Xi Jinping is key to the coun",
+      "source": "South China Morning Post",
+      "date": "2026-10-26T06:18:50+00:00",
+      "url": "https://www.scmp.com/news/china/politics/article/3372134/chinas-communist-party-opens-fifth-plenum-focus-discipline-and-loyalty-xi"
+    },
+    {
       "headline": "How China’s regional leadership changes offer clues to the future of the Communist Party",
       "summary": "China’s five-year leadership cycle is getting under way at a provincial level, with new teams being installed in a process that offers important clues to the future of the Communist Party at a national level.\nLast week, ",
       "source": "South China Morning Post",
@@ -51759,13 +51766,6 @@
       "source": "Yahoo Finance",
       "date": "2026-10-24T16:57:56+00:00",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSFpEVS05QzlFMHZpaU9IN3JBeTFZRDVLOFlMTWJaMzk0Y01DdDJha3R0d1FtZ2FLRVNNSVE1Q2pSUldqTjgyaXplaUJ4QldscEFpOFBuRWVyQW5MNGtjaVR0dTN3emwtdzBGbzFwcGpweHNJUm1ZaGJVTUJWbWFidnNFZ3NJaUJFUWtRT1BkMFlTanROSXlsZWlNUmVtV3hCbGdz?oc=5"
-    },
-    {
-      "headline": "Mastercard Stock And China Market Access Why Financial Shares Are Back On Watch",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-10-24T05:17:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOHJoeHdkcmY3aWRNNi03TldFdmRGOWMtUGZ2TkZhcmlBRmNDQm9EVHRIa3VrTXAwREt3bUxjY0VHdXVxOUxXN0VtT2I1aFhVQlo2cEFFYVliNXhtbjFpSzVKQUR6Ml9zckYzTmd3ckUwS0VJUzJ1VzItS0djVVd1ODY2eUtrTTJPWnF3ZFJxV0cwOUFDdW5jajJMV0Q0MnZ2alc0?oc=5"
     },
     {
       "headline": "What will China’s fifth plenum mean for the root-and-branch corruption drive?",
@@ -51943,13 +51943,6 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5dUxGSENxQmVITW9nLWtEcWIyQUtLNWllRldNb2Q5Wi1qMkstTnUxUDZGRl9zYTk1eDlFUEt1NXNCSzZ3dGJVV1huOFRsQU5mY055MFo1ZWN3VHVpMVBXSXNXV25Xb2c?oc=5"
     },
     {
-      "headline": "How to Increase America’s AI Lead Over China",
-      "summary": "",
-      "source": "Institute for Progress (IFP)",
-      "date": "2026-10-19T21:00:11+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zVmlYVVlKak1CanhXNEc1NkstUU9LOTQwTE9yMlBlRTliVEtENUpmaG9TclB4eFpKbVdLVklZbzgxaHVLR2wtbHZxNXQ4UFZFVUkzaFRyZ2UyaWhZZU8yUFJndlI3VTVGQU14eA?oc=5"
-    },
-    {
       "headline": "China’s economy grows faster than forecast after AI boom boosts exports",
       "summary": "",
       "source": "The Guardian",
@@ -51994,7 +51987,7 @@
     {
       "headline": "China’s economy grows 4.5% in third quarter on export surge",
       "summary": "",
-      "source": "Euronews.com",
+      "source": "Euronews",
       "date": "2026-10-19T04:11:21+00:00",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFVvME1UdU5aVjEyYWQ2cnpsUjFNR3Y1UjJNTkV0N2w4RUktcWNqNHJSOHJOYnNCUEw0Mmk2ZlFuaThvMGVfRWlLNFhKcThqaGFiQXpXMUhYd18wcnVMVHo1YXpORzVCbTkyYzV1WDRRRXhoaFRGRmxQbnpCZVVVdnE4SjduOFJPMHVqUDBZZkswRVlsdEJuSjN6WW1FcUl1NEhhcWhrOXktbjA?oc=5"
     },
@@ -52314,11 +52307,11 @@
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObG5GN2hTVm1jb0xJY3ZsT2x6MHl4cmpfNXNaWmNyYWpIMnhXcFVnbk1mNTMtRTBremJ0RFp1WDJQZUZIbTV1SjdqdHo5SWJJVjJZS25QYUQ3Mlppa0g2dkh4X1NqYV91UkJWNTdPb1JKT1ltOGpNVWhGUC1kV2U1bWhfN3VQX1JNSk9TTUhqXy1VRHlyc2lKS3hCZlNySWJnamNxYmt5Vl9jQQ?oc=5"
     },
     {
-      "headline": "Breakingviews - COMMENTARY: China’s slow bull market is poised to take off",
+      "headline": "EU Takes Harder Line on China’s Trade Gap as Talks Kick Off",
       "summary": "",
-      "source": "Reuters",
+      "source": "Bloomberg",
       "date": "2026-10-08T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSkwzbDNqOHRudVdwdmJyYlJrMFpyNWhkMDJoSGJUWlREck9jSUJvR25kZDV3THBxbWQydFRGNDBKcmVZTHJjWUlQMWs3clRKUlE4OWVFSUZSRVN3NlM4UldRTnFlOHMtbXhuNjhKR0lSd3NqdGM0ZW9sS1FzQS1oUk5EM25KWUJEUkhZRzB5RGFld0tTZEVjRG9DOVFzYmxlR1diUlRR?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbWl2SGxrR2JZa2RpU2s3NVJXMzI5UU9uem8yMDI1Mm9ubk1GVUdlQllvYmJNdHpFWEpENXJFMkNrNzZSWmtISzBJVDQ2LXN2OUh1X05sdVdja0FicWp0MGNod0htVnFFS095ZVRDdk9QaGMzMEF0aXlZMGpfVWdMSERMWUp3OUlwUzMyUUhYbTZYa3BQUFozUmRTM2VuMEdtWVl3bDZxUDY3R1BiZTVxZlp2WVc?oc=5"
     },
     {
       "headline": "China defends yuan policy as Europe steps up pressure over trade surplus",
@@ -52398,13 +52391,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3369621/china-returns-top-100-gender-parity-ranking-first-time-2016"
     },
     {
-      "headline": "‘America is back’, AI ‘conspiracy’, China’s Laos deal: 7 global relations reads",
-      "summary": "We have selected seven of the most interesting and important news stories covering global relations from the past few weeks. If you would like to see more of our reporting, please consider subscribing.\n1. Trump condemns ",
-      "source": "South China Morning Post",
-      "date": "2026-10-02T14:00:15+00:00",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3369257/america-back-ai-conspiracy-chinas-laos-deal-7-global-relations-reads"
-    },
-    {
       "headline": "Greer says no specific timeline set for enforcing US-China Board of Trade",
       "summary": "",
       "source": "South China Morning Post",
@@ -52417,6 +52403,13 @@
       "source": "The Economist",
       "date": "2026-10-01T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTG4xemx2QmpBWFdXRlA5cUdzdTFtN0xQT2FtVkotdW11NFh3dVZHMm9Ra1VKVHgxM2hPTVNISUJRa0hwd3I1QzJLbnZMcjN0Z1dNQi1QMFV6VS1sMUdGeFEzazBucXIzalJQVTA2Skg2Q2lkSXlNU0NSaVpueXpPWDVUVFgyQnpaVFd3R210N0NYWENuVXBEOEJqdw?oc=5"
+    },
+    {
+      "headline": "How US sanctions forced Xinjiang’s cotton industry to build a survival model",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-10-01T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMWhNS2JiNlFPVnpqQmZPY1hDM3c3V0NQX0tjMGg3LTRhbXRvSzFDMnJZQWdQLVVZU2VsMG1JcGxWS2FlaDFUdnRpM1JCTU11aVVFUXVrODBISFFlYmVZNXlZbGVpem02YmJrWUhXY3hValg4YkFGM19hMnY2MXB0UUVZUHljVVUzOUtsMlhPczhxcE5nZTJiUG8wNWVEQldaNXkwT3htamJydDZIM1pPRHhQeEVfVGZuNEFDadIBvAFBVV95cUxPUkJaS1RwOWt2eW1kYXJsTFFVN2ptUG5fLXpnbHRhTFBJR2daZnktVjNwR2JsVTVhU2VoYUl3cVRvTzdPUERLZ0FiX1NRRktLR0wxOGQ4NlFkNkgwZy1Ed2hsNjN2cjhLY01fbUxSRUFfYVE3RUhBN3NoRmdTalRTWUhrcGZrdnlQSk13dkhBejZsTFA2bmhjU3ZRSGNGZklabmFzT3ExX0U5cVZyVmRXcnlhY0M4dmFxVk9Rcw?oc=5"
     },
     {
       "headline": "China rolls out new measures to bolster its property sector and economy",
@@ -52461,13 +52454,6 @@
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcjhvLXJfUEZkMXFHLW5zeHB3eC1ORnh0cGJ3NklDT2E0dVNjTEdKNmcyYVA1Yzk4TWVUSEhOTHRhZkYyUU5NblA3V0hKSGhMMVZaaGJrZEY1dzFQaUlnMmgxaTRMZ0gzYlI3Y0FjNWNOZ2tKRFZDbVp6RUpuSjJORWVld3FNbGxveEZRcnIwVGtSZW9NUUE?oc=5"
     },
     {
-      "headline": "China vows response if EU introduces moves targeting Chinese trade",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-09-29T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ0FPcDBVWmJlMnBCSGdYZTQwN25iOVVneEVLU3RadEczS2ZiOXQwaG9qajM1aWIxMEJDblhRbVNlNjdnZUpiTldnT3hUeEQ3UWxNLWVUY056ancwUE9VVGM5b3pZTzZxUm9pY0VmMzQ3ak9uYldlNExVcTd6QnJvQXBMN1FtZWJFdDBvTU1uSmI3VjZhQUZ6ZVNxSHF0Ym5QN1ozd2ZSa25fV0kzYjVyTmZtWDE0UlJYV1QyMGFn?oc=5"
-    },
-    {
       "headline": "China Signals Economic Stimulus to Counter Worsening Slowdown",
       "summary": "",
       "source": "Bloomberg",
@@ -52501,13 +52487,6 @@
       "source": "The Conversation",
       "date": "2026-09-27T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONmRhTWkwS2N6MWpwTm1VVWt4ODZLbWRQeVJLNmVmdkc2cVQ1UXVXdzlhZi1tcC1DdHU1bkVpeWJyWHR2ckRRLWtEVWZBOUdWYnZHY3FfMzhHVE1RODVFemYwT1NNUFQ5RDZhRFN6VDlnYWFVWENBUkE0Wm9kSW96Qi01OV9EbzN6QnYxaTBwVHprdTNvQWZscVNpVXBNY1pJY0VsYzZqMFlQclBpMEs5UXN5VQ?oc=5"
-    },
-    {
-      "headline": "China’s AI revolution is taking shape. Why are some economists urging caution?",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-09-26T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeFB6a1hGTzExVW1CRHVUUW40TjQwTGQteTdOY1hpbERjNG5tN3BiVUs1WHN0OFFaRlhzRkVSY0hQRVZkVkw3TnJYc3NmbUF3dy1obV9YVi04dHRacFhWcmpZbzVoRnEzMlVWV1lIYl95RTlOSDZCc2RnSjkyUzMtVTMxbzhFMFE2R1dHM2VFaUlIaFlnbGxKOFJoeldJMERmazdYdkF1NDBRMUZVLW43UkFRdFhJTWFuVjRPNXRzand3Nmstck4zLVVzbFB6enRqQmRSY2hn0gHWAUFVX3lxTFB0LUxwNl9QNmtCZlFBSjFYNC1BT2JLQjFvQXJFZjJoelB4TGVJTGFyNVUtMkhQUmUyVzJTdWp2dk5uWVh6Mm03RjI2ellQVTA1c3M0Ym5SQkYwSFJra2c5cG5VM1hsb2tKTk1Ua1psNGdycGw4OFV4dTF5eTJETzg5am1tcm9hTGFBMlZZZWdmdDdFNzVlNmk3MF9tc0dFVHBnZUI2MUtlUUFYMkQ1RzZaNnhjR2hYcnFzY1JvUnlOREN6Mk90UEVpOFFkcWhZTjNoSmI2cmc?oc=5"
     },
     {
       "headline": "China and U.S. agree to establish AI safety channel and continue trade and military talks",
