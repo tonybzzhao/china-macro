@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-26T19:24:02.433108+00:00",
+    "last_updated": "2026-10-26T23:12:35.644642+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5190,11 +5190,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-10-26T19:22:14.500438+00:00",
+            "attempted_at": "2026-10-26T23:10:50.961667+00:00",
             "status": "refreshed",
             "expected_month": "2026-09",
             "latest_observation": "2026-09",
-            "last_success_at": "2026-10-26T19:22:14.500438+00:00",
+            "last_success_at": "2026-10-26T23:10:50.961667+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -51849,13 +51849,6 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSEQ2a3VYWERudU90RE16TmxGbTg2dUdPRkQ1cTE2bW42ZkFjaGdWQjRKc3g5VWpzdEtFa3hOcUFJVkZKclUtXy1wU29xNDF1MW12Y0thNHh2MDJIdkJHN2VYNVJEX3BRYjRZUkVOMUFvRmNIOU01WjVyeUd5UnpGNHhOQ1p5UmZjaVd6cVNlR1M1OGFVbmRHaXdLam1JNWp2VHExZ09kdlN1anI3dUFmZXZrdw?oc=5"
     },
     {
-      "headline": "Chinese stocks bounce back from bear market on suspected state support",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-10-23T02:41:51+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORHU1dDJlZlEweUJhZmRTM3M5a1R4ekJVaUJfNmN5TUVSU2lqSzNhVjVsaVlQSXJkalY5YnZRNHRfNTBxQVd5TkxRZTRGOUZxR29XN0ZuUmhRcWtfdGpKbWVaenRCUUFod2hoNFVaV05aLUZLZWlqelVBQmVyaFQ0cUx1LXBsWVVDb3FjMk5zeEFuTjJTeGJwenVCRC12ZFd5cGQ5dXFQMlVjaURlMXlFS2ZYZ0hZWV83dktVMHZ0bk41STJrODI3LU1lNXRSZ9IBzgFBVV95cUxQb2M4Y0VpQWk3SlktbUJSS3I3Rkh5VTEzem9aYjgxYURjTDk2ME9qWHVncjJEeFYxT21KeG1pTzVUN1FlZGZaSU5PU0Q2TzFOc3pjbnpaMWNBN0FWX3BrSHRYRF8ybTdiejdaU0JmWEY2TTZoY1g2VUlINTBMMGFHNHBybDVSVVB1U1RsTm5NZGhxbjYyR2JJOGRFdXEwN3hZZzBZYkRuVkNMNWI4VHp0ZTdoSWs0UFFxNUZxYTRrRUt5bzV2LVptWjBtZ25xUQ?oc=5"
-    },
-    {
       "headline": "Biotech investment is the new front in the U.S.-China trade fight",
       "summary": "",
       "source": "Politico",
@@ -51954,13 +51947,6 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVE5fczJyMDh3bVRSMy01Ykc0bF91aHJFMGllZFhLcVZSUGlUd2JZTGZ5UFE1Y2NuekRBYmtINWhJdDgzUDdoQWhTUEFGSWg2U0EzdnJiTndYV0xoMkxFM3ZpeVJ2M2VsenpQRjVwS29EUXFWMXIyd2h0VHdiRFF4NHRBMXB3aDZGc2RGWW4zNGNpOEp5UTBWUVB3?oc=5"
     },
     {
-      "headline": "China’s AI Industry Brings Both Gains and Challenges for Its Fragile Economy",
-      "summary": "",
-      "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
-      "date": "2026-10-21T15:28:17+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbGpzVGE3OEJ1T25xaFRCSTZPQWxlU3psN3hwNTNsQVdRZ01yUjE5NFpnb3VNeGlncEdZbUF6VkdFdWdlcWpVa3pRVTJ4M3lEWEtIUW1hZzhXbEsyOEhLV1JQdGVXWW8xdWFzV0Y4eFE1ODJPSE9STTNpVEUweXlaNnllYnJwbS1PN1NkTkpCVGlZbnZVTFFWdlRNbnZ1T0VkNE9JRGpjMXBTdkFy?oc=5"
-    },
-    {
       "headline": "Merz Says EU to Avoid China Trade War as It Defends Itself",
       "summary": "",
       "source": "Bloomberg",
@@ -52008,6 +51994,13 @@
       "source": "Al Jazeera",
       "date": "2026-10-19T06:26:38+00:00",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSGJuVjc0Mm9UaU9ZMUdIVzF0d1hhVlpNVFNvTzFVQ29Jb2JNX1FMcXAtQk9UbWNIb0J4YTI5YUtiTkZBYklPOTAtRl9sTnEyemIxUW9jaW1Ha0RXR1MwYlVJOFRNdDlrdzRsZkQwS2NDWkp4T2NjeHZjcTY0YjVqYjlJWWF2aDJLa3R6N0xsNDc5Q0dIQk05ZlA1Wl8xSTVWTHA00gGoAUFVX3lxTE5vUTFEQzkwMXBKWV8wYmZPUFhmLVUtMlFMZ3BqRWtVQUtNRTM1QUxlLTlzYi1LUTVxX0lMbWNFYkRaNi1NbXd2ZUNuMU5BWmxTMHJZY0FtMm1xdmllazhQN2NOMGpoYWNVaUQxN1FNOWR3Y3Uxc2NtYzRvd0xnNXNfWXdEUWFKOHY2MU80QmRCSVFDeHluRHl6eEN4dWtNUFFpMDd4b0tNYQ?oc=5"
+    },
+    {
+      "headline": "China’s economy grows 4.5% in third quarter on export surge",
+      "summary": "",
+      "source": "Euronews.com",
+      "date": "2026-10-19T04:11:21+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFVvME1UdU5aVjEyYWQ2cnpsUjFNR3Y1UjJNTkV0N2w4RUktcWNqNHJSOHJOYnNCUEw0Mmk2ZlFuaThvMGVfRWlLNFhKcThqaGFiQXpXMUhYd18wcnVMVHo1YXpORzVCbTkyYzV1WDRRRXhoaFRGRmxQbnpCZVVVdnE4SjduOFJPMHVqUDBZZkswRVlsdEJuSjN6WW1FcUl1NEhhcWhrOXktbjA?oc=5"
     },
     {
       "headline": "China’s Economy Expanded 4.5% in Third Quarter, Powered by Exports",
@@ -52318,13 +52311,6 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMkR3MUJWaDBNRi1Cb0h4VkthVGF0blptSkcyTk9DME1XNzVvMmFMdFVKYm81XzRZNkdDYk1IdGhFVS10d2FuVWI1TTVUUy1Ea2hWYktlVDVlLWJRb2l3aVViMnlZNzdGeEFfc2NaNy14aFhCOWt6Ti0zbkNrWm1BTQ?oc=5"
     },
     {
-      "headline": "China agrees to slash EU hybrid car exports in half, putting brake on trade war",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-10-09T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNa2RCM0lJTlZrVnhlMmdjbldmMXpIekU5QzFIRzNqT25lNzNld25selhNcl9oYjFCWjRaX3ZSUzdGNDBrTmU0YzJJaUZneHRkQ2JZUmF4eUlSWG52QzE3VzBhLUFma0dqSG1wN1daLUd0Y0c0Q3NCblBKOV9sby1pQU1aUU1XWU1IbG1iQ2JiQUlrSzAwbDlFYnd5ZXkyblFYVjlxS1hVMFRRWVZmcmZ3OVpTekhjMnB6MW9rZ1BBYWg3eXJ4Yk1OM0d2NWTSAcwBQVVfeXFMTWk5X2h5SXFHS0JMQjVla2RTd0lUTC0ta0hWRVdVMzJHRU1FSlp2bUcyZkhTQlZ5UUktYW1BdFhuZ0pYX2ZDaFd3SmYteUNaRUhBbVBwelFfODBvMFhmeE1Lbmx1ZWdDSWVBRWlKRzJjMmVDbmp2c1VodGlXNGI4aDhFTDhuNUlQVjRjeUNIWXpaNzNuY1dBdkhGY3dwWklPMG9VT0wtZ3FUSEQxRzhtREkyV3JRRjF3TXlaYUxZWHpPVDVTamt0QWc4RDNo?oc=5"
-    },
-    {
       "headline": "China Stocks Rebound on Unconfirmed Talks of Regulator Guidance",
       "summary": "",
       "source": "Bloomberg",
@@ -52400,6 +52386,13 @@
       "source": "South China Morning Post",
       "date": "2026-10-07T01:00:07+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3369938/chinas-deepzang-ai-aims-transform-tibetan-language-tech-promote-ethnic-unity"
+    },
+    {
+      "headline": "The Import Cut Beijing Did Not Order",
+      "summary": "",
+      "source": "Council on Foreign Relations",
+      "date": "2026-10-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8weTZya25mVjBaMzhXRmFoM2xmSnVGTElSSy1hM1huNUJ0dVBFem5JUmpoQUZjT0w3ZEVWZGw2T2VMaElaWUFRN1F6bTFuNVdtMTNRX2hjN2p0azNPWmpqbTc2QU9tbHFSNDU4akN0WWdhLVU?oc=5"
     },
     {
       "headline": "How to Make an AI Deal With China: Trade Throttling for Pacing",
@@ -53095,6 +53088,46 @@
       "consensus": null,
       "previous": 0.9,
       "series_key": "cpi"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "09:30",
+      "event": "中国10月出口年率-美元计价(%)",
+      "consensus": null,
+      "previous": 36.3,
+      "series_key": "exports_yoy"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "09:30",
+      "event": "中国10月进口年率-美元计价(%)",
+      "consensus": null,
+      "previous": 31.0,
+      "series_key": "imports_yoy"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "09:30",
+      "event": "中国10月贸易帐-美元计价(亿美元)",
+      "consensus": null,
+      "previous": 1335.3,
+      "series_key": "trade_balance"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "16:00",
+      "event": "中国10月M1货币供应年率(%)",
+      "consensus": null,
+      "previous": 3.2,
+      "series_key": "m1_growth"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "16:00",
+      "event": "中国10月M2货币供应年率(%)",
+      "consensus": null,
+      "previous": null,
+      "series_key": "m2_growth"
     },
     {
       "date": "2026-11-16",
