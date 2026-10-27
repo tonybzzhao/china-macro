@@ -21,6 +21,7 @@ import json
 import sys
 import traceback
 import re
+import time
 from datetime import datetime, timezone, date, timedelta
 from pathlib import Path
 
@@ -172,26 +173,45 @@ def fetch_pmi_official():
     return man_pts, nonman_pts
 
 def fetch_gdp():
-    """macro_china_gdp's own 季度 column already labels the reference
-    quarter directly (e.g. '2026年第1季度') — simpler and more reliable
-    than the old approach of guessing the quarter from a release date.
-    Skips cumulative rows ('第1-2季度' etc.) since the regex requires the
-    quarter digit to be immediately followed by 季度."""
+    """Returns (exact, derived) point lists.
+
+    macro_china_gdp only carries a standalone-quarter row for Q1; Q2-Q4 exist
+    only as cumulative year-to-date rows ('2026年第1-3季度'). Q1 is therefore
+    exact, and Q2-Q4 are backed out of the cumulative growth rates, weighting
+    each by the prior year's quarterly nominal GDP:
+        g_Qn = (S_n * G_n - S_(n-1) * G_(n-1)) / P_n
+    where S_k is prior-year cumulative GDP through quarter k, G_k the reported
+    cumulative growth, and P_n prior-year quarter-n GDP. Checked against NBS's
+    published quarterly figures this lands within ~0.2pp, so derived points are
+    only used to fill quarters not already present (see main())."""
     df = ak.macro_china_gdp()
     date_col = find_col(df, ["季度"])
     val_col = find_col(df, ["国内生产总值-同比增长"])
-    if date_col is None or val_col is None:
+    lvl_col = find_col(df, ["国内生产总值-绝对值"])
+    if date_col is None or val_col is None or lvl_col is None:
         raise ValueError(f"couldn't find date/value columns in {list(df.columns)}")
-    out = []
+    lvl, growth = {}, {}
     for _, r in df.iterrows():
-        m = re.fullmatch(r"(\d{4})年第(\d)季度", str(r[date_col]).strip())
+        m = re.fullmatch(r"(\d{4})年第(?:1-)?(\d)季度", str(r[date_col]).strip())
         if not m:
             continue
-        v = clean_float(r[val_col])
-        if v is None:
+        g, v = clean_float(r[val_col]), clean_float(r[lvl_col])
+        if g is None or v is None:
             continue
-        out.append({"date": f"{m.group(1)}-Q{m.group(2)}", "value": v})
-    return out
+        key = (int(m.group(1)), int(m.group(2)))
+        lvl[key], growth[key] = v, g
+
+    exact, derived = [], []
+    for (y, n), g in sorted(growth.items()):
+        if n == 1:
+            exact.append({"date": f"{y}-Q1", "value": g})
+            continue
+        if (y - 1, n) not in lvl or (y - 1, n - 1) not in lvl or (y, n - 1) not in growth:
+            continue
+        prior_q = lvl[(y - 1, n)] - lvl[(y - 1, n - 1)]
+        v = (lvl[(y - 1, n)] * g - lvl[(y - 1, n - 1)] * growth[(y, n - 1)]) / prior_q
+        derived.append({"date": f"{y}-Q{n}", "value": round(v, 1)})
+    return exact, derived
 
 def fetch_industrial_production():
     return simple_series(ak.macro_china_gyzjz, ["月份"], ["同比增长"])
@@ -467,7 +487,6 @@ FRESH_FETCHERS = [
     ("external", "usdcny", fetch_usdcny_daily),                          # daily, via Frankfurter
     ("growth", "retail_sales", fetch_retail_sales),                      # through 2026-07
     ("growth", "fixed_asset_investment", fetch_fixed_asset_investment),  # through 2026-07
-    ("growth", "gdp_growth", fetch_gdp),                                 # through 2026-Q2
     ("growth", "industrial_production", fetch_industrial_production),   # through 2026-07
     ("prices_credit", "cpi", fetch_cpi),                                 # through 2026-07
     ("prices_credit", "ppi", fetch_ppi),                                 # through 2026-07
@@ -655,10 +674,19 @@ def fetch_upcoming_releases(days_ahead=21):
     now_key = beijing_now.strftime("%Y-%m-%d %H:%M")
     for delta in range(days_ahead):
         d = (today + timedelta(days=delta)).strftime("%Y%m%d")
-        try:
-            df = ak.news_economic_baidu(date=d)
-        except Exception as e:
-            log(f"calendar fetch failed for {d}: {e}")
+        df = None
+        for attempt in range(3):
+            try:
+                df = ak.news_economic_baidu(date=d)
+                break
+            except Exception as e:
+                # Baidu intermittently times out or 403s a single date; one
+                # bad day shouldn't silently drop that day's releases.
+                if attempt == 2:
+                    log(f"calendar fetch failed for {d} after 3 tries: {e}")
+                else:
+                    time.sleep(2 * (attempt + 1))
+        if df is None:
             continue
         if df.empty or "地区" not in df.columns:
             continue
@@ -777,6 +805,14 @@ def main():
             update_series(data, category, key, fetcher())
         except Exception:
             log(f"FAIL {category}.{key}:\n{traceback.format_exc()}")
+
+    try:
+        exact, derived = fetch_gdp()
+        have = {p["date"] for p in data["categories"]["growth"]["series"]["gdp_growth"]["data"]}
+        update_series(data, "growth", "gdp_growth",
+                      exact + [p for p in derived if p["date"] not in have])
+    except Exception:
+        log(f"FAIL growth.gdp_growth:\n{traceback.format_exc()}")
 
     try:
         lpr1y, lpr5y = fetch_lpr()
