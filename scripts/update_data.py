@@ -356,6 +356,107 @@ def fetch_tsf_flow():
         out.append({"date": normalize_date(r[date_col]), "value": round(v, 2)})
     return out
 
+def nbs_nation_row(path, row_pattern, period="2000-"):
+    """One row of a national monthly table from NBS's own data portal
+    (data.stats.gov.cn, wrapped by ak.macro_china_nbs_nation). Rows are
+    indicators and columns are months like '2026年9月'."""
+    df = ak.macro_china_nbs_nation(kind="月度数据", path=path, period=period)
+    matches = [i for i in df.index if re.search(row_pattern, str(i))]
+    if not matches:
+        raise ValueError(f"no row matching {row_pattern!r} in {list(df.index)}")
+    out = []
+    for col, raw in df.loc[matches[0]].items():
+        v = clean_float(raw)
+        if v is not None:
+            out.append({"date": normalize_date(col), "value": v})
+    return sorted(out, key=lambda p: p["date"])
+
+
+def fetch_property_investment():
+    """Real-estate development investment, cumulative y/y — straight from NBS."""
+    return nbs_nation_row("房地产 > 房地产开发投资情况", r"^房地产投资_累计增长")
+
+
+def fetch_youth_unemployment():
+    """16-24 urban unemployment rate excluding students, from NBS's urban
+    survey table. NBS suspended this series in Aug 2023 and relaunched it
+    with a new methodology (students excluded) from Dec 2023; the pre-
+    suspension points are on a different basis, so they are dropped."""
+    pts = nbs_nation_row("城镇调查失业率 > 城镇调查失业率", r"16.24岁劳动力失业率")
+    return [p for p in pts if p["date"] >= "2023-12"]
+
+
+def fetch_new_home_prices():
+    """70-city new commercial-housing prices, y/y. NBS publishes only per-city
+    indices (no national composite), so this is the simple average of each
+    city's y/y change in that month's 新建商品住宅销售价格指数. Months with
+    fewer than 60 reporting cities are skipped."""
+    df = ak.macro_china_nbs_region(
+        kind="主要城市月度价格",
+        path="价格 > 70个大中城市住宅销售价格指数",
+        indicator="新建商品住宅销售价格指数(上年同月=100)",
+        period="2008-",
+    ).apply(pd.to_numeric, errors="coerce")
+    out = []
+    for col in df.columns:
+        vals = df[col].dropna()
+        if len(vals) < 60:
+            continue
+        out.append({"date": normalize_date(col), "value": round(float(vals.mean()) - 100, 2)})
+    return sorted(out, key=lambda p: p["date"])
+
+
+def fetch_tsf_from_calendar(have_dates, lookback_months=3):
+    """Fill TSF months that ak.macro_china_shrzgm (MOFCOM mirror, which lags
+    by months) doesn't have yet. Baidu's calendar carries each release's
+    actual year-to-date total ('中国9月社会融资规模-年初至今(亿元)') together
+    with the previous release's YTD as 前值, so the month's flow is
+    公布 - 前值 (January: just 公布). Precision is the calendar's 100亿
+    rounding, i.e. +/-0.01 trn. TSF is released around the 10th-15th of the
+    following month, so only that window is scanned, and only for months
+    still missing from the series."""
+    beijing_now = datetime.now(timezone.utc) + timedelta(hours=8)
+    out = []
+    y, m = beijing_now.year, beijing_now.month
+    for _ in range(lookback_months):
+        m -= 1
+        if m == 0:
+            y, m = y - 1, 12
+        target = f"{y}-{m:02d}"
+        ry, rm = (y + 1, 1) if m == 12 else (y, m + 1)  # release month
+        if target in have_dates:
+            continue
+        found = False
+        for day in range(8, 23):
+            d = date(ry, rm, day)
+            if d > beijing_now.date():
+                break
+            df = None
+            try:
+                df = ak.news_economic_baidu(date=d.strftime("%Y%m%d"))
+            except Exception:
+                continue  # Baidu 403s days with no events
+            if df is None or df.empty or "事件" not in df.columns:
+                continue
+            hit = df[(df["地区"] == "中国")
+                     & df["事件"].str.contains(f"{m}月社会融资规模-年初至今", regex=False)]
+            if hit.empty:
+                continue
+            row = hit.iloc[0]
+            actual, prev = clean_float(row.get("公布")), clean_float(row.get("前值"))
+            if actual is None:
+                continue
+            flow = actual if m == 1 else (actual - prev if prev is not None else None)
+            if flow is None:
+                continue
+            out.append({"date": target, "value": round(flow / 10000, 2)})
+            found = True
+            break
+        if not found:
+            log(f"TSF {target}: no calendar release found yet")
+    return out
+
+
 def fetch_lpr():
     df = ak.macro_china_lpr()
     date_col = find_col(df, ["TRADE_DATE", "日期", "date"])
@@ -482,6 +583,9 @@ def fetch_usdcny_daily(start="1999-01-04"):
 
 # Verified live against a real run on 2026-08-29 — data current as of that date:
 FRESH_FETCHERS = [
+    ("property_labor", "property_investment", fetch_property_investment),
+    ("property_labor", "youth_unemployment", fetch_youth_unemployment),
+    ("property_labor", "new_home_prices", fetch_new_home_prices),
     ("prices_credit", "tsf_flow", fetch_tsf_flow),                       # through 2026-04
     ("property_labor", "urban_unemployment", fetch_urban_unemployment),  # through 2026-07
     ("external", "usdcny", fetch_usdcny_daily),                          # daily, via Frankfurter
@@ -813,6 +917,12 @@ def main():
                       exact + [p for p in derived if p["date"] not in have])
     except Exception:
         log(f"FAIL growth.gdp_growth:\n{traceback.format_exc()}")
+
+    try:
+        have = {p["date"] for p in data["categories"]["prices_credit"]["series"]["tsf_flow"]["data"]}
+        update_series(data, "prices_credit", "tsf_flow", fetch_tsf_from_calendar(have))
+    except Exception:
+        log(f"FAIL prices_credit.tsf_flow (calendar):\n{traceback.format_exc()}")
 
     try:
         lpr1y, lpr5y = fetch_lpr()

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-27T18:38:50.956726+00:00",
+    "last_updated": "2026-10-27T18:52:00.498000+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5238,11 +5238,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-10-27T18:36:07.447832+00:00",
+            "attempted_at": "2026-10-27T18:48:40.659513+00:00",
             "status": "refreshed",
             "expected_month": "2026-09",
             "latest_observation": "2026-09",
-            "last_success_at": "2026-10-27T18:36:07.447832+00:00",
+            "last_success_at": "2026-10-27T18:48:40.659513+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -12629,7 +12629,7 @@
           "freq": "monthly",
           "decimals": 2,
           "higher_is_better": null,
-          "flag": "Monthly flow, not the TSF stock y/y growth rate — that series wasn't cleanly sourced. Large month-to-month swings are normal (quarter-end/tax-season patterns).",
+          "flag": "Recent months not yet in the MOFCOM mirror are backed out of the calendar's year-to-date releases (±0.01 trn rounding).",
           "data": [
             {
               "date": "2015-01",
@@ -13186,6 +13186,14 @@
             {
               "date": "2026-07",
               "value": 1.41
+            },
+            {
+              "date": "2026-08",
+              "value": 1.66
+            },
+            {
+              "date": "2026-09",
+              "value": 3.55
             }
           ],
           "desc": "The total new financing — bank loans, bonds, and other credit — flowing into China's economy in a given month."
@@ -51230,11 +51238,1114 @@
           "freq": "monthly",
           "decimals": 1,
           "higher_is_better": true,
-          "flag": "2025 monthly series has gaps (Mar 2025 not found).",
           "data": [
+            {
+              "date": "2000-02",
+              "value": 19.8
+            },
+            {
+              "date": "2000-03",
+              "value": 20.4
+            },
+            {
+              "date": "2000-04",
+              "value": 20.8
+            },
+            {
+              "date": "2000-05",
+              "value": 20.8
+            },
+            {
+              "date": "2000-06",
+              "value": 22.4
+            },
+            {
+              "date": "2000-07",
+              "value": 24.1
+            },
+            {
+              "date": "2000-08",
+              "value": 24.3
+            },
+            {
+              "date": "2000-09",
+              "value": 25.0
+            },
+            {
+              "date": "2000-10",
+              "value": 24.6
+            },
+            {
+              "date": "2000-11",
+              "value": 24.1
+            },
+            {
+              "date": "2000-12",
+              "value": 19.5
+            },
+            {
+              "date": "2001-02",
+              "value": 23.0
+            },
+            {
+              "date": "2001-03",
+              "value": 22.9
+            },
+            {
+              "date": "2001-04",
+              "value": 22.8
+            },
+            {
+              "date": "2001-05",
+              "value": 26.5
+            },
+            {
+              "date": "2001-06",
+              "value": 28.2
+            },
+            {
+              "date": "2001-07",
+              "value": 31.6
+            },
+            {
+              "date": "2001-08",
+              "value": 32.1
+            },
+            {
+              "date": "2001-09",
+              "value": 31.4
+            },
+            {
+              "date": "2001-10",
+              "value": 31.2
+            },
+            {
+              "date": "2001-11",
+              "value": 29.7
+            },
+            {
+              "date": "2001-12",
+              "value": 25.3
+            },
+            {
+              "date": "2002-02",
+              "value": 30.2
+            },
+            {
+              "date": "2002-03",
+              "value": 36.2
+            },
+            {
+              "date": "2002-04",
+              "value": 38.8
+            },
+            {
+              "date": "2002-05",
+              "value": 36.7
+            },
+            {
+              "date": "2002-06",
+              "value": 32.9
+            },
+            {
+              "date": "2002-07",
+              "value": 30.7
+            },
+            {
+              "date": "2002-08",
+              "value": 30.0
+            },
+            {
+              "date": "2002-09",
+              "value": 29.4
+            },
+            {
+              "date": "2002-10",
+              "value": 29.8
+            },
+            {
+              "date": "2002-11",
+              "value": 28.2
+            },
+            {
+              "date": "2002-12",
+              "value": 21.9
+            },
+            {
+              "date": "2003-02",
+              "value": 37.0
+            },
+            {
+              "date": "2003-03",
+              "value": 34.9
+            },
+            {
+              "date": "2003-04",
+              "value": 33.5
+            },
+            {
+              "date": "2003-05",
+              "value": 32.9
+            },
+            {
+              "date": "2003-06",
+              "value": 34.0
+            },
+            {
+              "date": "2003-07",
+              "value": 34.1
+            },
+            {
+              "date": "2003-08",
+              "value": 33.1
+            },
+            {
+              "date": "2003-09",
+              "value": 32.8
+            },
+            {
+              "date": "2003-10",
+              "value": 31.3
+            },
+            {
+              "date": "2003-11",
+              "value": 32.5
+            },
+            {
+              "date": "2003-12",
+              "value": 29.7
+            },
+            {
+              "date": "2004-02",
+              "value": 50.2
+            },
+            {
+              "date": "2004-03",
+              "value": 41.1
+            },
+            {
+              "date": "2004-04",
+              "value": 34.6
+            },
+            {
+              "date": "2004-05",
+              "value": 32.0
+            },
+            {
+              "date": "2004-06",
+              "value": 28.7
+            },
+            {
+              "date": "2004-07",
+              "value": 28.6
+            },
+            {
+              "date": "2004-08",
+              "value": 28.8
+            },
+            {
+              "date": "2004-09",
+              "value": 28.3
+            },
+            {
+              "date": "2004-10",
+              "value": 28.9
+            },
+            {
+              "date": "2004-11",
+              "value": 29.2
+            },
+            {
+              "date": "2004-12",
+              "value": 28.1
+            },
+            {
+              "date": "2005-02",
+              "value": 27.0
+            },
+            {
+              "date": "2005-03",
+              "value": 26.7
+            },
+            {
+              "date": "2005-04",
+              "value": 25.9
+            },
+            {
+              "date": "2005-05",
+              "value": 24.3
+            },
+            {
+              "date": "2005-06",
+              "value": 23.5
+            },
+            {
+              "date": "2005-07",
+              "value": 23.5
+            },
+            {
+              "date": "2005-08",
+              "value": 22.3
+            },
+            {
+              "date": "2005-09",
+              "value": 22.2
+            },
+            {
+              "date": "2005-10",
+              "value": 21.6
+            },
+            {
+              "date": "2005-11",
+              "value": 22.2
+            },
+            {
+              "date": "2005-12",
+              "value": 19.8
+            },
+            {
+              "date": "2006-02",
+              "value": 19.7
+            },
+            {
+              "date": "2006-03",
+              "value": 20.2
+            },
+            {
+              "date": "2006-04",
+              "value": 21.3
+            },
+            {
+              "date": "2006-05",
+              "value": 21.8
+            },
+            {
+              "date": "2006-06",
+              "value": 24.2
+            },
+            {
+              "date": "2006-07",
+              "value": 24.0
+            },
+            {
+              "date": "2006-08",
+              "value": 24.0
+            },
+            {
+              "date": "2006-09",
+              "value": 24.3
+            },
+            {
+              "date": "2006-10",
+              "value": 24.1
+            },
+            {
+              "date": "2006-11",
+              "value": 24.0
+            },
+            {
+              "date": "2006-12",
+              "value": 21.8
+            },
+            {
+              "date": "2007-02",
+              "value": 24.3
+            },
+            {
+              "date": "2007-03",
+              "value": 26.9
+            },
+            {
+              "date": "2007-04",
+              "value": 27.4
+            },
+            {
+              "date": "2007-05",
+              "value": 27.5
+            },
+            {
+              "date": "2007-06",
+              "value": 28.5
+            },
+            {
+              "date": "2007-07",
+              "value": 28.9
+            },
+            {
+              "date": "2007-08",
+              "value": 29.0
+            },
+            {
+              "date": "2007-09",
+              "value": 30.3
+            },
+            {
+              "date": "2007-10",
+              "value": 31.4
+            },
+            {
+              "date": "2007-11",
+              "value": 31.8
+            },
+            {
+              "date": "2007-12",
+              "value": 30.2
+            },
+            {
+              "date": "2008-02",
+              "value": 32.9
+            },
+            {
+              "date": "2008-03",
+              "value": 32.3
+            },
+            {
+              "date": "2008-04",
+              "value": 32.1
+            },
+            {
+              "date": "2008-05",
+              "value": 31.9
+            },
+            {
+              "date": "2008-06",
+              "value": 33.5
+            },
+            {
+              "date": "2008-07",
+              "value": 30.9
+            },
+            {
+              "date": "2008-08",
+              "value": 29.1
+            },
+            {
+              "date": "2008-09",
+              "value": 26.5
+            },
+            {
+              "date": "2008-10",
+              "value": 24.6
+            },
+            {
+              "date": "2008-11",
+              "value": 22.7
+            },
+            {
+              "date": "2008-12",
+              "value": 20.9
+            },
+            {
+              "date": "2009-02",
+              "value": 1.0
+            },
+            {
+              "date": "2009-03",
+              "value": 4.1
+            },
+            {
+              "date": "2009-04",
+              "value": 4.9
+            },
+            {
+              "date": "2009-05",
+              "value": 5.8
+            },
+            {
+              "date": "2009-06",
+              "value": 8.3
+            },
+            {
+              "date": "2009-07",
+              "value": 9.5
+            },
+            {
+              "date": "2009-08",
+              "value": 12.5
+            },
+            {
+              "date": "2009-09",
+              "value": 15.4
+            },
+            {
+              "date": "2009-10",
+              "value": 16.6
+            },
+            {
+              "date": "2009-11",
+              "value": 17.8
+            },
+            {
+              "date": "2009-12",
+              "value": 16.1
+            },
+            {
+              "date": "2010-02",
+              "value": 31.1
+            },
+            {
+              "date": "2010-03",
+              "value": 35.1
+            },
+            {
+              "date": "2010-04",
+              "value": 36.2
+            },
+            {
+              "date": "2010-05",
+              "value": 38.2
+            },
+            {
+              "date": "2010-06",
+              "value": 38.1
+            },
+            {
+              "date": "2010-07",
+              "value": 37.2
+            },
+            {
+              "date": "2010-08",
+              "value": 36.7
+            },
+            {
+              "date": "2010-09",
+              "value": 36.4
+            },
+            {
+              "date": "2010-10",
+              "value": 36.5
+            },
+            {
+              "date": "2010-11",
+              "value": 36.5
+            },
+            {
+              "date": "2010-12",
+              "value": 33.2
+            },
+            {
+              "date": "2011-02",
+              "value": 35.2
+            },
+            {
+              "date": "2011-03",
+              "value": 34.1
+            },
+            {
+              "date": "2011-04",
+              "value": 34.3
+            },
+            {
+              "date": "2011-05",
+              "value": 34.6
+            },
+            {
+              "date": "2011-06",
+              "value": 32.9
+            },
+            {
+              "date": "2011-07",
+              "value": 33.6
+            },
+            {
+              "date": "2011-08",
+              "value": 33.2
+            },
+            {
+              "date": "2011-09",
+              "value": 32.0
+            },
+            {
+              "date": "2011-10",
+              "value": 31.1
+            },
+            {
+              "date": "2011-11",
+              "value": 29.9
+            },
+            {
+              "date": "2011-12",
+              "value": 27.9
+            },
+            {
+              "date": "2012-02",
+              "value": 27.8
+            },
+            {
+              "date": "2012-03",
+              "value": 23.5
+            },
+            {
+              "date": "2012-04",
+              "value": 18.7
+            },
+            {
+              "date": "2012-05",
+              "value": 18.5
+            },
+            {
+              "date": "2012-06",
+              "value": 16.6
+            },
+            {
+              "date": "2012-07",
+              "value": 15.4
+            },
+            {
+              "date": "2012-08",
+              "value": 15.6
+            },
+            {
+              "date": "2012-09",
+              "value": 15.4
+            },
+            {
+              "date": "2012-10",
+              "value": 15.4
+            },
+            {
+              "date": "2012-11",
+              "value": 16.7
+            },
+            {
+              "date": "2012-12",
+              "value": 16.2
+            },
+            {
+              "date": "2013-02",
+              "value": 22.8
+            },
+            {
+              "date": "2013-03",
+              "value": 20.2
+            },
+            {
+              "date": "2013-04",
+              "value": 21.1
+            },
+            {
+              "date": "2013-05",
+              "value": 20.6
+            },
+            {
+              "date": "2013-06",
+              "value": 20.3
+            },
+            {
+              "date": "2013-07",
+              "value": 20.5
+            },
+            {
+              "date": "2013-08",
+              "value": 19.3
+            },
+            {
+              "date": "2013-09",
+              "value": 19.7
+            },
+            {
+              "date": "2013-10",
+              "value": 19.2
+            },
+            {
+              "date": "2013-11",
+              "value": 19.5
+            },
+            {
+              "date": "2013-12",
+              "value": 19.8
+            },
+            {
+              "date": "2014-02",
+              "value": 19.3
+            },
+            {
+              "date": "2014-03",
+              "value": 16.8
+            },
+            {
+              "date": "2014-04",
+              "value": 16.4
+            },
+            {
+              "date": "2014-05",
+              "value": 14.7
+            },
+            {
+              "date": "2014-06",
+              "value": 14.1
+            },
+            {
+              "date": "2014-07",
+              "value": 13.7
+            },
+            {
+              "date": "2014-08",
+              "value": 13.2
+            },
+            {
+              "date": "2014-09",
+              "value": 12.5
+            },
+            {
+              "date": "2014-10",
+              "value": 12.4
+            },
+            {
+              "date": "2014-11",
+              "value": 11.9
+            },
+            {
+              "date": "2014-12",
+              "value": 10.5
+            },
+            {
+              "date": "2015-02",
+              "value": 10.4
+            },
+            {
+              "date": "2015-03",
+              "value": 8.5
+            },
+            {
+              "date": "2015-04",
+              "value": 6.0
+            },
+            {
+              "date": "2015-05",
+              "value": 5.1
+            },
+            {
+              "date": "2015-06",
+              "value": 4.6
+            },
+            {
+              "date": "2015-07",
+              "value": 4.3
+            },
+            {
+              "date": "2015-08",
+              "value": 3.5
+            },
+            {
+              "date": "2015-09",
+              "value": 2.6
+            },
+            {
+              "date": "2015-10",
+              "value": 2.0
+            },
+            {
+              "date": "2015-11",
+              "value": 1.3
+            },
+            {
+              "date": "2015-12",
+              "value": 1.0
+            },
+            {
+              "date": "2016-02",
+              "value": 3.0
+            },
+            {
+              "date": "2016-03",
+              "value": 6.2
+            },
+            {
+              "date": "2016-04",
+              "value": 7.2
+            },
+            {
+              "date": "2016-05",
+              "value": 7.0
+            },
+            {
+              "date": "2016-06",
+              "value": 6.1
+            },
+            {
+              "date": "2016-07",
+              "value": 5.3
+            },
+            {
+              "date": "2016-08",
+              "value": 5.4
+            },
+            {
+              "date": "2016-09",
+              "value": 5.8
+            },
+            {
+              "date": "2016-10",
+              "value": 6.6
+            },
+            {
+              "date": "2016-11",
+              "value": 6.5
+            },
+            {
+              "date": "2016-12",
+              "value": 6.9
+            },
+            {
+              "date": "2017-02",
+              "value": 8.9
+            },
+            {
+              "date": "2017-03",
+              "value": 9.1
+            },
+            {
+              "date": "2017-04",
+              "value": 9.3
+            },
+            {
+              "date": "2017-05",
+              "value": 8.8
+            },
+            {
+              "date": "2017-06",
+              "value": 8.5
+            },
+            {
+              "date": "2017-07",
+              "value": 7.9
+            },
+            {
+              "date": "2017-08",
+              "value": 7.9
+            },
+            {
+              "date": "2017-09",
+              "value": 8.1
+            },
+            {
+              "date": "2017-10",
+              "value": 7.8
+            },
+            {
+              "date": "2017-11",
+              "value": 7.5
+            },
+            {
+              "date": "2017-12",
+              "value": 7.0
+            },
+            {
+              "date": "2018-02",
+              "value": 9.9
+            },
+            {
+              "date": "2018-03",
+              "value": 10.4
+            },
+            {
+              "date": "2018-04",
+              "value": 10.3
+            },
+            {
+              "date": "2018-05",
+              "value": 10.2
+            },
+            {
+              "date": "2018-06",
+              "value": 9.7
+            },
+            {
+              "date": "2018-07",
+              "value": 10.2
+            },
+            {
+              "date": "2018-08",
+              "value": 10.1
+            },
+            {
+              "date": "2018-09",
+              "value": 9.9
+            },
+            {
+              "date": "2018-10",
+              "value": 9.7
+            },
+            {
+              "date": "2018-11",
+              "value": 9.7
+            },
+            {
+              "date": "2018-12",
+              "value": 9.5
+            },
+            {
+              "date": "2019-02",
+              "value": 11.6
+            },
+            {
+              "date": "2019-03",
+              "value": 11.8
+            },
+            {
+              "date": "2019-04",
+              "value": 11.9
+            },
+            {
+              "date": "2019-05",
+              "value": 11.2
+            },
+            {
+              "date": "2019-06",
+              "value": 10.9
+            },
+            {
+              "date": "2019-07",
+              "value": 10.6
+            },
+            {
+              "date": "2019-08",
+              "value": 10.5
+            },
+            {
+              "date": "2019-09",
+              "value": 10.5
+            },
+            {
+              "date": "2019-10",
+              "value": 10.3
+            },
+            {
+              "date": "2019-11",
+              "value": 10.2
+            },
+            {
+              "date": "2019-12",
+              "value": 9.9
+            },
+            {
+              "date": "2020-02",
+              "value": -16.3
+            },
+            {
+              "date": "2020-03",
+              "value": -7.7
+            },
+            {
+              "date": "2020-04",
+              "value": -3.3
+            },
+            {
+              "date": "2020-05",
+              "value": -0.3
+            },
+            {
+              "date": "2020-06",
+              "value": 1.9
+            },
+            {
+              "date": "2020-07",
+              "value": 3.4
+            },
+            {
+              "date": "2020-08",
+              "value": 4.6
+            },
+            {
+              "date": "2020-09",
+              "value": 5.6
+            },
+            {
+              "date": "2020-10",
+              "value": 6.3
+            },
+            {
+              "date": "2020-11",
+              "value": 6.8
+            },
+            {
+              "date": "2020-12",
+              "value": 7.0
+            },
+            {
+              "date": "2021-02",
+              "value": 38.3
+            },
+            {
+              "date": "2021-03",
+              "value": 25.6
+            },
+            {
+              "date": "2021-04",
+              "value": 21.6
+            },
+            {
+              "date": "2021-05",
+              "value": 18.3
+            },
+            {
+              "date": "2021-06",
+              "value": 15.0
+            },
+            {
+              "date": "2021-07",
+              "value": 12.7
+            },
+            {
+              "date": "2021-08",
+              "value": 10.9
+            },
+            {
+              "date": "2021-09",
+              "value": 8.8
+            },
+            {
+              "date": "2021-10",
+              "value": 7.2
+            },
+            {
+              "date": "2021-11",
+              "value": 6.0
+            },
+            {
+              "date": "2021-12",
+              "value": 4.4
+            },
+            {
+              "date": "2022-02",
+              "value": 3.7
+            },
+            {
+              "date": "2022-03",
+              "value": 0.7
+            },
+            {
+              "date": "2022-04",
+              "value": -2.7
+            },
+            {
+              "date": "2022-05",
+              "value": -4.0
+            },
+            {
+              "date": "2022-06",
+              "value": -5.4
+            },
+            {
+              "date": "2022-07",
+              "value": -6.4
+            },
+            {
+              "date": "2022-08",
+              "value": -7.4
+            },
+            {
+              "date": "2022-09",
+              "value": -8.0
+            },
+            {
+              "date": "2022-10",
+              "value": -8.8
+            },
+            {
+              "date": "2022-11",
+              "value": -9.8
+            },
+            {
+              "date": "2022-12",
+              "value": -10.0
+            },
+            {
+              "date": "2023-02",
+              "value": -5.7
+            },
+            {
+              "date": "2023-03",
+              "value": -5.8
+            },
+            {
+              "date": "2023-04",
+              "value": -6.2
+            },
+            {
+              "date": "2023-05",
+              "value": -7.2
+            },
+            {
+              "date": "2023-06",
+              "value": -7.9
+            },
+            {
+              "date": "2023-07",
+              "value": -8.5
+            },
+            {
+              "date": "2023-08",
+              "value": -8.8
+            },
+            {
+              "date": "2023-09",
+              "value": -9.1
+            },
+            {
+              "date": "2023-10",
+              "value": -9.3
+            },
+            {
+              "date": "2023-11",
+              "value": -9.4
+            },
+            {
+              "date": "2023-12",
+              "value": -9.6
+            },
+            {
+              "date": "2024-02",
+              "value": -9.0
+            },
+            {
+              "date": "2024-03",
+              "value": -9.5
+            },
+            {
+              "date": "2024-04",
+              "value": -9.8
+            },
+            {
+              "date": "2024-05",
+              "value": -10.1
+            },
+            {
+              "date": "2024-06",
+              "value": -10.1
+            },
+            {
+              "date": "2024-07",
+              "value": -10.2
+            },
+            {
+              "date": "2024-08",
+              "value": -10.2
+            },
+            {
+              "date": "2024-09",
+              "value": -10.1
+            },
+            {
+              "date": "2024-10",
+              "value": -10.3
+            },
+            {
+              "date": "2024-11",
+              "value": -10.4
+            },
+            {
+              "date": "2024-12",
+              "value": -10.6
+            },
             {
               "date": "2025-02",
               "value": -9.8
+            },
+            {
+              "date": "2025-03",
+              "value": -9.9
             },
             {
               "date": "2025-04",
@@ -51249,8 +52360,36 @@
               "value": -11.2
             },
             {
+              "date": "2025-07",
+              "value": -12.0
+            },
+            {
+              "date": "2025-08",
+              "value": -12.9
+            },
+            {
+              "date": "2025-09",
+              "value": -13.9
+            },
+            {
+              "date": "2025-10",
+              "value": -14.7
+            },
+            {
+              "date": "2025-11",
+              "value": -15.9
+            },
+            {
+              "date": "2025-12",
+              "value": -17.2
+            },
+            {
               "date": "2026-02",
               "value": -11.1
+            },
+            {
+              "date": "2026-03",
+              "value": -11.2
             },
             {
               "date": "2026-04",
@@ -51267,6 +52406,14 @@
             {
               "date": "2026-07",
               "value": -19.2
+            },
+            {
+              "date": "2026-08",
+              "value": -19.9
+            },
+            {
+              "date": "2026-09",
+              "value": -20.6
             }
           ],
           "desc": "Cumulative year-to-date growth in spending on real estate development, a bellwether for the property sector's health."
@@ -51277,46 +52424,910 @@
           "freq": "monthly",
           "decimals": 1,
           "higher_is_better": null,
-          "flag": "Requested as m/m but only a y/y series was reliably sourced — axis is y/y, not month-over-month.",
+          "flag": "NBS publishes no national 70-city composite, so this is the simple average of each city's y/y change in new commercial-housing prices (computed from NBS per-city data); it can differ by a few tenths from composites published elsewhere.",
           "data": [
             {
+              "date": "2008-01",
+              "value": 10.14
+            },
+            {
+              "date": "2008-02",
+              "value": 9.66
+            },
+            {
+              "date": "2008-03",
+              "value": 9.28
+            },
+            {
+              "date": "2008-04",
+              "value": 8.75
+            },
+            {
+              "date": "2008-05",
+              "value": 8.08
+            },
+            {
+              "date": "2008-06",
+              "value": 7.63
+            },
+            {
+              "date": "2008-07",
+              "value": 6.83
+            },
+            {
+              "date": "2008-08",
+              "value": 5.9
+            },
+            {
+              "date": "2008-09",
+              "value": 4.58
+            },
+            {
+              "date": "2008-10",
+              "value": 3.15
+            },
+            {
+              "date": "2008-11",
+              "value": 1.82
+            },
+            {
+              "date": "2008-12",
+              "value": 1.07
+            },
+            {
+              "date": "2009-01",
+              "value": 0.45
+            },
+            {
+              "date": "2009-02",
+              "value": -0.12
+            },
+            {
+              "date": "2009-03",
+              "value": -0.54
+            },
+            {
+              "date": "2009-04",
+              "value": -0.66
+            },
+            {
+              "date": "2009-05",
+              "value": -0.51
+            },
+            {
+              "date": "2009-06",
+              "value": -0.09
+            },
+            {
+              "date": "2009-07",
+              "value": 0.41
+            },
+            {
+              "date": "2009-08",
+              "value": 1.26
+            },
+            {
+              "date": "2009-09",
+              "value": 2.07
+            },
+            {
+              "date": "2009-10",
+              "value": 2.95
+            },
+            {
+              "date": "2009-11",
+              "value": 4.39
+            },
+            {
+              "date": "2009-12",
+              "value": 6.22
+            },
+            {
+              "date": "2010-01",
+              "value": 8.23
+            },
+            {
+              "date": "2010-02",
+              "value": 9.78
+            },
+            {
+              "date": "2010-03",
+              "value": 10.61
+            },
+            {
+              "date": "2010-04",
+              "value": 11.48
+            },
+            {
+              "date": "2010-05",
+              "value": 11.4
+            },
+            {
+              "date": "2010-06",
+              "value": 10.76
+            },
+            {
+              "date": "2010-07",
+              "value": 9.95
+            },
+            {
+              "date": "2010-08",
+              "value": 9.08
+            },
+            {
+              "date": "2010-09",
+              "value": 8.78
+            },
+            {
+              "date": "2010-10",
+              "value": 8.59
+            },
+            {
+              "date": "2010-11",
+              "value": 7.98
+            },
+            {
+              "date": "2010-12",
+              "value": 7.22
+            },
+            {
+              "date": "2011-01",
+              "value": 6.82
+            },
+            {
+              "date": "2011-02",
+              "value": 6.2
+            },
+            {
+              "date": "2011-03",
+              "value": 5.59
+            },
+            {
+              "date": "2011-04",
+              "value": 4.71
+            },
+            {
+              "date": "2011-05",
+              "value": 4.42
+            },
+            {
+              "date": "2011-06",
+              "value": 4.42
+            },
+            {
+              "date": "2011-07",
+              "value": 4.53
+            },
+            {
+              "date": "2011-08",
+              "value": 4.41
+            },
+            {
+              "date": "2011-09",
+              "value": 3.82
+            },
+            {
+              "date": "2011-10",
+              "value": 3.09
+            },
+            {
+              "date": "2011-11",
+              "value": 2.38
+            },
+            {
+              "date": "2011-12",
+              "value": 1.63
+            },
+            {
+              "date": "2012-01",
+              "value": 0.68
+            },
+            {
+              "date": "2012-02",
+              "value": 0.12
+            },
+            {
+              "date": "2012-03",
+              "value": -0.47
+            },
+            {
+              "date": "2012-04",
+              "value": -1.03
+            },
+            {
+              "date": "2012-05",
+              "value": -1.32
+            },
+            {
+              "date": "2012-06",
+              "value": -1.4
+            },
+            {
+              "date": "2012-07",
+              "value": -1.32
+            },
+            {
+              "date": "2012-08",
+              "value": -1.27
+            },
+            {
+              "date": "2012-09",
+              "value": -1.26
+            },
+            {
+              "date": "2012-10",
+              "value": -1.06
+            },
+            {
+              "date": "2012-11",
+              "value": -0.62
+            },
+            {
+              "date": "2012-12",
+              "value": -0.06
+            },
+            {
+              "date": "2013-01",
+              "value": 0.68
+            },
+            {
+              "date": "2013-02",
+              "value": 1.86
+            },
+            {
+              "date": "2013-03",
+              "value": 3.28
+            },
+            {
+              "date": "2013-04",
+              "value": 4.54
+            },
+            {
+              "date": "2013-05",
+              "value": 5.65
+            },
+            {
+              "date": "2013-06",
+              "value": 6.5
+            },
+            {
+              "date": "2013-07",
+              "value": 7.11
+            },
+            {
+              "date": "2013-08",
+              "value": 7.93
+            },
+            {
+              "date": "2013-09",
+              "value": 8.7
+            },
+            {
+              "date": "2013-10",
+              "value": 9.3
+            },
+            {
+              "date": "2013-11",
+              "value": 9.62
+            },
+            {
+              "date": "2013-12",
+              "value": 9.7
+            },
+            {
+              "date": "2014-01",
+              "value": 9.5
+            },
+            {
+              "date": "2014-02",
+              "value": 8.64
+            },
+            {
+              "date": "2014-03",
+              "value": 7.7
+            },
+            {
+              "date": "2014-04",
+              "value": 6.76
+            },
+            {
+              "date": "2014-05",
+              "value": 5.63
+            },
+            {
+              "date": "2014-06",
+              "value": 4.25
+            },
+            {
+              "date": "2014-07",
+              "value": 2.56
+            },
+            {
+              "date": "2014-08",
+              "value": 0.54
+            },
+            {
+              "date": "2014-09",
+              "value": -1.2
+            },
+            {
+              "date": "2014-10",
+              "value": -2.62
+            },
+            {
+              "date": "2014-11",
+              "value": -3.73
+            },
+            {
+              "date": "2014-12",
+              "value": -4.51
+            },
+            {
+              "date": "2015-01",
+              "value": -5.32
+            },
+            {
+              "date": "2015-02",
+              "value": -6.01
+            },
+            {
+              "date": "2015-03",
+              "value": -6.38
+            },
+            {
+              "date": "2015-04",
+              "value": -6.56
+            },
+            {
+              "date": "2015-05",
+              "value": -6.34
+            },
+            {
+              "date": "2015-06",
+              "value": -5.7
+            },
+            {
+              "date": "2015-07",
+              "value": -4.63
+            },
+            {
+              "date": "2015-08",
+              "value": -3.31
+            },
+            {
+              "date": "2015-09",
+              "value": -2.08
+            },
+            {
+              "date": "2015-10",
+              "value": -1.18
+            },
+            {
+              "date": "2015-11",
+              "value": -0.37
+            },
+            {
+              "date": "2015-12",
+              "value": 0.27
+            },
+            {
+              "date": "2016-01",
+              "value": 1.08
+            },
+            {
+              "date": "2016-02",
+              "value": 1.97
+            },
+            {
+              "date": "2016-03",
+              "value": 3.08
+            },
+            {
+              "date": "2016-04",
+              "value": 4.33
+            },
+            {
+              "date": "2016-05",
+              "value": 5.15
+            },
+            {
+              "date": "2016-06",
+              "value": 5.74
+            },
+            {
+              "date": "2016-07",
+              "value": 6.35
+            },
+            {
+              "date": "2016-08",
+              "value": 7.54
+            },
+            {
+              "date": "2016-09",
+              "value": 9.34
+            },
+            {
+              "date": "2016-10",
+              "value": 10.43
+            },
+            {
+              "date": "2016-11",
+              "value": 10.81
+            },
+            {
+              "date": "2016-12",
+              "value": 10.81
+            },
+            {
+              "date": "2017-01",
+              "value": 10.69
+            },
+            {
+              "date": "2017-02",
+              "value": 10.56
+            },
+            {
+              "date": "2017-03",
+              "value": 10.3
+            },
+            {
+              "date": "2017-04",
+              "value": 9.86
+            },
+            {
+              "date": "2017-05",
+              "value": 9.68
+            },
+            {
+              "date": "2017-06",
+              "value": 9.59
+            },
+            {
+              "date": "2017-07",
+              "value": 9.33
+            },
+            {
+              "date": "2017-08",
+              "value": 8.23
+            },
+            {
+              "date": "2017-09",
+              "value": 6.53
+            },
+            {
+              "date": "2017-10",
+              "value": 5.72
+            },
+            {
+              "date": "2017-11",
+              "value": 5.54
+            },
+            {
+              "date": "2017-12",
+              "value": 5.76
+            },
+            {
+              "date": "2018-01",
+              "value": 5.39
+            },
+            {
+              "date": "2018-02",
+              "value": 5.79
+            },
+            {
+              "date": "2018-03",
+              "value": 5.49
+            },
+            {
+              "date": "2018-04",
+              "value": 5.31
+            },
+            {
+              "date": "2018-05",
+              "value": 5.35
+            },
+            {
+              "date": "2018-06",
+              "value": 5.79
+            },
+            {
+              "date": "2018-07",
+              "value": 6.61
+            },
+            {
+              "date": "2018-08",
+              "value": 8.02
+            },
+            {
+              "date": "2018-09",
+              "value": 8.87
+            },
+            {
+              "date": "2018-10",
+              "value": 9.65
+            },
+            {
+              "date": "2018-11",
+              "value": 10.25
+            },
+            {
+              "date": "2018-12",
+              "value": 10.56
+            },
+            {
+              "date": "2019-01",
+              "value": 10.82
+            },
+            {
+              "date": "2019-02",
+              "value": 11.09
+            },
+            {
+              "date": "2019-03",
+              "value": 11.3
+            },
+            {
+              "date": "2019-04",
+              "value": 11.35
+            },
+            {
+              "date": "2019-05",
+              "value": 11.26
+            },
+            {
+              "date": "2019-06",
+              "value": 10.78
+            },
+            {
+              "date": "2019-07",
+              "value": 10.09
+            },
+            {
+              "date": "2019-08",
+              "value": 9.09
+            },
+            {
+              "date": "2019-09",
+              "value": 8.57
+            },
+            {
+              "date": "2019-10",
+              "value": 7.99
+            },
+            {
+              "date": "2019-11",
+              "value": 7.27
+            },
+            {
+              "date": "2019-12",
+              "value": 6.81
+            },
+            {
+              "date": "2020-01",
+              "value": 6.45
+            },
+            {
+              "date": "2020-02",
+              "value": 5.92
+            },
+            {
+              "date": "2020-03",
+              "value": 5.41
+            },
+            {
+              "date": "2020-04",
+              "value": 5.2
+            },
+            {
+              "date": "2020-05",
+              "value": 4.95
+            },
+            {
+              "date": "2020-06",
+              "value": 4.87
+            },
+            {
+              "date": "2020-07",
+              "value": 4.75
+            },
+            {
+              "date": "2020-08",
+              "value": 4.72
+            },
+            {
+              "date": "2020-09",
+              "value": 4.52
+            },
+            {
+              "date": "2020-10",
+              "value": 4.16
+            },
+            {
+              "date": "2020-11",
+              "value": 3.96
+            },
+            {
+              "date": "2020-12",
+              "value": 3.73
+            },
+            {
+              "date": "2021-01",
+              "value": 3.71
+            },
+            {
+              "date": "2021-02",
+              "value": 4.06
+            },
+            {
+              "date": "2021-03",
+              "value": 4.37
+            },
+            {
+              "date": "2021-04",
+              "value": 4.45
+            },
+            {
+              "date": "2021-05",
+              "value": 4.47
+            },
+            {
+              "date": "2021-06",
+              "value": 4.3
+            },
+            {
+              "date": "2021-07",
+              "value": 4.1
+            },
+            {
+              "date": "2021-08",
+              "value": 3.7
+            },
+            {
+              "date": "2021-09",
+              "value": 3.27
+            },
+            {
+              "date": "2021-10",
+              "value": 2.84
+            },
+            {
+              "date": "2021-11",
+              "value": 2.4
+            },
+            {
+              "date": "2021-12",
+              "value": 1.98
+            },
+            {
+              "date": "2022-01",
+              "value": 1.65
+            },
+            {
+              "date": "2022-02",
+              "value": 1.15
+            },
+            {
+              "date": "2022-03",
+              "value": 0.66
+            },
+            {
+              "date": "2022-04",
+              "value": -0.11
+            },
+            {
+              "date": "2022-05",
+              "value": -0.79
+            },
+            {
+              "date": "2022-06",
+              "value": -1.29
+            },
+            {
+              "date": "2022-07",
+              "value": -1.67
+            },
+            {
+              "date": "2022-08",
+              "value": -2.1
+            },
+            {
+              "date": "2022-09",
+              "value": -2.3
+            },
+            {
+              "date": "2022-10",
+              "value": -2.41
+            },
+            {
+              "date": "2022-11",
+              "value": -2.33
+            },
+            {
+              "date": "2022-12",
+              "value": -2.29
+            },
+            {
+              "date": "2023-01",
+              "value": -2.26
+            },
+            {
+              "date": "2023-02",
+              "value": -1.86
+            },
+            {
+              "date": "2023-03",
+              "value": -1.35
+            },
+            {
+              "date": "2023-04",
+              "value": -0.74
+            },
+            {
+              "date": "2023-05",
+              "value": -0.48
+            },
+            {
+              "date": "2023-06",
+              "value": -0.43
+            },
+            {
+              "date": "2023-07",
+              "value": -0.57
+            },
+            {
+              "date": "2023-08",
+              "value": -0.55
+            },
+            {
+              "date": "2023-09",
+              "value": -0.57
+            },
+            {
+              "date": "2023-10",
+              "value": -0.58
+            },
+            {
+              "date": "2023-11",
+              "value": -0.7
+            },
+            {
+              "date": "2023-12",
+              "value": -0.89
+            },
+            {
+              "date": "2024-01",
+              "value": -1.24
+            },
+            {
+              "date": "2024-02",
+              "value": -1.9
+            },
+            {
+              "date": "2024-03",
+              "value": -2.65
+            },
+            {
+              "date": "2024-04",
+              "value": -3.51
+            },
+            {
+              "date": "2024-05",
+              "value": -4.3
+            },
+            {
+              "date": "2024-06",
+              "value": -4.88
+            },
+            {
+              "date": "2024-07",
+              "value": -5.28
+            },
+            {
+              "date": "2024-08",
+              "value": -5.69
+            },
+            {
+              "date": "2024-09",
+              "value": -6.09
+            },
+            {
+              "date": "2024-10",
+              "value": -6.22
+            },
+            {
+              "date": "2024-11",
+              "value": -6.07
+            },
+            {
+              "date": "2024-12",
+              "value": -5.73
+            },
+            {
+              "date": "2025-01",
+              "value": -5.43
+            },
+            {
+              "date": "2025-02",
+              "value": -5.22
+            },
+            {
+              "date": "2025-03",
+              "value": -4.99
+            },
+            {
+              "date": "2025-04",
+              "value": -4.55
+            },
+            {
+              "date": "2025-05",
+              "value": -4.08
+            },
+            {
+              "date": "2025-06",
+              "value": -3.69
+            },
+            {
+              "date": "2025-07",
+              "value": -3.37
+            },
+            {
+              "date": "2025-08",
+              "value": -2.95
+            },
+            {
+              "date": "2025-09",
+              "value": -2.66
+            },
+            {
+              "date": "2025-10",
+              "value": -2.6
+            },
+            {
               "date": "2025-11",
-              "value": -2.2
+              "value": -2.78
             },
             {
               "date": "2025-12",
-              "value": -2.4
+              "value": -3.05
             },
             {
               "date": "2026-01",
-              "value": -2.7
+              "value": -3.33
             },
             {
               "date": "2026-02",
-              "value": -3.1
+              "value": -3.46
             },
             {
               "date": "2026-03",
-              "value": -3.2
+              "value": -3.59
             },
             {
               "date": "2026-04",
-              "value": -3.4
+              "value": -3.65
             },
             {
               "date": "2026-05",
-              "value": -3.5
+              "value": -3.64
             },
             {
               "date": "2026-06",
-              "value": -3.5
+              "value": -3.54
             },
             {
               "date": "2026-07",
-              "value": -3.3
+              "value": -3.41
+            },
+            {
+              "date": "2026-08",
+              "value": -3.29
+            },
+            {
+              "date": "2026-09",
+              "value": -3.04
             }
           ],
-          "desc": "The year-over-year change in new-home prices across major Chinese cities."
+          "desc": "The year-over-year change in new commercial-housing prices, averaged across 70 major Chinese cities."
         },
         "urban_unemployment": {
           "label": "Surveyed Urban Unemployment",
@@ -51754,8 +53765,104 @@
           "freq": "monthly",
           "decimals": 1,
           "higher_is_better": false,
-          "flag": "All points use the post-Dec-2023 methodology (excludes enrolled students). Jul 2026 jump to 17.9% reflects seasonal new-graduate entry.",
+          "flag": "Post-Dec-2023 methodology only (excludes enrolled students). Rises each July–August as new graduates enter the labour market.",
           "data": [
+            {
+              "date": "2023-12",
+              "value": 14.9
+            },
+            {
+              "date": "2024-01",
+              "value": 14.6
+            },
+            {
+              "date": "2024-02",
+              "value": 15.3
+            },
+            {
+              "date": "2024-03",
+              "value": 15.3
+            },
+            {
+              "date": "2024-04",
+              "value": 14.7
+            },
+            {
+              "date": "2024-05",
+              "value": 14.2
+            },
+            {
+              "date": "2024-06",
+              "value": 13.2
+            },
+            {
+              "date": "2024-07",
+              "value": 17.1
+            },
+            {
+              "date": "2024-08",
+              "value": 18.8
+            },
+            {
+              "date": "2024-09",
+              "value": 17.6
+            },
+            {
+              "date": "2024-10",
+              "value": 17.1
+            },
+            {
+              "date": "2024-11",
+              "value": 16.1
+            },
+            {
+              "date": "2024-12",
+              "value": 15.7
+            },
+            {
+              "date": "2025-01",
+              "value": 16.1
+            },
+            {
+              "date": "2025-02",
+              "value": 16.9
+            },
+            {
+              "date": "2025-03",
+              "value": 16.5
+            },
+            {
+              "date": "2025-04",
+              "value": 15.8
+            },
+            {
+              "date": "2025-05",
+              "value": 14.9
+            },
+            {
+              "date": "2025-06",
+              "value": 14.5
+            },
+            {
+              "date": "2025-07",
+              "value": 17.8
+            },
+            {
+              "date": "2025-08",
+              "value": 18.9
+            },
+            {
+              "date": "2025-09",
+              "value": 17.7
+            },
+            {
+              "date": "2025-10",
+              "value": 17.3
+            },
+            {
+              "date": "2025-11",
+              "value": 16.9
+            },
             {
               "date": "2025-12",
               "value": 16.5
@@ -51787,6 +53894,14 @@
             {
               "date": "2026-07",
               "value": 17.9
+            },
+            {
+              "date": "2026-08",
+              "value": 18.9
+            },
+            {
+              "date": "2026-09",
+              "value": 18.0
             }
           ],
           "desc": "The unemployment rate among 16–24 year-olds, excluding enrolled students."
@@ -51824,13 +53939,6 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQd0lEUmh3YkM1UWZtWkI0ZW1Pal9HSU5HTnFsTDZSc01xZVlqYlBqTWJlWVZjbHZNaHZuRGxaUC1PNzdhS3BPV3NadEE0Qi1SMHpSWGxxV0U3T3lHLUFuVVJQTHlyQmJyVmFwdUxkalBUbjZqaFNQSWQ0aHhBMTNJNTN6WmI?oc=5"
     },
     {
-      "headline": "OPINION: U.S.-China trade truce reflects detente, not reconciliation",
-      "summary": "",
-      "source": "Japan Wire by Kyodo News",
-      "date": "2026-10-27T07:10:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nWkQybjQxUVF0aUpibmxWX2djenZxb3FCSW1rSGFYQU51VlJ3RE44clZSRVdsNUs1UnBLeWRiemVXOXh2YjUxX2JKeWgzQThyTVFLbjNBaER6UQ?oc=5"
-    },
-    {
       "headline": "Bonds and Chinese stocks could offer value as scrutiny of U.S. AI monetization grows: Strategist",
       "summary": "",
       "source": "CNBC",
@@ -51843,13 +53951,6 @@
       "source": "Brookings",
       "date": "2026-10-27T04:01:41+00:00",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9maU5kWlBQRzNmbWlrSXNtN19CSUF5UUhJSzU3TzIyQTNXRW1JWUp0N05TNWZMRFpSbElqVDVtLW92cUpNZ295WlByOFNmbnBGOFM4cEhqYndrbkkyTGowRXhUZEhwWTZiMWtXaw?oc=5"
-    },
-    {
-      "headline": "Alibaba wins injunction against Pentagon contract restrictions tied to China blacklist",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-10-27T03:48:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRjJxU2NlM1pNUlgtWmxpSUhtRC1POThkZ1ZacXljTlNvbTM0Q2MxV19jZl9OVTRmVGhhUWx1MTBrUWdHa3ZFeGVZamVMSVZEWWNZTWRtQU13eFZqZ0gxV3l5ZEhfN2FPUGtZckxXTlJTcENsZGo2a1h6Tk9iaTFkVEZjWTRZcFFQRnVvZC1aQVZmdG1UMXYzanB0VFNqT0JwbVBqb3ROTmttNVctMDNETng1RWJfdTJuZkktN1VnN0dSUU9Y?oc=5"
     },
     {
       "headline": "China's industrial profit growth picks up amid deepening economic divergence",
@@ -51866,13 +53967,6 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQenNqZ2NzUE9INmtUZnp3X1ZXdEExTmFYdmNPdktRZGdCcGlYcmRxMVNXTlFQbElSejk0WjBxcmEzdHhvNjFFQkNJQlRWRHFGMElWcUROUkN3YlhwNXMyLWQybWhyai1DSDV6X1pUYV9tZHg3bERWRlUxWVFZNVJHUndEVnZCQ2NjUkgyTkxNa282UQ?oc=5"
     },
     {
-      "headline": "Pork producers strive to improve trade with China",
-      "summary": "",
-      "source": "National Hog Farmer",
-      "date": "2026-10-27T01:20:04+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRnVRYkV6NWtPT29PMnhMUnlYM05yNnhiRTFHYjFzY3dSLTM4MHpiblJLbU1HQXdFTkVFdndKVWstSFpaY1BkWDktbjNGSXBDWVBRZV9YeThXbGNRU296S1NET3pxUkh6OHZyaHlLWExlaU9xblVqTjJkNHdsWEhSVXFtamR1NFhWLW5tQ2Q1Rk0yb2VmUVdrX283Qjg0cmVINlE?oc=5"
-    },
-    {
       "headline": "China and Russia are redrawing Arctic trade. Can Europe fight back?",
       "summary": "",
       "source": "CNBC",
@@ -51880,32 +53974,11 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNR21oT09LTEo1YVdLaVFreDZJU0xBUU5GMVl5b1N1bld6YkRaQmZERXdLNXlGR3BqVmJZZTlLZ2ZFdGtfSWlYN3dZNWs3ci1vSlhMSVd5MG9menpVclZUXzZNa21iS3l2ak5FRTU2VDM3SnowVVVDSkxuMFIyc0RnbEQ2YkhDNFBTSTVWblZ4WndlVGg4TG1YeUttZ01qR1hReEVwbGJ3?oc=5"
     },
     {
-      "headline": "China proposes measures against foreign entities' infringement of trade secrets",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-10-26T20:51:27+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaFN3cElBOU1objdKSy03cXN3RVJyRURxMjJqMnFGdEhoclhqa18teVhGRzU3MWk2SXdnUDIwdUl1SkdxUUZMamJJWXQ0a1JaTmEwWHFMaUYyZWJzMmlyZEQyMEdkZThQcGxsOUgtTm95VWFzaHQ2SUFhdm10WVNBQUVDZjNpOHltWVVOZVZTeEZfdXA0RkdKRmVpODR3MUxydGROWlNWN0E5bUFEcHZzd2FWLUR0SEhneXVfcXdHS2dTcGVoZHl5bnlB?oc=5"
-    },
-    {
       "headline": "China’s economy steadies as surging exports lift Q3 growth above forecasts",
       "summary": "",
       "source": "Mercator Institute for China Studies (MERICS)",
       "date": "2026-10-26T15:54:53+00:00",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPY1Z1Qk4tanI0Q2ZETU43S0tUYVBPQzIzdTNGRWxDLWFEWm9DM2plZW53cnBMZGE2S3ZHNWlmREx1czJFNURmUV9MVWlCcXpoWXJxenlFbDlNYmt1NWd3bHFDaXNiNEFTRkJvc1JsdGY4OEw2T0JDTlRNMlFPQVJTWUcxQmt3ZnZBMGNrYVhIUVVqRFNuNGNmcEJyVUptSjdjTFE?oc=5"
-    },
-    {
-      "headline": "EU Plans to Hit China With More Import Curbs in Early 2027",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-10-26T13:55:37+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcTFySmU5dkZnVmZpVkJsOEdjYWgtVHpxbWVkYW1Td3hnYWZBNXI3d3dWei1Ibms0T1F4aE9KRjN6OTJoZHJiQmtYZlF4Wmxyb0lVY1UweWhXaEgxM0VIRE1xamUxMkV0QXZlYzZTQTNlbmxUODZiVnJfX1BIUW5fRGNmN3RqcHJiWFhJUWlvbzM5eENEUDd4MXhHeEpocXhtUnJNSkp5TTgta3F6T3c?oc=5"
-    },
-    {
-      "headline": "New Zealand’s Two-Track China Policy",
-      "summary": "",
-      "source": "CSIS | Center for Strategic and International Studies",
-      "date": "2026-10-26T13:31:03+00:00",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA5Mmk2QjdwVEtiOFEzemVhcDdKU01FSTVlZXZoSERuOGJIXzJ4anB1d2hCclY1aFN4dzVZSTVaalBIRnlCYzg4eU1hQTRvZWxEYXJJbnVFSzF5MkdHYnJGeWRRblkzVE9nYTJGazR0THhWNFU?oc=5"
     },
     {
       "headline": "Trump said China was headed for ‘big trouble.’ Yet its economy is growing faster than the U.S., and its deficits are moving in the right direction",
@@ -51943,13 +54016,6 @@
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlpWMVpyRFZnYUo2b0lYQVU1NjJjQldUNjdTNUVLV0h0SkZUZEtEd3NvQ0ljS1hsakxzZW83bFd2ejJ2Z2FydTRoXzBnSlRMRFo2SmpheF9wNkVMUTNRVVNxYTBqZUtVRVVzY2k4T19LZlY2QnRNMnlFQ0lVVXNFRjcwR213ZFhveGU0amdRSlppX21LZHExb2F1RUxiTFNTa3NuNDdVbDZaYjJ3VGl0cGdRckxidjVOWExzQjZ3ZTM1eFV4dloybmNrOXlxc1V3eGV1S9IB1AFBVV95cUxPbW5OX1VBbENPaTdvX01lbnMzcmxXdzlsd1E2LUxmYjJLckpDNHdzdWk2Y3R4V19VTEQ2czNiRDlnTDFoU3dsNFdNdDhXUUNzdk1RODMyczhOZHBMd1RzMTZSZGFHX0M3M2IwRzRFRXhPRmRxMVhpMjFCakd6UEItTFpwWXJmN0thdkpDU2dvTy1udFZvdllkbU9uYnhSdFliVnBrZXl5M1BhV20zYk40TXFsNWQ5dHh5ZWU2b3NiZFJmNV9GYk1WYlBDWXZPQmlSeGE5Mg?oc=5"
     },
     {
-      "headline": "Washing away the US: Tariff evasion on the other side of the US–China trade war",
-      "summary": "",
-      "source": "CEPR",
-      "date": "2026-10-26T00:55:04+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdXFOOE9ybUFrVGNraFdvaWNEdDM1YXlVdU1xTVNFdW1aTUVlYkNyeUtoRGJVNXJkeUF3WXE4Y3c0ZVJsTldybDA4UFEydDdEcUN0TnBlTHVJcnhDb1ZPSTBMcFBLSU5fdERrRlNONEx4bUItMEZiaVRLMzBmbnFBLVRLTTR4MlZzNFl2UE1IMlc0VURjeUE?oc=5"
-    },
-    {
       "headline": "COMMENTARY: Why China’s stimulus keeps missing the mark",
       "summary": "",
       "source": "Reuters",
@@ -51978,18 +54044,18 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSFpEVS05QzlFMHZpaU9IN3JBeTFZRDVLOFlMTWJaMzk0Y01DdDJha3R0d1FtZ2FLRVNNSVE1Q2pSUldqTjgyaXplaUJ4QldscEFpOFBuRWVyQW5MNGtjaVR0dTN3emwtdzBGbzFwcGpweHNJUm1ZaGJVTUJWbWFidnNFZ3NJaUJFUWtRT1BkMFlTanROSXlsZWlNUmVtV3hCbGdz?oc=5"
     },
     {
-      "headline": "North Korea’s Kim crosses new bridge into China as trade ties warm",
-      "summary": "",
-      "source": "CNN",
-      "date": "2026-10-24T15:06:47+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOGJTbGN5cmVOYzZUM2FzZTlna1puOFJnZXVlLW9LMmltZ1Bacmt6VVd2aDhvYmNQNEFxR19QWXE0QVd2QlZ1OE1OY1ZhVzlacTJFajVpOGVKMlVGVVFFblY1b011ZGR3NlVUdV9DQTVZazFmMG9JVURQMDAxcVVla1g3UE9kdw?oc=5"
-    },
-    {
       "headline": "China urges US to halt proposed expansion of outbound investment curbs",
       "summary": "",
       "source": "Reuters",
       "date": "2026-10-24T13:51:55+00:00",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY3V2bWpZckhlWExlaDZRLTR0NG1MY3l4NmpfZzJCUkVpSkJGblR1S0RScmxSa2tWWVhtZFdBNzkyc0ZaUnlDU2lVNEh3WUpUTkw3d0tIdGlzeTNrRnpWNFhiUk9xTEw4bENXWmxuRlRYTXQtU2N4MXRLVURsUkVxYUpGMks3R0hUaXA4eUZHSXNBWXRLRUN4VVkyVW5WQlBVUFo1dnRSVGxPYmxqMXRXUnVn?oc=5"
+    },
+    {
+      "headline": "Treasury proposes rule to curb high-tech investments in China and other adversaries",
+      "summary": "",
+      "source": "PBS",
+      "date": "2026-10-23T23:19:32+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNazgwM2ZwNXBFa1diSlFMSzdhUmRpdVVkUlRsOWtZeUpiYWllX2ZudG1tZzU0OUNXZFE3azdqMlhYX0Fuc09YXzlBYUhVWmxod2ZfblNBLW5vOWFFXzlGbmZ4NEdWZGpMd2dWeXpvdzIzRF9UNHRXMU8ybnpXVVNTZFlfUk9hSUVDX3QtUzZGQ1YydXM3MG9Xdzl0QTVBX2FJSEZYSVFJSUhsT3lRMGtwb0FPZVZhVkliU0hRRUZB0gHDAUFVX3lxTE5uVjlvWFhPVUk5U3N4ZUtvaEkzU2RrcTg3aGpfeG1yT0VaMlYxMHQwNE9laWdPWGNQcWZ0VFRVeW1HdTJ3dmt5QnhWOU0yNnE2UWRsaUI1T2p4c2IxbUFpdW5vQ3JQUmMwTXY4dUdGWmRLYi1WZUp0T0lqVWdaTXY2S0lGQW4wdVV2UFFIc2s4dUo4SlBrQXV2WUtPVjVKbmdlUEpLUjdfNmZ3M2JVYnFucmVZdE1xUUl2TGsyc3NRT0RDZw?oc=5"
     },
     {
       "headline": "What will China’s fifth plenum mean for the root-and-branch corruption drive?",
@@ -52013,13 +54079,6 @@
       "url": "https://www.scmp.com/plus/news/china/politics/article/3371921/china-party-meeting-stocks-slump-hsbc-leads-earnings"
     },
     {
-      "headline": "Chinese stocks bounce back from bear market on suspected state support",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-10-23T02:41:51+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORHU1dDJlZlEweUJhZmRTM3M5a1R4ekJVaUJfNmN5TUVSU2lqSzNhVjVsaVlQSXJkalY5YnZRNHRfNTBxQVd5TkxRZTRGOUZxR29XN0ZuUmhRcWtfdGpKbWVaenRCUUFod2hoNFVaV05aLUZLZWlqelVBQmVyaFQ0cUx1LXBsWVVDb3FjMk5zeEFuTjJTeGJwenVCRC12ZFd5cGQ5dXFQMlVjaURlMXlFS2ZYZ0hZWV83dktVMHZ0bk41STJrODI3LU1lNXRSZ9IBzgFBVV95cUxQb2M4Y0VpQWk3SlktbUJSS3I3Rkh5VTEzem9aYjgxYURjTDk2ME9qWHVncjJEeFYxT21KeG1pTzVUN1FlZGZaSU5PU0Q2TzFOc3pjbnpaMWNBN0FWX3BrSHRYRF8ybTdiejdaU0JmWEY2TTZoY1g2VUlINTBMMGFHNHBybDVSVVB1U1RsTm5NZGhxbjYyR2JJOGRFdXEwN3hZZzBZYkRuVkNMNWI4VHp0ZTdoSWs0UFFxNUZxYTRrRUt5bzV2LVptWjBtZ25xUQ?oc=5"
-    },
-    {
       "headline": "Biotech investment is the new front in the U.S.-China trade fight",
       "summary": "",
       "source": "Politico",
@@ -52032,6 +54091,13 @@
       "source": "The Atlantic",
       "date": "2026-10-22T12:13:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNT3JzT2NVNzdKUkFYQ1JEbHVBWW1LX2pVS0NNblRBY1ZVV1pRN3JVUEc2dE9NVTM0N3RLUFdsUllOU09Bd1UxS2Z6bkFCYV9pNEdQUEVBcGNYdjZTUUZ0cmZZX0hLV2tPQ2gxaG1sMUlOMUJmdHNqMVJNeEtXVDB2bldZTGh1SEtHcFFKX29FdHcycEFN?oc=5"
+    },
+    {
+      "headline": "South Africa's trade with China surges after duty-free deal",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-10-22T11:15:43+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOR1BYaDluc1pIdnprZmpzRkRlVEVVS0VwdDNvVl9zb3E4cXItWmxQN2NwYVFkWTh6WUw1bmVpallwenNNbDZEWndrUWZxa1R6Uk5ZX2REVTF0VmlTN2JuanpFZW9wYXVCUE9TTXdERDlhQ0Mwd1VKalp2U2NLd1BrYTloMmVEb1RRaVFDVW0tYVhFcWIwQVR3RGVFNFgyOWoyQk55OFItZVc1UmRycnFMV0FiNA?oc=5"
     },
     {
       "headline": "Ahead of Communist Party plenum, Xi Jinping warns that China faces a ‘new Long March’",
@@ -52067,6 +54133,20 @@
       "source": "CNBC",
       "date": "2026-10-22T03:30:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWmt2MnVkcmdCNXBPMzNIaHJwWlFIV2J2SU5pNk52MENwNi10dW56Q2duNHZBc181R1BQeXBQNlQwSzY0V2RSWlR1U3k4OFdRMDJyR25tTEVveUVCNWl4d08tVXhZY3BKTmFVNXA2V3BNMGpjSmxUZ09SOGtFc29MS1Fn0gGHAUFVX3lxTE9JbzZ4T01zVW93dG8xM0Q1TUtoU1hCYWVULTVQX285THphbnRNYWdvVVp5Wml4VDBGSlBHUFdEZFlHOU1TSWZFR1ZXUFVJVl9xbDRGeTBjUUkzY21fTVp4ZXpTSW9rdDBNNUZlY2QzMll0VGtyM1lVYnNFM0JoVFlhZ3NvX3pjRQ?oc=5"
+    },
+    {
+      "headline": "Surging Export Similarity is Fueling Advanced Economy Trade Tensions With China",
+      "summary": "",
+      "source": "Council on Foreign Relations",
+      "date": "2026-10-21T20:25:42+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTkhPWDM1ZGcyYmExei05VjN3LVlFTmtuSE1ONFdsOExvcHVCSWZGZ0s3TFQ3NUd5amsyUE5sOURVeDlSTk16WWtHbWQ3QklkeXVjekVyTTh1ZWtyZU1zUWpfLVMyaXZXbThxQUtXR0laLWVTY25JQUhVbDdqTjJpNGRpdTlhUWxEVXM2Q2J3V2Y4dE5OZ09mYWw3ZW42OUdXMW8wOVhVRkpFRzJs?oc=5"
+    },
+    {
+      "headline": "Merz Says EU to Avoid China Trade War as It Defends Itself",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-10-21T10:33:25+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTjBsd0hYU1ViWFp6RkkyNmNtQ2JIc0tuTW9BUVpMUEhucHN1NzQzWVE2WThZd3VsOGxib2dXMHJRMWZjQ2lVM2xLTEdObU5lcm1CYWRXeVQzMXFnQzZlcllXZXRJQzBrRG51MFozZzR5NndtdFYyX3FGQ0FhZjJzVkpxcFBUb2pOUlhPZk1FVXlsNnFoSmFEUVhGZFhwb2hzMXo3UktkZFV0bHFMbEtYbA?oc=5"
     },
     {
       "headline": "Six Charts That Explain the Forces Shaping China’s Economy",
@@ -52139,6 +54219,13 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YZUM1RVhqMlhRS3JtZXkySURkQklGNnhTUnV0aFRRc2RnVzJhZVVSY1RGc05CaHNsdlpUS0ZLQTdPeXE0aGVXaHRmYzhKOWZKdi1DV0R1Yk8xSzg3V0hTTjN4bF9FQmlkV2FaeA?oc=5"
     },
     {
+      "headline": "China’s Export Boom Fuels Growth Despite Slump at Home",
+      "summary": "",
+      "source": "The New York Times",
+      "date": "2026-10-18T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40cnBMZmk3ZzA2bFpuN0hiUnhOZFU3ODMtbGs1NGVTbDRuanNpSWJ5eXpMR3ZTNGU4S0tVc2VYUGlkVW5BdUJCVzdjSFJfeFhpc296NjM1SVNBZmVWNGtmZlhXRHRwaGRYbmhuaVNaV25IYzJU?oc=5"
+    },
+    {
       "headline": "China’s economy picks up pace with 4.5% growth",
       "summary": "",
       "source": "Financial Times",
@@ -52167,11 +54254,46 @@
       "url": "https://www.scmp.com/news/china/politics/article/3371206/chinas-shenzhen-ready-host-xi-trump-and-putin-during-apec-summit"
     },
     {
+      "headline": "EU Takes the Trade Fight to China and Braces for the Backlash",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-10-16T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUzd0X095X0ZqSDEwWm1Wc2N4LWtWdld5eWl4X0JIUjNNZXVNNFlPUFU4NWNMSVRpSXZjTzN4TEh0ZGM4WWFKTS1WU2ZzWHdfR0hjWnFBTThqbkVtaXBLT3dJdVZyYVBVY00tSWhjOW95aTlpNUdLejI3V1BvYms0R1VZUVh3eXU1Ml94ck5PQ2xWMk1TdGg2c3JCdk9NblhsdEs3dlhHdGpZWEE3QUg3V1Vn?oc=5"
+    },
+    {
+      "headline": "China says it will curb tech exports, including AI, citing national security risks",
+      "summary": "",
+      "source": "PBS",
+      "date": "2026-10-16T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQV1VUdmQwc0xPcG5KT3AxZFJ2dVJTVXNFc3RYc2lUTlA2R2xGeGJ3TjVqRGlpYUt2WUhNNEZDSDZkX1dJYm1INV9TaTI3eVlMM0RIaHh4V1g4U2FLdGJWOGJNRjFia1Q1amNoWUwzamlLWGFDVVhPNlZzbjRoU29YN3V1X2wyM2E5clBsTnp2MGJkSDNjOTFSVWVBd3MtZUZ1Sk1Yb1JGOGhZUlVoQmR3azVzZzU2Z9IBuwFBVV95cUxOSGI4Vm0wMmNIV3ZNY1NqNkRsaG1kTkd1bm1aZ3ZwZkFERU9YQ29Id3Bnc3FOU2NFNHVPbWwxclR4ZlFYY0hYLVNuMW1KbVRnNGdNTXpQODVReFdOaXZMV3E5cGx3ME9Ha25CZ3V3OXF1Zl9KSFhjWldWcHBwbjJDdGFudGJXVTdwY3dEa0JpYU96VEJqdG5hdW5pVmVvaEcxcFZXUTZoSVlpTWFtMTFlOE1YbUtVYVlBZTdV?oc=5"
+    },
+    {
       "headline": "Xi’s pledge to ‘uproot sick trees’ aired weeks ahead of Communist Party conclave",
       "summary": "President Xi Jinping has pledged to “uproot sick trees” in the anti-corruption fight, according to a transcript of a speech published by the Communist Party’s flagship magazine ahead of a major party conclave later this ",
       "source": "South China Morning Post",
       "date": "2026-10-16T04:05:18+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3371094/xi-pledge-uproot-sick-trees-aired-weeks-ahead-major-party-conclave"
+    },
+    {
+      "headline": "With China Facing More Trade Barriers, It Can’t Afford to Lose Europe",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-10-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTUQzNFBYX1hBcGFYNDNELUppYzROV3VxSjE5Zlg0cHBsSDFacFBTbEY2R011SnRGT3NuMHpDT3RiSGhfOHRnb05WQllxVVk1LVpaUzVoLUpOSlhNa3NRbU1BQmlDb1NGa3o2Tk1hRjRVWkFLeF9NSEdTeG80WC1aUEFPcFV2N2t5NVpISmg3eE01M3pwUlJNMWx3RUoyOFVRMnlGRkxNUTgxWDVuRkdn?oc=5"
+    },
+    {
+      "headline": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-10-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE85Q0ZrM1c2YkJjdFdFVW1iNXVwd1VGbTFxSlhhQTB6MTRhRVRNeHM0Q1hCUENfdjFQWEdhcUV2dkV1YXhNNmJ5bHMzdXJOSFVPaWJuUUJJYnNYRVM0OU9YMUNSb0VVd3ZNM2Q2cWJfUHY4X2M5RUxR0gF8QVVfeXFMTUVLVjhUYWxoQlpfeXVydVV6aHh1dkZPVkxubTRMNmJMWUNocXZocmVFZElHMVZDcmRXM1JGZjBTMjMydnBRdF9YVmlZMVZxTVRYdzVHS2VhcWd3TXlEYXZ6empTaTJHM3d5OFRIZlpFQkxJYUN6MXZMY1hYdg?oc=5"
+    },
+    {
+      "headline": "Taiwan to Curb AI Chip Exports to China as Part of US Trade Deal",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-10-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSU1LakZhV2xQNHBFM0lFWU9pT1JCdGMyTXY4Q01TSjZYd3dNbWZ4Rk50ME1UQnUzVkgta3U0RFpFY0VNZGNaeXZfV25jZm9lMjBDdjVONUhlMmJKLTNwT2xwM1I0Mkl5N2N2c25IQWZwbWtORDRYbUJMMC1hZXhWbzllSFZ2bDJzNThDSFRYYmVyYXJnSVc4V0QzVjFMWHBQWVc4NTlRb1E0WEJsYVl1OV9yZEFBQQ?oc=5"
     },
     {
       "headline": "Another warning sign for China’s economy: falling consumer credit",
@@ -52216,11 +54338,25 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZC1va2NWTWZxZFZwX0o0VVhXdFBUODFPVGt5RVF0ZmZfQmN3MXdrSFlyYVczRVBLdU45bGU2NmthUldZZXF0TGdXYTI2bFpidU5WdGg4anBFckVsbUFyUV9EQW0yMzdWNUd0LV9kT3Rtd1QzdFRGc3VUODVoSkYycG1RbkxiRkpmWWh5dk5CUWk5OUpodFpBbWozVnBTZw?oc=5"
     },
     {
-      "headline": "China’s September exports soar, putting $1 trillion trade surplus in sight",
+      "headline": "China's September exports soar, putting $1 trillion trade surplus in sight",
       "summary": "",
-      "source": "NBC News",
+      "source": "Reuters",
       "date": "2026-10-14T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWdXVC01aVBSZFFmNE83YmdjODJOUVg1SjJpTUF4VUFfWU5zZ2oySnBpblV4WmR5bDRtYzNDXzdLVlpsZVhBMENQYmVOMGhSVFY4dHRtUTdmNjBpQmd4RkhTUGFFdGpKZ0tVbXZjT25xQmhmdTBJb3FTYmZLdUstT2ozbTFpTG1EQzdYWXp1X3ZOV0twZ2I4Z2dzZUNyY2wyczlNTllvZWlVMXhHYWxreFZqcw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVXg0RnM4TVlLaHEwQjBYdU16ZGhJaXpFeVVXYk9FLVg1RFp4cVlvWWNWa2xlRlhacndGbHpYeF9QMWs5Zy0ydnV6Ni1kV2dIUS1Ca0NEYVNpdHlQMk1EdFBOc2hxTVlJLXZXX2RKbVplTG5NY1B2NEl2UXRFaFROckZjUGdVZW1vcWpYUmdJR21JOTJrQkhIT3E5Y25CM1VCMDNwOWcxbVdsZw?oc=5"
+    },
+    {
+      "headline": "China’s Exports Soar, Putting Its Trade Surplus on Track for a Record",
+      "summary": "",
+      "source": "The New York Times",
+      "date": "2026-10-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOamoyNjV5UDBSSC15UTVfbGh1eG02cHgzRVJxRGpQaVpiWjE2ODZUZkt4bmJUS3F5YjhBdFZkazJvZjNOUHhjc1hZc3BjbXlNdERLY2NoTmFpSlhuS2JPZG5EaWZDc3JBODdPXzlkWWt6Ti1mYW9kVTBsNEpXYWpqRFNn?oc=5"
+    },
+    {
+      "headline": "After hybrid car deal, EU needs to rebalance China trade in other sectors, Dombrovskis says",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-10-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQekFpQUI2WTF3YUNEZXZEbjgyMlNWTEIycDZTeVZ6WkZxOFJzUXFMeEF6SUJkZVJqLWpWa3JyV3VnbTZZQ1VPS2UxNUROR192ZGtJaTk4Z1pfVksyY1I0aVdlbWxSdDEybkx6X3hpX0NCSVMzbzlLM0RIUVRya1VHZktSR0VsSlg4VWlUUF9qZ2w5WlBhdS1YbWF2R3V3dVJmdHk5NzFSdHVsVjdJY1dnYnFUUGVBUmdxTWJwemN6TlM2dnROWTBqVTNmcTNNc1M2THdyYjJSaTRUMU9G?oc=5"
     },
     {
       "headline": "Hopes for stock support rise in China ahead of top regulator’s speech",
@@ -52242,13 +54378,6 @@
       "source": "Axios",
       "date": "2026-10-13T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX3VXMHRaOWxfdlNqcjBPcDE3SmlBY2ZvMG1SX0tSeXV6OU9ZcEJBTWNJMjh6cU5oX1F1X3lVMmV4dDFDZEVsLUNvZU52MlpmaktsLXBET2VhRXd4UFFyVzJfZXBGOFpMVlNONVZYd0Z4SmFJZjlEdHpHMnd5dUUwZUI3RGM?oc=5"
-    },
-    {
-      "headline": "How Maroš Šefčovič talked his way to a China trade breakthrough",
-      "summary": "",
-      "source": "POLITICO.eu",
-      "date": "2026-10-13T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSUNpd0YyaTNBb0F4UDg1NzNEN0daX0NXRW5OeHRMTkx2VFBkcmdmeFkxSU1ieWFhdGNnMGlIcmFYbjVaODgzQk1kOHQwcHN4QzMwVFB6dm1ibGdLYy0ycnFLTm81bDQ2dDRyMl9CTHcxdDZEU3ljQm5WZk9NcERyc0NPNDk2cW5HYU40akdqMnlMZExYVnF0eDN6VUU?oc=5"
     },
     {
       "headline": "Samsung and SK Hynix Lead Chip Selloff as China Competition Fears Grow",
@@ -52279,11 +54408,11 @@
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB5R2p1V0RoRTdaVVBmd0tkM2Uxd0RqdFFYODNXckxEZVk3N0xwVTRub08tZGpWb25Sd2p3VjZWSzNNMUxsbnlMRkJhZXMwMVc0OHRVNUN4Z1FMSHJGcVIyZFRRdTI?oc=5"
     },
     {
-      "headline": "A first step, but no real rebalancing in the European Union’s trade deal with China",
+      "headline": "The China-EU Trade Truce Buys Time",
       "summary": "",
-      "source": "Bruegel",
+      "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
       "date": "2026-10-12T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOenpTWDYzYjQxQWk0V3dpMTZGSy1UTncxOVF1Q1hkby13QVU3YnN5eVdsc3drc3BuWENZX1NSbHpCcTFJLWxOWXR6NmVLNmVrNmV0VlRJRC1YNURYWlRVVnpDa28wUlJjMk1HYTV1WldVZ05XeC1oZXlPWXhDRWlLblZzbGNvTEZOeFg5bDJNYllPUVU4NkRKbXhlT0JVN1JpX1E?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBoaWRNVGhWTmpsbzEzbl9Db0ZLb1JWY08tMnJZZEFtTHZvU3dBUnBFekMwamExRl9DampHU1BvNmRfUlZBVU12UXUzeUlLZXVLckdoc1ZKbFRGUEc0UUpzdXVuUnkwakFKSEVtdjNmY1QyRHZNTXc?oc=5"
     },
     {
       "headline": "China details outcome of EU trade talks on hybrid, electric vehicles",
@@ -52291,20 +54420,6 @@
       "source": "Reuters",
       "date": "2026-10-12T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRzNFMkF5b0ZQUnNpMlJlTE82NkZrRUJiTXNreWtQbi1wOHZ2ZC1aOE5GVkhZcDNmd1pBREFLb1I2MjBlVW9ncFhpd1oyaXhDbVdMUEUtbkE1WmtXQUtpa1NtTEJOb3NQcVBkc1lldUMwaUdUU01WLTg3MS1QVUtGcF9lVDRtNTBTOHVBX2JMZnJUVUNPWnRXb21heklpNEFS?oc=5"
-    },
-    {
-      "headline": "The EU-China trade and investment understanding: a welcome buying of time",
-      "summary": "",
-      "source": "Bruegel",
-      "date": "2026-10-12T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUW1mOUdCWWI5aG1JRE9IZDhuZW9vZkxQZ2o0eHh4OTZsbTBzdERWR1dZdkxiSjkxUGxuR1pXNjh1WFJ2M2MwUF9iRXFic2V1UjJTT1NHdnA1NnNtSnZnQ0pua05ndTBzRnktM20zQkhtVXE2dXdXTGpDZEg5X0FaYVBDR2dyZWxiVFNZaWx1YzdiM0wxaFJOVHlubFpZaWxza3c?oc=5"
-    },
-    {
-      "headline": "EU’s China trade breakthrough risks taking pressure off Beijing",
-      "summary": "",
-      "source": "Euronews.com",
-      "date": "2026-10-12T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZXpGT2Ywa243UTNndGMxb243MXRFeHVqWkxKeVNpVnZYS0lYRk1HZEItM0s1NXFEb3pTU19sVDBpcGN2TU51NklpZ0VpcXVtalpxOXVkZVZLbzZkMWxWd3hHN25FbGU1eGxpbmVMSE5ndFIyNi02MF9td3JoMGw5eG1UVlpScnV3dXhiUGtKVUtaTDl5Nm9IR19RQW16Y1NkZy1j?oc=5"
     },
     {
       "headline": "As AI and the Iran war loom, China’s energy technocrats are on the fast track",
@@ -52349,18 +54464,11 @@
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTm5ZNlVIY2tFZ2M4aFVENmNnVlBPbFJVSkplZ0x1UWZBMjEtQkR0Y0tpYjRJWEVqakZGakpvbDNvTUs5M0ZWZjZKNzQ3bXpyai1NWElyc1lEc0dxTnYzNEZTeGU1QXdIUmZzYVhtRF9IY3ZVN3VDWDk1Nl93ODhGZzdoaElXd0NOOUE?oc=5"
     },
     {
-      "headline": "China, EU strike deal to halve Chinese hybrid exports",
+      "headline": "China and Europe Step Back From Trade War With Limits on Chinese Car Exports",
       "summary": "",
-      "source": "Reuters",
+      "source": "The New York Times",
       "date": "2026-10-09T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTHg5eDd4SHlldjU0OVlpTEVOaHB0QVpIOGhaTm9CSVN2WmE2RUtobThWUkpGM1NrMFVxeVFKMnctbEF4aV9JQnZIT0RjaXlWVHBhb3Noam5HemZnd0ZRTy1TSEJjUFljMl9md29ESGFUeVFha29xaWd0a050VjVjV2pFRS1qUWVJVm04SDJJUjRGcXBQUzE3TzhDaV9SWHR6TndZaGhMRUlib0NSekZFenBpUUtuTnZZSy1JekRHaDZoLTA?oc=5"
-    },
-    {
-      "headline": "Who’s winning the trade war with China? You asked, we answered",
-      "summary": "",
-      "source": "Financial Times",
-      "date": "2026-10-09T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUVBGdWdpbnY5TENRVUtaTlhNcGtDTmRWdFlHRDlOMjhYN0UwcGNoZ0ZOX0wwZTNtOXQxTW9HNjd6TzRWdDhxaVZQMkdWMW16aTctT2ZpTFNWa0R2TEQzd1d2Mk43elRxU0hndzdFWE1OVVM5VVNSSHhCdEI4bFVFZGZvZ18?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMkR3MUJWaDBNRi1Cb0h4VkthVGF0blptSkcyTk9DME1XNzVvMmFMdFVKYm81XzRZNkdDYk1IdGhFVS10d2FuVWI1TTVUUy1Ea2hWYktlVDVlLWJRb2l3aVViMnlZNzdGeEFfc2NaNy14aFhCOWt6Ti0zbkNrWm1BTQ?oc=5"
     },
     {
       "headline": "China Stocks Rebound on Unconfirmed Talks of Regulator Guidance",
@@ -52375,13 +54483,6 @@
       "source": "Breakingviews",
       "date": "2026-10-09T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOR21NVnhGeE1WMFpZbmx4VktCQ202ZllGeHN3WUF6WGJwdExLcVU4eGltVG5JNUsyTlBFQlJWV1BZdTVMeXJUOW50cEo4MUhMZk1nUjNJU2lKUGtQZkhRVmtxekF5SXZEeVFNZVpXYl9uejk4NEFtc3FaNUh2bzRjMlo0OWc3QTVvNTU5UENBZ1ZyTWcwWGdKM0tpeWRUaWNPZEJV?oc=5"
-    },
-    {
-      "headline": "EU-China trade talks + Academic espionage + Gender gap",
-      "summary": "",
-      "source": "Mercator Institute for China Studies (MERICS)",
-      "date": "2026-10-08T11:18:31+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQN0s5VDFYalk0b09NY2doSTlmZl9tYWs4U2dqWEVlNTNld3VnMkJiVGJ6bnFJMmlwRC0xdXh6YU53U3lsZW4yVXh3YzZoalFXSk1kYk40NUFmbUJsaXVYaHJmd0dpSEVjVlRPTl9zMVVvV2lJTm0zYzZpaWxWZS1vVDlFYXZxNVRXRjktNUxWVQ?oc=5"
     },
     {
       "headline": "China Is Offering Half Measures to Its Mounting Economic Problems",
@@ -52405,18 +54506,18 @@
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcjlnRlNDMTlyUVZkNlBreV9VYk81XzgzZ2ppMkxBZEh0WEt2eXpEcUhzNEdaZHlUTTE0Y1RnV3dFcFB2ZzhlUnpfQmhIQjlrNnhmUzNXRkxyUmNXbUN3NXhkM2k2VVFuR24zVzBONnJ0OHhKeGZ3Q3dSc0k4ank3UW1LQllyeXE2MWdnRS1DVG5FT01uSzNiWFRySGxsaGdHQjhvZE1CNmpJb2NiRVR4LVJCY1MyZEtzclHSAboBQVVfeXFMTTd3SnR0R2lGRi01cDlzdFZoUkFmZFJJZnRDUXJfRFlsZ3dFdmtvWTVULWhLRUdOMkh0THR1b3NaSXlLNWdMa2ZFT1VhY2taZW83dk9qbnFFMm5BMlBYcm9FZFF1V0RWQllzdTEzZnFKLWItYkdaX2d6TGpUZFV0VXNSZU5ndE0tbU0wSXNVdHBTUmRGLV9EeVYyOWI1dnN6RjRvTnR3X0Q2MTJMV25lYnc1Ri1SUGZLVW1B?oc=5"
     },
     {
-      "headline": "U.S.-China Trade Framework: What We Know Now",
+      "headline": "China defends yuan policy as Europe steps up pressure over trade surplus",
       "summary": "",
-      "source": "American Farm Bureau Federation",
+      "source": "Reuters",
       "date": "2026-10-08T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTEE3ZjhvZEVIWHpxQ1N3UEpFVzFCVGxtQTlrSUZrS3R2X1IxTWRMTWZzYWdweXVuWG9ub3BTR3UyVTVoUnFCXzRvTTdTMlVtWHBmZzNVQndReFpyN0lDSDFVbTFmVUI3dnVGWEM2ZU5UODVoV0oxZW5NV2pJVUZPMA?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMndSd19fTHdFQ01xZEp2Vzh5Zlg2M0g3YjhNTFNlZ3M5eUphc3RzNTAxcTh6LXlKSWpVTDI4dl9OR1VTM1pDZVhLa2dGbEZGMEdIVDNnT1hyRjh5WWRVN0xNcjRKVGdyclhndEF5cEo3V3p5aE9PTkdQWktTN1M2S1hRRFRnZ1F0NmYwWEJrUDBEcUZXYXE1ZFpfVEI4aWZqNnpkYTNJQ1FpZ2NpQ2tJR2c0eGFkeTRkenFpZTZYRmI4R292?oc=5"
     },
     {
-      "headline": "Press remarks by Commissioner Šefčovič at the second meeting of the EU-China Trade and Investment Consultations",
+      "headline": "EU sends envoy to Beijing as rising exports from China raise economic anxiety",
       "summary": "",
-      "source": "European Commission",
+      "source": "AP",
       "date": "2026-10-08T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE10VWlDR2dDd1gxVW55VWNzNDE1dTRkT2FmcVQySjAwQTFiRU9BWmNZOURqVEVZYzZBTjNZdC0tNEI3T0NfUFBneS1vMkhTX3F0VkkzYnFDYXZyOF9NX0VOTXZuSWUyY2dJM1NsWThRV1VTaXctYThFNXF3RQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcFMxZFRHNzE4Sm1KUk1fSHlfYUczbHlDbVZfNnQyRkcta09zUF8tR00xVnZmUlBkVEZsX1hVRWFNRm8xczJ0eFc2eUJ4d0NzakNOTThDV0o2V0l0akNLdDRNSzE2RzdXaVE0Sk5RZFA1Uk1uUE52ZmRkOEpyamczUzhZSGZGUGRwWFhvUmpjM010dUhCY2c?oc=5"
     },
     {
       "headline": "China’s economy to slow as global growth stays solid, US think tank report says",
@@ -52424,6 +54525,27 @@
       "source": "South China Morning Post",
       "date": "2026-10-07T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQlRUanV1Zm85cUFuS2U5WmRHZHZNcnZwNy00UTFWYnNLSmZZUzZIcUduOXh2Q0ZKV2xuc0VUS2t3MnU3bjZoY2NLODVpR2JQbGhsZGhoRTN2SWM0Q0s1Mlhia1pTNXFDY0d3aUctUzcxOEZwb1h6eFVKQ1BRbU5ITk9iODV6eVlXVU53TFJPSFhOb2lOWHVhNmFJWXVycUV4LVJpSnJnS214MGdObG94TkFMbjJwbnA0eEtQd3ZIUC0tZlppOWlMRNIByAFBVV95cUxNZnlXM0VYaWtNVC1CcjJULWZzYnRFcTlGMjNCcVFEQVNqa2pfeTdIVUMydjlkaXU4TWFuU2VwUHluWThTSDI2T0FhUVg4ZmFjT0MtZW9JSi0yS3R6Ujc2ZXk3MUJoazktX3hyOGNZY294dERfYVNBVXUySDNiNWQ1YjdWM1BWQnB6QWxHNmZLb0oybGVmZllVcWdJU01jeWF6bFNfel8yS1BaU2VwV1E1QTRjVXdPSk1vVjBfZzZaU2ZNNzI3anVUdQ?oc=5"
+    },
+    {
+      "headline": "China’s ‘Self-Reliance’ Drive Is Upending Trade With Europe",
+      "summary": "",
+      "source": "The New York Times",
+      "date": "2026-10-07T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQd0Q1dXlkX1N1VHlZdUZvaUlDNHVYSk9ZWERvQzFoRk9lc0lybmx1cURTWk1QUVlkcWdkOFNtaHg3ZzlfbVV6QUVoaDFBa3A5cHFJNzFwWXNKcTItWE5nMkNoOW9TWWFzaHp6a3Jydk1aVzY5eWduOVdMZGpRS1V4N2h5TWRqNmk5?oc=5"
+    },
+    {
+      "headline": "EU seeks to cut trade deficit with China in talks with Beijing",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-10-07T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeGo5YmpHb0NFRGEwV2doLXlzbWNsNWtxejZjNDFia2RPekg2R2VwcndaQXVtTW1TMUFDUU5XbW1mX3RKRXhkdklMNFRBdVk2NlZJVWpaSmlJTjRGVzFwTWZuNlg3YkVIMDNnOUg2Qlp4aENBdzFTZTAtTVpzTWZyWUJnWTBNNmEtRXJvV2JuY2JLOTloXy1hZTBCWEo5X2tHOUR0dTNRbw?oc=5"
+    },
+    {
+      "headline": "Europe’s Trade Tensions With China Are Coming to a Head",
+      "summary": "",
+      "source": "The New York Times",
+      "date": "2026-10-07T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1TS1NRU2lZa3J0WG02b29zZFlnQXN3UEoxdVRuWEYwUGtNQ1VxMEZNaS1sMm9tVjN0YTU2M0ZpM1Z4SlVMRjBtREEzNVg0UGoyV0pfNzJzVTJVRW5DRnl1a0Q2dVJ5ZV9DdmZTSm44YjhvQTk0amFURUlOLXJvWGM?oc=5"
     },
     {
       "headline": "Analysis: China’s Economy and Its Influence on Global Markets",
@@ -52461,6 +54583,20 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8weTZya25mVjBaMzhXRmFoM2xmSnVGTElSSy1hM1huNUJ0dVBFem5JUmpoQUZjT0w3ZEVWZGw2T2VMaElaWUFRN1F6bTFuNVdtMTNRX2hjN2p0azNPWmpqbTc2QU9tbHFSNDU4akN0WWdhLVU?oc=5"
     },
     {
+      "headline": "The Hidden Policies That Power China’s Export Boom",
+      "summary": "",
+      "source": "The New York Times",
+      "date": "2026-10-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SMXRCTnpKaHNsNTVZalE1NzZhNjNWWkRfejc4bnozY2c2dU01ckZpdTVtVFRMSGlJbnlNX1J2ZFBoalVScE9EZHhBeVZULVE3bTJIcEsyWU9ONWtjUmtrZUhLZkRnVy1kdEtKdG1WazVvRkpUbTJuVnkzbw?oc=5"
+    },
+    {
+      "headline": "How to Make an AI Deal With China: Trade Throttling for Pacing",
+      "summary": "",
+      "source": "Lawfare",
+      "date": "2026-10-06T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ2RaWU1UWkU2R0tVN3AzT1N4RlBNQUFhUFFFczlHOWhuWF9nX25Pbk1XMXlzajcwWEpwVHZUTkpXRkpzYUN3azQ1R0VVMXEtMHlCTnpVQjZIVjJrSXA5RDUwOW9LWHlVUGp4bTY5aEJmMUxZSXhwOTJNWjdmTXBlVEdpZHNESzlURy1uZlFPelNERVlMX0phdUVRU3YzVEFL?oc=5"
+    },
+    {
       "headline": "Beijing’s policy advisers map out how post-reunification Taiwan could be governed",
       "summary": "In 2019, President Xi Jinping became the first Chinese leader to publicly call for the exploration of detailed proposals for governing Taiwan after reunification.\nSeven years later, the first proposals from a handful of ",
       "source": "South China Morning Post",
@@ -52475,18 +54611,18 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNk53NVpHdGRlQmhXNmdsVE1zTXcxOWpUSU82S3FZVm83M0g3RWx6R0JJV3QxNS1PZkNTNXVoam1sd1dUVFl4dm9fSlpXQ1N3WkJNa0FuSjRwd19KRWdqbDhDLWRwMEUyUmlva19hblVDLTBrTk9DSV8wNXdhaDB3eEpiTGRUSmgzYTRpRksyd3F5YnpKeGJxYjc0dzlYNXNHU0ZkRGZYX1hVTGZJNktKYTBIQUdZTXpWdl9Z?oc=5"
     },
     {
+      "headline": "Germany and France want EU storm gates for China’s trade surge",
+      "summary": "",
+      "source": "The Economist",
+      "date": "2026-10-05T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMmhUOTcwcWRwMnFMa0RrZEtEQl9BQ2dXS283eFhCY2d0cjFqdmlHcHpYSWtHeWtwMC1lRmlQckNiNldKUkRpNlhvYnBpazF4dFpZX3V3VE5JTzlRT3k2VXA5OEtOQVNWdGJCVEhoZGZ2QUxqOE5HNU55aWhSaGM2LTFxRDRXQU85Q0tKUTJ2em9JRm1pTlZhRFc4dE5UNUVBYjhEZ3JnQ1k?oc=5"
+    },
+    {
       "headline": "China returns to top 100 in gender parity ranking for first time since 2016",
       "summary": "For the first time in a decade, China has returned to the top 100 out of 145 economies in an annual global report assessing gender equality.\nChina closed 69.9 per cent of its gender gap in 2025, rising to 96th place from",
       "source": "South China Morning Post",
       "date": "2026-10-03T04:00:14+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3369621/china-returns-top-100-gender-parity-ranking-first-time-2016"
-    },
-    {
-      "headline": "Lost in tabulation: Diverging US-China trade data point to tariff evasion",
-      "summary": "",
-      "source": "Peterson Institute for International Economics",
-      "date": "2026-10-02T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPXzBzRHJXRG03WTAwYTdNVFQtRG9VQWJmUGxEYXBJem9CdlN4R3JFOVUtVWxEVElVdW5jaGNPWWNrQXV1R2FjREVOV2hWTXEtTk01RGpsenZscGp1NWRhX3E4S1p1Qm5vckpVbk9jcjFzaVdkRjJ2QkQ2TTd4ZDExbUlmMnZUOW9tVG5ocGlLU1ZWYllIc3p0VS1yUWhSbWNCcFV1aWNhZVZHR3lnTlVCbDgwWDZQSXEt?oc=5"
     },
     {
       "headline": "Greer says no specific timeline set for enforcing US-China Board of Trade",
@@ -52510,20 +54646,6 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTG4xemx2QmpBWFdXRlA5cUdzdTFtN0xQT2FtVkotdW11NFh3dVZHMm9Ra1VKVHgxM2hPTVNISUJRa0hwd3I1QzJLbnZMcjN0Z1dNQi1QMFV6VS1sMUdGeFEzazBucXIzalJQVTA2Skg2Q2lkSXlNU0NSaVpueXpPWDVUVFgyQnpaVFd3R210N0NYWENuVXBEOEJqdw?oc=5"
     },
     {
-      "headline": "Taking the Pulse: Can the EU Stare Down China on Trade?",
-      "summary": "",
-      "source": "Carnegie Endowment for International Peace",
-      "date": "2026-10-01T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMTh2YXdsUmE0NjV6cHBPWkQySFhIZVBWRU1fYzdGZnhKY0ZoZXJnck52eTFjV29kbXE3anNvZXpuTS1jWGMzMmduUEpkSXM4TVJ4NnJQSU5RQzA0YXEyaXJxenRBWU9hVXBwWU1RZllPQjZKZXA4amJCTFhGSW54Z2ZSTnFUUWpIVldCSG9lXzhkb0EwNm02bjZLUDU3SXBTY3I5MDl1TjZ5VHplZXhKcnUyQVBJQQ?oc=5"
-    },
-    {
-      "headline": "‘Tough’ talks with China have yet to deliver, EU trade chief says",
-      "summary": "",
-      "source": "POLITICO.eu",
-      "date": "2026-10-01T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbkwxQnk0RzlFWmVtTEpTWlFBcFlyQTNQVzlibWZpNUM0WnphbU15VlZuR2Fab2Q3XzRDYzFFeHpQSDJsN1hQR2o5N2pnV2E5cHpOal9WU3dQWnJOQWc1eU16c2hyd2k4TXNlNkpBNUN1VmFQVUZYQmk3UzdqM1B0bkw4WnJYRVdoTVROaDVLYUw?oc=5"
-    },
-    {
       "headline": "Chinese refiners suspend October fuel exports to bolster stocks, sources say",
       "summary": "",
       "source": "Reuters",
@@ -52545,18 +54667,18 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUFJiMkE4aFZLenQwa2pqOEpocW4tdXFSYml6Z1lzUnN6S0pVRk14Mjd1SVdlMjQ3a0JXRjBKSlBvUjRSRV9hNHptcEt6aWNRN1JEcXBxdTJtLUc1aFA1dkdXTTVjbnFienVGTU1QSXJkSnJzbEE3ajh4RUs0TE1BYUhRUF93dHU1cTFWQXlWZ3ROd3FydkVheHo0NTdqZlBfTThoM19pM0ZkR2wxd3IxLQ?oc=5"
     },
     {
-      "headline": "Mapped: How U.S.-China Trade Changed by U.S. State",
-      "summary": "",
-      "source": "Visual Capitalist",
-      "date": "2026-09-30T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBfUndCOHR1OEZVdmxqeUx0Nk1ka2NnaUZyM3NNRlBYcjRxMG9TVmFKUVYxeXRlclV4SC1MMDlIYXg3QkxzSkh1OTl2c0FaZG5GQU5yZkxZRjQ1NHdrN3FhTFRpbkcxWjdGRUhJejNDQXY4QkVpY3hsU0hMaw?oc=5"
-    },
-    {
       "headline": "China rolls out new measures to bolster its property sector and economy",
       "summary": "",
       "source": "AP",
       "date": "2026-09-29T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRGt5UnNodTB2S1RjY0xLSEFOTHdtOUIyWGhLcWp1V3Y5MlpabV9FamF6Q0xRMlF4ZHZoNmtSaGdWSnVBazdYMVNJYnhHQ2E4a2xYTXFpZHp2NHE1bGlmbThpWm1JNzZseHNlQVl3UWxwYkJScW5FV3ZjY2R1YnczQ2EzWTJqNDNFWnRfTHdwY1FyQk84bHJYZTR3?oc=5"
+    },
+    {
+      "headline": "U.S. and China to Cut Tariffs on $60 Billion of Goods",
+      "summary": "",
+      "source": "Time Magazine",
+      "date": "2026-09-29T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcjhvLXJfUEZkMXFHLW5zeHB3eC1ORnh0cGJ3NklDT2E0dVNjTEdKNmcyYVA1Yzk4TWVUSEhOTHRhZkYyUU5NblA3V0hKSGhMMVZaaGJrZEY1dzFQaUlnMmgxaTRMZ0gzYlI3Y0FjNWNOZ2tKRFZDbVp6RUpuSjJORWVld3FNbGxveEZRcnIwVGtSZW9NUUE?oc=5"
     },
     {
       "headline": "China’s Two-Speed Economy Spurs Yawning Gap Between Stocks, Yuan",
@@ -52580,18 +54702,18 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNjl0SVVLdWt2S2drT1d4SEhVYTJRcV84R2RiRV9hYXM1cUNiTlhERVVwaWRtUGFhVjlCZnJMOTFjSWVEVlZ6cElqbkZTdFNtUGh1X0hkSXhOS2Y4NG9SbGNDanVUbm5zTUhCY1NNX0cyQUFYcGx2SmViOGZ6TVFtWWxzYTN6ZzczaTZRS3FtMENPQWJBYVh2RXRPODhuWnhZeWllNkxpTXU5VGoxb1RqWVBn?oc=5"
     },
     {
-      "headline": "U.S. and China strike trade deal for tariff cuts worth nearly $30 billion each",
+      "headline": "US-China trade board carves path for tariff relief on $60B of goods",
       "summary": "",
-      "source": "Fast Company",
+      "source": "Supply Chain Dive",
       "date": "2026-09-28T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOUpkZEM5QkY4M0R6LU5OWWpUS0I2d0l6T00zY3huTWdtSXh0dkd2ampOOWt5ZHN4SWYzbmZGcnJuVFU4QS1MYm1RbXhtUzVEZi02VHpoT016ZU9kb01EMlQ3TFdzamtmZFN3eHc0cTY1eDlkLS1TSTE4QTZfNmtnQjdEaFZrdlUyR2VRLUhSNVowSk40UDVJeFFWNUlrbmNzRHVIYkNhT08?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcm44SGhvVGQ5Z3p3aU01dmlMLWx3OG9rZXQ2QVVTbFNoVGdIOUtzTUo3T3FXRmlMa3prMldBd25Ralc5aXlJbnd5RndORFlKRXZNMFMzY1R4aTVpR0tNQTdaVlJoSkh6TnRFRkhCcDNlelRxdnFCX1V6ZzNMTi1ONWEyTGxwTDdkcWkxd080MHloN1Q5dy16ZVJRUXpzQW1wNm03ak5sRTJIR2lOdzNXMw?oc=5"
     },
     {
-      "headline": "US and China release $60 billion nonsensitive product lists for tariff cuts after Trump-Xi meeting",
+      "headline": "China and the U.S. Pledge to Cut Tariffs on $60 Billion in Goods",
       "summary": "",
-      "source": "AP",
+      "source": "The New York Times",
       "date": "2026-09-28T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMUVZNUtHcDRGeGtQS0xXMUtlSE9IaEhHRk5jaHp0ekFCTWU3aVRsbTA1VjF3YkhkTGtGUW80TTd4VFRiN09IQ05vQlcwOE93N08xVjVkNWdySGc1UWJZYmt1MmhoWmR6cU1nVllwRWhEak9uTVRvRnFBVFNwanJzSW9fb0xrOWNfNlRUckMwc1VpeDNDZWRDSmh3Mmk?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1rdUg4QW9wLTQ0Q0NoSFRCckJveTFzQW1fN0gwNWpkT21xeExETUREUngtMV9aRWx5WHBLV1RPVTYyaU9XSnpzazc0QktxdFBoUl85cHJKV18zTlhCX2xVakN3Mnl2cHRPbFdyZjRJSG9OMlBUT1ZFZW01eDg?oc=5"
     },
     {
       "headline": "Chinese stocks sink to 13-month low as tech shares tumble on oil, rates concerns",
