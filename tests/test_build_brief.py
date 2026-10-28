@@ -133,6 +133,27 @@ class Narrate(unittest.TestCase):
             with self.assertRaisesRegex(bb.LLMError, "was not JSON: 'OK'"):
                 bb._post("https://x.test", {}, {})
 
+    def test_gemini_empty_reply_raises_with_the_finish_reason(self):
+        empty = {"candidates": [{"finishReason": "MAX_TOKENS", "content": {"parts": []}}], "usageMetadata": {"thoughtsTokenCount": 2999}}
+        with patch.object(bb, "_post", return_value=empty), patch.dict(bb.os.environ, {"GEMINI_API_KEY": "k"}):
+            with self.assertRaisesRegex(bb.LLMError, "finishReason=MAX_TOKENS"):
+                bb._gemini("s", "u", 100)
+
+    def test_gemini_turns_thinking_off_and_retries_without_it_if_rejected(self):
+        bodies = []
+        def fake_post(url, headers, body, **k):
+            bodies.append(body["generationConfig"])
+            if "thinkingConfig" in body["generationConfig"]:
+                raise bb.LLMError("HTTP 400: thinking is not supported")
+            return {"candidates": [{"content": {"parts": [{"text": "{}"}]}}]}
+        with patch.object(bb, "_post", fake_post), patch.dict(bb.os.environ, {"GEMINI_API_KEY": "k"}):
+            self.assertEqual(bb._gemini("s", "u", 100), "{}")
+        self.assertEqual(["thinkingConfig" in b for b in bodies], [True, False])
+
+    def test_parse_json_reports_the_reply_when_there_is_no_json(self):
+        with self.assertRaisesRegex(ValueError, "no JSON object in the reply: 'sorry'"):
+            bb.parse_json("sorry")
+
     def test_parse_json_strips_code_fences(self):
         self.assertEqual(bb.parse_json('```json\n{"a": 1}\n```'), {"a": 1})
 

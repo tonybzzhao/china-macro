@@ -345,13 +345,28 @@ def _post(url, headers, body, tries=3, timeout=90):
 
 def _gemini(system, user, max_tokens):
     model = os.environ.get("BRIEF_GEMINI_MODEL", "gemini-2.5-flash")
-    j = _post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-              {"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"},
-              {"systemInstruction": {"parts": [{"text": system}]},
-               "contents": [{"role": "user", "parts": [{"text": user}]}],
-               "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2,
-                                    "maxOutputTokens": max_tokens}})
-    return "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"}
+    config = {"responseMimeType": "application/json", "temperature": 0.2, "maxOutputTokens": max_tokens}
+
+    def call(cfg):
+        return _post(url, headers, {"systemInstruction": {"parts": [{"text": system}]},
+                                    "contents": [{"role": "user", "parts": [{"text": user}]}],
+                                    "generationConfig": cfg})
+    # 2.5 models spend "thinking" tokens out of maxOutputTokens, which can leave the visible
+    # reply empty. Switch thinking off; retry without the setting if the model rejects it.
+    try:
+        j = call({**config, "thinkingConfig": {"thinkingBudget": 0}})
+    except LLMError as e:
+        if "thinking" not in str(e).lower():
+            raise
+        j = call(config)
+    cand = (j.get("candidates") or [{}])[0]
+    text = "".join(p.get("text", "") for p in (cand.get("content") or {}).get("parts", []))
+    if not text.strip():
+        raise LLMError(f"Gemini returned no text (finishReason={cand.get('finishReason')}, "
+                       f"promptFeedback={j.get('promptFeedback')}, usage={j.get('usageMetadata')})")
+    return text
 
 
 def _groq(system, user, max_tokens):
@@ -416,6 +431,8 @@ def llm_complete(system, user, max_tokens=2500):
 
 def parse_json(text):
     text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())
+    if "{" not in text or "}" not in text:
+        raise ValueError(f"no JSON object in the reply: {text[:160]!r}")
     return json.loads(text[text.index("{"): text.rindex("}") + 1])
 
 
