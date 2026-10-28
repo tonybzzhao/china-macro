@@ -1,6 +1,5 @@
-// Renders brief/brief.json (text, tiles, US chart data; rewritten every China
-// trading-day morning by scripts/build_brief.py) plus China charts that read
-// ../data/history.json live, so those never go stale.
+// Renders brief/brief.json (text, tiles and chart data), which
+// scripts/build_brief.py rewrites every China trading-day morning.
 "use strict";
 const svgNS = "http://www.w3.org/2000/svg";
 
@@ -40,12 +39,8 @@ function fmtBeijing(iso) {
 }
 
 // ---------- charts ----------
-const W = 560, H = 210, PL = 38, PR = 34, PT = 14, PB = 26;
+const W = 560, H = 210, PL = 38, PR = 14, PT = 14, PB = 26;
 
-function ordinal(date) {
-  const m = /^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(date);
-  return m ? Date.UTC(+m[1], +m[2] - 1, +(m[3] || 1)) / 864e5 : NaN;
-}
 function niceTicks(min, max, n) {
   const span = max - min || 1;
   const raw = span / n;
@@ -80,63 +75,6 @@ function addSource(card, def) {
   card.appendChild(p);
 }
 
-function lineChart(def, hist) {
-  const card = cardShell(def);
-  const lines = def.series.map((s) => {
-    const pts = (hist.categories[s.cat]?.series[s.key]?.data || []).slice(-24);
-    return { s, pts };
-  }).filter((l) => l.pts.length > 1);
-  if (!lines.length) return null;
-
-  const xs = lines.flatMap((l) => l.pts.map((p) => ordinal(p.date)));
-  const x0 = Math.min(...xs), x1 = Math.max(...xs);
-  let vals = lines.flatMap((l) => l.pts.map((p) => p.value));
-  if (typeof def.threshold === "number") vals.push(def.threshold);
-  let lo = Math.min(...vals), hi = Math.max(...vals);
-  const pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
-  const x = (d) => PL + ((d - x0) / (x1 - x0 || 1)) * (W - PL - PR);
-  const y = (v) => PT + (1 - (v - lo) / (hi - lo)) * (H - PT - PB);
-
-  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": def.title });
-  niceTicks(lo, hi, 4).forEach((t) => {
-    svg.appendChild(svgEl("line", { class: "ax", x1: PL, x2: W - PR, y1: y(t), y2: y(t) }));
-    svg.appendChild(svgEl("text", { class: "ax-text", x: PL - 6, y: y(t) + 3, "text-anchor": "end" }, String(t)));
-  });
-  // x labels at even time spacing, not even index spacing
-  for (let i = 0; i <= 4; i++) {
-    const d = x0 + ((x1 - x0) * i) / 4;
-    const dt = new Date(d * 864e5);
-    const label = `${dt.getUTCFullYear()}-${String(dt.getUTCMonth() + 1).padStart(2, "0")}`;
-    svg.appendChild(svgEl("text", { class: "ax-text", x: x(d), y: H - 8, "text-anchor": i === 0 ? "start" : i === 4 ? "end" : "middle" }, label));
-  }
-  if (typeof def.threshold === "number") {
-    svg.appendChild(svgEl("line", { class: "thr", x1: PL, x2: W - PR, y1: y(def.threshold), y2: y(def.threshold) }));
-    svg.appendChild(svgEl("text", { class: "thr-text", x: PL + 4, y: y(def.threshold) - 4 }, String(def.threshold)));
-  }
-  const ends = [];
-  lines.forEach((l, i) => {
-    const g = svgEl("g", { class: "c" + i });
-    g.appendChild(svgEl("path", { class: "s-line", d: l.pts.map((p, k) => `${k ? "L" : "M"}${x(ordinal(p.date)).toFixed(1)},${y(p.value).toFixed(1)}`).join("") }));
-    const last = l.pts[l.pts.length - 1];
-    g.appendChild(svgEl("circle", { class: "s-dot", cx: x(ordinal(last.date)), cy: y(last.value), r: 3.4 }));
-    const t = svgEl("text", { class: "val-text", x: x(ordinal(last.date)) + 8, y: y(last.value) + 3 }, String(last.value));
-    g.appendChild(t);
-    ends.push({ t, y: y(last.value) + 3 });
-    svg.appendChild(g);
-  });
-  // End-of-line labels sit to the right of the last point; nudge them apart
-  // when the series finish close together so the numbers never overprint.
-  ends.sort((a, b) => a.y - b.y);
-  ends.forEach((e, i) => {
-    if (i && e.y - ends[i - 1].y < 12) e.y = ends[i - 1].y + 12;
-    e.t.setAttribute("y", e.y);
-  });
-  card.appendChild(svg);
-  card.appendChild(legend(lines.map((l) => l.s)));
-  addSource(card, def);
-  return card;
-}
-
 function barChart(def) {
   const card = cardShell(def);
   const cats = def.categories, n = def.series.length;
@@ -168,8 +106,32 @@ function barChart(def) {
   return card;
 }
 
+function hbarChart(def) {
+  const card = cardShell(def);
+  const rows = def.rows, rowH = 24, top = 8, labelW = 150, right = 54;
+  const vals = rows.map((r) => r.value).concat(0);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const pad = (hi - lo) * 0.1 || 1; lo -= pad; hi += pad;
+  const height = top * 2 + rows.length * rowH;
+  const x = (v) => labelW + ((v - lo) / (hi - lo)) * (W - labelW - right);
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${height}`, role: "img", "aria-label": def.title });
+  svg.appendChild(svgEl("line", { class: "ax", x1: x(0), x2: x(0), y1: top, y2: height - top, "stroke-width": 1.6 }));
+  rows.forEach((r, i) => {
+    const cy = top + rowH * i + rowH / 2;
+    const up = r.value >= 0;
+    svg.appendChild(svgEl("text", { class: "ax-text lbl", x: labelW - 8, y: cy + 3.5, "text-anchor": "end" }, r.label));
+    const g = svgEl("g", { class: up ? "c-up" : "c-down" });
+    g.appendChild(svgEl("rect", { class: "s-bar", x: Math.min(x(r.value), x(0)), y: cy - 7, width: Math.max(1.5, Math.abs(x(r.value) - x(0))), height: 14, rx: 2 }));
+    g.appendChild(svgEl("text", { class: "val-text", x: up ? x(r.value) + 5 : x(r.value) - 5, y: cy + 3.5, "text-anchor": up ? "start" : "end" }, (up ? "+" : "") + r.value.toFixed(2)));
+    svg.appendChild(g);
+  });
+  card.appendChild(svg);
+  addSource(card, def);
+  return card;
+}
+
 // ---------- page ----------
-function renderSection(sec, brief, hist) {
+function renderSection(sec, brief) {
   const s = el("section", { class: "bsec", id: sec.id });
   s.appendChild(el("h2", null, sec.title));
   sec.groups.forEach((g, gi) => {
@@ -192,27 +154,16 @@ function renderSection(sec, brief, hist) {
         const def = brief.charts[id];
         if (!def) return;
         let card = null;
-        try { card = def.categories ? barChart(def) : (hist ? lineChart(def, hist) : null); } catch (e) { console.error(id, e); }
+        try { card = def.kind === "hbars" ? hbarChart(def) : barChart(def); } catch (e) { console.error(id, e); }
         if (card) s.appendChild(card);
       });
     }
   });
-  if (sec.terms && sec.terms.length) {
-    const t = el("div", { class: "terms" });
-    t.appendChild(el("h3", null, "新手词汇"));
-    const dl = el("dl");
-    sec.terms.forEach((x) => { dl.appendChild(el("dt", null, x.k)); dl.appendChild(el("dd", null, x.v)); });
-    t.appendChild(dl);
-    s.appendChild(t);
-  }
   return s;
 }
 
 async function main() {
-  const [brief, hist] = await Promise.all([
-    fetch("brief.json", { cache: "no-store" }).then((r) => r.json()),
-    fetch("../data/history.json", { cache: "no-store" }).then((r) => r.json()).catch(() => null),
-  ]);
+  const brief = await fetch("brief.json", { cache: "no-store" }).then((r) => r.json());
   const [by, bm, bd] = brief.date.split("-");
   document.getElementById("brief-date").textContent = `${by}年${+bm}月${+bd}日 ${brief.weekday}`;
   document.getElementById("brief-updated").textContent = `更新于北京时间 ${fmtBeijing(brief.generated_at)} · 每个交易日早晨更新`;
@@ -238,7 +189,7 @@ async function main() {
   const toc = document.getElementById("toc"), main = document.getElementById("sections");
   brief.sections.forEach((sec) => {
     toc.appendChild(el("a", { href: "#" + sec.id }, sec.title.replace(/^[一二三四]、/, "")));
-    main.appendChild(renderSection(sec, brief, hist));
+    main.appendChild(renderSection(sec, brief));
   });
   document.getElementById("sources-note").textContent = brief.sources_note || "";
   document.getElementById("disclaimer").textContent = brief.disclaimer || "";

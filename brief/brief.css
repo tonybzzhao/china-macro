@@ -7,6 +7,7 @@
 .brief-kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
 .brief h1 { margin: 2px 0 2px; font-family: "Noto Serif SC", "Roboto Serif", serif; font-size: clamp(22px, 4vw, 30px); font-weight: 700; }
 .brief-updated { margin: 0; color: var(--text-muted); font-size: 12.5px; }
+.brief-tag { margin: 4px 0 0; color: var(--text-secondary); font-size: 13px; }
 
 .stale { background: var(--accent-soft); border: 1px solid var(--accent); color: var(--text-primary); border-radius: 10px; padding: 10px 14px; font-size: 13.5px; margin-bottom: 16px; }
 
@@ -45,22 +46,13 @@
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
 .chart-src { font-size: 11px; color: var(--text-muted); margin: 4px 0 0; }
 .chart-src a { color: inherit; }
-.c0 { --c: var(--cat-growth); } .c1 { --c: var(--cat-prices); } .c2 { --c: var(--cat-external); }
-.s-line { fill: none; stroke: var(--c); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
-.s-dot { fill: var(--c); }
+.c0 { --c: var(--cat-growth); } .c1 { --c: var(--cat-prices); }
+.c-up { --c: var(--good); } .c-down { --c: var(--critical); }
 .s-bar { fill: var(--c); }
 .ax { stroke: var(--grid-line); stroke-width: 1; }
 .ax-text { font-family: "Roboto Mono", monospace; font-size: 10px; fill: var(--text-muted); }
+.ax-text.lbl { font-family: "Noto Sans SC", "Roboto", sans-serif; font-size: 11.5px; fill: var(--text-secondary); }
 .val-text { font-family: "Roboto Mono", monospace; font-size: 10px; fill: var(--text-secondary); }
-.thr { stroke: var(--accent); stroke-width: 1.2; stroke-dasharray: 3 3; opacity: .8; }
-.thr-text { font-family: "Roboto Mono", monospace; font-size: 10px; fill: var(--accent); font-weight: 600; }
-
-.terms { margin: 14px 0 0; padding: 10px 14px; background: var(--surface-2); border-radius: 10px; }
-.terms h3 { margin: 0 0 6px; font-size: 13px; color: var(--text-secondary); }
-.terms dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; font-size: 13.5px; line-height: 1.6; }
-.terms dt { font-weight: 700; }
-.terms dd { margin: 0; color: var(--text-secondary); }
-
 .brief-foot { color: var(--text-muted); font-size: 12.5px; line-height: 1.7; border-top: 1px solid var(--border); padding-top: 14px; }
 .brief-foot a { color: var(--accent); }
 @media (max-width: 560px) {

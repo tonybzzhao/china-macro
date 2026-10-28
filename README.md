@@ -109,28 +109,28 @@ because that's what was reliably sourceable.
 
 ## Daily brief (chatccp.com/brief)
 
-A Simplified-Chinese morning briefing for readers in China, regenerated every
-China trading day before the Beijing morning (`.github/workflows/brief.yml`,
-06:17 Beijing Mon-Fri with two later backup runs; holidays are skipped using the
-SSE calendar in `data/history.json`). TL;DR at the top, then market tiles and
-four sections (markets and macro, AI and tech, China and geopolitics, finance
-and investing), each with headlines, how-to-read notes, trends, risks, watch
-items and a beginner glossary.
+A Simplified-Chinese morning briefing for readers in China who can't easily
+follow English-language news: it reads the day's English headlines and retells
+them in plain Chinese, with a link back to each English original. Focus is US
+markets and policy, tech and AI, biotech and pharma, and world headlines;
+China macro is deliberately not covered (the dashboard does that). It is
+regenerated every China trading morning (`.github/workflows/brief.yml`, 06:17
+Beijing Mon-Fri with two later backup runs; holidays are skipped using the SSE
+calendar in `data/history.json`). TL;DR at the top, market tiles, then four
+sections, each with headlines, how to read them, trends, risks and watch items,
+plus charts of index moves and large-cap tech and pharma stock moves.
 
-- `scripts/build_brief.py` gathers facts (Yahoo chart API for index/yield/oil/gold
-  closes including A-shares and Hang Seng, Google News RSS in English and
-  Chinese for headlines, `data/history.json` for China macro) and asks Claude
-  to write the text **from those facts only**. The model cites headlines by id;
-  the script resolves links, and tiles and charts are computed straight from
-  data, so the model never writes a URL or a market number.
+- `scripts/build_brief.py` gathers facts (Yahoo chart API for index, yield, oil,
+  gold and stock closes; Google News RSS in English for headlines across ten
+  topics) and asks Claude to write the text **from those facts only**. The model
+  cites headlines by id; the script resolves the links, and tiles and charts are
+  computed straight from data, so the model never writes a URL or a market number.
 - **Requires the repo secret `ANTHROPIC_API_KEY`** (Settings, Secrets and
   variables, Actions). Without it the market tiles and charts still refresh but
   the text is kept from the last good run, the page shows a "text not updated"
   banner and the workflow logs a warning. Optional `BRIEF_MODEL` env overrides
   the model.
-- The China charts on the page read `data/history.json` live, so they follow the
-  hourly data workflow.
-- Known limits: news is summarised from headlines only; the news feed sometimes
+- Known limits: news is retold from headlines only; the news feed sometimes
   mis-dates older stories (the prompt tells the model to be sceptical of
   single-source "breaking" items); Yahoo can rate-limit cloud IPs, in which case
   the previous tiles are kept.
