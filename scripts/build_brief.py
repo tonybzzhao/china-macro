@@ -13,8 +13,8 @@ Runs on China trading mornings from .github/workflows/brief.yml. Three parts:
      English edition).
   2. Narrative (theme, TL;DR, sections, trends, calendar) written in Chinese by
      an LLM from those facts only, in several small calls. Free providers only:
-     a Google AI Studio free-tier key (GEMINI_API_KEY) or GitHub Models via the
-     Actions token. The model never writes URLs or market numbers: it cites
+     a Google AI Studio free-tier key (GEMINI_API_KEY), else the keyless
+     Pollinations endpoint. The model never writes URLs or market numbers: it cites
      headlines by id and the script resolves the links, while tiles and charts
      come straight from the facts.
   3. Assembly into brief/brief.json.
@@ -320,11 +320,16 @@ class LLMError(RuntimeError):
     pass
 
 
-def _post(url, headers, body, tries=4):
-    """POST with backoff on rate limits and transient server errors."""
+def _post(url, headers, body, tries=3, timeout=90):
+    """POST with backoff on rate limits, transient server errors and network errors."""
     last = None
     for i in range(tries):
-        r = requests.post(url, headers=headers, json=body, timeout=120)
+        try:
+            r = requests.post(url, headers=headers, json=body, timeout=timeout)
+        except requests.RequestException as e:
+            last = f"{type(e).__name__}: {str(e)[:150]}"
+            time.sleep(5 * (i + 1))
+            continue
         if r.status_code == 429 or r.status_code >= 500:
             last = f"HTTP {r.status_code}: {r.text[:200]}"
             time.sleep(8 * (i + 1))
@@ -349,37 +354,39 @@ def _gemini(system, user, max_tokens):
     return "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
 
 
-GH_MODEL_ENDPOINTS = [  # (url, strip publisher prefix from the model id?)
-    ("https://models.github.ai/inference/chat/completions", False),
-    ("https://models.inference.ai.azure.com/chat/completions", True),  # older endpoint, same token
-]
+def _groq(system, user, max_tokens):
+    """Groq free tier (a key needs no card). OpenAI-compatible."""
+    j = _post("https://api.groq.com/openai/v1/chat/completions",
+              {"Authorization": f"Bearer {os.environ['GROQ_API_KEY']}", "Content-Type": "application/json"},
+              {"model": os.environ.get("BRIEF_GROQ_MODEL", "llama-3.3-70b-versatile"), "temperature": 0.2,
+               "max_tokens": max_tokens, "response_format": {"type": "json_object"},
+               "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]})
+    return j["choices"][0]["message"]["content"]
 
 
-def _github_models(system, user, max_tokens):
-    base = os.environ.get("BRIEF_GH_MODEL", "openai/gpt-4.1")
-    errors = []
-    for url, short in GH_MODEL_ENDPOINTS:
-        try:
-            j = _post(url,
-                      {"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Accept": "application/vnd.github+json",
-                       "X-GitHub-Api-Version": "2022-11-28", "Content-Type": "application/json"},
-                      {"model": base.split("/")[-1] if short else base, "temperature": 0.2, "max_tokens": max_tokens,
-                       "response_format": {"type": "json_object"},
-                       "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]})
-            return j["choices"][0]["message"]["content"]
-        except Exception as e:
-            errors.append(f"{url.split('/')[2]}: {e}")
-    raise LLMError(" | ".join(errors))
+def _pollinations(system, user, max_tokens):
+    """Keyless, free, OpenAI-compatible endpoint (anonymous tier, small open model).
+    The zero-setup fallback: no account, no key, no billing."""
+    j = _post("https://text.pollinations.ai/openai", {"Content-Type": "application/json"},
+              {"model": os.environ.get("BRIEF_POLLINATIONS_MODEL", "openai"), "temperature": 0.2,
+               "max_tokens": max_tokens, "response_format": {"type": "json_object"},
+               "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]},
+              tries=2, timeout=60)
+    return j["choices"][0]["message"]["content"]
 
 
 def llm_providers():
-    """Free providers only: a Google AI Studio free-tier key, or GitHub Models via the
-    Actions token (needs `permissions: models: read`). Nothing here is billed."""
+    """Free providers only, best first: a Google AI Studio or Groq free-tier key if one
+    is set, then the keyless Pollinations endpoint, which works but is flaky (timeouts,
+    occasional malformed JSON), so a key is the dependable setup. GitHub Models was
+    tried and its endpoint answers 200 'OK' text from Actions runners, so it is not
+    used. Nothing here is billed."""
     out = []
     if os.environ.get("GEMINI_API_KEY"):
         out.append(_gemini)
-    if os.environ.get("GITHUB_TOKEN"):
-        out.append(_github_models)
+    if os.environ.get("GROQ_API_KEY"):
+        out.append(_groq)
+    out.append(_pollinations)
     return out
 
 
@@ -398,12 +405,12 @@ def parse_json(text):
     return json.loads(text[text.index("{"): text.rindex("}") + 1])
 
 
-def ask(task, data, max_tokens=2500, validate=None, pause=4):
+def ask(task, data, max_tokens=3000, validate=None, pause=6):
     """One small model call, JSON out, retried once on bad output. Calls stay small
-    on purpose: GitHub Models' free tier caps a request at roughly 8k tokens in and
-    4k out, and short calls also keep Gemini's free quota use negligible."""
+    on purpose: free tiers cap request size and rate, and short calls keep quota use
+    negligible."""
     last = None
-    for attempt in range(2):
+    for attempt in range(3):
         time.sleep(pause)
         try:
             obj = parse_json(llm_complete(SYSTEM, f"{task}\n\n资料：\n{data}", max_tokens))
@@ -453,7 +460,7 @@ def narrate(facts):
                 raise ValueError(f"bad sector {sec.get('sector')}")
     overall = mover_lines(movers.get("overall", {}), "全市场")
     plan = ask(PLAN_TASK, "\n".join(header + mk + overall + ["新闻标题（编号 | 标题 | 来源）："] + headline_lines(heads)),
-               max_tokens=800, validate=check_plan)["sections"]
+               max_tokens=3000, validate=check_plan)["sections"]
 
     # 2. one small call per section
     sections = []
@@ -467,7 +474,7 @@ def narrate(facts):
         def check_groups(o):
             validate_narrative_section({"id": "x", "title": "x", "sector": None, "groups": o.get("groups")}, head_ids)
         task = SECTION_TASK.format(title=sec["title"], lo=4 if i == 0 else 3, hi=7)
-        groups = ask(task, "\n".join(lines), max_tokens=2200, validate=check_groups)["groups"]
+        groups = ask(task, "\n".join(lines), max_tokens=3500, validate=check_groups)["groups"]
         sections.append({"id": "markets" if i == 0 else f"s{i}", "title": "宏观与市场" if i == 0 else sec["title"],
                          "sector": sec.get("sector"), "groups": groups})
 
@@ -478,7 +485,7 @@ def narrate(facts):
     def check_finish(o):
         validate_narrative({**o, "sections": sections}, head_ids)
     tail = ask(FINISH_TASK, "\n".join(header + written + ["候选新闻（编号 | 标题 | 来源）："] + headline_lines(cand)),
-               max_tokens=2000, validate=check_finish)
+               max_tokens=3500, validate=check_finish)
     return {"theme": tail["theme"], "tldr": tail["tldr"], "sections": sections,
             "trends": tail.get("trends") or [], "calendar": tail.get("calendar") or []}
 
@@ -755,7 +762,7 @@ def main():
             status["provider"] = [p.__name__.lstrip("_") for p in llm_providers()]
             narrative = narrate(facts)
         else:
-            raise LLMError("no free LLM provider configured (set GEMINI_API_KEY, or run in Actions with models: read)")
+            raise LLMError("no free LLM provider configured")
     except Exception as e:
         log(f"narrative unavailable, keeping previous text:\n{traceback.format_exc()}")
         status["error"] = f"{type(e).__name__}: {e}"[:600]

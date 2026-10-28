@@ -133,23 +133,27 @@ inside the hottest sectors.
   computed straight from data, so the model never writes a URL or a market
   number.
 - **Costs nothing.** Only free providers are wired in, and the paid Anthropic
-  API is deliberately not used:
-  - **GitHub Models** (default, no setup): the workflow's built-in
-    `GITHUB_TOKEN` with `permissions: models: read`. No key, no billing. Free
-    tier is rate limited and capped at roughly 8k tokens in / 4k out per request,
-    which is why generation is split into small calls (each is estimated at
-    under 4.5k tokens in). Model defaults to `openai/gpt-4.1`; override with the
-    `BRIEF_GH_MODEL` env var if it is unavailable.
-  - **Google Gemini free tier** (optional, better quality): create a key at
-    Google AI Studio without a billing account, add it as repo secret
-    `GEMINI_API_KEY`. It is tried first when present. Google may use free-tier
-    prompts to improve its products; the prompts here are only public headlines
-    and market data. Model defaults to `gemini-2.5-flash`
-    (`BRIEF_GEMINI_MODEL` overrides).
-  - If neither works the market tiles and charts still refresh, the text is kept
-    from the last good run, the page shows a "text not updated" banner and the
-    workflow logs a warning.
-  - Free-tier terms and limits change; the first scheduled run is the real test.
+  API is deliberately not used. Providers are tried best first:
+  1. **Google Gemini free tier**: set repo secret `GEMINI_API_KEY` (a key from
+     Google AI Studio, free, no billing account needed as far as the free-tier
+     docs state). Model defaults to `gemini-2.5-flash` (`BRIEF_GEMINI_MODEL`).
+     Google may use free-tier prompts to improve its products; the prompts here
+     are only public headlines and market data.
+  2. **Groq free tier**: set repo secret `GROQ_API_KEY`. Defaults to
+     `llama-3.3-70b-versatile` (`BRIEF_GROQ_MODEL`).
+  3. **Pollinations**, keyless, used when no key is set. It works but is flaky
+     (a trivial request timed out in testing, and a small open model sometimes
+     returns malformed JSON), so treat a key as the dependable setup.
+  - GitHub Models was tried first and dropped: `models.github.ai` answers
+    `200 text/plain OK` from Actions runners, and the older Azure host no longer
+    resolves.
+  - Generation is split into five small calls (plan the sections, one call per
+    section, then theme/TL;DR/trends/schedule) so each fits free-tier request
+    size and rate caps.
+  - If every provider fails the market tiles and charts still refresh, the text
+    is kept from the last good run, the page shows a "text not updated" banner,
+    and `brief/status.json` records which providers were tried and the error.
+  - Free-tier terms and limits change; check `brief/status.json` after a run.
 - Style rules live in `SYSTEM` in that script: news-agency register, no
   commentary outside the short "analysis" group, full-width Chinese
   punctuation (also enforced in code by `cn_punct`), schedule times only if a

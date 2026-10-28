@@ -96,14 +96,23 @@ class Narrate(unittest.TestCase):
             with self.assertRaises(bb.LLMError):
                 bb.narrate(self.facts())
 
-    def test_no_provider_is_a_clear_error_and_only_free_ones_exist(self):
+    def test_providers_are_all_free_and_ordered_best_first(self):
         with patch.dict(bb.os.environ, {}, clear=True):
-            self.assertEqual(bb.llm_providers(), [])
-            with self.assertRaisesRegex(bb.LLMError, "no free LLM provider"):
-                bb.llm_complete("s", "u")
-        with patch.dict(bb.os.environ, {"GITHUB_TOKEN": "t"}, clear=True):
-            self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_github_models"])
+            self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_pollinations"])
+        with patch.dict(bb.os.environ, {"GEMINI_API_KEY": "k", "GROQ_API_KEY": "g"}, clear=True):
+            self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_gemini", "_groq", "_pollinations"])
         self.assertFalse(hasattr(bb, "anthropic"))
+
+    def test_network_errors_become_llm_errors_after_retries(self):
+        with patch.object(bb.requests, "post", side_effect=bb.requests.ConnectionError("down")), \
+             patch.object(bb.time, "sleep"):
+            with self.assertRaisesRegex(bb.LLMError, "ConnectionError"):
+                bb._post("https://x.test", {}, {}, tries=2)
+
+    def test_provider_failure_falls_through_to_the_next(self):
+        def bad(*a): raise bb.LLMError("nope")
+        with patch.object(bb, "llm_providers", return_value=[bad, lambda s, u, m: "ok"]):
+            self.assertEqual(bb.llm_complete("s", "u"), "ok")
 
     def test_non_json_reply_reports_what_the_server_actually_said(self):
         class R:  # a 200 with a plain-text body, as models.github.ai returns for unknown paths
@@ -112,18 +121,6 @@ class Narrate(unittest.TestCase):
         with patch.object(bb.requests, "post", return_value=R()):
             with self.assertRaisesRegex(bb.LLMError, "was not JSON: 'OK'"):
                 bb._post("https://x.test", {}, {})
-
-    def test_github_models_falls_back_to_the_second_endpoint(self):
-        seen = []
-        def fake_post(url, headers, body, tries=4):
-            seen.append((url, body["model"]))
-            if "models.github.ai" in url:
-                raise bb.LLMError("boom")
-            return {"choices": [{"message": {"content": "{}"}}]}
-        with patch.object(bb, "_post", fake_post), patch.dict(bb.os.environ, {"GITHUB_TOKEN": "t"}):
-            self.assertEqual(bb._github_models("s", "u", 10), "{}")
-        self.assertEqual(seen, [("https://models.github.ai/inference/chat/completions", "openai/gpt-4.1"),
-                                ("https://models.inference.ai.azure.com/chat/completions", "gpt-4.1")])
 
     def test_parse_json_strips_code_fences(self):
         self.assertEqual(bb.parse_json('```json\n{"a": 1}\n```'), {"a": 1})
