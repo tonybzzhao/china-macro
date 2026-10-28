@@ -331,7 +331,10 @@ def _post(url, headers, body, tries=4):
             continue
         if not r.ok:
             raise LLMError(f"HTTP {r.status_code}: {r.text[:300]}")
-        return r.json()
+        try:
+            return r.json()
+        except ValueError:
+            raise LLMError(f"HTTP {r.status_code} {r.headers.get('content-type')} was not JSON: {r.text[:200]!r}")
     raise LLMError(last or "request failed")
 
 
@@ -346,15 +349,27 @@ def _gemini(system, user, max_tokens):
     return "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
 
 
+GH_MODEL_ENDPOINTS = [  # (url, strip publisher prefix from the model id?)
+    ("https://models.github.ai/inference/chat/completions", False),
+    ("https://models.inference.ai.azure.com/chat/completions", True),  # older endpoint, same token
+]
+
+
 def _github_models(system, user, max_tokens):
-    model = os.environ.get("BRIEF_GH_MODEL", "openai/gpt-4.1")
-    j = _post("https://models.github.ai/inference/chat/completions",
-              {"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Accept": "application/vnd.github+json",
-               "X-GitHub-Api-Version": "2022-11-28", "Content-Type": "application/json"},
-              {"model": model, "temperature": 0.2, "max_tokens": max_tokens,
-               "response_format": {"type": "json_object"},
-               "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]})
-    return j["choices"][0]["message"]["content"]
+    base = os.environ.get("BRIEF_GH_MODEL", "openai/gpt-4.1")
+    errors = []
+    for url, short in GH_MODEL_ENDPOINTS:
+        try:
+            j = _post(url,
+                      {"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Accept": "application/vnd.github+json",
+                       "X-GitHub-Api-Version": "2022-11-28", "Content-Type": "application/json"},
+                      {"model": base.split("/")[-1] if short else base, "temperature": 0.2, "max_tokens": max_tokens,
+                       "response_format": {"type": "json_object"},
+                       "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]})
+            return j["choices"][0]["message"]["content"]
+        except Exception as e:
+            errors.append(f"{url.split('/')[2]}: {e}")
+    raise LLMError(" | ".join(errors))
 
 
 def llm_providers():

@@ -105,6 +105,26 @@ class Narrate(unittest.TestCase):
             self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_github_models"])
         self.assertFalse(hasattr(bb, "anthropic"))
 
+    def test_non_json_reply_reports_what_the_server_actually_said(self):
+        class R:  # a 200 with a plain-text body, as models.github.ai returns for unknown paths
+            status_code, ok, text, headers = 200, True, "OK", {"content-type": "text/plain"}
+            def json(self): raise ValueError("no json")
+        with patch.object(bb.requests, "post", return_value=R()):
+            with self.assertRaisesRegex(bb.LLMError, "was not JSON: 'OK'"):
+                bb._post("https://x.test", {}, {})
+
+    def test_github_models_falls_back_to_the_second_endpoint(self):
+        seen = []
+        def fake_post(url, headers, body, tries=4):
+            seen.append((url, body["model"]))
+            if "models.github.ai" in url:
+                raise bb.LLMError("boom")
+            return {"choices": [{"message": {"content": "{}"}}]}
+        with patch.object(bb, "_post", fake_post), patch.dict(bb.os.environ, {"GITHUB_TOKEN": "t"}):
+            self.assertEqual(bb._github_models("s", "u", 10), "{}")
+        self.assertEqual(seen, [("https://models.github.ai/inference/chat/completions", "openai/gpt-4.1"),
+                                ("https://models.inference.ai.azure.com/chat/completions", "gpt-4.1")])
+
     def test_parse_json_strips_code_fences(self):
         self.assertEqual(bb.parse_json('```json\n{"a": 1}\n```'), {"a": 1})
 
