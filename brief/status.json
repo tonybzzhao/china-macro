@@ -1,8 +1,9 @@
 {
- "run_at": "2026-10-29T07:37:10+08:00",
+ "run_at": "2026-10-29T07:53:19+08:00",
  "provider": [
-  "github_models"
+  "gemini",
+  "pollinations"
  ],
- "error": "LLMError: _github_models: models.github.ai: HTTP 200 text/plain was not JSON: 'OK\\r\\n' | models.inference.ai.azure.com: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)\"))",
+ "error": "LLMError: model output kept failing validation: substring not found",
  "narrative": "stale"
 }
