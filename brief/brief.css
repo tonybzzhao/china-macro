@@ -7,7 +7,6 @@
 .brief-kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
 .brief h1 { margin: 2px 0 2px; font-family: "Noto Serif SC", "Roboto Serif", serif; font-size: clamp(22px, 4vw, 30px); font-weight: 700; }
 .brief-updated { margin: 0; color: var(--text-muted); font-size: 12.5px; }
-.brief-tag { margin: 4px 0 0; color: var(--text-secondary); font-size: 13px; }
 
 .stale { background: var(--accent-soft); border: 1px solid var(--accent); color: var(--text-primary); border-radius: 10px; padding: 10px 14px; font-size: 13.5px; margin-bottom: 16px; }
 
