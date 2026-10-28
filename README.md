@@ -109,26 +109,31 @@ because that's what was reliably sourceable.
 
 ## Daily brief (chatccp.com/brief)
 
-A Simplified-Chinese morning briefing for readers in China who can't easily
-follow English-language news: it reads the day's English headlines and retells
-them in plain Chinese, with a link back to each English original. Focus is US
-markets and policy, tech and AI, biotech and pharma, and world headlines;
-China macro is deliberately not covered (the dashboard does that). It is
-regenerated every China trading morning (`.github/workflows/brief.yml`, 06:17
-Beijing Mon-Fri with two later backup runs; holidays are skipped using the SSE
-calendar in `data/history.json`). TL;DR at the top; market tiles with up/down
-arrows and colours (click one for its recent chart); then four sections (US
-markets, tech and AI, biotech and pharma, world headlines) holding today's news
-and scheduled events, plus charts of index moves, large-cap stock moves and the
-day's biggest tech and biopharma movers. Written as plain news copy with
-full-width Chinese punctuation, no commentary; all sources are listed once at
-the end of the page.
+A Simplified-Chinese morning market briefing for readers in China who can't
+easily follow English-language news. It retells the day's English headlines as
+plain news copy, covering US macro and markets plus whichever sectors are hot
+that day (picked from sector-ETF moves, stock movers and headline flow, not a
+fixed list). It is regenerated every China trading morning
+(`.github/workflows/brief.yml`, 06:17 Beijing Mon-Fri with two later backup
+runs; holidays are skipped using the SSE calendar in `data/history.json`).
 
-- `scripts/build_brief.py` gathers facts (Yahoo chart API for index, yield, oil,
-  gold and stock closes; Google News RSS in English for headlines across ten
-  topics) and asks Claude to write the text **from those facts only**. The model
-  cites headlines by id; the script resolves the links, and tiles and charts are
-  computed straight from data, so the model never writes a URL or a market number.
+Page layout: core theme and TL;DR; market tiles with up/down arrows and colours
+(click one for its recent chart); "macro and markets" plus 2 to 4 hot-sector
+sections (each: today's news, then a short analysis); long-term trends and
+risks; a schedule table in Beijing time; and every source listed once at the
+end. Charts: index moves, S&P sector-ETF moves, biggest US movers, and movers
+inside the hottest sectors.
+
+- `scripts/build_brief.py` gathers facts (Yahoo chart API for indices, yields,
+  oil, gold and the 11 sector ETFs; Yahoo's stock screener for movers; Google
+  News RSS in English for headlines across eleven topics) and asks Claude to
+  write the text **from those facts only**. The model cites headlines by id;
+  the script resolves the links, and tiles and charts are computed straight
+  from data, so the model never writes a URL or a market number.
+- Style rules live in `SYSTEM` in that script: news-agency register, no
+  commentary outside the short "analysis" group, full-width Chinese
+  punctuation (also enforced in code by `cn_punct`), schedule times only if a
+  source gives them.
 - **Requires the repo secret `ANTHROPIC_API_KEY`** (Settings, Secrets and
   variables, Actions). Without it the market tiles and charts still refresh but
   the text is kept from the last good run, the page shows a "text not updated"

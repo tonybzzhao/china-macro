@@ -77,3 +77,12 @@
   .toc { overflow-x: auto; flex-wrap: nowrap; }
   .toc a { white-space: nowrap; }
 }
+
+.theme { margin: 0 0 10px; font-weight: 600; font-size: 15px; line-height: 1.6; }
+.plain-list { margin: 0; padding-left: 20px; }
+.plain-list li { margin: 0 0 7px; line-height: 1.7; font-size: 15px; }
+.table-wrap { overflow-x: auto; }
+.cal { width: 100%; border-collapse: collapse; font-size: 14px; }
+.cal th { text-align: left; font-size: 12.5px; color: var(--text-secondary); border-bottom: 2px solid var(--border-strong); padding: 6px 10px; }
+.cal td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.55; }
+.cal td:first-child { white-space: nowrap; font-family: "Roboto Mono", "Noto Sans SC", monospace; font-size: 13px; }

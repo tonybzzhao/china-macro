@@ -82,7 +82,7 @@ function barChart(def) {
   let lo = Math.min(...all), hi = Math.max(...all);
   const pad = (hi - lo) * 0.12 || 1; lo -= pad; hi += pad;
   const y = (v) => PT + (1 - (v - lo) / (hi - lo)) * (H - PT - PB);
-  const slot = (W - PL - PR) / cats.length, bw = Math.min(26, (slot * 0.7) / n);
+  const slot = (W - PL - PR) / cats.length, bw = Math.min(40, (slot * 0.8) / n);
   const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": def.title });
   niceTicks(lo, hi, 4).forEach((t) => {
     svg.appendChild(svgEl("line", { class: "ax", x1: PL, x2: W - PR, y1: y(t), y2: y(t) }));
@@ -106,12 +106,29 @@ function barChart(def) {
   return card;
 }
 
+// Rough rendered width of a label at 11.5px: CJK glyphs are wide, Latin narrow.
+function textWidth(t) {
+  let w = 0;
+  for (const ch of t) w += /[\u3000-\u9fff\uff00-\uffef]/.test(ch) ? 12 : 6.6;
+  return w;
+}
+function fitLabel(t, max) {
+  if (textWidth(t) <= max) return t;
+  let out = "";
+  for (const ch of t) { if (textWidth(out + ch + "…") > max) break; out += ch; }
+  return out + "…";
+}
+
 function hbarChart(def) {
   const card = cardShell(def);
-  const rows = def.rows, rowH = 24, top = 8, labelW = 150, right = 54;
+  const rows = def.rows, rowH = 24, top = 8, right = 56, gap = 10;
+  const labelW = Math.min(250, Math.max(110, Math.max(...rows.map((r) => textWidth(r.label))) + gap + 4));
   const vals = rows.map((r) => r.value).concat(0);
   let lo = Math.min(...vals), hi = Math.max(...vals);
   const pad = (hi - lo) * 0.1 || 1; lo -= pad; hi += pad;
+  // value text sits outside the bar, so a long negative bar needs ~46px of
+  // room on its left or its number would run into the row label
+  if (Math.min(...vals) < 0) lo -= ((hi - lo) * 46) / (W - labelW - right - 46);
   const height = top * 2 + rows.length * rowH;
   const x = (v) => labelW + ((v - lo) / (hi - lo)) * (W - labelW - right);
   const svg = svgEl("svg", { viewBox: `0 0 ${W} ${height}`, role: "img", "aria-label": def.title });
@@ -119,7 +136,9 @@ function hbarChart(def) {
   rows.forEach((r, i) => {
     const cy = top + rowH * i + rowH / 2;
     const up = r.value >= 0;
-    svg.appendChild(svgEl("text", { class: "ax-text lbl", x: labelW - 8, y: cy + 3.5, "text-anchor": "end" }, r.label));
+    const label = svgEl("text", { class: "ax-text lbl", x: labelW - gap, y: cy + 3.5, "text-anchor": "end" }, fitLabel(r.label, labelW - gap - 2));
+    label.appendChild(svgEl("title", null, r.label));
+    svg.appendChild(label);
     const g = svgEl("g", { class: up ? "c-up" : "c-down" });
     g.appendChild(svgEl("rect", { class: "s-bar", x: Math.min(x(r.value), x(0)), y: cy - 7, width: Math.max(1.5, Math.abs(x(r.value) - x(0))), height: 14, rx: 2 }));
     g.appendChild(svgEl("text", { class: "val-text", x: up ? x(r.value) + 5 : x(r.value) - 5, y: cy + 3.5, "text-anchor": up ? "start" : "end" }, (up ? "+" : "") + r.value.toFixed(2)));
@@ -193,6 +212,7 @@ async function main() {
   if ((brief.narrative_at || "").slice(0, 10) < (brief.generated_at || "").slice(0, 10)) msgs.push("文字部分本次未能更新，仅刷新了行情数据。");
   if (msgs.length) { stale.textContent = msgs.join(" "); stale.hidden = false; }
 
+  document.getElementById("theme").textContent = brief.theme ? `今日核心主题：${brief.theme}` : "";
   const ol = document.getElementById("tldr-list");
   brief.tldr.forEach((t) => ol.appendChild(el("li", null, t)));
 
@@ -225,21 +245,30 @@ async function main() {
 
   const toc = document.getElementById("toc"), main = document.getElementById("sections");
   brief.sections.forEach((sec) => {
-    toc.appendChild(el("a", { href: "#" + sec.id }, sec.title.replace(/^[一二三四]、/, "")));
+    toc.appendChild(el("a", { href: "#" + sec.id }, sec.title.replace(/^[一二三四五六]、/, "")));
     main.appendChild(renderSection(sec, brief));
   });
-  const srcBox = document.getElementById("sources");
-  (brief.sources || []).filter((g) => g.items.length).forEach((g) => {
-    srcBox.appendChild(el("h3", null, g.section));
-    const ol = el("ol");
-    g.items.forEach((r) => {
-      const li = el("li");
-      li.appendChild(link(r.n, r.u));
-      if (r.t) li.appendChild(el("span", { class: "src-title" }, "：" + r.t));
-      ol.appendChild(li);
-    });
-    srcBox.appendChild(ol);
+  const trends = document.getElementById("trends-list");
+  (brief.trends || []).forEach((t) => trends.appendChild(el("li", null, t)));
+  document.getElementById("trends").hidden = !(brief.trends || []).length;
+  const cal = document.getElementById("calendar-body");
+  (brief.calendar || []).forEach((r) => {
+    const tr = el("tr");
+    [r.when, r.event, r.watch].forEach((c) => tr.appendChild(el("td", null, c)));
+    cal.appendChild(tr);
   });
+  document.getElementById("calendar").hidden = !(brief.calendar || []).length;
+  if ((brief.trends || []).length) toc.appendChild(el("a", { href: "#trends" }, "趋势与风险"));
+  if ((brief.calendar || []).length) toc.appendChild(el("a", { href: "#calendar" }, "关键日程"));
+  const srcBox = document.getElementById("sources");
+  const srcList = el("ol");
+  (brief.sources || []).forEach((r) => {
+    const li = el("li");
+    li.appendChild(link(r.n, r.u));
+    if (r.t) li.appendChild(el("span", { class: "src-title" }, "：" + r.t));
+    srcList.appendChild(li);
+  });
+  srcBox.appendChild(srcList);
   document.getElementById("sources-note").textContent = brief.sources_note || "";
   document.getElementById("disclaimer").textContent = brief.disclaimer || "";
 }

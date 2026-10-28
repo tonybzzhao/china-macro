@@ -1,13 +1,16 @@
 {
  "date": "2026-10-29",
  "weekday": "周四",
- "generated_at": "2026-10-29T05:12:47+08:00",
- "narrative_at": "2026-10-29T05:12:47+08:00",
+ "generated_at": "2026-10-29T05:19:40+08:00",
+ "narrative_at": "2026-10-29T05:19:40+08:00",
+ "theme": "美联储按兵不动，科技板块在 AI 业绩与融资消息中领涨，油价仍受中东局势牵动。",
  "tldr": [
   "美联储周三宣布维持利率不变，称通胀仍处高位。",
-  "美股周三收涨：标普 500 指数涨 0.28%，纳斯达克综合指数涨 0.27%，道琼斯指数涨 0.19%。",
-  "微软公布季度财报，净利润同比增长 32%；谷歌母公司 Alphabet 云业务收入超预期，广告收入不及预期，盘后股价下跌。",
-  "礼来称，其减肥药 retatrutide 在对比试验中的减重效果约为诺和诺德司美格鲁肽的两倍。"
+  "美股周三收涨：标普 500 指数涨 0.28%，纳斯达克综合指数涨 0.27%，道琼斯指数涨 0.19%；科技板块涨 0.8%，涨幅居首。",
+  "微软净利润同比增长 32%；谷歌母公司 Alphabet 营收增长 25%，但利润下降，资本开支推高现金消耗。",
+  "博通（Broadcom）与 Anthropic 达成总额 630 亿美元的债务融资；SK 海力士股价大涨 13.3%。",
+  "布伦特原油交投于每桶 110 美元上下，涨跌受美伊外交与沙特遇袭消息交替影响。",
+  "今晚 20:30（北京时间）美国公布第三季度 GDP 初值和 9 月 PCE 数据。"
  ],
  "snapshot": [
   {
@@ -304,105 +307,6 @@
     [
      "2026-10-28",
      11684.0
-    ]
-   ]
-  },
-  {
-   "key": "xbi",
-   "label": "生物科技 ETF（XBI）",
-   "value": "157.51",
-   "change": "+1.72%",
-   "dir": "up",
-   "note": "10/28 收盘",
-   "dec": 2,
-   "series": [
-    [
-     "2026-09-29",
-     156.81
-    ],
-    [
-     "2026-09-30",
-     157.68
-    ],
-    [
-     "2026-10-01",
-     154.51
-    ],
-    [
-     "2026-10-02",
-     154.43
-    ],
-    [
-     "2026-10-05",
-     156.19
-    ],
-    [
-     "2026-10-06",
-     150.9
-    ],
-    [
-     "2026-10-07",
-     150.23
-    ],
-    [
-     "2026-10-08",
-     149.29
-    ],
-    [
-     "2026-10-09",
-     153.77
-    ],
-    [
-     "2026-10-12",
-     151.4
-    ],
-    [
-     "2026-10-13",
-     146.8
-    ],
-    [
-     "2026-10-14",
-     146.77
-    ],
-    [
-     "2026-10-15",
-     149.78
-    ],
-    [
-     "2026-10-16",
-     144.32
-    ],
-    [
-     "2026-10-19",
-     147.86
-    ],
-    [
-     "2026-10-20",
-     153.24
-    ],
-    [
-     "2026-10-21",
-     152.78
-    ],
-    [
-     "2026-10-22",
-     151.64
-    ],
-    [
-     "2026-10-23",
-     149.54
-    ],
-    [
-     "2026-10-26",
-     150.47
-    ],
-    [
-     "2026-10-27",
-     154.84
-    ],
-    [
-     "2026-10-28",
-     157.51
     ]
    ]
   },
@@ -846,28 +750,28 @@
  "sections": [
   {
    "id": "markets",
-   "title": "一、美国市场与宏观",
+   "title": "一、宏观与市场",
    "groups": [
     {
      "h": "今日要闻",
      "items": [
       {
-       "t": "美联储周三（美东时间 10 月 28 日）宣布维持利率不变，称通胀仍处高位。主席沃什（Kevin Warsh）随后举行新闻发布会。"
+       "t": "美联储周三（美东时间 10 月 28 日）宣布维持利率不变，称通胀仍处高位；主席沃什（Kevin Warsh）随后举行新闻发布会。"
       },
       {
        "t": "美股周三收盘全线上涨：标普 500 指数涨 0.28%，报 7,743.98 点；纳斯达克综合指数涨 0.27%，报 26,549.85 点；道琼斯指数涨 0.19%，报 52,475.10 点。"
       },
       {
-       "t": "周二芯片股领涨，纳斯达克综合指数上涨约 1.2%。"
+       "t": "行业板块中，科技涨 0.8%，金融涨 0.45%，能源涨 0.35%；公用事业跌 0.84%，房地产跌 0.73%，通信服务跌 0.42%。"
       },
       {
        "t": "美国 10 年期国债收益率周三报约 5.04%，前一交易日为 4.99%。"
       },
       {
-       "t": "中东和平协议预期一度压低油价，也门胡塞武装袭击沙特炼油厂的消息又推高油价，布伦特原油周三交投于每桶 110 美元上下。"
+       "t": "美国 10 月消费者信心指数回升（据世界大型企业联合会，Conference Board）。"
       },
       {
-       "t": "《华尔街日报》报道，美方已提醒海湾国家，中期选举后伊朗战事可能短促而猛烈地重启。"
+       "t": "财报季：UPS 与 PayPal 上调全年盈利指引；联邦快递（FedEx）财报超预期并上调全年指引；希捷（Seagate）财报超预期，但股价下跌 8%；HCA 预计 2027 年盈利持平，股价下滑。"
       },
       {
        "t": "加拿大央行加息至 2.5%，并表示将继续加息（据报道）。"
@@ -875,20 +779,25 @@
      ]
     },
     {
-     "h": "接下来关注",
+     "h": "分析",
      "items": [
       {
-       "t": "11 月 3 日美国中期选举；12 月美联储议息会议。"
+       "t": "多家媒体标题聚焦“通胀偏高”与后续加息可能，利率预期仍是影响股债表现的主要变量。"
+      },
+      {
+       "t": "板块表现分化：科技与金融上涨，公用事业与房地产下跌，指数涨幅主要来自科技板块。"
       }
      ]
     }
    ],
    "charts": [
-    "usmoves"
+    "usmoves",
+    "sector_perf",
+    "movers_all"
    ]
   },
   {
-   "id": "tech",
+   "id": "s1",
    "title": "二、科技与 AI",
    "groups": [
     {
@@ -898,112 +807,146 @@
        "t": "微软公布季度财报：净利润同比增长 32%，约 360 亿美元，资本支出大幅增加；盘后股价上涨。"
       },
       {
-       "t": "谷歌母公司 Alphabet 公布季度财报：云业务收入超出预期，广告收入低于预期，盘后股价下跌。"
+       "t": "谷歌母公司 Alphabet 营收增长 25%，利润下降；云业务收入超预期，资本开支推高现金消耗，广告收入不及预期，盘后股价下跌。"
       },
       {
        "t": "《巴伦周刊》报道，Alphabet 将回购资金转向数据中心建设，华尔街出现担忧情绪。"
       },
       {
-       "t": "据报道，OpenAI 计划采购谷歌的 AI 芯片（TPU）；甲骨文（Oracle）云将提供谷歌 TPU 及新款 AI 芯片。"
+       "t": "据《华尔街日报》报道，博通（Broadcom）首席执行官出面促成 Anthropic 总额 630 亿美元的债务融资；多家银行拟发行约 210 亿美元债券，为这笔芯片融资交易提供资金。"
       },
       {
-       "t": "Anthropic 把数据中心暂停令列为其增长计划的主要风险之一。"
+       "t": "彭博社报道，Anthropic 聘请摩根大通牵头其首次公开募股（IPO）中面向美国散户的发售部分。"
       },
       {
-       "t": "美国司法部起诉一名加州男子，指控其向中国走私价值 3 亿美元的英伟达（Nvidia）芯片；马来西亚扣押了涉嫌违反出口管制的 AI 服务器。"
+       "t": "据报道，OpenAI 计划采购谷歌的 AI 芯片（TPU）；甲骨文（Oracle）云将提供谷歌 TPU 及新款 AI 芯片；谷歌调整云业务打法，联合合作伙伴销售更多 AI 芯片。"
       },
       {
-       "t": "异动股：SK 海力士（SKHY）涨 13.3%，公司随三季度财报公布 750 亿美元股东回报计划；甲骨文涨 10.7%，原因待确认；F5 跌 20.4%，Enphase 跌 16.0%，罗技跌 12.1%，原因均待确认。"
+       "t": "路透社独家报道，美国司法部正就英伟达（Nvidia）收购 Hugging Face 一事进行问询。"
+      },
+      {
+       "t": "美国司法部起诉一名加州男子，指控其向中国走私价值 3 亿美元的英伟达芯片；马来西亚截获一批疑似违反出口管制的 AI 芯片服务器。"
+      },
+      {
+       "t": "异动股：SK 海力士（SKHY）涨 13.3%，据报道公司随三季度财报公布 750 亿美元股东回报计划；Vertiv 涨 16.5%，甲骨文涨 10.7%，伟创力涨 11.6%，原因待确认；F5 跌 20.4%，Enphase 跌 16.0%，罗技跌 12.1%，原因待确认。"
+      }
+     ]
+    },
+    {
+     "h": "分析",
+     "items": [
+      {
+       "t": "AI 基础设施的资金来源在扩展：Anthropic 的 630 亿美元债务融资、IPO 筹备，以及 Alphabet 将回购资金转向数据中心，都指向资本开支对外部融资的依赖上升。"
+      },
+      {
+       "t": "芯片采购出现多元化迹象：OpenAI 拟买谷歌 TPU，甲骨文云提供 TPU，英伟达的大客户在增加替代选项。"
       }
      ]
     }
    ],
    "charts": [
-    "tech_stocks",
-    "tech_movers"
+    "movers:Technology"
    ]
   },
   {
-   "id": "biotech",
-   "title": "三、生物医药",
+   "id": "s2",
+   "title": "三、金融",
    "groups": [
     {
      "h": "今日要闻",
      "items": [
       {
-       "t": "礼来（Eli Lilly）称，在对比试验中，其三靶点减肥药 retatrutide 的减重效果约为诺和诺德（Novo Nordisk）司美格鲁肽（Ozempic）的两倍。"
+       "t": "多家媒体称，Anthropic 的 IPO 可能为高盛、摩根大通、摩根士丹利等银行带来可观的承销收入。"
       },
       {
-       "t": "同一项试验显示，该药在糖尿病患者中的效果也优于司美格鲁肽。"
+       "t": "《华尔街日报》报道，私募股权支持的公司面临约 3,000 亿美元的“债务墙”。"
       },
       {
-       "t": "诺和诺德的周制胰岛素 Awiqli 获美国食品药品监督管理局（FDA）批准，用于 2 型糖尿病儿童患者。"
+       "t": "PayPal 上调 2026 年盈利指引，三季度利润超预期，股价上涨 1.2%。"
       },
       {
-       "t": "Genmab 股价周三上涨 28.3%，创历史新高；其一款抗癌药使死亡风险降低约 50%。"
-      },
-      {
-       "t": "异动股：Replimune 涨 23.1%，Generate Biomedicines 涨 16.4%，Beam Therapeutics 涨 15.6%，原因均待确认；SELLAS 跌 14.7%，原因待确认。"
-      },
-      {
-       "t": "美国一名议员要求政府监察机构调查 TrumpRx 药品折扣平台关于降价幅度的说法。"
-      },
-      {
-       "t": "美国联邦新规针对处方药定价中的隐性费用。"
+       "t": "异动股：艾维思（Evercore）涨 12.5%，Galaxy Digital 涨 11.1%，Riot Platforms 涨 6.6%，原因待确认；LPL Financial 跌 15.2%，原因待确认。"
       }
      ]
     },
     {
-     "h": "接下来关注",
+     "h": "分析",
      "items": [
       {
-       "t": "诺和诺德将于 11 月 4 日发布财报。"
+       "t": "银行在 IPO 与大额融资交易中获得收入机会，而私募股权公司面临较大的债务到期压力，板块内部机会与信用风险并存。"
       }
      ]
     }
    ],
    "charts": [
-    "biotech_stocks",
-    "biotech_movers"
+    "movers:Financial Services"
    ]
   },
   {
-   "id": "world",
-   "title": "四、世界头条",
+   "id": "s3",
+   "title": "四、能源",
    "groups": [
     {
      "h": "今日要闻",
      "items": [
       {
-       "t": "美国最高法院允许特朗普政府执行其邮寄投票行政令的部分内容。"
+       "t": "布伦特原油周三交投于每桶 110 美元上下。《华尔街日报》同日两篇报道方向不同：一篇称交易员权衡美伊外交与沙特遇袭消息，油价下跌；另一篇称对中东冲突升级的担忧推高油价。"
       },
       {
-       "t": "路透社报道，特朗普政府正通过大批传票扩大对非公民投票的调查。"
+       "t": "路透社报道，也门战事与沙特炼油厂遇袭推动油价上涨。"
       },
       {
-       "t": "特朗普在竞选活动中提到，可能提名参议员特德·克鲁兹（Ted Cruz）出任未来空缺的最高法院大法官。"
+       "t": "据 CNBC 等报道，美方已提醒海湾国家，为中期选举后可能对伊朗采取的军事行动做好准备。"
       },
       {
-       "t": "加拿大与欧盟将于 10 月 29 日至 30 日举行峰会，联合声明草案删去了“准成员”的表述。"
-      },
-      {
-       "t": "特朗普称美国将在人工智能领域胜过中国；战略与国际研究中心（CSIS）梳理了此前特朗普与习近平会晤的经济安全要点。"
-      },
-      {
-       "t": "国际特赦组织称，荷兰退出欧洲歌唱大赛后，主办方应暂停以色列的参赛资格。"
+       "t": "能源板块 ETF 周三上涨 0.35%。"
       }
      ]
     },
     {
-     "h": "接下来关注",
+     "h": "分析",
      "items": [
       {
-       "t": "10 月 29 日至 30 日加拿大与欧盟峰会；11 月 3 日美国中期选举。"
+       "t": "油价同时受中东供应风险与外交进展两类消息影响，日内方向不一；其对通胀和利率预期的传导，是当前市场关注点。"
       }
      ]
     }
    ],
    "charts": []
+  }
+ ],
+ "trends": [
+  "AI 基础设施投入持续扩大，融资渠道从企业现金流延伸到债务市场和 IPO。",
+  "AI 芯片采购趋于多元，英伟达之外的选项（谷歌 TPU 等）获得更多大客户。",
+  "数据中心扩张受到电网与监管约束，Anthropic 已把暂停令列为主要风险之一。",
+  "通胀偏高环境下，美联储维持观望，后续加息成为市场讨论的议题。",
+  "中东局势与能源价格持续影响通胀与利率预期。"
+ ],
+ "calendar": [
+  {
+   "when": "10 月 29 日 20:30（美东 8:30）",
+   "event": "美国第三季度 GDP 初值；9 月个人收入与支出（含 PCE 通胀）",
+   "watch": "经济增长、消费支出与核心通胀"
+  },
+  {
+   "when": "10 月 30 日凌晨起（美东 10 月 29 日收盘后）",
+   "event": "亚马逊（Amazon）、英特尔（Intel）财报",
+   "watch": "云业务增速、资本开支"
+  },
+  {
+   "when": "11 月 3 日",
+   "event": "美国中期选举",
+   "watch": "选举结果与后续政策走向"
+  },
+  {
+   "when": "11 月 4 日",
+   "event": "诺和诺德（Novo Nordisk）发布财报",
+   "watch": "减肥药业务与 CagriSema 数据"
+  },
+  {
+   "when": "12 月（日期待确认）",
+   "event": "美联储议息会议",
+   "watch": "通胀与后续加息信号"
   }
  ],
  "charts": {
@@ -1041,87 +984,146 @@
     }
    ]
   },
-  "tech_stocks": {
+  "sector_perf": {
    "kind": "hbars",
-   "title": "科技股单日涨跌幅（%）",
-   "desc": "10/28 美股交易日，按涨跌幅排列。",
+   "title": "标普 500 行业板块单日涨跌幅（%）",
+   "desc": "10/28 美股交易日，按行业 ETF 计算。",
    "rows": [
     {
-     "label": "超微 AMD（AMD）",
-     "value": 3.24
+     "label": "科技（XLK）",
+     "value": 0.8
     },
     {
-     "label": "谷歌 Alphabet（GOOGL）",
-     "value": 1.34
+     "label": "金融（XLF）",
+     "value": 0.45
     },
     {
-     "label": "亚马逊（AMZN）",
-     "value": 0.59
+     "label": "能源（XLE）",
+     "value": 0.35
     },
     {
-     "label": "微软（MSFT）",
-     "value": -0.06
+     "label": "工业（XLI）",
+     "value": 0.34
     },
     {
-     "label": "特斯拉（TSLA）",
-     "value": -0.8
+     "label": "医疗保健（XLV）",
+     "value": 0.3
     },
     {
-     "label": "苹果（AAPL）",
-     "value": -0.94
+     "label": "材料（XLB）",
+     "value": 0.15
     },
     {
-     "label": "英伟达（NVDA）",
-     "value": -1.17
+     "label": "可选消费（XLY）",
+     "value": -0.1
     },
     {
-     "label": "Meta（META）",
-     "value": -1.24
+     "label": "必需消费（XLP）",
+     "value": -0.36
+    },
+    {
+     "label": "通信服务（XLC）",
+     "value": -0.42
+    },
+    {
+     "label": "房地产（XLRE）",
+     "value": -0.73
+    },
+    {
+     "label": "公用事业（XLU）",
+     "value": -0.84
     }
    ]
   },
-  "biotech_stocks": {
+  "movers_all": {
    "kind": "hbars",
-   "title": "医药股单日涨跌幅（%）",
-   "desc": "10/28 美股交易日，按涨跌幅排列。",
+   "title": "美股异动榜（涨跌幅前 5）",
+   "desc": "10/28 美股交易日，市值 50 亿美元以上。",
    "rows": [
     {
-     "label": "安进（AMGN）",
-     "value": 0.87
+     "label": "Genmab（GMAB）",
+     "value": 28.25
     },
     {
-     "label": "强生（JNJ）",
-     "value": 0.86
+     "label": "ICON（ICLR）",
+     "value": 17.04
     },
     {
-     "label": "礼来（LLY）",
-     "value": 0.5
+     "label": "Vertiv（VRT）",
+     "value": 16.48
     },
     {
-     "label": "艾伯维（ABBV）",
-     "value": -0.14
+     "label": "SK 海力士（SKHY）",
+     "value": 13.3
     },
     {
-     "label": "再生元（REGN）",
-     "value": -0.35
+     "label": "Stellantis N.V.（STLA）",
+     "value": 13.04
     },
     {
-     "label": "默沙东（MRK）",
-     "value": -0.63
+     "label": "罗技（LOGI）",
+     "value": -12.12
     },
     {
-     "label": "诺和诺德（NVO）",
-     "value": -0.98
+     "label": "New Oriental Education（EDU）",
+     "value": -12.54
     },
     {
-     "label": "辉瑞（PFE）",
-     "value": -1.17
+     "label": "CoStar（CSGP）",
+     "value": -13.96
+    },
+    {
+     "label": "LPL Financial（LPLA）",
+     "value": -15.23
+    },
+    {
+     "label": "F5（FFIV）",
+     "value": -20.43
     }
    ]
   },
-  "tech_movers": {
+  "movers:Utilities": {
    "kind": "hbars",
-   "title": "科技股异动榜（涨跌幅前 5）",
+   "title": "公用事业板块异动股（涨跌幅前 4）",
+   "desc": "10/28 美股交易日，市值 15 亿美元以上。",
+   "rows": [
+    {
+     "label": "SOLV Energy（MWH）",
+     "value": 4.43
+    },
+    {
+     "label": "NRG Energy（NRG）",
+     "value": 1.78
+    },
+    {
+     "label": "Centuri（CTRI）",
+     "value": 1.65
+    },
+    {
+     "label": "TransAlta（TAC）",
+     "value": 1.55
+    },
+    {
+     "label": "Vistra（VST）",
+     "value": -2.69
+    },
+    {
+     "label": "Companhia Paranaense d（ELPC）",
+     "value": -3.09
+    },
+    {
+     "label": "Comp En De Mn Cemig（CIG）",
+     "value": -3.63
+    },
+    {
+     "label": "Fervo Energy（FRVO）",
+     "value": -4.03
+    }
+   ]
+  },
+  "movers:Technology": {
+   "kind": "hbars",
+   "title": "科技板块异动股（涨跌幅前 4）",
    "desc": "10/28 美股交易日，市值 15 亿美元以上。",
    "rows": [
     {
@@ -1129,7 +1131,7 @@
      "value": 13.3
     },
     {
-     "label": "伟创力（FLEX）",
+     "label": "Flex（FLEX）",
      "value": 11.61
     },
     {
@@ -1141,14 +1143,6 @@
      "value": 10.73
     },
     {
-     "label": "AXT（AXTI）",
-     "value": 10.56
-    },
-    {
-     "label": "Intapp（INTA）",
-     "value": -6.08
-    },
-    {
      "label": "SolarEdge Technologies（SEDG）",
      "value": -8.3
     },
@@ -1157,7 +1151,7 @@
      "value": -12.12
     },
     {
-     "label": "Enphase（ENPH）",
+     "label": "Enphase Energy（ENPH）",
      "value": -16.03
     },
     {
@@ -1166,244 +1160,265 @@
     }
    ]
   },
-  "biotech_movers": {
+  "movers:Real Estate": {
    "kind": "hbars",
-   "title": "生物医药股异动榜（涨跌幅前 5）",
+   "title": "房地产板块异动股（涨跌幅前 4）",
    "desc": "10/28 美股交易日，市值 15 亿美元以上。",
    "rows": [
     {
-     "label": "Genmab（GMAB）",
-     "value": 28.25
+     "label": "Fermi（FRMI）",
+     "value": 15.27
     },
     {
-     "label": "Replimune（REPL）",
-     "value": 23.07
+     "label": "Newmark（NMRK）",
+     "value": 5.05
     },
     {
-     "label": "Generate Biomedicines（GENB）",
-     "value": 16.43
+     "label": "Cushman & Wakefield（CWK）",
+     "value": 4.56
     },
     {
-     "label": "Beam Therapeutics（BEAM）",
-     "value": 15.58
+     "label": "Millrose Properties（MRP）",
+     "value": 4.4
     },
     {
-     "label": "Absci（ABSI）",
-     "value": 12.39
+     "label": "Rexford Industrial Rea（REXR）",
+     "value": -3.0
     },
     {
-     "label": "Celldex Therapeutics（CLDX）",
-     "value": -1.63
+     "label": "Sun Communities（SUI）",
+     "value": -4.17
     },
     {
-     "label": "Zai Lab（ZLAB）",
-     "value": -2.29
+     "label": "Compass（COMP）",
+     "value": -5.76
     },
     {
-     "label": "Tango Therapeutics（TNGX）",
-     "value": -2.88
+     "label": "CoStar（CSGP）",
+     "value": -13.96
+    }
+   ]
+  },
+  "movers:Financial Services": {
+   "kind": "hbars",
+   "title": "金融板块异动股（涨跌幅前 4）",
+   "desc": "10/28 美股交易日，市值 15 亿美元以上。",
+   "rows": [
+    {
+     "label": "Evercore（EVR）",
+     "value": 12.51
     },
     {
-     "label": "Vericel（VCEL）",
-     "value": -5.04
+     "label": "Galaxy Digital（GLXY）",
+     "value": 11.12
     },
     {
-     "label": "SELLAS Life Sciences（SLS）",
-     "value": -14.71
+     "label": "Riot Platforms（RIOT）",
+     "value": 6.56
+    },
+    {
+     "label": "OceanFirst Financial（OCFC）",
+     "value": 6.06
+    },
+    {
+     "label": "Banco Santander, S.A. （SAN）",
+     "value": -6.26
+    },
+    {
+     "label": "Inter & Co.（INTR）",
+     "value": -7.22
+    },
+    {
+     "label": "Porch（PRCH）",
+     "value": -7.7
+    },
+    {
+     "label": "LPL Financial（LPLA）",
+     "value": -15.23
     }
    ]
   }
  },
  "sources": [
   {
-   "section": "一、美国市场与宏观",
-   "items": [
-    {
-     "n": "Bisnow（英文）",
-     "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONmJkV2lUbklBWGZ4SWxMeTI5bnBTRnI2bWV2dmpqR2dGajFoeHM4cWRTSmxhMnV4YUZaMnI4TnAzQmJ0Y1RTUFhiaEoxWW9ZQWNjWlIycnZfWGpSZVF5ZU83MS1ZSW9tN1pyWHdIY1p1NjRCVFlaR0FaVlZoZWtMb0ZoSEFrX1NGbGtvNG9VbE9GY3NQakdrRTFJYjlyeG0zTWc?oc=5",
-     "t": "Fed Holds Rates Amid Treasury Yield Surge"
-    },
-    {
-     "n": "ABC News（英文）",
-     "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUEhoYVl4OGJtaXFLRU1idHB1dmlvYk1uNEtNNnlMVkFlZEN4N3hpNVB5cmNjWkFEajM2WUZ4bDJJN0pNYlpra21QSGI4cFFwLWllM0xxZlptYWRmdkRlbXAwRWVLcGRBd3J3MDFpUDBvUjVWMElMOGwtZlJMemRJQzczLXI1cWNFMnJKeEcwcGJhUjkzVjZfZ3puam1BQUZFMTRFZ1BIa9IBrAFBVV95cUxQeXRhLUNLYUFqaEtwY25VNnhEUzVzZmRMczBrdVo0SnJXdjdCZjhCbVpURUZJQ2M2MUwyVzlHblFrcTQ0UGhIYUVubHhUZHFVbldqNnJxOFprRG9FRmJIV3ZPaFJiSHZ2a1k0N2R4Q2swcFJ2cDNhZVVJdG0zbG9qaFdvd1l5MXcwbjFWZnBFelBZdFZBMk9pekEzOGFmaEVqVVNmTkx4dXU0eXha?oc=5",
-     "t": "Federal Reserve holds interest rates steady as midterm elections loom"
-    },
-    {
-     "n": "Reuters（英文）",
-     "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR21qQWZsLUZqbWRjR2YtQ3FGakpEWWVjSUVFNjVDSi01MnRiWmV3Z2pPQUsyVGhJR3UxQ1o4RjRVa2tCLXNXbnJjNE9fbE5KVzlKTEZtNHpZb3lPR0hXcFFSVGVydlpnR3RQdVM5bDE3aVI3aVowN0NqY3NHb3VDN3hlaXpLTmxkeFc3NE13dUNqYUtIMHNxRFR5M3VYZmpKUDRzVE5WLUdwRHJCeEpQM1pKaw?oc=5",
-     "t": "Wall Street ends higher on revived AI momentum"
-    },
-    {
-     "n": "EnergyNow.com（英文）",
-     "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONEY1OTRTVV9fNHdPaVhkcUhKcnlkZHM5Zk9qTk0wNDRYUm9UV3ltT2hWS1BjREhxMktHMEx2UTA1bWthZDdsdHlSSG5WT1J1MUVfSEo4dDUwSzBfM1RqYnhUM3c0MXdrb3BGdUhNUHJVMlQzUVYxRFp1NGJlN1lBZ0JCd1JWNi1RNllueU9ZVVVKSXE3cHc?oc=5",
-     "t": "Oil Falls Below $100 a barrel on Middle East Peace Deal Hopes"
-    },
-    {
-     "n": "Reuters（英文）",
-     "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUhHblNqOGNPczlpdUR2NDFMWjZxX2FZYjVTTzREX2R4YU5jRzF2ckN1MG9sSnIxWG9hbDJ0TjV4YTZXRjdqSUc3aF9OcTJuUVlJZkZrdUd0V0RMUU1qUWxiNDdmdXhCTmJUczZWOFRUWTRKdzJQLUJYNXZBODhnTjJfOXMyNU01OGVreWM5TkNyamNjbzV5UzAxX3ZOdWcwcUE5SFZHSkEyUjZ1M1dUQ3ByRDdxbC13ZzRQR0xfcTZ0bjh6dnNPalJZRWI?oc=5",
-     "t": "Oil prices rise on Yemen fighting, Saudi refinery attack"
-    },
-    {
-     "n": "WSJ（英文）",
-     "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYXd0OHZEUnBrMFNkRjJ5dHFUakFsTDU0NUxhdzhQUnpPQ0JxMllJanhoeVFQWm1GMmk2RkRUdDFWLVR2N0VwczZOQmZmbG9BanpUSTE2VEhnSS1xd29mUzFzbEdRTVBDWGRSOW1hRW41WU04eE9OSUo4QmFoSG9DUUhUNi13bzNkbEZaWlFUaVUzUzZPWGtMc2JDeEZyODg2Q09JdFZBekl1WnNJdDVBYnZQMzhieGt4bjFuOFZnMA?oc=5",
-     "t": "U.S. Warns Gulf of Possible Short, Intense Renewal of Iran War After Midterms"
-    },
-    {
-     "n": "CNBC（英文）",
-     "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VVTZnQjZMOUgxd3doMmJKclN5eUlkbFJoOE9TZDJQVlN5Zm92aDRIYW5yMWcwTGxtRHBfNW9FQ3NIbTJXSmdJZU9ibE9XZFRaQWJXb3JYbDJWY1l4c2o5OU5xeC1VbmFRN1JmMWZUUG9LNVhCYnk2ZNIBfkFVX3lxTE9PVWR4YV9Fa0UyQi0tN013V0d5bjY3bUJqZ1R2VGlsSHdGOURZVkRTSDhLUkpQS2lyV0ZDVlNua3RRelVoMmV4QUdfZUU5S09oV0ZHQTAzNm1hVWxVTVMzRWd0X2M3b3RfdVFUcFNfckgxMUdKMnNldWo2RWpIdw?oc=5",
-     "t": "Oil prices rise as U.S. reportedly tells Gulf countries to prepare for Iran strikes after midterm elections"
-    },
-    {
-     "n": "The Real Economy Blog（英文）",
-     "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPR1liaEw3bWxBRHk4dFhMcGs3QnNPQzRxX2lYVjJpb1c4XzRBbGtuWERYY2lCQlY2dXoyUWFwdzc4Mk5Ba2J1a245b0t3cEJxREg5NThyZERKdkZ3YWJGZ3RPUFB6dXZ1dFduNEdxbTJWQVVLdDNMR09DS080RXYwWGY1MHV4bldORWNENklKSU9tc0FoeUFTd0pLRml1Zw?oc=5",
-     "t": "Bank of Canada raises interest rate to 2.5%—with more hikes to come"
-    }
-   ]
+   "n": "The New York Times（英文）",
+   "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTE1BdGtmWVdsaDdsWktpYlk1d2lzWGN2OGdvc3VSNFZxcC1EZ0lWVHhuT1ZpOWphTHoxMzlVY2U2cWxKZDNIZVBhTkR4OXNzbW5fVG41SFZ1b0U1cHFtempLQzVQQmRuQmhpWVJXdy1mV2NxSERSZjZqVnJRZkRJR1diMFY1dkxT?oc=5",
+   "t": "Fed Holds Rates Steady Despite ‘Elevated’ Inflation"
   },
   {
-   "section": "二、科技与 AI",
-   "items": [
-    {
-     "n": "The New York Times（英文）",
-     "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JV0t1VzdLRjByRlFFemJORWcybEE3eFhxMUpFWGNYS0hnVTk3VzJLLXMzZlBXUzlyTWJWenEzSjFNWVE4NUxsMmFFU29KeEhpNGthZWVjQW53Y2xUQjNtNU9ReGJpNzF4YzhuVUYtXzltTXJvNm9VeFlPMTM?oc=5",
-     "t": "Microsoft’s Profit Jumps 32% Despite Big Increase in Spending"
-    },
-    {
-     "n": "Forbes（英文）",
-     "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcGFjUl9xRFBLTEtwTGNWMU9xRGhpV185OGhYR3BpT2xhb2RhSEJLX21oYzUyNVVMZzlJVWFHdjlTX2Q5aFhMVUI2WEV5UFdGS1JKZ1ptRmFzbjF0eEdZS2J3YnhmN0NVSnAtYnYyencwWVhCMDEzVWpZeHo1YnBtREFpV0psWXI2S0ZfNndsWjBhMzdBTUI1WVBtelVCczF2a1ZYdjVLSnItTWFTSmZ3Vm9aenF0OFlmLUVNSDVybw?oc=5",
-     "t": "MSFT Earnings: $36 Billion Net Income In Q1 Earnings Report"
-    },
-    {
-     "n": "Macon Telegraph（英文）",
-     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xLUFtZ3Q2N0pDbWZNN3l4N1FWTngzeG5peHZ6MmVKckh5TzRuYnZnVTdVN0pmWkJOM1hiRUo0SEk0ZUhxN0QzWkRMc3ZCS2dWaVExQnM1eDNJTXU2by1qV20xWWhzWHl2?oc=5",
-     "t": "Alphabet's Google Cloud unit beats quarterly revenue estimates on steady AI demand"
-    },
-    {
-     "n": "WSJ（英文）",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONmNkSG5GRS1SMkpKWG5nQjc2YV9BOEU0X1dEZHB3V1VvRGtXdDgzTVdMdnNEcGVzclJqWU9NVzdjYWZybm95dGZhR2NjdEotaGFvVERZM21LNFBpNUhIV1B3eFNMaFNJbmgyWnhFaVdZTmNTXzFzU3ZIU2R0emgxdDNCSVBMN2d2?oc=5",
-     "t": "Google Shares Fall as Ad Revenue Misses Estimates"
-    },
-    {
-     "n": "Barron's（英文）",
-     "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc1cyWEw2N29xSWxneld4YlNXRFozMUVXMVVuR1ZBbXBDWno5Nzd4QklMQmFVZi1yTld5M2pfTk9TOXpYdGRBVm51WTNKQ2J4MVJPME1naEtCM3N2SXBNbVVlZzVBdS1nbnVnNy10WFFQanh4Y1VjUW12Y2dsYTVzTw?oc=5",
-     "t": "Alphabet Swaps Buybacks for Data Centers. Wall Street Is Getting Nervous."
-    },
-    {
-     "n": "24/7 Wall St.（英文）",
-     "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOU41VEhZT0hhZFRRQXVmRWhKWml6Q3FSLVRxeXpRYU9xLW5xQ21MT080OTJvNEtmcmQ5ZW05Tl9XRG4zeVZ1VVhNLWphbXB3ODJpcTBaY0hXc2J4RHBtQm1wVFJHUTlBeC02YkJydmF2QUFTS0s4eFU5UVB1bkZhdmZpUlQ4NnJSZHFlTnpoVzVYVmZmbnJ3NkMtbHZfT2N6M1p1VXk1QUNsWjdWVmpUeU9VZ0dCWGs?oc=5",
-     "t": "OpenAI Is Buying Google’s AI Chips, a Hit to Nvidia’s Biggest Customer Bond"
-    },
-    {
-     "n": "Data Center Knowledge（英文）",
-     "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOFFKU0dGWEdWMXNYTVM4TmhJTEFMRndMSHg2RkZFVkJDdFNkYXpMc1BBNFhSekdBWU52a2YwNk5laU5xWkJZc0VDajU3ZmE4c3Fsc2lrcG5UQWxiOWlCODlmeVotLVdmVVpza0t1S2pCR294Vjk1czAzNTNGaXZNNFlGR2ZlVFdJWkZrYlhxWVgyNnBQalFQemNLY1Q2S19mOHZtTVl0QQ?oc=5",
-     "t": "Oracle Cloud to Offer Google TPUs and New AI Chips"
-    },
-    {
-     "n": "Yahoo Finance（英文）",
-     "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYVY4SmxCSFR3aDBTSUVFYXdyMG9vZ3l4ajlBZS1TU0w1d2lzZUhqYUtqLXczMUtoNGF5ODZMNWdETzVmeF90cktwVFd5aXpRU205djdmc2I3QXJYeVhEc2pELVVqeHl4S3R5NTg2NTcwMTF2M0ZZak9DX0NXWjU2OEF0aXZOMHhGcVQ3SFNMcHlFM1VVbTl6WXRLeHN1U0diVzU2TWNR?oc=5",
-     "t": "Anthropic Flags Data Center Moratoriums as a Top Risk to Its Growth Plans"
-    },
-    {
-     "n": "Startup Fortune（英文）",
-     "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa3FrY1liNWY5enZvMVpUX0N3T0h6T0VsLXhLbnNITjFmRUx6Y1d0TllQdEVNR1JVc193VEpZVkRGV3RROE4xV0l0LW84TUtwSFdEOENodzVrV29TeUk4Zm9EcHBNWG9nNzlQS3R1THlOcWMxcWRCLTNYRENPUm9TNG1BWXVqZEV3YV8zeDhLVFpRSVdqSFBvWnplakZpOWJ1SGR6a2wyR2RLZw?oc=5",
-     "t": "DOJ charges California man with smuggling $300 million in Nvidia chips to China"
-    },
-    {
-     "n": "Yahoo! Finance Canada（英文）",
-     "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUGo0V2paTkdlcmdTeFIyVVVwdmxjV3lKb2VmUklvXy1TeHdsYjZxN19ITXBPclNUbjVwSTE0ZjVubWY3RURyNlBBR3VVRjY3dFh6TGRoTGlnUWZDOEZQSk5ULVJ4dFU2ZG5EVnYyVjZtUVYzcWlUOTh3d1V0SGdQR2FzMU54bW9MYXNMUg?oc=5",
-     "t": "Malaysia seizes servers with advanced AI chips suspected of violating export controls"
-    },
-    {
-     "n": "Idaho Statesman（英文）",
-     "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBMNm1VQy0wTnBHcy1yYTN2UXBHZGdEdy1IZ2FHSWdqUjFrcUJibjF1WWdSb3dRTTNpMjVTT1g0THdwZGhyV3NRckhtYmVJWXRVZzJaSFVEWUNSRFNYTk1wcGZpbDZvM0FtNkxYeWR3NTd3bnFo?oc=5",
-     "t": "Nasdaq futures rise as SK Hynix boosts chips before Fed decision, earnings"
-    }
-   ]
+   "n": "ABC News（英文）",
+   "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUEhoYVl4OGJtaXFLRU1idHB1dmlvYk1uNEtNNnlMVkFlZEN4N3hpNVB5cmNjWkFEajM2WUZ4bDJJN0pNYlpra21QSGI4cFFwLWllM0xxZlptYWRmdkRlbXAwRWVLcGRBd3J3MDFpUDBvUjVWMElMOGwtZlJMemRJQzczLXI1cWNFMnJKeEcwcGJhUjkzVjZfZ3puam1BQUZFMTRFZ1BIa9IBrAFBVV95cUxQeXRhLUNLYUFqaEtwY25VNnhEUzVzZmRMczBrdVo0SnJXdjdCZjhCbVpURUZJQ2M2MUwyVzlHblFrcTQ0UGhIYUVubHhUZHFVbldqNnJxOFprRG9FRmJIV3ZPaFJiSHZ2a1k0N2R4Q2swcFJ2cDNhZVVJdG0zbG9qaFdvd1l5MXcwbjFWZnBFelBZdFZBMk9pekEzOGFmaEVqVVNmTkx4dXU0eXha?oc=5",
+   "t": "Federal Reserve holds interest rates steady as midterm elections loom"
   },
   {
-   "section": "三、生物医药",
-   "items": [
-    {
-     "n": "ABC News（英文）",
-     "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRU9xZWNDTzF1aFlDZDhDakN3VEhRWGNkNW1vazVNcmZ2ck5zLUducGRNQkVVZzhXaXI1NlZqNm9tRmtUZUNxT0luV2lTem1halp0bHg3aHUxUmVTVHV0MXdKYmpmQm82enRaVDRGVjJ5QTVUelhnRzVyNFQyOHBXU0MtZmRabkJhMjJVUHc4MlZfTlg0X0lGb3FYMlV6dUJRUDlLQ1V2SWdMNEwzcE5Z0gG0AUFVX3lxTE1KOFBNejNDZ1pmandiWkphZmpJRG1tdWZsZllVZFh0djJ2NWdzT2kybmNZd01memtqekFxc2IwZGNTUzljSE9LUGZ6R0dVTWZyUUR0TTY5dmZfSnVqNlJ2eEZTdHlwR0R0UzdKbi0yakZab0xNdW9wWTRVOVdvQWdMcTVYMURETjhyY05zN081RjNoZWFINHdKT2YwdnZDWTc3SjNXc0lEY0dLaHhGM3prZE5OVw?oc=5",
-     "t": "New weight loss drug retatrutide provides double the weight loss of Ozempic, Lilly says"
-    },
-    {
-     "n": "BioPharma Dive（英文）",
-     "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNN19wd1NRdjNRRTcwb1VndDlmVlNuZGNRMDBpWXV0aXd0UFFkTnZKb1A0dGJCdHZDd1VZN3hsVkFfcXFobTg2TDRyNVZPQ3paWkhRQWdFMHhyczdoaGlFRzhSdXNKU2pYbGcycEFRS08yaHlDZkEyVE5lUFp5RU41TklaTmN1NGFkWWZoNDdHU0EwNm1pbmszTERXUVQ?oc=5",
-     "t": "Lilly’s ‘triple-G’ drug tops Novo’s Ozempic in diabetes trial"
-    },
-    {
-     "n": "STAT（英文）",
-     "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRVpYTU1xREdoVzU1UXRDUVNfZE9Oc3FTc0tycU5LNHpIV1IyZTF6RDJEcUtFUTJMRjAwUWN3b3FhWWZFUlV0dF9VT3J1c2gxV2tvM1Z4X2NaRGltNDR2SEdXMkJrTWx1N3RtbllGQno1eGVwOEZxN0QxSllZUXhscFA3Wk1DYl9yR2MzN19aNDhUOF9vdDVkZGd5NFhqN1JQUm5uR2w2ZzBZdw?oc=5",
-     "t": "Lilly’s triple-G drug beats Ozempic in head-to-head study"
-    },
-    {
-     "n": "ad-hoc-news.de（英文）",
-     "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONUU3YW9XX3JTajhiTTd6S2tsS3FFTl9wWlYtYWtfRHJnUFRtYVJhMjN4YXdOM21FaHVzalhzdmdpNkpNaHVEX2ZJQko4aVNUckZtYnpPeWNnY1czd2xpQUN2U3hsd0NCdjRLdG9aWGRJZHlOQmo2SExtRUhfVG1iZ01ZNjJsSWVUSzVLdzBBVWQ1ekVpZU1NWDE5T3pxY1lPUXE3Y3AyTDc4SnJFbnhRZUo4aElUbDZWU2dJODRNOHp5WHZ6d0lnYW5GTVhabUhSZXZJUWplWU5aNHdwM21kSU1tMTF2cmlURzNFNWVYVGZrUHpBaXc?oc=5",
-     "t": "Novo Nordisk's Legal Setback, Awiqli Approval and CagriSema Data All Defer to the 4 November Earning"
-    },
-    {
-     "n": "Barron's（英文）",
-     "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYlRvUDRDOFJwb2dGZWtNNXRXWWN0ZGV3XzNUWGk0ckR4bjV1ZmQ1c0FLZHhUYVFXQmtQNndzR3lHQkRUNWo3WC0yNWFWZjBjNFUzc0t6ZVh4ZDNEbGZZVHF3eFV2dUlhX19BOFZ3aWhhamFYYUc5bFpOYVhpWGhfVkdDMWs?oc=5",
-     "t": "Genmab Stock Surges to Record High as Cancer Drug Slashes Risk of Death by 50%"
-    },
-    {
-     "n": "STAT（英文）",
-     "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMDB5NnZrQkZ2ejFESDBnbndOMUF2NFlmLWotbWRXZnhLNmw5YnVSNVNGaXEyVVJRVGhJZ1o5U1ptYXF1a29SS0V5UUNGQWxYZW16ZnVmWnVkMDBfcjVnRFZORXFVMXNPYTcyZi1wbzJYeHkxSlhldlVJWWNCUWFVWjBpd2k1anQyUDlzVElQdUZ5R09PQ2hF?oc=5",
-     "t": "Lawmaker wants government watchdog to probe TrumpRx over claims about drug savings"
-    },
-    {
-     "n": "Baton Rouge Business Report（英文）",
-     "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTkFIVXBXcGFSOGwwbnEzNm1wTE1kb2t4M25BR0I4TU5FXzRJUXFmUHB1YWVXb1V5RDMzZTA3aFIxUEdkT1pjNHF3SGl5MUNSdnZmbkp2U2dzVkZzcnBOX08td2xMdDFBTEt3VlRkQ1QwSktjc2JoLUZvUnJ2ZUZDS3hCUzRZZ2NlMWZuamJ3bDUxVTBXcV9LTA?oc=5",
-     "t": "Federal rules target hidden fees in prescription drug pricing"
-    }
-   ]
+   "n": "WSJ（英文）",
+   "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYzl0RW1fUXBMNlpmMFFiOEFSenRZRUJ5N2lUcDEyYlc0Zk14QlVwQkRHa3I1NEhwS0h5a2RxNzg5eWIta2ZBRlRmMVFHN0NBeFJuMnNScnB1NE1HTmRscWpqWi1MMFFMMlBHaEQ2Z2p6REZzT0wtcjlLNGZscmpGRW5QSl9odVU3SDJoQlhOZW5MU1hoWnh4dzVqVlJwY0o4SmxaWXpXU2UxMk45UFhUR0l3ZERDd1dMMGc?oc=5",
+   "t": "U.S. Consumer Confidence Improved in October, Conference Board Says"
   },
   {
-   "section": "四、世界头条",
-   "items": [
-    {
-     "n": "ABC News（英文）",
-     "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLUpWVmxZNkVNNGxlamhNRjkteVhjUVJNMXhDQ3Vyc3V3UkdTVEcyeUM0ZnEzTUlJQXRYMUZsNkZ5LTN5Q0VzWDFrVmVFSVlpOFBSaEpwa19qd0Q4SExzankxMEpIQjMxT2k5R0Z3emE0cDFCNng3V3lwVjBQUDg1NNIBhgFBVV95cUxOWGtmd1BpZ1U2QlJOeTZIcXhKMTVTOVFEZDJKcDJPS1NzX2NsOG1RT2w2TkpUMDkwTWY1QzlZcGt4LVlmNV9NZlFVUG04S0Y1U2hUSUdFSk5sUlFId1VsZzlnd1JvOGlWQnY2LThiN1J6cjZDSjdSWHd3elNWS3FpYWJqMXFnUQ?oc=5",
-     "t": "Supreme Court allows Trump to implement parts of his mail-in voting executive order"
-    },
-    {
-     "n": "Reuters（英文）",
-     "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLUotYWh1WFdrMnphczZlaFJpUldzNFo2TnVweFZVbDdVT1NvY0JJaHV1dV95ZnQySUtha2F3dkFnbGlMcjkwREh2ZldydDJab3JqaGRJb0E1emtsR2hOUTd4MTVmbG1LWUNPLWJVenJZQTQ5cnFsaEFfcm5EU1ROMW02Y2Y4dkRRbENOUEtRVEdfbVUxSjhwbXM1b2RqWnBGZlgtTmJVNjlhN053bVcwTnY2UFZEZlNz?oc=5",
-     "t": "Trump expands hunt for noncitizen voters with broad subpoena campaign before midterms"
-    },
-    {
-     "n": "USA Today（英文）",
-     "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTy0tNDdCQk42ek5nY2RhcE56SmZmNE1TSmo1VVNtZmhLTjN2MkgxNlNEUzJEU2doRkJjWlFLNXJROEZPbEVVcV9faFVJMU9SSEFtTXo5M2JwRElkVzBTSmxWVm96QW9KYmhOVURBbi1UcVFHYUxScmtxVnZ2TktLM3gyN0s2TlhtX04xZmtzTm5qWXl1cnB0RDBlWjZEY3ByRG1yVmYzaEJuN1ZaNTBmNHN4QXp1YUJfR1QxOQ?oc=5",
-     "t": "Trump floats nominating Ted Cruz to Supreme Court for future vacancy"
-    },
-    {
-     "n": "CBC（英文）",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ0dtbG95c2h3TXdodUZtNDBJSWdhWnh0ZnNfLXZFSHpmUVlaNjFPcXJYWUZaa1NpaWlabktqZFJWQmpuOFZHeHR1bFlUcDFzRTNGV1UwbFhKMzRaclVNQkRYaEdlODVvaFlQSEJpMTFyYzdpd1k5THhwamxQT0ZZUjlNT0JoN1Nk?oc=5",
-     "t": "EU dropping associate membership title for its closer alliance with Canada"
-    },
-    {
-     "n": "Euronews.com（英文）",
-     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbzZLZDV1RVcyUHNhOUFnYTUtTnYwQU9xTkJnTFYxdHhrdHlXQVZqa05RNkF3Zi1Pb0NCVHpOeXZwSlpYSUJJUkhkRW9HQ3l0QjAyWUFucl9PdkhHWnh3MHFYX0xCdzZyR2cycGtDWmNMbFZIUjhTcDFuZWFJR19CdDMyNGd0cE1ZNlZ0Y3l1SFl0TWNvREw3SlpyVmh0Yy1SeWs4Yw?oc=5",
-     "t": "EU removes mention of ‘associate membership’ from Canada declaration"
-    },
-    {
-     "n": "WWNY（英文）",
-     "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeklkaS1fbjNoSm5WNEFTenktZi1uMnJPVGd5dkwxUDhLR0RkbXR6d0hfNkRpNTA1Z1JMVGl1VWx4MVQtMTRwRWpIQXZGWVNNa2pjN09PZjcxamVnRWM3bFQxMnhvZkVNTlRKb1F5QkNXc2hSUE03TG84dFo3RFFHNXNJYWM3Z2tZOE9Qb3RPUdIBowFBVV95cUxNeXcyTjlZRTU2VVBBQndzZlV6LU5oM0ktbE5JVmEzaFRjaVp1enVoVlBQbjM1bHo5bDFyUmYtblR3Qi0xbWFlMmhDUG9wMXhSNzhkWk1aU1hFMlNoSWtJY21UWm53dWo0R0F0YWp6a2hCQzJLV1plY3A0RmJkd0pMSC1vZjZUbjYxYzJLMTFSUUVSMVF2U3UzdjB4dUNMUTNiVUlj?oc=5",
-     "t": "Trump says US will beat China in AI as technology emerges"
-    },
-    {
-     "n": "CSIS | Center for Strategic and International Studies（英文）",
-     "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaHJweUhNSVFWUjBPam1sdkFseTlVSmkwTFNmdnVCV0xLcHhQVnhyMzRWZElncjRLbzlfWXdjbXVzSGo3V3FENjVaNmc3bGZvcWhqLU5qUjB3SXpFUGx0VVdDcFg1NkgtYS1RSnJuV3hERGQzVTF3QTVUSkFTR2Nxa2xXN2o1ZTA?oc=5",
-     "t": "Takeaways from the Trump-Xi Summit: The Economic Security Angles"
-    },
-    {
-     "n": "Amnesty International（英文）",
-     "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVUxpRnVYR0YwRXR1OEhkb0Y2RmFMYW5YeDVqaV9HajJDTEV0em1zQ3hmZFFlRWpUTXlkdEFETzl3TEplM3BrR29wZVdSeDdrVlNvWHhrWFdZVHNKSEF0dGN5ZnZBRi1vdEdjaTRldTJBM2I5SnhDcFNTUUR6NFBlOWtZNWg0ZG1kWVJjZnQtblYwZE5mWXNXNGZPVEdkWTZHNVJiZk5kM0NkRFZGdzB5dU1hb05hb19id1JURzB5d29PTVVBT0M4OEs4OFFwWlNybUZ6NHVkVGZsY0hiWi1UeldFZHo?oc=5",
-     "t": "The Netherlands: Withdrawal from Eurovision must spur the European Broadcasting Union to suspend Israel"
-    }
-   ]
+   "n": "Indianapolis Business Journal（英文）",
+   "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR0E4XzZkdUZUU3c4QU1pRWhjVVpTZ25yY2o3em1VY2FaUUdfTzZnTkJ1LVZLa0VsMHpIZHNsQkhZYjVkWDIyMzl3NjRWeUpUYVg1M052dXhGUWJnMnJlV3lzWmZYUC1ha3c3WlQ0UjduTHZObUs0LXNXNWRGT1cwMkxCamFWUQ?oc=5",
+   "t": "Consumer confidence recovers after gas prices ease"
+  },
+  {
+   "n": "CNBC（英文）",
+   "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5xRjQyQzJpcmtZZ1gyQzd0US1aeXZ1QU1zUmNFcWJ2X2JwN0VJSnJlOThNcWw0VFdQd3dfY3FnWVl1QldsdHR3cTZjcFZ6a3hyQWJZb3lTQlI3LS1WMlVTU1VTajVvTnZLRW1pWVZB0gFzQVVfeXFMTUo4VEtvRGpBaGpfVFFfUVZmM2VGbVI5WXZUbTZHZktXMFl1VUphelZPd3pvZXRieFJ2VmRTaWdBaFJRUFZlbVJKMnRINXF0bnpTcm1YWHlsRWhnS3hQN3ZXQWZUc25sNjNXdmhuRWNjVElmaw?oc=5",
+   "t": "UPS beats quarterly expectations, raises full-year guidance again"
+  },
+  {
+   "n": "Yahoo Finance（英文）",
+   "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRVRQR25NTGNMWF94aWxfcE5FNVllc3BfeUs3VXc1NWMtTndYOTVtVlB1OGZ3WER0R2NRZTllcTFWSllybk1SQ1o3ZjdjXy1FdksteTRrdEFtVnRwSnRHQ0RkZTRKMUxUVDRCX2NuVWd5dS1HQ29DOE9GNFZnYmZ5MDNIYVNtY0VOdnEzUzhWcjNReDg3MVhudUVnbU5iQ1ZGaXZr?oc=5",
+   "t": "PayPal Raises 2026 Earnings Guidance After Q3 Profit Beats Forecasts, Shares Rise 1.2%"
+  },
+  {
+   "n": "The Real Economy Blog（英文）",
+   "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPR1liaEw3bWxBRHk4dFhMcGs3QnNPQzRxX2lYVjJpb1c4XzRBbGtuWERYY2lCQlY2dXoyUWFwdzc4Mk5Ba2J1a245b0t3cEJxREg5NThyZERKdkZ3YWJGZ3RPUFB6dXZ1dFduNEdxbTJWQVVLdDNMR09DS080RXYwWGY1MHV4bldORWNENklKSU9tc0FoeUFTd0pLRml1Zw?oc=5",
+   "t": "Bank of Canada raises interest rate to 2.5%—with more hikes to come"
+  },
+  {
+   "n": "The Economic Times（英文）",
+   "u": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQbG1YWUh1MkIwczE1X2ZzNHJLSE1JMDQwbERkY0FsaUgydkZsNFY4LXBaRjhnaXpjTTlCUkgwUEdNT2hYaEcxQ3k5TUhta2VJQ3lqV2hJLVRQa2tqVkxTNklBejY0V2hsZkJSbWFZeEdvYno5d0ZoQTlfVkZheUJtZU0zSU9VTFVIdjRhNEpYOGtSMDVvY2hONmlNeVNFS2lodTNfdXpVUURXbjlGcmwwUjJWdDZ2dFE3b1BrZElEaEZTcDg5QTYtaUFxaTdfR1dsRnpIVS0xYl8tRjkxYS1ObUVmN0lqcnhvUjBVd0dWQjRjR3FiREFBUnhLYmo2c1dhWlZhaFhXUktVUm1rcWpJYnlpM3NkLUtiUzk5Y3oxNXJMNVQ5QWfSAasCQVVfeXFMUExYejBYcG8yWXV4U2I1QWM5NFUtU3U4MG9JYkZERnQ3NUNBLUNYbDd5QTlWWVBFemEyVFVRS3NrcVJKV1pDeTlUWS1MakJqNGlSS29iYlBDRGdYU0o2UnZJTjRhODdXb0Jma25VeDZuWkFhb0UycWY0a0lqS1RKTWthd1Z4VTZ5azZodVh1Y3EtY1BmYlBsY1o5VEF3WUs0Wk9SclBsX0cza2p5TVpQVjVOT0ZnSU9oNGhfZ1FHMWJ4QXF3ZVJFOUw3a0pwekd1eGstd0ZIb3dYMnpWNmMzd2p4bUxfcnFwNVRRXzNUcmZLN1FTeDhpN2F1NWtmUTFsMldtZW5hRmlkS3JjQ1lEc01GQWZDcnVJazB3bHF2aTNoR3diZ2R4cm52Tk0?oc=5",
+   "t": "US Federal Reserve holds interest rates steady as stubborn inflation puts future rate hikes in focus"
+  },
+  {
+   "n": "The New York Times（英文）",
+   "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JV0t1VzdLRjByRlFFemJORWcybEE3eFhxMUpFWGNYS0hnVTk3VzJLLXMzZlBXUzlyTWJWenEzSjFNWVE4NUxsMmFFU29KeEhpNGthZWVjQW53Y2xUQjNtNU9ReGJpNzF4YzhuVUYtXzltTXJvNm9VeFlPMTM?oc=5",
+   "t": "Microsoft’s Profit Jumps 32% Despite Big Increase in Spending"
+  },
+  {
+   "n": "Forbes（英文）",
+   "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcGFjUl9xRFBLTEtwTGNWMU9xRGhpV185OGhYR3BpT2xhb2RhSEJLX21oYzUyNVVMZzlJVWFHdjlTX2Q5aFhMVUI2WEV5UFdGS1JKZ1ptRmFzbjF0eEdZS2J3YnhmN0NVSnAtYnYyencwWVhCMDEzVWpZeHo1YnBtREFpV0psWXI2S0ZfNndsWjBhMzdBTUI1WVBtelVCczF2a1ZYdjVLSnItTWFTSmZ3Vm9aenF0OFlmLUVNSDVybw?oc=5",
+   "t": "MSFT Earnings: $36 Billion Net Income In Q1 Earnings Report"
+  },
+  {
+   "n": "The New York Times（英文）",
+   "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWE5iQ1RBMElPMEZPMXU2bzJoYWM2V0Nsakp5Y2NQVFBJQ1dRTU5wVmxFTE4wZDk5a1J1akZxRTBQVnJwTEpQRC1ENkF6WFFCbUZIV2lpdVR5NGZhM3ZvVUhHRzI5UTZRcm82dFJvOV85VGhRNG83UEJOa0x2bHhaNDlUYlk?oc=5",
+   "t": "Alphabet’s Revenue Rises 25% as Profit Falls"
+  },
+  {
+   "n": "Reuters（英文）",
+   "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNajBhM1htcElGckpqVEh4RzlEdTM3emlCNXFUUHhWd2JBSTROUEYzOUNrSkxSWm1wVHZNbEl0TDVCbEZ5WnBSMVRkY3ZQZTJOQTgxYXJXa1daRDZMRmUwc1c0bWExV29zcGhJM1Q3eWc0M2RCblVoTUxzX19qUG0wVUNlT1N3QU5uNE02aDhjNW13LVlaY0dib203U3J2Um9PUWsySlEzTFlLbkFRc25jbHA5TkFpbzlBX3pJUmhGX0E?oc=5",
+   "t": "Alphabet's heavy cloud spending drives bigger-than-expected cash burn"
+  },
+  {
+   "n": "Barron's（英文）",
+   "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc1cyWEw2N29xSWxneld4YlNXRFozMUVXMVVuR1ZBbXBDWno5Nzd4QklMQmFVZi1yTld5M2pfTk9TOXpYdGRBVm51WTNKQ2J4MVJPME1naEtCM3N2SXBNbVVlZzVBdS1nbnVnNy10WFFQanh4Y1VjUW12Y2dsYTVzTw?oc=5",
+   "t": "Alphabet Swaps Buybacks for Data Centers. Wall Street Is Getting Nervous."
+  },
+  {
+   "n": "WSJ（英文）",
+   "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbkxxMllvRjN2M1VzSVJVSU5xNnJmamxXSTA3a3dWU2VLeW1sZjhLbDhLcXoyakFIYjFCVktFMFNfM3JaenA5UjFMRTE2cEVVTXdlN3l0eUpQN2d3cXM4VUhZc3owSGdUTDF2N01pT0U2WTVIXy12bDBtRS1ZUjNob3YtYUVkUU5hVEdxVVFjaEpHMVdfVHNHY1ktOEtLa2c5?oc=5",
+   "t": "Exclusive | Broadcom CEO Intervened to Seal $63 Billion Anthropic Debt Deal"
+  },
+  {
+   "n": "Yahoo Finance（英文）",
+   "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZFNhUGZLTXpFb3Vqemplbm01M2N6WllRUVdER183d0VLVWU3ZkJYdmRrcFlCcFVuRWpkSXV3Y1J0dFJfbHJOc1lROU5EOWlzYmloTUNXNmN2OFl6Q0VPQkZsSHBmUnBEcGh0dk51REd1VXM1Mnh2a0RLMWtzYTlFdmxXU1JIdGxKT3k1ZGl0NnJ3SW9n?oc=5",
+   "t": "Banks Eye $21 Billion of Bonds for Broadcom Chip-Financing Deal"
+  },
+  {
+   "n": "Yahoo Finance（英文）",
+   "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNR0x2UURrTzFxeXZLNWhOaVFndDNzVURqV2VNbVpyX2dvS2N0UzJRQXFISE9hT1NzbGI2VnFKeFBrQ2RxaE1KRHBWbXdXSXZkVUhkSW0zVFNSN0cybGRYMkljOVluTDhjdDNIS1V2ZmhnQl9DdjhsbDZaek5VZnpnRGlISW9TcjFfak5iZ0ZkNW9NVF8xUThUbGloaGYwUQ?oc=5",
+   "t": "Anthropic taps JPMorgan to lead IPO’s U.S. retail sales, Bloomberg reports"
+  },
+  {
+   "n": "24/7 Wall St.（英文）",
+   "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOU41VEhZT0hhZFRRQXVmRWhKWml6Q3FSLVRxeXpRYU9xLW5xQ21MT080OTJvNEtmcmQ5ZW05Tl9XRG4zeVZ1VVhNLWphbXB3ODJpcTBaY0hXc2J4RHBtQm1wVFJHUTlBeC02YkJydmF2QUFTS0s4eFU5UVB1bkZhdmZpUlQ4NnJSZHFlTnpoVzVYVmZmbnJ3NkMtbHZfT2N6M1p1VXk1QUNsWjdWVmpUeU9VZ0dCWGs?oc=5",
+   "t": "OpenAI Is Buying Google’s AI Chips, a Hit to Nvidia’s Biggest Customer Bond"
+  },
+  {
+   "n": "Data Center Knowledge（英文）",
+   "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOFFKU0dGWEdWMXNYTVM4TmhJTEFMRndMSHg2RkZFVkJDdFNkYXpMc1BBNFhSekdBWU52a2YwNk5laU5xWkJZc0VDajU3ZmE4c3Fsc2lrcG5UQWxiOWlCODlmeVotLVdmVVpza0t1S2pCR294Vjk1czAzNTNGaXZNNFlGR2ZlVFdJWkZrYlhxWVgyNnBQalFQemNLY1Q2S19mOHZtTVl0QQ?oc=5",
+   "t": "Oracle Cloud to Offer Google TPUs and New AI Chips"
+  },
+  {
+   "n": "Reuters（英文）",
+   "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQi1pQlpXMFg0djlmZFhkcGFlc3hJWmxKNXIzeFlTOWRxSXd5YWtCX1FRdUdlWWM1NEZxQVpOWktKbVkyWWR1aFRhbFd3SnRRcW5SZTJ0YXRvQTZ6MjlmVmFMVThhSldFTUpseWRtblVrel8tM0VISmVOVmdVend5UTFOTHhKazBXalpIOHVUdkVmcm5YdTI4UWk3MUJObk9GMzRYOEpkeEFXVnhwZXc?oc=5",
+   "t": "EXCLUSIVE: US DOJ is inquiring about Nvidia's purchase of Hugging Face, sources say"
+  },
+  {
+   "n": "Startup Fortune（英文）",
+   "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa3FrY1liNWY5enZvMVpUX0N3T0h6T0VsLXhLbnNITjFmRUx6Y1d0TllQdEVNR1JVc193VEpZVkRGV3RROE4xV0l0LW84TUtwSFdEOENodzVrV29TeUk4Zm9EcHBNWG9nNzlQS3R1THlOcWMxcWRCLTNYRENPUm9TNG1BWXVqZEV3YV8zeDhLVFpRSVdqSFBvWnplakZpOWJ1SGR6a2wyR2RLZw?oc=5",
+   "t": "DOJ charges California man with smuggling $300 million in Nvidia chips to China"
+  },
+  {
+   "n": "Fortune（英文）",
+   "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaFAwNmlkeWR3Y0w5cUZrREpNQzV3QkpLaTctd3EtTkRnMjBxS09oa2E1R3JwbC1QMERnVkJJZS0xaWJ1S1N3VUd3OTRiNGZGbkw5cnpCNW9sb1RQWXRzQUVFS090c19oYVdpQWNsT2tXV0RfNkFmN2JvemNPOFQ0VEVOanBidXY0OHZoZFJSTUhMek0zT1pj?oc=5",
+   "t": "Malaysia intercepted $12.2 million shipment of servers with AI chips suspected of violating export controls"
+  },
+  {
+   "n": "Quartz（英文）",
+   "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4yQ2V4Rm94SVJfVE81WEJCU1RaWEF2Z0o0SkRRQ29NVXpLSmZvNkpJOUt1SjJpWkM3TVIzQ243V1pTNS1ZaDc5aGxDck40aUVGOUI0QjhCVkpkZ2N0NEV3dXdwUFdVenMyVmhlaG03T05KRmxTVU1V?oc=5",
+   "t": "SK hynix unveiled $75 billion payout plan with Q3 2026 earnings"
+  },
+  {
+   "n": "The New York Times（英文）",
+   "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQTJqNWFTVDd0dGZUZEZKRDdFMm9ZTzhhODBZMXQzbGUwRHVjMkJjNlJ1ejcxMjlOMUNDcFNJNDVJYWZMOTVZNXR0M1UyS0V5U0cyOUNfUjFNZ0VTUFprd3BuSXZCM1ZYMnMyMTQ5T21iVkplaFBaMUZkWTJLWHktcEFGRnlFWWh5MTg2UXNZRVNiQlk?oc=5",
+   "t": "Who Stands to Gain From an Anthropic I.P.O."
+  },
+  {
+   "n": "Yahoo Finance（英文）",
+   "u": "https://news.google.com/rss/articles/CBMiggJBVV95cUxON1JRVm02Tlo3NDN4R2Mwcm92eVVzcTJkSV9hNDE4N19QaUg2NEtsLWpVbzBtVVVrZzlXMUZIQzFjZTd5MVpLdnFaZjhnZkNHUTBNTnAwcFpWcHpCTkVzeEdLejhPRU1xRHdSUl9oNEZLZW43NEV1SEFwSWFqQU8tY0pOLWtEVGRlVTQ0aWJkQ09hNnNOY0NsTzAtX2ZKY2J2UmxmOVFYTWx6UnZtRkhzR1F3eFZGemY4Y0x2Ym9IVHhyN2dCMV83Sk40VDR3bEZpVVc4Q1o1T0FUeTFOd1o4U0pwNjBKTGhKbURaT1FYMkdWa2JMT084MlNvZHByaGtyU1E?oc=5",
+   "t": "Here's the cash windfall the Anthropic IPO may bring to banks like Goldman Sachs, JP Morgan and Morgan Stanley"
+  },
+  {
+   "n": "WSJ（英文）",
+   "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUEZjTlN5RzBoUmYzU0xSRnRfOFZ0cXpMTmU3ZUd5dE9rdTlqSEd1cnB5N291S3dRZkJPWEdyaU5ORmpZMzhsczVIX1hyVHJTb1VRNFVrRXhDRUFHQ0lleGF4QXdpMHZoZFo4NFFuTDNnTVB4VXJJVDcwR3p2Z3FxYXZaUVJkcTZTNXVoam85c19uQWJSV212cU5heTNscXphQXVxMDk2MDhyRnE4U29NaDgxR2lJcVVIb0E?oc=5",
+   "t": "A $300 Billion ‘Debt Wall’ Is Looming Over Private-Equity Backed Companies"
+  },
+  {
+   "n": "WSJ（英文）",
+   "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdHd1Q1FTWEFlUlUtZ1FQRWJfYm1QYm5KZW1jTVA2cS01R0cxb0xsNVNrdXJVNm44VTd2ZWN4WnY1R0tla0JuM3NVUmpBVF9GLTl2WEdFRmNUTFpEVUpHVHQzdUREUFBwN2ZEZ2xGcThUa0lKamdzaEY2c19pRy1PcXZCd2hPUmRfTmQ4bUNGWkFPbTM3Z04zLXB2bUdtclBvVmpmQmhqcEloSTJUOHg2ZzRsbEI?oc=5",
+   "t": "Oil Prices Fall as Traders Weigh U.S.-Iran Diplomacy, Saudi Attacks"
+  },
+  {
+   "n": "WSJ（英文）",
+   "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSlpYejlRTmd1MFprTGxzTHhIQi1taDhJVkMtTThYN1Y5UktONWZxcVM5TEJ2Sy1Jd25QZXFCem5uNDkzOGU3Z0NONzE1V0ZPT2E2QlJTdjZreDg0eXA5Z21MandpYmI3azQ5Q0h4azVTdHpYQnVQVGdYR3pEajBid0QtT0taZl9OVktOSUhIWjl6eGdqYlJ5RFZOd3p1LVRkVjVCVg?oc=5",
+   "t": "Oil Prices Rise on Worries of Middle East Conflict Escalation"
+  },
+  {
+   "n": "Reuters（英文）",
+   "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUhHblNqOGNPczlpdUR2NDFMWjZxX2FZYjVTTzREX2R4YU5jRzF2ckN1MG9sSnIxWG9hbDJ0TjV4YTZXRjdqSUc3aF9OcTJuUVlJZkZrdUd0V0RMUU1qUWxiNDdmdXhCTmJUczZWOFRUWTRKdzJQLUJYNXZBODhnTjJfOXMyNU01OGVreWM5TkNyamNjbzV5UzAxX3ZOdWcwcUE5SFZHSkEyUjZ1M1dUQ3ByRDdxbC13ZzRQR0xfcTZ0bjh6dnNPalJZRWI?oc=5",
+   "t": "Oil prices rise on Yemen fighting, Saudi refinery attack"
+  },
+  {
+   "n": "Transport Topics（英文）",
+   "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0M2x6SVJXLWExZ01sX05JWC1qMnpmSlIxcDdLOXVjUHktbDNoTGkwbWZEdnIzdllfeGZ6clpLWEVBS1U0WUJxc1BpbWlNYlhHMVNGZV96VjdjM2VKUGNNbXp5WEEtTkEz?oc=5",
+   "t": "Oil prices increase after attack on Saudi refinery"
+  },
+  {
+   "n": "CNBC（英文）",
+   "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VVTZnQjZMOUgxd3doMmJKclN5eUlkbFJoOE9TZDJQVlN5Zm92aDRIYW5yMWcwTGxtRHBfNW9FQ3NIbTJXSmdJZU9ibE9XZFRaQWJXb3JYbDJWY1l4c2o5OU5xeC1VbmFRN1JmMWZUUG9LNVhCYnk2ZNIBfkFVX3lxTE9PVWR4YV9Fa0UyQi0tN013V0d5bjY3bUJqZ1R2VGlsSHdGOURZVkRTSDhLUkpQS2lyV0ZDVlNua3RRelVoMmV4QUdfZUU5S09oV0ZHQTAzNm1hVWxVTVMzRWd0X2M3b3RfdVFUcFNfckgxMUdKMnNldWo2RWpIdw?oc=5",
+   "t": "Oil prices rise as U.S. reportedly tells Gulf countries to prepare for Iran strikes after midterm elections"
+  },
+  {
+   "n": "Barchart.com（英文）",
+   "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUnI5NFVwaTFTMmN4MVhDU2o2MkNoTDdHMEFXeHhKNVdjREpOUGEzanNSNk1RSTFMcEgxZDVPcTk4djd3VDcycGJ1TWsxQWtIbF9iQlFtdHJHU1dURzcwZXRIYy1fRkpSaExFTUpwazVnUHJYdHFNRXZ0cVNXbWZsZTZzM3dhTlhDVjRsVDlOYmtmYWJyNWw5em4ySE9KSGNaMnMxa3k0T2VMQ3JsOU1MNlVpNERnV19lQlZSc2wxSGtvZFFxR3NnTGpyVGlRLVVGN3NxVA?oc=5",
+   "t": "Crude Oil Prices Rally on Report that Persian Gulf Is on Notice for US Military Attack on Iran"
+  },
+  {
+   "n": "Yahoo Finance（英文）",
+   "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYVY4SmxCSFR3aDBTSUVFYXdyMG9vZ3l4ajlBZS1TU0w1d2lzZUhqYUtqLXczMUtoNGF5ODZMNWdETzVmeF90cktwVFd5aXpRU205djdmc2I3QXJYeVhEc2pELVVqeHl4S3R5NTg2NTcwMTF2M0ZZak9DX0NXWjU2OEF0aXZOMHhGcVQ3SFNMcHlFM1VVbTl6WXRLeHN1U0diVzU2TWNR?oc=5",
+   "t": "Anthropic Flags Data Center Moratoriums as a Top Risk to Its Growth Plans"
+  },
+  {
+   "n": "TechRepublic（英文）",
+   "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVk1ZMkg0dmdRTEFFekMwaHFZOGllbnhTeWpBT21xeEEzNkZkRVZ0ek5jS19KVXNVV0RpLUdyb2RMLU53Zy15OGlCVkNyN2g2UmYzSGI2ZHZaT3FlVWY5Q1NLMjZvTm5xb0xKcF9YREVpYnBQOVNJTzMzaGt3TzdwVXFwQzdMM2l6ZzhfYm9R?oc=5",
+   "t": "AI Data Centers Are Straining Power Grids. New Rules Aim to Reduce the Risk"
+  },
+  {
+   "n": "美国经济分析局（BEA）发布日程（英文）",
+   "u": "https://www.bea.gov/news/schedule",
+   "t": "BEA release schedule"
+  },
+  {
+   "n": "stock3（德文）",
+   "u": "https://stock3.com/news/alphabet-microsoft-und-amazon-praegen-earnings-woche-17350766",
+   "t": "Alphabet, Microsoft und Amazon prägen Earnings-Woche"
+  },
+  {
+   "n": "ad-hoc-news.de（英文）",
+   "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONUU3YW9XX3JTajhiTTd6S2tsS3FFTl9wWlYtYWtfRHJnUFRtYVJhMjN4YXdOM21FaHVzalhzdmdpNkpNaHVEX2ZJQko4aVNUckZtYnpPeWNnY1czd2xpQUN2U3hsd0NCdjRLdG9aWGRJZHlOQmo2SExtRUhfVG1iZ01ZNjJsSWVUSzVLdzBBVWQ1ekVpZU1NWDE5T3pxY1lPUXE3Y3AyTDc4SnJFbnhRZUo4aElUbDZWU2dJODRNOHp5WHZ6d0lnYW5GTVhabUhSZXZJUWplWU5aNHdwM21kSU1tMTF2cmlURzNFNWVYVGZrUHpBaXc?oc=5",
+   "t": "Novo Nordisk's Legal Setback, Awiqli Approval and CagriSema Data All Defer to the 4 November Earning"
   }
  ],
  "sources_note": "行情与股价数据来自 Yahoo Finance。新闻编译自上列英文媒体报道，仅依据标题整理。",

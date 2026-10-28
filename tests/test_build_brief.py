@@ -8,9 +8,12 @@ IDS = {"h1", "h2"}
 
 
 def narrative(**over):
-    n = {"tldr": ["a", "b", "c"],
-         "sections": [{"id": i, "groups": [{"h": "今日要闻", "items": [{"t": "x", "refs": ["h1"]}]}]}
-                      for i in ("markets", "tech", "biotech", "world")]}
+    sec = lambda i, sector: {"id": i, "title": "板块", "sector": sector,
+                             "groups": [{"h": "今日要闻", "items": [{"t": "x", "refs": ["h1"]}]}]}
+    n = {"theme": "主题", "tldr": ["a", "b", "c"],
+         "sections": [sec("markets", None), sec("s1", "Technology"), sec("s2", "Energy")],
+         "trends": [{"t": "趋势", "refs": ["h1"]}],
+         "calendar": [{"when": "10 月 29 日 20:30（美东 8:30）", "event": "GDP", "watch": "增长"}]}
     n.update(over)
     return n
 
@@ -43,6 +46,18 @@ class ValidateNarrative(unittest.TestCase):
         with self.assertRaises(ValueError):
             bb.validate_narrative(narrative(tldr=[]), IDS)
 
+    def test_sector_must_be_a_known_yahoo_sector_or_null(self):
+        n = narrative()
+        n["sections"][1]["sector"] = "Crypto"
+        with self.assertRaisesRegex(ValueError, "bad sector"):
+            bb.validate_narrative(n, IDS)
+
+    def test_trend_and_calendar_refs_are_checked(self):
+        with self.assertRaisesRegex(ValueError, "unknown refs"):
+            bb.validate_narrative(narrative(trends=[{"t": "x", "refs": ["h99"]}]), IDS)
+        with self.assertRaises(ValueError):
+            bb.validate_narrative(narrative(calendar=[{"when": "x", "event": "y"}]), IDS)
+
 
 class Assembly(unittest.TestCase):
     def facts(self, markets=None):
@@ -60,9 +75,11 @@ class Assembly(unittest.TestCase):
         out = bb.assemble(facts, n, prev, "2026-10-29T06:00:00+08:00", True)
         items = out["sections"][0]["groups"][0]["items"]
         self.assertTrue(all(set(i) == {"t"} for i in items))  # no inline sources
-        srcs = out["sources"][0]["items"]
+        srcs = out["sources"]  # one flat list for the whole page, de-duplicated
         self.assertEqual(srcs[0], {"n": "Reuters（英文）", "u": "https://x.test/a", "t": "Fed holds"})
         self.assertEqual(srcs[1]["n"], "FT")
+        self.assertEqual(len(srcs), 2)
+        self.assertEqual(out["sections"][0]["title"], "一、板块")
         # market fetch failed: previous tiles and US chart are kept
         self.assertEqual(out["snapshot"], [{"label": "old"}])
         self.assertEqual(out["charts"]["usmoves"]["title"], "kept")
@@ -89,11 +106,16 @@ class Assembly(unittest.TestCase):
         by_id["h1"]["title"] = "t"
         self.assertEqual(bb.resolve_src({"refs": ["h1"]}, by_id)[0]["n"], "新华社")
 
-    def test_stock_chart_sorts_high_to_low_and_needs_enough_rows(self):
-        rows = [{"symbol": "A", "name": "甲", "date": "2026-10-28", "change_pct": v} for v in (-1.0, 2.0, 0.5)]
-        chart = bb.build_stock_chart("tech_stocks", rows)
-        self.assertEqual([r["value"] for r in chart["rows"]], [2.0, 0.5, -1.0])
-        self.assertIsNone(bb.build_stock_chart("tech_stocks", rows[:2]))
+    def test_movers_chart_merges_gainers_and_losers_sorted(self):
+        mk = lambda sym, v: {"symbol": sym, "name": sym, "date": "2026-10-28", "change_pct": v}
+        chart = bb.build_movers_chart("科技板块异动股", {"gainers": [mk("A", 5), mk("B", 2)],
+                                                       "losers": [mk("C", -7), mk("D", -1)]})
+        self.assertEqual([r["value"] for r in chart["rows"]], [5, 2, -1, -7])
+        self.assertIsNone(bb.build_movers_chart("x", {"gainers": [mk("A", 5)], "losers": []}))
+
+    def test_sector_chart_needs_enough_sectors(self):
+        rows = [{"etf": "XLK", "name": "科技", "date": "2026-10-28", "change_pct": 1.0}] * 4
+        self.assertIsNone(bb.build_sector_chart(rows))
 
     def test_usmoves_percent_changes(self):
         m = {"spx": {"bars": bars([100, 110, 99])}, "ndx": {"bars": bars([200, 200, 220])}}

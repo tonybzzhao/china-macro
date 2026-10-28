@@ -36,6 +36,7 @@
 
   <section class="tldr" aria-labelledby="tldr-h">
     <h2 id="tldr-h">今日摘要 <span class="tldr-en">TL;DR</span></h2>
+    <p id="theme" class="theme"></p>
     <ol id="tldr-list"></ol>
   </section>
 
@@ -46,6 +47,21 @@
 
   <nav id="toc" class="toc" aria-label="目录"></nav>
   <main id="sections"></main>
+
+  <section id="trends" class="bsec" hidden>
+    <h2>长期趋势与风险</h2>
+    <ul id="trends-list" class="plain-list"></ul>
+  </section>
+
+  <section id="calendar" class="bsec" hidden>
+    <h2>关键日程</h2>
+    <div class="table-wrap">
+      <table class="cal">
+        <thead><tr><th>时间（北京时间）</th><th>事件</th><th>关注点</th></tr></thead>
+        <tbody id="calendar-body"></tbody>
+      </table>
+    </div>
+  </section>
 
   <section class="sources" aria-labelledby="src-h">
     <h2 id="src-h">信息来源</h2>
