@@ -99,9 +99,20 @@ class Narrate(unittest.TestCase):
     def test_providers_are_all_free_and_ordered_best_first(self):
         with patch.dict(bb.os.environ, {}, clear=True):
             self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_pollinations"])
-        with patch.dict(bb.os.environ, {"GEMINI_API_KEY": "k", "GROQ_API_KEY": "g"}, clear=True):
+        env = {"GEMINI_API_KEY": "k", "GEMINI_FREE_TIER_OK": "yes", "GROQ_API_KEY": "g"}
+        with patch.dict(bb.os.environ, env, clear=True):
             self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_gemini", "_groq", "_pollinations"])
         self.assertFalse(hasattr(bb, "anthropic"))
+
+    def test_gemini_key_is_ignored_until_free_tier_is_confirmed(self):
+        for confirm in ({}, {"GEMINI_FREE_TIER_OK": ""}, {"GEMINI_FREE_TIER_OK": "no"}):
+            with patch.dict(bb.os.environ, {"GEMINI_API_KEY": "k", **confirm}, clear=True):
+                self.assertNotIn("_gemini", [p.__name__ for p in bb.llm_providers()])
+
+    def test_call_cap_stops_runaway_loops(self):
+        with patch.dict(bb.os.environ, {}, clear=True), patch.object(bb, "_calls", {"n": bb.MAX_LLM_CALLS}):
+            with self.assertRaisesRegex(bb.LLMError, "model calls in one run"):
+                bb.llm_complete("s", "u")
 
     def test_network_errors_become_llm_errors_after_retries(self):
         with patch.object(bb.requests, "post", side_effect=bb.requests.ConnectionError("down")), \

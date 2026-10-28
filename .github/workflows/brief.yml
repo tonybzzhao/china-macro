@@ -45,6 +45,7 @@ jobs:
           # Free providers only, never billed. Optional free-tier keys (Google AI Studio, Groq)
           # are tried first when set; otherwise the keyless fallback is used.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_FREE_TIER_OK: ${{ vars.GEMINI_FREE_TIER_OK }}   # set to "yes" only after checking the key is on the free tier
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python scripts/build_brief.py ${{ inputs.force && '--force' || '' }}
 

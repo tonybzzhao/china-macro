@@ -383,14 +383,28 @@ def llm_providers():
     used. Nothing here is billed."""
     out = []
     if os.environ.get("GEMINI_API_KEY"):
-        out.append(_gemini)
+        # A Gemini key is only free if its Google Cloud project has no billing account
+        # attached; with billing on, usage is charged per token. This code cannot see that,
+        # so the key is ignored until the owner confirms the free tier by setting
+        # GEMINI_FREE_TIER_OK=yes (a repo variable) after checking AI Studio.
+        if os.environ.get("GEMINI_FREE_TIER_OK", "").strip().lower() == "yes":
+            out.append(_gemini)
+        else:
+            log("GEMINI_API_KEY is set but GEMINI_FREE_TIER_OK is not 'yes': skipping Gemini to avoid any billing")
     if os.environ.get("GROQ_API_KEY"):
         out.append(_groq)
     out.append(_pollinations)
     return out
 
 
+MAX_LLM_CALLS = 14  # a normal run makes 5; this stops any runaway retry loop from burning quota
+_calls = {"n": 0}
+
+
 def llm_complete(system, user, max_tokens=2500):
+    _calls["n"] += 1
+    if _calls["n"] > MAX_LLM_CALLS:
+        raise LLMError(f"more than {MAX_LLM_CALLS} model calls in one run; stopping")
     errors = []
     for provider in llm_providers():
         try:

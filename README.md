@@ -134,9 +134,14 @@ inside the hottest sectors.
   number.
 - **Costs nothing.** Only free providers are wired in, and the paid Anthropic
   API is deliberately not used. Providers are tried best first:
-  1. **Google Gemini free tier**: set repo secret `GEMINI_API_KEY` (a key from
-     Google AI Studio, free, no billing account needed as far as the free-tier
-     docs state). Model defaults to `gemini-2.5-flash` (`BRIEF_GEMINI_MODEL`).
+  1. **Google Gemini free tier**: set repo secret `GEMINI_API_KEY`. **A Google
+     AI Pro subscription does not make the API free**: a key is only free if its
+     Cloud project has no billing account attached (check the plan column at
+     aistudio.google.com/apikey; if billing is attached, use a key created in a
+     new project). The code cannot see this, so the key is ignored unless the
+     repo variable `GEMINI_FREE_TIER_OK` is set to `yes` after you have checked.
+     Model defaults to `gemini-2.5-flash` (`BRIEF_GEMINI_MODEL`). A run makes
+     5 calls and is hard-capped at 14.
      Google may use free-tier prompts to improve its products; the prompts here
      are only public headlines and market data.
   2. **Groq free tier**: set repo secret `GROQ_API_KEY`. Defaults to
