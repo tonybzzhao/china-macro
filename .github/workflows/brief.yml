@@ -68,6 +68,15 @@ jobs:
           else
             git add brief/brief.json brief/status.json
             git commit -m "Update daily brief $(date -u +%Y-%m-%dT%H:%MZ)"
-            git pull --rebase origin main
-            git push
+            # The data workflow pushes to main too, so a push can lose the race. Retry on top of
+            # the latest main; on a clash in the generated brief files, this run's copy wins.
+            for i in 1 2 3; do
+              if git pull --rebase -X theirs origin main && git push; then
+                exit 0
+              fi
+              git rebase --abort 2>/dev/null || true
+              sleep 5
+            done
+            echo "::error::could not push the brief after 3 tries"
+            exit 1
           fi
