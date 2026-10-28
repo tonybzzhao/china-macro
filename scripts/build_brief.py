@@ -12,9 +12,11 @@ Runs on China trading mornings from .github/workflows/brief.yml. Three parts:
      (Yahoo chart and screener APIs) and topical headlines (Google News RSS,
      English edition).
   2. Narrative (theme, TL;DR, sections, trends, calendar) written in Chinese by
-     Claude from those facts only. Needs ANTHROPIC_API_KEY. The model never
-     writes URLs or market numbers: it cites headlines by id and the script
-     resolves the links, while tiles and charts come straight from the facts.
+     an LLM from those facts only, in several small calls. Free providers only:
+     a Google AI Studio free-tier key (GEMINI_API_KEY) or GitHub Models via the
+     Actions token. The model never writes URLs or market numbers: it cites
+     headlines by id and the script resolves the links, while tiles and charts
+     come straight from the facts.
   3. Assembly into brief/brief.json.
 
 Every part degrades on its own. If the market fetch fails the previous tiles
@@ -32,6 +34,7 @@ import json
 import os
 import re
 import sys
+import time
 import traceback
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -43,7 +46,6 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 HISTORY = ROOT / "data" / "history.json"
 OUT = ROOT / "brief" / "brief.json"
-MODEL = os.environ.get("BRIEF_MODEL", "claude-sonnet-5-5")
 UA = {"User-Agent": "Mozilla/5.0"}
 BJT = timezone(timedelta(hours=8))
 
@@ -283,66 +285,206 @@ def time_note():
 
 SYSTEM = """你是中文财经新闻编辑，为网站撰写每个交易日早晨发布的美股与宏观市场简报。读者在中国，不便阅读英文，需要了解昨夜至今晨的市场与热门板块动态。
 严格遵守：
-1. 只使用 FACTS 里出现的事实和数字，不得编造数字、日期、时间或公司动作；不确定的写“据报道”或“待确认”。
+1. 只使用资料里出现的事实和数字，不得编造数字、日期、时间或公司动作；不确定的写“据报道”或“待确认”。
 2. 语言：书面、简洁、通俗的新闻语体，参考通讯社和财经媒体的中文稿；不用口语，不用网络用语，不做教学式解释。
 3. 标点：一律使用中文全角标点（，。；：（）“”），日期、数字、百分号中的符号除外。
 4. 新闻只给了英文标题，只陈述标题能支持的内容；多个来源口径不一致时，写明口径不一。
-5. 每条事实性要点用 refs 引用 FACTS.headlines 里的 id（1 至 2 个）。市场与股价数字来自 FACTS.markets、FACTS.sectors 与 FACTS.movers，不需要 refs。不要写网址，也不要在正文里写来源名称。
+5. 每条事实性要点用 refs 引用资料里的新闻编号（1 至 2 个，如 "h12"）。行情与股价数字来自资料中的行情部分，不需要 refs。不要写网址，也不要在正文里写来源名称。
 6. 人名、公司名、产品名首次出现时写成“中文名（英文名或股票代码）”，例如“英伟达（Nvidia）”。
 7. 每条要点一到两句，不超过 80 个汉字。
-8. 市场数字以 FACTS 为准，写明日期；intraday 非空表示该资产最新一根尚未收盘。
-9. 新闻源的发布时间不完全可靠，个别旧闻会被标成当天。只有一个来源、且标题像是旧事件的内容，不要当作今日要闻；能被两个以上来源标题印证的事实才放进“今日要闻”。
+8. 行情数字写明日期；标注“未收盘”的数据不要写成收盘价。
+9. 新闻源的发布时间不完全可靠，个别旧闻会被标成当天。只有一个来源、且标题像是旧事件的内容，不要当作今日要闻。
 10. 不要写利率的具体区间，除非标题中明确给出；可以写“维持不变”。
-11. 板块部分：根据 FACTS.sectors（行业 ETF 涨跌）、FACTS.movers 和新闻量，挑出当天最热的 2 到 4 个板块各写一节，没有固定板块；某个板块当天没有新闻就不要写。节标题用简短中文，如“科技与 AI”“能源”“金融”。sector 填该节对应的 Yahoo 板块英文名（只能取 Technology、Communication Services、Consumer Cyclical、Consumer Defensive、Healthcare、Financial Services、Industrials、Energy、Utilities、Basic Materials、Real Estate 之一），对应不上则填 null。
-12. 异动股：个股异动只有标题能支持原因时才写原因，否则写“原因待确认”，不要猜测。
-13. “分析”组（每节 1 至 3 条，可省略）：基于上文事实的专业解读，例如对利率、盈利、估值或资金面的含义。要有事实依据，简短克制，不预测具体价位，不写常识性解释。
-14. 日程表只列 FACTS 或标题明确给出的已排定事件；时间按 FACTS.time_note 换算为北京时间，并在括号内保留美东时间；拿不准的不列。
-15. 中国宏观数据（GDP、PMI、CPI 等）不是本简报内容，不要写；中美科技与出口管制类消息可在相关板块简短报道。
+11. 个股异动只有标题能支持原因时才写原因，否则写“原因待确认”，不要猜测。
+12. “分析”组（1 至 3 条，可省略）：基于上文事实的专业解读，例如对利率、盈利、估值或资金面的含义；有事实依据，简短克制，不预测具体价位，不写常识性解释。
+13. 日程只列资料或标题明确给出的已排定事件；时间按资料中的时差说明换算为北京时间，并在括号内保留美东时间；拿不准的不列。
+14. 中国宏观数据（GDP、PMI、CPI 等）不是本简报内容，不要写。
 只输出一个 JSON 对象，不要任何其他文字。"""
 
-SCHEMA = """{
- "theme": "今日核心主题，一句话",
- "tldr": ["4 到 6 条，每条一句话，最重要的事放最前面"],
- "sections": [
-  {"id": "markets", "title": "宏观与市场", "sector": null, "groups": [
-    {"h": "今日要闻", "items": [{"t": "要点", "refs": ["h1"]}]},
-    {"h": "分析", "items": [{"t": "解读"}]}]},
-  {"id": "s1", "title": "科技与 AI", "sector": "Technology", "groups": ["同上"]}
- ],
- "trends": [{"t": "长期趋势或风险，3 到 5 条", "refs": []}],
- "calendar": [{"when": "10 月 29 日 20:30（美东 8:30）", "event": "事件", "watch": "关注点", "refs": []}]
-}
-sections 第一节固定为 markets，之后是 2 到 4 个热门板块节，id 依次为 s1、s2……；今日要闻每节 3 到 7 条。"""
+PLAN_TASK = """任务：根据下列资料，决定今天简报的结构。第一节固定为“宏观与市场”（markets）；之后根据行业 ETF 涨跌、个股异动和新闻量，挑出当天最热的 2 到 4 个板块各一节，没有固定板块，当天没有新闻的板块不要选。
+每节给出 headline_ids：写这一节最需要的新闻编号，最多 12 个，可多节共用。
+sector 只能取：Technology、Communication Services、Consumer Cyclical、Consumer Defensive、Healthcare、Financial Services、Industrials、Energy、Utilities、Basic Materials、Real Estate，对应不上则为 null；markets 节为 null。
+输出格式：
+{"sections": [{"title": "宏观与市场", "sector": null, "headline_ids": ["h1"]}, {"title": "科技与 AI", "sector": "Technology", "headline_ids": ["h2"]}]}"""
+
+SECTION_TASK = """任务：为简报写“{title}”一节。输出格式：
+{{"groups": [{{"h": "今日要闻", "items": [{{"t": "要点", "refs": ["h1"]}}]}}, {{"h": "分析", "items": [{{"t": "解读"}}]}}]}}
+今日要闻 {lo} 到 {hi} 条，按重要性排序；分析 1 至 3 条。"""
+
+FINISH_TASK = """任务：根据下列已写好的各节要点，写简报的开头与结尾部分。输出格式：
+{"theme": "今日核心主题，一句话", "tldr": ["4 到 6 条，每条一句话，最重要的事放最前面，只概括下列要点里已有的事实"], "trends": [{"t": "长期趋势或风险，3 到 5 条", "refs": []}], "calendar": [{"when": "10 月 29 日 20:30（美东 8:30）", "event": "事件", "watch": "关注点", "refs": []}]}
+calendar 只列“候选新闻”里明确给出的已排定事件，没有就给空数组。"""
+
+
+class LLMError(RuntimeError):
+    pass
+
+
+def _post(url, headers, body, tries=4):
+    """POST with backoff on rate limits and transient server errors."""
+    last = None
+    for i in range(tries):
+        r = requests.post(url, headers=headers, json=body, timeout=120)
+        if r.status_code == 429 or r.status_code >= 500:
+            last = f"HTTP {r.status_code}: {r.text[:200]}"
+            time.sleep(8 * (i + 1))
+            continue
+        if not r.ok:
+            raise LLMError(f"HTTP {r.status_code}: {r.text[:300]}")
+        return r.json()
+    raise LLMError(last or "request failed")
+
+
+def _gemini(system, user, max_tokens):
+    model = os.environ.get("BRIEF_GEMINI_MODEL", "gemini-2.5-flash")
+    j = _post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+              {"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"},
+              {"systemInstruction": {"parts": [{"text": system}]},
+               "contents": [{"role": "user", "parts": [{"text": user}]}],
+               "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2,
+                                    "maxOutputTokens": max_tokens}})
+    return "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
+
+
+def _github_models(system, user, max_tokens):
+    model = os.environ.get("BRIEF_GH_MODEL", "openai/gpt-4.1")
+    j = _post("https://models.github.ai/inference/chat/completions",
+              {"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Accept": "application/vnd.github+json",
+               "X-GitHub-Api-Version": "2022-11-28", "Content-Type": "application/json"},
+              {"model": model, "temperature": 0.2, "max_tokens": max_tokens,
+               "response_format": {"type": "json_object"},
+               "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]})
+    return j["choices"][0]["message"]["content"]
+
+
+def llm_providers():
+    """Free providers only: a Google AI Studio free-tier key, or GitHub Models via the
+    Actions token (needs `permissions: models: read`). Nothing here is billed."""
+    out = []
+    if os.environ.get("GEMINI_API_KEY"):
+        out.append(_gemini)
+    if os.environ.get("GITHUB_TOKEN"):
+        out.append(_github_models)
+    return out
+
+
+def llm_complete(system, user, max_tokens=2500):
+    errors = []
+    for provider in llm_providers():
+        try:
+            return provider(system, user, max_tokens)
+        except Exception as e:
+            errors.append(f"{provider.__name__}: {e}")
+    raise LLMError("; ".join(errors) or "no free LLM provider configured")
+
+
+def parse_json(text):
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())
+    return json.loads(text[text.index("{"): text.rindex("}") + 1])
+
+
+def ask(task, data, max_tokens=2500, validate=None, pause=4):
+    """One small model call, JSON out, retried once on bad output. Calls stay small
+    on purpose: GitHub Models' free tier caps a request at roughly 8k tokens in and
+    4k out, and short calls also keep Gemini's free quota use negligible."""
+    last = None
+    for attempt in range(2):
+        time.sleep(pause)
+        try:
+            obj = parse_json(llm_complete(SYSTEM, f"{task}\n\n资料：\n{data}", max_tokens))
+            if validate:
+                validate(obj)
+            return obj
+        except LLMError:
+            raise
+        except Exception as e:
+            last = e
+            log(f"model output rejected (attempt {attempt + 1}): {e}")
+    raise LLMError(f"model output kept failing validation: {last}")
+
+
+def market_lines(facts):
+    tiles = build_snapshot(facts["markets"], facts.get("usdcny") or [])
+    lines = [f"{t['label']}：{t['value']}，{t['change']}（{t['note']}）" for t in tiles]
+    lines.append("行业 ETF 当日涨跌：" + "，".join(f"{r['name']}{r['change_pct']:+.2f}%" for r in facts.get("sectors") or []))
+    return lines
+
+
+def mover_lines(movers, label):
+    def fmt(rows):
+        return "，".join(f"{r['name']}（{r['symbol']}）{r['change_pct']:+.1f}%" for r in rows)
+    return [f"{label}涨幅居前：{fmt(movers.get('gainers', []))}", f"{label}跌幅居前：{fmt(movers.get('losers', []))}"]
+
+
+def headline_lines(headlines, ids=None):
+    pick = [h for h in headlines if ids is None or h["id"] in ids]
+    return [f"{h['id']} | {h['title'][:120]} | {(h['source'] or '')[:18]}" for h in pick]
 
 
 def narrate(facts):
-    import anthropic  # imported late so --facts-only works without the SDK
-    client = anthropic.Anthropic()
-    slim = dict(facts, markets={k: dict(m, bars=m["bars"][-5:]) for k, m in facts["markets"].items()},
-                usdcny=facts["usdcny"][-3:])
-    prompt = (f"今天是 {facts['date']}{facts['weekday']}（北京时间）早晨。读者每个交易日早晨阅读，"
-              "请以“昨夜到今晨发生了什么”的视角写作。\n\nFACTS:\n"
-              + json.dumps(slim, ensure_ascii=False)
-              + f"\n\n按此 JSON 结构输出:\n{SCHEMA}")
-    last_err = None
-    for attempt in range(2):
-        msg = client.messages.create(model=MODEL, max_tokens=12000, system=SYSTEM,
-                                     messages=[{"role": "user", "content": prompt}])
-        text = "".join(b.text for b in msg.content if b.type == "text")
-        try:
-            obj = json.loads(text[text.index("{"): text.rindex("}") + 1])
-            validate_narrative(obj, {h["id"] for h in facts["headlines"]})
-            return obj
-        except Exception as e:
-            last_err = e
-            log(f"narrative attempt {attempt + 1} rejected: {e}")
-    raise RuntimeError(f"narrative failed validation: {last_err}")
+    heads = facts["headlines"]
+    head_ids = {h["id"] for h in heads}
+    header = [f"今天是 {facts['date']}{facts['weekday']}（北京时间）早晨。", facts["time_note"]]
+    mk = market_lines(facts)
+    movers = facts.get("movers") or {}
+
+    # 1. which sections today
+    def check_plan(o):
+        secs = o.get("sections") or []
+        if not (3 <= len(secs) <= 5) or secs[0].get("sector") is not None:
+            raise ValueError("plan needs markets plus 2 to 4 sector sections")
+        for sec in secs:
+            if sec.get("sector") is not None and sec["sector"] not in SECTOR_NAMES:
+                raise ValueError(f"bad sector {sec.get('sector')}")
+    overall = mover_lines(movers.get("overall", {}), "全市场")
+    plan = ask(PLAN_TASK, "\n".join(header + mk + overall + ["新闻标题（编号 | 标题 | 来源）："] + headline_lines(heads)),
+               max_tokens=800, validate=check_plan)["sections"]
+
+    # 2. one small call per section
+    sections = []
+    for i, sec in enumerate(plan):
+        ids = {x for x in sec.get("headline_ids", []) if x in head_ids} or None
+        lines = header + mk if i == 0 else header + [l for l in mk if l.startswith("行业")]
+        if sec.get("sector") and sec["sector"] in (movers.get("by_sector") or {}):
+            lines += mover_lines(movers["by_sector"][sec["sector"]], f"{sec['title']}板块")
+        lines += ["新闻标题（编号 | 标题 | 来源）："] + headline_lines(heads, ids)
+
+        def check_groups(o):
+            validate_narrative_section({"id": "x", "title": "x", "sector": None, "groups": o.get("groups")}, head_ids)
+        task = SECTION_TASK.format(title=sec["title"], lo=4 if i == 0 else 3, hi=7)
+        groups = ask(task, "\n".join(lines), max_tokens=2200, validate=check_groups)["groups"]
+        sections.append({"id": "markets" if i == 0 else f"s{i}", "title": "宏观与市场" if i == 0 else sec["title"],
+                         "sector": sec.get("sector"), "groups": groups})
+
+    # 3. theme, TL;DR, trends and schedule, written from the finished sections
+    written = [f"【{s['title']}】" + "；".join(it["t"] for g in s["groups"] for it in g["items"]) for s in sections]
+    cand = [h for h in heads if h["topic"] in ("fed_macro", "econ_data", "earnings", "markets")][:40]
+
+    def check_finish(o):
+        validate_narrative({**o, "sections": sections}, head_ids)
+    tail = ask(FINISH_TASK, "\n".join(header + written + ["候选新闻（编号 | 标题 | 来源）："] + headline_lines(cand)),
+               max_tokens=2000, validate=check_finish)
+    return {"theme": tail["theme"], "tldr": tail["tldr"], "sections": sections,
+            "trends": tail.get("trends") or [], "calendar": tail.get("calendar") or []}
 
 
 def _check_refs(item, headline_ids):
     bad = [r for r in item.get("refs", []) if r not in headline_ids]
     if bad:
         raise ValueError(f"unknown refs {bad}")
+
+
+def validate_narrative_section(s, headline_ids):
+    groups = s.get("groups") or []
+    if not groups or groups[0].get("h") != "今日要闻":
+        raise ValueError(f"{s.get('id')} must start with 今日要闻")
+    for g in groups:
+        if g.get("h") not in ("今日要闻", "分析") or not g.get("items"):
+            raise ValueError(f"bad group in {s.get('id')}")
+        for it in g["items"]:
+            if not isinstance(it.get("t"), str) or not it["t"]:
+                raise ValueError("empty item")
+            _check_refs(it, headline_ids)
 
 
 def validate_narrative(obj, headline_ids):
@@ -359,16 +501,7 @@ def validate_narrative(obj, headline_ids):
             raise ValueError("section without title")
         if s.get("sector") is not None and s["sector"] not in SECTOR_NAMES:
             raise ValueError(f"bad sector {s.get('sector')}")
-        groups = s.get("groups") or []
-        if not groups or groups[0].get("h") != "今日要闻":
-            raise ValueError(f"{s['id']} must start with 今日要闻")
-        for g in groups:
-            if g.get("h") not in ("今日要闻", "分析") or not g.get("items"):
-                raise ValueError(f"bad group in {s['id']}")
-            for it in g["items"]:
-                if not isinstance(it.get("t"), str) or not it["t"]:
-                    raise ValueError("empty item")
-                _check_refs(it, headline_ids)
+        validate_narrative_section(s, headline_ids)
     for it in obj.get("trends") or []:
         if not isinstance(it.get("t"), str) or not it["t"]:
             raise ValueError("empty trend")
@@ -595,10 +728,10 @@ def main():
     try:
         if args.narrative_file:
             narrative = json.loads(Path(args.narrative_file).read_text())
-        elif os.environ.get("ANTHROPIC_API_KEY"):
+        elif llm_providers():
             narrative = narrate(facts)
         else:
-            raise RuntimeError("ANTHROPIC_API_KEY not set")
+            raise LLMError("no free LLM provider configured (set GEMINI_API_KEY, or run in Actions with models: read)")
     except Exception:
         log(f"narrative unavailable, keeping previous text:\n{traceback.format_exc()}")
         if not prev or "theme" not in prev:

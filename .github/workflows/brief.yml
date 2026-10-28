@@ -21,6 +21,7 @@ on:
 
 permissions:
   contents: write
+  models: read   # lets the built-in GITHUB_TOKEN call GitHub Models, which is free
 
 concurrency:
   group: brief
@@ -37,11 +38,14 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install feedparser requests anthropic
+        run: pip install feedparser requests
 
       - name: Build brief
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Free providers only. GitHub Models needs nothing beyond the token below;
+          # GEMINI_API_KEY (optional, from Google AI Studio's free tier) is tried first if set.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/build_brief.py ${{ inputs.force && '--force' || '' }}
 
       - name: Warn if the text could not be refreshed
@@ -51,7 +55,7 @@ jobs:
           b = json.load(open("brief/brief.json"))
           today = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=8)).strftime("%Y-%m-%d")
           if b["narrative_at"][:10] != today:
-              print(f"::warning::Brief text is from {b['narrative_at'][:10]}, not {today}. Is the ANTHROPIC_API_KEY secret set?")
+              print(f"::warning::Brief text is from {b['narrative_at'][:10]}, not {today}. The free model call failed; see the "Build brief" log.")
           PY
 
       - name: Commit and push if changed

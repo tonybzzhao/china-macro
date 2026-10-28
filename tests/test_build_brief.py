@@ -59,6 +59,56 @@ class ValidateNarrative(unittest.TestCase):
             bb.validate_narrative(narrative(calendar=[{"when": "x", "event": "y"}]), IDS)
 
 
+class Narrate(unittest.TestCase):
+    """Runs the whole multi-call generation against a fake model."""
+
+    def facts(self):
+        heads = [{"id": f"h{i}", "topic": "markets", "title": f"Headline {i}", "source": "Reuters", "url": f"https://x.test/{i}"}
+                 for i in range(1, 6)]
+        return {"date": "2026-10-29", "weekday": "周四", "time_note": "北京时间比美东时间快 12 小时。",
+                "markets": {}, "sectors": [], "movers": {}, "headlines": heads, "usdcny": []}
+
+    def fake_llm(self, system, user, max_tokens=0):
+        if "决定今天简报的结构" in user:
+            return json.dumps({"sections": [
+                {"title": "宏观与市场", "sector": None, "headline_ids": ["h1"]},
+                {"title": "科技与 AI", "sector": "Technology", "headline_ids": ["h2", "h3"]},
+                {"title": "能源", "sector": "Energy", "headline_ids": ["h4"]}]})
+        if "写“" in user:
+            return "```json\n" + json.dumps({"groups": [
+                {"h": "今日要闻", "items": [{"t": "要点。", "refs": ["h1"]}]},
+                {"h": "分析", "items": [{"t": "解读。"}]}]}) + "\n```"
+        return json.dumps({"theme": "主题", "tldr": ["一", "二"], "trends": [{"t": "趋势", "refs": ["h2"]}], "calendar": []})
+
+    def test_three_stage_generation_produces_a_valid_narrative(self):
+        calls = []
+        def spy(system, user, max_tokens=0):
+            calls.append(user)
+            return self.fake_llm(system, user, max_tokens)
+        with patch.object(bb, "llm_complete", spy), patch.object(bb.time, "sleep"):
+            n = bb.narrate(self.facts())
+        self.assertEqual([s["id"] for s in n["sections"]], ["markets", "s1", "s2"])
+        self.assertEqual(len(calls), 5)  # plan, 3 sections, finish
+        bb.validate_narrative(n, {f"h{i}" for i in range(1, 6)})
+
+    def test_bad_model_output_is_retried_then_gives_up(self):
+        with patch.object(bb, "llm_complete", lambda *a, **k: "not json"), patch.object(bb.time, "sleep"):
+            with self.assertRaises(bb.LLMError):
+                bb.narrate(self.facts())
+
+    def test_no_provider_is_a_clear_error_and_only_free_ones_exist(self):
+        with patch.dict(bb.os.environ, {}, clear=True):
+            self.assertEqual(bb.llm_providers(), [])
+            with self.assertRaisesRegex(bb.LLMError, "no free LLM provider"):
+                bb.llm_complete("s", "u")
+        with patch.dict(bb.os.environ, {"GITHUB_TOKEN": "t"}, clear=True):
+            self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_github_models"])
+        self.assertFalse(hasattr(bb, "anthropic"))
+
+    def test_parse_json_strips_code_fences(self):
+        self.assertEqual(bb.parse_json('```json\n{"a": 1}\n```'), {"a": 1})
+
+
 class Assembly(unittest.TestCase):
     def facts(self, markets=None):
         return {"date": "2026-10-29", "weekday": "周四", "markets": markets or {},

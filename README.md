@@ -126,19 +126,34 @@ inside the hottest sectors.
 
 - `scripts/build_brief.py` gathers facts (Yahoo chart API for indices, yields,
   oil, gold and the 11 sector ETFs; Yahoo's stock screener for movers; Google
-  News RSS in English for headlines across eleven topics) and asks Claude to
-  write the text **from those facts only**. The model cites headlines by id;
-  the script resolves the links, and tiles and charts are computed straight
-  from data, so the model never writes a URL or a market number.
+  News RSS in English for headlines across eleven topics) and has an LLM write
+  the text **from those facts only**, in five small calls (plan the sections,
+  one call per section, then theme/TL;DR/trends/schedule). The model cites
+  headlines by id; the script resolves the links, and tiles and charts are
+  computed straight from data, so the model never writes a URL or a market
+  number.
+- **Costs nothing.** Only free providers are wired in, and the paid Anthropic
+  API is deliberately not used:
+  - **GitHub Models** (default, no setup): the workflow's built-in
+    `GITHUB_TOKEN` with `permissions: models: read`. No key, no billing. Free
+    tier is rate limited and capped at roughly 8k tokens in / 4k out per request,
+    which is why generation is split into small calls (each is estimated at
+    under 4.5k tokens in). Model defaults to `openai/gpt-4.1`; override with the
+    `BRIEF_GH_MODEL` env var if it is unavailable.
+  - **Google Gemini free tier** (optional, better quality): create a key at
+    Google AI Studio without a billing account, add it as repo secret
+    `GEMINI_API_KEY`. It is tried first when present. Google may use free-tier
+    prompts to improve its products; the prompts here are only public headlines
+    and market data. Model defaults to `gemini-2.5-flash`
+    (`BRIEF_GEMINI_MODEL` overrides).
+  - If neither works the market tiles and charts still refresh, the text is kept
+    from the last good run, the page shows a "text not updated" banner and the
+    workflow logs a warning.
+  - Free-tier terms and limits change; the first scheduled run is the real test.
 - Style rules live in `SYSTEM` in that script: news-agency register, no
   commentary outside the short "analysis" group, full-width Chinese
   punctuation (also enforced in code by `cn_punct`), schedule times only if a
   source gives them.
-- **Requires the repo secret `ANTHROPIC_API_KEY`** (Settings, Secrets and
-  variables, Actions). Without it the market tiles and charts still refresh but
-  the text is kept from the last good run, the page shows a "text not updated"
-  banner and the workflow logs a warning. Optional `BRIEF_MODEL` env overrides
-  the model.
 - Known limits: news is retold from headlines only; the news feed sometimes
   mis-dates older stories (the prompt tells the model to be sceptical of
   single-source "breaking" items); Yahoo can rate-limit cloud IPs, in which case
