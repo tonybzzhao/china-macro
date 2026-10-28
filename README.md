@@ -107,6 +107,37 @@ UI itself (hover for the full note) — e.g. fixed asset investment's Feb/Mar
 the 70-city home-price series is y/y (not the m/m originally requested)
 because that's what was reliably sourceable.
 
+## Daily brief (chatccp.com/brief)
+
+A Simplified-Chinese morning briefing for readers in China, regenerated every
+China trading day before the Beijing morning (`.github/workflows/brief.yml`,
+06:17 Beijing Mon-Fri with two later backup runs; holidays are skipped using the
+SSE calendar in `data/history.json`). TL;DR at the top, then market tiles and
+four sections (markets and macro, AI and tech, China and geopolitics, finance
+and investing), each with headlines, how-to-read notes, trends, risks, watch
+items and a beginner glossary.
+
+- `scripts/build_brief.py` gathers facts (Yahoo chart API for index/yield/oil/gold
+  closes including A-shares and Hang Seng, Google News RSS in English and
+  Chinese for headlines, `data/history.json` for China macro) and asks Claude
+  to write the text **from those facts only**. The model cites headlines by id;
+  the script resolves links, and tiles and charts are computed straight from
+  data, so the model never writes a URL or a market number.
+- **Requires the repo secret `ANTHROPIC_API_KEY`** (Settings, Secrets and
+  variables, Actions). Without it the market tiles and charts still refresh but
+  the text is kept from the last good run, the page shows a "text not updated"
+  banner and the workflow logs a warning. Optional `BRIEF_MODEL` env overrides
+  the model.
+- The China charts on the page read `data/history.json` live, so they follow the
+  hourly data workflow.
+- Known limits: news is summarised from headlines only; the news feed sometimes
+  mis-dates older stories (the prompt tells the model to be sceptical of
+  single-source "breaking" items); Yahoo can rate-limit cloud IPs, in which case
+  the previous tiles are kept.
+- Manual run: Actions, "Update daily brief", Run workflow (tick "force" to
+  regenerate). Locally: `python scripts/build_brief.py --facts-only` to inspect
+  the inputs.
+
 ## Setup
 
 ```bash

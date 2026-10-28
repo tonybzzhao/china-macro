@@ -1,0 +1,68 @@
+name: Update daily brief
+
+on:
+  schedule:
+    # Readers open /brief on China trading mornings. 22:17 UTC Sun-Thu is
+    # 06:17 Beijing Mon-Fri, after the US close (20:00 UTC during US summer
+    # time, 21:00 UTC in winter) and before the Beijing morning. GitHub drops
+    # or delays scheduled runs (the data workflow shows gaps of hours), so two
+    # later runs back it up; the script exits early once today's brief exists,
+    # so the extra runs cost nothing. Non-trading days (holidays, per the SSE
+    # calendar in data/history.json) are skipped inside the script.
+    - cron: "17 22 * * 0-4"
+    - cron: "47 22 * * 0-4"
+    - cron: "27 23 * * 0-4"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Regenerate even if today's brief already exists or it is not a trading day"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brief
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser requests anthropic
+
+      - name: Build brief
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/build_brief.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Warn if the text could not be refreshed
+        run: |
+          python - <<'PY'
+          import json, datetime
+          b = json.load(open("brief/brief.json"))
+          today = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=8)).strftime("%Y-%m-%d")
+          if b["narrative_at"][:10] != today:
+              print(f"::warning::Brief text is from {b['narrative_at'][:10]}, not {today}. Is the ANTHROPIC_API_KEY secret set?")
+          PY
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "china-macro-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- brief/brief.json; then
+            echo "No changes."
+          else
+            git add brief/brief.json
+            git commit -m "Update daily brief $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin main
+            git push
+          fi

@@ -1,0 +1,70 @@
+/* Daily brief page. Tokens (colors, fonts) come from ../style.css. */
+.brief { max-width: 880px; font-family: "Noto Sans SC", "Roboto", system-ui, sans-serif; }
+.brief-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+.brief-logo { display: block; }
+.brief-logo .logo { height: 56px; width: auto; }
+.brief-meta { text-align: right; }
+.brief-kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+.brief h1 { margin: 2px 0 2px; font-family: "Noto Serif SC", "Roboto Serif", serif; font-size: clamp(22px, 4vw, 30px); font-weight: 700; }
+.brief-updated { margin: 0; color: var(--text-muted); font-size: 12.5px; }
+
+.stale { background: var(--accent-soft); border: 1px solid var(--accent); color: var(--text-primary); border-radius: 10px; padding: 10px 14px; font-size: 13.5px; margin-bottom: 16px; }
+
+.tldr { background: var(--surface-1); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 12px; padding: 16px 20px 12px; box-shadow: var(--shadow); margin-bottom: 24px; }
+.tldr h2 { margin: 0 0 8px; font-size: 17px; font-weight: 700; }
+.tldr-en { font-family: "Roboto Mono", monospace; font-size: 12px; color: var(--accent); margin-left: 6px; }
+.tldr ol { margin: 0; padding-left: 22px; }
+.tldr li { margin: 0 0 8px; line-height: 1.65; font-size: 15px; }
+.tldr li::marker { color: var(--accent); font-weight: 700; }
+
+.plain-h { font-size: 13px; font-weight: 700; color: var(--text-secondary); letter-spacing: .06em; margin: 0 0 8px; }
+.snapshot { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; }
+.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+.tile-label { font-size: 12px; color: var(--text-secondary); }
+.tile-value { font-family: "Roboto Mono", monospace; font-weight: 600; font-size: 19px; margin: 2px 0; }
+.tile-note { font-size: 11.5px; color: var(--text-muted); line-height: 1.4; }
+
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 2; border-bottom: 1px solid var(--border); }
+.toc a { text-decoration: none; font-size: 13.5px; padding: 5px 12px; border-radius: 999px; background: var(--surface-2); color: var(--text-secondary); }
+.toc a:hover { color: var(--accent); }
+
+.bsec { margin: 0 0 36px; scroll-margin-top: 56px; }
+.bsec > h2 { font-family: "Noto Serif SC", "Roboto Serif", serif; font-size: 22px; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+.bgroup h3 { font-size: 14px; margin: 16px 0 6px; color: var(--accent); font-weight: 700; }
+.bgroup ul { margin: 0; padding-left: 20px; }
+.bgroup li { margin: 0 0 7px; line-height: 1.7; font-size: 15px; }
+.bgroup li::marker { color: var(--text-muted); }
+.src { font-size: 11.5px; margin-left: 4px; white-space: nowrap; }
+.src a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); margin-right: 4px; }
+
+.chart-card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px 10px; margin: 16px 0; box-shadow: var(--shadow); }
+.chart-card h4 { margin: 0 0 2px; font-size: 14.5px; }
+.chart-desc { margin: 0 0 8px; font-size: 12.5px; color: var(--text-muted); }
+.chart-card svg { width: 100%; height: auto; display: block; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin: 6px 0 2px; font-size: 12px; color: var(--text-secondary); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.chart-src { font-size: 11px; color: var(--text-muted); margin: 4px 0 0; }
+.chart-src a { color: inherit; }
+.c0 { --c: var(--cat-growth); } .c1 { --c: var(--cat-prices); } .c2 { --c: var(--cat-external); }
+.s-line { fill: none; stroke: var(--c); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.s-dot { fill: var(--c); }
+.s-bar { fill: var(--c); }
+.ax { stroke: var(--grid-line); stroke-width: 1; }
+.ax-text { font-family: "Roboto Mono", monospace; font-size: 10px; fill: var(--text-muted); }
+.val-text { font-family: "Roboto Mono", monospace; font-size: 10px; fill: var(--text-secondary); }
+.thr { stroke: var(--accent); stroke-width: 1.2; stroke-dasharray: 3 3; opacity: .8; }
+.thr-text { font-family: "Roboto Mono", monospace; font-size: 10px; fill: var(--accent); font-weight: 600; }
+
+.terms { margin: 14px 0 0; padding: 10px 14px; background: var(--surface-2); border-radius: 10px; }
+.terms h3 { margin: 0 0 6px; font-size: 13px; color: var(--text-secondary); }
+.terms dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; font-size: 13.5px; line-height: 1.6; }
+.terms dt { font-weight: 700; }
+.terms dd { margin: 0; color: var(--text-secondary); }
+
+.brief-foot { color: var(--text-muted); font-size: 12.5px; line-height: 1.7; border-top: 1px solid var(--border); padding-top: 14px; }
+.brief-foot a { color: var(--accent); }
+@media (max-width: 560px) {
+  .brief-meta { text-align: left; }
+  .toc { overflow-x: auto; flex-wrap: nowrap; }
+  .toc a { white-space: nowrap; }
+}

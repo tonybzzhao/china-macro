@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日早报 | China Macro Pulse</title>
+<meta name="description" content="每个交易日早晨更新:市场与宏观、AI 与科技、中国与地缘政治、金融与投资。">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="brief.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<div class="wrap brief">
+  <header class="brief-head">
+    <a href="../" class="brief-logo" aria-label="China Macro Pulse">
+      <img src="../assets/logo-light.svg" alt="China Macro Pulse" class="logo logo-light">
+      <img src="../assets/logo-dark.svg" alt="China Macro Pulse" class="logo logo-dark">
+    </a>
+    <div class="brief-meta">
+      <div class="brief-kicker">每日早报</div>
+      <h1 id="brief-date">加载中…</h1>
+      <p id="brief-updated" class="brief-updated"></p>
+    </div>
+  </header>
+
+  <div id="stale" class="stale" hidden></div>
+
+  <section class="tldr" aria-labelledby="tldr-h">
+    <h2 id="tldr-h">今日摘要 <span class="tldr-en">TL;DR</span></h2>
+    <ol id="tldr-list"></ol>
+  </section>
+
+  <section aria-labelledby="snap-h">
+    <h2 id="snap-h" class="plain-h">市场快照</h2>
+    <div id="snapshot" class="snapshot"></div>
+  </section>
+
+  <nav id="toc" class="toc" aria-label="目录"></nav>
+  <main id="sections"></main>
+
+  <footer class="brief-foot">
+    <p id="sources-note"></p>
+    <p id="disclaimer"></p>
+    <p><a href="../">返回 China Macro Pulse 数据看板</a> · <a href="https://tonybzhao.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a></p>
+  </footer>
+</div>
+<script src="brief.js"></script>
+</body>
+</html>

@@ -1,0 +1,696 @@
+{
+ "date": "2026-10-29",
+ "weekday": "周四",
+ "generated_at": "2026-10-29T04:48:51+08:00",
+ "narrative_at": "2026-10-29T04:48:51+08:00",
+ "tldr": [
+  "昨夜(美东 10/28)美联储宣布维持利率不变,多家媒体称通胀仍然偏高,市场的焦点转向「下一步会不会加息」;10 年期美债收益率在 5% 附近。",
+  "昨夜美股小幅收涨(标普 500 +0.3%,纳指 +0.3%),但本月 AI 相关股票波动很大;微软财报利润增长 32%,谷歌母公司 Alphabet 的财报反应待观察。",
+  "中国 9 月数据回暖:官方制造业 PMI 回到 50 以上、出口同比 +36.3%,但房地产投资仍下降 20.6%;11/10 中美关税休战到期是接下来最大的不确定性。"
+ ],
+ "snapshot": [
+  {
+   "label": "标普 500",
+   "value": "7,743.98",
+   "note": "10/28 收盘,较前收 +0.3%"
+  },
+  {
+   "label": "纳斯达克",
+   "value": "26,549.85",
+   "note": "10/28 收盘,较前收 +0.3%"
+  },
+  {
+   "label": "上证指数",
+   "value": "3,681.47",
+   "note": "10/28 收盘,较前收 +0.9%"
+  },
+  {
+   "label": "恒生指数",
+   "value": "23,094.83",
+   "note": "10/28 收盘,较前收 +0.2%"
+  },
+  {
+   "label": "美国 10 年期国债收益率",
+   "value": "5.04%",
+   "note": "10/28 收盘,较前收 +0.05 个百分点"
+  },
+  {
+   "label": "布伦特原油",
+   "value": "110.72",
+   "note": "10/28 最新(未收盘),较前收 -2.8%"
+  },
+  {
+   "label": "黄金",
+   "value": "4,078.50",
+   "note": "10/28 最新(未收盘),较前收 +0.1%"
+  },
+  {
+   "label": "美元兑人民币",
+   "value": "6.6675",
+   "note": "10/27(ECB 参考汇率)"
+  }
+ ],
+ "sections": [
+  {
+   "id": "markets",
+   "title": "一、市场与宏观",
+   "groups": [
+    {
+     "h": "今日要闻",
+     "items": [
+      {
+       "t": "美联储在美东 10/28 下午公布利率决议(北京时间今晨 2 点):维持利率不变。多家媒体强调通胀仍然「偏高」,并关注今后加息的可能(具体利率区间请以美联储声明为准)。",
+       "src": [
+        {
+         "n": "The New York Times",
+         "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTE1BdGtmWVdsaDdsWktpYlk1d2lzWGN2OGdvc3VSNFZxcC1EZ0lWVHhuT1ZpOWphTHoxMzlVY2U2cWxKZDNIZVBhTkR4OXNzbW5fVG41SFZ1b0U1cHFtempLQzVQQmRuQmhpWVJXdy1mV2NxSERSZjZqVnJRZkRJR1diMFY1dkxT?oc=5"
+        },
+        {
+         "n": "The Economic Times",
+         "u": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQbG1YWUh1MkIwczE1X2ZzNHJLSE1JMDQwbERkY0FsaUgydkZsNFY4LXBaRjhnaXpjTTlCUkgwUEdNT2hYaEcxQ3k5TUhta2VJQ3lqV2hJLVRQa2tqVkxTNklBejY0V2hsZkJSbWFZeEdvYno5d0ZoQTlfVkZheUJtZU0zSU9VTFVIdjRhNEpYOGtSMDVvY2hONmlNeVNFS2lodTNfdXpVUURXbjlGcmwwUjJWdDZ2dFE3b1BrZElEaEZTcDg5QTYtaUFxaTdfR1dsRnpIVS0xYl8tRjkxYS1ObUVmN0lqcnhvUjBVd0dWQjRjR3FiREFBUnhLYmo2c1dhWlZhaFhXUktVUm1rcWpJYnlpM3NkLUtiUzk5Y3oxNXJMNVQ5QWfSAasCQVVfeXFMUExYejBYcG8yWXV4U2I1QWM5NFUtU3U4MG9JYkZERnQ3NUNBLUNYbDd5QTlWWVBFemEyVFVRS3NrcVJKV1pDeTlUWS1MakJqNGlSS29iYlBDRGdYU0o2UnZJTjRhODdXb0Jma25VeDZuWkFhb0UycWY0a0lqS1RKTWthd1Z4VTZ5azZodVh1Y3EtY1BmYlBsY1o5VEF3WUs0Wk9SclBsX0cza2p5TVpQVjVOT0ZnSU9oNGhfZ1FHMWJ4QXF3ZVJFOUw3a0pwekd1eGstd0ZIb3dYMnpWNmMzd2p4bUxfcnFwNVRRXzNUcmZLN1FTeDhpN2F1NWtmUTFsMldtZW5hRmlkS3JjQ1lEc01GQWZDcnVJazB3bHF2aTNoR3diZ2R4cm52Tk0?oc=5"
+        },
+        {
+         "n": "ABC News - Breaking News, Latest News and Videos",
+         "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUEhoYVl4OGJtaXFLRU1idHB1dmlvYk1uNEtNNnlMVkFlZEN4N3hpNVB5cmNjWkFEajM2WUZ4bDJJN0pNYlpra21QSGI4cFFwLWllM0xxZlptYWRmdkRlbXAwRWVLcGRBd3J3MDFpUDBvUjVWMElMOGwtZlJMemRJQzczLXI1cWNFMnJKeEcwcGJhUjkzVjZfZ3puam1BQUZFMTRFZ1BIa9IBrAFBVV95cUxQeXRhLUNLYUFqaEtwY25VNnhEUzVzZmRMczBrdVo0SnJXdjdCZjhCbVpURUZJQ2M2MUwyVzlHblFrcTQ0UGhIYUVubHhUZHFVbldqNnJxOFprRG9FRmJIV3ZPaFJiSHZ2a1k0N2R4Q2swcFJ2cDNhZVVJdG0zbG9qaFdvd1l5MXcwbjFWZnBFelBZdFZBMk9pekEzOGFmaEVqVVNmTkx4dXU0eXha?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "债市反应分化:《华尔街日报》标题称决议后收益率「朝不同方向」;10 年期美债日内约 5.05%,前一日收盘 4.99%。",
+       "src": [
+        {
+         "n": "WSJ",
+         "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaEkwMGl6T29kQlFSbU9EanZNX3VMdG5PcG9tWXh3cUQ0U0R5ZTFuUU1QRl9PWl9nd2l4bFpwWl9OOFFTS0VfSV9UcFR0VEtsRW9ld25admRIbkFQa292VTNWVV9xb2g3ZlQwZ2ZuNlVSQkNTQzhGN0RDSl9wZ0hDWi1fcGFTRnJHUTAzeEhUY1BZeVFJU1ZyaVFPdDkzNm9sVTVmcm9pSkxRWjlTOHRpSjlPNmxUb0pPaHBN?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "美股 10/28 收涨(北京时间昨夜至今晨):标普 500 +0.28% 至 7,743.98,纳指 +0.27% 至 26,549.85,罗素 2000 +0.41%。前一日(10/27)芯片股领涨,纳指 +1.2%。",
+       "src": [
+        {
+         "n": "Reuters",
+         "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR21qQWZsLUZqbWRjR2YtQ3FGakpEWWVjSUVFNjVDSi01MnRiWmV3Z2pPQUsyVGhJR3UxQ1o4RjRVa2tCLXNXbnJjNE9fbE5KVzlKTEZtNHpZb3lPR0hXcFFSVGVydlpnR3RQdVM5bDE3aVI3aVowN0NqY3NHb3VDN3hlaXpLTmxkeFc3NE13dUNqYUtIMHNxRFR5M3VYZmpKUDRzVE5WLUdwRHJCeEpQM1pKaw?oc=5"
+        },
+        {
+         "n": "Sharecast.com",
+         "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmFSdUc4dlpGaXdDdVJSYl9FaDgzRmgzVlV0cldEb3BjVXF5OHdTMm9KSUJXWUlWYjdITlFTemdZT01ZTkhzZkxVX3FyeUhuUjRvNENfX0NmTkJWWFU5MmE5bXRfYVpxV2g0TFdWMXRtdW14UzlxNjNQZURPMmxhT0ZjdFBYNk1NN3ZSVDRuNWlZVm9mTWpfMDgtVXc4aEZJbFJ1a2pOLXYxUFNLbGVDT3dKa3QycktSQ3c?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "A 股、港股昨日(10/28)收盘:上证指数 +0.9% 至 3,681.47,恒生指数 +0.2% 至 23,094.83。今日开盘需关注美联储决议后美债收益率与美元的变化。"
+      },
+      {
+       "t": "原油消息面多空交织:中东和平协议预期压低油价,胡塞武装袭击沙特炼厂、美方警告海湾国家中期选举后可能重启对伊朗打击则推高油价。布伦特目前约 110 美元,瑞银预计年底仍约 110 美元。",
+       "src": [
+        {
+         "n": "WSJ",
+         "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYXd0OHZEUnBrMFNkRjJ5dHFUakFsTDU0NUxhdzhQUnpPQ0JxMllJanhoeVFQWm1GMmk2RkRUdDFWLVR2N0VwczZOQmZmbG9BanpUSTE2VEhnSS1xd29mUzFzbEdRTVBDWGRSOW1hRW41WU04eE9OSUo4QmFoSG9DUUhUNi13bzNkbEZaWlFUaVUzUzZPWGtMc2JDeEZyODg2Q09JdFZBekl1WnNJdDVBYnZQMzhieGt4bjFuOFZnMA?oc=5"
+        },
+        {
+         "n": "EnergyNow.com",
+         "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONEY1OTRTVV9fNHdPaVhkcUhKcnlkZHM5Zk9qTk0wNDRYUm9UV3ltT2hWS1BjREhxMktHMEx2UTA1bWthZDdsdHlSSG5WT1J1MUVfSEo4dDUwSzBfM1RqYnhUM3c0MXdrb3BGdUhNUHJVMlQzUVYxRFp1NGJlN1lBZ0JCd1JWNi1RNllueU9ZVVVKSXE3cHc?oc=5"
+        },
+        {
+         "n": "Reuters",
+         "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUhHblNqOGNPczlpdUR2NDFMWjZxX2FZYjVTTzREX2R4YU5jRzF2ckN1MG9sSnIxWG9hbDJ0TjV4YTZXRjdqSUc3aF9OcTJuUVlJZkZrdUd0V0RMUU1qUWxiNDdmdXhCTmJUczZWOFRUWTRKdzJQLUJYNXZBODhnTjJfOXMyNU01OGVreWM5TkNyamNjbzV5UzAxX3ZOdWcwcUE5SFZHSkEyUjZ1M1dUQ3ByRDdxbC13ZzRQR0xfcTZ0bjh6dnNPalJZRWI?oc=5"
+        },
+        {
+         "n": "Investing.com",
+         "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSkxhVjYwNkVzN0RyT09zd255ZFdZQk9nME44QUgyaE4ybmYxS3did3ZpQ1pCVFBzNmMyd3l5R2xHY1d4Zk9Sc0lkTndSd0ZMWmR1Y0NkTFg0LWxoRk1GMjN2ZFVBS1BLdkRSaHdjdkhaS291RHN1ZWp1T0g4UGszR0lMaHJOb1dFMDdRSzd3aDZGbmhUcU9wR3FlZ1B6MThRZzVLTTYyb3JEWGwxVGpCaXpaa3pJNG8yRnNBRE9NclFFNUlHSnJSZ2tLZk9Fdw?oc=5"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "怎么看(新手版)",
+     "items": [
+      {
+       "t": "联储「按兵不动」不等于担忧结束。通胀偏高时,市场更关心下一步是加息还是继续观望,而不是降息。"
+      },
+      {
+       "t": "常见传导链:油价上升 → 通胀担忧上升 → 利率维持高位 → 国债收益率上升 → 高估值股票被「打折」更多。"
+      },
+      {
+       "t": "10 月以来,没有 AI 概念的股票整体跑赢标普 500 约 6 个百分点(24/7 Wall St. 标题),说明资金在科技与其他板块间轮动。",
+       "src": [
+        {
+         "n": "24/7 Wall St.",
+         "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORnJBbTRMWjR1aTRFaS02MktMZmUwNlJVOWlkM3ZfdjZpN0FtbFFScnhtdjc1LTVaQTJWWWpLRmlCVXJ4blB6NUtDSG12YUVMYWwyYS1zTnVXakNwdk1NbUZVRW8tQlVka3NvcFpaeXJZcTBMbWdtQll1OVdWS28xdnF5TWFEN0tSaE1Bb2RrS05ra01yWGFYcnNrRm5venBHbDc0VEk3WGVweWs?oc=5"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "长期趋势",
+     "items": [
+      {
+       "t": "利率在高位停留更久:市场讨论的问题从「何时降息」变成「会不会再加息」。"
+      },
+      {
+       "t": "能源与地缘冲突重新成为通胀的主要变量。"
+      }
+     ]
+    },
+    {
+     "h": "风险",
+     "items": [
+      {
+       "t": "通胀与油价同时上行,迫使联储转向更紧的政策。"
+      },
+      {
+       "t": "10 年期美债收益率突破 5% 后继续上行,压制股票估值。"
+      },
+      {
+       "t": "美国中期选举(11/3)前后的政策不确定性。"
+      }
+     ]
+    },
+    {
+     "h": "关注事项",
+     "items": [
+      {
+       "t": "11/3 美国中期选举;12 月美联储会议;10 年期美债 5% 关口;布伦特 110 美元附近的走势。"
+      }
+     ]
+    }
+   ],
+   "charts": [
+    "usmoves"
+   ],
+   "terms": [
+    {
+     "k": "收益率",
+     "v": "买债券的年化回报。债券价格涨,收益率跌;价格跌,收益率涨。"
+    },
+    {
+     "k": "鹰派 / 鸽派",
+     "v": "鹰派倾向加息抑制通胀;鸽派倾向降息支持增长。"
+    },
+    {
+     "k": "中期选举",
+     "v": "美国每两年一次的国会选举,会影响总统政策能否通过。"
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "二、AI 与科技",
+   "groups": [
+    {
+     "h": "今日要闻",
+     "items": [
+      {
+       "t": "微软(10/28 盘后)财报:据《纽约时报》,利润同比增长 32%,尽管支出大幅增加;《华尔街日报》称云业务增速加快,《巴伦周刊》称股价因业绩超预期上涨。",
+       "src": [
+        {
+         "n": "The New York Times",
+         "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JV0t1VzdLRjByRlFFemJORWcybEE3eFhxMUpFWGNYS0hnVTk3VzJLLXMzZlBXUzlyTWJWenEzSjFNWVE4NUxsMmFFU29KeEhpNGthZWVjQW53Y2xUQjNtNU9ReGJpNzF4YzhuVUYtXzltTXJvNm9VeFlPMTM?oc=5"
+        },
+        {
+         "n": "WSJ",
+         "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObG1JUFZyWEVVeTdxNHJ3djFId2dCZDY3Vkc3Qnc4Vzh1NVFKTXN2cVFEcWdrbEtSdlE5Y1VfQUV6aDE3M1BscVgzVFJXVWZ5R01XQnpjb0FGb2dmTVFEWFhlWGFBUm52dlZzTXhhZ081RzF2dWNWT3U0RU1tejhYZXdSQjA?oc=5"
+        },
+        {
+         "n": "Barron's",
+         "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbW9XUTM0bmRYT0FiWE9Va2JjdF9YN3lZdXhLZEUyeXpaT3BFTG9CaWdxMG5Ndk9BR25uTWJ6dHk5MndaQ01fNFlkUG5BT1JZMmp3Szg4NTJxcHJ4VXI5VFp1dDVmQnJzcmdjSFdqUjVYT0NtZ2xHZ2VBOTVuV0NLdQ?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "谷歌母公司 Alphabet 同日财报:Variety 称 YouTube 三季度广告收入增长 9% 至 112 亿美元,并称 Alphabet 盈利低于预期(细节待确认)。",
+       "src": [
+        {
+         "n": "Variety",
+         "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVEx2c3REaXRIMkZOVUhjOG1rZFNseDE4R2ZSY1ZEcWVOeno5dy12SmNXeDEwTHUzNGo3amFvM2hBaWp6dmx3OThwQ09RbnFyRzVmLXB4a0xJLU5OZWVGYW8xVHFRR2ZJUlBqc3lNd1c0OWJIQno5NmNZYUEtME9lNWJDWGhNSTBsTUJEV2l3OTNnWWlxQVdkZDF6WF9lM0Q2THVz?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "彭博的角度:微软与 Alphabet 的财报聚焦 AI 投入造成的现金流消耗。",
+       "src": [
+        {
+         "n": "Bloomberg.com",
+         "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaGpuODBWVHpLV2lPSklYTm1ld1BhMHB0NHBiNFZOUGtvNGFtZ0pBalJwdW4ycEdKbXhudmV5NVhVa21mUHl0bzNCZnI2TG9saTZIdVg2V1o4b2hFVGtHd1h6RGYyNFNyWmpOR0hKYXc3cnhscm9aXzRIZ09INUdmbjJyd2FXYkV1RmdJcVZpX0JHY3pTand0V1NaSm1Wa0hPUVZJMHVHa0t2TG4zZURhRmFSRDU?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "据 The Information 报道,OpenAI 计划购买谷歌的 AI 芯片(TPU),以减少对英伟达的依赖。",
+       "src": [
+        {
+         "n": "BetaNews",
+         "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE41YkZQZlZuVTJrYmJ5OTJuejJFR3BIS1pHOXJ6SFlSMGJaOXl4ZmdhVzI0TGpXNHFzRGlFVjd5VGhfSVJqUEdRanlWWXY0ZzNEZHlTc3A5VGNiWGROamp2dHd0Q2FTa0l1ajlVU01NZkdBbnZn?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "OpenAI 新一轮融资的估值目标据报道被下调到约 1.25 万亿美元(此前约 1.4 万亿);谈判仍在进行,条款可能变化。",
+       "src": [
+        {
+         "n": "Newsquawk",
+         "u": "https://www.newsquawk.com/headlines/openai-trims-valuation-target-to-usd125tln-after-previously-pitching-a-higher-price-according-to-ft"
+        }
+       ]
+      },
+      {
+       "t": "Anthropic 的 IPO 筹备受到市场关注:公司 6 月已机密递交 S-1 草案,上市时间尚未公布。",
+       "src": [
+        {
+         "n": "Yahoo Finance",
+         "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPLUNNcVpOZUlrU21YOGhjTGs3VkJDdDFQTU13aE12U3lpY3p1b0dTajB3X3pSdDlqcXJ1c2J1T2ExaHJkVkRLS0xFek05czA0bnJES0lUbGprbWU1ZXI5M3RtbGpkeGVPeDNyMWxMWnZKbW9SXzhZaHpRZUNueHMyNkVnblcwNWIydk5VS0Vva0F4d3lWRmxN?oc=5"
+        },
+        {
+         "n": "Storage Newsletter",
+         "u": "https://www.storagenewsletter.com/2026/06/09/anthropic-confidentially-submits-draft-s-1-to-the-sec/"
+        }
+       ]
+      },
+      {
+       "t": "存储芯片:SK 海力士随三季度财报公布 750 亿美元的股东回报计划。",
+       "src": [
+        {
+         "n": "Quartz",
+         "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4yQ2V4Rm94SVJfVE81WEJCU1RaWEF2Z0o0SkRRQ29NVXpLSmZvNkpJOUt1SjJpWkM3TVIzQ243V1pTNS1ZaDc5aGxDck40aUVGOUI0QjhCVkpkZ2N0NEV3dXdwUFdVenMyVmhlaG03T05KRmxTVU1V?oc=5"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "怎么看(新手版)",
+     "items": [
+      {
+       "t": "市场的核心问题:科技公司砸下巨额资本开支建数据中心,收入与利润能多快跟上?"
+      },
+      {
+       "t": "OpenAI 采购谷歌芯片说明大客户在分散供应商,英伟达的议价能力受到更多关注。"
+      }
+     ]
+    },
+    {
+     "h": "长期趋势",
+     "items": [
+      {
+       "t": "算力、芯片、电力与数据中心仍是 AI 竞争的瓶颈,自研芯片与多供应商成为趋势。"
+      },
+      {
+       "t": "头部 AI 公司正走向公开市场(融资、IPO 筹备),财务透明度和盈利能力会被更严格审视。"
+      }
+     ]
+    },
+    {
+     "h": "风险",
+     "items": [
+      {
+       "t": "AI 概念股估值回调会放大指数波动。"
+      },
+      {
+       "t": "现金流压力:投入先行、回报滞后,利率高位时融资成本更高。"
+      }
+     ]
+    },
+    {
+     "h": "关注事项",
+     "items": [
+      {
+       "t": "Alphabet 财报细节与资本开支指引;其他科技公司本财报季的指引。"
+      },
+      {
+       "t": "OpenAI 融资最终估值;英伟达下一次财报日期(本次未确认)。"
+      }
+     ]
+    }
+   ],
+   "charts": [],
+   "terms": [
+    {
+     "k": "资本开支(CapEx)",
+     "v": "公司用于建设数据中心、购买设备的钱,通常要多年才能回本。"
+    },
+    {
+     "k": "TPU",
+     "v": "谷歌自研的 AI 专用芯片,是英伟达 GPU 的替代选择之一。"
+    },
+    {
+     "k": "S-1",
+     "v": "公司在美国上市前向监管机构提交的招股文件。"
+    }
+   ]
+  },
+  {
+   "id": "china",
+   "title": "三、中国与地缘政治",
+   "groups": [
+    {
+     "h": "今日要闻:9 月数据回暖(下方图表实时更新)",
+     "items": [
+      {
+       "t": "官方制造业 PMI 50.1(8 月 49.8),回到荣枯线 50 以上;非制造业 50.2(8 月 49.0);财新制造业 52.1。"
+      },
+      {
+       "t": "三季度 GDP 同比约 4.4%(由累计数推算),前三季度累计约 +4.6%。"
+      },
+      {
+       "t": "9 月出口(美元计价)同比 +36.3%,进口 +31.0%,贸易顺差约 1,335 亿美元。"
+      },
+      {
+       "t": "物价:CPI +0.9%,PPI +5.0%(8 月 3.8%),工业品价格明显上涨,油价上行是可能原因之一。"
+      },
+      {
+       "t": "内需仍弱:社会消费品零售 +1.1%,固定资产投资年初至今 -10.1%,房地产开发投资 1–9 月 -20.6%,16–24 岁青年失业率 18.0%。"
+      },
+      {
+       "t": "货币:M2 +7.2%,M1 +3.2%,9 月新增社融约 3.55 万亿元(由日历公布的累计数推算)。"
+      },
+      {
+       "t": "工业企业利润:1–8 月累计 +15.7%,但 8 月单月仅 +4.2%;9 月数据本次未检索到。",
+       "src": [
+        {
+         "n": "Trading Economics",
+         "u": "https://tradingeconomics.com/china/corporate-profits/news/587056"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "地缘与政策",
+     "items": [
+      {
+       "t": "中美:美国对中国产挂车加征关税(彭博);据 EnergyNow,特朗普与习近平的会谈可能带来约 60 亿美元的美国天然气对华出口。",
+       "src": [
+        {
+         "n": "Bloomberg.com",
+         "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMGx1YmYzOHhfSnRjeGxPb1FncjBicVUxN3R0ZlNsRFlvMnRDUThSVFVHZG5IeXNfQjAzSXZhdWNJbkpzRnJhcVllZVBkZEJFenNmVE1QNVlzbElZbmpxVzNOZWZDRTN1UkYxV29RZjExSi1XMnJMaWJwUllNLTEtOUFyR2pUZWQ1YTFlaDluMHplSVREVTdRX3pzakNnanpFWk1iSVNFbEZRNjVzQVdpZFJNU0c?oc=5"
+        },
+        {
+         "n": "EnergyNow.com",
+         "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNWttXzlDdVlzU09fZlFYWDNsUjRER3pxbUI1VThkYTVhdUlwS2JYUVdqNzd4ZF94WE5OOTNHMC1YYzN4UktXdmRNV19hQURRczd4WmxGbXRzME1sY2NyWDZzczZmMXN5OG14c015SXZXSlY3OEpsaGlfem81Z1RWbjU2bGVuMG8wNS1qQzlfbw?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "习近平 9/24 国事访问华盛顿,特朗普设国宴;贸易、AI、台湾在议程上,外界对突破预期较低。",
+       "src": [
+        {
+         "n": "Jakarta Post",
+         "u": "https://www.thejakartapost.com/world/2026/09/25/trump-hosts-xi-for-state-dinner-as-pomp-masks-tensions"
+        }
+       ]
+      },
+      {
+       "t": "中美关税休战 11/10 到期。9 月报道称美方提议延长 6 个月,中方希望更长;最新进展本次未检索到。",
+       "src": [
+        {
+         "n": "ROIC.ai",
+         "u": "https://www.roic.ai/news/us-proposes-six-month-extension-of-china-trade-truce-beijing-pushes-for-longer-09-21-2026"
+        }
+       ]
+      },
+      {
+       "t": "台海与南海:中方否认台方关于其策划针对嘲讽习近平的喜剧演员袭击的说法(NBC);菲律宾与中国紧张局势下,中方「召回」在菲教师(自由亚洲电台)。",
+       "src": [
+        {
+         "n": "NBC News",
+         "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZWVMNjN3Ql9CM3BHcmdHd1E1TzUzX1NnaHVGaGIwVHZHeDRvZy1YQ3dnZDVwMnB4M3FtMmtNVWdwMzlWWHB6cU5RcG1nWE1oZWFFdmZpQ0Myb3N1VWMzQnBEQUJrUmtmdTBpRjg0OFpkR2U0UjJwcWFLbjdmaXE4ZlpQWWduaTlaTXpMWHpQUHdwNjVaSXFEclFzTVlUWno0UVRQblpnSE9Ndw?oc=5"
+        },
+        {
+         "n": "Radio Free Asia",
+         "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM3JEbzNveUZlb2YySHBlRy1TamU5Zi16RkROTE9xTHY0SERXalBGQXdKSi1ZSTl3TXllaF9qcGMySDNkZUJGSzBLM2NiMjhNUXFQSm4tZVpEWU1TRzVmc3hlRUJHeERCd0RwMEp0M29LX2tDN1lDVW5XVVozSUxKU0sxdWpfNng1ZVY3X2t6T0hqc0h3dG9HdERDVDlKcGpTTmxRbV9R?oc=5"
+        }
+       ]
+      },
+      {
+       "t": "欧洲:德国总理默茨邀请日本支持一个贸易联盟,中方要求德方「理性」(路透)。",
+       "src": [
+        {
+         "n": "Reuters",
+         "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOTJSV296X1JIblZreVlzNk5SRzZqYkhwSXpaX3cyT1RuX3NUeGtlQUo1YkFxRy1KMkJXNS1iRFhHRVkzSzBuT2FUanRGMlNnWmEtc3Jmb3A1NDV6aWI5V1NhMXVvYm5jcGl5aXVUWTE4SG1veHRQWXQyWnJlTTFXVDFFNVlNOFZ6RUkyekVzQzVQZWpwNGhxck5Ra0FYVTI1MUw3QUJvNmlwNVAtSEI1QjhrZTA4VGpD?oc=5"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "怎么看(新手版)",
+     "items": [
+      {
+       "t": "PMI 高于 50 表示扩张,低于 50 表示收缩。9 月刚回到 50 以上,还需连续几个月确认。"
+      },
+      {
+       "t": "出口强、内需弱:增长更依赖外需,所以关税休战到期对中国很重要。"
+      },
+      {
+       "t": "PPI 转强不一定是需求好,也可能是成本推动(例如油价),要和 CPI、利润一起看。"
+      }
+     ]
+    },
+    {
+     "h": "长期趋势",
+     "items": [
+      {
+       "t": "房地产深度调整仍是拖累内需与地方财政的核心因素。"
+      },
+      {
+       "t": "增长结构向制造业与出口倾斜,消费与就业修复偏慢。"
+      }
+     ]
+    },
+    {
+     "h": "风险",
+     "items": [
+      {
+       "t": "休战到期后关税上调或稀土出口管制重启。"
+      },
+      {
+       "t": "油价高企推升成本,压缩下游企业利润。"
+      },
+      {
+       "t": "青年失业与居民信心偏弱,抑制消费。"
+      }
+     ]
+    },
+    {
+     "h": "关注事项(北京时间)",
+     "items": [
+      {
+       "t": "10/31(周六)09:30 官方 10 月制造业与非制造业 PMI。"
+      },
+      {
+       "t": "11/3 美国中期选举;11/7 外汇储备;11/9 CPI 与 PPI;11/10 进出口数据与中美休战到期;11/16 工业增加值、零售、固定资产投资、失业率。"
+      }
+     ]
+    }
+   ],
+   "charts": [
+    "pmi",
+    "prices",
+    "trade"
+   ],
+   "terms": [
+    {
+     "k": "PMI",
+     "v": "采购经理指数。以 50 为荣枯线:高于 50 景气扩张,低于 50 收缩。"
+    },
+    {
+     "k": "同比",
+     "v": "与去年同一时期相比的变化。"
+    },
+    {
+     "k": "PPI / CPI",
+     "v": "PPI 衡量工厂出厂价,CPI 衡量居民消费品价格。"
+    }
+   ]
+  },
+  {
+   "id": "finance",
+   "title": "四、金融与投资",
+   "groups": [
+    {
+     "h": "今日要闻",
+     "items": [
+      {
+       "t": "股票:美股在高位,10/28 三大指数小幅上涨;科技与非科技股表现分化。"
+      },
+      {
+       "t": "债券:10 年期美债收益率在 5% 附近,联储决议后日内约 5.05%。收益率高,意味着债券与现金的回报更有吸引力,会分流股票资金。"
+      },
+      {
+       "t": "商品与外汇:黄金约 4,077 美元/盎司;美元指数约 102.1;美元兑人民币约 6.67。"
+      }
+     ]
+    },
+    {
+     "h": "可操作的分析思路(不构成投资建议)",
+     "items": [
+      {
+       "t": "先看利率:联储偏鹰,通常对应美债收益率上行、美元走强、成长股承压。"
+      },
+      {
+       "t": "再看油价:油价高,能源公司受益,航空、运输等成本敏感行业承压。"
+      },
+      {
+       "t": "想参与 AI 主题,先看持仓里科技股占比,避免单一主题过度集中。"
+      },
+      {
+       "t": "不因单日涨跌改变计划;更重要的是投资期限和能承受的最大回撤。"
+      }
+     ]
+    },
+    {
+     "h": "长期趋势",
+     "items": [
+      {
+       "t": "分散配置(股票、债券、现金、黄金等)仍是应对不确定性的基本办法。"
+      },
+      {
+       "t": "利率中枢较高时,现金流稳定、负债较低的公司更受青睐。"
+      }
+     ]
+    },
+    {
+     "h": "风险",
+     "items": [
+      {
+       "t": "利率与油价同时上行,可能同时压低股票与债券价格。"
+      },
+      {
+       "t": "杠杆与短线交易在高波动期会放大亏损。"
+      }
+     ]
+    },
+    {
+     "h": "关注事项",
+     "items": [
+      {
+       "t": "11/3 美国中期选举;12 月联储会议;中国 10/31 PMI;11/10 中美休战到期。"
+      }
+     ]
+    }
+   ],
+   "charts": [],
+   "terms": [
+    {
+     "k": "回撤",
+     "v": "资产从高点下跌的幅度,是衡量风险的常用指标。"
+    },
+    {
+     "k": "美元指数",
+     "v": "衡量美元对一篮子主要货币的强弱。"
+    }
+   ]
+  }
+ ],
+ "charts": {
+  "pmi": {
+   "title": "中国 PMI(近 24 个月)",
+   "desc": "红色虚线为荣枯线 50,线在 50 上方表示扩张。",
+   "series": [
+    {
+     "name": "官方制造业",
+     "cat": "growth",
+     "key": "official_manufacturing_pmi"
+    },
+    {
+     "name": "官方非制造业",
+     "cat": "growth",
+     "key": "official_non_manufacturing_pmi"
+    },
+    {
+     "name": "财新制造业",
+     "cat": "growth",
+     "key": "caixin_manufacturing_pmi"
+    }
+   ],
+   "threshold": 50,
+   "src": [
+    "国家统计局、财新(数据来自本站)",
+    "../"
+   ]
+  },
+  "prices": {
+   "title": "中国 CPI 与 PPI 同比(%,近 24 个月)",
+   "desc": "CPI 衡量居民消费品价格,PPI 衡量工厂出厂价。",
+   "series": [
+    {
+     "name": "CPI",
+     "cat": "prices_credit",
+     "key": "cpi"
+    },
+    {
+     "name": "PPI",
+     "cat": "prices_credit",
+     "key": "ppi"
+    }
+   ],
+   "threshold": 0,
+   "src": [
+    "国家统计局(数据来自本站)",
+    "../"
+   ]
+  },
+  "trade": {
+   "title": "中国进出口同比(%,美元计价,近 24 个月)",
+   "desc": "出口与进口的同比增速。",
+   "series": [
+    {
+     "name": "出口",
+     "cat": "external",
+     "key": "exports_yoy"
+    },
+    {
+     "name": "进口",
+     "cat": "external",
+     "key": "imports_yoy"
+    }
+   ],
+   "threshold": 0,
+   "src": [
+    "海关总署(数据来自本站)",
+    "../"
+   ]
+  },
+  "usmoves": {
+   "title": "美股单日涨跌幅(%)",
+   "desc": "标普 500 与纳斯达克,最近 5 个交易日。",
+   "categories": [
+    "10/22",
+    "10/23",
+    "10/26",
+    "10/27",
+    "10/28"
+   ],
+   "series": [
+    {
+     "name": "标普 500",
+     "values": [
+      -1.21,
+      -0.52,
+      0.7,
+      0.6,
+      0.28
+     ]
+    },
+    {
+     "name": "纳斯达克",
+     "values": [
+      -2.6,
+      -0.21,
+      0.82,
+      1.18,
+      0.27
+     ]
+    }
+   ],
+   "src": [
+    "Yahoo Finance",
+    "https://finance.yahoo.com/quote/%5EGSPC/"
+   ]
+  }
+ },
+ "sources_note": "每条要闻后附来源链接;新闻只依据标题整理,口径冲突处已在正文标注。市场数字来自 Yahoo Finance,中国宏观数据来自本站自动更新管线。",
+ "disclaimer": "本简报由 AI 根据公开新闻标题与数据自动整理,可能有误,仅供学习参考,不构成任何投资建议。"
+}
