@@ -693,6 +693,14 @@ def prev_narrative(prev):
             "trends": [{"t": t} for t in prev.get("trends", [])], "calendar": prev.get("calendar", [])}
 
 
+def write_status(status, fresh):
+    """Small public record of the last run. GitHub's run logs need a login to read, so this
+    is how a failed free-model call can be diagnosed from the repo itself. It never holds
+    secrets: errors carry HTTP status and response text only, keys travel in headers."""
+    status["narrative"] = "fresh" if fresh else "stale"
+    (OUT.parent / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--facts-only", action="store_true")
@@ -724,17 +732,20 @@ def main():
         print(json.dumps(facts, ensure_ascii=False, indent=1))
         return 0
 
-    fresh = True
+    fresh, status = True, {"run_at": now.isoformat(timespec="seconds"), "provider": None, "error": None}
     try:
         if args.narrative_file:
             narrative = json.loads(Path(args.narrative_file).read_text())
         elif llm_providers():
+            status["provider"] = [p.__name__.lstrip("_") for p in llm_providers()]
             narrative = narrate(facts)
         else:
             raise LLMError("no free LLM provider configured (set GEMINI_API_KEY, or run in Actions with models: read)")
-    except Exception:
+    except Exception as e:
         log(f"narrative unavailable, keeping previous text:\n{traceback.format_exc()}")
+        status["error"] = f"{type(e).__name__}: {e}"[:600]
         if not prev or "theme" not in prev:
+            write_status(status, fresh=False)
             return 1
         narrative, fresh = prev_narrative(prev), False
 
@@ -746,6 +757,7 @@ def main():
     tmp = OUT.with_suffix(".tmp")
     tmp.write_text(json.dumps(brief, ensure_ascii=False, indent=1, allow_nan=False) + "\n")
     tmp.replace(OUT)
+    write_status(status, fresh)
     log(f"wrote {OUT.relative_to(ROOT)} (narrative {'fresh' if fresh else 'STALE'})")
     return 0
 

@@ -109,6 +109,16 @@ class Narrate(unittest.TestCase):
         self.assertEqual(bb.parse_json('```json\n{"a": 1}\n```'), {"a": 1})
 
 
+class Status(unittest.TestCase):
+    def test_status_file_records_stale_run_and_error(self):
+        import tempfile
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as d, patch.object(bb, "OUT", Path(d) / "brief.json"):
+            bb.write_status({"run_at": "x", "provider": ["github_models"], "error": "LLMError: HTTP 404"}, fresh=False)
+            s = json.loads((Path(d) / "status.json").read_text())
+        self.assertEqual((s["narrative"], s["error"]), ("stale", "LLMError: HTTP 404"))
+
+
 class Assembly(unittest.TestCase):
     def facts(self, markets=None):
         return {"date": "2026-10-29", "weekday": "周四", "markets": markets or {},

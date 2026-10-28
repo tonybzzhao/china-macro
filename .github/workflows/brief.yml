@@ -55,17 +55,17 @@ jobs:
           b = json.load(open("brief/brief.json"))
           today = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=8)).strftime("%Y-%m-%d")
           if b["narrative_at"][:10] != today:
-              print(f"::warning::Brief text is from {b['narrative_at'][:10]}, not {today}. The free model call failed; see the "Build brief" log.")
+              print(f"::warning::Brief text is from {b['narrative_at'][:10]}, not {today}. The free model call failed, see brief/status.json.")
           PY
 
       - name: Commit and push if changed
         run: |
           git config user.name "china-macro-bot"
           git config user.email "actions@users.noreply.github.com"
-          if git diff --quiet -- brief/brief.json; then
+          if git diff --quiet -- brief/ && [ -z "$(git ls-files --others --exclude-standard brief/)" ]; then
             echo "No changes."
           else
-            git add brief/brief.json
+            git add brief/brief.json brief/status.json
             git commit -m "Update daily brief $(date -u +%Y-%m-%dT%H:%MZ)"
             git pull --rebase origin main
             git push
