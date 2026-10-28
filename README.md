@@ -116,9 +116,13 @@ markets and policy, tech and AI, biotech and pharma, and world headlines;
 China macro is deliberately not covered (the dashboard does that). It is
 regenerated every China trading morning (`.github/workflows/brief.yml`, 06:17
 Beijing Mon-Fri with two later backup runs; holidays are skipped using the SSE
-calendar in `data/history.json`). TL;DR at the top, market tiles, then four
-sections, each with headlines, how to read them, trends, risks and watch items,
-plus charts of index moves and large-cap tech and pharma stock moves.
+calendar in `data/history.json`). TL;DR at the top; market tiles with up/down
+arrows and colours (click one for its recent chart); then four sections (US
+markets, tech and AI, biotech and pharma, world headlines) holding today's news
+and scheduled events, plus charts of index moves, large-cap stock moves and the
+day's biggest tech and biopharma movers. Written as plain news copy with
+full-width Chinese punctuation, no commentary; all sources are listed once at
+the end of the page.
 
 - `scripts/build_brief.py` gathers facts (Yahoo chart API for index, yield, oil,
   gold and stock closes; Google News RSS in English for headlines across ten

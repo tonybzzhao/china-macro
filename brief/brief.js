@@ -130,6 +130,30 @@ function hbarChart(def) {
   return card;
 }
 
+function tileChart(t) {
+  const pts = t.series, W2 = 560, H2 = 170, l = 46, r = 12, top = 12, bot = 24;
+  const vals = pts.map((p) => p[1]);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const pad = (hi - lo) * 0.1 || Math.abs(hi) * 0.01 || 1; lo -= pad; hi += pad;
+  const x = (i) => l + (i / Math.max(1, pts.length - 1)) * (W2 - l - r);
+  const y = (v) => top + (1 - (v - lo) / (hi - lo)) * (H2 - top - bot);
+  const dir = vals[vals.length - 1] >= vals[0] ? "up" : "down";
+  const svg = svgEl("svg", { viewBox: `0 0 ${W2} ${H2}`, role: "img", "aria-label": t.label + " 近期走势", class: "tile-svg c-" + dir });
+  const fmt = (v) => v.toLocaleString("en-US", { minimumFractionDigits: t.dec, maximumFractionDigits: t.dec });
+  niceTicks(lo, hi, 3).forEach((v) => {
+    svg.appendChild(svgEl("line", { class: "ax", x1: l, x2: W2 - r, y1: y(v), y2: y(v) }));
+    svg.appendChild(svgEl("text", { class: "ax-text", x: l - 6, y: y(v) + 3, "text-anchor": "end" }, fmt(v)));
+  });
+  const line = pts.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p[1]).toFixed(1)}`).join("");
+  svg.appendChild(svgEl("path", { class: "area", d: `${line}L${x(pts.length - 1)},${H2 - bot}L${x(0)},${H2 - bot}Z` }));
+  svg.appendChild(svgEl("path", { class: "s-line", d: line }));
+  [0, Math.floor((pts.length - 1) / 2), pts.length - 1].forEach((i, k) => {
+    svg.appendChild(svgEl("text", { class: "ax-text", x: x(i), y: H2 - 6, "text-anchor": k === 0 ? "start" : k === 2 ? "end" : "middle" }, pts[i][0].slice(5).replace("-", "/")));
+  });
+  svg.appendChild(svgEl("circle", { class: "s-dot", cx: x(pts.length - 1), cy: y(vals[vals.length - 1]), r: 3.6 }));
+  return svg;
+}
+
 // ---------- page ----------
 function renderSection(sec, brief) {
   const s = el("section", { class: "bsec", id: sec.id });
@@ -140,11 +164,6 @@ function renderSection(sec, brief) {
     const ul = el("ul");
     g.items.forEach((it) => {
       const li = el("li", null, it.t);
-      if (it.src && it.src.length) {
-        const span = el("span", { class: "src" });
-        it.src.slice(0, 2).forEach((r) => span.appendChild(link(r.n, r.u)));
-        li.appendChild(span);
-      }
       ul.appendChild(li);
     });
     box.appendChild(ul);
@@ -166,30 +185,60 @@ async function main() {
   const brief = await fetch("brief.json", { cache: "no-store" }).then((r) => r.json());
   const [by, bm, bd] = brief.date.split("-");
   document.getElementById("brief-date").textContent = `${by}年${+bm}月${+bd}日 ${brief.weekday}`;
-  document.getElementById("brief-updated").textContent = `更新于北京时间 ${fmtBeijing(brief.generated_at)} · 每个交易日早晨更新`;
+  document.getElementById("brief-updated").textContent = `更新于北京时间 ${fmtBeijing(brief.generated_at)}`;
 
   const today = beijingNow(), stale = document.getElementById("stale");
   const msgs = [];
-  if (brief.date < today) msgs.push(`今天(${today})的简报尚未生成,以下为 ${brief.date} 的内容;非交易日不更新。`);
-  if ((brief.narrative_at || "").slice(0, 10) < (brief.generated_at || "").slice(0, 10)) msgs.push("文字部分本次未能更新,仅刷新了行情数据。");
+  if (brief.date < today) msgs.push(`今日（${today}）简报尚未生成，以下为 ${brief.date} 的内容。`);
+  if ((brief.narrative_at || "").slice(0, 10) < (brief.generated_at || "").slice(0, 10)) msgs.push("文字部分本次未能更新，仅刷新了行情数据。");
   if (msgs.length) { stale.textContent = msgs.join(" "); stale.hidden = false; }
 
   const ol = document.getElementById("tldr-list");
   brief.tldr.forEach((t) => ol.appendChild(el("li", null, t)));
 
   const snap = document.getElementById("snapshot");
+  let openTile = null, openPanel = null;
   brief.snapshot.forEach((t) => {
-    const d = el("div", { class: "tile" });
-    d.appendChild(el("div", { class: "tile-label" }, t.label));
-    d.appendChild(el("div", { class: "tile-value" }, t.value));
-    d.appendChild(el("div", { class: "tile-note" }, t.note));
-    snap.appendChild(d);
+    const arrow = { up: "▲", down: "▼", flat: "■" }[t.dir] || "";
+    const b = el("button", { class: "tile d-" + t.dir, type: "button", "aria-expanded": "false" });
+    b.appendChild(el("div", { class: "tile-label" }, t.label));
+    b.appendChild(el("div", { class: "tile-value" }, t.value));
+    b.appendChild(el("div", { class: "tile-chg" }, `${arrow} ${t.change}`));
+    b.appendChild(el("div", { class: "tile-note" }, t.note));
+    b.addEventListener("click", () => {
+      const wasOpen = openTile === b;
+      if (openTile) { openTile.setAttribute("aria-expanded", "false"); openPanel.remove(); openTile = openPanel = null; }
+      if (wasOpen || !t.series || t.series.length < 2) return;
+      const panel = el("div", { class: "tile-panel" });
+      panel.appendChild(el("div", { class: "tile-panel-h" }, `${t.label} 近 ${t.series.length} 个交易日`));
+      panel.appendChild(tileChart(t));
+      // the panel spans the whole grid row, so slot it after the last tile in this tile's row
+      const tiles = [...snap.querySelectorAll(".tile")];
+      const rowTop = b.offsetTop;
+      const last = tiles.filter((x) => x.offsetTop === rowTop).pop();
+      last.after(panel);
+      b.setAttribute("aria-expanded", "true");
+      openTile = b; openPanel = panel;
+    });
+    snap.appendChild(b);
   });
 
   const toc = document.getElementById("toc"), main = document.getElementById("sections");
   brief.sections.forEach((sec) => {
     toc.appendChild(el("a", { href: "#" + sec.id }, sec.title.replace(/^[一二三四]、/, "")));
     main.appendChild(renderSection(sec, brief));
+  });
+  const srcBox = document.getElementById("sources");
+  (brief.sources || []).filter((g) => g.items.length).forEach((g) => {
+    srcBox.appendChild(el("h3", null, g.section));
+    const ol = el("ol");
+    g.items.forEach((r) => {
+      const li = el("li");
+      li.appendChild(link(r.n, r.u));
+      if (r.t) li.appendChild(el("span", { class: "src-title" }, "：" + r.t));
+      ol.appendChild(li);
+    });
+    srcBox.appendChild(ol);
   });
   document.getElementById("sources-note").textContent = brief.sources_note || "";
   document.getElementById("disclaimer").textContent = brief.disclaimer || "";

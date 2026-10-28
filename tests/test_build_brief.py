@@ -29,6 +29,12 @@ class ValidateNarrative(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unknown refs"):
             bb.validate_narrative(n, IDS)
 
+    def test_first_group_must_be_todays_news(self):
+        n = narrative()
+        n["sections"][0]["groups"][0]["h"] = "接下来关注"
+        with self.assertRaisesRegex(ValueError, "今日要闻"):
+            bb.validate_narrative(n, IDS)
+
     def test_rejects_wrong_section_order_and_empty_tldr(self):
         n = narrative()
         n["sections"].reverse()
@@ -41,21 +47,37 @@ class ValidateNarrative(unittest.TestCase):
 class Assembly(unittest.TestCase):
     def facts(self, markets=None):
         return {"date": "2026-10-29", "weekday": "周四", "markets": markets or {},
-                "headlines": [{"id": "h1", "source": "Reuters", "url": "https://x.test/a"}],
+                "headlines": [{"id": "h1", "source": "Reuters", "title": "T", "url": "https://x.test/a"}],
                 "usdcny": None}
 
-    def test_refs_become_links_and_direct_src_is_kept(self):
+    def test_sources_are_collected_at_the_end_and_items_stay_clean(self):
         n = narrative()
         n["sections"][0]["groups"][0]["items"].append(
             {"t": "y", "src": [{"n": "FT", "u": "https://ft.test"}]})
         prev = {"charts": {"usmoves": {"title": "kept"}}, "snapshot": [{"label": "old"}]}
-        out = bb.assemble(self.facts(), n, prev, "2026-10-29T06:00:00+08:00", True)
+        facts = self.facts()
+        facts["headlines"][0]["title"] = "Fed holds"
+        out = bb.assemble(facts, n, prev, "2026-10-29T06:00:00+08:00", True)
         items = out["sections"][0]["groups"][0]["items"]
-        self.assertEqual(items[0]["src"], [{"n": "Reuters(英文)", "u": "https://x.test/a"}])
-        self.assertEqual(items[1]["src"][0]["n"], "FT")
+        self.assertTrue(all(set(i) == {"t"} for i in items))  # no inline sources
+        srcs = out["sources"][0]["items"]
+        self.assertEqual(srcs[0], {"n": "Reuters（英文）", "u": "https://x.test/a", "t": "Fed holds"})
+        self.assertEqual(srcs[1]["n"], "FT")
         # market fetch failed: previous tiles and US chart are kept
         self.assertEqual(out["snapshot"], [{"label": "old"}])
         self.assertEqual(out["charts"]["usmoves"]["title"], "kept")
+
+    def test_full_width_punctuation_but_numbers_untouched(self):
+        self.assertEqual(bb.cn_punct("美股涨 0.28%, 报 7,743.98 点;英伟达(Nvidia)下跌."),
+                         "美股涨 0.28%，报 7,743.98 点；英伟达（Nvidia）下跌。")
+        self.assertEqual(bb.cn_punct("美东 10/28 下午 2:00 公布"), "美东 10/28 下午 2:00 公布")
+        self.assertEqual(bb.cn_punct("Nvidia (NVDA) rose 2.5%, a record."), "Nvidia (NVDA) rose 2.5%, a record.")
+
+    def test_tile_direction_and_series(self):
+        t = bb.tile("spx", "标普 500", "idx", 110.0, 100.0, [["10-27", 100.0], ["10-28", 110.0]], "n")
+        self.assertEqual((t["dir"], t["change"]), ("up", "+10.00%"))
+        y = bb.tile("us10y", "10Y", "pct", 4.9, 5.0, [["a", 5.0], ["b", 4.9]], "n")
+        self.assertEqual((y["dir"], y["change"]), ("down", "-0.10 个百分点"))
 
     def test_stale_narrative_keeps_old_timestamp(self):
         prev = {"narrative_at": "2026-10-28T06:00:00+08:00", "charts": {"usmoves": {"title": "k"}}, "snapshot": []}
@@ -64,6 +86,7 @@ class Assembly(unittest.TestCase):
 
     def test_chinese_outlets_are_not_marked_english(self):
         by_id = {"h1": {"source": "新华社", "url": "https://x.test"}}
+        by_id["h1"]["title"] = "t"
         self.assertEqual(bb.resolve_src({"refs": ["h1"]}, by_id)[0]["n"], "新华社")
 
     def test_stock_chart_sorts_high_to_low_and_needs_enough_rows(self):

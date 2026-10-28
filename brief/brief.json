@@ -1,54 +1,846 @@
 {
  "date": "2026-10-29",
  "weekday": "周四",
- "generated_at": "2026-10-29T05:07:22+08:00",
- "narrative_at": "2026-10-29T05:07:22+08:00",
+ "generated_at": "2026-10-29T05:12:47+08:00",
+ "narrative_at": "2026-10-29T05:12:47+08:00",
  "tldr": [
-  "美联储昨夜维持利率不变,媒体普遍说通胀仍偏高,市场开始琢磨下一步会不会加息;10 年期美债收益率在 5% 左右。",
-  "微软(Microsoft)利润大增 32%、股价盘后上涨;谷歌(Google)云业务超预期,但广告收入不及预期,盘后股价下跌。",
-  "礼来(Eli Lilly)的减肥新药 retatrutide(三靶点药物)在对比试验中减重约为司美格鲁肽(Ozempic)的两倍;Genmab 的一款抗癌药让死亡风险降低约一半,股价创历史新高。",
-  "中东局势反复:油价在 100 美元上下摆动;美国政治上,最高法院放行特朗普部分邮寄投票限制,中期选举进入倒计时。"
+  "美联储周三宣布维持利率不变，称通胀仍处高位。",
+  "美股周三收涨：标普 500 指数涨 0.28%，纳斯达克综合指数涨 0.27%，道琼斯指数涨 0.19%。",
+  "微软公布季度财报，净利润同比增长 32%；谷歌母公司 Alphabet 云业务收入超预期，广告收入不及预期，盘后股价下跌。",
+  "礼来称，其减肥药 retatrutide 在对比试验中的减重效果约为诺和诺德司美格鲁肽的两倍。"
  ],
  "snapshot": [
   {
+   "key": "spx",
    "label": "标普 500",
    "value": "7,743.98",
-   "note": "10/28 收盘,较前收 +0.3%"
+   "change": "+0.28%",
+   "dir": "up",
+   "note": "10/28 收盘",
+   "dec": 0,
+   "series": [
+    [
+     "2026-09-29",
+     7670.8398
+    ],
+    [
+     "2026-09-30",
+     7651.54
+    ],
+    [
+     "2026-10-01",
+     7666.4502
+    ],
+    [
+     "2026-10-02",
+     7722.7202
+    ],
+    [
+     "2026-10-05",
+     7773.9502
+    ],
+    [
+     "2026-10-06",
+     7818.9302
+    ],
+    [
+     "2026-10-07",
+     7801.77
+    ],
+    [
+     "2026-10-08",
+     7765.3599
+    ],
+    [
+     "2026-10-09",
+     7811.54
+    ],
+    [
+     "2026-10-12",
+     7807.2402
+    ],
+    [
+     "2026-10-13",
+     7805.4502
+    ],
+    [
+     "2026-10-14",
+     7718.9399
+    ],
+    [
+     "2026-10-15",
+     7744.0601
+    ],
+    [
+     "2026-10-16",
+     7659.4399
+    ],
+    [
+     "2026-10-19",
+     7690.73
+    ],
+    [
+     "2026-10-20",
+     7712.5698
+    ],
+    [
+     "2026-10-21",
+     7757.1699
+    ],
+    [
+     "2026-10-22",
+     7663.4302
+    ],
+    [
+     "2026-10-23",
+     7623.6802
+    ],
+    [
+     "2026-10-26",
+     7676.77
+    ],
+    [
+     "2026-10-27",
+     7722.6001
+    ],
+    [
+     "2026-10-28",
+     7743.98
+    ]
+   ]
   },
   {
+   "key": "ndx",
    "label": "纳斯达克",
    "value": "26,549.85",
-   "note": "10/28 收盘,较前收 +0.3%"
+   "change": "+0.27%",
+   "dir": "up",
+   "note": "10/28 收盘",
+   "dec": 0,
+   "series": [
+    [
+     "2026-09-29",
+     26797.5391
+    ],
+    [
+     "2026-09-30",
+     26861.0605
+    ],
+    [
+     "2026-10-01",
+     26871.5996
+    ],
+    [
+     "2026-10-02",
+     27190.8594
+    ],
+    [
+     "2026-10-05",
+     27477.3105
+    ],
+    [
+     "2026-10-06",
+     27599.7891
+    ],
+    [
+     "2026-10-07",
+     27538.6895
+    ],
+    [
+     "2026-10-08",
+     27193.3398
+    ],
+    [
+     "2026-10-09",
+     27366.1699
+    ],
+    [
+     "2026-10-12",
+     27245.9004
+    ],
+    [
+     "2026-10-13",
+     27204.3809
+    ],
+    [
+     "2026-10-14",
+     26692.8691
+    ],
+    [
+     "2026-10-15",
+     26713.0293
+    ],
+    [
+     "2026-10-16",
+     26140.0293
+    ],
+    [
+     "2026-10-19",
+     26430.8906
+    ],
+    [
+     "2026-10-20",
+     26424.8203
+    ],
+    [
+     "2026-10-21",
+     26702.8594
+    ],
+    [
+     "2026-10-22",
+     26008.8594
+    ],
+    [
+     "2026-10-23",
+     25955.3398
+    ],
+    [
+     "2026-10-26",
+     26169.3809
+    ],
+    [
+     "2026-10-27",
+     26477.8105
+    ],
+    [
+     "2026-10-28",
+     26549.8516
+    ]
+   ]
   },
   {
+   "key": "sox",
    "label": "费城半导体指数",
    "value": "11,684.00",
-   "note": "10/28 收盘,较前收 +1.8%"
+   "change": "+1.75%",
+   "dir": "up",
+   "note": "10/28 收盘",
+   "dec": 0,
+   "series": [
+    [
+     "2026-09-29",
+     12629.1602
+    ],
+    [
+     "2026-09-30",
+     12628.6201
+    ],
+    [
+     "2026-10-01",
+     12829.0
+    ],
+    [
+     "2026-10-02",
+     13136.6699
+    ],
+    [
+     "2026-10-05",
+     13172.7402
+    ],
+    [
+     "2026-10-06",
+     13217.8203
+    ],
+    [
+     "2026-10-07",
+     13066.1504
+    ],
+    [
+     "2026-10-08",
+     12623.71
+    ],
+    [
+     "2026-10-09",
+     12572.4199
+    ],
+    [
+     "2026-10-12",
+     12236.79
+    ],
+    [
+     "2026-10-13",
+     12208.79
+    ],
+    [
+     "2026-10-14",
+     11684.3799
+    ],
+    [
+     "2026-10-15",
+     11581.21
+    ],
+    [
+     "2026-10-16",
+     11137.29
+    ],
+    [
+     "2026-10-19",
+     11316.3398
+    ],
+    [
+     "2026-10-20",
+     11283.8096
+    ],
+    [
+     "2026-10-21",
+     11505.5596
+    ],
+    [
+     "2026-10-22",
+     10731.9805
+    ],
+    [
+     "2026-10-23",
+     10779.46
+    ],
+    [
+     "2026-10-26",
+     11083.4697
+    ],
+    [
+     "2026-10-27",
+     11482.5
+    ],
+    [
+     "2026-10-28",
+     11684.0
+    ]
+   ]
   },
   {
-   "label": "生物科技 ETF(XBI)",
+   "key": "xbi",
+   "label": "生物科技 ETF（XBI）",
    "value": "157.51",
-   "note": "10/28 收盘,较前收 +1.7%"
+   "change": "+1.72%",
+   "dir": "up",
+   "note": "10/28 收盘",
+   "dec": 2,
+   "series": [
+    [
+     "2026-09-29",
+     156.81
+    ],
+    [
+     "2026-09-30",
+     157.68
+    ],
+    [
+     "2026-10-01",
+     154.51
+    ],
+    [
+     "2026-10-02",
+     154.43
+    ],
+    [
+     "2026-10-05",
+     156.19
+    ],
+    [
+     "2026-10-06",
+     150.9
+    ],
+    [
+     "2026-10-07",
+     150.23
+    ],
+    [
+     "2026-10-08",
+     149.29
+    ],
+    [
+     "2026-10-09",
+     153.77
+    ],
+    [
+     "2026-10-12",
+     151.4
+    ],
+    [
+     "2026-10-13",
+     146.8
+    ],
+    [
+     "2026-10-14",
+     146.77
+    ],
+    [
+     "2026-10-15",
+     149.78
+    ],
+    [
+     "2026-10-16",
+     144.32
+    ],
+    [
+     "2026-10-19",
+     147.86
+    ],
+    [
+     "2026-10-20",
+     153.24
+    ],
+    [
+     "2026-10-21",
+     152.78
+    ],
+    [
+     "2026-10-22",
+     151.64
+    ],
+    [
+     "2026-10-23",
+     149.54
+    ],
+    [
+     "2026-10-26",
+     150.47
+    ],
+    [
+     "2026-10-27",
+     154.84
+    ],
+    [
+     "2026-10-28",
+     157.51
+    ]
+   ]
   },
   {
+   "key": "us10y",
    "label": "美国 10 年期国债收益率",
    "value": "5.04%",
-   "note": "10/28 收盘,较前收 +0.05 个百分点"
+   "change": "+0.05 个百分点",
+   "dir": "up",
+   "note": "10/28 收盘",
+   "dec": 2,
+   "series": [
+    [
+     "2026-09-29",
+     5.255
+    ],
+    [
+     "2026-09-30",
+     5.293
+    ],
+    [
+     "2026-10-01",
+     5.237
+    ],
+    [
+     "2026-10-02",
+     5.277
+    ],
+    [
+     "2026-10-05",
+     5.311
+    ],
+    [
+     "2026-10-06",
+     5.269
+    ],
+    [
+     "2026-10-07",
+     5.277
+    ],
+    [
+     "2026-10-08",
+     5.231
+    ],
+    [
+     "2026-10-09",
+     5.244
+    ],
+    [
+     "2026-10-12",
+     5.24
+    ],
+    [
+     "2026-10-13",
+     5.217
+    ],
+    [
+     "2026-10-14",
+     5.19
+    ],
+    [
+     "2026-10-15",
+     5.089
+    ],
+    [
+     "2026-10-16",
+     5.098
+    ],
+    [
+     "2026-10-19",
+     5.136
+    ],
+    [
+     "2026-10-20",
+     5.117
+    ],
+    [
+     "2026-10-21",
+     5.146
+    ],
+    [
+     "2026-10-22",
+     4.953
+    ],
+    [
+     "2026-10-23",
+     4.988
+    ],
+    [
+     "2026-10-26",
+     4.986
+    ],
+    [
+     "2026-10-27",
+     4.993
+    ],
+    [
+     "2026-10-28",
+     5.045
+    ]
+   ]
   },
   {
+   "key": "brent",
    "label": "布伦特原油",
-   "value": "110.55",
-   "note": "10/28 最新(未收盘),较前收 -2.9%"
+   "value": "110.44",
+   "change": "-3.02%",
+   "dir": "down",
+   "note": "10/28 最新（未收盘）",
+   "dec": 2,
+   "series": [
+    [
+     "2026-09-28",
+     105.28
+    ],
+    [
+     "2026-09-29",
+     102.59
+    ],
+    [
+     "2026-09-30",
+     103.53
+    ],
+    [
+     "2026-10-01",
+     102.31
+    ],
+    [
+     "2026-10-02",
+     102.25
+    ],
+    [
+     "2026-10-05",
+     100.32
+    ],
+    [
+     "2026-10-06",
+     100.58
+    ],
+    [
+     "2026-10-07",
+     100.2
+    ],
+    [
+     "2026-10-08",
+     104.28
+    ],
+    [
+     "2026-10-09",
+     104.72
+    ],
+    [
+     "2026-10-12",
+     106.65
+    ],
+    [
+     "2026-10-13",
+     105.69
+    ],
+    [
+     "2026-10-14",
+     106.06
+    ],
+    [
+     "2026-10-15",
+     105.92
+    ],
+    [
+     "2026-10-16",
+     109.86
+    ],
+    [
+     "2026-10-19",
+     109.55
+    ],
+    [
+     "2026-10-20",
+     108.79
+    ],
+    [
+     "2026-10-21",
+     108.82
+    ],
+    [
+     "2026-10-22",
+     113.17
+    ],
+    [
+     "2026-10-23",
+     116.72
+    ],
+    [
+     "2026-10-26",
+     115.81
+    ],
+    [
+     "2026-10-27",
+     113.88
+    ],
+    [
+     "2026-10-28",
+     110.44
+    ]
+   ]
   },
   {
+   "key": "gold",
    "label": "黄金",
-   "value": "4,083.60",
-   "note": "10/28 最新(未收盘),较前收 +0.2%"
+   "value": "4,081.20",
+   "change": "+0.16%",
+   "dir": "up",
+   "note": "10/28 最新（未收盘）",
+   "dec": 0,
+   "series": [
+    [
+     "2026-09-28",
+     4168.3999
+    ],
+    [
+     "2026-09-29",
+     4179.7002
+    ],
+    [
+     "2026-09-30",
+     4186.7002
+    ],
+    [
+     "2026-10-01",
+     4202.2998
+    ],
+    [
+     "2026-10-02",
+     4162.2998
+    ],
+    [
+     "2026-10-05",
+     4156.7998
+    ],
+    [
+     "2026-10-06",
+     4187.1001
+    ],
+    [
+     "2026-10-07",
+     4140.7002
+    ],
+    [
+     "2026-10-08",
+     4157.0
+    ],
+    [
+     "2026-10-09",
+     4216.2998
+    ],
+    [
+     "2026-10-12",
+     4190.6001
+    ],
+    [
+     "2026-10-13",
+     4177.2998
+    ],
+    [
+     "2026-10-14",
+     4107.8999
+    ],
+    [
+     "2026-10-15",
+     4170.1001
+    ],
+    [
+     "2026-10-16",
+     4181.1001
+    ],
+    [
+     "2026-10-19",
+     4160.1001
+    ],
+    [
+     "2026-10-20",
+     4142.6001
+    ],
+    [
+     "2026-10-21",
+     4150.0
+    ],
+    [
+     "2026-10-22",
+     4060.3999
+    ],
+    [
+     "2026-10-23",
+     4007.8999
+    ],
+    [
+     "2026-10-26",
+     4038.3999
+    ],
+    [
+     "2026-10-27",
+     4074.6001
+    ],
+    [
+     "2026-10-28",
+     4081.2
+    ]
+   ]
   },
   {
+   "key": "usdcny",
    "label": "美元兑人民币",
    "value": "6.6675",
-   "note": "10/27(ECB 参考汇率)"
+   "change": "-0.01%",
+   "dir": "down",
+   "note": "10/27（欧洲央行参考汇率）",
+   "dec": 4,
+   "series": [
+    [
+     "2026-09-16",
+     6.7071
+    ],
+    [
+     "2026-09-17",
+     6.7075
+    ],
+    [
+     "2026-09-18",
+     6.6976
+    ],
+    [
+     "2026-09-21",
+     6.6954
+    ],
+    [
+     "2026-09-22",
+     6.7001
+    ],
+    [
+     "2026-09-23",
+     6.7074
+    ],
+    [
+     "2026-09-24",
+     6.7126
+    ],
+    [
+     "2026-09-25",
+     6.7132
+    ],
+    [
+     "2026-09-28",
+     6.7105
+    ],
+    [
+     "2026-09-29",
+     6.7034
+    ],
+    [
+     "2026-09-30",
+     6.7045
+    ],
+    [
+     "2026-10-01",
+     6.7045
+    ],
+    [
+     "2026-10-02",
+     6.7046
+    ],
+    [
+     "2026-10-05",
+     6.7046
+    ],
+    [
+     "2026-10-06",
+     6.7046
+    ],
+    [
+     "2026-10-07",
+     6.7046
+    ],
+    [
+     "2026-10-08",
+     6.7023
+    ],
+    [
+     "2026-10-09",
+     6.6921
+    ],
+    [
+     "2026-10-12",
+     6.6928
+    ],
+    [
+     "2026-10-13",
+     6.6938
+    ],
+    [
+     "2026-10-14",
+     6.6927
+    ],
+    [
+     "2026-10-15",
+     6.691
+    ],
+    [
+     "2026-10-16",
+     6.6862
+    ],
+    [
+     "2026-10-19",
+     6.6807
+    ],
+    [
+     "2026-10-20",
+     6.678
+    ],
+    [
+     "2026-10-21",
+     6.6761
+    ],
+    [
+     "2026-10-22",
+     6.6743
+    ],
+    [
+     "2026-10-23",
+     6.6702
+    ],
+    [
+     "2026-10-26",
+     6.6681
+    ],
+    [
+     "2026-10-27",
+     6.6675
+    ]
+   ]
   }
  ],
  "sections": [
@@ -60,119 +852,25 @@
      "h": "今日要闻",
      "items": [
       {
-       "t": "美联储美东 10/28 下午宣布维持利率不变,并说通胀仍「偏高」,主席沃什(Kevin Warsh)随后开了发布会。",
-       "src": [
-        {
-         "n": "The New York Times(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTE1BdGtmWVdsaDdsWktpYlk1d2lzWGN2OGdvc3VSNFZxcC1EZ0lWVHhuT1ZpOWphTHoxMzlVY2U2cWxKZDNIZVBhTkR4OXNzbW5fVG41SFZ1b0U1cHFtempLQzVQQmRuQmhpWVJXdy1mV2NxSERSZjZqVnJRZkRJR1diMFY1dkxT?oc=5"
-        },
-        {
-         "n": "ABC News - Breaking News, Latest News and Videos(英文)",
-         "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUEhoYVl4OGJtaXFLRU1idHB1dmlvYk1uNEtNNnlMVkFlZEN4N3hpNVB5cmNjWkFEajM2WUZ4bDJJN0pNYlpra21QSGI4cFFwLWllM0xxZlptYWRmdkRlbXAwRWVLcGRBd3J3MDFpUDBvUjVWMElMOGwtZlJMemRJQzczLXI1cWNFMnJKeEcwcGJhUjkzVjZfZ3puam1BQUZFMTRFZ1BIa9IBrAFBVV95cUxQeXRhLUNLYUFqaEtwY25VNnhEUzVzZmRMczBrdVo0SnJXdjdCZjhCbVpURUZJQ2M2MUwyVzlHblFrcTQ0UGhIYUVubHhUZHFVbldqNnJxOFprRG9FRmJIV3ZPaFJiSHZ2a1k0N2R4Q2swcFJ2cDNhZVVJdG0zbG9qaFdvd1l5MXcwbjFWZnBFelBZdFZBMk9pekEzOGFmaEVqVVNmTkx4dXU0eXha?oc=5"
-        }
-       ]
+       "t": "美联储周三（美东时间 10 月 28 日）宣布维持利率不变，称通胀仍处高位。主席沃什（Kevin Warsh）随后举行新闻发布会。"
       },
       {
-       "t": "美股收涨:标普 500 涨 0.28% 至 7,743.98,纳斯达克涨 0.27%。前一天芯片股带头,纳指涨约 1.2%。",
-       "src": [
-        {
-         "n": "Reuters(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR21qQWZsLUZqbWRjR2YtQ3FGakpEWWVjSUVFNjVDSi01MnRiWmV3Z2pPQUsyVGhJR3UxQ1o4RjRVa2tCLXNXbnJjNE9fbE5KVzlKTEZtNHpZb3lPR0hXcFFSVGVydlpnR3RQdVM5bDE3aVI3aVowN0NqY3NHb3VDN3hlaXpLTmxkeFc3NE13dUNqYUtIMHNxRFR5M3VYZmpKUDRzVE5WLUdwRHJCeEpQM1pKaw?oc=5"
-        },
-        {
-         "n": "Sharecast.com(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmFSdUc4dlpGaXdDdVJSYl9FaDgzRmgzVlV0cldEb3BjVXF5OHdTMm9KSUJXWUlWYjdITlFTemdZT01ZTkhzZkxVX3FyeUhuUjRvNENfX0NmTkJWWFU5MmE5bXRfYVpxV2g0TFdWMXRtdW14UzlxNjNQZURPMmxhT0ZjdFBYNk1NN3ZSVDRuNWlZVm9mTWpfMDgtVXc4aEZJbFJ1a2pOLXYxUFNLbGVDT3dKa3QycktSQ3c?oc=5"
-        }
-       ]
+       "t": "美股周三收盘全线上涨：标普 500 指数涨 0.28%，报 7,743.98 点；纳斯达克综合指数涨 0.27%，报 26,549.85 点；道琼斯指数涨 0.19%，报 52,475.10 点。"
       },
       {
-       "t": "美债收益率仍在高位:10 年期约 5.05%,受联储决议影响来回波动。",
-       "src": [
-        {
-         "n": "Bisnow(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONmJkV2lUbklBWGZ4SWxMeTI5bnBTRnI2bWV2dmpqR2dGajFoeHM4cWRTSmxhMnV4YUZaMnI4TnAzQmJ0Y1RTUFhiaEoxWW9ZQWNjWlIycnZfWGpSZVF5ZU83MS1ZSW9tN1pyWHdIY1p1NjRCVFlaR0FaVlZoZWtMb0ZoSEFrX1NGbGtvNG9VbE9GY3NQakdrRTFJYjlyeG0zTWc?oc=5"
-        }
-       ]
+       "t": "周二芯片股领涨，纳斯达克综合指数上涨约 1.2%。"
       },
       {
-       "t": "油价消息很乱:中东和平协议传闻把油价压到 100 美元下方,胡塞武装袭击沙特炼厂又把它推高。",
-       "src": [
-        {
-         "n": "EnergyNow.com(英文)",
-         "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONEY1OTRTVV9fNHdPaVhkcUhKcnlkZHM5Zk9qTk0wNDRYUm9UV3ltT2hWS1BjREhxMktHMEx2UTA1bWthZDdsdHlSSG5WT1J1MUVfSEo4dDUwSzBfM1RqYnhUM3c0MXdrb3BGdUhNUHJVMlQzUVYxRFp1NGJlN1lBZ0JCd1JWNi1RNllueU9ZVVVKSXE3cHc?oc=5"
-        },
-        {
-         "n": "Reuters(英文)",
-         "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUhHblNqOGNPczlpdUR2NDFMWjZxX2FZYjVTTzREX2R4YU5jRzF2ckN1MG9sSnIxWG9hbDJ0TjV4YTZXRjdqSUc3aF9OcTJuUVlJZkZrdUd0V0RMUU1qUWxiNDdmdXhCTmJUczZWOFRUWTRKdzJQLUJYNXZBODhnTjJfOXMyNU01OGVreWM5TkNyamNjbzV5UzAxX3ZOdWcwcUE5SFZHSkEyUjZ1M1dUQ3ByRDdxbC13ZzRQR0xfcTZ0bjh6dnNPalJZRWI?oc=5"
-        }
-       ]
+       "t": "美国 10 年期国债收益率周三报约 5.04%，前一交易日为 4.99%。"
       },
       {
-       "t": "《华尔街日报》称,美国已提醒海湾国家:中期选举后伊朗战事可能短促而猛烈地重启。",
-       "src": [
-        {
-         "n": "WSJ(英文)",
-         "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYXd0OHZEUnBrMFNkRjJ5dHFUakFsTDU0NUxhdzhQUnpPQ0JxMllJanhoeVFQWm1GMmk2RkRUdDFWLVR2N0VwczZOQmZmbG9BanpUSTE2VEhnSS1xd29mUzFzbEdRTVBDWGRSOW1hRW41WU04eE9OSUo4QmFoSG9DUUhUNi13bzNkbEZaWlFUaVUzUzZPWGtMc2JDeEZyODg2Q09JdFZBekl1WnNJdDVBYnZQMzhieGt4bjFuOFZnMA?oc=5"
-        },
-        {
-         "n": "CNBC(英文)",
-         "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VVTZnQjZMOUgxd3doMmJKclN5eUlkbFJoOE9TZDJQVlN5Zm92aDRIYW5yMWcwTGxtRHBfNW9FQ3NIbTJXSmdJZU9ibE9XZFRaQWJXb3JYbDJWY1l4c2o5OU5xeC1VbmFRN1JmMWZUUG9LNVhCYnk2ZNIBfkFVX3lxTE9PVWR4YV9Fa0UyQi0tN013V0d5bjY3bUJqZ1R2VGlsSHdGOURZVkRTSDhLUkpQS2lyV0ZDVlNua3RRelVoMmV4QUdfZUU5S09oV0ZHQTAzNm1hVWxVTVMzRWd0X2M3b3RfdVFUcFNfckgxMUdKMnNldWo2RWpIdw?oc=5"
-        }
-       ]
+       "t": "中东和平协议预期一度压低油价，也门胡塞武装袭击沙特炼油厂的消息又推高油价，布伦特原油周三交投于每桶 110 美元上下。"
       },
       {
-       "t": "加拿大央行加息到 2.5%,并说还会继续加息(据 The Real Economy)。",
-       "src": [
-        {
-         "n": "The Real Economy Blog(英文)",
-         "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPR1liaEw3bWxBRHk4dFhMcGs3QnNPQzRxX2lYVjJpb1c4XzRBbGtuWERYY2lCQlY2dXoyUWFwdzc4Mk5Ba2J1a245b0t3cEJxREg5NThyZERKdkZ3YWJGZ3RPUFB6dXZ1dFduNEdxbTJWQVVLdDNMR09DS080RXYwWGY1MHV4bldORWNENklKSU9tc0FoeUFTd0pLRml1Zw?oc=5"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "h": "怎么理解",
-     "items": [
-      {
-       "t": "联储不动手,不代表放心。通胀高的时候,市场更担心下一步是加息,而不是降息。"
+       "t": "《华尔街日报》报道，美方已提醒海湾国家，中期选举后伊朗战事可能短促而猛烈地重启。"
       },
       {
-       "t": "油价高会推高通胀,通胀高利率就降不下来,利率高又让科技股这类「贵」的股票更难涨。"
-      },
-      {
-       "t": "10 月以来,没沾上 AI 的股票比标普 500 多涨了约 6 个百分点,钱在从科技股往别处流。",
-       "src": [
-        {
-         "n": "24/7 Wall St.(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORnJBbTRMWjR1aTRFaS02MktMZmUwNlJVOWlkM3ZfdjZpN0FtbFFScnhtdjc1LTVaQTJWWWpLRmlCVXJ4blB6NUtDSG12YUVMYWwyYS1zTnVXakNwdk1NbUZVRW8tQlVka3NvcFpaeXJZcTBMbWdtQll1OVdWS28xdnF5TWFEN0tSaE1Bb2RrS05ra01yWGFYcnNrRm5venBHbDc0VEk3WGVweWs?oc=5"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "h": "长期趋势",
-     "items": [
-      {
-       "t": "市场在讨论的问题,从「什么时候降息」变成了「会不会再加息」。"
-      },
-      {
-       "t": "能源和地缘冲突重新成为通胀的主要来源。"
-      }
-     ]
-    },
-    {
-     "h": "风险",
-     "items": [
-      {
-       "t": "油价突然冲高,带动通胀预期上升。"
-      },
-      {
-       "t": "美债收益率突破 5% 后继续上行,压制股市估值。"
-      },
-      {
-       "t": "中期选举前后的政策变数。"
+       "t": "加拿大央行加息至 2.5%，并表示将继续加息（据报道）。"
       }
      ]
     },
@@ -180,7 +878,7 @@
      "h": "接下来关注",
      "items": [
       {
-       "t": "11/3 美国中期选举;12 月美联储会议;诺和诺德(Novo Nordisk)11/4 财报;10 年期美债 5% 关口。"
+       "t": "11 月 3 日美国中期选举；12 月美联储议息会议。"
       }
      ]
     }
@@ -197,136 +895,32 @@
      "h": "今日要闻",
      "items": [
       {
-       "t": "微软(Microsoft)财报:利润同比涨 32%,单季净利约 360 亿美元,花钱也大幅增加;盘后股价上涨。",
-       "src": [
-        {
-         "n": "The New York Times(英文)",
-         "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JV0t1VzdLRjByRlFFemJORWcybEE3eFhxMUpFWGNYS0hnVTk3VzJLLXMzZlBXUzlyTWJWenEzSjFNWVE4NUxsMmFFU29KeEhpNGthZWVjQW53Y2xUQjNtNU9ReGJpNzF4YzhuVUYtXzltTXJvNm9VeFlPMTM?oc=5"
-        },
-        {
-         "n": "Forbes(英文)",
-         "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcGFjUl9xRFBLTEtwTGNWMU9xRGhpV185OGhYR3BpT2xhb2RhSEJLX21oYzUyNVVMZzlJVWFHdjlTX2Q5aFhMVUI2WEV5UFdGS1JKZ1ptRmFzbjF0eEdZS2J3YnhmN0NVSnAtYnYyencwWVhCMDEzVWpZeHo1YnBtREFpV0psWXI2S0ZfNndsWjBhMzdBTUI1WVBtelVCczF2a1ZYdjVLSnItTWFTSmZ3Vm9aenF0OFlmLUVNSDVybw?oc=5"
-        }
-       ]
+       "t": "微软公布季度财报：净利润同比增长 32%，约 360 亿美元，资本支出大幅增加；盘后股价上涨。"
       },
       {
-       "t": "谷歌母公司 Alphabet 财报:云业务收入超预期、总收入创纪录,但广告收入不及预期,股价盘后下跌。",
-       "src": [
-        {
-         "n": "Macon Telegraph(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xLUFtZ3Q2N0pDbWZNN3l4N1FWTngzeG5peHZ6MmVKckh5TzRuYnZnVTdVN0pmWkJOM1hiRUo0SEk0ZUhxN0QzWkRMc3ZCS2dWaVExQnM1eDNJTXU2by1qV20xWWhzWHl2?oc=5"
-        },
-        {
-         "n": "조선일보(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdi14MjI2YUE1SmJOVWczVmttaEw0YWEyTTA5UnBWNU9MV2hReEh5cFpjOXBoSXhLMlZLVndSZzEyV1NJOE5PM3g2Qml2b3NNMUhqY0Zob3J6azJqT0Q1UWd2QXVQZ2FkM3BxblRwNDdPelhSR0JVaXRSc3pVaWFGakl1cEpDcWhZ?oc=5"
-        }
-       ]
+       "t": "谷歌母公司 Alphabet 公布季度财报：云业务收入超出预期，广告收入低于预期，盘后股价下跌。"
       },
       {
-       "t": "华尔街对 Alphabet 把回购资金改投数据中心有些紧张(《巴伦周刊》)。",
-       "src": [
-        {
-         "n": "Barron's(英文)",
-         "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc1cyWEw2N29xSWxneld4YlNXRFozMUVXMVVuR1ZBbXBDWno5Nzd4QklMQmFVZi1yTld5M2pfTk9TOXpYdGRBVm51WTNKQ2J4MVJPME1naEtCM3N2SXBNbVVlZzVBdS1nbnVnNy10WFFQanh4Y1VjUW12Y2dsYTVzTw?oc=5"
-        }
-       ]
+       "t": "《巴伦周刊》报道，Alphabet 将回购资金转向数据中心建设，华尔街出现担忧情绪。"
       },
       {
-       "t": "据报道,OpenAI 要买谷歌的 AI 芯片(TPU),对英伟达(Nvidia)是个信号;甲骨文(Oracle)云也将提供谷歌 TPU。",
-       "src": [
-        {
-         "n": "24/7 Wall St.(英文)",
-         "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOU41VEhZT0hhZFRRQXVmRWhKWml6Q3FSLVRxeXpRYU9xLW5xQ21MT080OTJvNEtmcmQ5ZW05Tl9XRG4zeVZ1VVhNLWphbXB3ODJpcTBaY0hXc2J4RHBtQm1wVFJHUTlBeC02YkJydmF2QUFTS0s4eFU5UVB1bkZhdmZpUlQ4NnJSZHFlTnpoVzVYVmZmbnJ3NkMtbHZfT2N6M1p1VXk1QUNsWjdWVmpUeU9VZ0dCWGs?oc=5"
-        },
-        {
-         "n": "Data Center Knowledge(英文)",
-         "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOFFKU0dGWEdWMXNYTVM4TmhJTEFMRndMSHg2RkZFVkJDdFNkYXpMc1BBNFhSekdBWU52a2YwNk5laU5xWkJZc0VDajU3ZmE4c3Fsc2lrcG5UQWxiOWlCODlmeVotLVdmVVpza0t1S2pCR294Vjk1czAzNTNGaXZNNFlGR2ZlVFdJWkZrYlhxWVgyNnBQalFQemNLY1Q2S19mOHZtTVl0QQ?oc=5"
-        }
-       ]
+       "t": "据报道，OpenAI 计划采购谷歌的 AI 芯片（TPU）；甲骨文（Oracle）云将提供谷歌 TPU 及新款 AI 芯片。"
       },
       {
-       "t": "Anthropic 把数据中心「暂停令」列为增长的头号风险之一(据 Yahoo Finance)。",
-       "src": [
-        {
-         "n": "Yahoo Finance(英文)",
-         "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYVY4SmxCSFR3aDBTSUVFYXdyMG9vZ3l4ajlBZS1TU0w1d2lzZUhqYUtqLXczMUtoNGF5ODZMNWdETzVmeF90cktwVFd5aXpRU205djdmc2I3QXJYeVhEc2pELVVqeHl4S3R5NTg2NTcwMTF2M0ZZak9DX0NXWjU2OEF0aXZOMHhGcVQ3SFNMcHlFM1VVbTl6WXRLeHN1U0diVzU2TWNR?oc=5"
-        }
-       ]
+       "t": "Anthropic 把数据中心暂停令列为其增长计划的主要风险之一。"
       },
       {
-       "t": "科技股昨日分化:超微(AMD)涨 3.2%,英伟达(Nvidia)和 Meta 各跌约 1.2%。"
+       "t": "美国司法部起诉一名加州男子，指控其向中国走私价值 3 亿美元的英伟达（Nvidia）芯片；马来西亚扣押了涉嫌违反出口管制的 AI 服务器。"
       },
       {
-       "t": "走私芯片:美国司法部起诉一名加州男子向中国走私价值 3 亿美元的英伟达芯片;马来西亚扣押了涉嫌违反出口管制的 AI 服务器。",
-       "src": [
-        {
-         "n": "Startup Fortune(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa3FrY1liNWY5enZvMVpUX0N3T0h6T0VsLXhLbnNITjFmRUx6Y1d0TllQdEVNR1JVc193VEpZVkRGV3RROE4xV0l0LW84TUtwSFdEOENodzVrV29TeUk4Zm9EcHBNWG9nNzlQS3R1THlOcWMxcWRCLTNYRENPUm9TNG1BWXVqZEV3YV8zeDhLVFpRSVdqSFBvWnplakZpOWJ1SGR6a2wyR2RLZw?oc=5"
-        },
-        {
-         "n": "Yahoo! Finance Canada(英文)",
-         "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUGo0V2paTkdlcmdTeFIyVVVwdmxjV3lKb2VmUklvXy1TeHdsYjZxN19ITXBPclNUbjVwSTE0ZjVubWY3RURyNlBBR3VVRjY3dFh6TGRoTGlnUWZDOEZQSk5ULVJ4dFU2ZG5EVnYyVjZtUVYzcWlUOTh3d1V0SGdQR2FzMU54bW9MYXNMUg?oc=5"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "h": "怎么理解",
-     "items": [
-      {
-       "t": "大家的核心疑问没变:科技公司花这么多钱建数据中心,多久能赚回来?"
-      },
-      {
-       "t": "OpenAI 买谷歌芯片,说明大客户在分散供应商,英伟达的话语权会受到考验。",
-       "src": [
-        {
-         "n": "24/7 Wall St.(英文)",
-         "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOU41VEhZT0hhZFRRQXVmRWhKWml6Q3FSLVRxeXpRYU9xLW5xQ21MT080OTJvNEtmcmQ5ZW05Tl9XRG4zeVZ1VVhNLWphbXB3ODJpcTBaY0hXc2J4RHBtQm1wVFJHUTlBeC02YkJydmF2QUFTS0s4eFU5UVB1bkZhdmZpUlQ4NnJSZHFlTnpoVzVYVmZmbnJ3NkMtbHZfT2N6M1p1VXk1QUNsWjdWVmpUeU9VZ0dCWGs?oc=5"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "h": "长期趋势",
-     "items": [
-      {
-       "t": "算力、芯片、电力是 AI 竞争的瓶颈,自研芯片和多家供应商成为趋势。"
-      },
-      {
-       "t": "数据中心建设越来越遇到地方限制(如暂停令)和电力约束。",
-       "src": [
-        {
-         "n": "Yahoo Finance(英文)",
-         "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYVY4SmxCSFR3aDBTSUVFYXdyMG9vZ3l4ajlBZS1TU0w1d2lzZUhqYUtqLXczMUtoNGF5ODZMNWdETzVmeF90cktwVFd5aXpRU205djdmc2I3QXJYeVhEc2pELVVqeHl4S3R5NTg2NTcwMTF2M0ZZak9DX0NXWjU2OEF0aXZOMHhGcVQ3SFNMcHlFM1VVbTl6WXRLeHN1U0diVzU2TWNR?oc=5"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "h": "风险",
-     "items": [
-      {
-       "t": "AI 概念股估值回调,会拖累整个大盘。"
-      },
-      {
-       "t": "芯片出口管制与走私执法加码,影响供应链。"
-      }
-     ]
-    },
-    {
-     "h": "接下来关注",
-     "items": [
-      {
-       "t": "Alphabet 财报细节与资本开支指引;英伟达下次财报日期(待确认);OpenAI 融资进展。"
+       "t": "异动股：SK 海力士（SKHY）涨 13.3%，公司随三季度财报公布 750 亿美元股东回报计划；甲骨文涨 10.7%，原因待确认；F5 跌 20.4%，Enphase 跌 16.0%，罗技跌 12.1%，原因均待确认。"
       }
      ]
     }
    ],
    "charts": [
-    "tech_stocks"
+    "tech_stocks",
+    "tech_movers"
    ]
   },
   {
@@ -337,109 +931,25 @@
      "h": "今日要闻",
      "items": [
       {
-       "t": "礼来(Eli Lilly)称,在对比试验中,新药 retatrutide(一种三靶点减肥药)的减重效果约为诺和诺德(Novo Nordisk)司美格鲁肽(Ozempic)的两倍。",
-       "src": [
-        {
-         "n": "ABC News - Breaking News, Latest News and Videos(英文)",
-         "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRU9xZWNDTzF1aFlDZDhDakN3VEhRWGNkNW1vazVNcmZ2ck5zLUducGRNQkVVZzhXaXI1NlZqNm9tRmtUZUNxT0luV2lTem1halp0bHg3aHUxUmVTVHV0MXdKYmpmQm82enRaVDRGVjJ5QTVUelhnRzVyNFQyOHBXU0MtZmRabkJhMjJVUHc4MlZfTlg0X0lGb3FYMlV6dUJRUDlLQ1V2SWdMNEwzcE5Z0gG0AUFVX3lxTE1KOFBNejNDZ1pmandiWkphZmpJRG1tdWZsZllVZFh0djJ2NWdzT2kybmNZd01memtqekFxc2IwZGNTUzljSE9LUGZ6R0dVTWZyUUR0TTY5dmZfSnVqNlJ2eEZTdHlwR0R0UzdKbi0yakZab0xNdW9wWTRVOVdvQWdMcTVYMURETjhyY05zN081RjNoZWFINHdKT2YwdnZDWTc3SjNXc0lEY0dLaHhGM3prZE5OVw?oc=5"
-        },
-        {
-         "n": "BioPharma Dive(英文)",
-         "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNN19wd1NRdjNRRTcwb1VndDlmVlNuZGNRMDBpWXV0aXd0UFFkTnZKb1A0dGJCdHZDd1VZN3hsVkFfcXFobTg2TDRyNVZPQ3paWkhRQWdFMHhyczdoaGlFRzhSdXNKU2pYbGcycEFRS08yaHlDZkEyVE5lUFp5RU41TklaTmN1NGFkWWZoNDdHU0EwNm1pbmszTERXUVQ?oc=5"
-        }
-       ]
+       "t": "礼来（Eli Lilly）称，在对比试验中，其三靶点减肥药 retatrutide 的减重效果约为诺和诺德（Novo Nordisk）司美格鲁肽（Ozempic）的两倍。"
       },
       {
-       "t": "同一试验显示,该药在糖尿病人群中也优于司美格鲁肽(STAT、BioPharma Dive 报道)。",
-       "src": [
-        {
-         "n": "BioPharma Dive(英文)",
-         "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNN19wd1NRdjNRRTcwb1VndDlmVlNuZGNRMDBpWXV0aXd0UFFkTnZKb1A0dGJCdHZDd1VZN3hsVkFfcXFobTg2TDRyNVZPQ3paWkhRQWdFMHhyczdoaGlFRzhSdXNKU2pYbGcycEFRS08yaHlDZkEyVE5lUFp5RU41TklaTmN1NGFkWWZoNDdHU0EwNm1pbmszTERXUVQ?oc=5"
-        },
-        {
-         "n": "STAT(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRVpYTU1xREdoVzU1UXRDUVNfZE9Oc3FTc0tycU5LNHpIV1IyZTF6RDJEcUtFUTJMRjAwUWN3b3FhWWZFUlV0dF9VT3J1c2gxV2tvM1Z4X2NaRGltNDR2SEdXMkJrTWx1N3RtbllGQno1eGVwOEZxN0QxSllZUXhscFA3Wk1DYl9yR2MzN19aNDhUOF9vdDVkZGd5NFhqN1JQUm5uR2w2ZzBZdw?oc=5"
-        }
-       ]
+       "t": "同一项试验显示，该药在糖尿病患者中的效果也优于司美格鲁肽。"
       },
       {
-       "t": "丹麦药企诺和诺德:周制胰岛素 Awiqli 获 FDA 批准用于 2 型糖尿病儿童;公司将于 11/4 发布财报,另有一项法律官司不利。",
-       "src": [
-        {
-         "n": "Yahoo Finance(英文)",
-         "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUlN3VWtBWGF1VGcxY2VWR3ZSaldsRnR6cTY3YUNwN0dFUVNQeDFTbEhEd0M0WmF3c2FmWUY3c3FBTjJ2TmNENzJqejVnLWJ6T01jN19mcWlhZEV4amtZTzAxQ2NnYVZNQkUwNUkxQTR3V1NXand2SjZ1NGd0clZvTVJrNGNjcF9hTVFtTHJ3?oc=5"
-        },
-        {
-         "n": "ad-hoc-news.de(英文)",
-         "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONUU3YW9XX3JTajhiTTd6S2tsS3FFTl9wWlYtYWtfRHJnUFRtYVJhMjN4YXdOM21FaHVzalhzdmdpNkpNaHVEX2ZJQko4aVNUckZtYnpPeWNnY1czd2xpQUN2U3hsd0NCdjRLdG9aWGRJZHlOQmo2SExtRUhfVG1iZ01ZNjJsSWVUSzVLdzBBVWQ1ekVpZU1NWDE5T3pxY1lPUXE3Y3AyTDc4SnJFbnhRZUo4aElUbDZWU2dJODRNOHp5WHZ6d0lnYW5GTVhabUhSZXZJUWplWU5aNHdwM21kSU1tMTF2cmlURzNFNWVYVGZrUHpBaXc?oc=5"
-        }
-       ]
+       "t": "诺和诺德的周制胰岛素 Awiqli 获美国食品药品监督管理局（FDA）批准，用于 2 型糖尿病儿童患者。"
       },
       {
-       "t": "Genmab(丹麦抗体药企)股价创历史新高,一款抗癌药把死亡风险降低约 50%(《巴伦周刊》)。",
-       "src": [
-        {
-         "n": "Barron's(英文)",
-         "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYlRvUDRDOFJwb2dGZWtNNXRXWWN0ZGV3XzNUWGk0ckR4bjV1ZmQ1c0FLZHhUYVFXQmtQNndzR3lHQkRUNWo3WC0yNWFWZjBjNFUzc0t6ZVh4ZDNEbGZZVHF3eFV2dUlhX19BOFZ3aWhhamFYYUc5bFpOYVhpWGhfVkdDMWs?oc=5"
-        }
-       ]
+       "t": "Genmab 股价周三上涨 28.3%，创历史新高；其一款抗癌药使死亡风险降低约 50%。"
       },
       {
-       "t": "美国一位议员要求政府监察机构调查特朗普推出的药品折扣平台 TrumpRx,质疑其宣称的降价幅度。",
-       "src": [
-        {
-         "n": "STAT(英文)",
-         "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMDB5NnZrQkZ2ejFESDBnbndOMUF2NFlmLWotbWRXZnhLNmw5YnVSNVNGaXEyVVJRVGhJZ1o5U1ptYXF1a29SS0V5UUNGQWxYZW16ZnVmWnVkMDBfcjVnRFZORXFVMXNPYTcyZi1wbzJYeHkxSlhldlVJWWNCUWFVWjBpd2k1anQyUDlzVElQdUZ5R09PQ2hF?oc=5"
-        }
-       ]
+       "t": "异动股：Replimune 涨 23.1%，Generate Biomedicines 涨 16.4%，Beam Therapeutics 涨 15.6%，原因均待确认；SELLAS 跌 14.7%，原因待确认。"
       },
       {
-       "t": "美国联邦新规瞄准处方药定价中的隐性费用。",
-       "src": [
-        {
-         "n": "Baton Rouge Business Report(英文)",
-         "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTkFIVXBXcGFSOGwwbnEzNm1wTE1kb2t4M25BR0I4TU5FXzRJUXFmUHB1YWVXb1V5RDMzZTA3aFIxUEdkT1pjNHF3SGl5MUNSdnZmbkp2U2dzVkZzcnBOX08td2xMdDFBTEt3VlRkQ1QwSktjc2JoLUZvUnJ2ZUZDS3hCUzRZZ2NlMWZuamJ3bDUxVTBXcV9LTA?oc=5"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "h": "怎么理解",
-     "items": [
-      {
-       "t": "减肥药是目前医药最热的赛道,礼来和诺和诺德在打擂台,新药数据直接影响两家股价和市场份额。"
+       "t": "美国一名议员要求政府监察机构调查 TrumpRx 药品折扣平台关于降价幅度的说法。"
       },
       {
-       "t": "药价和药品福利管理(PBM,药品价格的中间商)是美国政策的反复焦点。",
-       "src": [
-        {
-         "n": "Baton Rouge Business Report(英文)",
-         "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTkFIVXBXcGFSOGwwbnEzNm1wTE1kb2t4M25BR0I4TU5FXzRJUXFmUHB1YWVXb1V5RDMzZTA3aFIxUEdkT1pjNHF3SGl5MUNSdnZmbkp2U2dzVkZzcnBOX08td2xMdDFBTEt3VlRkQ1QwSktjc2JoLUZvUnJ2ZUZDS3hCUzRZZ2NlMWZuamJ3bDUxVTBXcV9LTA?oc=5"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "h": "长期趋势",
-     "items": [
-      {
-       "t": "减肥药正在从「能减多少」转向「谁更方便(周制、口服)、谁副作用更小」。"
-      },
-      {
-       "t": "美国药价改革会持续压缩药企利润空间。"
-      }
-     ]
-    },
-    {
-     "h": "风险",
-     "items": [
-      {
-       "t": "临床试验结果和上市审批存在不确定性,股价波动大。"
-      },
-      {
-       "t": "药价与医保政策突变。"
+       "t": "美国联邦新规针对处方药定价中的隐性费用。"
       }
      ]
     },
@@ -447,19 +957,14 @@
      "h": "接下来关注",
      "items": [
       {
-       "t": "诺和诺德 11/4 财报与 CagriSema 数据(据 ad-hoc-news);礼来后续试验的完整数据与上市时间表。",
-       "src": [
-        {
-         "n": "ad-hoc-news.de(英文)",
-         "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONUU3YW9XX3JTajhiTTd6S2tsS3FFTl9wWlYtYWtfRHJnUFRtYVJhMjN4YXdOM21FaHVzalhzdmdpNkpNaHVEX2ZJQko4aVNUckZtYnpPeWNnY1czd2xpQUN2U3hsd0NCdjRLdG9aWGRJZHlOQmo2SExtRUhfVG1iZ01ZNjJsSWVUSzVLdzBBVWQ1ekVpZU1NWDE5T3pxY1lPUXE3Y3AyTDc4SnJFbnhRZUo4aElUbDZWU2dJODRNOHp5WHZ6d0lnYW5GTVhabUhSZXZJUWplWU5aNHdwM21kSU1tMTF2cmlURzNFNWVYVGZrUHpBaXc?oc=5"
-        }
-       ]
+       "t": "诺和诺德将于 11 月 4 日发布财报。"
       }
      ]
     }
    ],
    "charts": [
-    "biotech_stocks"
+    "biotech_stocks",
+    "biotech_movers"
    ]
   },
   {
@@ -470,120 +975,22 @@
      "h": "今日要闻",
      "items": [
       {
-       "t": "美国最高法院放行特朗普关于邮寄投票的行政令的部分内容;政府还要求法院批准对邮寄选票的新限制。",
-       "src": [
-        {
-         "n": "ABC News - Breaking News, Latest News and Videos(英文)",
-         "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLUpWVmxZNkVNNGxlamhNRjkteVhjUVJNMXhDQ3Vyc3V3UkdTVEcyeUM0ZnEzTUlJQXRYMUZsNkZ5LTN5Q0VzWDFrVmVFSVlpOFBSaEpwa19qd0Q4SExzankxMEpIQjMxT2k5R0Z3emE0cDFCNng3V3lwVjBQUDg1NNIBhgFBVV95cUxOWGtmd1BpZ1U2QlJOeTZIcXhKMTVTOVFEZDJKcDJPS1NzX2NsOG1RT2w2TkpUMDkwTWY1QzlZcGt4LVlmNV9NZlFVUG04S0Y1U2hUSUdFSk5sUlFId1VsZzlnd1JvOGlWQnY2LThiN1J6cjZDSjdSWHd3elNWS3FpYWJqMXFnUQ?oc=5"
-        },
-        {
-         "n": "The Washington Post(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQRUFwUTVHZDMwNmFGWG5xa2ZqTGJxWTJUYjlUS3ZBN0gzN1FKcnFHVl93Z0oxUGM3eWpCbmdzZTVDTHdZVUpBRHVwaE5UM0ZQQk91RXYwNTRYbnppb0ZzYjMtaW9iU251dUM1Mi1GWWE5cDdPeU9ZenRvWTA1amtMeXN2NExsSUUycmpKTV9TOTM3QXY0U09nWkVhY1ZqZ2lVU2poS2J0U0JlU2YwVWh5QkttN1VMOGV4blNHNTE3QnNndmlwdlZZMi1uVWRaQ3RQaktVT1ZrZVdibjVBWm1kVmtjUWFiMGRhU1RUUkJTajJYeGxHU0lFSE54REtOeEJBS0VpLUZOS3Q?oc=5"
-        }
-       ]
+       "t": "美国最高法院允许特朗普政府执行其邮寄投票行政令的部分内容。"
       },
       {
-       "t": "路透:特朗普政府扩大对非公民投票的调查,发出大批传票。",
-       "src": [
-        {
-         "n": "Reuters(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLUotYWh1WFdrMnphczZlaFJpUldzNFo2TnVweFZVbDdVT1NvY0JJaHV1dV95ZnQySUtha2F3dkFnbGlMcjkwREh2ZldydDJab3JqaGRJb0E1emtsR2hOUTd4MTVmbG1LWUNPLWJVenJZQTQ5cnFsaEFfcm5EU1ROMW02Y2Y4dkRRbENOUEtRVEdfbVUxSjhwbXM1b2RqWnBGZlgtTmJVNjlhN053bVcwTnY2UFZEZlNz?oc=5"
-        }
-       ]
+       "t": "路透社报道，特朗普政府正通过大批传票扩大对非公民投票的调查。"
       },
       {
-       "t": "特朗普在竞选活动中提到,可能提名参议员克鲁兹(Ted Cruz)出任未来的最高法院大法官。",
-       "src": [
-        {
-         "n": "USA Today(英文)",
-         "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTy0tNDdCQk42ek5nY2RhcE56SmZmNE1TSmo1VVNtZmhLTjN2MkgxNlNEUzJEU2doRkJjWlFLNXJROEZPbEVVcV9faFVJMU9SSEFtTXo5M2JwRElkVzBTSmxWVm96QW9KYmhOVURBbi1UcVFHYUxScmtxVnZ2TktLM3gyN0s2TlhtX04xZmtzTm5qWXl1cnB0RDBlWjZEY3ByRG1yVmYzaEJuN1ZaNTBmNHN4QXp1YUJfR1QxOQ?oc=5"
-        },
-        {
-         "n": "Scripps News(英文)",
-         "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMUNHeDdHZDVrWlFOWTd4ZzB4SDdmbWJaaDdPM19xcVNRSER6ZXRqNE9WZHViWTc1bktxXzR3X08ycTF5V1pwTGJSV1VMTURTaHdZcDhqN1VMM1FtVDJTT1VXWFRuVUlLamJ4Vk5WYjlVZUhQUGFoWkI4amdQb2hvbXE0eUNNUngtNEhDYXhXNTVLdXhWa2ZQbG1WZGNKdw?oc=5"
-        }
-       ]
+       "t": "特朗普在竞选活动中提到，可能提名参议员特德·克鲁兹（Ted Cruz）出任未来空缺的最高法院大法官。"
       },
       {
-       "t": "加拿大与欧盟(EU)10/29 至 30 日举行峰会,联合声明草案删去了「准成员」的说法。",
-       "src": [
-        {
-         "n": "POLITICO.eu(英文)",
-         "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdHlqM0NqOVQxdlJSYjlzWlFkYnIxeTVrX1M2cWp4dXozSnpwMjBNOVpjaVVBTnpqZU1BSU4tSFRKWmxoLTh0QjVIQjRqSUV4VVNnU3NCVWpuMU1obUVrUHFjR2hjdWpTRmlhYnU1cXV1dnBZaldMY2lwVTFZemVmUF9ORFAwWEloczJNTHBCWE1SZGM?oc=5"
-        },
-        {
-         "n": "CBC(英文)",
-         "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ0dtbG95c2h3TXdodUZtNDBJSWdhWnh0ZnNfLXZFSHpmUVlaNjFPcXJYWUZaa1NpaWlabktqZFJWQmpuOFZHeHR1bFlUcDFzRTNGV1UwbFhKMzRaclVNQkRYaEdlODVvaFlQSEJpMTFyYzdpd1k5THhwamxQT0ZZUjlNT0JoN1Nk?oc=5"
-        }
-       ]
+       "t": "加拿大与欧盟将于 10 月 29 日至 30 日举行峰会，联合声明草案删去了“准成员”的表述。"
       },
       {
-       "t": "中东:胡塞武装与沙特方面的冲突让局势紧张,美方提醒海湾国家做好准备(详见市场部分)。",
-       "src": [
-        {
-         "n": "Reuters(英文)",
-         "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUhHblNqOGNPczlpdUR2NDFMWjZxX2FZYjVTTzREX2R4YU5jRzF2ckN1MG9sSnIxWG9hbDJ0TjV4YTZXRjdqSUc3aF9OcTJuUVlJZkZrdUd0V0RMUU1qUWxiNDdmdXhCTmJUczZWOFRUWTRKdzJQLUJYNXZBODhnTjJfOXMyNU01OGVreWM5TkNyamNjbzV5UzAxX3ZOdWcwcUE5SFZHSkEyUjZ1M1dUQ3ByRDdxbC13ZzRQR0xfcTZ0bjh6dnNPalJZRWI?oc=5"
-        },
-        {
-         "n": "WSJ(英文)",
-         "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYXd0OHZEUnBrMFNkRjJ5dHFUakFsTDU0NUxhdzhQUnpPQ0JxMllJanhoeVFQWm1GMmk2RkRUdDFWLVR2N0VwczZOQmZmbG9BanpUSTE2VEhnSS1xd29mUzFzbEdRTVBDWGRSOW1hRW41WU04eE9OSUo4QmFoSG9DUUhUNi13bzNkbEZaWlFUaVUzUzZPWGtMc2JDeEZyODg2Q09JdFZBekl1WnNJdDVBYnZQMzhieGt4bjFuOFZnMA?oc=5"
-        }
-       ]
+       "t": "特朗普称美国将在人工智能领域胜过中国；战略与国际研究中心（CSIS）梳理了此前特朗普与习近平会晤的经济安全要点。"
       },
       {
-       "t": "中美:特朗普说美国将在 AI 上击败中国;智库 CSIS 梳理了此前特朗普与习近平会晤的经济安全要点。",
-       "src": [
-        {
-         "n": "WWNY(英文)",
-         "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeklkaS1fbjNoSm5WNEFTenktZi1uMnJPVGd5dkwxUDhLR0RkbXR6d0hfNkRpNTA1Z1JMVGl1VWx4MVQtMTRwRWpIQXZGWVNNa2pjN09PZjcxamVnRWM3bFQxMnhvZkVNTlRKb1F5QkNXc2hSUE03TG84dFo3RFFHNXNJYWM3Z2tZOE9Qb3RPUdIBowFBVV95cUxNeXcyTjlZRTU2VVBBQndzZlV6LU5oM0ktbE5JVmEzaFRjaVp1enVoVlBQbjM1bHo5bDFyUmYtblR3Qi0xbWFlMmhDUG9wMXhSNzhkWk1aU1hFMlNoSWtJY21UWm53dWo0R0F0YWp6a2hCQzJLV1plY3A0RmJkd0pMSC1vZjZUbjYxYzJLMTFSUUVSMVF2U3UzdjB4dUNMUTNiVUlj?oc=5"
-        },
-        {
-         "n": "CSIS | Center for Strategic and International Studies(英文)",
-         "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaHJweUhNSVFWUjBPam1sdkFseTlVSmkwTFNmdnVCV0xLcHhQVnhyMzRWZElncjRLbzlfWXdjbXVzSGo3V3FENjVaNmc3bGZvcWhqLU5qUjB3SXpFUGx0VVdDcFg1NkgtYS1RSnJuV3hERGQzVTF3QTVUSkFTR2Nxa2xXN2o1ZTA?oc=5"
-        }
-       ]
-      },
-      {
-       "t": "荷兰宣布退出欧洲歌唱大赛,要求主办方暂停以色列参赛资格(据国际特赦组织)。",
-       "src": [
-        {
-         "n": "Amnesty International(英文)",
-         "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVUxpRnVYR0YwRXR1OEhkb0Y2RmFMYW5YeDVqaV9HajJDTEV0em1zQ3hmZFFlRWpUTXlkdEFETzl3TEplM3BrR29wZVdSeDdrVlNvWHhrWFdZVHNKSEF0dGN5ZnZBRi1vdEdjaTRldTJBM2I5SnhDcFNTUUR6NFBlOWtZNWg0ZG1kWVJjZnQtblYwZE5mWXNXNGZPVEdkWTZHNVJiZk5kM0NkRFZGdzB5dU1hb05hb19id1JURzB5d29PTVVBT0M4OEs4OFFwWlNybUZ6NHVkVGZsY0hiWi1UeldFZHo?oc=5"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "h": "怎么理解",
-     "items": [
-      {
-       "t": "美国中期选举在即,选举规则和司法裁决会成为政治与市场的双重变量。"
-      },
-      {
-       "t": "欧盟与加拿大靠近,是在美国关税政策压力下,寻找更多贸易伙伴。"
-      }
-     ]
-    },
-    {
-     "h": "长期趋势",
-     "items": [
-      {
-       "t": "盟友之间的贸易与安全合作重组,美国不再是唯一轴心。"
-      },
-      {
-       "t": "中东冲突与能源价格捆绑在一起。"
-      }
-     ]
-    },
-    {
-     "h": "风险",
-     "items": [
-      {
-       "t": "中期选举后伊朗战事重启的可能(据《华尔街日报》)。"
-      },
-      {
-       "t": "选举法规诉讼增多,带来政治不确定性。"
+       "t": "国际特赦组织称，荷兰退出欧洲歌唱大赛后，主办方应暂停以色列的参赛资格。"
       }
      ]
     },
@@ -591,7 +998,7 @@
      "h": "接下来关注",
      "items": [
       {
-       "t": "10/29 至 30 日欧盟与加拿大峰会;11/3 美国中期选举。"
+       "t": "10 月 29 日至 30 日加拿大与欧盟峰会；11 月 3 日美国中期选举。"
       }
      ]
     }
@@ -602,8 +1009,8 @@
  "charts": {
   "usmoves": {
    "kind": "bars",
-   "title": "美股单日涨跌幅(%)",
-   "desc": "标普 500 与纳斯达克,最近 5 个交易日。",
+   "title": "美股单日涨跌幅（%）",
+   "desc": "标普 500 与纳斯达克，最近 5 个交易日。",
    "categories": [
     "10/22",
     "10/23",
@@ -632,99 +1039,373 @@
       0.27
      ]
     }
-   ],
-   "src": [
-    "Yahoo Finance",
-    "https://finance.yahoo.com/quote/%5EGSPC/"
    ]
   },
   "tech_stocks": {
    "kind": "hbars",
-   "title": "科技股单日涨跌幅(%)",
-   "desc": "10/28 美股交易日,从高到低排列。",
+   "title": "科技股单日涨跌幅（%）",
+   "desc": "10/28 美股交易日，按涨跌幅排列。",
    "rows": [
     {
-     "label": "超微 AMD(AMD)",
+     "label": "超微 AMD（AMD）",
      "value": 3.24
     },
     {
-     "label": "谷歌 Alphabet(GOOGL)",
+     "label": "谷歌 Alphabet（GOOGL）",
      "value": 1.34
     },
     {
-     "label": "亚马逊(AMZN)",
+     "label": "亚马逊（AMZN）",
      "value": 0.59
     },
     {
-     "label": "微软(MSFT)",
+     "label": "微软（MSFT）",
      "value": -0.06
     },
     {
-     "label": "特斯拉(TSLA)",
+     "label": "特斯拉（TSLA）",
      "value": -0.8
     },
     {
-     "label": "苹果(AAPL)",
+     "label": "苹果（AAPL）",
      "value": -0.94
     },
     {
-     "label": "英伟达(NVDA)",
+     "label": "英伟达（NVDA）",
      "value": -1.17
     },
     {
-     "label": "Meta(META)",
+     "label": "Meta（META）",
      "value": -1.24
     }
-   ],
-   "src": [
-    "Yahoo Finance",
-    "https://finance.yahoo.com/"
    ]
   },
   "biotech_stocks": {
    "kind": "hbars",
-   "title": "医药股单日涨跌幅(%)",
-   "desc": "10/28 美股交易日,从高到低排列。",
+   "title": "医药股单日涨跌幅（%）",
+   "desc": "10/28 美股交易日，按涨跌幅排列。",
    "rows": [
     {
-     "label": "安进(AMGN)",
+     "label": "安进（AMGN）",
      "value": 0.87
     },
     {
-     "label": "强生(JNJ)",
+     "label": "强生（JNJ）",
      "value": 0.86
     },
     {
-     "label": "礼来(LLY)",
+     "label": "礼来（LLY）",
      "value": 0.5
     },
     {
-     "label": "艾伯维(ABBV)",
+     "label": "艾伯维（ABBV）",
      "value": -0.14
     },
     {
-     "label": "再生元(REGN)",
+     "label": "再生元（REGN）",
      "value": -0.35
     },
     {
-     "label": "默沙东(MRK)",
+     "label": "默沙东（MRK）",
      "value": -0.63
     },
     {
-     "label": "诺和诺德(NVO)",
+     "label": "诺和诺德（NVO）",
      "value": -0.98
     },
     {
-     "label": "辉瑞(PFE)",
+     "label": "辉瑞（PFE）",
      "value": -1.17
     }
-   ],
-   "src": [
-    "Yahoo Finance",
-    "https://finance.yahoo.com/"
+   ]
+  },
+  "tech_movers": {
+   "kind": "hbars",
+   "title": "科技股异动榜（涨跌幅前 5）",
+   "desc": "10/28 美股交易日，市值 15 亿美元以上。",
+   "rows": [
+    {
+     "label": "SK 海力士（SKHY）",
+     "value": 13.3
+    },
+    {
+     "label": "伟创力（FLEX）",
+     "value": 11.61
+    },
+    {
+     "label": "ViaSat（VSAT）",
+     "value": 11.32
+    },
+    {
+     "label": "甲骨文（ORCL）",
+     "value": 10.73
+    },
+    {
+     "label": "AXT（AXTI）",
+     "value": 10.56
+    },
+    {
+     "label": "Intapp（INTA）",
+     "value": -6.08
+    },
+    {
+     "label": "SolarEdge Technologies（SEDG）",
+     "value": -8.3
+    },
+    {
+     "label": "罗技（LOGI）",
+     "value": -12.12
+    },
+    {
+     "label": "Enphase（ENPH）",
+     "value": -16.03
+    },
+    {
+     "label": "F5（FFIV）",
+     "value": -20.43
+    }
+   ]
+  },
+  "biotech_movers": {
+   "kind": "hbars",
+   "title": "生物医药股异动榜（涨跌幅前 5）",
+   "desc": "10/28 美股交易日，市值 15 亿美元以上。",
+   "rows": [
+    {
+     "label": "Genmab（GMAB）",
+     "value": 28.25
+    },
+    {
+     "label": "Replimune（REPL）",
+     "value": 23.07
+    },
+    {
+     "label": "Generate Biomedicines（GENB）",
+     "value": 16.43
+    },
+    {
+     "label": "Beam Therapeutics（BEAM）",
+     "value": 15.58
+    },
+    {
+     "label": "Absci（ABSI）",
+     "value": 12.39
+    },
+    {
+     "label": "Celldex Therapeutics（CLDX）",
+     "value": -1.63
+    },
+    {
+     "label": "Zai Lab（ZLAB）",
+     "value": -2.29
+    },
+    {
+     "label": "Tango Therapeutics（TNGX）",
+     "value": -2.88
+    },
+    {
+     "label": "Vericel（VCEL）",
+     "value": -5.04
+    },
+    {
+     "label": "SELLAS Life Sciences（SLS）",
+     "value": -14.71
+    }
    ]
   }
  },
- "sources_note": "要闻均编译自英文媒体,每条后附原文链接(英文);只依据标题整理,口径冲突处已在正文标注。行情数据来自 Yahoo Finance。",
- "disclaimer": "本简报由 AI 根据公开新闻标题与行情数据自动整理编译,可能有误,仅供参考,不构成任何投资建议。"
+ "sources": [
+  {
+   "section": "一、美国市场与宏观",
+   "items": [
+    {
+     "n": "Bisnow（英文）",
+     "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONmJkV2lUbklBWGZ4SWxMeTI5bnBTRnI2bWV2dmpqR2dGajFoeHM4cWRTSmxhMnV4YUZaMnI4TnAzQmJ0Y1RTUFhiaEoxWW9ZQWNjWlIycnZfWGpSZVF5ZU83MS1ZSW9tN1pyWHdIY1p1NjRCVFlaR0FaVlZoZWtMb0ZoSEFrX1NGbGtvNG9VbE9GY3NQakdrRTFJYjlyeG0zTWc?oc=5",
+     "t": "Fed Holds Rates Amid Treasury Yield Surge"
+    },
+    {
+     "n": "ABC News（英文）",
+     "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUEhoYVl4OGJtaXFLRU1idHB1dmlvYk1uNEtNNnlMVkFlZEN4N3hpNVB5cmNjWkFEajM2WUZ4bDJJN0pNYlpra21QSGI4cFFwLWllM0xxZlptYWRmdkRlbXAwRWVLcGRBd3J3MDFpUDBvUjVWMElMOGwtZlJMemRJQzczLXI1cWNFMnJKeEcwcGJhUjkzVjZfZ3puam1BQUZFMTRFZ1BIa9IBrAFBVV95cUxQeXRhLUNLYUFqaEtwY25VNnhEUzVzZmRMczBrdVo0SnJXdjdCZjhCbVpURUZJQ2M2MUwyVzlHblFrcTQ0UGhIYUVubHhUZHFVbldqNnJxOFprRG9FRmJIV3ZPaFJiSHZ2a1k0N2R4Q2swcFJ2cDNhZVVJdG0zbG9qaFdvd1l5MXcwbjFWZnBFelBZdFZBMk9pekEzOGFmaEVqVVNmTkx4dXU0eXha?oc=5",
+     "t": "Federal Reserve holds interest rates steady as midterm elections loom"
+    },
+    {
+     "n": "Reuters（英文）",
+     "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR21qQWZsLUZqbWRjR2YtQ3FGakpEWWVjSUVFNjVDSi01MnRiWmV3Z2pPQUsyVGhJR3UxQ1o4RjRVa2tCLXNXbnJjNE9fbE5KVzlKTEZtNHpZb3lPR0hXcFFSVGVydlpnR3RQdVM5bDE3aVI3aVowN0NqY3NHb3VDN3hlaXpLTmxkeFc3NE13dUNqYUtIMHNxRFR5M3VYZmpKUDRzVE5WLUdwRHJCeEpQM1pKaw?oc=5",
+     "t": "Wall Street ends higher on revived AI momentum"
+    },
+    {
+     "n": "EnergyNow.com（英文）",
+     "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONEY1OTRTVV9fNHdPaVhkcUhKcnlkZHM5Zk9qTk0wNDRYUm9UV3ltT2hWS1BjREhxMktHMEx2UTA1bWthZDdsdHlSSG5WT1J1MUVfSEo4dDUwSzBfM1RqYnhUM3c0MXdrb3BGdUhNUHJVMlQzUVYxRFp1NGJlN1lBZ0JCd1JWNi1RNllueU9ZVVVKSXE3cHc?oc=5",
+     "t": "Oil Falls Below $100 a barrel on Middle East Peace Deal Hopes"
+    },
+    {
+     "n": "Reuters（英文）",
+     "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYUhHblNqOGNPczlpdUR2NDFMWjZxX2FZYjVTTzREX2R4YU5jRzF2ckN1MG9sSnIxWG9hbDJ0TjV4YTZXRjdqSUc3aF9OcTJuUVlJZkZrdUd0V0RMUU1qUWxiNDdmdXhCTmJUczZWOFRUWTRKdzJQLUJYNXZBODhnTjJfOXMyNU01OGVreWM5TkNyamNjbzV5UzAxX3ZOdWcwcUE5SFZHSkEyUjZ1M1dUQ3ByRDdxbC13ZzRQR0xfcTZ0bjh6dnNPalJZRWI?oc=5",
+     "t": "Oil prices rise on Yemen fighting, Saudi refinery attack"
+    },
+    {
+     "n": "WSJ（英文）",
+     "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYXd0OHZEUnBrMFNkRjJ5dHFUakFsTDU0NUxhdzhQUnpPQ0JxMllJanhoeVFQWm1GMmk2RkRUdDFWLVR2N0VwczZOQmZmbG9BanpUSTE2VEhnSS1xd29mUzFzbEdRTVBDWGRSOW1hRW41WU04eE9OSUo4QmFoSG9DUUhUNi13bzNkbEZaWlFUaVUzUzZPWGtMc2JDeEZyODg2Q09JdFZBekl1WnNJdDVBYnZQMzhieGt4bjFuOFZnMA?oc=5",
+     "t": "U.S. Warns Gulf of Possible Short, Intense Renewal of Iran War After Midterms"
+    },
+    {
+     "n": "CNBC（英文）",
+     "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VVTZnQjZMOUgxd3doMmJKclN5eUlkbFJoOE9TZDJQVlN5Zm92aDRIYW5yMWcwTGxtRHBfNW9FQ3NIbTJXSmdJZU9ibE9XZFRaQWJXb3JYbDJWY1l4c2o5OU5xeC1VbmFRN1JmMWZUUG9LNVhCYnk2ZNIBfkFVX3lxTE9PVWR4YV9Fa0UyQi0tN013V0d5bjY3bUJqZ1R2VGlsSHdGOURZVkRTSDhLUkpQS2lyV0ZDVlNua3RRelVoMmV4QUdfZUU5S09oV0ZHQTAzNm1hVWxVTVMzRWd0X2M3b3RfdVFUcFNfckgxMUdKMnNldWo2RWpIdw?oc=5",
+     "t": "Oil prices rise as U.S. reportedly tells Gulf countries to prepare for Iran strikes after midterm elections"
+    },
+    {
+     "n": "The Real Economy Blog（英文）",
+     "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPR1liaEw3bWxBRHk4dFhMcGs3QnNPQzRxX2lYVjJpb1c4XzRBbGtuWERYY2lCQlY2dXoyUWFwdzc4Mk5Ba2J1a245b0t3cEJxREg5NThyZERKdkZ3YWJGZ3RPUFB6dXZ1dFduNEdxbTJWQVVLdDNMR09DS080RXYwWGY1MHV4bldORWNENklKSU9tc0FoeUFTd0pLRml1Zw?oc=5",
+     "t": "Bank of Canada raises interest rate to 2.5%—with more hikes to come"
+    }
+   ]
+  },
+  {
+   "section": "二、科技与 AI",
+   "items": [
+    {
+     "n": "The New York Times（英文）",
+     "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JV0t1VzdLRjByRlFFemJORWcybEE3eFhxMUpFWGNYS0hnVTk3VzJLLXMzZlBXUzlyTWJWenEzSjFNWVE4NUxsMmFFU29KeEhpNGthZWVjQW53Y2xUQjNtNU9ReGJpNzF4YzhuVUYtXzltTXJvNm9VeFlPMTM?oc=5",
+     "t": "Microsoft’s Profit Jumps 32% Despite Big Increase in Spending"
+    },
+    {
+     "n": "Forbes（英文）",
+     "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcGFjUl9xRFBLTEtwTGNWMU9xRGhpV185OGhYR3BpT2xhb2RhSEJLX21oYzUyNVVMZzlJVWFHdjlTX2Q5aFhMVUI2WEV5UFdGS1JKZ1ptRmFzbjF0eEdZS2J3YnhmN0NVSnAtYnYyencwWVhCMDEzVWpZeHo1YnBtREFpV0psWXI2S0ZfNndsWjBhMzdBTUI1WVBtelVCczF2a1ZYdjVLSnItTWFTSmZ3Vm9aenF0OFlmLUVNSDVybw?oc=5",
+     "t": "MSFT Earnings: $36 Billion Net Income In Q1 Earnings Report"
+    },
+    {
+     "n": "Macon Telegraph（英文）",
+     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xLUFtZ3Q2N0pDbWZNN3l4N1FWTngzeG5peHZ6MmVKckh5TzRuYnZnVTdVN0pmWkJOM1hiRUo0SEk0ZUhxN0QzWkRMc3ZCS2dWaVExQnM1eDNJTXU2by1qV20xWWhzWHl2?oc=5",
+     "t": "Alphabet's Google Cloud unit beats quarterly revenue estimates on steady AI demand"
+    },
+    {
+     "n": "WSJ（英文）",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONmNkSG5GRS1SMkpKWG5nQjc2YV9BOEU0X1dEZHB3V1VvRGtXdDgzTVdMdnNEcGVzclJqWU9NVzdjYWZybm95dGZhR2NjdEotaGFvVERZM21LNFBpNUhIV1B3eFNMaFNJbmgyWnhFaVdZTmNTXzFzU3ZIU2R0emgxdDNCSVBMN2d2?oc=5",
+     "t": "Google Shares Fall as Ad Revenue Misses Estimates"
+    },
+    {
+     "n": "Barron's（英文）",
+     "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc1cyWEw2N29xSWxneld4YlNXRFozMUVXMVVuR1ZBbXBDWno5Nzd4QklMQmFVZi1yTld5M2pfTk9TOXpYdGRBVm51WTNKQ2J4MVJPME1naEtCM3N2SXBNbVVlZzVBdS1nbnVnNy10WFFQanh4Y1VjUW12Y2dsYTVzTw?oc=5",
+     "t": "Alphabet Swaps Buybacks for Data Centers. Wall Street Is Getting Nervous."
+    },
+    {
+     "n": "24/7 Wall St.（英文）",
+     "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOU41VEhZT0hhZFRRQXVmRWhKWml6Q3FSLVRxeXpRYU9xLW5xQ21MT080OTJvNEtmcmQ5ZW05Tl9XRG4zeVZ1VVhNLWphbXB3ODJpcTBaY0hXc2J4RHBtQm1wVFJHUTlBeC02YkJydmF2QUFTS0s4eFU5UVB1bkZhdmZpUlQ4NnJSZHFlTnpoVzVYVmZmbnJ3NkMtbHZfT2N6M1p1VXk1QUNsWjdWVmpUeU9VZ0dCWGs?oc=5",
+     "t": "OpenAI Is Buying Google’s AI Chips, a Hit to Nvidia’s Biggest Customer Bond"
+    },
+    {
+     "n": "Data Center Knowledge（英文）",
+     "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOFFKU0dGWEdWMXNYTVM4TmhJTEFMRndMSHg2RkZFVkJDdFNkYXpMc1BBNFhSekdBWU52a2YwNk5laU5xWkJZc0VDajU3ZmE4c3Fsc2lrcG5UQWxiOWlCODlmeVotLVdmVVpza0t1S2pCR294Vjk1czAzNTNGaXZNNFlGR2ZlVFdJWkZrYlhxWVgyNnBQalFQemNLY1Q2S19mOHZtTVl0QQ?oc=5",
+     "t": "Oracle Cloud to Offer Google TPUs and New AI Chips"
+    },
+    {
+     "n": "Yahoo Finance（英文）",
+     "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYVY4SmxCSFR3aDBTSUVFYXdyMG9vZ3l4ajlBZS1TU0w1d2lzZUhqYUtqLXczMUtoNGF5ODZMNWdETzVmeF90cktwVFd5aXpRU205djdmc2I3QXJYeVhEc2pELVVqeHl4S3R5NTg2NTcwMTF2M0ZZak9DX0NXWjU2OEF0aXZOMHhGcVQ3SFNMcHlFM1VVbTl6WXRLeHN1U0diVzU2TWNR?oc=5",
+     "t": "Anthropic Flags Data Center Moratoriums as a Top Risk to Its Growth Plans"
+    },
+    {
+     "n": "Startup Fortune（英文）",
+     "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa3FrY1liNWY5enZvMVpUX0N3T0h6T0VsLXhLbnNITjFmRUx6Y1d0TllQdEVNR1JVc193VEpZVkRGV3RROE4xV0l0LW84TUtwSFdEOENodzVrV29TeUk4Zm9EcHBNWG9nNzlQS3R1THlOcWMxcWRCLTNYRENPUm9TNG1BWXVqZEV3YV8zeDhLVFpRSVdqSFBvWnplakZpOWJ1SGR6a2wyR2RLZw?oc=5",
+     "t": "DOJ charges California man with smuggling $300 million in Nvidia chips to China"
+    },
+    {
+     "n": "Yahoo! Finance Canada（英文）",
+     "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUGo0V2paTkdlcmdTeFIyVVVwdmxjV3lKb2VmUklvXy1TeHdsYjZxN19ITXBPclNUbjVwSTE0ZjVubWY3RURyNlBBR3VVRjY3dFh6TGRoTGlnUWZDOEZQSk5ULVJ4dFU2ZG5EVnYyVjZtUVYzcWlUOTh3d1V0SGdQR2FzMU54bW9MYXNMUg?oc=5",
+     "t": "Malaysia seizes servers with advanced AI chips suspected of violating export controls"
+    },
+    {
+     "n": "Idaho Statesman（英文）",
+     "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBMNm1VQy0wTnBHcy1yYTN2UXBHZGdEdy1IZ2FHSWdqUjFrcUJibjF1WWdSb3dRTTNpMjVTT1g0THdwZGhyV3NRckhtYmVJWXRVZzJaSFVEWUNSRFNYTk1wcGZpbDZvM0FtNkxYeWR3NTd3bnFo?oc=5",
+     "t": "Nasdaq futures rise as SK Hynix boosts chips before Fed decision, earnings"
+    }
+   ]
+  },
+  {
+   "section": "三、生物医药",
+   "items": [
+    {
+     "n": "ABC News（英文）",
+     "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRU9xZWNDTzF1aFlDZDhDakN3VEhRWGNkNW1vazVNcmZ2ck5zLUducGRNQkVVZzhXaXI1NlZqNm9tRmtUZUNxT0luV2lTem1halp0bHg3aHUxUmVTVHV0MXdKYmpmQm82enRaVDRGVjJ5QTVUelhnRzVyNFQyOHBXU0MtZmRabkJhMjJVUHc4MlZfTlg0X0lGb3FYMlV6dUJRUDlLQ1V2SWdMNEwzcE5Z0gG0AUFVX3lxTE1KOFBNejNDZ1pmandiWkphZmpJRG1tdWZsZllVZFh0djJ2NWdzT2kybmNZd01memtqekFxc2IwZGNTUzljSE9LUGZ6R0dVTWZyUUR0TTY5dmZfSnVqNlJ2eEZTdHlwR0R0UzdKbi0yakZab0xNdW9wWTRVOVdvQWdMcTVYMURETjhyY05zN081RjNoZWFINHdKT2YwdnZDWTc3SjNXc0lEY0dLaHhGM3prZE5OVw?oc=5",
+     "t": "New weight loss drug retatrutide provides double the weight loss of Ozempic, Lilly says"
+    },
+    {
+     "n": "BioPharma Dive（英文）",
+     "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNN19wd1NRdjNRRTcwb1VndDlmVlNuZGNRMDBpWXV0aXd0UFFkTnZKb1A0dGJCdHZDd1VZN3hsVkFfcXFobTg2TDRyNVZPQ3paWkhRQWdFMHhyczdoaGlFRzhSdXNKU2pYbGcycEFRS08yaHlDZkEyVE5lUFp5RU41TklaTmN1NGFkWWZoNDdHU0EwNm1pbmszTERXUVQ?oc=5",
+     "t": "Lilly’s ‘triple-G’ drug tops Novo’s Ozempic in diabetes trial"
+    },
+    {
+     "n": "STAT（英文）",
+     "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRVpYTU1xREdoVzU1UXRDUVNfZE9Oc3FTc0tycU5LNHpIV1IyZTF6RDJEcUtFUTJMRjAwUWN3b3FhWWZFUlV0dF9VT3J1c2gxV2tvM1Z4X2NaRGltNDR2SEdXMkJrTWx1N3RtbllGQno1eGVwOEZxN0QxSllZUXhscFA3Wk1DYl9yR2MzN19aNDhUOF9vdDVkZGd5NFhqN1JQUm5uR2w2ZzBZdw?oc=5",
+     "t": "Lilly’s triple-G drug beats Ozempic in head-to-head study"
+    },
+    {
+     "n": "ad-hoc-news.de（英文）",
+     "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONUU3YW9XX3JTajhiTTd6S2tsS3FFTl9wWlYtYWtfRHJnUFRtYVJhMjN4YXdOM21FaHVzalhzdmdpNkpNaHVEX2ZJQko4aVNUckZtYnpPeWNnY1czd2xpQUN2U3hsd0NCdjRLdG9aWGRJZHlOQmo2SExtRUhfVG1iZ01ZNjJsSWVUSzVLdzBBVWQ1ekVpZU1NWDE5T3pxY1lPUXE3Y3AyTDc4SnJFbnhRZUo4aElUbDZWU2dJODRNOHp5WHZ6d0lnYW5GTVhabUhSZXZJUWplWU5aNHdwM21kSU1tMTF2cmlURzNFNWVYVGZrUHpBaXc?oc=5",
+     "t": "Novo Nordisk's Legal Setback, Awiqli Approval and CagriSema Data All Defer to the 4 November Earning"
+    },
+    {
+     "n": "Barron's（英文）",
+     "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYlRvUDRDOFJwb2dGZWtNNXRXWWN0ZGV3XzNUWGk0ckR4bjV1ZmQ1c0FLZHhUYVFXQmtQNndzR3lHQkRUNWo3WC0yNWFWZjBjNFUzc0t6ZVh4ZDNEbGZZVHF3eFV2dUlhX19BOFZ3aWhhamFYYUc5bFpOYVhpWGhfVkdDMWs?oc=5",
+     "t": "Genmab Stock Surges to Record High as Cancer Drug Slashes Risk of Death by 50%"
+    },
+    {
+     "n": "STAT（英文）",
+     "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMDB5NnZrQkZ2ejFESDBnbndOMUF2NFlmLWotbWRXZnhLNmw5YnVSNVNGaXEyVVJRVGhJZ1o5U1ptYXF1a29SS0V5UUNGQWxYZW16ZnVmWnVkMDBfcjVnRFZORXFVMXNPYTcyZi1wbzJYeHkxSlhldlVJWWNCUWFVWjBpd2k1anQyUDlzVElQdUZ5R09PQ2hF?oc=5",
+     "t": "Lawmaker wants government watchdog to probe TrumpRx over claims about drug savings"
+    },
+    {
+     "n": "Baton Rouge Business Report（英文）",
+     "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTkFIVXBXcGFSOGwwbnEzNm1wTE1kb2t4M25BR0I4TU5FXzRJUXFmUHB1YWVXb1V5RDMzZTA3aFIxUEdkT1pjNHF3SGl5MUNSdnZmbkp2U2dzVkZzcnBOX08td2xMdDFBTEt3VlRkQ1QwSktjc2JoLUZvUnJ2ZUZDS3hCUzRZZ2NlMWZuamJ3bDUxVTBXcV9LTA?oc=5",
+     "t": "Federal rules target hidden fees in prescription drug pricing"
+    }
+   ]
+  },
+  {
+   "section": "四、世界头条",
+   "items": [
+    {
+     "n": "ABC News（英文）",
+     "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLUpWVmxZNkVNNGxlamhNRjkteVhjUVJNMXhDQ3Vyc3V3UkdTVEcyeUM0ZnEzTUlJQXRYMUZsNkZ5LTN5Q0VzWDFrVmVFSVlpOFBSaEpwa19qd0Q4SExzankxMEpIQjMxT2k5R0Z3emE0cDFCNng3V3lwVjBQUDg1NNIBhgFBVV95cUxOWGtmd1BpZ1U2QlJOeTZIcXhKMTVTOVFEZDJKcDJPS1NzX2NsOG1RT2w2TkpUMDkwTWY1QzlZcGt4LVlmNV9NZlFVUG04S0Y1U2hUSUdFSk5sUlFId1VsZzlnd1JvOGlWQnY2LThiN1J6cjZDSjdSWHd3elNWS3FpYWJqMXFnUQ?oc=5",
+     "t": "Supreme Court allows Trump to implement parts of his mail-in voting executive order"
+    },
+    {
+     "n": "Reuters（英文）",
+     "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLUotYWh1WFdrMnphczZlaFJpUldzNFo2TnVweFZVbDdVT1NvY0JJaHV1dV95ZnQySUtha2F3dkFnbGlMcjkwREh2ZldydDJab3JqaGRJb0E1emtsR2hOUTd4MTVmbG1LWUNPLWJVenJZQTQ5cnFsaEFfcm5EU1ROMW02Y2Y4dkRRbENOUEtRVEdfbVUxSjhwbXM1b2RqWnBGZlgtTmJVNjlhN053bVcwTnY2UFZEZlNz?oc=5",
+     "t": "Trump expands hunt for noncitizen voters with broad subpoena campaign before midterms"
+    },
+    {
+     "n": "USA Today（英文）",
+     "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTy0tNDdCQk42ek5nY2RhcE56SmZmNE1TSmo1VVNtZmhLTjN2MkgxNlNEUzJEU2doRkJjWlFLNXJROEZPbEVVcV9faFVJMU9SSEFtTXo5M2JwRElkVzBTSmxWVm96QW9KYmhOVURBbi1UcVFHYUxScmtxVnZ2TktLM3gyN0s2TlhtX04xZmtzTm5qWXl1cnB0RDBlWjZEY3ByRG1yVmYzaEJuN1ZaNTBmNHN4QXp1YUJfR1QxOQ?oc=5",
+     "t": "Trump floats nominating Ted Cruz to Supreme Court for future vacancy"
+    },
+    {
+     "n": "CBC（英文）",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ0dtbG95c2h3TXdodUZtNDBJSWdhWnh0ZnNfLXZFSHpmUVlaNjFPcXJYWUZaa1NpaWlabktqZFJWQmpuOFZHeHR1bFlUcDFzRTNGV1UwbFhKMzRaclVNQkRYaEdlODVvaFlQSEJpMTFyYzdpd1k5THhwamxQT0ZZUjlNT0JoN1Nk?oc=5",
+     "t": "EU dropping associate membership title for its closer alliance with Canada"
+    },
+    {
+     "n": "Euronews.com（英文）",
+     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbzZLZDV1RVcyUHNhOUFnYTUtTnYwQU9xTkJnTFYxdHhrdHlXQVZqa05RNkF3Zi1Pb0NCVHpOeXZwSlpYSUJJUkhkRW9HQ3l0QjAyWUFucl9PdkhHWnh3MHFYX0xCdzZyR2cycGtDWmNMbFZIUjhTcDFuZWFJR19CdDMyNGd0cE1ZNlZ0Y3l1SFl0TWNvREw3SlpyVmh0Yy1SeWs4Yw?oc=5",
+     "t": "EU removes mention of ‘associate membership’ from Canada declaration"
+    },
+    {
+     "n": "WWNY（英文）",
+     "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeklkaS1fbjNoSm5WNEFTenktZi1uMnJPVGd5dkwxUDhLR0RkbXR6d0hfNkRpNTA1Z1JMVGl1VWx4MVQtMTRwRWpIQXZGWVNNa2pjN09PZjcxamVnRWM3bFQxMnhvZkVNTlRKb1F5QkNXc2hSUE03TG84dFo3RFFHNXNJYWM3Z2tZOE9Qb3RPUdIBowFBVV95cUxNeXcyTjlZRTU2VVBBQndzZlV6LU5oM0ktbE5JVmEzaFRjaVp1enVoVlBQbjM1bHo5bDFyUmYtblR3Qi0xbWFlMmhDUG9wMXhSNzhkWk1aU1hFMlNoSWtJY21UWm53dWo0R0F0YWp6a2hCQzJLV1plY3A0RmJkd0pMSC1vZjZUbjYxYzJLMTFSUUVSMVF2U3UzdjB4dUNMUTNiVUlj?oc=5",
+     "t": "Trump says US will beat China in AI as technology emerges"
+    },
+    {
+     "n": "CSIS | Center for Strategic and International Studies（英文）",
+     "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaHJweUhNSVFWUjBPam1sdkFseTlVSmkwTFNmdnVCV0xLcHhQVnhyMzRWZElncjRLbzlfWXdjbXVzSGo3V3FENjVaNmc3bGZvcWhqLU5qUjB3SXpFUGx0VVdDcFg1NkgtYS1RSnJuV3hERGQzVTF3QTVUSkFTR2Nxa2xXN2o1ZTA?oc=5",
+     "t": "Takeaways from the Trump-Xi Summit: The Economic Security Angles"
+    },
+    {
+     "n": "Amnesty International（英文）",
+     "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVUxpRnVYR0YwRXR1OEhkb0Y2RmFMYW5YeDVqaV9HajJDTEV0em1zQ3hmZFFlRWpUTXlkdEFETzl3TEplM3BrR29wZVdSeDdrVlNvWHhrWFdZVHNKSEF0dGN5ZnZBRi1vdEdjaTRldTJBM2I5SnhDcFNTUUR6NFBlOWtZNWg0ZG1kWVJjZnQtblYwZE5mWXNXNGZPVEdkWTZHNVJiZk5kM0NkRFZGdzB5dU1hb05hb19id1JURzB5d29PTVVBT0M4OEs4OFFwWlNybUZ6NHVkVGZsY0hiWi1UeldFZHo?oc=5",
+     "t": "The Netherlands: Withdrawal from Eurovision must spur the European Broadcasting Union to suspend Israel"
+    }
+   ]
+  }
+ ],
+ "sources_note": "行情与股价数据来自 Yahoo Finance。新闻编译自上列英文媒体报道，仅依据标题整理。",
+ "disclaimer": "本简报由 AI 根据公开新闻标题与行情数据自动编译，可能有误，仅供参考，不构成投资建议。"
 }
