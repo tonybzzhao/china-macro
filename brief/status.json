@@ -1,12 +1,7 @@
 {
- "run_at": "2026-10-29T08:01:28+08:00",
- "provider": [
-  "gemini",
-  "pollinations"
- ],
+ "run_at": "2026-10-29T08:12:31+08:00",
+ "provider": null,
  "error": null,
  "narrative": "fresh",
- "provider_errors": [
-  "gemini: ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90)"
- ]
+ "provider_errors": []
 }

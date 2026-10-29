@@ -98,11 +98,25 @@ class Narrate(unittest.TestCase):
 
     def test_providers_are_all_free_and_ordered_best_first(self):
         with patch.dict(bb.os.environ, {}, clear=True):
-            self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_pollinations"])
+            self.assertEqual(bb.llm_providers(), [])  # no keyless fallback by default
         env = {"GEMINI_API_KEY": "k", "GEMINI_FREE_TIER_OK": "yes", "GROQ_API_KEY": "g"}
         with patch.dict(bb.os.environ, env, clear=True):
-            self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_gemini", "_groq", "_pollinations"])
+            self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_gemini", "_groq"])
+        with patch.dict(bb.os.environ, {"BRIEF_ALLOW_KEYLESS": "1"}, clear=True):
+            self.assertEqual([p.__name__ for p in bb.llm_providers()], ["_pollinations"])
         self.assertFalse(hasattr(bb, "anthropic"))
+
+    def test_a_provider_that_times_out_is_skipped_for_the_rest_of_the_run(self):
+        calls = []
+        def slow(*a):
+            calls.append(1)
+            raise bb.LLMError("ReadTimeout: slow")
+        slow.__name__ = "_gemini"
+        with patch.object(bb, "llm_providers", return_value=[slow, lambda s, u, m: "ok"]), \
+             patch.object(bb, "_dead", set()), patch.object(bb, "_provider_errors", []):
+            self.assertEqual(bb.llm_complete("s", "u"), "ok")
+            self.assertEqual(bb.llm_complete("s", "u"), "ok")
+        self.assertEqual(len(calls), 1)
 
     def test_gemini_key_is_ignored_until_free_tier_is_confirmed(self):
         for confirm in ({}, {"GEMINI_FREE_TIER_OK": ""}, {"GEMINI_FREE_TIER_OK": "no"}):
@@ -110,7 +124,7 @@ class Narrate(unittest.TestCase):
                 self.assertNotIn("_gemini", [p.__name__ for p in bb.llm_providers()])
 
     def test_call_cap_stops_runaway_loops(self):
-        with patch.dict(bb.os.environ, {}, clear=True), patch.object(bb, "_calls", {"n": bb.MAX_LLM_CALLS}):
+        with patch.dict(bb.os.environ, {"BRIEF_ALLOW_KEYLESS": "1"}, clear=True), patch.object(bb, "_calls", {"n": bb.MAX_LLM_CALLS}):
             with self.assertRaisesRegex(bb.LLMError, "model calls in one run"):
                 bb.llm_complete("s", "u")
 

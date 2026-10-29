@@ -362,7 +362,8 @@ def _gemini(system, user, max_tokens):
     def call(model, cfg):
         return _post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", headers,
                      {"systemInstruction": {"parts": [{"text": system}]},
-                      "contents": [{"role": "user", "parts": [{"text": user}]}], "generationConfig": cfg})
+                      "contents": [{"role": "user", "parts": [{"text": user}]}], "generationConfig": cfg},
+                     tries=2, timeout=45)
 
     def attempt(model):
         # 2.5 models spend "thinking" tokens out of maxOutputTokens, which can leave the visible
@@ -420,24 +421,28 @@ def _pollinations(system, user, max_tokens):
 
 
 def llm_providers():
-    """Free providers only, best first: a Google AI Studio or Groq free-tier key if one
-    is set, then the keyless Pollinations endpoint, which works but is flaky (timeouts,
-    occasional malformed JSON), so a key is the dependable setup. GitHub Models was
-    tried and its endpoint answers 200 'OK' text from Actions runners, so it is not
-    used. Nothing here is billed."""
+    """Free providers only, best first. Needs a free-tier key; nothing here is billed.
+
+    A Gemini key is only free if its Google Cloud project has no billing account attached;
+    with billing on, usage is charged per token. This code cannot see that, so the key is
+    ignored until the owner confirms the free tier by setting GEMINI_FREE_TIER_OK=yes (a repo
+    variable) after checking AI Studio.
+
+    The keyless Pollinations endpoint is NOT used by default: in testing it timed out,
+    returned malformed JSON, and its small model mistranslated names and invented a share
+    price move, which is not acceptable for an unattended public page. Opt in with
+    BRIEF_ALLOW_KEYLESS=1 for experiments. GitHub Models was tried and its endpoint answers
+    200 'OK' text from Actions runners, so it is not used either."""
     out = []
     if os.environ.get("GEMINI_API_KEY"):
-        # A Gemini key is only free if its Google Cloud project has no billing account
-        # attached; with billing on, usage is charged per token. This code cannot see that,
-        # so the key is ignored until the owner confirms the free tier by setting
-        # GEMINI_FREE_TIER_OK=yes (a repo variable) after checking AI Studio.
         if os.environ.get("GEMINI_FREE_TIER_OK", "").strip().lower() == "yes":
             out.append(_gemini)
         else:
             log("GEMINI_API_KEY is set but GEMINI_FREE_TIER_OK is not 'yes': skipping Gemini to avoid any billing")
     if os.environ.get("GROQ_API_KEY"):
         out.append(_groq)
-    out.append(_pollinations)
+    if os.environ.get("BRIEF_ALLOW_KEYLESS") == "1":
+        out.append(_pollinations)
     return out
 
 
@@ -446,20 +451,31 @@ _calls = {"n": 0}
 _provider_errors = []  # every provider failure this run, kept even when a later provider succeeds
 
 
+_dead = set()  # providers that failed at the network or quota level this run; do not wait on them again
+
+
 def llm_complete(system, user, max_tokens=2500):
     _calls["n"] += 1
     if _calls["n"] > MAX_LLM_CALLS:
         raise LLMError(f"more than {MAX_LLM_CALLS} model calls in one run; stopping")
     errors = []
     for provider in llm_providers():
+        name = provider.__name__.lstrip("_")
+        if name in _dead:
+            continue
+        t0 = time.time()
         try:
-            return provider(system, user, max_tokens)
+            out = provider(system, user, max_tokens)
+            log(f"{name} answered in {time.time() - t0:.1f}s")
+            return out
         except Exception as e:
-            msg = f"{provider.__name__.lstrip('_')}: {e}"[:400]
+            msg = f"{name} after {time.time() - t0:.0f}s: {e}"[:400]
             errors.append(msg)
             if msg not in _provider_errors:
                 _provider_errors.append(msg)
-            log(f"provider failed, trying the next: {msg}")
+            if re.search(r"Timeout|ConnectionError|HTTP (401|403|429)", str(e)):
+                _dead.add(name)
+            log(f"provider failed: {msg}")
     raise LLMError("; ".join(errors) or "no free LLM provider configured")
 
 
