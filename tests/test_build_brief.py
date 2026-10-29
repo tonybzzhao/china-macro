@@ -120,10 +120,33 @@ class Narrate(unittest.TestCase):
             with self.assertRaisesRegex(bb.LLMError, "ConnectionError"):
                 bb._post("https://x.test", {}, {}, tries=2)
 
-    def test_provider_failure_falls_through_to_the_next(self):
+    def test_provider_failure_falls_through_but_is_still_recorded(self):
         def bad(*a): raise bb.LLMError("nope")
-        with patch.object(bb, "llm_providers", return_value=[bad, lambda s, u, m: "ok"]):
+        with patch.object(bb, "llm_providers", return_value=[bad, lambda s, u, m: "ok"]), \
+             patch.object(bb, "_provider_errors", []) as errs:
             self.assertEqual(bb.llm_complete("s", "u"), "ok")
+            self.assertEqual(len(errs), 1)
+            self.assertIn("nope", errs[0])
+
+    def test_gemini_model_picker_prefers_newest_stable_flash(self):
+        names = ["models/gemini-2.5-flash", "models/gemini-2.5-flash-lite", "models/gemini-3.0-flash-preview",
+                 "models/gemini-3.1-flash", "models/gemini-2.5-pro", "models/gemini-3.1-flash-image"]
+        self.assertEqual(bb.gemini_pick_model(names), "gemini-3.1-flash")
+        self.assertIsNone(bb.gemini_pick_model(["models/gemini-2.5-pro"]))
+
+    def test_gemini_unknown_model_triggers_a_lookup_and_retry(self):
+        calls = []
+        def fake_post(url, headers, body, **k):
+            calls.append(url.split("/models/")[1].split(":")[0])
+            if calls[-1] == "gemini-2.5-flash":
+                raise bb.LLMError("HTTP 404: model not found")
+            return {"candidates": [{"content": {"parts": [{"text": "{}"}]}}]}
+        class R:
+            def json(self): return {"models": [{"name": "models/gemini-3.1-flash", "supportedGenerationMethods": ["generateContent"]}]}
+        with patch.object(bb, "_post", fake_post), patch.object(bb.requests, "get", return_value=R()), \
+             patch.object(bb, "_gemini_model", {"name": None}), patch.dict(bb.os.environ, {"GEMINI_API_KEY": "k"}, clear=True):
+            self.assertEqual(bb._gemini("s", "u", 10), "{}")
+        self.assertEqual(calls, ["gemini-2.5-flash", "gemini-3.1-flash"])
 
     def test_non_json_reply_reports_what_the_server_actually_said(self):
         class R:  # a 200 with a plain-text body, as models.github.ai returns for unknown paths

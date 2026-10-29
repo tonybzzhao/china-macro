@@ -343,24 +343,53 @@ def _post(url, headers, body, tries=3, timeout=90):
     raise LLMError(last or "request failed")
 
 
+_gemini_model = {"name": None}
+
+
+def gemini_pick_model(names):
+    """Newest stable Flash model from a list of 'models/...' names (no lite, preview, image, audio)."""
+    bad = ("lite", "preview", "exp", "image", "tts", "audio", "live", "thinking", "robotics", "embed", "learn")
+    ok = [n.split("/")[-1] for n in names if "flash" in n and not any(w in n for w in bad)]
+    version = lambda n: [int(x) for x in re.findall(r"\d+", n)] or [0]
+    return max(ok, key=version) if ok else None
+
+
 def _gemini(system, user, max_tokens):
-    model = os.environ.get("BRIEF_GEMINI_MODEL", "gemini-2.5-flash")
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-    headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"}
+    key = os.environ["GEMINI_API_KEY"]
+    headers = {"x-goog-api-key": key, "Content-Type": "application/json"}
     config = {"responseMimeType": "application/json", "temperature": 0.2, "maxOutputTokens": max_tokens}
 
-    def call(cfg):
-        return _post(url, headers, {"systemInstruction": {"parts": [{"text": system}]},
-                                    "contents": [{"role": "user", "parts": [{"text": user}]}],
-                                    "generationConfig": cfg})
-    # 2.5 models spend "thinking" tokens out of maxOutputTokens, which can leave the visible
-    # reply empty. Switch thinking off; retry without the setting if the model rejects it.
+    def call(model, cfg):
+        return _post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", headers,
+                     {"systemInstruction": {"parts": [{"text": system}]},
+                      "contents": [{"role": "user", "parts": [{"text": user}]}], "generationConfig": cfg})
+
+    def attempt(model):
+        # 2.5 models spend "thinking" tokens out of maxOutputTokens, which can leave the visible
+        # reply empty. Switch thinking off; retry without the setting if the model rejects it.
+        try:
+            return call(model, {**config, "thinkingConfig": {"thinkingBudget": 0}})
+        except LLMError as e:
+            if "thinking" not in str(e).lower():
+                raise
+            return call(model, config)
+
+    model = _gemini_model["name"] or os.environ.get("BRIEF_GEMINI_MODEL", "gemini-2.5-flash")
     try:
-        j = call({**config, "thinkingConfig": {"thinkingBudget": 0}})
+        j = attempt(model)
     except LLMError as e:
-        if "thinking" not in str(e).lower():
+        if "HTTP 404" not in str(e) or os.environ.get("BRIEF_GEMINI_MODEL"):
             raise
-        j = call(config)
+        r = requests.get("https://generativelanguage.googleapis.com/v1beta/models", headers=headers,
+                         params={"pageSize": 200}, timeout=30)
+        names = [m["name"] for m in r.json().get("models", [])
+                 if "generateContent" in m.get("supportedGenerationMethods", [])]
+        picked = gemini_pick_model(names)
+        if not picked:
+            raise LLMError(f"{e}; and the key lists no usable Flash model ({len(names)} models)")
+        log(f"gemini model {model} not found; using {picked}")
+        _gemini_model["name"] = picked
+        j = attempt(picked)
     cand = (j.get("candidates") or [{}])[0]
     text = "".join(p.get("text", "") for p in (cand.get("content") or {}).get("parts", []))
     if not text.strip():
@@ -414,6 +443,7 @@ def llm_providers():
 
 MAX_LLM_CALLS = 14  # a normal run makes 5; this stops any runaway retry loop from burning quota
 _calls = {"n": 0}
+_provider_errors = []  # every provider failure this run, kept even when a later provider succeeds
 
 
 def llm_complete(system, user, max_tokens=2500):
@@ -425,7 +455,11 @@ def llm_complete(system, user, max_tokens=2500):
         try:
             return provider(system, user, max_tokens)
         except Exception as e:
-            errors.append(f"{provider.__name__}: {e}")
+            msg = f"{provider.__name__.lstrip('_')}: {e}"[:400]
+            errors.append(msg)
+            if msg not in _provider_errors:
+                _provider_errors.append(msg)
+            log(f"provider failed, trying the next: {msg}")
     raise LLMError("; ".join(errors) or "no free LLM provider configured")
 
 
@@ -751,6 +785,7 @@ def write_status(status, fresh):
     is how a failed free-model call can be diagnosed from the repo itself. It never holds
     secrets: errors carry HTTP status and response text only, keys travel in headers."""
     status["narrative"] = "fresh" if fresh else "stale"
+    status["provider_errors"] = list(_provider_errors)
     (OUT.parent / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n")
 
 
