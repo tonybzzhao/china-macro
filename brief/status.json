@@ -1,7 +1,11 @@
 {
- "run_at": "2026-10-29T08:12:31+08:00",
- "provider": null,
- "error": null,
- "narrative": "fresh",
- "provider_errors": []
+ "run_at": "2026-10-29T08:13:55+08:00",
+ "provider": [
+  "gemini"
+ ],
+ "error": "LLMError: gemini after 25s: HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a",
+ "narrative": "stale",
+ "provider_errors": [
+  "gemini after 25s: HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a"
+ ]
 }
