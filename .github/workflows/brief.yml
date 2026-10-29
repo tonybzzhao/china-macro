@@ -1,17 +1,19 @@
 name: Update daily brief
 
 on:
-  schedule:
-    # Readers open /brief on China trading mornings. 22:17 UTC Sun-Thu is
-    # 06:17 Beijing Mon-Fri, after the US close (20:00 UTC during US summer
-    # time, 21:00 UTC in winter) and before the Beijing morning. GitHub drops
-    # or delays scheduled runs (the data workflow shows gaps of hours), so two
-    # later runs back it up; the script exits early once today's brief exists,
-    # so the extra runs cost nothing. Non-trading days (holidays, per the SSE
-    # calendar in data/history.json) are skipped inside the script.
-    - cron: "17 22 * * 0-4"
-    - cron: "47 22 * * 0-4"
-    - cron: "27 23 * * 0-4"
+  # PAUSED (2026-10-29, at the owner's request): the schedule is switched off, so the brief no
+  # longer updates by itself. To resume, delete the leading "#  " from the three cron lines
+  # below and from "schedule:", then push. Manual runs (workflow_dispatch) still work.
+  #
+  # Schedule when active: readers open /brief on China trading mornings. 22:17 UTC Sun-Thu is
+  # 06:17 Beijing Mon-Fri, after the US close (20:00 UTC in US summer time, 21:00 UTC in winter).
+  # GitHub drops or delays scheduled runs, so two later runs back it up; the script exits early
+  # once today's brief exists, and skips non-trading days using the SSE calendar.
+  #
+  # schedule:
+  #   - cron: "17 22 * * 0-4"
+  #   - cron: "47 22 * * 0-4"
+  #   - cron: "27 23 * * 0-4"
   workflow_dispatch:
     inputs:
       force:
