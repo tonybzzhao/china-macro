@@ -136,19 +136,23 @@ inside the hottest sectors.
   API is deliberately not used. Providers are tried best first:
   1. **Google Gemini free tier**: set repo secret `GEMINI_API_KEY`. **A Google
      AI Pro subscription does not make the API free**: a key is only free if its
-     Cloud project has no billing account attached (check the plan column at
-     aistudio.google.com/apikey; if billing is attached, use a key created in a
-     new project). The code cannot see this, so the key is ignored unless the
-     repo variable `GEMINI_FREE_TIER_OK` is set to `yes` after you have checked.
-     Model defaults to `gemini-2.5-flash` (`BRIEF_GEMINI_MODEL`). A run makes
-     5 calls and is hard-capped at 14.
-     Google may use free-tier prompts to improve its products; the prompts here
-     are only public headlines and market data.
-  2. **Groq free tier**: set repo secret `GROQ_API_KEY`. Defaults to
-     `llama-3.3-70b-versatile` (`BRIEF_GROQ_MODEL`).
-  3. **Pollinations**, keyless, used when no key is set. It works but is flaky
-     (a trivial request timed out in testing, and a small open model sometimes
-     returns malformed JSON), so treat a key as the dependable setup.
+     Cloud project has no billing account attached (the plan column at
+     aistudio.google.com/apikey must say Free tier). The code cannot see this, so
+     the key is ignored unless the repo variable `GEMINI_FREE_TIER_OK` is `yes`.
+     Model defaults to `gemini-2.5-flash` (`BRIEF_GEMINI_MODEL`), with
+     `gemini-2.5-flash-lite` as a fallback when the first model's quota is gone.
+     Free quotas are per model, per minute and per day, and recent reports put
+     them low (as few as ~20 requests a day), so calls are spaced 13 s apart, a
+     run makes 5 calls (hard cap 14), and a 429 is understood: a per-minute limit
+     waits the advised delay, a per-day limit stops at once. Over quota means
+     Google refuses the call; on the free tier it is never billed. **Do not
+     trigger many manual runs in one day**: they use the same daily quota (it
+     resets at midnight Pacific time).
+  2. **Groq free tier** (optional second provider): set repo secret
+     `GROQ_API_KEY`. Defaults to `llama-3.3-70b-versatile` (`BRIEF_GROQ_MODEL`).
+  3. **No keyless fallback by default.** The Pollinations endpoint was tried: it
+     timed out, returned malformed JSON, mistranslated company names and made up
+     a share-price move, so it is off unless `BRIEF_ALLOW_KEYLESS=1`.
   - GitHub Models was tried first and dropped: `models.github.ai` answers
     `200 text/plain OK` from Actions runners, and the older Azure host no longer
     resolves.

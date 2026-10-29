@@ -320,6 +320,21 @@ class LLMError(RuntimeError):
     pass
 
 
+def quota_summary(text):
+    """Boil a 429 body down to the part that matters: which limit, and when it resets."""
+    try:
+        err = json.loads(text)["error"]
+    except Exception:
+        return text[:300]
+    bits = [err.get("message", "").split("\n")[0][:160]]
+    for d in err.get("details", []):
+        for v in d.get("violations", []):
+            bits.append(f"{v.get('quotaId') or v.get('quotaMetric')} limit={v.get('quotaValue', '?')}")
+        if d.get("retryDelay"):
+            bits.append(f"retryDelay={d['retryDelay']}")
+    return " | ".join(b for b in bits if b)
+
+
 def _post(url, headers, body, tries=3, timeout=90):
     """POST with backoff on rate limits, transient server errors and network errors."""
     last = None
@@ -330,7 +345,16 @@ def _post(url, headers, body, tries=3, timeout=90):
             last = f"{type(e).__name__}: {str(e)[:150]}"
             time.sleep(5 * (i + 1))
             continue
-        if r.status_code == 429 or r.status_code >= 500:
+        if r.status_code == 429:
+            summary = quota_summary(r.text)
+            # A daily quota will not come back within this run, so do not wait on it.
+            if re.search(r"PerDay|per day|daily", summary, re.I):
+                raise LLMError(f"HTTP 429 daily quota used up: {summary}")
+            last = f"HTTP 429: {summary}"
+            m = re.search(r"retryDelay=(\d+(?:\.\d+)?)s", summary)
+            time.sleep(min(65, float(m.group(1)) + 1) if m else 8 * (i + 1))
+            continue
+        if r.status_code >= 500:
             last = f"HTTP {r.status_code}: {r.text[:200]}"
             time.sleep(8 * (i + 1))
             continue
@@ -344,6 +368,8 @@ def _post(url, headers, body, tries=3, timeout=90):
 
 
 _gemini_model = {"name": None}
+_gemini_exhausted = set()  # models whose free quota or availability ran out this run
+_used = {"model": None}
 
 
 def gemini_pick_model(names):
@@ -352,6 +378,9 @@ def gemini_pick_model(names):
     ok = [n.split("/")[-1] for n in names if "flash" in n and not any(w in n for w in bad)]
     version = lambda n: [int(x) for x in re.findall(r"\d+", n)] or [0]
     return max(ok, key=version) if ok else None
+
+
+_last_gemini = {"t": 0.0}
 
 
 def _gemini(system, user, max_tokens):
@@ -375,22 +404,46 @@ def _gemini(system, user, max_tokens):
                 raise
             return call(model, config)
 
-    model = _gemini_model["name"] or os.environ.get("BRIEF_GEMINI_MODEL", "gemini-2.5-flash")
-    try:
-        j = attempt(model)
-    except LLMError as e:
-        if "HTTP 404" not in str(e) or os.environ.get("BRIEF_GEMINI_MODEL"):
+    # Free-tier limits are per model per minute and per day, so keep calls spaced out and, if one
+    # model's quota is gone, try the next one's. All of these stay on the free tier.
+    wait = float(os.environ.get("BRIEF_GEMINI_MIN_INTERVAL", "13")) - (time.time() - _last_gemini["t"])
+    if wait > 0:
+        time.sleep(wait)
+    primary = _gemini_model["name"] or os.environ.get("BRIEF_GEMINI_MODEL", "gemini-2.5-flash")
+    errors, j, used = [], None, None
+    for model in [primary, "gemini-2.5-flash-lite"]:
+        if model in _gemini_exhausted:
+            continue
+        try:
+            j = attempt(model)
+            used = model
+            break
+        except LLMError as e:
+            msg = str(e)
+            _last_gemini["t"] = time.time()
+            if "HTTP 404" in msg and model == primary and not os.environ.get("BRIEF_GEMINI_MODEL"):
+                r = requests.get("https://generativelanguage.googleapis.com/v1beta/models", headers=headers,
+                                 params={"pageSize": 200}, timeout=30)
+                names = [m["name"] for m in r.json().get("models", [])
+                         if "generateContent" in m.get("supportedGenerationMethods", [])]
+                picked = gemini_pick_model(names)
+                if picked:
+                    log(f"gemini model {model} not found; using {picked}")
+                    _gemini_model["name"] = picked
+                    try:
+                        j, used = attempt(picked), picked
+                        break
+                    except LLMError as e2:
+                        msg = str(e2)
+            if "HTTP 429" in msg or "HTTP 404" in msg:
+                _gemini_exhausted.add(model)
+                errors.append(f"{model}: {msg}")
+                continue
             raise
-        r = requests.get("https://generativelanguage.googleapis.com/v1beta/models", headers=headers,
-                         params={"pageSize": 200}, timeout=30)
-        names = [m["name"] for m in r.json().get("models", [])
-                 if "generateContent" in m.get("supportedGenerationMethods", [])]
-        picked = gemini_pick_model(names)
-        if not picked:
-            raise LLMError(f"{e}; and the key lists no usable Flash model ({len(names)} models)")
-        log(f"gemini model {model} not found; using {picked}")
-        _gemini_model["name"] = picked
-        j = attempt(picked)
+    if j is None:
+        raise LLMError(" || ".join(errors) or "no Gemini model available")
+    _last_gemini["t"] = time.time()
+    _used["model"] = used
     cand = (j.get("candidates") or [{}])[0]
     text = "".join(p.get("text", "") for p in (cand.get("content") or {}).get("parts", []))
     if not text.strip():
@@ -469,7 +522,7 @@ def llm_complete(system, user, max_tokens=2500):
             log(f"{name} answered in {time.time() - t0:.1f}s")
             return out
         except Exception as e:
-            msg = f"{name} after {time.time() - t0:.0f}s: {e}"[:400]
+            msg = f"{name} after {time.time() - t0:.0f}s: {e}"[:700]
             errors.append(msg)
             if msg not in _provider_errors:
                 _provider_errors.append(msg)
@@ -802,6 +855,7 @@ def write_status(status, fresh):
     secrets: errors carry HTTP status and response text only, keys travel in headers."""
     status["narrative"] = "fresh" if fresh else "stale"
     status["provider_errors"] = list(_provider_errors)
+    status["model"] = _used["model"]
     (OUT.parent / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n")
 
 

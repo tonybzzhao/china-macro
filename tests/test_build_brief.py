@@ -170,6 +170,42 @@ class Narrate(unittest.TestCase):
             with self.assertRaisesRegex(bb.LLMError, "was not JSON: 'OK'"):
                 bb._post("https://x.test", {}, {})
 
+    def test_429_summary_names_the_quota_and_a_daily_limit_is_not_retried(self):
+        body = json.dumps({"error": {"code": 429, "message": "You exceeded your current quota\nmore", "details": [
+            {"violations": [{"quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier", "quotaValue": "20"}]}]}})
+        self.assertIn("PerDay", bb.quota_summary(body))
+        class R:
+            status_code, ok, text, headers = 429, False, body, {}
+        with patch.object(bb.requests, "post", return_value=R()) as post, patch.object(bb.time, "sleep"):
+            with self.assertRaisesRegex(bb.LLMError, "daily quota used up"):
+                bb._post("https://x.test", {}, {}, tries=3)
+        self.assertEqual(post.call_count, 1)
+
+    def test_per_minute_429_waits_the_advised_delay_then_retries(self):
+        body = json.dumps({"error": {"code": 429, "message": "slow down", "details": [{"retryDelay": "12s"}]}})
+        class R429:
+            status_code, ok, text, headers = 429, False, body, {}
+        class R200:
+            status_code, ok, text, headers = 200, True, "{}", {}
+            def json(self): return {"ok": 1}
+        with patch.object(bb.requests, "post", side_effect=[R429(), R200()]), patch.object(bb.time, "sleep") as sl:
+            self.assertEqual(bb._post("https://x.test", {}, {}, tries=3), {"ok": 1})
+        sl.assert_called_with(13.0)
+
+    def test_gemini_falls_back_to_the_lite_model_when_the_first_has_no_quota(self):
+        seen = []
+        def fake_post(url, headers, body, **k):
+            seen.append(url.split("/models/")[1].split(":")[0])
+            if seen[-1] == "gemini-2.5-flash":
+                raise bb.LLMError("HTTP 429 daily quota used up: x")
+            return {"candidates": [{"content": {"parts": [{"text": "{}"}]}}]}
+        with patch.object(bb, "_post", fake_post), patch.object(bb.time, "sleep"), \
+             patch.object(bb, "_gemini_exhausted", set()), patch.object(bb, "_gemini_model", {"name": None}), \
+             patch.dict(bb.os.environ, {"GEMINI_API_KEY": "k"}, clear=True):
+            self.assertEqual(bb._gemini("s", "u", 10), "{}")
+            self.assertEqual(bb._gemini("s", "u", 10), "{}")
+        self.assertEqual(seen, ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-flash-lite"])
+
     def test_gemini_empty_reply_raises_with_the_finish_reason(self):
         empty = {"candidates": [{"finishReason": "MAX_TOKENS", "content": {"parts": []}}], "usageMetadata": {"thoughtsTokenCount": 2999}}
         with patch.object(bb, "_post", return_value=empty), patch.dict(bb.os.environ, {"GEMINI_API_KEY": "k"}):
