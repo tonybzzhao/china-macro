@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-07T22:49:33.529989+00:00",
+    "last_updated": "2026-11-08T02:33:12.742048+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5246,11 +5246,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-11-07T22:47:16.795192+00:00",
+            "attempted_at": "2026-11-08T02:31:35.140630+00:00",
             "status": "refreshed",
             "expected_month": "2026-10",
             "latest_observation": "2026-10",
-            "last_success_at": "2026-11-07T22:47:16.795192+00:00",
+            "last_success_at": "2026-11-08T02:31:35.140630+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -53963,6 +53963,13 @@
   },
   "news": [
     {
+      "headline": "World's largest economy faces double hit from Africa's largest economy and Canada as South Africa boosts China exports 25% and Ottawa unveils C$142bn plan",
+      "summary": "",
+      "source": "Business Insider Africa",
+      "date": "2026-11-07T17:54:05+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQR1Q3b1htaEFMU013RXl6ZXIyZUZvUjBUSkJuMWNQbjdMRnNXdWp6QWRfYzUxZjNZWjhjeU9vZVN0Q21pUWRabzJpSFNhMVNJcWFTRTNLcklwT2tlX08ySlRESXdrcElsWXdnQTVJVDNMbEYyd0c1ZWxCUXRmMEdnSG0yZGVuUURKenZfWXVFTzI5UFpINk9rekJlbklOWnhEQUlkc0FuQ0dQajRqUFpTTm5meXpZLVRkY1ExckE0SVFSMzRTOUNBRVZuNDZJb054WktCVWpB?oc=5"
+    },
+    {
       "headline": "China vows ‘zero tolerance’ for election meddling ahead of 21st party congress",
       "summary": "China’s ruling Communist Party has warned of “zero tolerance” for bribery and other attempts at election interference as delegate selection begins for next year’s national congress, which is expected to feature a major l",
       "source": "South China Morning Post",
@@ -53980,8 +53987,15 @@
       "headline": "US asks China to uphold Busan trade deal commitments ahead of Trump-Xi meeting",
       "summary": "",
       "source": "DW.com",
-      "date": "2026-11-07T05:57:45+00:00",
+      "date": "2026-11-07T04:55:32+00:00",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbkp5eXozMF9JcUhTajVhRzVsZTVQdnBCTjdZOFRscFB2TFVRLV9mZEhKTzlTN2hUSEJTWnFsOWZlMUYxN080S1ZjUTJyVlU3WUhDZVMyNTV4OTFIR1FHRU5FTWtiSVh1S213WFVGU3MzaktxWGxjak9lYVB0Vnc1a0NvSGR4M3RqekhyRVln0gGOAUFVX3lxTE9qanZtWWwydWFYQVVwRU1oT3B6V3dtNTJacloycFd6WUwzRC1FcUxERmtkZmpqMDktaXhjVkt1U3duMWc0WXZpQTZaaUFLelJOdkdBR0RVX0lqbjZTNk9DbVp1TVRpLTMzTzY3ZzRDVUV2eFFWVzMzdXVEUzY3NjM5Q0JIbW5SaUEtVVhNZkE?oc=5"
+    },
+    {
+      "headline": "Beijing Vows to Hit Back Against US Sanctions on China Companies",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-11-07T01:54:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR3FDNDVJS3VUN0RSZ0N4MjN3U3BGbHF1c0U3OGRnWlpVc21LMHM3dWd2TDhNR2lIUHBSOHAxNmZXSks0a01DM25XcjVIMnBMY2FJOHk2a2xXSXdZY3B1dnhaNmpPbW5wT2VoM0dlM1JqQkpXeHk3bURRcWJXTG5iZFRSb2hreDVHaTNwWUxnT08xbEpjVWdqODVFSFFOenZxdDRZSFFRRVBYOGVJRzFBbVpSVFFRQQ?oc=5"
     },
     {
       "headline": "Bessent, Greer Raise Concerns on China Trade Deal Actions",
@@ -54054,7 +54068,7 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oSTBmVk9xbVktd1VhNHY1T2cwaHM3dTRoU3VmaXBxVTYtX0V4T1RDRDlsUlRkNDQxUzJ2b3B3bWw4RTBweEl0OVJIV1VWX1hya0w4el9tVTlFOUZTU3c0Rm9ld0x6cnVyQzFfRA?oc=5"
     },
     {
-      "headline": "China threatens EU with retaliation as EU mulls “kill-switch” to defend its market",
+      "headline": "China threatens retaliation as EU mulls trade “kill-switch”",
       "summary": "",
       "source": "Euronews.com",
       "date": "2026-11-05T11:21:01+00:00",
@@ -54080,13 +54094,6 @@
       "source": "South China Morning Post",
       "date": "2026-11-05T06:50:02+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3373345/ex-politburo-member-ma-xingruis-corruption-charges-extend-end-last-century"
-    },
-    {
-      "headline": "China Tech Frenzy Turns Into Year of Dismay for Retail Traders",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-11-05T02:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNd3VweFRYYWNyamVSbllFLVlOcVg0UnQyMHlvdmItTlRaQUZvVGFXTHRzQUJWMWt6TkhnLUxvSFZuclU2Z08yYlZTd1JyX0tLd3ktWU01aFhMVjI0RFNuc08tRFFzUW1qUlVjWHhSc3RFM255MG9YQm9meWdkTkhhWWVPMWpqVHFuOFIxcHl4TUMySHNqSnl6TTlEWDh3YkMwWFVHWXVWeXQ2YVo4VkhJUFA3OA?oc=5"
     },
     {
       "headline": "Who Keeps Crashing China’s Stock Market?",
@@ -54467,13 +54474,6 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTkhPWDM1ZGcyYmExei05VjN3LVlFTmtuSE1ONFdsOExvcHVCSWZGZ0s3TFQ3NUd5amsyUE5sOURVeDlSTk16WWtHbWQ3QklkeXVjekVyTTh1ZWtyZU1zUWpfLVMyaXZXbThxQUtXR0laLWVTY25JQUhVbDdqTjJpNGRpdTlhUWxEVXM2Q2J3V2Y4dE5OZ09mYWw3ZW42OUdXMW8wOVhVRkpFRzJs?oc=5"
     },
     {
-      "headline": "Polls Show Policymakers Out of Step With Public on Tariffs, China Trade",
-      "summary": "",
-      "source": "The US-China Business Council",
-      "date": "2026-10-21T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWjZoR0JFV3dTaWFkSWc1UWZfeW5zSFJscnJpejczWTVHbFkzYWs2T2x3MmlKaWJNM0ZVU0RvV2lWWV9LR09NVmk2TzY5bjNTNC1Db3JjbXBSWVprV3VkN0p5dGxtUW56QS12SWZfbDYtdXRVeWEtX2NMWEJJQnphbW0xbEJKd192bHVFUzhUN2dGRjlNMDFqakNKODhra3ZWdjAzREV4UQ?oc=5"
-    },
-    {
       "headline": "China's stock market sinks into bear territory as CSI 300 extends 10-week rout",
       "summary": "",
       "source": "CNBC",
@@ -54607,11 +54607,25 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPT0hYREdoVFBXXy1ZME84VXBJMTU4Um1rVnNXV2dLMDBWMkppOFMxZlJGX3JOZXg4bncyVjAwS3ktSmRlRDBFTG9CZk9pNWxjQlp3djBwLTZWazA3aWtiQmp5eEtXOEFkaTdrVW9kQUxac05jWkNfb29NWms4OGw2d1FkOXRfOHZYUEhvQ05rb1VkME4yVnRMSkF4Mk5zTWNi?oc=5"
     },
     {
+      "headline": "China's economy seen missing target as global shocks bite: AFP poll",
+      "summary": "",
+      "source": "France 24",
+      "date": "2026-10-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcnNPSi1tT0VyQmJTNjFCRmhfOUZfR1dzVW9nS1hLbm40Ty1MSWlxUnZDaG5kUDZkTVVfVllXN0gzc3NCLWt0RmpwQzRjcWhiWEhsYVZLQ203WDFCWlRCRmV2YW5vSVRhalA1aUp2dmFZQTNmcm9zSDFjWHpiZ0x2TUhlOUg3ZlRtdkRRdUNwcGpPQmttQ3ZWQ0lfd3NDVklYYTZTcERwRTdVWDdCUkhGM0tpaw?oc=5"
+    },
+    {
       "headline": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
       "summary": "",
       "source": "CNBC",
       "date": "2026-10-15T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE85Q0ZrM1c2YkJjdFdFVW1iNXVwd1VGbTFxSlhhQTB6MTRhRVRNeHM0Q1hCUENfdjFQWEdhcUV2dkV1YXhNNmJ5bHMzdXJOSFVPaWJuUUJJYnNYRVM0OU9YMUNSb0VVd3ZNM2Q2cWJfUHY4X2M5RUxR0gF8QVVfeXFMTUVLVjhUYWxoQlpfeXVydVV6aHh1dkZPVkxubTRMNmJMWUNocXZocmVFZElHMVZDcmRXM1JGZjBTMjMydnBRdF9YVmlZMVZxTVRYdzVHS2VhcWd3TXlEYXZ6empTaTJHM3d5OFRIZlpFQkxJYUN6MXZMY1hYdg?oc=5"
+    },
+    {
+      "headline": "Canada, Singapore reaffirm China trade ties amid global push for self-reliance",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-10-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYXVSV184MmJUZDlSbzN2VF84aU96TlZaZ2FORzB1STFkRGFDNElIWklNai1hRktmVHJSc0JvODlhOGpZY0ltNVRQcEdOR2JkRVRGQVA5UFBPc3JGenhYVkx2SXF3WHgtTGZ4cTZVUmI5dGZsLW1wc3Z1aXpMOHBlMjRzbnl1NER0ZGpfc2ZuWVRjRW12Z0txekZWVnBlbzVLeURsbzVXNnpyREpMLU5uSFBET0hnTmxjU1A3bno5S2c4U0lxSEcybTZjMHlkUXhQcWfSAdIBQVVfeXFMTXNpUUp1V09VQkU2WWtiVnV3dTZXTUF1VDlVaUxzMWx0X0xEekI0VmtnaThudUpjXzdhNlluT1pSY3NxWnFEbGVTZXVtbTFVTERVcGQzdkktaWp3VFpvaFA2TFFqN2RraDl6bGtEdzV2WURkTkxFOTBxWnlYaWduTnl3bzFYTDNhejQyQWNmTGlxT3NNZU54akt2TDN1RVo1VVZLYmFUUzdvZXNIeTRQVXIwZ1JOTFJ4Yng4VmxENHRuSDhUQks3ckpjZTBjSmttUWlR?oc=5"
     },
     {
       "headline": "China’s Economic Miracle Has Run Out of Road",
@@ -54776,7 +54790,6 @@
     }
   ],
   "trading_days": [
-    "2024-11-07",
     "2024-11-08",
     "2024-11-11",
     "2024-11-12",
