@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-08T21:15:26.716004+00:00",
+    "last_updated": "2026-11-09T01:01:06.373917+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5246,11 +5246,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-11-08T21:12:52.230282+00:00",
+            "attempted_at": "2026-11-09T00:57:37.602842+00:00",
             "status": "refreshed",
             "expected_month": "2026-10",
             "latest_observation": "2026-10",
-            "last_success_at": "2026-11-08T21:12:52.230282+00:00",
+            "last_success_at": "2026-11-09T00:57:37.602842+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -53977,7 +53977,7 @@
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbkp5eXozMF9JcUhTajVhRzVsZTVQdnBCTjdZOFRscFB2TFVRLV9mZEhKTzlTN2hUSEJTWnFsOWZlMUYxN080S1ZjUTJyVlU3WUhDZVMyNTV4OTFIR1FHRU5FTWtiSVh1S213WFVGU3MzaktxWGxjak9lYVB0Vnc1a0NvSGR4M3RqekhyRVln0gGOAUFVX3lxTE9qanZtWWwydWFYQVVwRU1oT3B6V3dtNTJacloycFd6WUwzRC1FcUxERmtkZmpqMDktaXhjVkt1U3duMWc0WXZpQTZaaUFLelJOdkdBR0RVX0lqbjZTNk9DbVp1TVRpLTMzTzY3ZzRDVUV2eFFWVzMzdXVEUzY3NjM5Q0JIbW5SaUEtVVhNZkE?oc=5"
     },
     {
-      "headline": "World's largest economy faces double hit from Africa's largest economy and Canada as South Africa boosts China exports 25% and Ottawa unveils C$142bn plan",
+      "headline": "World's largest economy faces double hit from Africa's largest economy and Canada as South Africa boosts China exports by 25% and Ottawa unveils C$142bn plan",
       "summary": "",
       "source": "Business Insider Africa",
       "date": "2026-11-07T17:54:05+00:00",
@@ -54110,18 +54110,11 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oSTBmVk9xbVktd1VhNHY1T2cwaHM3dTRoU3VmaXBxVTYtX0V4T1RDRDlsUlRkNDQxUzJ2b3B3bWw4RTBweEl0OVJIV1VWX1hya0w4el9tVTlFOUZTU3c0Rm9ld0x6cnVyQzFfRA?oc=5"
     },
     {
-      "headline": "China ready to expand US farm imports – on 1 condition",
+      "headline": "EXCLUSIVE: Nvidia chips pile up in Hong Kong as China withholds import approval",
       "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-11-05T12:00:21+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNOU5wSHZoRmtZT3ZwREIwYWVBQzZYQmR6UDd1Z0hpSUdPM3lCWURJU19ITG54dkQzbW54TjlmaW8tenFxbjQ3Vnc0UkpqRmlvQ295YjBmYnhLSk1NR3VvNkdfSkxJc3ZtZWxmZ1ZzcDcza1ZBVER6eGdhdnJNQnltc1lmWU02MzdlWHZjTXNja0FMdERFYUlkeXR1WHN4dWRqeHI2c1NGX3phX0JKZFRTNkVoSmtsRUQydGVQdzR5VnN5VmFBYjBSVVpTOTBxR1lrLXhLclBVY0fSAdgBQVVfeXFMT2VuYl9iTGJ5Um9ZcXFmczdEUHdkWENMRDY5RlhKVDZTbmJkWlB0UXRWemdKQU1Eb09vbDc0MWx6YmtLUUFlLUpYOUc5QnBtaWpDY3hWdTJ5aEN2Tm5LRXVkSkFZS0ZkVGN3TnhrWVlFREZ6VWVjcWxKV25vVkNUOHMxOEp1Ul9DdG5hRm1vR0dSNDBYck1JNGl5Q01ZdEZuYl9EN0NDeGpQMHRNel9NRzZvSHBrVDY1cUVKNEh3MW85eG1NVHh5b1JGdEc5QWo4b2piRTJPZU9X?oc=5"
-    },
-    {
-      "headline": "China threatens retaliation as EU mulls trade “kill-switch”",
-      "summary": "",
-      "source": "Euronews.com",
-      "date": "2026-11-05T11:21:01+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUHBIVUJVUy1WX2c0dm5wZjhYWERMOU1GcGY5VDJvR1h4VlFvWGJDdzRyQVdEYzFaNEZqbERsb0VrN3FWQU9nVkhOSFdVOHZQaEN3ck05U2FuSzUtMUFtYUVwa2Q4VFh3UUNjZWVyUTc1UC02RTF6dUxHeGxURjBmc29EQWJZdjZXbnhmcXR5LUhnZk5HbktPdkUwdzFaUnJOTkp1My1OT2FuMEFKTWpzZDJ6TEViRUU?oc=5"
+      "source": "Reuters",
+      "date": "2026-11-05T11:27:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZHNUQnlURFBWSTlTSE5wNWUzekR0cDZfcWQzQVRFLVNweXJiSGhtSFZ6cWdvMXF4SHpLRy1YT1Y2QjJZMGxRajNaRGQ1Y25SVGkycEphaU4zTTRJSzV0QjNPTFMxeEl0Mm9CdGFQc0JJTHBNemVoSXdkTnhsR1FNR0t1b2hoUHdfSW0yVnlGMl95Qkd4dDAtMGdhYTFhUzRhc0U1Mm9fdGxLRnhacUNr?oc=5"
     },
     {
       "headline": "Ex-Politburo member Ma Xingrui’s corruption charges extend to end of last century",
@@ -54276,13 +54269,6 @@
       "source": "South China Morning Post",
       "date": "2026-10-30T09:00:31+00:00",
       "url": "https://www.scmp.com/plus/news/china/politics/article/3372719/politburo-promotion-lula-victory-us-midterm-elections"
-    },
-    {
-      "headline": "Why isn’t China’s AI and tech boom saving its stock markets?",
-      "summary": "",
-      "source": "CNN",
-      "date": "2026-10-30T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YdU1UN0YxR2F6VEtwY2NvTzBRZFNWa2U1Z2NDUkxQclRHX2NkVzZ2MExucGI5QmZuMk5ZLU0tTGNrNFoyVTFDREhDMzFYWU8wbFdfcjhUdHFYeE4xeTJkOVowRHBsTGxiTXhUMHBjaHZVTDQwZjVYQ1ozaw?oc=5"
     },
     {
       "headline": "China’s fifth plenum: ‘unwritten rules’ newest target in Communist Party’s corruption fight",
@@ -54635,6 +54621,13 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcGVkYXFpU09qRXZIdVQyMDVVaHpJTUo4dE15M2hUSnM4Zm5VR09CLWNRelhzZUd3VDRSbWdCQkljSnJtTWoxNkJ0WXg4cFNLdExWSUlpV3ZEdEhUdTB4WG43RmIxQ0FqMlZrNUpnQ3liTlVraFdfbW1mTnBueVdNMGdaaFAzMVdFdW5nMGFaTEFTMmdqdVNERTA1RzlGanVEZVE?oc=5"
     },
     {
+      "headline": "Brazil-China trade hits record $143.3 billion as bilateral economic ties expand",
+      "summary": "",
+      "source": "Global Times",
+      "date": "2026-10-16T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SX1BPVVVmdUo4Z0gxQkhVTEV5QmRHanlvbE50UGh1RzgyOS1JbkdreWQ5ZW84dmVWVkxnWktsWHpNMGJ6ZWxCSUNfc3NKVl9pLUUzLThYWjJobFlNbGFMbDJR?oc=5"
+    },
+    {
       "headline": "China Q3 growth set to pick up on stimulus, keeping 2026 goal within reach",
       "summary": "",
       "source": "Reuters",
@@ -54689,6 +54682,13 @@
       "source": "Al Jazeera",
       "date": "2026-10-14T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zMWNrREl6T29hdzJEWVI1eGM1Q1BRUE01V09fYWhsRm10b0pyY1VYd0x6aG8yM2FwVjNjQ3NENTFwUUZHZWRWQnRQdkQ2d1Nua05kNWE4SzI3bWhMZjhzb0FwcnplSjFnQ0VOX0l0XzAyZXBE0gF6QVVfeXFMTjN5dXJmR2oxODVtNE5wR0FFbTRvNnBTZmNrVU1PVUVHZVZqRGFvTzhlRDZJdnRuYXFmd01nd1phV1NMb0JySnNfMmNtN2hIaFNGeDlLY19XN19lWW1WRlpPS1BpdlFibzVmMW1WNk95N1pfbVYzVEVsTHc?oc=5"
+    },
+    {
+      "headline": "Pressured at home, EU leaders weigh China trade steps",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-10-14T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZC1va2NWTWZxZFZwX0o0VVhXdFBUODFPVGt5RVF0ZmZfQmN3MXdrSFlyYVczRVBLdU45bGU2NmthUldZZXF0TGdXYTI2bFpidU5WdGg4anBFckVsbUFyUV9EQW0yMzdWNUd0LV9kT3Rtd1QzdFRGc3VUODVoSkYycG1RbkxiRkpmWWh5dk5CUWk5OUpodFpBbWozVnBTZw?oc=5"
     },
     {
       "headline": "China’s trade surplus nears record as pressure mounts from trading partners",
@@ -54804,7 +54804,6 @@
     }
   ],
   "trading_days": [
-    "2024-11-08",
     "2024-11-11",
     "2024-11-12",
     "2024-11-13",
@@ -55344,46 +55343,6 @@
       "consensus": 0.8,
       "previous": 0.9,
       "series_key": "cpi"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "10:30",
-      "event": "中国10月贸易帐-美元计价(亿美元)",
-      "consensus": 1240.0,
-      "previous": 1335.3,
-      "series_key": "trade_balance"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "10:30",
-      "event": "中国10月进口年率-美元计价(%)",
-      "consensus": 33.5,
-      "previous": 31.0,
-      "series_key": "imports_yoy"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "10:30",
-      "event": "中国10月出口年率-美元计价(%)",
-      "consensus": 33.0,
-      "previous": 36.3,
-      "series_key": "exports_yoy"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "16:00",
-      "event": "中国10月M1货币供应年率(%)",
-      "consensus": 3.3,
-      "previous": 3.2,
-      "series_key": "m1_growth"
-    },
-    {
-      "date": "2026-11-10",
-      "time": "16:00",
-      "event": "中国10月M2货币供应年率(%)",
-      "consensus": null,
-      "previous": null,
-      "series_key": "m2_growth"
     },
     {
       "date": "2026-11-16",
