@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-09T01:01:06.373917+00:00",
+    "last_updated": "2026-11-09T08:04:07.566877+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5246,11 +5246,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-11-09T00:57:37.602842+00:00",
+            "attempted_at": "2026-11-09T08:02:03.328826+00:00",
             "status": "refreshed",
             "expected_month": "2026-10",
             "latest_observation": "2026-10",
-            "last_success_at": "2026-11-09T00:57:37.602842+00:00",
+            "last_success_at": "2026-11-09T08:02:03.328826+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -7702,6 +7702,10 @@
             {
               "date": "2026-09",
               "value": 0.9
+            },
+            {
+              "date": "2026-10",
+              "value": 0.7
             }
           ],
           "desc": "The year-over-year change in prices paid by consumers for a basket of goods and services."
@@ -9209,6 +9213,10 @@
             {
               "date": "2026-09",
               "value": 5.0
+            },
+            {
+              "date": "2026-10",
+              "value": 5.7
             }
           ],
           "desc": "The year-over-year change in prices producers receive for their output, an early signal of inflation or deflation pressure working through the economy."
@@ -53963,6 +53971,48 @@
   },
   "news": [
     {
+      "headline": "Poll: China's export growth expected to have remained strong in October",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-11-09T07:13:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUVRFNzRhZTJPcFpDcVlpQ05KaGtod1BoMC1rSW9YbHdYZkZxMUR0aFdTODIwUlBRVGxhUGo0Y1RNT3JibHg4SjVpUWg1d2kxN2Q4QlR5Q1l2Wnp0cUtzUW83eW95ZkxNSVBaT2ZDNFhMdFpJQVp5Y3dCclpvY0JuWnRHUGNaS1NmTmZpeF9DbWFRQ3ExVVhaWHpXdGlYNTJYaWxxdnRLWTZ2NmpYc1NaYXUxOA?oc=5"
+    },
+    {
+      "headline": "China's economy not weak enough to trigger major fiscal stimulus: Societe General",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-11-09T04:41:11+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaEhPa2RCajVaenp2WnRTeUxPWmE0VDFCQXFEcDNGZHBaY1FpTjgwY0t6bWQ2dHppMzJsQnpGdkFWZGcxT1F3cVRmNDNkQkNpMFRjTlJQdy0tZnBRb1VSeEUxWjYzcVI4WTRseFFpYlk5MlN4endwdTloWGl5anREdFhtaE9xQTB2LXBBYjBfZHltckNWVGJKeWdhdDVMeTRmNlIwMHRfaElOSnZuRTU0OXJrdnJaT2tGUXU4eUpB?oc=5"
+    },
+    {
+      "headline": "China Extends Pause on 24% US Tariffs to January, Keeps 10% Rate",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-11-09T04:36:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTkVXSkNKNzRBdXBNUlFmNVlEZ3gtUVhRbVVZcENiS3B6RXBlMDNvQ2lrU19fMXoyYkdSQWc5amg5OXlhcmtKX0JHZHR2amtKY2hzZllpQUhWS3lTNndnT2NDZFdYUHNCeG1MVHZmMWV5RjEwTXJqVmlLQTJDU0d3SHN2aHVOZ291bTNqNnprR3U2TndhUEs0ZHdDTVM2NlRsZW5VQUxKd25JLXV0MlJ6aXRR?oc=5"
+    },
+    {
+      "headline": "China extends suspensions of 24% tariff on US goods, port fees on US ships for two months",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-11-09T02:48:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSTA2TElMOUVJb2VPUWp2RnhuNWtoOHhncWpKUW9Ob1lEQ19BVUluTWRvRkZTYWJTYlU5RlZNR2F6UmZOcW5GLXlrQVJuMzMxakd2V2M4d1dXRDBCU3FBN182RlFQTjVBbVpTbzQ2cXZzdkk4YUJxZkF4NUVoZXlXR1haVlZIY2lpMnJQeTdFWTFMQkR5QWxiaWtqZUJSSUI5bFpzdGNmUENfU2h4dWIxcg?oc=5"
+    },
+    {
+      "headline": "Similarity is not exposure: Measuring spillovers from US–China trade frictions",
+      "summary": "",
+      "source": "CEPR",
+      "date": "2026-11-09T01:02:45+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeVJHQXU2RG1VeWxpZjdjVkRaY2FRQVRRQWVpbG95Qmx4RjY0MTdGZVRjb0dDM1doN0lYb083ckNPVHNZUzJqN00ybWc3bjRTRk5ZRUQxMTlSZ3VFdnBOSU9iTmZmbndsRm9CdkE3MmQ3LTFJYVZzdHRFYXVaZmxyb1dtQTRfa185clRQT1o1enN6c3E2MWgyTzB2b0JqQnNrcEE?oc=5"
+    },
+    {
+      "headline": "China heads towards high income status and policy reckoning at home and abroad",
+      "summary": "",
+      "source": "East Asia Forum",
+      "date": "2026-11-08T21:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbVA4N2V0SHZ5OWtZNEdDYWlQVV82dlBKMDNqSXZFME1OaHRDWHZuanFqNUVFV3pRSkNqR0VwWVQyQk9nM05TUF9xSWNCSTEzYVpCaFpvSU9aRTFZM2x2UG5tYjZoNVN1VnYtdEp4TWV0RHR0bzFYQ1A5bnp1Yk8tOHAzOVJKRjJuMnBGMmlfLVhRQUg4STFNcGRxOHhvNjFrSnV0TlZ4dkNLazdtVHhIb2g1SmstTW8?oc=5"
+    },
+    {
       "headline": "China eyes gig workers and influencers as delegates for Communist Party congress",
       "summary": "For the first time, delivery couriers, ride-hailing drivers and influencers could become delegates to the Communist Party’s five-yearly national congress, as Beijing seeks to keep the group close to the official ideology",
       "source": "South China Morning Post",
@@ -53998,48 +54048,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3373658/chinas-communist-party-vows-zero-tolerance-election-meddling-ahead-key-congress"
     },
     {
-      "headline": "Opinion | China-Swiss trade partnership offers a model amid fraught EU ties",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-11-07T12:30:05+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSGluWEprUmJ2Njhoazc3VGJjMXZxT0hrWG1YYWRDQXhpeU0zTlRoSG4zRVdQOHhKa2pYS2JVUjN2NUJ5c01EeVlUQkgtakNCQUpMNVlCelJnSER6OExSaEtVSWVVVUNUX1JwanYxZXBVZ1o1ZWoyNExqS3Rza1V2SjQyZXd3aldHTUJDZVl5bHJyTzBiTDNyaTFUUzI1VmFRZnZSaVZnaHV3dzZWelJSUUxmLWFfbGRZaUtJUUtBai16dnB2eWE40gHHAUFVX3lxTE1MM2hVUUwtM05uNnpQNi1qQ3Nxb2lrVmJwclFxY0hyTzhhWmwzUUJuSzg4UkxVUWp4TGw3SDVkd0M5M29WNG9yckxHNzA1eWVhSjNPMzZxYXJVWUNqY3Y5dlhtRnBxQ3cwbGNERFljMkJWd1N3VkJFY01DajZYaEM3T2E2MVhyVG9QQVZuQWxmemMxWFhVdjcxOTlEc3RmcWN2ZWdMa3BhZnZSdmVtSkFza1NfWkkzYU1iMXZKaFJtZEc0bzdlZW8?oc=5"
-    },
-    {
-      "headline": "US buyers at China’s largest trade fair soar over 20% after Xi-Trump meeting",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-11-07T10:00:06+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeThpaGNjUmZPTjZKZGpaZnRhVWxqZzkxa0NYdVMyTEJGdGZYOXZITmJKNlNyZk1lSmlncm0tUFFtdHZ1N2M5OEZWc3lwMHJNU1dlNHVYcGtmZ1VwQWFMUHNiWE1ZQU5RdEx2SmxabldETDNqa2ZRc3Bxa0RWeDRZYzAxZnp3TkYtYW9iYXVQZkkwRTAzZ2VLZEhJb3BjVFVsS3VBcmU2YzFsRFJTZ2VNOW1HaVB0TnZhOXF2ZkMxTWRjWi0xdklFOUN30gHKAUFVX3lxTFBZckNVZ3hVd2RnTGtHV00tOHdrLVRVbWFFMzMyQ0ZPNW5MaGtKV20zWVo3R0RNZVZzLTBVVENORjI3akJabjBOMTJTc3hGcHpSQktWYnlFY1p5Y3htMi1CSjVkcFhKSnBQb2RGanJuU0ZUeE1ZYURFS3BQc05mNG9XOGNEdW5XV1BoVTZETlpwSjNHbHpteGduSVJGbjNqbUY5TGpQZmtoOXhzS2Y4V1hEZ0F0RDh5aXFZdEFxRlYwMkVuWkJCT09nZEE?oc=5"
-    },
-    {
-      "headline": "Bessent, Greer Raise Concerns on China Trade Deal Actions",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-11-07T01:33:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUThIM0tOMDlPV2h4TURPZHZyVlJjUGRLWlZOV21nb3gwS3RON3RQdk1PZUFNOTVpZ2k0VG4tQ0xyWWd1R0JrZzV2MVhwS3B6dzY0eGtkbWxXajRreGpIRlZWUXVkc2haWVVsaXNZaUwzYWdmaU8tS21KS1ZaRlVZT3dNanpJamNZRURtOVRibHFpMERibTF0OGNwQnFkWENSVXJScXpJclFuamc?oc=5"
-    },
-    {
-      "headline": "Japan and China shifting toward selective economic dependence",
-      "summary": "",
-      "source": "The Japan Times",
-      "date": "2026-11-07T01:24:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPM3laYkx3TUJkaHBxN1M1UmNpa2VTdXJDZGExMk5GRk9zTVFtZmt0Rmpwd2d6U1d4QXZMaXVxZFBIbWxHdDR0OHI5SktnTE9TbGltVEEwenFCeFRxbWtfR2dOR2NYN2E1ekpSSU5CRkRUblk4c2pCNC1scVhwSzczalR4c2p0UEh0RGt0cURuc1h2V3p6a09aclVKRzl5X0th?oc=5"
-    },
-    {
-      "headline": "US urges China to honour Busan trade deal commitments",
-      "summary": "",
-      "source": "Al Jazeera",
-      "date": "2026-11-06T23:18:04+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOemI4U2V6Z1BYeGlHbDlHSENZR1JaR1VxQ0hZVFRZWTlpNGhfMDdDel9udEcyVTM5eThkaDJENTUzdURpTGFwTFl0WkRpVjl5dGFvZEgydXk3ZDRNN1ZTZHZIRXVvclY3OGRPemk1eWtCSWdTY2RvdVpLSjByTXNkR202ZDZxNFNUNmh1SnBQUW1BNjdwRzRUajRTYnZxZ9IBowFBVV95cUxOajB4Y3FQZHRmZlp5ZHNiMThkUk5ZMEt0cjNyZDBmY1JhREVQRkRRbnZiRWxUZzdEaUJqcDZDMEc3c2xqMVkzSmZwaUdvSk5jMHdOLWlfTU12bzJWaVBTeVYzYUFiNlRoQnlTOXc4TkpKWGRYQjZReEFaTG9CYkxTTUQ5Y0tScWpQVVhjLWtrNlNNUzJkVE9NSFFZM184YTJhQWNN?oc=5"
-    },
-    {
-      "headline": "Why China’s AI bubble is bursting",
-      "summary": "",
-      "source": "The Week",
-      "date": "2026-11-06T18:52:33+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VaVpsYUFEbE5SNGpHQ0NZT0pURmFXS3Z6TFlNM21TZ01oc25FLXFoRXNDaTlDM291dFhGNFVmYzJ6dHZhVU15Snh6S0tfcFAzWkpHRl83Z2w1dkt5Q1RYNGE4RmgxaEp4OExieTBKVG1mQ1RKc3RiaQ?oc=5"
-    },
-    {
       "headline": "US, China trade chiefs hold call ahead of Trump-Xi summit in Shenzhen",
       "summary": "",
       "source": "South China Morning Post",
@@ -54061,25 +54069,11 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTVdPcmpoZ1J4bjBVbFlQV2xqT1F4dlRvZGw4b2JlSWFTSVU1dmZ6LUsxMHdfWWhZc1h3TkZPLTBFWGtWdFh5cWJuMU56UnoxX2tTSldJa2s5NWJjUWdqeTFNdVpKNktmNUY4NkFRc3NrRmI0S1ZIMGU1QWQ4cWVLa09jbEQ1WVdRYkNyQzVyV09yRXhyWTdQWE5CQ19pYTNIcXNEUFBJZGpXX0tnMnc?oc=5"
     },
     {
-      "headline": "‘Speed up’: US ag exporters urge faster progress on trade deal with China",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-11-06T14:00:11+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ2JBTFRLQmMtVFAwTU5RRkJGZlI4UTU2aTAzSkdWZzRZRnpxTy1hZWxkZkgxakpfcEJRSEIxX185Y01Wa2hUaHI5WWJvM2JDaEc3N093bzN6MnVxYlh3MHBoUWZEMFh5Q2NWTlNLLUxnTkNtWk9HYTloUlFLZE10NS1zTGJCYkNzLWs3OWtISDI5UVBRb2hNMUtsR1ZiWG1wOU5RUjVJZ2tmUmhIUkRGVmFvc3ZVYUQ3TWNXbGdRZ1B1bm_SAcMBQVVfeXFMTktDRGhIVnZqRU5lVDZsTjc3b205MjkzRGhrUmNvaFBmZUJ6TmtYcGtLeGlQZk1GOXc2Ry1Ca0xEeWRlamIwUVBvODY5NXZTN0RCRlpDSjQzR3lwcE9lN2htOU9wYzAwamUxMWhsWm1vbTJGZ09Ubm11bFJoMnAwWnE1ci1vV1BTS1hRdjl1OHg4UXVaTDVrWjgxRHFRN19JQlVjOHJjcmlSVlFSeXJIMUQyUEg3S1k0bmo0eUlyd081MGg0?oc=5"
-    },
-    {
       "headline": "Democratic Congress to guard US’ Taiwan policy and press Trump on arms sales",
       "summary": "The Democratic US Congress may push for faster arms sales to Taiwan following the party’s resounding midterm election victories, but there will be no fundamental shifts in broader US policy towards the island, according ",
       "source": "South China Morning Post",
       "date": "2026-11-06T14:00:06+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3373517/democratic-congress-guard-us-taiwan-policy-and-press-trump-arms-sales"
-    },
-    {
-      "headline": "The Negotiators Who Brought China Into the World Economic Order",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-11-06T12:00:44+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQlNPMXdjM2Nrd0FvTE83cWd3enVydTVtcExhSFBnaElSdWUycGNzTkY5Nm8xU1R6bndGTm94MEY4RHhnWU1sV0FRWTk4a3BkWWh1VUw2bFh2VTItWWdpbFM0a3FPVkI2REJmMkp5RjA0VFhSenNZYlNGZVkyMVBvUjEyX0JNa0RBdW9ZeFE5blI3WTcwam1QbWlfbldISlhzcEhBVFgzRVYxSkVtbnJZVER4ZW9kLTY5YUpF?oc=5"
     },
     {
       "headline": "The new anti-corruption law arming Beijing with wide global enforcement powers",
@@ -54094,27 +54088,6 @@
       "source": "South China Morning Post",
       "date": "2026-11-06T04:37:57+00:00",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbjVtNGU1dEM3bzhWMDFrSVNJdEhyajJKSG1sS1pUWGdBX084eVRkQ2x6MGd5RWV6bm5GTE9xbVdZRHhZR1M3UzYwekh0MGZOXzJJcTRzUmtlZjN3LU1qMHNPTkhUQmE0Zm5QLXEzLWMtcXUySFotUS1VV0luZzdyUE1acVdtd0VUZC1LaWJSMkV6dThfVWZ1SGxDQWJZZ29zcUY5STREX2pRd3g3Z1pRbVg5c3Q2VVhYU0HSAboBQVVfeXFMTzFXVmdua3JUbjNFTGZWT2o3VjdVUVBmQXVKSWI3VmJmZkJhVTl1ZFBpZm5KZU0xNXB1bktfNDJxMWlQTk1QQWVGdnJ1SE10NHZwVWtlQWxaOE5FMmZnQi1QX0tMQVZVdkFQSjFBOXA2YzVweTJHaGJiMF9nNjdBNmFSWnNpWDlaVUFoaC1ZbW1SSmlkbTVXRUxEaElYTUhTYTFpQXZDU282cEJKWk1hVUpYNWtYd1ozLWhB?oc=5"
-    },
-    {
-      "headline": "China's November diesel exports to ease amid thin domestic stocks, sources say",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-11-05T16:50:13+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUC1heWwydGNUd0wzYWtNUXViUFMta2hyYVhFMm1pSV9oSi1lUGxxVEw1alpQYm02MUh1bU40U2VkNWNOYTZVS1BHUGRhN3Y0Z1FZODNaM2NtT0NLWW1abmxRQ0w4LVhkUzVHTHBnQmhYOVBRODhCRXpMMmpndVBsdm0tVG45NXd1c0h5YTlwSjU2bTJvNGEtdWxNT0NOTWNXa0lXN3NFakZTeUN3cWl2Mks4V3hhcWRrb18tU0NuTjJHRjQ?oc=5"
-    },
-    {
-      "headline": "China’s Renewed Stock Market Support",
-      "summary": "",
-      "source": "KraneShares",
-      "date": "2026-11-05T16:00:41+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oSTBmVk9xbVktd1VhNHY1T2cwaHM3dTRoU3VmaXBxVTYtX0V4T1RDRDlsUlRkNDQxUzJ2b3B3bWw4RTBweEl0OVJIV1VWX1hya0w4el9tVTlFOUZTU3c0Rm9ld0x6cnVyQzFfRA?oc=5"
-    },
-    {
-      "headline": "EXCLUSIVE: Nvidia chips pile up in Hong Kong as China withholds import approval",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-11-05T11:27:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZHNUQnlURFBWSTlTSE5wNWUzekR0cDZfcWQzQVRFLVNweXJiSGhtSFZ6cWdvMXF4SHpLRy1YT1Y2QjJZMGxRajNaRGQ1Y25SVGkycEphaU4zTTRJSzV0QjNPTFMxeEl0Mm9CdGFQc0JJTHBNemVoSXdkTnhsR1FNR0t1b2hoUHdfSW0yVnlGMl95Qkd4dDAtMGdhYTFhUzRhc0U1Mm9fdGxLRnhacUNr?oc=5"
     },
     {
       "headline": "Ex-Politburo member Ma Xingrui’s corruption charges extend to end of last century",
@@ -54236,18 +54209,18 @@
       "url": "https://www.scmp.com/news/china/politics/article/3372901/chinas-xi-says-strict-party-governance-has-positive-impact-does-not-stifle-growth"
     },
     {
-      "headline": "The US-China trade war seems to have subsided – but the sense of calm is misleading",
-      "summary": "",
-      "source": "The Guardian",
-      "date": "2026-11-01T12:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAtdmpCZmREMXNzTEFKc0hKLW5oYktlNDNfZW5PWFhqdGlaZE9rejItRWhrU2hTZ0dzMmhEbzNNdGZ1dVA5WTF2cVRFQVBoTUt6dFAtQXlCVGlyY1NXWjV2Y3hjNEY4YlZRUFFiREVyWmFnZ1kwVjMzSGloY0xjdw?oc=5"
-    },
-    {
       "headline": "China’s banks, regulators to meet on measures to arrest stock slide",
       "summary": "",
       "source": "South China Morning Post",
       "date": "2026-11-01T11:15:18+00:00",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbnVpR3RTV0xFNGdDTV9DaWFoY2ZBQXo2eWJhVVBVdEdrQVB0eXlZT2xLSTkwRGZYMVNsdk9STU1XRWVyamR1YmllRVZWVnl3MW5MaGdnWVNSYjlxWlFVUXhQdkRKcE5LQUNHMmZaZW13bWVmVVlCdHlCVmYzazQxSTRzOXozSHQyeVBpeXdJb1VqNlhrdzV0QUZxMFFxNDRfVnhQakpXbHA2ek1GbmJ1d0ttM0lGYTIw?oc=5"
+    },
+    {
+      "headline": "The US-China trade war seems to have subsided – but the sense of calm is misleading",
+      "summary": "",
+      "source": "The Guardian",
+      "date": "2026-11-01T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAtdmpCZmREMXNzTEFKc0hKLW5oYktlNDNfZW5PWFhqdGlaZE9rejItRWhrU2hTZ0dzMmhEbzNNdGZ1dVA5WTF2cVRFQVBoTUt6dFAtQXlCVGlyY1NXWjV2Y3hjNEY4YlZRUFFiREVyWmFnZ1kwVjMzSGloY0xjdw?oc=5"
     },
     {
       "headline": "China places former Sinopec and CNOOC boss Fu Chengyu, 75, under corruption probe",
@@ -54269,6 +54242,13 @@
       "source": "South China Morning Post",
       "date": "2026-10-30T09:00:31+00:00",
       "url": "https://www.scmp.com/plus/news/china/politics/article/3372719/politburo-promotion-lula-victory-us-midterm-elections"
+    },
+    {
+      "headline": "Why isn’t China’s AI and tech boom saving its stock markets?",
+      "summary": "",
+      "source": "CNN",
+      "date": "2026-10-30T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YdU1UN0YxR2F6VEtwY2NvTzBRZFNWa2U1Z2NDUkxQclRHX2NkVzZ2MExucGI5QmZuMk5ZLU0tTGNrNFoyVTFDREhDMzFYWU8wbFdfcjhUdHFYeE4xeTJkOVowRHBsTGxiTXhUMHBjaHZVTDQwZjVYQ1ozaw?oc=5"
     },
     {
       "headline": "China’s fifth plenum: ‘unwritten rules’ newest target in Communist Party’s corruption fight",
@@ -54425,13 +54405,6 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSFpEVS05QzlFMHZpaU9IN3JBeTFZRDVLOFlMTWJaMzk0Y01DdDJha3R0d1FtZ2FLRVNNSVE1Q2pSUldqTjgyaXplaUJ4QldscEFpOFBuRWVyQW5MNGtjaVR0dTN3emwtdzBGbzFwcGpweHNJUm1ZaGJVTUJWbWFidnNFZ3NJaUJFUWtRT1BkMFlTanROSXlsZWlNUmVtV3hCbGdz?oc=5"
     },
     {
-      "headline": "What will China’s fifth plenum mean for the root-and-branch corruption drive?",
-      "summary": "Plenary sessions of the Central Committee, the upper echelon of China’s ruling Communist Party, are major events on the country’s political calendar. In the third part of this series, William Zheng and Alcott Wei examine",
-      "source": "South China Morning Post",
-      "date": "2026-10-23T22:00:09+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3371932/what-will-chinas-fifth-plenum-mean-root-and-branch-corruption-drive"
-    },
-    {
       "headline": "China Stocks Sink Deeper Into Bear Market Despite State Buying",
       "summary": "",
       "source": "Bloomberg",
@@ -54444,6 +54417,13 @@
       "source": "South China Morning Post",
       "date": "2026-10-23T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORHU1dDJlZlEweUJhZmRTM3M5a1R4ekJVaUJfNmN5TUVSU2lqSzNhVjVsaVlQSXJkalY5YnZRNHRfNTBxQVd5TkxRZTRGOUZxR29XN0ZuUmhRcWtfdGpKbWVaenRCUUFod2hoNFVaV05aLUZLZWlqelVBQmVyaFQ0cUx1LXBsWVVDb3FjMk5zeEFuTjJTeGJwenVCRC12ZFd5cGQ5dXFQMlVjaURlMXlFS2ZYZ0hZWV83dktVMHZ0bk41STJrODI3LU1lNXRSZw?oc=5"
+    },
+    {
+      "headline": "Why China’s AI triumphs aren’t saving its flagging stock market",
+      "summary": "",
+      "source": "Asia Times",
+      "date": "2026-10-23T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxON294R01rUVRBUHVJNUQ5anZjbl9Kc1l1dWttY2VsYjFIVU1ESllxTzdZR2pLU0lNSkQxUVVBTlQwcE9UaGM5M0NXcjNNZzNuY25QaUtmMFIxM3YzdjZ5MXJRdjVtazNBRGdzWTdPNElFcXhqRU1VS01TeWRSR2w0Z004bmt1OWRzOUpiMllOWWw2VXk5MGg0?oc=5"
     },
     {
       "headline": "China’s Economy Has a Huge Weakness",
@@ -54474,13 +54454,6 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkp5bjg3WHRYdlFYTFc2b1VRRmVpd09Oa0Y1SkxUR2xnUTFyTXAyMG9zcUFnN2pIbU1WQVJBdmVqNG0xZDk1UWM0N1M3djhNaWVwbXVBamhRS3dMMWtPRlhQbGFXWk9BTXVXcnppTVB6ZWl3eTRzM3BqclJ0MlE3MEJVSXhWTUlnYm1aVGVGa01kcmljSXFBX1NTWC1Hd1k5X3hwcGtyRjdtblFhVG9RdmlmVQ?oc=5"
     },
     {
-      "headline": "China’s Stocks Enter Bear Market as Selling Spreads Across Asia",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-10-22T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbEdVR2dySWR2QS0zczdmM0p2VTRfRUxmc2lUSnowNlJabWdlTFdaSk1WbE5CYlJTcER2OTcyZUZGM0QyM0Q0STRldGxTcXFSaG5pNkdQX0stc3kwMEJ3cXRxanJQTmJnLUNGTFpEbVY2Zkk4S09tYkkxSGNSV1lxeGJPelpzOEFYanVPT1U0ckNaUXRIUkh2QWdUMUNmNm1HYmNnQg?oc=5"
-    },
-    {
       "headline": "Opinion | China can manipulate statistics. It can’t fool markets forever.",
       "summary": "",
       "source": "The Washington Post",
@@ -54509,18 +54482,18 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWmt2MnVkcmdCNXBPMzNIaHJwWlFIV2J2SU5pNk52MENwNi10dW56Q2duNHZBc181R1BQeXBQNlQwSzY0V2RSWlR1U3k4OFdRMDJyR25tTEVveUVCNWl4d08tVXhZY3BKTmFVNXA2V3BNMGpjSmxUZ09SOGtFc29MS1Fn0gGHAUFVX3lxTE9JbzZ4T01zVW93dG8xM0Q1TUtoU1hCYWVULTVQX285THphbnRNYWdvVVp5Wml4VDBGSlBHUFdEZFlHOU1TSWZFR1ZXUFVJVl9xbDRGeTBjUUkzY21fTVp4ZXpTSW9rdDBNNUZlY2QzMll0VGtyM1lVYnNFM0JoVFlhZ3NvX3pjRQ?oc=5"
     },
     {
+      "headline": "China’s Stocks Enter Bear Market as Selling Spreads Across Asia",
+      "summary": "",
+      "source": "Yahoo Finance",
+      "date": "2026-10-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbEdVR2dySWR2QS0zczdmM0p2VTRfRUxmc2lUSnowNlJabWdlTFdaSk1WbE5CYlJTcER2OTcyZUZGM0QyM0Q0STRldGxTcXFSaG5pNkdQX0stc3kwMEJ3cXRxanJQTmJnLUNGTFpEbVY2Zkk4S09tYkkxSGNSV1lxeGJPelpzOEFYanVPT1U0ckNaUXRIUkh2QWdUMUNmNm1HYmNnQg?oc=5"
+    },
+    {
       "headline": "Six Charts That Explain the Forces Shaping China’s Economy",
       "summary": "",
       "source": "Bloomberg",
       "date": "2026-10-20T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb3ZnNVBMZm1Fak5PVkRhd2RESk9aRDF0UjFIdllJbDRwY2x1ck1XZm1GM2RkU21wYlpZMERfcC04QlJiS2FObTItRDYzbVItVklFSGRJQ0RfdF9wbjJ1X0cteUhkTm1FcDA3Vjlid1VSU3hDNEVfZ05pNXZMbmRVQWFfcFFrZTBEa0JfQU1BWUpfZzlSZHVVRUlTcUwxQnRwbG9CWnluUGwwNUpBUE1JMHZHX1RiQ0JLTWc?oc=5"
-    },
-    {
-      "headline": "China’s Export Boom Masks Deep Economic Problems at Home",
-      "summary": "",
-      "source": "WSJ",
-      "date": "2026-10-20T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTFRDeXZOR0V1TXd1cTNYR3V2Y1RkZFNlLVcwSk1qUkJlVzFNU19WYVJHNXJ4djZuY0poV19Zb3BDSUljOEdlVHFqRXhHcFI1SkhJTGUxQ2pIaXlmRUVYSzQxSnJjVFZuR3REQnd2U2tXSFk5U0VNd2xFRlZVVVlraHc0ZlU5dnAyaEt5SU5BRVloM1VXcHZqQ1BnNlc?oc=5"
     },
     {
       "headline": "China's economy is better than expected — with one catch",
@@ -54565,6 +54538,13 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5"
     },
     {
+      "headline": "China’s Export Boom Masks Deep Economic Problems at Home",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-10-19T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTFRDeXZOR0V1TXd1cTNYR3V2Y1RkZFNlLVcwSk1qUkJlVzFNU19WYVJHNXJ4djZuY0poV19Zb3BDSUljOEdlVHFqRXhHcFI1SkhJTGUxQ2pIaXlmRUVYSzQxSnJjVFZuR3REQnd2U2tXSFk5U0VNd2xFRlZVVVlraHc0ZlU5dnAyaEt5SU5BRVloM1VXcHZqQ1BnNlc?oc=5"
+    },
+    {
       "headline": "China’s economy grows 4.5% in third quarter, staying on track for annual target",
       "summary": "",
       "source": "South China Morning Post",
@@ -54579,14 +54559,7 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFVvME1UdU5aVjEyYWQ2cnpsUjFNR3Y1UjJNTkV0N2w4RUktcWNqNHJSOHJOYnNCUEw0Mmk2ZlFuaThvMGVfRWlLNFhKcThqaGFiQXpXMUhYd18wcnVMVHo1YXpORzVCbTkyYzV1WDRRRXhoaFRGRmxQbnpCZVVVdnE4SjduOFJPMHVqUDBZZkswRVlsdEJuSjN6WW1FcUl1NEhhcWhrOXktbjA?oc=5"
     },
     {
-      "headline": "Open Questions | Robin Xing on how China’s ‘two-speed’ economy can solve contrasting problems",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-10-19T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTFlPQ25hTTdVQkFqYTRWS0RHcEdMc2o4TmlYTUV1SktXb0o3c0VPTm8xdDhQdW4xWGtVTUVYd0lpQS1MYUgyN0Z2QmNDakpwNTVocWh6OFhxR2ducC1EbkxaYlZTY0kwN2x4M0tQcWF3RzVybVEtQ2trNmkzOE5Ea0Q4U3dKVDg0WDFWa20tNVRzYjBxU1dobG8xNW51STVqQmo5VHBmUjZUcGhWYndoSnFTMndUS3FjZVlWU2U3SjFqMm15NTJwR9IByAFBVV95cUxNMFRuMVl4UEg2WWxSeFI0NDRhUnVEVndpRVpKdS1xVjVPZkF6UmRyN20wSm9saHJWeEFMWVBBSFhWS1lkVk1XQTdfbEtDb2U1NjF0TGRsRkNjTjdyZm9McGVpNTNhSlIzZTlBLWVDeUdyZFJyOG1VMTdQNThoZUtTOWl3OTEzUG5FYkluRHVZa2RnZ1daQV8teGtqZ3BqNHF5Nm9GWDkxNkkxQU1TUmMtSU0xamZnQ0Z3VTRUZDdWRUtYanA4YlpRZQ?oc=5"
-    },
-    {
-      "headline": "China economy grows thanks to AI export boom but domestic slump remains a drag | CNN Business",
+      "headline": "China economy grows thanks to AI export boom but domestic slump remains a drag",
       "summary": "",
       "source": "CNN",
       "date": "2026-10-18T07:00:00+00:00",
@@ -54654,6 +54627,13 @@
       "source": "CNBC",
       "date": "2026-10-15T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE85Q0ZrM1c2YkJjdFdFVW1iNXVwd1VGbTFxSlhhQTB6MTRhRVRNeHM0Q1hCUENfdjFQWEdhcUV2dkV1YXhNNmJ5bHMzdXJOSFVPaWJuUUJJYnNYRVM0OU9YMUNSb0VVd3ZNM2Q2cWJfUHY4X2M5RUxR0gF8QVVfeXFMTUVLVjhUYWxoQlpfeXVydVV6aHh1dkZPVkxubTRMNmJMWUNocXZocmVFZElHMVZDcmRXM1JGZjBTMjMydnBRdF9YVmlZMVZxTVRYdzVHS2VhcWd3TXlEYXZ6empTaTJHM3d5OFRIZlpFQkxJYUN6MXZMY1hYdg?oc=5"
+    },
+    {
+      "headline": "Canada, Singapore reaffirm China trade ties amid global push for self-reliance",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-10-15T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYXVSV184MmJUZDlSbzN2VF84aU96TlZaZ2FORzB1STFkRGFDNElIWklNai1hRktmVHJSc0JvODlhOGpZY0ltNVRQcEdOR2JkRVRGQVA5UFBPc3JGenhYVkx2SXF3WHgtTGZ4cTZVUmI5dGZsLW1wc3Z1aXpMOHBlMjRzbnl1NER0ZGpfc2ZuWVRjRW12Z0txekZWVnBlbzVLeURsbzVXNnpyREpMLU5uSFBET0hnTmxjU1A3bno5S2c4U0lxSEcybTZjMHlkUXhQcWfSAdIBQVVfeXFMTXNpUUp1V09VQkU2WWtiVnV3dTZXTUF1VDlVaUxzMWx0X0xEekI0VmtnaThudUpjXzdhNlluT1pSY3NxWnFEbGVTZXVtbTFVTERVcGQzdkktaWp3VFpvaFA2TFFqN2RraDl6bGtEdzV2WURkTkxFOTBxWnlYaWduTnl3bzFYTDNhejQyQWNmTGlxT3NNZU54akt2TDN1RVo1VVZLYmFUUzdvZXNIeTRQVXIwZ1JOTFJ4Yng4VmxENHRuSDhUQks3ckpjZTBjSmttUWlR?oc=5"
     },
     {
       "headline": "China’s Economic Miracle Has Run Out of Road",
@@ -54794,13 +54774,6 @@
       "source": "CNBC",
       "date": "2026-10-11T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5QcHRBWVhFbGkxSy1BdGNNaGktNUZMaEx2TFB1Sm54RkJZbWhxYkJhTl9BeEJ1RC1RaDRMYlN2X25BdGZNN3F2QjlmYmFPR0VjaFlsUXJScnVpcU5VaVZQZmFfMjZ6QVJlamJ4NW41cWYwanJmeG9nMdIBfkFVX3lxTE5NY3Z0eU1oMVFua05WM0JTOGlmQWtteWk1eEVEcDZ4R3pfaWRJTFltOWNld2VHOHpJN2ZXcWtCMGtIZ09MTk95LU9sQ3RaTWpiM19DT2pYQ0t3RWhlaG9kekFLb1RJVkJpRWZoM01fR1hmR3RXMWJ2U3hLR09LUQ?oc=5"
-    },
-    {
-      "headline": "China’s growing debt burden limits space for economic stimulus",
-      "summary": "",
-      "source": "Financial Times",
-      "date": "2026-10-10T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZTlzU2hfam9KbGJuNmtETDdTNVlGeG5SLTVxd1VJUmJpX1BONUw4c3ZtTF9JRWhMSDExVThKV09rMzdMQTNZb3FFaENXdzhfVHhNQWFhVFkwNHptT1dGOWZwRGQzdkszZFBXcEdqTm02ODc1OXFDSkhCa2dWS2dMUVBfLUg?oc=5"
     }
   ],
   "trading_days": [
@@ -55329,20 +55302,44 @@
   ],
   "upcoming_releases": [
     {
-      "date": "2026-11-09",
-      "time": "09:30",
-      "event": "中国10月PPI年率(%)",
-      "consensus": 5.3,
-      "previous": 5.0,
-      "series_key": "ppi"
+      "date": "2026-11-10",
+      "time": "10:30",
+      "event": "中国10月贸易帐-美元计价(亿美元)",
+      "consensus": 1240.0,
+      "previous": 1335.3,
+      "series_key": "trade_balance"
     },
     {
-      "date": "2026-11-09",
-      "time": "09:30",
-      "event": "中国10月CPI年率(%)",
-      "consensus": 0.8,
-      "previous": 0.9,
-      "series_key": "cpi"
+      "date": "2026-11-10",
+      "time": "10:30",
+      "event": "中国10月进口年率-美元计价(%)",
+      "consensus": 33.5,
+      "previous": 31.0,
+      "series_key": "imports_yoy"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "10:30",
+      "event": "中国10月出口年率-美元计价(%)",
+      "consensus": 33.0,
+      "previous": 36.3,
+      "series_key": "exports_yoy"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "16:00",
+      "event": "中国10月M1货币供应年率(%)",
+      "consensus": 3.3,
+      "previous": 3.2,
+      "series_key": "m1_growth"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "16:00",
+      "event": "中国10月M2货币供应年率(%)",
+      "consensus": null,
+      "previous": null,
+      "series_key": "m2_growth"
     },
     {
       "date": "2026-11-16",
