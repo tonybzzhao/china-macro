@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-12T11:26:13.463321+00:00",
+    "last_updated": "2026-11-12T20:01:48.415427+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5246,11 +5246,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-11-12T11:24:21.715639+00:00",
+            "attempted_at": "2026-11-12T19:59:55.686150+00:00",
             "status": "refreshed",
             "expected_month": "2026-10",
             "latest_observation": "2026-10",
-            "last_success_at": "2026-11-12T11:24:21.715639+00:00",
+            "last_success_at": "2026-11-12T19:59:55.686150+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -50393,6 +50393,10 @@
             {
               "date": "2026-11-11",
               "value": 6.6707
+            },
+            {
+              "date": "2026-11-12",
+              "value": 6.6683
             }
           ],
           "desc": "How many yuan it takes to buy one US dollar; a rising number means the yuan is weakening."
@@ -53995,7 +53999,14 @@
   },
   "news": [
     {
-      "headline": "Xi Jinping calls for dialogue on Taiwan reunification with ‘people of vision’",
+      "headline": "Taiwan to close Papua New Guinea office and halt spot-market LNG purchases",
+      "summary": "Taiwan will close its representative office in Papua New Guinea later this month after the Pacific island country repeatedly demanded its closure, citing its “one-China policy”.\nThe withdrawal will cut off Taiwanese tech",
+      "source": "South China Morning Post",
+      "date": "2026-11-12T12:00:08+00:00",
+      "url": "https://www.scmp.com/news/china/politics/article/3374232/taiwan-close-papua-new-guinea-office-and-halt-spot-market-lng-purchases"
+    },
+    {
+      "headline": "On Sun Yat-sen anniversary, Xi calls for dialogue on Taiwan with ‘people of vision’",
       "summary": "Chinese President Xi Jinping said on Thursday that Beijing was ready to engage in dialogue on Taiwan reunification with “people of vision” from across the island.\nXi pledged to accommodate the island’s realities but took",
       "source": "South China Morning Post",
       "date": "2026-11-12T10:46:45+00:00",
@@ -54009,11 +54020,18 @@
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNm1WbHVHSkZsX0FCWmxVVFFETnE2LUJaR1ZMLXNJcTlpRzhURy1WSlRBRDIzWUN4c0hkMndMcXJGUzNsdno1Tm9ObkM2QlE1SlBmbmJWZDZPWGNvai1QbGt3QXZtR0RCZEhoLUlxZjZYbFZkMHFFcV9nYjJUejZUTHItMGZLUGpxQ1FIUnVZMjFrOVV0RGc?oc=5"
     },
     {
-      "headline": "China trade surplus on track for new record as tensions with EU grow",
+      "headline": "Nvidia Fallout Puts Trade Truce to the Test as Xi Welcomes Trump",
       "summary": "",
-      "source": "World Socialist Web Site",
-      "date": "2026-11-12T04:48:05+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yMmhtM3RuMWNpVlZKV1lyU0RKemxucVEzQ1gycE1jYUdRN1k4eEotUzZvdWtJYlozVHU3UE05VHprbGxCV2daaWRyMFpJRkg1eHNUTFJDNERNWGplOGJ3NC1vbXUzN21P?oc=5"
+      "source": "Bloomberg",
+      "date": "2026-11-12T08:12:28+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVHB3ZXVuek1Nc2czX3hVUVBUTVMxM0hUVzhESEhOeGVjU1haSzdINFBTejRqbGZEZHFUWG94dHZiNHVqaDAyUjc0RFBpSExYWDZPRFpyanB2eTJwYUhoMTIxVUJIX1UtMDJ3MGkxMFVITDBpQXJFMVdYSVF0eEEzb1FRRTJlaEFRU3F5Wk5TRjE4Vl80Q1I4X1J6R2FpczR4MGZMZDN3ZUc1VnByMmpKTXJYdkxEUQ?oc=5"
+    },
+    {
+      "headline": "Relief rally for China AI stocks ahead as selloff was overdone: BofA",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-11-12T03:53:43+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORllSb3pfTV9pZmxabmNkMVQ5eXpBOTR1NWhHT3JpVDdqYnhhMUdfdVhjd2puenY5Mi0tNHJGX3BObnRhUlRZZ0RKN2k3M1E5ekhfUW8tN0Zfc3ZsUmg3cHMyRUFDczFrQ1NGZ1FsVE9oUl9TNS15TjBfYXVOY19oOUV6NTFySjN2Vk1ITGJaTHhmT2ZNR2ljUUNLaGxyOU11aVVxQVM2c24?oc=5"
     },
     {
       "headline": "Taiwan to send Acer founder Stan Shih to Shenzhen Apec, calls for ‘equal footing’",
@@ -54023,25 +54041,18 @@
       "url": "https://www.scmp.com/news/china/politics/article/3374140/taiwan-send-acer-founder-stan-shih-shenzhen-apec-calls-equal-footing"
     },
     {
-      "headline": "China's trade surplus hits record high through October",
+      "headline": "China’s trade surplus hits record high through October",
       "summary": "",
       "source": "CNN",
       "date": "2026-11-11T23:03:02+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPc1JBRFVrR3l5eUE1djZHek5RUjlhT1dzUkVzNVpRY0xDRFdlR2FiRk5ma0JYemVyajU3eVkyRzBYaEluekhuOVZPdF9iblBLMVV0eUNpZUh3VXIxUjE3Y05TRlNZbHhLTzVkTC1TNmVYUlE3a19ZWjI4MGtkbFFISEtFRGtKb0ZWeFpKRWFwR21udjdkR3VhVDNXSUJmN0k1c21Wc3RTMXl0eGhycWc?oc=5"
-    },
-    {
-      "headline": "Bessent Calls For Balanced U.S.-China Trade Relations",
-      "summary": "",
-      "source": "KFI AM 640",
-      "date": "2026-11-11T15:51:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQUlBa2xISzRxbGVZVS1tZHR1alJQRnJiWEMzNllUTHVsSGxtQ3ljLW1sN1ZWbmpCR3RVb3RMVXUycUxOUWlRMjMzNTBfRFBlMDRmWGRUZkhKZWoxNVJfNmxkZE94WmxiQTZVWVRqZVRJMUp4V1JCdXZXLWhPVTZDcm1TQi1aTXgtem1mMGVTSVdybXdNaWNRUm5GWHJCdzJz?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdEUtZHEzQjY5czhvQjdzRTNnSlVmS0NGOUZ5TVdoei1mQWI2ZXhqWW04clZWaEdwWWljOWxrLUNxeFZ2S2pGTGpGUk9RdWV4SEdXY1Y1Y2wzRVM4YXlLT1VUaUs5T3l6YXJKbC1OYW94SFhNbThfRl9Jcjd6ZXdJWmUwVzFicHpnOXd2TkVNLU9vNUtfRHlIM2d3dm1iNWZnd3l3N1dtaUJiY2dhendsSWVKcw?oc=5"
     },
     {
       "headline": "Bessent calls for more balanced trade with China ahead of Trump-Xi talks",
       "summary": "",
       "source": "The Hill",
       "date": "2026-11-11T14:02:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYlhRbEROWDNNT2N0RGJHMDJwaGJ3WjFhdVhPMW1Rejcwc3VyS1hzMy1SdU5sZDVuUGN6Vi1WZGlKUnQ3RzlUV3ZsSDBfOXQ2QzNCNmVJdVBzR2F3WFJGTDREQmR1MVJlaW1wcTF5d0VKLTE1c3d0dWtkTUVhX256NW1vbHpEWWVCSHAxREZ3clc0SlVCMkx6bjA3RkJNY3pjUjEwRFFoUXpZVGFWdEU3Tg?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYlhRbEROWDNNT2N0RGJHMDJwaGJ3WjFhdVhPMW1Rejcwc3VyS1hzMy1SdU5sZDVuUGN6Vi1WZGlKUnQ3RzlUV3ZsSDBfOXQ2QzNCNmVJdVBzR2F3WFJGTDREQmR1MVJlaW1wcTF5d0VKLTE1c3d0dWtkTUVhX256NW1vbHpEWWVCSHAxREZ3clc0SlVCMkx6bjA3RkJNY3pjUjEwRFFoUXpZVGFWdEU3TtIBtgFBVV95cUxONkg0M2NHZE1HU1hnQ2x2QnVwZlhMMmRWaENPdFN5TUstSzAwUFhIYTduN1czd1FDNHUzbV8zOEdVZWR2T0luOTIyWnhoa0tscmZQMFBCTS1pMWo5RXlBQVVQUC1rOWp0UW1rWTBiamxqN1hPQjUwaWxZZGQxSUhST1FUYWc3d2VveDdnb3VtRVdZZTQ0R2JvNzBYenJZN3FzcVp1ZE1IVk1iUGRNUmhIczBnQ01wZw?oc=5"
     },
     {
       "headline": "US Signals Frustration at Slow Pace of Rare Earth Exports From China",
@@ -54065,18 +54076,32 @@
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZV95STRtMWZoX0pmMWxWa3JBcVZsRFdoNERTNU9uTTNFYjBRb2RYY2NFZ1R5cEtDV2R6Y0ZwMG42TVNGVk1NR3EzS0FLUmpJWDJoMVVNWXFSenU3Q2ZSYjJwb0taaVh2NmxkQ29jc2FSaGd2ZlpNYWk1Z0FGMUljSGo3UnBjVGEwYktIbjV6YndCcFNPU3EyM0VZMzRJendqUEpVVVdtdS02dUkxaXU5NG9uRnowUdIBuwFBVV95cUxPMHhkXzZLYjk1SDNuOF80RGNKdF9YVEVVd0hVb3lsbzRYU0NJRi1LRFUwN3ZWRjJ2V0o1Tldpa3Y0RTRYM0NjQ29TZEluNjZPRmxjMkg5UzVzUGxJMUhtdi1tSlBFS2J5Nnp6RlJKSjNVLWsycWhfSUtuWnBuOXpiODdKRE02TDF6T29NcWxxQ1RTX0F4Qm5JdXowUWZoN0JFRnN4SUNnN1lETFNHRmRLTWdlNTYydnNuSHRZ?oc=5"
     },
     {
+      "headline": "China’s Trade Surplus Surged Past $1 Trillion in October",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-11-11T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNEdJRlEzYnZIbVRkWi1rc252aE9SbXdwZDVnWGwtVnhfNzBKMWJRUHZDdWJlZno4MC1WVFhKc3JMQ05IUjFQQjlMcmd2QVBYNFhFaDZmMXo2WlgzU2hhQm1FYm9zZXRoLWdRazFLdUVkOXU5eU83X0VNNjNQVzhZZmpDS25FTDVSQlk1TjZtUlpZcnJZN0VaR0Nfbw?oc=5"
+    },
+    {
+      "headline": "Deal vs deal? US, China trade calls to honour commitments before Xi-Trump summit",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-11-11T02:34:23+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUE9IeC1zRXNEQ2QwSDA1b3NZR0Z1OXB3RW96SzNaZGRmOXNOMjdMYmpFTzAwYTFsUU1pN05GYXIzWlZqX1VYV3ZJbW4xNFdxU2dsenZHbTM1QmU0cEh4cUlNdG5ULXRCSXNsbEhCQTljbzdENEpKYnUxVWJqdjRHT2tHSUlKMDFCUXJ0OGEzTlVIR1hrUUJVSjRVQmFud3JSMG9ma0tjUVp3NTd4T0c0S2lBUlZFNGRObHJqekVTRS3SAcABQVVfeXFMTWlaT3FKN2dWcVMxb1ZMcm1OTkg0aC1FeHY4SFNibU1fRnh1X01fckZMLUtvNDNMa1ZKZ3NzUm8tVFZCWlZQa2xNYTd4R0Q0b213RE9MMXVDUlBkZnFGcEZaMktYQXpnaXVGd0paV0FhNTdMS1YtNWQzclM2WkJldWZPOFRiR3B6dUJJVEx0VVJlRzBUWkhLT2gzZFE5NFNpOFlVcHk3T25ZNUk5cTY1Qi1NVEJEbS0taUNtOW5CMWpJ?oc=5"
+    },
+    {
       "headline": "Treasury Secretary Scott Bessent calls for more balanced US-China trade ties ahead of Trump-Xi talks",
       "summary": "",
       "source": "AP",
-      "date": "2026-11-11T02:28:00+00:00",
+      "date": "2026-11-11T02:30:56+00:00",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSzZvaHZqSTdNX2R6b1BzNzJKdnI4NDNacDYzdkhud2ZUcERRVlBjcTdsZWxBVDZZYUlaRFdDZlpyMHhSNEJfVUk0TG1HQTRMOWloMlR0QWdEakxjZEN5UV85a2hQa2NNYnlfcjNiU3A4cVdCVnQ1dzNMZW82cWNxU0RKVU9aTkpWQUtxNG85aG9KQQ?oc=5"
     },
     {
-      "headline": "US and China should stay clear-eyed on AI cooperation and competition, Bessent says",
+      "headline": "China’s trade surplus surpasses $1 trillion for a 2nd straight year, as exports surge 35%",
       "summary": "",
-      "source": "Reuters",
-      "date": "2026-11-11T01:25:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWUdDU2JVSnpLTmIzYVRmNm5Wb2Y3UC1vVElXMTZwdlM4M2YwRGZKT2tkYXI5YVlzRk1GZm5HRmY3NDlPQm1UaC1McjQ3STR0ME1LeDJCQ2NPQlVyU1RBa0RkSUotV2tSWndkN3NiQmdsVFFoVENFUVdFTExITml0bnc3RVdGcU1mSTB1T1gzcHpWMUM4MXFnSm1oWTdhZ0I2TG11M1JBU0xfUUtYLTNDRlcxeFpWcWZSUFVz?oc=5"
+      "source": "AP",
+      "date": "2026-11-10T14:37:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeWZLSmVmc24zNkczOTlKaXE0eGlhQUZhYWNvNjBaanpFYk5VUlBBc21GeEI5Yl9QN25JdGpCQXEyNGxFMjVZaEdjaW9qUDM2SzdEUUZ5TVF0dDlJOVVGRWs3RXpSYUU3a1Z3bFdDTFRLUmhWU3ZUS2xJWndjMzk3cnFZdElrUHIxdzJURWJqMXNHWUxuTGFYSQ?oc=5"
     },
     {
       "headline": "Canada Signs New Deals With China After Trump Drops Trade Demand",
@@ -54098,20 +54123,6 @@
       "source": "CNN",
       "date": "2026-11-10T04:10:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSzZDOGNvVTFCTVR0a3V2RkFNSHREcWFJbnAzM054cmEzODdWV09CSU5wNi1JNXZWZW1GdkQ1QW1NVHBIQ2wteFVHNTRzd2dQZmdIUmc1SHh5YXQ3QzY1ZERlQVEzSGNUSGNnOGM4X2VTLXlZdWIwcU1DS2ozS19rY2VHdWZudw?oc=5"
-    },
-    {
-      "headline": "China’s Trade Surplus Surged Past $1 Trillion in October",
-      "summary": "",
-      "source": "WSJ",
-      "date": "2026-11-10T04:04:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNEdJRlEzYnZIbVRkWi1rc252aE9SbXdwZDVnWGwtVnhfNzBKMWJRUHZDdWJlZno4MC1WVFhKc3JMQ05IUjFQQjlMcmd2QVBYNFhFaDZmMXo2WlgzU2hhQm1FYm9zZXRoLWdRazFLdUVkOXU5eU83X0VNNjNQVzhZZmpDS25FTDVSQlk1TjZtUlpZcnJZN0VaR0Nfbw?oc=5"
-    },
-    {
-      "headline": "China’s trade surplus surpasses $1 trillion for a 2nd straight year, as exports surge 35%",
-      "summary": "",
-      "source": "AP",
-      "date": "2026-11-10T03:20:51+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeWZLSmVmc24zNkczOTlKaXE0eGlhQUZhYWNvNjBaanpFYk5VUlBBc21GeEI5Yl9QN25JdGpCQXEyNGxFMjVZaEdjaW9qUDM2SzdEUUZ5TVF0dDlJOVVGRWs3RXpSYUU3a1Z3bFdDTFRLUmhWU3ZUS2xJWndjMzk3cnFZdElrUHIxdzJURWJqMXNHWUxuTGFYSQ?oc=5"
     },
     {
       "headline": "China’s Trade Surplus Passes $1 Trillion at Record Pace",
@@ -54140,13 +54151,6 @@
       "source": "Peterson Institute for International Economics",
       "date": "2026-11-09T14:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbnkzZE15TVlhc1FHU1hzOFJXNklMWERBbUpCSVNLVUw1OFdSS25xOEdZSEY5bXNjclhEWnFCcXF4WUJmUDRyTWpnMWdoMmRyWXVTYkYtUFhmellzaDJUeUladm4zcDYwWEw2eWpLVjQzZVl3c3o5VFZHM2NnM2R6YVJMS1Qtd1d6LVRkMmZtbFZtOHl3cExTTHBwNlhsZVRETVEyWk9ZLUdBQmp3dGNycQ?oc=5"
-    },
-    {
-      "headline": "China's export growth expected to have remained strong in October: Reuters poll",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-11-09T07:19:25+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUVRFNzRhZTJPcFpDcVlpQ05KaGtod1BoMC1rSW9YbHdYZkZxMUR0aFdTODIwUlBRVGxhUGo0Y1RNT3JibHg4SjVpUWg1d2kxN2Q4QlR5Q1l2Wnp0cUtzUW83eW95ZkxNSVBaT2ZDNFhMdFpJQVp5Y3dCclpvY0JuWnRHUGNaS1NmTmZpeF9DbWFRQ3ExVVhaWHpXdGlYNTJYaWxxdnRLWTZ2NmpYc1NaYXUxOA?oc=5"
     },
     {
       "headline": "China's economy not weak enough to trigger major fiscal stimulus: Societe General",
@@ -54205,20 +54209,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3373345/ex-politburo-member-ma-xingruis-corruption-charges-extend-end-last-century"
     },
     {
-      "headline": "Who Keeps Crashing China’s Stock Market?",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-11-04T19:01:09+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONExiNUo3N2hQNkpnNXZ6bTJXZ0p5Rk1QNW9PVm9nQkltX2JjRUtiYmVvUzR5b1B5akhOUEd6dTNwR3J3UFhrblJrQ2tfWjVja3ZPSUJ6VmNTVmxzcmpXNGJHN1dQUC1LaDNwRTJlY0o3SE0tX2NlMS1FOHRQOWhaWWhTRGRSeTNnaFBoLUpjdHJjdzhYaTc3Uw?oc=5"
-    },
-    {
-      "headline": "China steps up defence of stock market in bid to revive AI boom",
-      "summary": "",
-      "source": "Financial Times",
-      "date": "2026-11-04T13:14:01+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMlNsXzl0WENfdF9YOGdmb1BtbW9yRm9QQ3NOVWRXQmNVTjEwcHFscXRHS2ZOYmVCSHdKeDk4cWJ4OHprVFNNQlNKaGFJTEl0bEpHMVFHdGtua3ktVFlBV0JpSmRJajVwVEhaSUtieVltTDYzVG1uZGo3ZG1UWUhIZkFXRHA?oc=5"
-    },
-    {
       "headline": "2027 Investment Outlook - China Equities",
       "summary": "",
       "source": "Invesco",
@@ -54233,6 +54223,27 @@
       "url": "https://www.scmp.com/plus/news/us/us-elections/article/3373259/trump-suffers-midterms-trouncing-weeks-xi-meeting"
     },
     {
+      "headline": "Who Keeps Crashing China’s Stock Market?",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-11-04T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONExiNUo3N2hQNkpnNXZ6bTJXZ0p5Rk1QNW9PVm9nQkltX2JjRUtiYmVvUzR5b1B5akhOUEd6dTNwR3J3UFhrblJrQ2tfWjVja3ZPSUJ6VmNTVmxzcmpXNGJHN1dQUC1LaDNwRTJlY0o3SE0tX2NlMS1FOHRQOWhaWWhTRGRSeTNnaFBoLUpjdHJjdzhYaTc3Uw?oc=5"
+    },
+    {
+      "headline": "China steps up defence of stock market in bid to revive AI boom",
+      "summary": "",
+      "source": "Financial Times",
+      "date": "2026-11-04T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMlNsXzl0WENfdF9YOGdmb1BtbW9yRm9QQ3NOVWRXQmNVTjEwcHFscXRHS2ZOYmVCSHdKeDk4cWJ4OHprVFNNQlNKaGFJTEl0bEpHMVFHdGtua3ktVFlBV0JpSmRJajVwVEhaSUtieVltTDYzVG1uZGo3ZG1UWUhIZkFXRHA?oc=5"
+    },
+    {
+      "headline": "China and its trading partners are moving towards an economic peace. But it is a fragile one",
+      "summary": "",
+      "source": "Chatham House",
+      "date": "2026-11-03T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbW5tTV94ckhKWlFLYWtZdHlCWFNwcjFPNnlnTGdDMS1ZRWt1OWgyeUpmVldpb041MThXSm1LaXg5SFFJVm1jWUs2NGduclJzSnYybDhYMUhUbzQyWGxsUTl5Qi1JZWdxc2QyZGdhVUFOWGtHMmo3SkFCSTZYdU9JaGxJdlBLTURkYUZuT01GU1FoaVVvTUZmT2pJQ3ItSjZIbjhYZUdTOWdQZGRNRWg1UXpUQ2FuUzA?oc=5"
+    },
+    {
       "headline": "China’s AI stock-market struggles are a warning",
       "summary": "",
       "source": "The Economist",
@@ -54245,13 +54256,6 @@
       "source": "WSJ",
       "date": "2026-11-03T08:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTzZ5N25BZWFvQ28wbmJUSmVfTDZSVHVTVy1OZkJwdFhSN29Eakw5M28yUUpVOTJRQVJjRmRzSUkxdlhXckN4ZU5LY08zc3RsV0U0dlZwNFRTRE9NY2lOeXhPbkUzcm5HZFhfczl3UEpKZlRwbGZlODlUel9xZFd6OHpRWWh5cVN3aWJBOUJ5LWpIeEJwMEQxSjZ4UUtJQ0x3eF85aVdmajZMb1VOTmZ3bFJZLWl0Zw?oc=5"
-    },
-    {
-      "headline": "Chinese AI Stocks Are Slumping, Too",
-      "summary": "",
-      "source": "Foreign Policy",
-      "date": "2026-11-03T08:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWm5neHpENjdIR2pEeUlDdkVLYUxqNlhvbjJOWlY5aDR3aENIN19rVDF5V2dJeHY1dnp2WjJHSzNUaldjc0tHMlB5THBQRFFuTTExZkxVcWNEQUJEejFMWmRCVXo3TEw4bGt5NEQ5eFdFeDNiNUdscmpYWGd6RmNGRWlDRWhSeDMtcmRVWHdB?oc=5"
     },
     {
       "headline": "‘Speak last’: China’s fifth plenum moves to rein in Communist Party leaders",
@@ -54289,13 +54293,6 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWG1rM1VkUjU2bUdnYWVZSlZnbjVfS092ZGIwRnNkaWpKMkpocmtMamcydjFHM1AySWtKU2l3ejIzNWdEdFVTQThEbkZjeENKUXB3RTdoeWFFOW9uUmsycEZ1VTNtekNNcWJsQkdoUlZLMGhVNzJWd2JFM1lNMHJoR2ltT05tSjlMTEhpT21hN0U2ZnNlX3NRNHRtUQ?oc=5"
     },
     {
-      "headline": "Beijing launches barrage of measures to stabilise stock market after sell-off",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-11-02T08:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ1RrbE5DT25fLTlSNEdyTTQ2ZkYyWlVqS2JVWnF3X1JPLU9xOXpNekQ2WHhaSDFxRlkzQ21BUE0xSXFQeU5zRXZBdjJtdUFmMVhXdlM4eEIwbml0U2dCbnlZVE9NSno5VjBhazZXY1F4U1lYR3o0dTlHMThLY0VRTDl3YjRCRU5qZExyajlTSDU5M3o4ZVJMdXppajM2bWhObzdhbW1ldUQwWWdadTBzQk9vcklDQ1kxVTJJd0lB?oc=5"
-    },
-    {
       "headline": "Apec China summit: from traffic curbs to tree planting, Shenzhen’s plans enter final phase",
       "summary": "Construction workers have been working late into the night in downtown Shenzhen as the city makes its final preparations for the Asia-Pacific Economic Cooperation summit in two weeks’ time.\nOn a weekday night, a South Ch",
       "source": "South China Morning Post",
@@ -54322,13 +54319,6 @@
       "source": "The Guardian",
       "date": "2026-11-01T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAtdmpCZmREMXNzTEFKc0hKLW5oYktlNDNfZW5PWFhqdGlaZE9rejItRWhrU2hTZ0dzMmhEbzNNdGZ1dVA5WTF2cVRFQVBoTUt6dFAtQXlCVGlyY1NXWjV2Y3hjNEY4YlZRUFFiREVyWmFnZ1kwVjMzSGloY0xjdw?oc=5"
-    },
-    {
-      "headline": "China’s banks, regulators to meet on measures to arrest stock slide",
-      "summary": "",
-      "source": "South China Morning Post",
-      "date": "2026-11-01T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbnVpR3RTV0xFNGdDTV9DaWFoY2ZBQXo2eWJhVVBVdEdrQVB0eXlZT2xLSTkwRGZYMVNsdk9STU1XRWVyamR1YmllRVZWVnl3MW5MaGdnWVNSYjlxWlFVUXhQdkRKcE5LQUNHMmZaZW13bWVmVVlCdHlCVmYzazQxSTRzOXozSHQyeVBpeXdJb1VqNlhrdzV0QUZxMFFxNDRfVnhQakpXbHA2ek1GbmJ1d0ttM0lGYTIw?oc=5"
     },
     {
       "headline": "China places former Sinopec and CNOOC boss Fu Chengyu, 75, under corruption probe",
@@ -54387,13 +54377,6 @@
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRzRQeTRoZjEzUkh3QzFreXVCR3gzcmpWN081SFpadjkzSkN4amViSkNtZmRVcUs5OTU1YlpLT2RaN2tjVF91LXNVUU5VcEVkTWZNdGlnNVpHS0RMTTI5UXJ0OGtxQnE2THgxZXJUUGhaVW5MWUJsOUtRd1hfWC1SN3VtRWZBMml5ZFFkMm93ZTQtd003QW0zSG80YVJWaWs?oc=5"
     },
     {
-      "headline": "China’s former vice-premier Liu Yandong dies at age 80",
-      "summary": "Former Chinese vice-premier Liu Yandong died of illness on Wednesday at the age of 80. She was one of China’s most prominent female leaders, playing a pivotal role in the country’s united front work and education sector.",
-      "source": "South China Morning Post",
-      "date": "2026-10-28T10:09:38+00:00",
-      "url": "https://www.scmp.com/news/china/politics/article/3372453/chinas-former-vice-premier-liu-yandong-dies-beijing"
-    },
-    {
       "headline": "China’s stock markets are the great global exception",
       "summary": "",
       "source": "The Economist",
@@ -54436,18 +54419,11 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMzZaSU04U1BHZVVyTDRqVEFfNXA2X0JhT3VaeUxUM3JsdUFpNHFGVUVPYTFTX2l1VmpvbWg2NGpPSEh2VTA0NDRnT05iY1F0c2MyMUxmWHV6Mkx2QmFTSHBNeHZsclE4LTVTRlQzTVZsT0RDNTI1N3FoOUdGbklMVjdOX1FVQXBOYUV0R216NS1BVzhM?oc=5"
     },
     {
-      "headline": "China's Stock Market Has Lost $2.4 Trillion as Investors Doubt Its AI Boom Will Ever Pay Off",
+      "headline": "Chinese markets lose trillions as race for AI supremacy with US takes its toll",
       "summary": "",
-      "source": "Yahoo Finance",
+      "source": "The Guardian",
       "date": "2026-10-27T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdUZqZjNGcUJ3Z0d5RGdTU2d0ampyOHhnN1d2SGhsQWtJM0NNY29oSzVJSHl3MkstR1ktT1pxMFlSaWtWNUd3SGZjMHRla24xWXpkSmVUTXZpTVNvel9DaHVGc0ZYaFlRTVYwVkRka1lkdDBoZDNoSFVXOHZwcGpQa2djUnhRSGt2U0dUc3JkcUFQR0pUaGc?oc=5"
-    },
-    {
-      "headline": "Will China’s Stock Market Crash Hit Bitcoin Price?",
-      "summary": "",
-      "source": "Yahoo Finance",
-      "date": "2026-10-27T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSFhLc1BZU29oRzdyd2FJVzZSWVgxZ3lFRnA0bGt0TkdkYnR3bkxJOW5fLUZSV2pmWmVySVY2emtROXo4VUpDR3lqQ01YSldnUFFCWG1uN0xmYnN6cjBCb3BWYXJlb285c1plZ00yVWp3T0s2M2c1aTZabEtKREtSdUd6a2NMZDZ3NS10Tk0tWWxwZVZ5SmI5dQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbzM2ekpCRDItOWdneU1qVVdIMlpNeVJLLWpUZDYtc2FPclJCM0JLTEVGc2JGS0NDbFpldXlaZlBFclJwTnFfSmFQUU0tLWRXaFI1NlFXRW1Bd1ZkbkwxdHQzcDJQOTIzOVFOZzFXLTNXVWI1T1pRd0hrQVRFdVplV3ZGb2xrYW84SXN2cUM1eWVXZEdPQVZN?oc=5"
     },
     {
       "headline": "China’s economy steadies as surging exports lift Q3 growth above forecasts",
@@ -54513,25 +54489,18 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNT3JzT2NVNzdKUkFYQ1JEbHVBWW1LX2pVS0NNblRBY1ZVV1pRN3JVUEc2dE9NVTM0N3RLUFdsUllOU09Bd1UxS2Z6bkFCYV9pNEdQUEVBcGNYdjZTUUZ0cmZZX0hLV2tPQ2gxaG1sMUlOMUJmdHNqMVJNeEtXVDB2bldZTGh1SEtHcFFKX29FdHcycEFN?oc=5"
     },
     {
+      "headline": "China’s AI Industry Brings Both Gains and Challenges for Its Fragile Economy",
+      "summary": "",
+      "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
+      "date": "2026-10-22T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbGpzVGE3OEJ1T25xaFRCSTZPQWxlU3psN3hwNTNsQVdRZ01yUjE5NFpnb3VNeGlncEdZbUF6VkdFdWdlcWpVa3pRVTJ4M3lEWEtIUW1hZzhXbEsyOEhLV1JQdGVXWW8xdWFzV0Y4eFE1ODJPSE9STTNpVEUweXlaNnllYnJwbS1PN1NkTkpCVGlZbnZVTFFWdlRNbnZ1T0VkNE9JRGpjMXBTdkFy?oc=5"
+    },
+    {
       "headline": "Biotech investment is the new front in the U.S.-China trade fight",
       "summary": "",
       "source": "Politico",
       "date": "2026-10-22T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeGctSS03QXZwRTdFZEpoZUNGczljZ1pwUnZTMjg5MGlILURUWmZqcHJPUWZuaHJVTkRaYWxxV29VRVl3clV5NTItV1dJWXFPeUlmQkJRTjE5VUVyQ1lpZmpOWm1WdWM3N01MdEpUSnNrcTZUd3dOV2tzUEdhQjNWelJ6elp1Vk5WZjZoMjd4YUFNc2tEWnI0S3ZjUkJpckpsZ3E3VGxPVi1ycmpUMVcxSEtQeEk?oc=5"
-    },
-    {
-      "headline": "China Stocks Set for Bear Market as AI Trade, Policy Hopes Fade",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-10-22T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkp5bjg3WHRYdlFYTFc2b1VRRmVpd09Oa0Y1SkxUR2xnUTFyTXAyMG9zcUFnN2pIbU1WQVJBdmVqNG0xZDk1UWM0N1M3djhNaWVwbXVBamhRS3dMMWtPRlhQbGFXWk9BTXVXcnppTVB6ZWl3eTRzM3BqclJ0MlE3MEJVSXhWTUlnYm1aVGVGa01kcmljSXFBX1NTWC1Hd1k5X3hwcGtyRjdtblFhVG9RdmlmVQ?oc=5"
-    },
-    {
-      "headline": "China Shares Enter Bear Market as Fears Over AI Bubble Grow",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-10-22T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYXNZS1g4bUFLRFktZFRHRjVGTmZBdXB6VWRRcXl2S3hHRFgzblh2bUU5TFdFb01kQjlQZFJPYzN0ZEFLOWRFdE1fSnZTa1BBYTBrQlR2M1ZHZHJBWWt0Q2JaNi1YTERPTFkwbG9vbkhiY2pNMURlaURSejI5QWhCWU9UVk9QSnFQV0pTX1FkOENNSFVwOTVXdzFUbVRYR0VpSE1KWm4zb2ZpUHRac0N6a08zNA?oc=5"
     },
     {
       "headline": "China’s Stocks Enter Bear Market as Selling Spreads Across Asia",
@@ -54541,18 +54510,25 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbEdVR2dySWR2QS0zczdmM0p2VTRfRUxmc2lUSnowNlJabWdlTFdaSk1WbE5CYlJTcER2OTcyZUZGM0QyM0Q0STRldGxTcXFSaG5pNkdQX0stc3kwMEJ3cXRxanJQTmJnLUNGTFpEbVY2Zkk4S09tYkkxSGNSV1lxeGJPelpzOEFYanVPT1U0ckNaUXRIUkh2QWdUMUNmNm1HYmNnQg?oc=5"
     },
     {
+      "headline": "China Shares Enter Bear Market as Fears Over AI Bubble Grow",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-10-22T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYXNZS1g4bUFLRFktZFRHRjVGTmZBdXB6VWRRcXl2S3hHRFgzblh2bUU5TFdFb01kQjlQZFJPYzN0ZEFLOWRFdE1fSnZTa1BBYTBrQlR2M1ZHZHJBWWt0Q2JaNi1YTERPTFkwbG9vbkhiY2pNMURlaURSejI5QWhCWU9UVk9QSnFQV0pTX1FkOENNSFVwOTVXdzFUbVRYR0VpSE1KWm4zb2ZpUHRac0N6a08zNA?oc=5"
+    },
+    {
+      "headline": "China Stocks Set for Bear Market as AI Trade, Policy Hopes Fade",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-10-22T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkp5bjg3WHRYdlFYTFc2b1VRRmVpd09Oa0Y1SkxUR2xnUTFyTXAyMG9zcUFnN2pIbU1WQVJBdmVqNG0xZDk1UWM0N1M3djhNaWVwbXVBamhRS3dMMWtPRlhQbGFXWk9BTXVXcnppTVB6ZWl3eTRzM3BqclJ0MlE3MEJVSXhWTUlnYm1aVGVGa01kcmljSXFBX1NTWC1Hd1k5X3hwcGtyRjdtblFhVG9RdmlmVQ?oc=5"
+    },
+    {
       "headline": "Foreign investment flows into China fall 4.3% y/y in first three quarters",
       "summary": "",
       "source": "Reuters",
       "date": "2026-10-22T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdzRHVjFYRmlzYmJrR0FLY2M5YXdGSXN0NmhTRVdEMkpfd2dkMkx3a1g4WGpvSVNyTGxvdzA5V3pWcy1vbTU2ZWdfbDBidm04ckJGbnFOT1pZTDR0akRzbTJYbXpqcy1PT0pFbVFrcGYtSWw4RmNmU3U1RlBfb0lwNWo3dlZXRkFhV3UyS01MTTZ2eGswck9HVzN5MzZUdjdTYWdkb3VveVBOTkhYSXVmbGpySHJHQUhoNUU5Yzh4NA?oc=5"
-    },
-    {
-      "headline": "China's Xi calls for qualitative improvement, measurable growth in economy",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-10-21T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWllVbXM0azZlXzdGa012NnR5VUNOMVZ1VmFlNzBFanFsMGdwVVpucGFDMm1Yc2IzNVp3SElaZnpHSTBYZWF3N0o2UWRsaGxmTXRmMlVPNkt6TzVZUUF5V05aUnNucFJyYnNKRTBZNXNqOTl0WWNCUl9udHZYdi12MFhvTFVaVjRid1RaOTktaHhTX21VVklYb2dWSW5IMVdTTWREcjFHOUdyczlpWDdjR1ZDaw?oc=5"
     },
     {
       "headline": "Opinion | China can manipulate statistics. It can’t fool markets forever.",
@@ -54590,6 +54566,13 @@
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb3ZnNVBMZm1Fak5PVkRhd2RESk9aRDF0UjFIdllJbDRwY2x1ck1XZm1GM2RkU21wYlpZMERfcC04QlJiS2FObTItRDYzbVItVklFSGRJQ0RfdF9wbjJ1X0cteUhkTm1FcDA3Vjlid1VSU3hDNEVfZ05pNXZMbmRVQWFfcFFrZTBEa0JfQU1BWUpfZzlSZHVVRUlTcUwxQnRwbG9CWnluUGwwNUpBUE1JMHZHX1RiQ0JLTWc?oc=5"
     },
     {
+      "headline": "Wang Yi Meets the Press Jointly with Bulgarian Foreign Minister and Shares Four Takeaways from Eurasia Trip",
+      "summary": "",
+      "source": "中华人民共和国外交部",
+      "date": "2026-10-20T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1CVkJzVVd2XzNjT2tqd1dJT3FRbmxaSTgwWkY2Y2h3VUtjZEF2eTl6cG84OXdCaGFWUTJGa21HZ2ZQa1V6TE0yQk1oMVY4NXhsekJnNUZpdHNRZ3VFUHRmX1BFOVlWQmNmNzNWMVZiNDBaaXVT?oc=5"
+    },
+    {
       "headline": "China's economy is better than expected — with one catch",
       "summary": "",
       "source": "Axios",
@@ -54611,18 +54594,18 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObjdWVVIyRU9UZ0V3aG1MMnRLM1hzQXRWZFZQeUxqbm1Ea0dhbUh5bVZrLWotbWZVOFlDVnZhRXRZY3dZQVkyR2JIZnlDaUxUcTJWaGpTbzhjanoyOXRIR1QxNE1udnY1ZnhNYUMzRDB0LUM2NDdRQ2dmSF9BcFZMS0cxYWhMa3p1RmxrMFlXYkZ3LVEwZGhrN0hKNGt1OEpweHVKdU8zb3pndjE4d1ItZjVsbXhoUEk?oc=5"
     },
     {
-      "headline": "China’s Economy Expanded 4.5% in Third Quarter, Powered by Exports",
-      "summary": "",
-      "source": "WSJ",
-      "date": "2026-10-19T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5"
-    },
-    {
       "headline": "China’s economy accelerated in the July-September quarter on robust exports",
       "summary": "",
       "source": "AP",
       "date": "2026-10-19T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0ybUNYYmVXU0VLLUUyQXM2UEFiLXhzWFF2YmZYZ3QwUWdiSkdBdHJIOXhTVGVEemNnYWNaWFU2TEJKcnpqOTY5WS1WekJBXzU5ek1zQVg0Uy0yQ0ktV1ZfSmMybVB6VFY3ZVNCeDhjcllNUG9BZUFRTWFuaHM0dw?oc=5"
+    },
+    {
+      "headline": "China’s Economy Expanded 4.5% in Third Quarter, Powered by Exports",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-10-19T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5"
     },
     {
       "headline": "China’s economy grows 4.5% in third quarter on export surge",
@@ -54651,6 +54634,13 @@
       "source": "South China Morning Post",
       "date": "2026-10-19T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQT3YzYUd3NzdmcW44TjZVNnZiUWpYNUp4cnE4UG5NSjlaTG0tVGQ4WXg2TkdqQzEzdVVuOWFQbVFGdlhTRW9rRHc2XzQ3NE41YTlVLUZYc0JLZDlGNDZ5TlhZNmRZTjdqNUk4emtoU2VYSmtJVTgxQW9nUkdlM2ZIRDB5dUJyRG5pLUdQUzZPeHNqaVRRMFkxTnlrZmhLQmg2N1YxMS1PclpsS3o4NzZuVklVVXJsZUlURUVFbHFPM1lGci1JZlpsRGdn0gHKAUFVX3lxTE52V014Zk50RjlUYlZNUF9zSWZuRWMtNnh1YUNLdFFfcTFMU2hIYXFBZk9JcHZDM1J3N3U5SFE4Y0NTU1hKY0Q5ZG1feHlRMEFWTnVESnhFaVNVVWdIRDZMTHBOcmFFS0FmcDBNRW90VEsySjNOcmFfcU00QURHRnhlYU4zTHlPUDJIRlFvb0lxaDZhT0JxTEM5aVZQQW16RDBQU1FhT3A1TU9OWVY4RTVQM3pkY1lHYl9zQWo3WmpQR1hYNGlveDBqT1E?oc=5"
+    },
+    {
+      "headline": "Open Questions | Robin Xing on how China’s ‘two-speed’ economy can solve contrasting problems",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-10-19T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTFlPQ25hTTdVQkFqYTRWS0RHcEdMc2o4TmlYTUV1SktXb0o3c0VPTm8xdDhQdW4xWGtVTUVYd0lpQS1MYUgyN0Z2QmNDakpwNTVocWh6OFhxR2ducC1EbkxaYlZTY0kwN2x4M0tQcWF3RzVybVEtQ2trNmkzOE5Ea0Q4U3dKVDg0WDFWa20tNVRzYjBxU1dobG8xNW51STVqQmo5VHBmUjZUcGhWYndoSnFTMndUS3FjZVlWU2U3SjFqMm15NTJwR9IByAFBVV95cUxNMFRuMVl4UEg2WWxSeFI0NDRhUnVEVndpRVpKdS1xVjVPZkF6UmRyN20wSm9saHJWeEFMWVBBSFhWS1lkVk1XQTdfbEtDb2U1NjF0TGRsRkNjTjdyZm9McGVpNTNhSlIzZTlBLWVDeUdyZFJyOG1VMTdQNThoZUtTOWl3OTEzUG5FYkluRHVZa2RnZ1daQV8teGtqZ3BqNHF5Nm9GWDkxNkkxQU1TUmMtSU0xamZnQ0Z3VTRUZDdWRUtYanA4YlpRZQ?oc=5"
     },
     {
       "headline": "China economy grows thanks to AI export boom but domestic slump remains a drag | CNN Business",
@@ -54686,6 +54676,13 @@
       "source": "Financial Times",
       "date": "2026-10-18T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSGVKTFBJR0drUjlPSjZvYjZUeDBaOVlDQkdsSWRLbGJ3ZGxfTEs0MmR6bFVkNXZDczVIcGV2WnlfWFZnSk9rTk9OVENhQVoyd3I3YThXdlFtenZKbWozZGFIWXktSVQ5T2hlNnh4amxMWkNVbjZQM1BGUmJHTDlRRjVVa2Q?oc=5"
+    },
+    {
+      "headline": "Chinese Stocks Turn Biggest Losers as Global AI Trade Stumbles",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-10-16T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSm5XMW9DbkZqRlZJUDVKZ3k1a1FjLVR5NE12UGhaOEo2Yk93RWE0bTJZNTZraHFTdUZaOUZwdG1OYkVFdWlZVGF3UU04Y3RVSFRWTks4azd2ZU1wSDRnbFdrc1hIMlNZZWdLZzdYeFozeUxzTzV2aVZiaWVXTlN0YlV5cUNOWnpVR2VVV2h1MTFuWGt5dGtGb3o3cjVPOWV1T25HWW9leDFNTnAtMHI4ZURLbw?oc=5"
     },
     {
       "headline": "China Q3 growth set to pick up on stimulus, keeping 2026 goal within reach",
@@ -55310,6 +55307,14 @@
     "2026-12-31"
   ],
   "upcoming_releases": [
+    {
+      "date": "2026-11-13",
+      "time": "16:00",
+      "event": "中国10月M1货币供应年率(%)",
+      "consensus": 3.3,
+      "previous": 3.2,
+      "series_key": "m1_growth"
+    },
     {
       "date": "2026-11-16",
       "time": "10:00",
