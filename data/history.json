@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-15T09:34:37.240626+00:00",
+    "last_updated": "2026-11-15T17:16:50.110843+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5246,11 +5246,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-11-15T09:31:46.231448+00:00",
+            "attempted_at": "2026-11-15T17:14:07.470824+00:00",
             "status": "refreshed",
             "expected_month": "2026-10",
             "latest_observation": "2026-10",
-            "last_success_at": "2026-11-15T09:31:46.231448+00:00",
+            "last_success_at": "2026-11-15T17:14:07.470824+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -54003,6 +54003,13 @@
   },
   "news": [
     {
+      "headline": "What Japan’s ‘lost decades’ can teach Canada about its growing trade ties with China",
+      "summary": "",
+      "source": "The Conversation",
+      "date": "2026-11-15T13:32:33+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNjN5Y0l2RUwweTlCd1ZndUJrSzdCU1RMR21hdHNuMlA2ZjZvS0hBRDFtbU5PVGtqLWRaZGtqRFlCc296R0VVcnRJS0VtYmdTN3Vjb0hSNXhGMlU5NXg2bWktdEJVTjdrX2tpb0s3ZDIySzBMTmluUjdySkR5UVB4aWZkcWxlMWIxTVZNeHZVVldVSlFzT0YwWm9KZUxKLWYwTHlDUU1nU2x5blNJRWh2QTA0YUxTMDg?oc=5"
+    },
+    {
       "headline": "Zero capital, 116 projects: AI spots the devils in the details of China corruption case",
       "summary": "Disciplinary staff in Wuhan, provincial capital of Hubei in central China, were going about their routine workday when a red alert landed. It was from a large data model – flagging a possible case of corruption.\n“A compa",
       "source": "South China Morning Post",
@@ -54015,6 +54022,13 @@
       "source": "Time Magazine",
       "date": "2026-11-14T12:00:04+00:00",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9kVHNxLWdkakZXWEpaa2tHUkwxTnhOYVFqUEgzT0N5cWxzUjZTclZ5N2NHX3pDOGpBOWNYQkNWV3RlaFktOHZNNG1UVHUtRDRmMmI1NjktcTBSalp4NHN3M1JvNEtsWWd2UW5iMTlIblI1azN2?oc=5"
+    },
+    {
+      "headline": "China, US Discuss Tariffs in First Meeting of Trade Council",
+      "summary": "",
+      "source": "Bloomberg",
+      "date": "2026-11-14T07:46:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPU1l3WlBYaHhmZFVJSDZ0OHdibV8ybWVSUXZfLU1nY3JWMlVmT1RXR3BraTBqaWItVVNFX1l3YWFnNS1hb2RBcGJQUnJ4TFJMOU8xaXpoekJ6WlRjOFNFU3loUlpfdk5tTEJqVTVWUEZIb1RvZkpKTEp3bUNOUGxkbVl4SGNzUXgwOVdfTGV0eDJMVExaN2pxZlBkVnZnVDNHQ01May01UlhoUUJIRTBoM0p3SQ?oc=5"
     },
     {
       "headline": "China, US discuss tariffs, farm trade ahead of Xi-Trump meeting",
@@ -54052,25 +54066,11 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaVN6c05ZMXB0aDFpXzBnazNkc29iejZSdmY4ZGxDYUx1bUFjUlNPVm1sRkljdUlDZnBkUnJVbFVPZU1JMkhid2xRWk1HWXlyV3ZVejBnSm1KeUJyNUgtemRvRnJuUlpDdTlxWXdXNm1QZXFKMExlNVZDOXA1VlotTGNROV82OFE4ODU5aDlZNDhSSmc4YkxGRDhZRXZlWVNGWllDQU1DMUxlc1kwR0xtQzAzMS1OLUZvRm45SHZoQ0FMbmxTVFZ0R3JKVTVQQQ?oc=5"
     },
     {
-      "headline": "China Extends Suspension of Rare Earth Export Controls",
+      "headline": "Same metric, still a mess: The geoeconomics of youth unemployment in China",
       "summary": "",
-      "source": "Thompson Hine",
-      "date": "2026-11-13T15:59:26+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVUdiSTZDb0c2U0lWWEpiRV9ZMnpESmlpZDdBcXdxbmNsUVVFOHdxZHR5LTd4THI1RGpybjdsRTJhUlNjR1hkRU9rU3JyUnNwX1RxZ0pVMmFMejFZRHY2Tm1NTk1mN0NoMzdudFZLVEI4MlVPNjlDQ3ZSNFVzSUhHWmRWbVNMQ09DbHBtWHdmbV8yRDF3OUJ0aFNfYlJ3UzBocFhv?oc=5"
-    },
-    {
-      "headline": "Foreign Ministry Spokesperson Mao Ning’s Regular Press Conference on November 13, 2026",
-      "summary": "",
-      "source": "中华人民共和国外交部",
-      "date": "2026-11-13T11:03:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NNlNEWGtJNWJwVDhHV01YUDVsM1R0SGxkNW9hSUI4Y2Rhc3lTV1ZOaTN2MkNUanhpcm9aR1FoWFV1Q0E1TTdscW9pQVp5U0tXN2ZHTDVITko2OE9GNndHTUp2SHdaM2JnaUg2cnhuTUNZUHM1dV9OYnRyT2Q?oc=5"
-    },
-    {
-      "headline": "World's second-largest economy gets 81% more goods from Africa's most populous country as Nigeria-China trade hits $17.4 billion",
-      "summary": "",
-      "source": "Business Insider Africa",
-      "date": "2026-11-13T09:30:57+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbk1ERnhyN2VmUFVUaklmanpSSFVXbU9vV0p4amM0SWtwemdSYjNxdEhBRkJVMU1FM3FMZjlMWFRtVkFxcERzeFpMck9wUnp1QjVSaXkxeEowWFoxMnM3cUxWcFlKek44QXM1OWlfdjRjRHBsZzNCYUlJZWN4SkJJUFFGUHBiMHc5TG1rZmVuaDllakNhMzh3bVotVERaTXVsSWNPakNOWDZqUUJUczB6ajdTMi1sM2hTQ2FBaXlfMW9ZaXpUWGVDSHMwcm4xNlVaYklCeXAzYw?oc=5"
+      "source": "Atlantic Council",
+      "date": "2026-11-13T16:34:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQN2lVM0xtZmZBcU9xZUZRWWxoZzJod0phQVIyVHlYdFpLYmFnY0JGNFUtLUJVVGduMlRGNEw5ZDNYbE92amlqRmFVZExYcGdPSWRZVGRxaGNKSzhrQ0ZTQ0h3ZWZpQ3MtbVlHRWVpLVJxWlZlUGhOMGdTUURKMnJYZHVreUJVUk5pb0x0N1RFUl80eWdWRElWSk9ZcElCRloyNlE5VWdqVWtiT0dheFFibThCVDh6V0JuOUN3cG9FaDBXaGM?oc=5"
     },
     {
       "headline": "The EU’s shaky start to balancing trade with China",
@@ -54101,13 +54101,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3374228/xi-jinping-calls-dialogue-taiwan-reunification-people-vision"
     },
     {
-      "headline": "Near the Siberian border, a ‘no limits’ China-Russia partnership drives trade",
-      "summary": "",
-      "source": "The Christian Science Monitor",
-      "date": "2026-11-12T05:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcE1CdXVsQ296bHFFbnltaXZPSVhsMG8wNG1WbVBJZk1lZWhCdVMtWHNndVFsMnpsZkFfblBUWnRITEZxdUNlM3ptTXpGRWNPTU5kZktScWtMclhLTVhPTkJLdHI3ODlZZmh0bU5rMTIxYVhheVQ3Y3VBN0RTRzc0VktQTUdENGEwRm82U0NmN20wWWdOZmM5d3pfcw?oc=5"
-    },
-    {
       "headline": "Taiwan to send Acer founder Stan Shih to Shenzhen Apec, calls for ‘equal footing’",
       "summary": "Taiwan will send Stan Shih, founder of computer giant Acer, to the Apec leaders’ summit in Shenzhen next week and has urged Beijing to ensure its delegation is treated with “dignity”.\nTaiwan has been a member economy of ",
       "source": "South China Morning Post",
@@ -54127,13 +54120,6 @@
       "source": "Reuters",
       "date": "2026-11-11T11:27:44+00:00",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNncxU3NCdkhlZnJiY0psUGxYalpGa1FLS1BlNkpoYWpQSlg0T3A3VEFMN1RHbVBMaDROSUpSNFpoUktITUxBemhjSVNSR2dRWV9IamNIcHdfc3FxLTlQZnB4T3kzbTIxVnJpYUJWbnlKXzVSVGtJck92RDZHdlV0YnVreGlDWmI3OXU1RGo2LUdpZE9kd1kyVDdLQ0I0X3drN0V0UlFBbmxxbTBIY1JJ?oc=5"
-    },
-    {
-      "headline": "China’s tech export boom is hiding a weakening economy",
-      "summary": "",
-      "source": "Asia Times",
-      "date": "2026-11-11T09:08:12+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQX1pPOGtQRVhqZmRZOXQycTk1SDZyblZScHphNlVXMjFqUU9SRWdpWE85Vm9RcHZxak5EaEp2Z0NNWEtXdWFYQTR3ZHBxOVFvcE40TF9lQ2l4S1VyVmpHQmZwdHhVamJ6QUVlemdBNldNeWdwd1JhejZTTVQ0VV9UX05wR0M3U1ZXU2NBRg?oc=5"
     },
     {
       "headline": "Why China’s $1 trillion trade surplus isn’t all good news for its economy",
@@ -54192,6 +54178,13 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbnkzZE15TVlhc1FHU1hzOFJXNklMWERBbUpCSVNLVUw1OFdSS25xOEdZSEY5bXNjclhEWnFCcXF4WUJmUDRyTWpnMWdoMmRyWXVTYkYtUFhmellzaDJUeUladm4zcDYwWEw2eWpLVjQzZVl3c3o5VFZHM2NnM2R6YVJMS1Qtd1d6LVRkMmZtbFZtOHl3cExTTHBwNlhsZVRETVEyWk9ZLUdBQmp3dGNycQ?oc=5"
     },
     {
+      "headline": "China extends US trade truce by two months",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-11-09T03:06:09+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSTA2TElMOUVJb2VPUWp2RnhuNWtoOHhncWpKUW9Ob1lEQ19BVUluTWRvRkZTYWJTYlU5RlZNR2F6UmZOcW5GLXlrQVJuMzMxakd2V2M4d1dXRDBCU3FBN182RlFQTjVBbVpTbzQ2cXZzdkk4YUJxZkF4NUVoZXlXR1haVlZIY2lpMnJQeTdFWTFMQkR5QWxiaWtqZUJSSUI5bFpzdGNmUENfU2h4dWIxcg?oc=5"
+    },
+    {
       "headline": "China eyes gig workers and influencers as delegates for Communist Party congress",
       "summary": "For the first time, delivery couriers, ride-hailing drivers and influencers could become delegates to the Communist Party’s five-yearly national congress, as Beijing seeks to keep the group close to the official ideology",
       "source": "South China Morning Post",
@@ -54204,6 +54197,13 @@
       "source": "South China Morning Post",
       "date": "2026-11-07T13:23:30+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3373658/chinas-communist-party-vows-zero-tolerance-election-meddling-ahead-key-congress"
+    },
+    {
+      "headline": "US, China trade chiefs hold call ahead of Trump-Xi summit in Shenzhen",
+      "summary": "",
+      "source": "South China Morning Post",
+      "date": "2026-11-06T18:34:11+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQODVTbG5PRGFYaVRPT1FGZ2pTTlpVeTNiVExObUFqcFFxUU5uZW9XbzlrVDZ5NEIya2d0REkzTlJPTk5hdF9mQmtHOU1aejBZcnJFY01MN2pUZmxLNUh2YWdPWlFYYjJDbDdHeVZUSlNON2g4M1VwUFZmSVFnem1mMU1jX1FkbFc2eVZhY0FMaHU1bHdGaGxneHpOM21qcmZmYXZ4d2FIdGNLUnJZaWs4N21VTDRUN01OcHNNOXlGU0Q4LU9lNjZvWlFn0gHKAUFVX3lxTE43UmQ4YTNqQ1RQajlMZ3FuY1d2bjd6czBST0cyZExtN1BLT3hIdnl2U0g0SWpXck16RUhPYld4YmV5YmF3dWdDLTlfeXpLVHhmTHN4SE5VSHBraUVaMGpuWm8yeTA0UXVzMi1IYkZ2ZzNQY1E4OVRBeGRVTEMyN19nSVlobUc4cXI5VW5oTU43OC05UHNwb2w2anRWNTBNZi11VUNDdWFJSy00VWtmMkpBUExjMTY4SUItbERkVlpOQnY5NUczRWRQcnc?oc=5"
     },
     {
       "headline": "Democratic Congress to guard US’ Taiwan policy and press Trump on arms sales",
@@ -54374,13 +54374,6 @@
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOajJIOEZLR2dKQW15dnJaWGcyNTc2UFJyb3JjRDdGcmNrV2tKYmF1MWloWW0wT3JwSkUwM2Jpb1ZGVE9qMDlEWm9keFZ4LVVveEpWZFA3VlY0Qy1VMkxYV0Ria3NnaHh3UHc5ZlBjTTVlSkdLbnhOMWNLUWxiN3NxNkhwaVhOS1FadGhfcmJKd05HZUdkdW5uZUNBb3lVd29EeXU5NjYtUmdXQnVqLW5TVXpNMy1SVnNieUtpWW8zcVFOR3dMOUpPcGg5UGx1WXNPd3fSAdIBQVVfeXFMTm5kbmYyMU16dnFqX1ZWNWRLTXI0MnAtNGVBVVVjb2RJUERqUmFMMld3ZVlKMnJCd1FreHRmejRhY01PSlRGRnlaWFNhQ24zOVg3bkh3bm9WV2F3MWo1UVVWT1NtbUN4Rm1QbENvd1gyNlI1WGYwOUMwZTl3OFlZbWdSQTh6V0RDY0M1anRQMXNKLWp3X2htQVExYjNxLTM0WUJhSzRQa2thQ19XSFlNLUFQY19YeUR5VnBoSjRPODBJWmN2SWwxVFlWMEIzVjNkWDRB?oc=5"
     },
     {
-      "headline": "Why isn’t China’s AI and tech boom saving its stock markets?",
-      "summary": "",
-      "source": "CNN",
-      "date": "2026-10-30T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YdU1UN0YxR2F6VEtwY2NvTzBRZFNWa2U1Z2NDUkxQclRHX2NkVzZ2MExucGI5QmZuMk5ZLU0tTGNrNFoyVTFDREhDMzFYWU8wbFdfcjhUdHFYeE4xeTJkOVowRHBsTGxiTXhUMHBjaHZVTDQwZjVYQ1ozaw?oc=5"
-    },
-    {
       "headline": "Transshipment Crackdowns Won’t Fix the U.S.-China Trade Imbalance",
       "summary": "",
       "source": "CSIS | Center for Strategic and International Studies",
@@ -54388,11 +54381,11 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcG9ITGxQVlBOVnBOMTY5VUthQi1XTGN1QjNBZjR0SVlINlh6T05mTHZBMWRpb21tQm9ZcnpvUnBZanM0Z0tqakhoN2hDbzNiaDVyb0Vob0Q3ZVpkWWNpS2VSb0FzRUtfb3ZaZmVYVVBzZDVHMkg4LUU3ZnoycFBvM2FTVjVoelRQTWJWMXRjaHpmUQ?oc=5"
     },
     {
-      "headline": "China trade accord with Swiss bucks wider trend towards protectionism",
+      "headline": "China Trade Accord With Swiss Bucks Wider Trend Towards Protectionism",
       "summary": "",
-      "source": "The Mighty 790 KFGO",
+      "source": "U.S. News & World Report",
       "date": "2026-10-29T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRzRQeTRoZjEzUkh3QzFreXVCR3gzcmpWN081SFpadjkzSkN4amViSkNtZmRVcUs5OTU1YlpLT2RaN2tjVF91LXNVUU5VcEVkTWZNdGlnNVpHS0RMTTI5UXJ0OGtxQnE2THgxZXJUUGhaVW5MWUJsOUtRd1hfWC1SN3VtRWZBMml5ZFFkMm93ZTQtd003QW0zSG80YVJWaWs?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPM3MwMmE0djNoZjlvUWVDTm82VjdpTmhqaUFsOWFHTFpyLWVVRVVhbU5tUGR1OWUwYkktQ3ZHVER6RHpyVVgyMVI3UTZZREpzWWwzTnN6Y1JVRkNOb2tzNG9oTjRWRWZta09YUmtSNlZDb3c5V1ItS2liemtCUTdReEF6Tnk1RFg2aS1aOF9ESGRJLWh5aWVqazk3a2RCU1kxaGUxRklxMWEyX1Q2MUNzaDFmUHdGVmwyblhzZVlJaEU?oc=5"
     },
     {
       "headline": "China’s stock markets are the great global exception",
