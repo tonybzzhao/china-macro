@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-17T22:30:04.182395+00:00",
+    "last_updated": "2026-11-18T04:31:52.736397+00:00",
     "notes": "Seed history assembled from public release tables (TradingEconomics, Investing.com economic calendar, NBS/PBOC releases, x-rates.com). A few series carry known data-quality flags — see per-series 'flag' field. Auto-refreshed on schedule via GitHub Actions using akshare.",
     "sources": [
       "tradingeconomics.com/china",
@@ -5250,11 +5250,11 @@
           "desc": "A private-sector survey of factory activity skewed toward smaller, export-oriented firms; above 50 signals expansion.",
           "threshold": 50,
           "refresh": {
-            "attempted_at": "2026-11-17T22:27:26.408679+00:00",
+            "attempted_at": "2026-11-18T04:29:01.270216+00:00",
             "status": "refreshed",
             "expected_month": "2026-10",
             "latest_observation": "2026-10",
-            "last_success_at": "2026-11-17T22:27:26.408679+00:00",
+            "last_success_at": "2026-11-18T04:29:01.270216+00:00",
             "last_success_source": "https://tradingeconomics.com/china/manufacturing-pmi",
             "errors": [
               "https://yun.ccxe.com.cn/api/index/pro/cxIndexTrendInfo attempt 1: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
@@ -52518,6 +52518,10 @@
             {
               "date": "2026-09",
               "value": -20.6
+            },
+            {
+              "date": "2026-10",
+              "value": -21.6
             }
           ],
           "desc": "Cumulative year-to-date growth in spending on real estate development, a bellwether for the property sector's health."
@@ -53429,6 +53433,10 @@
             {
               "date": "2026-09",
               "value": -3.04
+            },
+            {
+              "date": "2026-10",
+              "value": -2.73
             }
           ],
           "desc": "The year-over-year change in new commercial-housing prices, averaged across 70 major Chinese cities."
@@ -53482,11 +53490,11 @@
             },
             {
               "date": "2018-11",
-              "value": 4.8
+              "value": 4.4
             },
             {
               "date": "2018-12",
-              "value": 4.4
+              "value": 4.9
             },
             {
               "date": "2019-01",
@@ -53502,11 +53510,11 @@
             },
             {
               "date": "2019-04",
-              "value": 5.0
+              "value": 4.7
             },
             {
               "date": "2019-05",
-              "value": 4.5
+              "value": 5.0
             },
             {
               "date": "2019-06",
@@ -53514,7 +53522,7 @@
             },
             {
               "date": "2019-07",
-              "value": 5.3
+              "value": 4.6
             },
             {
               "date": "2019-08",
@@ -53522,7 +53530,7 @@
             },
             {
               "date": "2019-09",
-              "value": 4.6
+              "value": 5.2
             },
             {
               "date": "2019-10",
@@ -53542,7 +53550,7 @@
             },
             {
               "date": "2020-02",
-              "value": 6.2
+              "value": 5.6
             },
             {
               "date": "2020-03",
@@ -53554,7 +53562,7 @@
             },
             {
               "date": "2020-05",
-              "value": 5.9
+              "value": 5.4
             },
             {
               "date": "2020-06",
@@ -53586,11 +53594,11 @@
             },
             {
               "date": "2021-01",
-              "value": 5.4
+              "value": 5.6
             },
             {
               "date": "2021-02",
-              "value": 5.2
+              "value": 5.0
             },
             {
               "date": "2021-03",
@@ -53602,7 +53610,7 @@
             },
             {
               "date": "2021-05",
-              "value": 5.0
+              "value": 4.4
             },
             {
               "date": "2021-06",
@@ -53614,7 +53622,7 @@
             },
             {
               "date": "2021-08",
-              "value": 5.1
+              "value": 4.3
             },
             {
               "date": "2021-09",
@@ -53622,7 +53630,7 @@
             },
             {
               "date": "2021-10",
-              "value": 4.9
+              "value": 4.2
             },
             {
               "date": "2021-11",
@@ -53634,7 +53642,7 @@
             },
             {
               "date": "2022-01",
-              "value": 5.3
+              "value": 4.6
             },
             {
               "date": "2022-02",
@@ -53642,7 +53650,7 @@
             },
             {
               "date": "2022-03",
-              "value": 5.6
+              "value": 5.2
             },
             {
               "date": "2022-04",
@@ -53658,7 +53666,7 @@
             },
             {
               "date": "2022-07",
-              "value": 5.4
+              "value": 5.5
             },
             {
               "date": "2022-08",
@@ -53670,11 +53678,11 @@
             },
             {
               "date": "2022-10",
-              "value": 5.4
+              "value": 5.5
             },
             {
               "date": "2022-11",
-              "value": 5.0
+              "value": 5.5
             },
             {
               "date": "2022-12",
@@ -53686,15 +53694,15 @@
             },
             {
               "date": "2023-02",
-              "value": 5.9
+              "value": 5.6
             },
             {
               "date": "2023-03",
-              "value": 5.3
+              "value": 5.6
             },
             {
               "date": "2023-04",
-              "value": 5.4
+              "value": 4.2
             },
             {
               "date": "2023-05",
@@ -53710,7 +53718,7 @@
             },
             {
               "date": "2023-08",
-              "value": 5.2
+              "value": 5.3
             },
             {
               "date": "2023-09",
@@ -53722,11 +53730,11 @@
             },
             {
               "date": "2023-11",
-              "value": 5.1
+              "value": 5.0
             },
             {
               "date": "2023-12",
-              "value": 5.1
+              "value": 5.2
             },
             {
               "date": "2024-01",
@@ -53734,19 +53742,19 @@
             },
             {
               "date": "2024-02",
-              "value": 5.5
+              "value": 5.3
             },
             {
               "date": "2024-03",
-              "value": 5.2
+              "value": 5.1
             },
             {
               "date": "2024-04",
-              "value": 5.0
+              "value": 5.1
             },
             {
               "date": "2024-05",
-              "value": 5.1
+              "value": 5.0
             },
             {
               "date": "2024-06",
@@ -53758,15 +53766,15 @@
             },
             {
               "date": "2024-08",
-              "value": 4.9
+              "value": 5.3
             },
             {
               "date": "2024-09",
-              "value": 5.2
+              "value": 4.8
             },
             {
               "date": "2024-10",
-              "value": 5.0
+              "value": 5.1
             },
             {
               "date": "2024-11",
@@ -53786,11 +53794,11 @@
             },
             {
               "date": "2025-03",
-              "value": 5.3
+              "value": 5.2
             },
             {
               "date": "2025-04",
-              "value": 5.1
+              "value": 5.2
             },
             {
               "date": "2025-05",
@@ -53798,11 +53806,11 @@
             },
             {
               "date": "2025-06",
-              "value": 4.8
+              "value": 5.0
             },
             {
               "date": "2025-07",
-              "value": 5.2
+              "value": 5.1
             },
             {
               "date": "2025-08",
@@ -53810,11 +53818,11 @@
             },
             {
               "date": "2025-09",
-              "value": 4.9
+              "value": 5.2
             },
             {
               "date": "2025-10",
-              "value": 5.1
+              "value": 4.7
             },
             {
               "date": "2025-11",
@@ -53826,11 +53834,11 @@
             },
             {
               "date": "2026-01",
-              "value": 5.3
+              "value": 5.2
             },
             {
               "date": "2026-02",
-              "value": 5.3
+              "value": 5.4
             },
             {
               "date": "2026-03",
@@ -53838,11 +53846,11 @@
             },
             {
               "date": "2026-04",
-              "value": 5.3
+              "value": 5.2
             },
             {
               "date": "2026-05",
-              "value": 5.1
+              "value": 5.2
             },
             {
               "date": "2026-06",
@@ -53859,6 +53867,10 @@
             {
               "date": "2026-09",
               "value": 5.2
+            },
+            {
+              "date": "2026-10",
+              "value": 5.1
             }
           ],
           "desc": "The share of China's urban labor force that is surveyed as unemployed and actively seeking work."
@@ -54006,6 +54018,10 @@
             {
               "date": "2026-09",
               "value": 18.0
+            },
+            {
+              "date": "2026-10",
+              "value": 17.2
             }
           ],
           "desc": "The unemployment rate among 16–24 year-olds, excluding enrolled students."
@@ -54014,6 +54030,27 @@
     }
   },
   "news": [
+    {
+      "headline": "China's Xi calls for free and open trade at APEC summit",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-11-18T03:21:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPb21UOHp4X2E2V05LRUhhUjhnSzI5b1NmNDRVQWhCb2RTV3gwQng0N3lKQ2lnV3JrbjB2cTBpSkNObTdwbXowR2d0UEt5NFp5blJtallNRjdFSjNoVDdxNkNXWFI4bmpETEV5TUs2OE16WW1lLTR0NkZCbEdXZF9OVDVycUFYV2p2aklNS3dR?oc=5"
+    },
+    {
+      "headline": "China’s Xi calls for removing trade and investment barriers ahead of his meeting with Trump and Putin",
+      "summary": "",
+      "source": "CNBC",
+      "date": "2026-11-18T02:23:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9kN1VQeHRmSWJFQ2NzTW9IS1hUczJuM0Fqa01jMW1ZRkwxT2JVV2xLbllJRVBoc1gtQklCT2FRNVpNWElEeFpneDlaTDdHOVhsZGtHRXZJSEUyQjE1OUpFY2FvbDFKbk15OFdaZFI4ZjRSN3laTkFRQ3BLQdIBgAFBVV95cUxOeUtIeUtSU29VbDRRbWlQclJXOW5jVmNpbW8zYlFNbmRhem8yN1lDWU5adEhraFlXUjFCZlZDeEExUVJaRG9WZGl4bTlNUEw3Y2xvemg4V2RvZmsxREZFNWNGXzE4Z3VIUGNEeWducjZaSkpGYUxpbXNsekdIeW9jUw?oc=5"
+    },
+    {
+      "headline": "US Democratic senator introduces bill to end China's trade status ahead of Trump-Xi meeting",
+      "summary": "",
+      "source": "Reuters",
+      "date": "2026-11-17T23:01:15+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVXQtUnc0dXFSSFBBcmQ3R0c5RXhWZFVVSmtxMUpqU21EOUlNNExWYWVacWdwTHJ1cUZWZVFMS293d2FTb3BfZlJhZ3k3ejNQYnB5Vy04S216ZjVTeWxXOWVrSVNQeWlJN1hTRkI2VmV1Mml6aDA4RG9hRUlaZ0l0WUZtZVRjNW1BLVhVTjlreGJ6R08yTWNZX1c2UHFZRThJajNheTRsT203aGZudmpBcTR3dndXallfcmVoUTNR?oc=5"
+    },
     {
       "headline": "Canada and China Draw Closer with Expanded Trade Pact",
       "summary": "",
@@ -54029,18 +54066,11 @@
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQXFNbW1PTlZwUTZhVVpmS3RiX0xtNFVYa081eUNJSnk3UXBWeGo5SlNoSndseHVtRlVSQzFVWnQwbldTd0FYMVpBRkZMWEJ5UXczQ2lLLVdRdUhNV1h2Mk1Fd05UcXJWMl85MWY1aDlkQnkxMnpfc3RNYTBmcFMxR3JtM0Nla0o3djlJ?oc=5"
     },
     {
-      "headline": "As the Nvidia scandal threatens to reignite trade tensions at Trump-Xi talks, Beijing still holds the rare earths",
+      "headline": "Carney and Xi Announce Canada-China Trade Pact",
       "summary": "",
-      "source": "Atlantic Council",
-      "date": "2026-11-17T19:17:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOQlh0bGlqUkJSSFFNUFhrTWpsZWpTVUljQS15bmNFcDFjMGF4TG8zc1phbGZKZ2RYZklKVkhOT2tSd1lTX01NRE1jRnc5SV80VzExOW5yVWtGcVc0bHV1emtzUmREMkxyWk9TMlQtS001TXdKNlNPODgtTGVSMWlGYXByR29BQVh2eUE2STlfdk9pV1FrZzVlYlFRckFPcHg5bFFyVUtJNnltVGszRkhvOEdDODZOSVRPbzFtZnJNdlZzM056S0ROS2tMejZyemxybllWU0hRWjFGNEJpc0M2S2Mxb2I3dEdNLXZWTEt6OUdETGRGS256Vg?oc=5"
-    },
-    {
-      "headline": "US Democratic senator introduces bill to end China's trade status ahead of Trump-Xi meeting",
-      "summary": "",
-      "source": "Reuters",
-      "date": "2026-11-17T17:39:32+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVXQtUnc0dXFSSFBBcmQ3R0c5RXhWZFVVSmtxMUpqU21EOUlNNExWYWVacWdwTHJ1cUZWZVFMS293d2FTb3BfZlJhZ3k3ejNQYnB5Vy04S216ZjVTeWxXOWVrSVNQeWlJN1hTRkI2VmV1Mml6aDA4RG9hRUlaZ0l0WUZtZVRjNW1BLVhVTjlreGJ6R08yTWNZX1c2UHFZRThJajNheTRsT203aGZudmpBcTR3dndXallfcmVoUTNR?oc=5"
+      "source": "The New York Times",
+      "date": "2026-11-17T17:19:21+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVEY2ZTltbjNhU0hQMjFPdnpzdDNjekkxWTg1UWZXMkhIMGxMa1EtbXRhZmxHMXRKejF3c2xNY1F4ODN1YXkzSENrOTB1eFM3eWVLb0dpeU9zc2x2eTRjU1RDMVdWR3h0SHVRT2otbjRkRVRpdFdUdzlaMk1zYjZ4amNZeXJ4dw?oc=5"
     },
     {
       "headline": "JD.com Sales Rise in Face of Sluggish China Economy, Competition",
@@ -54048,13 +54078,6 @@
       "source": "Bloomberg",
       "date": "2026-11-17T10:24:11+00:00",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQakZLV21DUTdOUDgwR3pDN09GajVLTjBqc2g5VS1pWDdiR2hlSUsxaHBLZ1NBYWd5TTNxeDRaWjhaUUdxTWFXSE51YnJzUDd4UHp2YTNyeEFzNmxtQUItVnVDWlZ0cW1UcDBXa0NzN1IyTzhUdlFicEtOOUlVSXBUNUFkNnppQkNBMWVqX2pNcFVFTnVFeldzRjlVYV8tUU12WlB5STV3OE50cjVFQWRMUWdXUks?oc=5"
-    },
-    {
-      "headline": "Carney and Xi Announce Trade Pact Ahead of Asia Summit",
-      "summary": "",
-      "source": "The New York Times",
-      "date": "2026-11-17T09:46:43+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVEY2ZTltbjNhU0hQMjFPdnpzdDNjekkxWTg1UWZXMkhIMGxMa1EtbXRhZmxHMXRKejF3c2xNY1F4ODN1YXkzSENrOTB1eFM3eWVLb0dpeU9zc2x2eTRjU1RDMVdWR3h0SHVRT2otbjRkRVRpdFdUdzlaMk1zYjZ4amNZeXJ4dw?oc=5"
     },
     {
       "headline": "Chinese envoy says chip equipment export curbs threaten EU-China trade thaw",
@@ -54078,20 +54101,6 @@
       "url": "https://www.scmp.com/news/china/politics/article/3374719/ahead-apec-beijings-hong-kong-envoy-says-party-discipline-removes-serious-dangers"
     },
     {
-      "headline": "China and Canada Expand Tariff Relief as Xi Meets Carney",
-      "summary": "",
-      "source": "Bloomberg",
-      "date": "2026-11-17T05:19:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRDF2Y3hmbXN1MWVDZGE5LVJDUE9NeEltNDdEU1hwckVTSmhHcmFNTWczVVhGSGtnaTVSM0hybGh5amRNOHl3a19RUHlHN0ttX1ZGeWNvdTFzTzRBUm84djJ3TG9FS29nQUd2dDlSS09JQWROaWRwZFJhS2ZRaTNCQ0xKbmtoYzgteHg0eGJ6bmlrX2FuWTFuNm1IaDl2cEdCWFhKOTBoU3cwOWc2?oc=5"
-    },
-    {
-      "headline": "Prime Minister Carney advances Canada’s strategic partnership with China across trade, commerce, and culture",
-      "summary": "",
-      "source": "Prime Minister of Canada",
-      "date": "2026-11-17T05:05:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbWotUjB3Q0JQQ1U4S3ptdlJqdzVQVTJ0N1lTMGd0MnpwOHRQaVI2SUFuR19jZjBTUnVrdjUwcnphemhqQzA5TmRUdko5VWlxOUdrTEs3dmVZc0kxcTRFOFVEY3hxS21vOW1RWVhDNEdhdHFfT25nVkZWQWVKbHExZE1FR3FjeGpFOHlvc0tCVmJ6ZGk1bTEwTmVBcTJWODlMU2RiNW5VcFpzRU5SQVIzTTRlVDFDenRDSzVDNQ?oc=5"
-    },
-    {
       "headline": "Canada and China extend trade deals as Xi meets Carney ahead of APEC summit",
       "summary": "",
       "source": "Reuters",
@@ -54109,7 +54118,7 @@
       "headline": "Trump Administration Divide on China Policy Breaks Into Public View",
       "summary": "",
       "source": "The New York Times",
-      "date": "2026-11-17T03:48:50+00:00",
+      "date": "2026-11-17T00:51:40+00:00",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNFBkeWJNdWI0X24zalBrRVZwNWVrRENBYUM0NEpiNDZvX3g4Rk9xdkloYy1sRDI3aWFOaVl4cFVwX0JuaU5Eai1DeGRHLUJuZmhndVRoN3BkbEstWlItVHNvNkJtRHFNdGpOSV91V0VVZ2hQdDJjZ3V5c0t2RTRGSm1IMHA?oc=5"
     },
     {
@@ -54125,13 +54134,6 @@
       "source": "Oil & Gas Journal",
       "date": "2026-11-16T17:33:27+00:00",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWklhS202MGM5NDl1QjFudmNiU2hJU2plak9hZWxJYUpYSUtvQmxueFhNNXBoV3VqZEcwYVV2V2wyUF9oeFVjeFVPVXZSVVBPbTRXVUp6M3hNME5KWDJDcF9TeGYyOEcwNy1iT2g2ZEpyY3hqbzJKdFBhM0NrR0NJbDBOMWNDRUQyUFA2OER1U1Q3VHlmamdycUxkLUpxbGllVDBLOEN0emh0aERDekZtVzVUeHY5bTR5OUJORGR2Rzlfdw?oc=5"
-    },
-    {
-      "headline": "Micron stock tumbles as Trump admin. cuts a loophole allowing China access to advanced chips",
-      "summary": "",
-      "source": "Boise Dev",
-      "date": "2026-11-16T17:08:21+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMFo2YjkwQnJaeHZrdDRJeDZyNnZkWFRmemw0M3dWaUtpd2RwVVRPZkx2WXJycEROazN5d1ZjRGhlSXRrOUQ3Tm9TeHZid19lOG1fdXp4M0tnUDRwR1pTNkVBQndFckJfdTBBdkYxcEphNi1ITFhlSWJuckhWZ0oxTHF1V0hzem1SOEFnMnl2N0xxLUltQ1JjaU45YVFlUDZwUVJfWmt1ZUsyY1U3WDNnVHdDeDNZd1hobTBWYjhyNWVNbTNTOHhQQg?oc=5"
     },
     {
       "headline": "Chinese President Xi Jinping puts spotlight on Greater Bay Area in Zhongshan",
@@ -54181,13 +54183,6 @@
       "source": "South China Morning Post",
       "date": "2026-11-14T14:00:05+00:00",
       "url": "https://www.scmp.com/news/china/politics/article/3374314/zero-capital-116-projects-ai-spots-devils-details-china-corruption-case"
-    },
-    {
-      "headline": "Nvidia Fallout Hits Alibaba and Other China Stocks as Tighter Regulation Looks Likely",
-      "summary": "",
-      "source": "Barron's",
-      "date": "2026-11-12T22:58:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUW9tQlZLbEV6QmZoSDU4Q3FjcmkzVHR1WWF5dzlISmE0ZVJxVWlpdi0yYmVuRTRyNF9ZbmpGSW9oN3F5Nk16WjdDRkNSNmwtOU1pWWlCZjdPeE1qaDJjbUo0N0dFYWloT1F0ellJcmVGaU5IVGZZaWI2VlhlS3RpWU15bw?oc=5"
     },
     {
       "headline": "Taiwan to close Papua New Guinea office and halt spot-market LNG purchases",
@@ -54274,11 +54269,11 @@
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSkdyZ0hqUllXMmZjUVB1QnBoMXFCYWdEUldHN3hPWVo3MFNNbWlGX2dmWWVtdVVnTU5icUpXRGl3a09jSWpEN0x3VXJQQnNOZkxCbVhnREhXdWFoa25HbXIzUlZqVXVaVXd3T19HcmdxWGxHbjl5WC0zeDB5S3Q0SUxTNUREYm9lTE5IU0JJdXBSd1h5Q21uNHFfNGtqSi1tMkFmY1FDTWxEUmJ1enE3TUZSTWhYWVdjVHhoM2t0SmU4dVU?oc=5"
     },
     {
-      "headline": "China’s trade surplus exceeds $1tn for first 10 months of year",
+      "headline": "Similarity is not exposure: Measuring spillovers from US–China trade frictions",
       "summary": "",
-      "source": "Financial Times",
-      "date": "2026-11-09T08:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcmpqbG1WMjVjVGtaTmdwR2hnbkJ0OWxiS2NZNXVWSklHZDNoZTR6eXZXTWhTZHdIeUg1elJYLUNaNGhMNHB4dGVUMnBJMlNTVVpmSVBoX3o2Z1JTTFZKa3VTVVlnQkNtZk54VVEwdWVQMjhkakJGbXpiYU94YVdPSmdzYl8?oc=5"
+      "source": "CEPR",
+      "date": "2026-11-09T01:02:45+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeVJHQXU2RG1VeWxpZjdjVkRaY2FRQVRRQWVpbG95Qmx4RjY0MTdGZVRjb0dDM1doN0lYb083ckNPVHNZUzJqN00ybWc3bjRTRk5ZRUQxMTlSZ3VFdnBOSU9iTmZmbndsRm9CdkE3MmQ3LTFJYVZzdHRFYXVaZmxyb1dtQTRfa185clRQT1o1enN6c3E2MWgyTzB2b0JqQnNrcEE?oc=5"
     },
     {
       "headline": "China eyes gig workers and influencers as delegates for Communist Party congress",
@@ -54337,6 +54332,13 @@
       "url": "https://www.scmp.com/plus/news/us/us-elections/article/3373259/trump-suffers-midterms-trouncing-weeks-xi-meeting"
     },
     {
+      "headline": "China Stock Market’s Hidden Problem: Foreign Investors Get a Different Truth",
+      "summary": "",
+      "source": "WSJ",
+      "date": "2026-11-04T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTzZ5N25BZWFvQ28wbmJUSmVfTDZSVHVTVy1OZkJwdFhSN29Eakw5M28yUUpVOTJRQVJjRmRzSUkxdlhXckN4ZU5LY08zc3RsV0U0dlZwNFRTRE9NY2lOeXhPbkUzcm5HZFhfczl3UEpKZlRwbGZlODlUel9xZFd6OHpRWWh5cVN3aWJBOUJ5LWpIeEJwMEQxSjZ4UUtJQ0x3eF85aVdmajZMb1VOTmZ3bFJZLWl0Zw?oc=5"
+    },
+    {
       "headline": "2027 Investment Outlook - China Equities",
       "summary": "",
       "source": "Invesco",
@@ -54356,13 +54358,6 @@
       "source": "Chatham House",
       "date": "2026-11-03T08:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbW5tTV94ckhKWlFLYWtZdHlCWFNwcjFPNnlnTGdDMS1ZRWt1OWgyeUpmVldpb041MThXSm1LaXg5SFFJVm1jWUs2NGduclJzSnYybDhYMUhUbzQyWGxsUTl5Qi1JZWdxc2QyZGdhVUFOWGtHMmo3SkFCSTZYdU9JaGxJdlBLTURkYUZuT01GU1FoaVVvTUZmT2pJQ3ItSjZIbjhYZUdTOWdQZGRNRWg1UXpUQ2FuUzA?oc=5"
-    },
-    {
-      "headline": "China Stock Market’s Hidden Problem: Foreign Investors Get a Different Truth",
-      "summary": "",
-      "source": "WSJ",
-      "date": "2026-11-03T08:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTzZ5N25BZWFvQ28wbmJUSmVfTDZSVHVTVy1OZkJwdFhSN29Eakw5M28yUUpVOTJRQVJjRmRzSUkxdlhXckN4ZU5LY08zc3RsV0U0dlZwNFRTRE9NY2lOeXhPbkUzcm5HZFhfczl3UEpKZlRwbGZlODlUel9xZFd6OHpRWWh5cVN3aWJBOUJ5LWpIeEJwMEQxSjZ4UUtJQ0x3eF85aVdmajZMb1VOTmZ3bFJZLWl0Zw?oc=5"
     },
     {
       "headline": "China’s AI stock-market struggles are a warning",
@@ -54447,6 +54442,13 @@
       "source": "CSIS | Center for Strategic and International Studies",
       "date": "2026-10-29T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcG9ITGxQVlBOVnBOMTY5VUthQi1XTGN1QjNBZjR0SVlINlh6T05mTHZBMWRpb21tQm9ZcnpvUnBZanM0Z0tqakhoN2hDbzNiaDVyb0Vob0Q3ZVpkWWNpS2VSb0FzRUtfb3ZaZmVYVVBzZDVHMkg4LUU3ZnoycFBvM2FTVjVoelRQTWJWMXRjaHpmUQ?oc=5"
+    },
+    {
+      "headline": "EU-China Relations: Finding the Right Balance Between Engagement and Stronger Trade Action",
+      "summary": "",
+      "source": "Teneo",
+      "date": "2026-10-29T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeTYtdkRva3BYQmNIRDNUS1ZvcjhULW9Cc0thNkgtc3pXR084RVhmcjFVV2oyRjlwNVRMdXBWR1dDVnE3OUlCVFp3eU5Ia0t2WHRfVWpaM3BndEpSVVhaTE1HME8zU1g2dVBqN05heW5uVE5USGEwQnZmTkpXZHU2YmJqQXVwb2hIb3lid1NYTzl1VndUVG1GWG4zX1QwMnBvYzZMUy1SQS1Nenk5OVJUb2UyVmpnSXZJMjFkTjFyeXRubVBtTkVZOUhB?oc=5"
     },
     {
       "headline": "China’s stock markets are the great global exception",
@@ -54673,6 +54675,13 @@
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSHhpZExfMEREZER4MUNuay0tRjNYeDZFX1ItZjRzYVhYYkg3ZWphRnBUdzlwOUNkRmlQQXplbHE4cWpvZ3dKYjlQVFdMUnhUbkNFazVhQ28wU0FGbkpKcDYwcE9KcU5fblpLUjd1TGFvSzJ4ZWVqRnZNbkJMLWRwdlpuTW1yVm5tWm1WV3JsbjFZdFRSNFg2THV5bnRSd3NVbVBYSklFakN1TXRrdkdV?oc=5"
     },
     {
+      "headline": "Surging Export Similarity is Fueling Advanced Economy Trade Tensions With China",
+      "summary": "",
+      "source": "Council on Foreign Relations",
+      "date": "2026-10-21T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTkhPWDM1ZGcyYmExei05VjN3LVlFTmtuSE1ONFdsOExvcHVCSWZGZ0s3TFQ3NUd5amsyUE5sOURVeDlSTk16WWtHbWQ3QklkeXVjekVyTTh1ZWtyZU1zUWpfLVMyaXZXbThxQUtXR0laLWVTY25JQUhVbDdqTjJpNGRpdTlhUWxEVXM2Q2J3V2Y4dE5OZ09mYWw3ZW42OUdXMW8wOVhVRkpFRzJs?oc=5"
+    },
+    {
       "headline": "Polls Show Policymakers Out of Step With Public on Tariffs, China Trade",
       "summary": "",
       "source": "The US-China Business Council",
@@ -54722,6 +54731,13 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObjdWVVIyRU9UZ0V3aG1MMnRLM1hzQXRWZFZQeUxqbm1Ea0dhbUh5bVZrLWotbWZVOFlDVnZhRXRZY3dZQVkyR2JIZnlDaUxUcTJWaGpTbzhjanoyOXRIR1QxNE1udnY1ZnhNYUMzRDB0LUM2NDdRQ2dmSF9BcFZMS0cxYWhMa3p1RmxrMFlXYkZ3LVEwZGhrN0hKNGt1OEpweHVKdU8zb3pndjE4d1ItZjVsbXhoUEk?oc=5"
     },
     {
+      "headline": "China's economy is better than expected — with one catch",
+      "summary": "",
+      "source": "Axios",
+      "date": "2026-10-19T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5dUxGSENxQmVITW9nLWtEcWIyQUtLNWllRldNb2Q5Wi1qMkstTnUxUDZGRl9zYTk1eDlFUEt1NXNCSzZ3dGJVV1huOFRsQU5mY055MFo1ZWN3VHVpMVBXSXNXV25Xb2c?oc=5"
+    },
+    {
       "headline": "China’s economy grows 4.5 percent in Q3, beating forecasts",
       "summary": "",
       "source": "Al Jazeera",
@@ -54741,13 +54757,6 @@
       "source": "WSJ",
       "date": "2026-10-19T07:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbTdTLWVJN0c0aUdlWG1hTlR4WEtoalRXTmt3RzZHREYtaGt6ZlZzbGs1ekNROER5ekhBWUI2UWNpLXBubFRhc3dSXzdkemR5RXZpOVd0YTV3Tld5b3d5Q1dhV1BDSWJ2eWlIQ0FGWV9vY3lMcktNcVlkS193R1F1Y0NVTThEdVlGSzRxSjlYRGRfcEkyeVJ0VVk1OEUyVDVtbUE?oc=5"
-    },
-    {
-      "headline": "China's economy is better than expected — with one catch",
-      "summary": "",
-      "source": "Axios",
-      "date": "2026-10-19T07:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5dUxGSENxQmVITW9nLWtEcWIyQUtLNWllRldNb2Q5Wi1qMkstTnUxUDZGRl9zYTk1eDlFUEt1NXNCSzZ3dGJVV1huOFRsQU5mY055MFo1ZWN3VHVpMVBXSXNXV25Xb2c?oc=5"
     },
     {
       "headline": "China’s economy grows 4.5% in third quarter on export surge",
